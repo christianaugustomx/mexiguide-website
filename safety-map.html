@@ -55,6 +55,7 @@
       max-width: 1120px; margin: 0 auto;
       padding: 0 28px; height: 56px;
       display: flex; align-items: center; justify-content: space-between;
+      position: relative;
     }
     .nav-logo {
       display: flex; align-items: center; gap: 9px;
@@ -312,6 +313,53 @@
     }
     .popup-dot { width: 8px; height: 8px; border-radius: 50%; }
 
+    /* Hamburger */
+    .nav-toggle {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+      z-index: 200;
+    }
+    .nav-toggle span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: var(--g-dark);
+      margin: 5px 0;
+      border-radius: 2px;
+      transition: transform 0.3s, opacity 0.3s;
+    }
+    .nav-toggle.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+    .nav-toggle.open span:nth-child(2) { opacity: 0; }
+    .nav-toggle.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+    @media (max-width: 768px) {
+      .nav-toggle { display: block; }
+      .nav-right {
+        display: none;
+        position: absolute;
+        top: 56px;
+        left: 0; right: 0;
+        background: rgba(245,240,235,0.98);
+        backdrop-filter: blur(20px);
+        flex-direction: column;
+        padding: 16px 24px;
+        gap: 8px;
+        border-bottom: 1px solid var(--border);
+        box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+      }
+      .nav-right.show { display: flex; }
+      .nav-right a {
+        display: block;
+        padding: 12px 0;
+        border-bottom: 1px solid var(--border);
+        font-size: 15px;
+      }
+      .nav-right a:last-child { border-bottom: none; }
+    }
+
     /* ── RESPONSIVE ── */
     @media (max-width: 768px) {
       .sidebar { display: none; }
@@ -330,10 +378,11 @@
         <img src="/logo.png" alt="MexiGuide" style="width:34px;height:34px;border-radius:10px;object-fit:contain;background:#1B4332;padding:3px;box-shadow:0 3px 10px rgba(27,67,50,0.25);">
         <span class="nav-wordmark">MexiGuide</span>
       </a>
-      <div class="nav-right">
+      <div class="nav-right" id="navRight">
         <a href="mexiguide-website.html" class="nav-back">← Back to Site</a>
         <a href="mexiguide-website.html#download" class="nav-pill">Download App</a>
       </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
   </nav>
 
@@ -695,6 +744,13 @@
     <a href="https://ko-fi.com/mexiguide" target="_blank" rel="noopener" style="display:block;text-align:center;background:linear-gradient(135deg,#C48040,#E9C46A);color:#fff;font-size:11px;font-weight:700;padding:8px;border-radius:8px;text-decoration:none;letter-spacing:0.3px;">Tip Jar ☕ →</a>
   </div>
 </div>
+
+<script>
+  document.getElementById('navToggle').addEventListener('click', function() {
+    this.classList.toggle('open');
+    document.getElementById('navRight').classList.toggle('show');
+  });
+</script>
 
 </body>
 </html>

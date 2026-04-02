@@ -66,6 +66,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      position: relative;
     }
 
     .nav-logo {
@@ -282,13 +283,6 @@
         font-size: 2rem;
       }
 
-      .nav-links {
-        gap: 1rem;
-      }
-
-      nav {
-        padding: 0.75rem 1rem;
-      }
     }
 
     /* City Card */
@@ -503,22 +497,54 @@
       height: 4rem;
     }
 
+    /* Hamburger */
+    .nav-toggle {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+      z-index: 200;
+    }
+    .nav-toggle span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: var(--g-dark);
+      margin: 5px 0;
+      border-radius: 2px;
+      transition: transform 0.3s, opacity 0.3s;
+    }
+    .nav-toggle.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+    .nav-toggle.open span:nth-child(2) { opacity: 0; }
+    .nav-toggle.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
     @media (max-width: 768px) {
-      nav {
-        flex-direction: column;
-        gap: 1rem;
-      }
-
-      .nav-container {
-        flex-direction: column;
-        width: 100%;
-      }
-
+      .nav-toggle { display: block; }
       .nav-links {
-        width: 100%;
-        justify-content: center;
-        flex-wrap: wrap;
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0; right: 0;
+        background: rgba(245,240,235,0.98);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        flex-direction: column;
+        padding: 16px 24px;
+        gap: 0;
+        border-bottom: 1px solid var(--border);
+        box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+        list-style: none;
       }
+      .nav-links.show { display: flex; }
+      .nav-links li { width: 100%; }
+      .nav-links a {
+        display: block;
+        padding: 12px 0;
+        border-bottom: 1px solid var(--border);
+        font-size: 15px;
+      }
+      .nav-links li:last-child a { border-bottom: none; }
 
       .hero h1 {
         font-size: 2.25rem;
@@ -552,7 +578,7 @@
   <nav>
     <div class="nav-container">
       <a href="/" class="nav-logo"><img src="/logo.png" alt="MexiGuide" style="width:32px;height:32px;border-radius:9px;object-fit:contain;background:#1B4332;padding:3px;vertical-align:middle;box-shadow:0 3px 10px rgba(27,67,50,0.25);"> <span>MexiGuide</span></a>
-      <ul class="nav-links">
+      <ul class="nav-links" id="navLinks">
         <li><a href="/destinations.html" class="active">Destinations</a></li>
         <li><a href="/destinations.html">City Guides</a></li>
         <li><a href="/safety-map.html">Safety Map</a></li>
@@ -560,6 +586,7 @@
         <li><a href="/emergency.html">Emergency</a></li>
         <li><button class="nav-cta">Get the App →</button></li>
       </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
     </div>
   </nav>
 
@@ -810,5 +837,11 @@
   </div>
 </div>
 
+<script>
+  document.getElementById('navToggle').addEventListener('click', function() {
+    this.classList.toggle('open');
+    document.getElementById('navLinks').classList.toggle('show');
+  });
+</script>
 </body>
 </html>

@@ -504,10 +504,56 @@
       border-color: var(--jade);
     }
 
+    /* Hamburger */
+    .nav-toggle {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+      z-index: 200;
+    }
+    .nav-toggle span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: var(--g-dark);
+      margin: 5px 0;
+      border-radius: 2px;
+      transition: transform 0.3s, opacity 0.3s;
+    }
+    .nav-toggle.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+    .nav-toggle.open span:nth-child(2) { opacity: 0; }
+    .nav-toggle.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
     /* ── RESPONSIVE ── */
     @media (max-width: 768px) {
       .nav-inner { padding: 0 16px; }
-      .nav-links { display: none; }
+      .nav-toggle { display: block; }
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 63px;
+        left: 0; right: 0;
+        background: rgba(245,240,235,0.98);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        flex-direction: column;
+        padding: 16px 24px;
+        gap: 0;
+        border-bottom: 1px solid var(--border);
+        box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+        list-style: none;
+      }
+      .nav-links.show { display: flex; }
+      .nav-links li { width: 100%; }
+      .nav-links a {
+        display: block;
+        padding: 12px 0;
+        border-bottom: 1px solid var(--border);
+        font-size: 15px;
+      }
+      .nav-links li:last-child a { border-bottom: none; }
       .header-card { padding: 32px 16px; }
       .header-inner { padding: 0 16px; }
       .main-content { padding: 40px 16px; }
@@ -527,12 +573,13 @@
         <img src="/logo.png" alt="MexiGuide" style="width:34px;height:34px;border-radius:10px;object-fit:contain;background:#1B4332;padding:3px;box-shadow:0 3px 10px rgba(27,67,50,0.25);">
         <div class="nav-wordmark">MexiGuide</div>
       </a>
-      <ul class="nav-links">
+      <ul class="nav-links" id="navLinks">
         <li><a href="/destinations.html">Destinations</a></li>
         <li><a href="/safety-map.html">Safety Map</a></li>
         <li><a href="/tools.html">Tools</a></li>
         <li><a href="/emergency.html">Emergency</a></li>
       </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
       <a href="#" class="nav-pill">Get the App →</a>
     </div>
   </nav>
@@ -830,6 +877,13 @@
     <a href="https://ko-fi.com/mexiguide" target="_blank" rel="noopener" style="display:block;text-align:center;background:linear-gradient(135deg,#C48040,#E9C46A);color:#fff;font-size:11px;font-weight:700;padding:8px;border-radius:8px;text-decoration:none;letter-spacing:0.3px;">Tip Jar ☕ →</a>
   </div>
 </div>
+
+<script>
+  document.getElementById('navToggle').addEventListener('click', function() {
+    this.classList.toggle('open');
+    document.getElementById('navLinks').classList.toggle('show');
+  });
+</script>
 
 </body>
 </html>

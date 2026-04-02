@@ -119,6 +119,61 @@
     }
     .nav-pill:hover { background: var(--g-mid) !important; transform: translateY(-1px) !important; }
 
+    /* ── HAMBURGER ── */
+    .nav-toggle {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+      z-index: 200;
+    }
+    .nav-toggle span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: var(--g-dark);
+      margin: 5px 0;
+      border-radius: 2px;
+      transition: transform 0.3s, opacity 0.3s;
+    }
+    .nav-toggle.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+    .nav-toggle.open span:nth-child(2) { opacity: 0; }
+    .nav-toggle.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+    @media (max-width: 960px) {
+      .nav-toggle { display: block; }
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 63px;
+        left: 0; right: 0;
+        background: rgba(245,240,235,0.98);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        flex-direction: column;
+        padding: 16px 24px;
+        gap: 0;
+        border-bottom: 1px solid var(--border);
+        box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+        list-style: none;
+      }
+      .nav-links.show { display: flex; }
+      .nav-links li { width: 100%; }
+      .nav-links a {
+        display: block;
+        padding: 12px 0;
+        border-bottom: 1px solid var(--border);
+        font-size: 15px;
+      }
+      .nav-links li:last-child a { border-bottom: none; }
+      .nav-links .nav-pill {
+        display: inline-block;
+        margin-top: 8px;
+        text-align: center;
+      }
+    }
+
     /* ── HERO ── */
     .hero {
       background: linear-gradient(160deg, var(--g-darkest) 0%, var(--g-dark) 50%, var(--g-mid) 100%);
@@ -584,7 +639,6 @@
 
     /* ── RESPONSIVE ── */
     @media (max-width: 960px) {
-      .nav-links { display: none; }
       .nav-inner { padding: 0 20px; }
       .hero { padding: 100px 20px 60px; }
       .hero-inner { grid-template-columns: 1fr; gap: 44px; }
@@ -615,13 +669,16 @@
         <img src="/logo.png" alt="MexiGuide" style="width:34px;height:34px;border-radius:10px;object-fit:contain;background:#1B4332;padding:3px;box-shadow:0 3px 10px rgba(27,67,50,0.25);">
         <span class="nav-wordmark">MexiGuide</span>
       </a>
-      <ul class="nav-links">
+      <ul class="nav-links" id="navLinks">
         <li><a href="/destinations.html">Destinations</a></li>
         <li><a href="/safety-map.html">Safety Map</a></li>
         <li><a href="/tools.html">Travel Tools</a></li>
         <li><a href="/emergency.html">Emergency</a></li>
         <li><a href="#download" class="nav-pill">Download Free</a></li>
       </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </nav>
 
@@ -714,11 +771,11 @@
       <h2 class="s-title">Everything you need<br/>for Mexico travel</h2>
       <p class="s-sub">From city guides and local tips to eSIMs and currency conversion — MexiGuide has it all in one beautifully designed app.</p>
       <div class="feat-grid">
-        <div class="feat-card">
+        <a href="https://mexiguide.org/destinations" class="feat-card" style="text-decoration:none;color:inherit;">
           <div class="feat-icon-wrap fi-jade">🗺️</div>
           <h3>City Guides</h3>
           <p>In-depth guides for Mexico's top cities — neighborhoods, attractions, safety tips, and local recommendations curated by people who live there.</p>
-        </div>
+        </a>
         <div class="feat-card">
           <div class="feat-icon-wrap fi-gold">💱</div>
           <h3>Currency Converter</h3>
@@ -984,5 +1041,11 @@
   </div>
 </div>
 
+<script>
+  document.getElementById('navToggle').addEventListener('click', function() {
+    this.classList.toggle('open');
+    document.getElementById('navLinks').classList.toggle('show');
+  });
+</script>
 </body>
 </html>
