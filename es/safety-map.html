@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mexico Safety Map — MexiGuide</title>
-  <meta name="description" content="Interactive safety map of Mexico showing security zones by municipality. Color-coded from green (safe) to red (high risk)." />
+  <title>Mapa de Seguridad de M&eacute;xico — MexiGuide</title>
+  <meta name="description" content="Mapa interactivo de seguridad de M&eacute;xico que muestra zonas de seguridad por municipio. Codificado por colores desde verde (seguro) hasta rojo (alto riesgo)." />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Merriweather:wght@700;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
   <style>
@@ -393,16 +393,16 @@
   <!-- NAV -->
   <nav>
     <div class="nav-inner">
-      <a href="/" class="nav-logo">
+      <a href="/es/" class="nav-logo">
         <img src="/logo.png" alt="MexiGuide" style="width:34px;height:34px;border-radius:10px;object-fit:contain;background:#1B4332;padding:3px;box-shadow:0 3px 10px rgba(27,67,50,0.25);">
         <span class="nav-wordmark">MexiGuide</span>
       </a>
       <div class="nav-right" id="navRight">
-        <a href="mexiguide-website.html" class="nav-back">← Back to Site</a>
-        <a href="mexiguide-website.html#download" class="nav-pill">Download App</a>
-        <a href="/es/safety-map.html" class="lang-switch"><span class="lang-flag">🇲🇽</span> Español</a>
+        <a href="/es/mexiguide-website.html" class="nav-back">&larr; Volver al Inicio</a>
+        <a href="/es/mexiguide-website.html#download" class="nav-pill">Descargar App</a>
+        <a href="/safety-map.html" class="lang-switch"><span class="lang-flag">🇺🇸</span> English</a>
       </div>
-      <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+      <button class="nav-toggle" id="navToggle" aria-label="Men&uacute;"><span></span><span></span><span></span></button>
     </div>
   </nav>
 
@@ -411,10 +411,10 @@
     <div class="header-glow"></div>
     <div class="header-inner">
       <div class="header-left">
-        <h1>🗺️ Mexico Safety Map</h1>
-        <p>Live security zones by municipality — updated from MexiGuide data</p>
+        <h1>&#x1f5fa;&#xfe0f; Mapa de Seguridad de M&eacute;xico</h1>
+        <p>Zonas de seguridad en tiempo real por municipio — actualizado con datos de MexiGuide</p>
       </div>
-      <div class="header-badge">🛡️ Live Safety Data</div>
+      <div class="header-badge">&#x1f6e1;&#xfe0f; Datos de Seguridad en Vivo</div>
     </div>
   </div>
   <div class="deco-stripe"></div>
@@ -426,66 +426,66 @@
     <div class="sidebar">
       <!-- Legend -->
       <div class="sidebar-section">
-        <h3>Safety Levels</h3>
+        <h3>Niveles de Seguridad</h3>
         <div class="legend-items">
           <div class="legend-item" onclick="filterByColor('green')">
             <div class="legend-dot green"></div>
             <div class="legend-text">
-              <div class="legend-label">Very Safe</div>
+              <div class="legend-label">Muy Seguro</div>
             </div>
-            <span class="legend-count green" id="cnt-green">–</span>
+            <span class="legend-count green" id="cnt-green">&ndash;</span>
           </div>
           <div class="legend-item" onclick="filterByColor('lgreen')">
             <div class="legend-dot lgreen"></div>
             <div class="legend-text">
-              <div class="legend-label">Safe</div>
+              <div class="legend-label">Seguro</div>
             </div>
-            <span class="legend-count lgreen" id="cnt-lgreen">–</span>
+            <span class="legend-count lgreen" id="cnt-lgreen">&ndash;</span>
           </div>
           <div class="legend-item" onclick="filterByColor('yellow')">
             <div class="legend-dot yellow"></div>
             <div class="legend-text">
-              <div class="legend-label">Moderate</div>
+              <div class="legend-label">Moderado</div>
             </div>
-            <span class="legend-count yellow" id="cnt-yellow">–</span>
+            <span class="legend-count yellow" id="cnt-yellow">&ndash;</span>
           </div>
           <div class="legend-item" onclick="filterByColor('orange')">
             <div class="legend-dot orange"></div>
             <div class="legend-text">
-              <div class="legend-label">Unsafe</div>
+              <div class="legend-label">Precauci&oacute;n</div>
             </div>
-            <span class="legend-count orange" id="cnt-orange">–</span>
+            <span class="legend-count orange" id="cnt-orange">&ndash;</span>
           </div>
           <div class="legend-item" onclick="filterByColor('red')">
             <div class="legend-dot red"></div>
             <div class="legend-text">
-              <div class="legend-label">High Risk</div>
+              <div class="legend-label">Alto Riesgo</div>
             </div>
-            <span class="legend-count red" id="cnt-red">–</span>
+            <span class="legend-count red" id="cnt-red">&ndash;</span>
           </div>
         </div>
       </div>
 
       <!-- Filter -->
       <div class="sidebar-section">
-        <h3>Filter by Level</h3>
+        <h3>Filtrar por Nivel</h3>
         <div class="filter-chips">
-          <div class="filter-chip on" id="chip-all" onclick="setFilter('all')">All Zones</div>
+          <div class="filter-chip on" id="chip-all" onclick="setFilter('all')">Todas las Zonas</div>
           <div class="filter-chip" id="chip-safe" onclick="setFilter('safe')">
-            <div class="filter-dot" style="background:var(--c-green)"></div>Safe
+            <div class="filter-dot" style="background:var(--c-green)"></div>Seguro
           </div>
           <div class="filter-chip" id="chip-moderate" onclick="setFilter('moderate')">
-            <div class="filter-dot" style="background:var(--c-yellow)"></div>Moderate
+            <div class="filter-dot" style="background:var(--c-yellow)"></div>Moderado
           </div>
           <div class="filter-chip" id="chip-risk" onclick="setFilter('risk')">
-            <div class="filter-dot" style="background:var(--c-red)"></div>High Risk
+            <div class="filter-dot" style="background:var(--c-red)"></div>Alto Riesgo
           </div>
         </div>
       </div>
 
       <!-- Zone List -->
       <div class="sidebar-section" style="padding-bottom:8px; border-bottom:none;">
-        <h3>Zones <span id="zone-count" style="font-weight:400;color:var(--text-lo);text-transform:none;letter-spacing:0">loading…</span></h3>
+        <h3>Zonas <span id="zone-count" style="font-weight:400;color:var(--text-lo);text-transform:none;letter-spacing:0">cargando&hellip;</span></h3>
       </div>
       <div class="zone-list" id="zone-list">
         <!-- populated by JS -->
@@ -497,13 +497,13 @@
       <!-- Loading overlay -->
       <div id="loading">
         <div class="loading-spinner"></div>
-        <div class="loading-text">Loading safety zones…</div>
+        <div class="loading-text">Cargando zonas de seguridad&hellip;</div>
       </div>
       <!-- Stats bar -->
       <div id="stats-bar" style="display:none">
-        <div class="stat-pill">Zones: <span id="sb-total">0</span></div>
-        <div class="stat-pill">🟢 <span id="sb-safe">0</span> safe</div>
-        <div class="stat-pill">🔴 <span id="sb-risk">0</span> high risk</div>
+        <div class="stat-pill">Zonas: <span id="sb-total">0</span></div>
+        <div class="stat-pill">&#x1f7e2; <span id="sb-safe">0</span> seguras</div>
+        <div class="stat-pill">&#x1f534; <span id="sb-risk">0</span> alto riesgo</div>
       </div>
       <!-- Error -->
       <div id="error-msg"></div>
@@ -521,11 +521,11 @@
 
     // Color tokens — matching AppConstants.securityColors
     const COLOR_MAP = {
-      'green':  { fill: '#28A745', label: 'Very Safe',  cls: 'green'  },
-      'lgreen': { fill: '#81C784', label: 'Safe',       cls: 'lgreen' },
-      'yellow': { fill: '#FDD835', label: 'Moderate',   cls: 'yellow' },
-      'orange': { fill: '#EF6C00', label: 'Unsafe',     cls: 'orange' },
-      'red':    { fill: '#C62828', label: 'High Risk',  cls: 'red'    },
+      'green':  { fill: '#28A745', label: 'Muy Seguro',   cls: 'green'  },
+      'lgreen': { fill: '#81C784', label: 'Seguro',       cls: 'lgreen' },
+      'yellow': { fill: '#FDD835', label: 'Moderado',     cls: 'yellow' },
+      'orange': { fill: '#EF6C00', label: 'Precauci\u00f3n', cls: 'orange' },
+      'red':    { fill: '#C62828', label: 'Alto Riesgo',  cls: 'red'    },
     };
 
     // Normalize color field from DB → our keys
@@ -555,7 +555,7 @@
 
     // Tile layer — light CartoDB Positron (clean, matches app aesthetic)
     L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-      attribution: '© OpenStreetMap contributors © CARTO',
+      attribution: '&copy; OpenStreetMap contributors &copy; CARTO',
       subdomains: 'abcd',
       maxZoom: 19,
     }).addTo(map);
@@ -608,9 +608,9 @@
       const c = COLOR_MAP[colorKey];
       return `
         <div class="popup-inner">
-          <div class="popup-tag">Safety Zone</div>
+          <div class="popup-tag">Zona de Seguridad</div>
           <div class="popup-name">${zone.name}</div>
-          <div class="popup-city">📍 ${zone.city}</div>
+          <div class="popup-city">\ud83d\udccd ${zone.city}</div>
           <div class="popup-badge" style="background:${c.fill}18;border-color:${c.fill}44;color:${c.fill}">
             <div class="popup-dot" style="background:${c.fill}"></div>
             ${c.label}
@@ -728,16 +728,16 @@
         allZones = Array.isArray(raw) ? raw : [];
 
         if (allZones.length === 0) {
-          throw new Error('No zones returned from Supabase');
+          throw new Error('No se recibieron zonas de Supabase');
         }
 
         renderZones(allZones);
         document.getElementById('loading').style.display = 'none';
       } catch (err) {
-        console.error('Map load error:', err);
+        console.error('Error al cargar el mapa:', err);
         document.getElementById('loading').style.display = 'none';
         const errEl = document.getElementById('error-msg');
-        errEl.textContent = `⚠️ Could not load safety data — ${err.message}`;
+        errEl.textContent = `\u26a0\ufe0f No se pudieron cargar los datos de seguridad — ${err.message}`;
         errEl.style.display = 'block';
         setTimeout(() => errEl.style.display = 'none', 6000);
       }
@@ -747,21 +747,21 @@
 <!-- ── TIP JAR WIDGET ── -->
 <div id="tip-jar" style="position:fixed;bottom:20px;right:20px;z-index:9999;max-width:300px;font-family:'Inter',sans-serif;display:block;">
   <div style="background:#F5F0EB;border:1px solid rgba(196,128,64,0.35);border-radius:14px;box-shadow:0 6px 28px rgba(0,0,0,0.14);padding:14px 16px 12px;position:relative;">
-    <button onclick="document.getElementById('tip-jar').style.display='none'" style="position:absolute;top:8px;right:10px;background:none;border:none;cursor:pointer;font-size:14px;color:#8AA898;line-height:1;" aria-label="Close">✕</button>
+    <button onclick="document.getElementById('tip-jar').style.display='none'" style="position:absolute;top:8px;right:10px;background:none;border:none;cursor:pointer;font-size:14px;color:#8AA898;line-height:1;" aria-label="Cerrar">&#x2715;</button>
     <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">
-      <div style="width:28px;height:28px;background:rgba(196,128,64,0.12);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:15px;">☕</div>
+      <div style="width:28px;height:28px;background:rgba(196,128,64,0.12);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:15px;">&#x2615;</div>
       <div>
-        <div style="font-size:11px;font-weight:700;color:#0F2419;">Enjoying MexiGuide?</div>
-        <div style="font-size:10px;color:#4A7A60;">Buy us a coffee to keep it free ✌️</div>
+        <div style="font-size:11px;font-weight:700;color:#0F2419;">&iquest;Te gusta MexiGuide?</div>
+        <div style="font-size:10px;color:#4A7A60;">Inv&iacute;tanos un caf&eacute; para mantenerlo gratis &#x270c;&#xfe0f;</div>
       </div>
     </div>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:10px;">
-      <a href="https://ko-fi.com/mexiguide" target="_blank" rel="noopener" style="text-align:center;padding:7px 4px;background:rgba(196,128,64,0.10);border:1px solid rgba(196,128,64,0.25);border-radius:8px;text-decoration:none;color:#0F2419;font-size:10px;font-weight:600;transition:background 0.2s;" onmouseover="this.style.background='rgba(196,128,64,0.2)'" onmouseout="this.style.background='rgba(196,128,64,0.10)'">☕ Coffee<br><span style="font-weight:400;color:#4A7A60;">$1</span></a>
-      <a href="https://ko-fi.com/mexiguide" target="_blank" rel="noopener" style="text-align:center;padding:7px 4px;background:rgba(196,128,64,0.10);border:1px solid rgba(196,128,64,0.25);border-radius:8px;text-decoration:none;color:#0F2419;font-size:10px;font-weight:600;transition:background 0.2s;" onmouseover="this.style.background='rgba(196,128,64,0.2)'" onmouseout="this.style.background='rgba(196,128,64,0.10)'">🌮 Taco<br><span style="font-weight:400;color:#4A7A60;">$3</span></a>
-      <a href="https://ko-fi.com/mexiguide" target="_blank" rel="noopener" style="text-align:center;padding:7px 4px;background:rgba(196,128,64,0.10);border:1px solid rgba(196,128,64,0.25);border-radius:8px;text-decoration:none;color:#0F2419;font-size:10px;font-weight:600;transition:background 0.2s;" onmouseover="this.style.background='rgba(196,128,64,0.2)'" onmouseout="this.style.background='rgba(196,128,64,0.10)'">🍺 Beer<br><span style="font-weight:400;color:#4A7A60;">$5</span></a>
-      <a href="https://ko-fi.com/mexiguide" target="_blank" rel="noopener" style="text-align:center;padding:7px 4px;background:rgba(196,128,64,0.10);border:1px solid rgba(196,128,64,0.25);border-radius:8px;text-decoration:none;color:#0F2419;font-size:10px;font-weight:600;transition:background 0.2s;" onmouseover="this.style.background='rgba(196,128,64,0.2)'" onmouseout="this.style.background='rgba(196,128,64,0.10)'">🎉 Amazing!<br><span style="font-weight:400;color:#4A7A60;">$10</span></a>
+      <a href="https://ko-fi.com/mexiguide" target="_blank" rel="noopener" style="text-align:center;padding:7px 4px;background:rgba(196,128,64,0.10);border:1px solid rgba(196,128,64,0.25);border-radius:8px;text-decoration:none;color:#0F2419;font-size:10px;font-weight:600;transition:background 0.2s;" onmouseover="this.style.background='rgba(196,128,64,0.2)'" onmouseout="this.style.background='rgba(196,128,64,0.10)'">&#x2615; Caf&eacute;<br><span style="font-weight:400;color:#4A7A60;">$1</span></a>
+      <a href="https://ko-fi.com/mexiguide" target="_blank" rel="noopener" style="text-align:center;padding:7px 4px;background:rgba(196,128,64,0.10);border:1px solid rgba(196,128,64,0.25);border-radius:8px;text-decoration:none;color:#0F2419;font-size:10px;font-weight:600;transition:background 0.2s;" onmouseover="this.style.background='rgba(196,128,64,0.2)'" onmouseout="this.style.background='rgba(196,128,64,0.10)'">&#x1f32e; Taco<br><span style="font-weight:400;color:#4A7A60;">$3</span></a>
+      <a href="https://ko-fi.com/mexiguide" target="_blank" rel="noopener" style="text-align:center;padding:7px 4px;background:rgba(196,128,64,0.10);border:1px solid rgba(196,128,64,0.25);border-radius:8px;text-decoration:none;color:#0F2419;font-size:10px;font-weight:600;transition:background 0.2s;" onmouseover="this.style.background='rgba(196,128,64,0.2)'" onmouseout="this.style.background='rgba(196,128,64,0.10)'">&#x1f37a; Cerveza<br><span style="font-weight:400;color:#4A7A60;">$5</span></a>
+      <a href="https://ko-fi.com/mexiguide" target="_blank" rel="noopener" style="text-align:center;padding:7px 4px;background:rgba(196,128,64,0.10);border:1px solid rgba(196,128,64,0.25);border-radius:8px;text-decoration:none;color:#0F2419;font-size:10px;font-weight:600;transition:background 0.2s;" onmouseover="this.style.background='rgba(196,128,64,0.2)'" onmouseout="this.style.background='rgba(196,128,64,0.10)'">&#x1f389; &iexcl;Incre&iacute;ble!<br><span style="font-weight:400;color:#4A7A60;">$10</span></a>
     </div>
-    <a href="https://ko-fi.com/mexiguide" target="_blank" rel="noopener" style="display:block;text-align:center;background:linear-gradient(135deg,#C48040,#E9C46A);color:#fff;font-size:11px;font-weight:700;padding:8px;border-radius:8px;text-decoration:none;letter-spacing:0.3px;">Tip Jar ☕ →</a>
+    <a href="https://ko-fi.com/mexiguide" target="_blank" rel="noopener" style="display:block;text-align:center;background:linear-gradient(135deg,#C48040,#E9C46A);color:#fff;font-size:11px;font-weight:700;padding:8px;border-radius:8px;text-decoration:none;letter-spacing:0.3px;">Propina &#x2615; &rarr;</a>
   </div>
 </div>
 

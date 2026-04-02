@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>All Destinations | MexiGuide</title>
+  <title>Todos los Destinos | MexiGuide</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
@@ -596,25 +596,25 @@
   <!-- Navigation -->
   <nav>
     <div class="nav-container">
-      <a href="/" class="nav-logo"><img src="/logo.png" alt="MexiGuide" style="width:32px;height:32px;border-radius:9px;object-fit:contain;background:#1B4332;padding:3px;vertical-align:middle;box-shadow:0 3px 10px rgba(27,67,50,0.25);"> <span>MexiGuide</span></a>
+      <a href="/es/" class="nav-logo"><img src="/logo.png" alt="MexiGuide" style="width:32px;height:32px;border-radius:9px;object-fit:contain;background:#1B4332;padding:3px;vertical-align:middle;box-shadow:0 3px 10px rgba(27,67,50,0.25);"> <span>MexiGuide</span></a>
       <ul class="nav-links" id="navLinks">
-        <li><a href="/destinations.html" class="active">Destinations</a></li>
-        <li><a href="/destinations.html">City Guides</a></li>
-        <li><a href="/safety-map.html">Safety Map</a></li>
-        <li><a href="/tools.html">Tools</a></li>
-        <li><a href="/emergency.html">Emergency</a></li>
-        <li><button class="nav-cta">Get the App →</button></li>
-        <li><a href="/es/destinations.html" class="lang-switch"><span class="lang-flag">🇲🇽</span> Español</a></li>
+        <li><a href="/es/destinations.html" class="active">Destinos</a></li>
+        <li><a href="/es/destinations.html">Guías de Ciudad</a></li>
+        <li><a href="/es/safety-map.html">Mapa de Seguridad</a></li>
+        <li><a href="/es/tools.html">Herramientas</a></li>
+        <li><a href="/es/emergency.html">Emergencias</a></li>
+        <li><button class="nav-cta">Obtener la App →</button></li>
+        <li><a href="/destinations.html" class="lang-switch"><span class="lang-flag">🇺🇸</span> English</a></li>
       </ul>
-      <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+      <button class="nav-toggle" id="navToggle" aria-label="Menú"><span></span><span></span><span></span></button>
     </div>
   </nav>
 
   <!-- Hero Section -->
   <section class="hero">
     <div class="hero-content">
-      <h1>All Destinations</h1>
-      <p>37 cities across Mexico — with real safety data, local guides, and insider tips.</p>
+      <h1>Todos los Destinos</h1>
+      <p>37 ciudades en todo México — con datos reales de seguridad, guías locales y consejos de expertos.</p>
     </div>
   </section>
 
@@ -626,24 +626,24 @@
         <input
           type="text"
           id="searchInput"
-          placeholder="Search by city or state name..."
-          aria-label="Search destinations"
+          placeholder="Buscar por nombre de ciudad o estado..."
+          aria-label="Buscar destinos"
         >
       </div>
 
       <div class="filter-buttons">
-        <button class="filter-btn active" data-filter="all" data-level="all">All</button>
-        <button class="filter-btn" data-filter="level-1" data-level="1">Very Safe</button>
-        <button class="filter-btn" data-filter="level-2" data-level="2">Safe</button>
-        <button class="filter-btn" data-filter="level-3" data-level="3">Moderate</button>
-        <button class="filter-btn" data-filter="level-4" data-level="4">Caution</button>
-        <button class="filter-btn" data-filter="level-5" data-level="5">Dangerous</button>
+        <button class="filter-btn active" data-filter="all" data-level="all">Todos</button>
+        <button class="filter-btn" data-filter="level-1" data-level="1">Muy Seguro</button>
+        <button class="filter-btn" data-filter="level-2" data-level="2">Seguro</button>
+        <button class="filter-btn" data-filter="level-3" data-level="3">Moderado</button>
+        <button class="filter-btn" data-filter="level-4" data-level="4">Precaución</button>
+        <button class="filter-btn" data-filter="level-5" data-level="5">Peligroso</button>
       </div>
     </section>
 
     <!-- Results Count -->
     <div class="results-count">
-      Showing <span id="resultCount">37</span> destinations
+      Mostrando <span id="resultCount">37</span> destinos
     </div>
 
     <!-- Cities Grid -->
@@ -651,9 +651,9 @@
 
     <!-- Empty State -->
     <div id="emptyState" class="empty-state" style="display: none;">
-      <h2>No destinations found</h2>
-      <p>Try adjusting your search filters to find cities that match your interests.</p>
-      <button onclick="resetFilters()">Reset Filters</button>
+      <h2>No se encontraron destinos</h2>
+      <p>Intenta ajustar tus filtros de búsqueda para encontrar ciudades que coincidan con tus intereses.</p>
+      <button onclick="resetFilters()">Restablecer Filtros</button>
     </div>
   </main>
 
@@ -662,43 +662,43 @@
   <script>
     // City data hardcoded for static site
     const cities = [
-      {"id":"mex_baja_california_ensenada_baja_california","name":"Ensenada","state":"Baja California","level":3,"label":"Precaución / Caution","best_time":"Apr – Oct","airport":"TIJ","connectivity":"Good (4G)"},
-      {"id":"mex_baja_california_tijuana_baja_california","name":"Tijuana","state":"Baja California","level":5,"label":"Peligroso / Dangerous","best_time":"Mar – May / Sep – Nov","airport":"TIJ","connectivity":"Excellent (Fiber/5G)"},
-      {"id":"mex_bcs_cabo_san_lucas","name":"Cabo San Lucas","state":"Baja California Sur","level":2,"label":"Seguro / Safe","best_time":"Dec – Apr","airport":"SJD","connectivity":"Good (4G)"},
-      {"id":"mex_bcs_la_paz","name":"La Paz","state":"Baja California Sur","level":2,"label":"Seguro / Safe","best_time":"Oct – May","airport":"LAP","connectivity":"Good (4G)"},
-      {"id":"mex_bcs_san_jose_del_cabo","name":"San José del Cabo","state":"Baja California Sur","level":2,"label":"Seguro / Safe","best_time":"Dec – Apr","airport":"SJD","connectivity":"Good (4G)"},
-      {"id":"mex_campeche_campeche_campeche","name":"Campeche","state":"Campeche","level":1,"label":"Muy Seguro / Very Safe","best_time":"Nov – Mar","airport":"CPE","connectivity":"Good (4G)"},
-      {"id":"mex_chiapas_palenque_chiapas","name":"Palenque","state":"Chiapas","level":3,"label":"Precaución / Caution","best_time":"Nov – Apr","airport":"VHC","connectivity":"Limited (4G spotty)"},
-      {"id":"mex_chiapas_san_cristobal_de_las_casas_chiapas","name":"San Cristóbal de las Casas","state":"Chiapas","level":3,"label":"Precaución / Caution","best_time":"Nov – Apr","airport":"TGZ","connectivity":"Moderate (4G)"},
-      {"id":"mex_ciudad_de_mexico_cuauhtemoc","name":"Ciudad de México","state":"Ciudad de México","level":3,"label":"Riesgo Moderado / Moderate","best_time":"Oct – Apr","airport":"MEX","connectivity":"Excellent (Fiber)"},
-      {"id":"mex_guanajuato_guanajuato_guanajuato","name":"Guanajuato","state":"Guanajuato","level":4,"label":"Inseguro / Unsafe","best_time":"Mar – Jun / Sep – Nov","airport":"BJX","connectivity":"Good (Fiber/4G)"},
-      {"id":"mex_guanajuato_san_miguel_de_allende_guanajuato","name":"San Miguel de Allende","state":"Guanajuato","level":3,"label":"Riesgo Moderado / Moderate","best_time":"Oct – Apr","airport":"BJX","connectivity":"Good (Fiber/4G)"},
-      {"id":"mex_guerrero_acapulco_guerrero","name":"Acapulco","state":"Guerrero","level":5,"label":"Peligroso / Dangerous","best_time":"Nov – Apr","airport":"ACA","connectivity":"Good (Fiber/4G)"},
-      {"id":"mex_guerrero_ixtapa-zihuatanejo_guerrero","name":"Zihuatanejo","state":"Guerrero","level":4,"label":"Riesgo Moderado / Moderate","best_time":"Nov – Apr","airport":"ZIH","connectivity":"Moderate (4G)"},
-      {"id":"mex_guerrero_taxco_guerrero","name":"Taxco","state":"Guerrero","level":4,"label":"Riesgo Moderado / Moderate","best_time":"Oct – May","airport":"MEX","connectivity":"Moderate (4G)"},
-      {"id":"mex_jalisco_guadalajara","name":"Guadalajara","state":"Jalisco","level":4,"label":"Precaución / Use Caution","best_time":"Oct – Dec & Feb – May","airport":"GDL","connectivity":"Excellent (Fiber/5G)"},
-      {"id":"mex_jalisco_puerto_vallarta","name":"Puerto Vallarta","state":"Jalisco","level":3,"label":"Moderado / Moderate","best_time":"Nov – Apr","airport":"PVR","connectivity":"Excellent (Fiber/5G)"},
-      {"id":"mex_michoacan_morelia_michoacan","name":"Morelia","state":"Michoacán","level":3,"label":"Precaución / Caution","best_time":"Oct – Apr","airport":"MLM","connectivity":"Good (4G)"},
-      {"id":"mex_michoacan_patzcuaro_michoacan","name":"Pátzcuaro","state":"Michoacán","level":5,"label":"Alto Riesgo / High Risk","best_time":"Oct – Nov (Day of Dead)","airport":"MLM","connectivity":"Limited (4G spotty)"},
-      {"id":"mex_nayarit_sayulita_nayarit","name":"Sayulita","state":"Nayarit","level":4,"label":"Riesgo Moderado / Moderate","best_time":"Nov – May","airport":"PVR","connectivity":"Moderate (4G spotty)"},
-      {"id":"mex_nuevo_leon_monterrey","name":"Monterrey","state":"Nuevo León","level":3,"label":"Moderado / Moderate","best_time":"Oct – Nov & Mar – May","airport":"MTY","connectivity":"Excellent (Business Hub)"},
-      {"id":"mex_oaxaca_oaxaca_de_juarez","name":"Oaxaca de Juárez","state":"Oaxaca","level":2,"label":"Seguro / Safe","best_time":"Oct – Apr","airport":"OAX","connectivity":"Good (Fiber/4G)"},
-      {"id":"mex_oaxaca_san_pedro","name":"Puerto Escondido","state":"Oaxaca","level":2,"label":"Seguro / Safe","best_time":"Nov – Feb","airport":"PXM","connectivity":"Fair (4G)"},
-      {"id":"mex_oaxaca_santa_maria_huatulco","name":"Huatulco","state":"Oaxaca","level":2,"label":"Seguro / Safe","best_time":"Nov – Apr","airport":"HUX","connectivity":"Moderate (4G)"},
-      {"id":"mex_puebla_puebla_puebla","name":"Puebla","state":"Puebla","level":3,"label":"Riesgo Moderado / Moderate","best_time":"Mar – May / Sep – Nov","airport":"PBC","connectivity":"Excellent (Fiber/5G)"},
-      {"id":"mex_queretaro_bernal_queretaro","name":"Bernal","state":"Querétaro","level":2,"label":"Seguro / Safe","best_time":"Mar (equinox); Oct – Apr","airport":"QRO","connectivity":"Limited (4G weak)"},
-      {"id":"mex_queretaro_queretaro_queretaro","name":"Querétaro","state":"Querétaro","level":2,"label":"Seguro / Safe","best_time":"Mar – May & Sep – Nov","airport":"QRO","connectivity":"Excellent (4G/5G)"},
-      {"id":"mex_quintana_roo_bacalar","name":"Bacalar","state":"Quintana Roo","level":2,"label":"Seguro / Safe","best_time":"Nov – Apr","airport":"CTM","connectivity":"Moderate (4G)"},
-      {"id":"mex_quintana_roo_cancun","name":"Cancún","state":"Quintana Roo","level":2,"label":"Seguro / Safe","best_time":"Dec – Apr","airport":"CUN","connectivity":"Excellent (Fiber)"},
-      {"id":"mex_quintana_roo_cozumel","name":"Cozumel","state":"Quintana Roo","level":2,"label":"Seguro / Safe","best_time":"Nov – May","airport":"CZM","connectivity":"Good (4G)"},
-      {"id":"mex_quintana_roo_holbox","name":"Holbox","state":"Quintana Roo","level":2,"label":"Seguro / Safe","best_time":"Jun – Sep (whale sharks); Nov – Apr","airport":"CUN","connectivity":"Limited (4G weak)"},
-      {"id":"mex_quintana_roo_isla_mujeres","name":"Isla Mujeres","state":"Quintana Roo","level":2,"label":"Seguro / Safe","best_time":"Nov – Apr","airport":"CUN","connectivity":"Good (4G)"},
-      {"id":"mex_quintana_roo_solidaridad_playa_del_carmen","name":"Playa del Carmen","state":"Quintana Roo","level":3,"label":"Riesgo Moderado / Moderate","best_time":"Nov – Apr","airport":"CUN","connectivity":"Excellent (Fiber/5G)"},
-      {"id":"mex_quintana_roo_tulum","name":"Tulum","state":"Quintana Roo","level":3,"label":"Riesgo Moderado / Moderate","best_time":"Nov – Apr","airport":"TQO/CUN","connectivity":"Fair (Fiber/4G patchy)"},
-      {"id":"mex_sinaloa_mazatlan_sinaloa","name":"Mazatlán","state":"Sinaloa","level":4,"label":"Riesgo Moderado / Moderate","best_time":"Oct – Apr","airport":"MZT","connectivity":"Good (4G)"},
-      {"id":"mex_slp_xilitla_slp","name":"Xilitla","state":"San Luis Potosí","level":3,"label":"Precaución / Caution","best_time":"Nov – Mar","airport":"SLP","connectivity":"Limited (4G weak)"},
-      {"id":"mex_yucatan_merida_yucatan","name":"Mérida","state":"Yucatán","level":1,"label":"Muy Seguro / Very Safe","best_time":"Nov – Feb","airport":"MID","connectivity":"Excellent (Fiber/5G)"},
-      {"id":"mex_yucatan_valladolid_yucatan","name":"Valladolid","state":"Yucatán","level":1,"label":"Seguro / Safe","best_time":"Nov – Mar","airport":"MID","connectivity":"Moderate (4G)"}
+      {"id":"mex_baja_california_ensenada_baja_california","name":"Ensenada","state":"Baja California","level":3,"label":"Precaución / Caution","best_time":"Abr – Oct","airport":"TIJ","connectivity":"Buena (4G)"},
+      {"id":"mex_baja_california_tijuana_baja_california","name":"Tijuana","state":"Baja California","level":5,"label":"Peligroso / Dangerous","best_time":"Mar – May / Sep – Nov","airport":"TIJ","connectivity":"Excelente (Fibra/5G)"},
+      {"id":"mex_bcs_cabo_san_lucas","name":"Cabo San Lucas","state":"Baja California Sur","level":2,"label":"Seguro / Safe","best_time":"Dic – Abr","airport":"SJD","connectivity":"Buena (4G)"},
+      {"id":"mex_bcs_la_paz","name":"La Paz","state":"Baja California Sur","level":2,"label":"Seguro / Safe","best_time":"Oct – May","airport":"LAP","connectivity":"Buena (4G)"},
+      {"id":"mex_bcs_san_jose_del_cabo","name":"San José del Cabo","state":"Baja California Sur","level":2,"label":"Seguro / Safe","best_time":"Dic – Abr","airport":"SJD","connectivity":"Buena (4G)"},
+      {"id":"mex_campeche_campeche_campeche","name":"Campeche","state":"Campeche","level":1,"label":"Muy Seguro / Very Safe","best_time":"Nov – Mar","airport":"CPE","connectivity":"Buena (4G)"},
+      {"id":"mex_chiapas_palenque_chiapas","name":"Palenque","state":"Chiapas","level":3,"label":"Precaución / Caution","best_time":"Nov – Abr","airport":"VHC","connectivity":"Limitada (4G intermitente)"},
+      {"id":"mex_chiapas_san_cristobal_de_las_casas_chiapas","name":"San Cristóbal de las Casas","state":"Chiapas","level":3,"label":"Precaución / Caution","best_time":"Nov – Abr","airport":"TGZ","connectivity":"Moderada (4G)"},
+      {"id":"mex_ciudad_de_mexico_cuauhtemoc","name":"Ciudad de México","state":"Ciudad de México","level":3,"label":"Riesgo Moderado / Moderate","best_time":"Oct – Abr","airport":"MEX","connectivity":"Excelente (Fibra)"},
+      {"id":"mex_guanajuato_guanajuato_guanajuato","name":"Guanajuato","state":"Guanajuato","level":4,"label":"Inseguro / Unsafe","best_time":"Mar – Jun / Sep – Nov","airport":"BJX","connectivity":"Buena (Fibra/4G)"},
+      {"id":"mex_guanajuato_san_miguel_de_allende_guanajuato","name":"San Miguel de Allende","state":"Guanajuato","level":3,"label":"Riesgo Moderado / Moderate","best_time":"Oct – Abr","airport":"BJX","connectivity":"Buena (Fibra/4G)"},
+      {"id":"mex_guerrero_acapulco_guerrero","name":"Acapulco","state":"Guerrero","level":5,"label":"Peligroso / Dangerous","best_time":"Nov – Abr","airport":"ACA","connectivity":"Buena (Fibra/4G)"},
+      {"id":"mex_guerrero_ixtapa-zihuatanejo_guerrero","name":"Zihuatanejo","state":"Guerrero","level":4,"label":"Riesgo Moderado / Moderate","best_time":"Nov – Abr","airport":"ZIH","connectivity":"Moderada (4G)"},
+      {"id":"mex_guerrero_taxco_guerrero","name":"Taxco","state":"Guerrero","level":4,"label":"Riesgo Moderado / Moderate","best_time":"Oct – May","airport":"MEX","connectivity":"Moderada (4G)"},
+      {"id":"mex_jalisco_guadalajara","name":"Guadalajara","state":"Jalisco","level":4,"label":"Precaución / Use Caution","best_time":"Oct – Dic & Feb – May","airport":"GDL","connectivity":"Excelente (Fibra/5G)"},
+      {"id":"mex_jalisco_puerto_vallarta","name":"Puerto Vallarta","state":"Jalisco","level":3,"label":"Moderado / Moderate","best_time":"Nov – Abr","airport":"PVR","connectivity":"Excelente (Fibra/5G)"},
+      {"id":"mex_michoacan_morelia_michoacan","name":"Morelia","state":"Michoacán","level":3,"label":"Precaución / Caution","best_time":"Oct – Abr","airport":"MLM","connectivity":"Buena (4G)"},
+      {"id":"mex_michoacan_patzcuaro_michoacan","name":"Pátzcuaro","state":"Michoacán","level":5,"label":"Alto Riesgo / High Risk","best_time":"Oct – Nov (Día de Muertos)","airport":"MLM","connectivity":"Limitada (4G intermitente)"},
+      {"id":"mex_nayarit_sayulita_nayarit","name":"Sayulita","state":"Nayarit","level":4,"label":"Riesgo Moderado / Moderate","best_time":"Nov – May","airport":"PVR","connectivity":"Moderada (4G intermitente)"},
+      {"id":"mex_nuevo_leon_monterrey","name":"Monterrey","state":"Nuevo León","level":3,"label":"Moderado / Moderate","best_time":"Oct – Nov & Mar – May","airport":"MTY","connectivity":"Excelente (Centro de Negocios)"},
+      {"id":"mex_oaxaca_oaxaca_de_juarez","name":"Oaxaca de Juárez","state":"Oaxaca","level":2,"label":"Seguro / Safe","best_time":"Oct – Abr","airport":"OAX","connectivity":"Buena (Fibra/4G)"},
+      {"id":"mex_oaxaca_san_pedro","name":"Puerto Escondido","state":"Oaxaca","level":2,"label":"Seguro / Safe","best_time":"Nov – Feb","airport":"PXM","connectivity":"Regular (4G)"},
+      {"id":"mex_oaxaca_santa_maria_huatulco","name":"Huatulco","state":"Oaxaca","level":2,"label":"Seguro / Safe","best_time":"Nov – Abr","airport":"HUX","connectivity":"Moderada (4G)"},
+      {"id":"mex_puebla_puebla_puebla","name":"Puebla","state":"Puebla","level":3,"label":"Riesgo Moderado / Moderate","best_time":"Mar – May / Sep – Nov","airport":"PBC","connectivity":"Excelente (Fibra/5G)"},
+      {"id":"mex_queretaro_bernal_queretaro","name":"Bernal","state":"Querétaro","level":2,"label":"Seguro / Safe","best_time":"Mar (equinoccio); Oct – Abr","airport":"QRO","connectivity":"Limitada (4G débil)"},
+      {"id":"mex_queretaro_queretaro_queretaro","name":"Querétaro","state":"Querétaro","level":2,"label":"Seguro / Safe","best_time":"Mar – May & Sep – Nov","airport":"QRO","connectivity":"Excelente (4G/5G)"},
+      {"id":"mex_quintana_roo_bacalar","name":"Bacalar","state":"Quintana Roo","level":2,"label":"Seguro / Safe","best_time":"Nov – Abr","airport":"CTM","connectivity":"Moderada (4G)"},
+      {"id":"mex_quintana_roo_cancun","name":"Cancún","state":"Quintana Roo","level":2,"label":"Seguro / Safe","best_time":"Dic – Abr","airport":"CUN","connectivity":"Excelente (Fibra)"},
+      {"id":"mex_quintana_roo_cozumel","name":"Cozumel","state":"Quintana Roo","level":2,"label":"Seguro / Safe","best_time":"Nov – May","airport":"CZM","connectivity":"Buena (4G)"},
+      {"id":"mex_quintana_roo_holbox","name":"Holbox","state":"Quintana Roo","level":2,"label":"Seguro / Safe","best_time":"Jun – Sep (tiburón ballena); Nov – Abr","airport":"CUN","connectivity":"Limitada (4G débil)"},
+      {"id":"mex_quintana_roo_isla_mujeres","name":"Isla Mujeres","state":"Quintana Roo","level":2,"label":"Seguro / Safe","best_time":"Nov – Abr","airport":"CUN","connectivity":"Buena (4G)"},
+      {"id":"mex_quintana_roo_solidaridad_playa_del_carmen","name":"Playa del Carmen","state":"Quintana Roo","level":3,"label":"Riesgo Moderado / Moderate","best_time":"Nov – Abr","airport":"CUN","connectivity":"Excelente (Fibra/5G)"},
+      {"id":"mex_quintana_roo_tulum","name":"Tulum","state":"Quintana Roo","level":3,"label":"Riesgo Moderado / Moderate","best_time":"Nov – Abr","airport":"TQO/CUN","connectivity":"Regular (Fibra/4G irregular)"},
+      {"id":"mex_sinaloa_mazatlan_sinaloa","name":"Mazatlán","state":"Sinaloa","level":4,"label":"Riesgo Moderado / Moderate","best_time":"Oct – Abr","airport":"MZT","connectivity":"Buena (4G)"},
+      {"id":"mex_slp_xilitla_slp","name":"Xilitla","state":"San Luis Potosí","level":3,"label":"Precaución / Caution","best_time":"Nov – Mar","airport":"SLP","connectivity":"Limitada (4G débil)"},
+      {"id":"mex_yucatan_merida_yucatan","name":"Mérida","state":"Yucatán","level":1,"label":"Muy Seguro / Very Safe","best_time":"Nov – Feb","airport":"MID","connectivity":"Excelente (Fibra/5G)"},
+      {"id":"mex_yucatan_valladolid_yucatan","name":"Valladolid","state":"Yucatán","level":1,"label":"Seguro / Safe","best_time":"Nov – Mar","airport":"MID","connectivity":"Moderada (4G)"}
     ];
 
     let currentFilter = 'all';
@@ -776,11 +776,11 @@
       card.setAttribute('data-level', city.level);
 
       const safetyLabels = {
-        1: 'Very Safe',
-        2: 'Safe',
-        3: 'Moderate',
-        4: 'Caution',
-        5: 'Dangerous'
+        1: 'Muy Seguro',
+        2: 'Seguro',
+        3: 'Moderado',
+        4: 'Precaución',
+        5: 'Peligroso'
       };
 
       card.innerHTML = `
@@ -808,7 +808,7 @@
             </div>
           </div>
 
-          <a href="/city.html?id=${encodeURIComponent(city.id)}" class="card-button">View Guide →</a>
+          <a href="/es/city.html?id=${encodeURIComponent(city.id)}" class="card-button">Ver Guía →</a>
         </div>
       `;
 
@@ -839,21 +839,21 @@
 <!-- ── TIP JAR WIDGET ── -->
 <div id="tip-jar" style="position:fixed;bottom:20px;right:20px;z-index:9999;max-width:300px;font-family:'Inter',sans-serif;display:block;">
   <div style="background:#F5F0EB;border:1px solid rgba(196,128,64,0.35);border-radius:14px;box-shadow:0 6px 28px rgba(0,0,0,0.14);padding:14px 16px 12px;position:relative;">
-    <button onclick="document.getElementById('tip-jar').style.display='none'" style="position:absolute;top:8px;right:10px;background:none;border:none;cursor:pointer;font-size:14px;color:#8AA898;line-height:1;" aria-label="Close">✕</button>
+    <button onclick="document.getElementById('tip-jar').style.display='none'" style="position:absolute;top:8px;right:10px;background:none;border:none;cursor:pointer;font-size:14px;color:#8AA898;line-height:1;" aria-label="Cerrar">✕</button>
     <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">
       <div style="width:28px;height:28px;background:rgba(196,128,64,0.12);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:15px;">☕</div>
       <div>
-        <div style="font-size:11px;font-weight:700;color:#0F2419;">Enjoying MexiGuide?</div>
-        <div style="font-size:10px;color:#4A7A60;">Buy us a coffee to keep it free ✌️</div>
+        <div style="font-size:11px;font-weight:700;color:#0F2419;">¿Te gusta MexiGuide?</div>
+        <div style="font-size:10px;color:#4A7A60;">Invítanos un café para mantenerlo gratis ✌️</div>
       </div>
     </div>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:10px;">
-      <a href="https://ko-fi.com/mexiguide" target="_blank" rel="noopener" style="text-align:center;padding:7px 4px;background:rgba(196,128,64,0.10);border:1px solid rgba(196,128,64,0.25);border-radius:8px;text-decoration:none;color:#0F2419;font-size:10px;font-weight:600;transition:background 0.2s;" onmouseover="this.style.background='rgba(196,128,64,0.2)'" onmouseout="this.style.background='rgba(196,128,64,0.10)'">☕ Coffee<br><span style="font-weight:400;color:#4A7A60;">$1</span></a>
+      <a href="https://ko-fi.com/mexiguide" target="_blank" rel="noopener" style="text-align:center;padding:7px 4px;background:rgba(196,128,64,0.10);border:1px solid rgba(196,128,64,0.25);border-radius:8px;text-decoration:none;color:#0F2419;font-size:10px;font-weight:600;transition:background 0.2s;" onmouseover="this.style.background='rgba(196,128,64,0.2)'" onmouseout="this.style.background='rgba(196,128,64,0.10)'">☕ Café<br><span style="font-weight:400;color:#4A7A60;">$1</span></a>
       <a href="https://ko-fi.com/mexiguide" target="_blank" rel="noopener" style="text-align:center;padding:7px 4px;background:rgba(196,128,64,0.10);border:1px solid rgba(196,128,64,0.25);border-radius:8px;text-decoration:none;color:#0F2419;font-size:10px;font-weight:600;transition:background 0.2s;" onmouseover="this.style.background='rgba(196,128,64,0.2)'" onmouseout="this.style.background='rgba(196,128,64,0.10)'">🌮 Taco<br><span style="font-weight:400;color:#4A7A60;">$3</span></a>
-      <a href="https://ko-fi.com/mexiguide" target="_blank" rel="noopener" style="text-align:center;padding:7px 4px;background:rgba(196,128,64,0.10);border:1px solid rgba(196,128,64,0.25);border-radius:8px;text-decoration:none;color:#0F2419;font-size:10px;font-weight:600;transition:background 0.2s;" onmouseover="this.style.background='rgba(196,128,64,0.2)'" onmouseout="this.style.background='rgba(196,128,64,0.10)'">🍺 Beer<br><span style="font-weight:400;color:#4A7A60;">$5</span></a>
-      <a href="https://ko-fi.com/mexiguide" target="_blank" rel="noopener" style="text-align:center;padding:7px 4px;background:rgba(196,128,64,0.10);border:1px solid rgba(196,128,64,0.25);border-radius:8px;text-decoration:none;color:#0F2419;font-size:10px;font-weight:600;transition:background 0.2s;" onmouseover="this.style.background='rgba(196,128,64,0.2)'" onmouseout="this.style.background='rgba(196,128,64,0.10)'">🎉 Amazing!<br><span style="font-weight:400;color:#4A7A60;">$10</span></a>
+      <a href="https://ko-fi.com/mexiguide" target="_blank" rel="noopener" style="text-align:center;padding:7px 4px;background:rgba(196,128,64,0.10);border:1px solid rgba(196,128,64,0.25);border-radius:8px;text-decoration:none;color:#0F2419;font-size:10px;font-weight:600;transition:background 0.2s;" onmouseover="this.style.background='rgba(196,128,64,0.2)'" onmouseout="this.style.background='rgba(196,128,64,0.10)'">🍺 Cerveza<br><span style="font-weight:400;color:#4A7A60;">$5</span></a>
+      <a href="https://ko-fi.com/mexiguide" target="_blank" rel="noopener" style="text-align:center;padding:7px 4px;background:rgba(196,128,64,0.10);border:1px solid rgba(196,128,64,0.25);border-radius:8px;text-decoration:none;color:#0F2419;font-size:10px;font-weight:600;transition:background 0.2s;" onmouseover="this.style.background='rgba(196,128,64,0.2)'" onmouseout="this.style.background='rgba(196,128,64,0.10)'">🎉 ¡Increíble!<br><span style="font-weight:400;color:#4A7A60;">$10</span></a>
     </div>
-    <a href="https://ko-fi.com/mexiguide" target="_blank" rel="noopener" style="display:block;text-align:center;background:linear-gradient(135deg,#C48040,#E9C46A);color:#fff;font-size:11px;font-weight:700;padding:8px;border-radius:8px;text-decoration:none;letter-spacing:0.3px;">Tip Jar ☕ →</a>
+    <a href="https://ko-fi.com/mexiguide" target="_blank" rel="noopener" style="display:block;text-align:center;background:linear-gradient(135deg,#C48040,#E9C46A);color:#fff;font-size:11px;font-weight:700;padding:8px;border-radius:8px;text-decoration:none;letter-spacing:0.3px;">Propina ☕ →</a>
   </div>
 </div>
 
