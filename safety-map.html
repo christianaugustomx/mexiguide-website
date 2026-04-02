@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mexico Safety Map — MexiGuide</title>
+  <meta name="description" content="Interactive safety map of Mexico showing security zones by municipality. Color-coded from green (safe) to red (high risk)." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Merriweather:wght@700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --g-darkest: #0F2419;
+      --g-dark:    #1B4332;
+      --g-mid:     #2D6A4F;
+      --jade:      #4A9E80;
+      --jade-dim:  rgba(74,158,128,0.12);
+      --gold:      #E9C46A;
+      --card:      #F5F0EB;
+      --base:      #E8E2DA;
+      --border:    rgba(27,67,50,0.12);
+      --text-hi:   #0F2419;
+      --text-mid:  #4A7A60;
+      --text-lo:   #8AA898;
+
+      --c-green:   #28A745;
+      --c-lgreen:  #81C784;
+      --c-yellow:  #FDD835;
+      --c-orange:  #EF6C00;
+      --c-red:     #C62828;
+    }
+
+    html, body { height: 100%; font-family: 'Inter', sans-serif; background: var(--base); }
+
+    /* ── DECO STRIPE ── */
+    .deco-stripe {
+      height: 4px;
+      background: repeating-linear-gradient(90deg,
+        #E76F51 0px, #E76F51 8px,
+        #F4A261 8px, #F4A261 16px,
+        #2A9D8F 16px, #2A9D8F 24px,
+        #E9C46A 24px, #E9C46A 32px
+      );
+    }
+
+    /* ── NAV ── */
+    nav {
+      background: rgba(245,240,235,0.96);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      max-width: 1120px; margin: 0 auto;
+      padding: 0 28px; height: 56px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .nav-logo {
+      display: flex; align-items: center; gap: 9px;
+      text-decoration: none;
+    }
+    .nav-logo-mark {
+      width: 30px; height: 30px;
+      background: linear-gradient(135deg, var(--g-dark) 0%, var(--jade) 100%);
+      border-radius: 9px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 15px;
+      box-shadow: 0 2px 8px rgba(27,67,50,0.25);
+    }
+    .nav-wordmark {
+      font-family: 'Merriweather', serif;
+      font-size: 16px; font-weight: 700; color: var(--g-dark);
+    }
+    .nav-right {
+      display: flex; align-items: center; gap: 16px;
+    }
+    .nav-back {
+      text-decoration: none; color: var(--text-mid);
+      font-size: 13px; font-weight: 500;
+      display: flex; align-items: center; gap: 5px;
+      transition: color 0.2s;
+    }
+    .nav-back:hover { color: var(--g-dark); }
+    .nav-pill {
+      background: var(--jade);
+      color: white;
+      padding: 6px 16px; border-radius: 7px;
+      font-size: 12px; font-weight: 700;
+      text-decoration: none;
+      box-shadow: 0 2px 8px rgba(74,158,128,0.3);
+      transition: background 0.2s;
+    }
+    .nav-pill:hover { background: var(--g-mid); }
+
+    /* ── HEADER BANNER ── */
+    .header {
+      background: linear-gradient(135deg, var(--g-darkest) 0%, var(--g-dark) 60%, var(--g-mid) 100%);
+      padding: 24px 28px 20px;
+      position: relative; overflow: hidden;
+    }
+    .header-glow {
+      position: absolute; top: -40px; right: -40px;
+      width: 240px; height: 240px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(233,196,106,0.12) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .header-inner {
+      max-width: 1120px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 12px;
+      position: relative; z-index: 1;
+    }
+    .header-left h1 {
+      font-family: 'Merriweather', serif;
+      font-size: 22px; font-weight: 900; color: white;
+      letter-spacing: -0.4px; line-height: 1.2; margin-bottom: 4px;
+    }
+    .header-left p {
+      font-size: 13px; color: rgba(255,255,255,0.5);
+    }
+    .header-badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: rgba(233,196,106,0.14);
+      border: 1px solid rgba(233,196,106,0.3);
+      color: var(--gold); padding: 5px 12px;
+      border-radius: 20px; font-size: 11px; font-weight: 700;
+    }
+
+    /* ── MAIN LAYOUT ── */
+    .main {
+      display: flex;
+      height: calc(100vh - 56px - 8px - 64px - 4px); /* viewport - nav - deco - header - deco */
+      min-height: 500px;
+    }
+
+    /* ── SIDEBAR ── */
+    .sidebar {
+      width: 300px;
+      flex-shrink: 0;
+      background: var(--card);
+      border-right: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    .sidebar-section {
+      padding: 16px;
+      border-bottom: 1px solid var(--border);
+    }
+    .sidebar-section h3 {
+      font-size: 10px; font-weight: 700; letter-spacing: 1.5px;
+      text-transform: uppercase; color: var(--text-lo);
+      margin-bottom: 10px;
+    }
+
+    /* Legend */
+    .legend-items { display: flex; flex-direction: column; gap: 7px; }
+    .legend-item {
+      display: flex; align-items: center; gap: 10px;
+      cursor: pointer; padding: 6px 8px; border-radius: 8px;
+      transition: background 0.15s;
+    }
+    .legend-item:hover { background: var(--base); }
+    .legend-item.active { background: var(--base); }
+    .legend-dot {
+      width: 14px; height: 14px; border-radius: 4px;
+      flex-shrink: 0; opacity: 0.85;
+    }
+    .legend-dot.green  { background: var(--c-green); }
+    .legend-dot.lgreen { background: var(--c-lgreen); }
+    .legend-dot.yellow { background: var(--c-yellow); }
+    .legend-dot.orange { background: var(--c-orange); }
+    .legend-dot.red    { background: var(--c-red); }
+    .legend-text { flex: 1; }
+    .legend-label { font-size: 13px; font-weight: 600; color: var(--text-hi); }
+    .legend-count {
+      font-size: 11px; font-weight: 700;
+      color: white; padding: 1px 6px; border-radius: 10px;
+      min-width: 24px; text-align: center;
+    }
+    .legend-count.green  { background: var(--c-green); }
+    .legend-count.lgreen { background: var(--c-lgreen); color: var(--g-dark); }
+    .legend-count.yellow { background: var(--c-yellow); color: var(--g-dark); }
+    .legend-count.orange { background: var(--c-orange); }
+    .legend-count.red    { background: var(--c-red); }
+
+    /* Filter chips */
+    .filter-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+    .filter-chip {
+      display: flex; align-items: center; gap: 4px;
+      padding: 4px 10px; border-radius: 20px;
+      border: 1px solid var(--border);
+      background: var(--base);
+      font-size: 11px; font-weight: 600; color: var(--text-mid);
+      cursor: pointer; transition: all 0.15s;
+    }
+    .filter-chip:hover, .filter-chip.on {
+      border-color: var(--jade); background: var(--jade-dim); color: var(--jade);
+    }
+    .filter-dot {
+      width: 8px; height: 8px; border-radius: 50%;
+    }
+
+    /* Zone list */
+    .zone-list {
+      flex: 1;
+      overflow-y: auto;
+      scrollbar-width: thin;
+      scrollbar-color: var(--border) transparent;
+    }
+    .zone-item {
+      display: flex; align-items: center; gap: 10px;
+      padding: 10px 16px;
+      border-bottom: 1px solid rgba(27,67,50,0.06);
+      cursor: pointer; transition: background 0.12s;
+    }
+    .zone-item:hover { background: var(--base); }
+    .zone-item-dot {
+      width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0;
+    }
+    .zone-item-name {
+      flex: 1; font-size: 12px; font-weight: 600; color: var(--text-hi);
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    }
+    .zone-item-city {
+      font-size: 10px; color: var(--text-lo); font-weight: 500;
+      white-space: nowrap;
+    }
+
+    /* ── MAP ── */
+    .map-wrap {
+      flex: 1;
+      position: relative;
+    }
+    #map {
+      width: 100%; height: 100%;
+      background: #c8d8c0;
+    }
+
+    /* Loading overlay */
+    #loading {
+      position: absolute; inset: 0;
+      background: rgba(245,240,235,0.92);
+      backdrop-filter: blur(8px);
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      z-index: 1000;
+      gap: 14px;
+    }
+    .loading-spinner {
+      width: 40px; height: 40px;
+      border: 3px solid var(--border);
+      border-top-color: var(--jade);
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .loading-text { font-size: 13px; color: var(--text-mid); font-weight: 500; }
+
+    /* Error overlay */
+    #error-msg {
+      position: absolute; bottom: 16px; left: 50%; transform: translateX(-50%);
+      background: #C62828; color: white;
+      padding: 10px 20px; border-radius: 10px;
+      font-size: 13px; font-weight: 600;
+      z-index: 1000; display: none;
+      box-shadow: 0 4px 16px rgba(198,40,40,0.35);
+    }
+
+    /* Stats bar above map */
+    #stats-bar {
+      position: absolute; top: 12px; right: 12px;
+      display: flex; gap: 8px; z-index: 500;
+    }
+    .stat-pill {
+      background: rgba(245,240,235,0.92);
+      backdrop-filter: blur(12px);
+      border: 1px solid var(--border);
+      padding: 5px 11px; border-radius: 20px;
+      font-size: 11px; font-weight: 700;
+      color: var(--text-hi);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .stat-pill span { color: var(--jade); }
+
+    /* Leaflet popup custom style */
+    .leaflet-popup-content-wrapper {
+      background: var(--card) !important;
+      border: 1px solid var(--border) !important;
+      border-radius: 12px !important;
+      box-shadow: 0 8px 32px rgba(27,67,50,0.18) !important;
+    }
+    .leaflet-popup-tip { background: var(--card) !important; }
+    .leaflet-popup-content { margin: 0 !important; padding: 0 !important; }
+    .popup-inner { padding: 14px 16px; min-width: 180px; }
+    .popup-tag {
+      font-size: 9px; font-weight: 700; letter-spacing: 1.5px;
+      text-transform: uppercase; color: var(--text-lo); margin-bottom: 4px;
+    }
+    .popup-name {
+      font-family: 'Merriweather', serif;
+      font-size: 15px; font-weight: 700; color: var(--text-hi);
+      margin-bottom: 2px;
+    }
+    .popup-city { font-size: 11px; color: var(--text-lo); margin-bottom: 10px; }
+    .popup-badge {
+      display: inline-flex; align-items: center; gap: 5px;
+      padding: 4px 10px; border-radius: 20px;
+      font-size: 11px; font-weight: 700;
+      border: 1px solid;
+    }
+    .popup-dot { width: 8px; height: 8px; border-radius: 50%; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      .sidebar { display: none; }
+      .header-left h1 { font-size: 18px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="deco-stripe"></div>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-inner">
+      <a href="mexiguide-website.html" class="nav-logo">
+        <div class="nav-logo-mark">🌮</div>
+        <span class="nav-wordmark">MexiGuide</span>
+      </a>
+      <div class="nav-right">
+        <a href="mexiguide-website.html" class="nav-back">← Back to Site</a>
+        <a href="mexiguide-website.html#download" class="nav-pill">Download App</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-glow"></div>
+    <div class="header-inner">
+      <div class="header-left">
+        <h1>🗺️ Mexico Safety Map</h1>
+        <p>Live security zones by municipality — updated from MexiGuide data</p>
+      </div>
+      <div class="header-badge">🛡️ Live Safety Data</div>
+    </div>
+  </div>
+  <div class="deco-stripe"></div>
+
+  <!-- MAIN -->
+  <div class="main">
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+      <!-- Legend -->
+      <div class="sidebar-section">
+        <h3>Safety Levels</h3>
+        <div class="legend-items">
+          <div class="legend-item" onclick="filterByColor('green')">
+            <div class="legend-dot green"></div>
+            <div class="legend-text">
+              <div class="legend-label">Very Safe</div>
+            </div>
+            <span class="legend-count green" id="cnt-green">–</span>
+          </div>
+          <div class="legend-item" onclick="filterByColor('lgreen')">
+            <div class="legend-dot lgreen"></div>
+            <div class="legend-text">
+              <div class="legend-label">Safe</div>
+            </div>
+            <span class="legend-count lgreen" id="cnt-lgreen">–</span>
+          </div>
+          <div class="legend-item" onclick="filterByColor('yellow')">
+            <div class="legend-dot yellow"></div>
+            <div class="legend-text">
+              <div class="legend-label">Moderate</div>
+            </div>
+            <span class="legend-count yellow" id="cnt-yellow">–</span>
+          </div>
+          <div class="legend-item" onclick="filterByColor('orange')">
+            <div class="legend-dot orange"></div>
+            <div class="legend-text">
+              <div class="legend-label">Unsafe</div>
+            </div>
+            <span class="legend-count orange" id="cnt-orange">–</span>
+          </div>
+          <div class="legend-item" onclick="filterByColor('red')">
+            <div class="legend-dot red"></div>
+            <div class="legend-text">
+              <div class="legend-label">High Risk</div>
+            </div>
+            <span class="legend-count red" id="cnt-red">–</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Filter -->
+      <div class="sidebar-section">
+        <h3>Filter by Level</h3>
+        <div class="filter-chips">
+          <div class="filter-chip on" id="chip-all" onclick="setFilter('all')">All Zones</div>
+          <div class="filter-chip" id="chip-safe" onclick="setFilter('safe')">
+            <div class="filter-dot" style="background:var(--c-green)"></div>Safe
+          </div>
+          <div class="filter-chip" id="chip-moderate" onclick="setFilter('moderate')">
+            <div class="filter-dot" style="background:var(--c-yellow)"></div>Moderate
+          </div>
+          <div class="filter-chip" id="chip-risk" onclick="setFilter('risk')">
+            <div class="filter-dot" style="background:var(--c-red)"></div>High Risk
+          </div>
+        </div>
+      </div>
+
+      <!-- Zone List -->
+      <div class="sidebar-section" style="padding-bottom:8px; border-bottom:none;">
+        <h3>Zones <span id="zone-count" style="font-weight:400;color:var(--text-lo);text-transform:none;letter-spacing:0">loading…</span></h3>
+      </div>
+      <div class="zone-list" id="zone-list">
+        <!-- populated by JS -->
+      </div>
+    </div>
+
+    <!-- MAP AREA -->
+    <div class="map-wrap">
+      <!-- Loading overlay -->
+      <div id="loading">
+        <div class="loading-spinner"></div>
+        <div class="loading-text">Loading safety zones…</div>
+      </div>
+      <!-- Stats bar -->
+      <div id="stats-bar" style="display:none">
+        <div class="stat-pill">Zones: <span id="sb-total">0</span></div>
+        <div class="stat-pill">🟢 <span id="sb-safe">0</span> safe</div>
+        <div class="stat-pill">🔴 <span id="sb-risk">0</span> high risk</div>
+      </div>
+      <!-- Error -->
+      <div id="error-msg"></div>
+      <!-- Leaflet map -->
+      <div id="map"></div>
+    </div>
+
+  </div><!-- /main -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+  <script>
+    // ── Config ────────────────────────────────────────────────────────────────
+    const SUPABASE_URL  = 'https://hypmnmvjdjcooxdhrwwp.supabase.co';
+    const SUPABASE_KEY  = 'sb_publishable_tYX_NLVNzQvNAfAP30gXuw_sQ7rVDsi';
+
+    // Color tokens — matching AppConstants.securityColors
+    const COLOR_MAP = {
+      'green':  { fill: '#28A745', label: 'Very Safe',  cls: 'green'  },
+      'lgreen': { fill: '#81C784', label: 'Safe',       cls: 'lgreen' },
+      'yellow': { fill: '#FDD835', label: 'Moderate',   cls: 'yellow' },
+      'orange': { fill: '#EF6C00', label: 'Unsafe',     cls: 'orange' },
+      'red':    { fill: '#C62828', label: 'High Risk',  cls: 'red'    },
+    };
+
+    // Normalize color field from DB → our keys
+    function normalizeColor(c) {
+      if (!c) return 'yellow';
+      c = c.toLowerCase().trim();
+      if (c === 'green' || c === '#28a745') return 'green';
+      if (c === 'light_green' || c === 'lightgreen' || c === '#81c784') return 'lgreen';
+      if (c === 'yellow' || c === '#fdd835') return 'yellow';
+      if (c === 'orange' || c === '#ef6c00') return 'orange';
+      if (c === 'red' || c === '#c62828') return 'red';
+      // hex fallback
+      if (c.startsWith('#')) {
+        // try to match by brightness
+        return 'yellow';
+      }
+      return 'yellow';
+    }
+
+    // ── Init Map ──────────────────────────────────────────────────────────────
+    const map = L.map('map', {
+      center: [23.5, -102.5],
+      zoom: 5,
+      zoomControl: true,
+      scrollWheelZoom: true,
+    });
+
+    // Tile layer — light CartoDB Positron (clean, matches app aesthetic)
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+      attribution: '© OpenStreetMap contributors © CARTO',
+      subdomains: 'abcd',
+      maxZoom: 19,
+    }).addTo(map);
+
+    // ── State ─────────────────────────────────────────────────────────────────
+    let allZones = [];
+    let allLayers = {};   // id → L.Polygon|LayerGroup
+    let activeFilter = 'all';
+    let counts = { green: 0, lgreen: 0, yellow: 0, orange: 0, red: 0 };
+
+    // ── Fetch from Supabase ───────────────────────────────────────────────────
+    async function fetchZones() {
+      const res = await fetch(`${SUPABASE_URL}/rest/v1/rpc/get_all_zones`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'apikey': SUPABASE_KEY,
+          'Authorization': `Bearer ${SUPABASE_KEY}`,
+        },
+        body: JSON.stringify({}),
+      });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      return await res.json();
+    }
+
+    // ── Parse GeoJSON geometry → Leaflet coords ───────────────────────────────
+    function parseGeometry(geojson) {
+      // geojson is the polygon_geojson field: {type, coordinates}
+      const rings = [];
+      if (!geojson) return rings;
+      const { type, coordinates } = geojson;
+      if (type === 'Polygon') {
+        const outer = coordinates[0];
+        if (outer && outer.length >= 3) {
+          rings.push(outer.map(([lng, lat]) => [lat, lng]));
+        }
+      } else if (type === 'MultiPolygon') {
+        for (const poly of coordinates) {
+          const outer = poly[0];
+          if (outer && outer.length >= 3) {
+            rings.push(outer.map(([lng, lat]) => [lat, lng]));
+          }
+        }
+      }
+      return rings;
+    }
+
+    // ── Build popup HTML ──────────────────────────────────────────────────────
+    function makePopup(zone, colorKey) {
+      const c = COLOR_MAP[colorKey];
+      return `
+        <div class="popup-inner">
+          <div class="popup-tag">Safety Zone</div>
+          <div class="popup-name">${zone.name}</div>
+          <div class="popup-city">📍 ${zone.city}</div>
+          <div class="popup-badge" style="background:${c.fill}18;border-color:${c.fill}44;color:${c.fill}">
+            <div class="popup-dot" style="background:${c.fill}"></div>
+            ${c.label}
+          </div>
+        </div>`;
+    }
+
+    // ── Render zones on map ───────────────────────────────────────────────────
+    function renderZones(zones) {
+      // Reset counts
+      counts = { green: 0, lgreen: 0, yellow: 0, orange: 0, red: 0 };
+
+      const zoneListEl = document.getElementById('zone-list');
+      zoneListEl.innerHTML = '';
+
+      zones.forEach(zone => {
+        const colorKey = normalizeColor(zone.color);
+        const c = COLOR_MAP[colorKey];
+        counts[colorKey]++;
+
+        const rings = parseGeometry(zone.polygon_geojson);
+        if (rings.length === 0) return;
+
+        // One layer group per zone (supports MultiPolygon)
+        const layers = rings.map(ring =>
+          L.polygon(ring, {
+            color: c.fill,
+            fillColor: c.fill,
+            fillOpacity: 0.35,
+            weight: 1.2,
+            opacity: 0.7,
+          })
+        );
+
+        const group = L.layerGroup(layers);
+        const popup = L.popup({ maxWidth: 240, className: 'mexiguide-popup' })
+          .setContent(makePopup(zone, colorKey));
+
+        layers.forEach(layer => {
+          layer.bindPopup(popup);
+          layer.on('mouseover', function() {
+            this.setStyle({ fillOpacity: 0.6, weight: 2 });
+          });
+          layer.on('mouseout', function() {
+            this.setStyle({ fillOpacity: 0.35, weight: 1.2 });
+          });
+        });
+
+        group.addTo(map);
+        allLayers[zone.id] = { group, colorKey, zone };
+
+        // Zone list item
+        const item = document.createElement('div');
+        item.className = 'zone-item';
+        item.innerHTML = `
+          <div class="zone-item-dot" style="background:${c.fill}"></div>
+          <div class="zone-item-name">${zone.name}</div>
+          <div class="zone-item-city">${zone.city}</div>`;
+        item.onclick = () => {
+          if (rings.length > 0) {
+            const [lat, lng] = rings[0][0];
+            map.setView([lat, lng], 10, { animate: true });
+            layers[0].openPopup();
+          }
+        };
+        zoneListEl.appendChild(item);
+      });
+
+      // Update counts
+      Object.keys(counts).forEach(k => {
+        const el = document.getElementById(`cnt-${k}`);
+        if (el) el.textContent = counts[k];
+      });
+
+      // Stats bar
+      const total = Object.values(counts).reduce((a, b) => a + b, 0);
+      const safeCount = (counts.green || 0) + (counts.lgreen || 0);
+      const riskCount = (counts.red || 0) + (counts.orange || 0);
+      document.getElementById('sb-total').textContent = total;
+      document.getElementById('sb-safe').textContent = safeCount;
+      document.getElementById('sb-risk').textContent = riskCount;
+      document.getElementById('stats-bar').style.display = 'flex';
+      document.getElementById('zone-count').textContent = `(${total})`;
+    }
+
+    // ── Filter logic ──────────────────────────────────────────────────────────
+    function filterByColor(colorKey) {
+      // Just zoom/highlight — not hide
+    }
+
+    function setFilter(filter) {
+      activeFilter = filter;
+      // Update chip styles
+      ['all','safe','moderate','risk'].forEach(f => {
+        document.getElementById(`chip-${f}`).classList.toggle('on', f === filter);
+      });
+      // Show/hide layers
+      Object.values(allLayers).forEach(({ group, colorKey }) => {
+        let show = true;
+        if (filter === 'safe')     show = ['green','lgreen'].includes(colorKey);
+        if (filter === 'moderate') show = colorKey === 'yellow';
+        if (filter === 'risk')     show = ['orange','red'].includes(colorKey);
+        if (show) {
+          if (!map.hasLayer(group)) group.addTo(map);
+        } else {
+          if (map.hasLayer(group)) map.removeLayer(group);
+        }
+      });
+    }
+
+    // ── Load ──────────────────────────────────────────────────────────────────
+    (async () => {
+      try {
+        const raw = await fetchZones();
+        allZones = Array.isArray(raw) ? raw : [];
+
+        if (allZones.length === 0) {
+          throw new Error('No zones returned from Supabase');
+        }
+
+        renderZones(allZones);
+        document.getElementById('loading').style.display = 'none';
+      } catch (err) {
+        console.error('Map load error:', err);
+        document.getElementById('loading').style.display = 'none';
+        const errEl = document.getElementById('error-msg');
+        errEl.textContent = `⚠️ Could not load safety data — ${err.message}`;
+        errEl.style.display = 'block';
+        setTimeout(() => errEl.style.display = 'none', 6000);
+      }
+    })();
+  </script>
+</body>
+</html>

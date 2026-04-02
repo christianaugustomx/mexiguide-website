@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MexiGuide — Your Mexico Travel Companion</title>
+  <meta name="description" content="MexiGuide is the ultimate travel app for exploring Mexico. Discover cities, find local tips, get eSIMs, travel insurance, and manage your money — all in one place." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Merriweather:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --base:       #E8E2DA;
+      --card:       #F5F0EB;
+      --white:      #FFFFFF;
+      --border:     rgba(27,67,50,0.10);
+      --border-hi:  rgba(27,67,50,0.18);
+      --g-darkest:  #0F2419;
+      --g-dark:     #1B4332;
+      --g-mid:      #2D6A4F;
+      --jade:       #4A9E80;
+      --jade-dim:   rgba(74,158,128,0.12);
+      --gold:       #E9C46A;
+      --gold-dim:   rgba(233,196,106,0.15);
+      --coral:      #E76F51;
+      --amber:      #F4A261;
+      --teal:       #2A9D8F;
+      --text-hi:    #0F2419;
+      --text-mid:   #4A7A60;
+      --text-lo:    #8AA898;
+      --text-inv:   rgba(255,255,255,0.88);
+      --text-inv-lo:rgba(255,255,255,0.45);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--base);
+      color: var(--text-hi);
+      line-height: 1.6;
+    }
+
+    /* ── DECORATIVE STRIPE ── */
+    .deco-stripe {
+      height: 4px;
+      background: repeating-linear-gradient(90deg,
+        #E76F51 0px, #E76F51 8px,
+        #F4A261 8px, #F4A261 16px,
+        #2A9D8F 16px, #2A9D8F 24px,
+        #E9C46A 24px, #E9C46A 32px
+      );
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      background: rgba(245,240,235,0.92);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-stripe { height: 3px; background: repeating-linear-gradient(90deg, #E76F51 0px, #E76F51 8px, #F4A261 8px, #F4A261 16px, #2A9D8F 16px, #2A9D8F 24px, #E9C46A 24px, #E9C46A 32px); }
+    .nav-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 32px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+    .nav-logo-mark {
+      width: 34px; height: 34px;
+      background: linear-gradient(135deg, var(--g-dark) 0%, var(--jade) 100%);
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 17px;
+      box-shadow: 0 3px 10px rgba(27,67,50,0.25);
+    }
+    .nav-wordmark {
+      font-family: 'Merriweather', serif;
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--g-dark);
+      letter-spacing: -0.3px;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      list-style: none;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text-mid);
+      font-size: 14px;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--g-dark); }
+    .nav-pill {
+      background: var(--jade) !important;
+      color: white !important;
+      padding: 7px 18px;
+      border-radius: 8px;
+      font-weight: 700 !important;
+      font-size: 13px !important;
+      box-shadow: 0 2px 10px rgba(74,158,128,0.3);
+      transition: background 0.2s !important, transform 0.15s !important;
+    }
+    .nav-pill:hover { background: var(--g-mid) !important; transform: translateY(-1px) !important; }
+
+    /* ── HERO ── */
+    .hero {
+      background: linear-gradient(160deg, var(--g-darkest) 0%, var(--g-dark) 50%, var(--g-mid) 100%);
+      padding: 120px 32px 72px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-glow-1 {
+      position: absolute; top: -80px; right: -80px;
+      width: 480px; height: 480px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(233,196,106,0.14) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .hero-glow-2 {
+      position: absolute; bottom: -60px; left: 8%;
+      width: 360px; height: 360px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(42,157,143,0.10) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .hero-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 420px;
+      gap: 64px;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+    }
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(233,196,106,0.14);
+      border: 1px solid rgba(233,196,106,0.32);
+      color: var(--gold);
+      padding: 5px 13px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .hero h1 {
+      font-family: 'Merriweather', serif;
+      font-size: clamp(34px, 4vw, 54px);
+      font-weight: 900;
+      color: white;
+      line-height: 1.12;
+      letter-spacing: -1px;
+      margin-bottom: 18px;
+    }
+    .hero h1 em {
+      font-style: italic;
+      color: var(--gold);
+    }
+    .hero-sub {
+      font-size: 16px;
+      color: var(--text-inv-lo);
+      line-height: 1.7;
+      margin-bottom: 36px;
+      max-width: 480px;
+    }
+    .hero-ctas {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+    .btn-jade {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--jade);
+      color: white;
+      padding: 13px 26px;
+      border-radius: 10px;
+      font-weight: 700; font-size: 14px;
+      text-decoration: none;
+      box-shadow: 0 4px 18px rgba(74,158,128,0.4);
+      transition: transform 0.15s, box-shadow 0.15s, background 0.15s;
+    }
+    .btn-jade:hover { transform: translateY(-2px); box-shadow: 0 8px 28px rgba(74,158,128,0.45); background: #3d8b6e; }
+    .btn-ghost {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.16);
+      color: var(--text-inv);
+      padding: 13px 26px;
+      border-radius: 10px;
+      font-weight: 600; font-size: 14px;
+      text-decoration: none;
+      backdrop-filter: blur(8px);
+      transition: background 0.15s;
+    }
+    .btn-ghost:hover { background: rgba(255,255,255,0.14); }
+    .hero-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .hero-chip {
+      display: flex; align-items: center; gap: 5px;
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.12);
+      color: var(--text-inv-lo);
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 500;
+    }
+
+    /* ── PHONE MOCKUP ── */
+    .phone-wrap {
+      display: flex;
+      justify-content: center;
+    }
+    .phone {
+      width: 260px;
+      background: #0A1410;
+      border-radius: 44px;
+      border: 7px solid #1a2820;
+      box-shadow:
+        0 50px 120px rgba(0,0,0,0.6),
+        0 0 0 1px rgba(255,255,255,0.04) inset;
+      overflow: hidden;
+      position: relative;
+    }
+    .phone-notch {
+      position: absolute; top: 10px; left: 50%;
+      transform: translateX(-50%);
+      width: 72px; height: 22px;
+      background: #060e0a;
+      border-radius: 11px;
+      z-index: 5;
+    }
+    .phone-screen {
+      padding: 44px 14px 18px;
+      background: linear-gradient(170deg, #0F2419 0%, #1B4332 60%, #2D6A4F 100%);
+      min-height: 520px;
+    }
+    .ps-label {
+      font-size: 9px; font-weight: 700; letter-spacing: 3px;
+      color: rgba(255,255,255,0.38); text-transform: uppercase;
+      margin-bottom: 3px;
+    }
+    .ps-h1 {
+      font-family: 'Merriweather', serif;
+      font-size: 19px; font-weight: 700;
+      color: white; line-height: 1.2; margin-bottom: 14px;
+    }
+    .ps-card {
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.10);
+      border-radius: 14px;
+      padding: 11px 12px;
+      margin-bottom: 8px;
+    }
+    .ps-card-tag {
+      font-size: 8px; font-weight: 700; letter-spacing: 1.5px;
+      color: var(--jade); text-transform: uppercase; margin-bottom: 4px;
+    }
+    .ps-card-tag.gold { color: var(--gold); }
+    .ps-card-tag.teal { color: var(--teal); }
+    .ps-card-val {
+      font-size: 13px; font-weight: 700; color: white;
+    }
+    .ps-card-sub {
+      font-size: 10px; color: rgba(255,255,255,0.38); margin-top: 2px;
+    }
+    .ps-chips-row {
+      display: flex; flex-wrap: wrap; gap: 4px; margin-top: 7px;
+    }
+    .ps-chip {
+      background: var(--jade-dim);
+      border: 1px solid rgba(74,158,128,0.3);
+      color: var(--jade);
+      padding: 2px 7px; border-radius: 20px;
+      font-size: 8px; font-weight: 600;
+    }
+    .ps-chip.gold {
+      background: var(--gold-dim);
+      border-color: rgba(233,196,106,0.3);
+      color: var(--gold);
+    }
+    .ps-nav {
+      display: flex; justify-content: space-around; align-items: center;
+      padding: 10px 0 4px;
+      border-top: 1px solid rgba(255,255,255,0.07);
+      margin-top: 8px;
+    }
+    .ps-nav-item {
+      display: flex; flex-direction: column; align-items: center; gap: 2px;
+      font-size: 8px; color: rgba(255,255,255,0.3); font-weight: 600;
+    }
+    .ps-nav-item.active { color: var(--jade); }
+    .ps-nav-icon { font-size: 14px; }
+
+    /* ── STATS ── */
+    .stats {
+      background: var(--card);
+      border-bottom: 1px solid var(--border);
+    }
+    .stats-inner {
+      max-width: 1120px; margin: 0 auto;
+      padding: 24px 32px;
+      display: flex; justify-content: space-around; flex-wrap: wrap; gap: 16px;
+    }
+    .stat { text-align: center; }
+    .stat-n {
+      font-family: 'Merriweather', serif;
+      font-size: 26px; font-weight: 900;
+      color: var(--g-dark); letter-spacing: -1px;
+    }
+    .stat-l {
+      font-size: 12px; color: var(--text-lo); font-weight: 500; margin-top: 2px;
+    }
+
+    /* ── SECTION COMMON ── */
+    .section {
+      padding: 72px 32px;
+    }
+    .section-inner { max-width: 1120px; margin: 0 auto; }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 5px;
+      background: var(--jade-dim);
+      border: 1px solid rgba(74,158,128,0.22);
+      color: var(--jade);
+      padding: 4px 11px; border-radius: 20px;
+      font-size: 11px; font-weight: 700; letter-spacing: 0.5px;
+      text-transform: uppercase; margin-bottom: 12px;
+    }
+    .s-title {
+      font-family: 'Merriweather', serif;
+      font-size: clamp(26px, 3vw, 38px);
+      font-weight: 900; color: var(--text-hi);
+      letter-spacing: -0.8px; line-height: 1.18; margin-bottom: 12px;
+    }
+    .s-sub {
+      font-size: 15px; color: var(--text-lo); line-height: 1.7;
+      max-width: 520px; margin-bottom: 44px;
+    }
+
+    /* ── FEATURES ── */
+    .features-bg { background: var(--base); }
+    .feat-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+    .feat-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .feat-card:hover { transform: translateY(-3px); box-shadow: 0 14px 40px rgba(27,67,50,0.08); }
+    .feat-icon-wrap {
+      width: 46px; height: 46px;
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 20px; margin-bottom: 14px;
+      border: 1px solid;
+    }
+    .fi-jade  { background: var(--jade-dim); border-color: rgba(74,158,128,0.25); }
+    .fi-gold  { background: var(--gold-dim); border-color: rgba(233,196,106,0.25); }
+    .fi-coral { background: rgba(231,111,81,0.10); border-color: rgba(231,111,81,0.22); }
+    .fi-teal  { background: rgba(42,157,143,0.10); border-color: rgba(42,157,143,0.22); }
+    .feat-card h3 {
+      font-size: 15px; font-weight: 700; color: var(--text-hi); margin-bottom: 7px;
+    }
+    .feat-card p {
+      font-size: 13px; color: var(--text-lo); line-height: 1.65;
+    }
+
+    /* ── TRAVEL TOOLS ── */
+    .tools-bg { background: var(--card); }
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 14px;
+    }
+    .tool-card {
+      background: var(--base);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 20px 14px;
+      text-align: center;
+      transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+      cursor: default;
+    }
+    .tool-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 30px rgba(27,67,50,0.08);
+      border-color: var(--jade);
+    }
+    .tool-emoji { font-size: 28px; margin-bottom: 10px; }
+    .tool-name  { font-size: 13px; font-weight: 700; color: var(--text-hi); margin-bottom: 4px; }
+    .tool-desc  { font-size: 11px; color: var(--text-lo); line-height: 1.45; }
+    .tool-badge {
+      display: inline-block;
+      background: var(--jade-dim);
+      border: 1px solid rgba(74,158,128,0.25);
+      color: var(--jade);
+      padding: 2px 8px; border-radius: 20px;
+      font-size: 10px; font-weight: 600; margin-top: 7px;
+    }
+
+    /* ── CITIES ── */
+    .cities-bg { background: var(--base); }
+    .cities-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }
+    .city-card {
+      border-radius: 16px; overflow: hidden;
+      aspect-ratio: 3/4;
+      position: relative; cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .city-card:hover { transform: scale(1.02); }
+    .city-bg {
+      width: 100%; height: 100%;
+      display: flex; flex-direction: column;
+      justify-content: space-between;
+      padding: 16px;
+      position: relative;
+    }
+    .city-bg-cdmx  { background: linear-gradient(160deg, #0F2419 0%, #1B4332 60%, #2D6A4F 100%); }
+    .city-bg-cancun{ background: linear-gradient(160deg, #0C4A6E 0%, #0E7490 60%, #164E63 100%); }
+    .city-bg-oax   { background: linear-gradient(160deg, #451A03 0%, #92400E 60%, #713F12 100%); }
+    .city-bg-gdl   { background: linear-gradient(160deg, #2E1065 0%, #5B21B6 60%, #4C1D95 100%); }
+    .city-emoji-bg {
+      font-size: 52px; opacity: 0.2;
+      position: absolute; top: 50%; left: 50%;
+      transform: translate(-50%,-55%);
+      pointer-events: none;
+    }
+    .city-top { display: flex; justify-content: flex-end; }
+    .city-label {
+      font-size: 9px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase;
+      color: rgba(255,255,255,0.45); margin-bottom: 3px;
+    }
+    .city-name {
+      font-family: 'Merriweather', serif;
+      font-size: 17px; font-weight: 700; color: white; line-height: 1.2; margin-bottom: 4px;
+    }
+    .city-chips { display: flex; flex-wrap: wrap; gap: 4px; }
+    .city-chip {
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.18);
+      color: rgba(255,255,255,0.7);
+      padding: 2px 7px; border-radius: 20px;
+      font-size: 9px; font-weight: 600;
+    }
+
+    /* ── HOW IT WORKS ── */
+    .how-bg {
+      background: linear-gradient(160deg, var(--g-darkest) 0%, var(--g-dark) 100%);
+      position: relative; overflow: hidden;
+    }
+    .how-bg .s-title { color: white; }
+    .how-bg .s-sub   { color: var(--text-inv-lo); }
+    .how-bg .eyebrow { background: var(--gold-dim); border-color: rgba(233,196,106,0.3); color: var(--gold); }
+    .how-glow {
+      position: absolute; top: -120px; right: -100px;
+      width: 440px; height: 440px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(233,196,106,0.09) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+      position: relative; z-index: 1;
+    }
+    .step {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 16px;
+      padding: 28px 24px;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+    .step-num {
+      width: 44px; height: 44px;
+      background: var(--gold-dim);
+      border: 1.5px solid rgba(233,196,106,0.35);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 16px; font-weight: 900; color: var(--gold);
+      margin-bottom: 16px;
+    }
+    .step h3 { font-size: 15px; font-weight: 700; color: white; margin-bottom: 8px; }
+    .step p  { font-size: 13px; color: var(--text-inv-lo); line-height: 1.65; }
+
+    /* ── DOWNLOAD ── */
+    .download-bg { background: var(--card); }
+    .download-center { text-align: center; }
+    .download-center .s-title { margin: 0 auto 12px; }
+    .download-center .s-sub   { margin: 0 auto 36px; }
+    .store-row {
+      display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;
+    }
+    .store-btn {
+      display: inline-flex; align-items: center; gap: 12px;
+      background: var(--g-dark);
+      color: white;
+      padding: 13px 26px;
+      border-radius: 12px;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.15s;
+      box-shadow: 0 4px 18px rgba(27,67,50,0.22);
+    }
+    .store-btn:hover { background: var(--g-mid); transform: translateY(-2px); }
+    .store-btn-icon { font-size: 24px; }
+    .store-btn-sub  { display: block; font-size: 10px; opacity: 0.55; font-weight: 500; }
+    .store-btn-name { display: block; font-size: 15px; font-weight: 700; }
+    .waitlist-note {
+      margin-top: 18px; font-size: 13px; color: var(--text-lo);
+    }
+
+    /* ── FOOTER ── */
+    .footer { background: var(--g-darkest); padding: 52px 32px 28px; }
+    .footer-inner { max-width: 1120px; margin: 0 auto; }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.6fr 1fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+    .footer-brand-logo {
+      display: flex; align-items: center; gap: 10px;
+      margin-bottom: 12px; text-decoration: none;
+    }
+    .footer-wordmark {
+      font-family: 'Merriweather', serif;
+      font-size: 16px; font-weight: 700; color: white;
+    }
+    .footer-brand p {
+      font-size: 13px; color: rgba(255,255,255,0.32); line-height: 1.65; max-width: 240px;
+    }
+    .footer-col h4 {
+      font-size: 11px; font-weight: 700;
+      color: rgba(255,255,255,0.35); letter-spacing: 1.5px; text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+    .footer-col ul { list-style: none; }
+    .footer-col li { margin-bottom: 9px; }
+    .footer-col a {
+      text-decoration: none; color: rgba(255,255,255,0.45);
+      font-size: 13px; transition: color 0.2s;
+    }
+    .footer-col a:hover { color: rgba(255,255,255,0.85); }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.06);
+      padding-top: 20px;
+      display: flex; justify-content: space-between;
+      align-items: center; flex-wrap: wrap; gap: 12px;
+    }
+    .footer-bottom p { font-size: 12px; color: rgba(255,255,255,0.22); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 960px) {
+      .nav-links { display: none; }
+      .nav-inner { padding: 0 20px; }
+      .hero { padding: 100px 20px 60px; }
+      .hero-inner { grid-template-columns: 1fr; gap: 44px; }
+      .phone-wrap { display: none; }
+      .section { padding: 56px 20px; }
+      .stats-inner { padding: 20px; }
+      .feat-grid { grid-template-columns: 1fr 1fr; }
+      .tools-grid { grid-template-columns: repeat(3, 1fr); }
+      .cities-grid { grid-template-columns: 1fr 1fr; }
+      .steps { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr 1fr; gap: 28px; }
+      .footer { padding: 44px 20px 24px; }
+    }
+    @media (max-width: 600px) {
+      .feat-grid { grid-template-columns: 1fr; }
+      .tools-grid { grid-template-columns: 1fr 1fr; }
+      .footer-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-stripe"></div>
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <div class="nav-logo-mark">🌮</div>
+        <span class="nav-wordmark">MexiGuide</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#tools">Travel Tools</a></li>
+        <li><a href="#cities">Cities</a></li>
+        <li><a href="#download" class="nav-pill">Download Free</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-glow-1"></div>
+    <div class="hero-glow-2"></div>
+    <div class="hero-inner">
+      <div>
+        <div class="hero-eyebrow">🇲🇽 Mexico Travel App</div>
+        <h1>Your ultimate guide to <em>exploring Mexico</em></h1>
+        <p class="hero-sub">Discover the best cities, neighborhoods, food, and experiences Mexico has to offer. Built for travelers, expats, and digital nomads — with the tools you actually need on the road.</p>
+        <div class="hero-ctas">
+          <a href="#download" class="btn-jade">📱 Download Free</a>
+          <a href="#features" class="btn-ghost">See Features →</a>
+        </div>
+        <div class="hero-chips">
+          <span class="hero-chip">🗺️ 30+ City Guides</span>
+          <span class="hero-chip">📶 eSIM Integration</span>
+          <span class="hero-chip">💱 Currency Converter</span>
+          <span class="hero-chip">🌐 EN / ES / FR</span>
+        </div>
+      </div>
+      <div class="phone-wrap">
+        <div class="phone">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <div class="ps-label">MexiGuide</div>
+            <div class="ps-h1">Good morning,<br/>explorer 👋</div>
+            <div class="ps-card">
+              <div class="ps-card-tag">📍 Featured City</div>
+              <div class="ps-card-val">Mexico City</div>
+              <div class="ps-card-sub">Capital · 12M+ residents</div>
+              <div class="ps-chips-row">
+                <span class="ps-chip">🏛️ History</span>
+                <span class="ps-chip">🍜 Food</span>
+                <span class="ps-chip gold">🎨 Art</span>
+              </div>
+            </div>
+            <div class="ps-card">
+              <div class="ps-card-tag teal">📶 eSIM</div>
+              <div class="ps-card-val">Airalo — From $5 USD</div>
+              <div class="ps-card-sub">190+ countries · Instant activation</div>
+            </div>
+            <div class="ps-card">
+              <div class="ps-card-tag gold">💱 Exchange Rate</div>
+              <div class="ps-card-val">1 USD = 17.2 MXN</div>
+              <div class="ps-card-sub">Real-time rate via Wise</div>
+            </div>
+            <div class="ps-nav">
+              <div class="ps-nav-item active">
+                <div class="ps-nav-icon">🏠</div>
+                <div>Home</div>
+              </div>
+              <div class="ps-nav-item">
+                <div class="ps-nav-icon">🗺️</div>
+                <div>Explore</div>
+              </div>
+              <div class="ps-nav-item">
+                <div class="ps-nav-icon">🔧</div>
+                <div>Tools</div>
+              </div>
+              <div class="ps-nav-item">
+                <div class="ps-nav-icon">👤</div>
+                <div>Profile</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="deco-stripe"></div>
+
+  <!-- STATS -->
+  <div class="stats">
+    <div class="stats-inner">
+      <div class="stat"><div class="stat-n">30+</div><div class="stat-l">Mexican Cities</div></div>
+      <div class="stat"><div class="stat-n">3</div><div class="stat-l">Languages</div></div>
+      <div class="stat"><div class="stat-n">5</div><div class="stat-l">Travel Partners</div></div>
+      <div class="stat"><div class="stat-n">iOS & Android</div><div class="stat-l">Available On</div></div>
+      <div class="stat"><div class="stat-n">Free</div><div class="stat-l">To Download</div></div>
+    </div>
+  </div>
+
+  <!-- FEATURES -->
+  <section class="section features-bg" id="features">
+    <div class="section-inner">
+      <div class="eyebrow">✦ Features</div>
+      <h2 class="s-title">Everything you need<br/>for Mexico travel</h2>
+      <p class="s-sub">From city guides and local tips to eSIMs and currency conversion — MexiGuide has it all in one beautifully designed app.</p>
+      <div class="feat-grid">
+        <div class="feat-card">
+          <div class="feat-icon-wrap fi-jade">🗺️</div>
+          <h3>City Guides</h3>
+          <p>In-depth guides for Mexico's top cities — neighborhoods, attractions, safety tips, and local recommendations curated by people who live there.</p>
+        </div>
+        <div class="feat-card">
+          <div class="feat-icon-wrap fi-gold">💱</div>
+          <h3>Currency Converter</h3>
+          <p>Real-time MXN exchange rates so you always know what you're paying. No surprises at the market, restaurant, or ATM.</p>
+        </div>
+        <div class="feat-card">
+          <div class="feat-icon-wrap fi-teal">📶</div>
+          <h3>eSIM Integration</h3>
+          <p>Get a Mexico data plan in seconds through Airalo — directly from the app. Stay connected without expensive roaming fees.</p>
+        </div>
+        <div class="feat-card">
+          <div class="feat-icon-wrap fi-coral">🛡️</div>
+          <h3>Travel Insurance</h3>
+          <p>One-tap access to affordable travel medical coverage through SafetyWing. Enroll in under 2 minutes, no agent required.</p>
+        </div>
+        <div class="feat-card">
+          <div class="feat-icon-wrap fi-jade">🍽️</div>
+          <h3>Food & Culture</h3>
+          <p>Discover local cuisine, street food spots, markets, and cultural experiences Mexico is famous for — from tacos to mezcal.</p>
+        </div>
+        <div class="feat-card">
+          <div class="feat-icon-wrap fi-gold">🌐</div>
+          <h3>3 Languages</h3>
+          <p>Fully available in English, Spanish, and French — so every traveler feels at home no matter where they're from.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRAVEL TOOLS -->
+  <section class="section tools-bg" id="tools">
+    <div class="section-inner">
+      <div class="eyebrow">🔧 Travel Tools</div>
+      <h2 class="s-title">Trusted partners,<br/>built right in</h2>
+      <p class="s-sub">MexiGuide integrates the services every traveler needs — all vetted and accessible with a single tap from inside the app.</p>
+      <div class="tools-grid">
+        <div class="tool-card">
+          <div class="tool-emoji">📶</div>
+          <div class="tool-name">Airalo</div>
+          <div class="tool-desc">eSIM for Mexico & 190+ countries. Instant activation.</div>
+          <div class="tool-badge">From $5 USD</div>
+        </div>
+        <div class="tool-card">
+          <div class="tool-emoji">🛡️</div>
+          <div class="tool-name">SafetyWing</div>
+          <div class="tool-desc">Travel medical insurance. Enroll in 2 minutes.</div>
+          <div class="tool-badge">From $45 / 4 wks</div>
+        </div>
+        <div class="tool-card">
+          <div class="tool-emoji">💸</div>
+          <div class="tool-name">Wise</div>
+          <div class="tool-desc">Send & spend money at real exchange rates worldwide.</div>
+          <div class="tool-badge">No hidden fees</div>
+        </div>
+        <div class="tool-card">
+          <div class="tool-emoji">🔒</div>
+          <div class="tool-name">NordVPN</div>
+          <div class="tool-desc">Stay safe on public WiFi in cafés, airports & hotels.</div>
+          <div class="tool-badge">From $3.39/mo</div>
+        </div>
+        <div class="tool-card">
+          <div class="tool-emoji">🏛️</div>
+          <div class="tool-name">GetYourGuide</div>
+          <div class="tool-desc">Book tours & experiences across Mexico instantly.</div>
+          <div class="tool-badge">Free cancellation</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CITIES -->
+  <section class="section cities-bg" id="cities">
+    <div class="section-inner">
+      <div class="eyebrow">📍 Destinations</div>
+      <h2 class="s-title">Explore Mexico's<br/>most iconic cities</h2>
+      <p class="s-sub">From the buzzing capital to beachside paradises and colonial gems — discover Mexico like a local.</p>
+      <div class="cities-grid">
+        <div class="city-card">
+          <div class="city-bg city-bg-cdmx">
+            <div class="city-emoji-bg">🏙️</div>
+            <div class="city-top"></div>
+            <div>
+              <div class="city-label">Capital</div>
+              <div class="city-name">Mexico City</div>
+              <div class="city-chips">
+                <span class="city-chip">🏛️ History</span>
+                <span class="city-chip">🍜 Food</span>
+                <span class="city-chip">🎨 Art</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="city-card">
+          <div class="city-bg city-bg-cancun">
+            <div class="city-emoji-bg">🏖️</div>
+            <div class="city-top"></div>
+            <div>
+              <div class="city-label">Caribbean Coast</div>
+              <div class="city-name">Cancún</div>
+              <div class="city-chips">
+                <span class="city-chip">🏖️ Beaches</span>
+                <span class="city-chip">💧 Cenotes</span>
+                <span class="city-chip">🏯 Ruins</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="city-card">
+          <div class="city-bg city-bg-oax">
+            <div class="city-emoji-bg">🌺</div>
+            <div class="city-top"></div>
+            <div>
+              <div class="city-label">South Mexico</div>
+              <div class="city-name">Oaxaca</div>
+              <div class="city-chips">
+                <span class="city-chip">🌿 Culture</span>
+                <span class="city-chip">🥃 Mezcal</span>
+                <span class="city-chip">🍫 Cuisine</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="city-card">
+          <div class="city-bg city-bg-gdl">
+            <div class="city-emoji-bg">🎺</div>
+            <div class="city-top"></div>
+            <div>
+              <div class="city-label">Western Mexico</div>
+              <div class="city-name">Guadalajara</div>
+              <div class="city-chips">
+                <span class="city-chip">🎺 Mariachi</span>
+                <span class="city-chip">🥃 Tequila</span>
+                <span class="city-chip">🎨 Art</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section how-bg">
+    <div class="how-glow"></div>
+    <div class="section-inner">
+      <div class="eyebrow">⚡ How It Works</div>
+      <h2 class="s-title">Ready in minutes</h2>
+      <p class="s-sub">MexiGuide is designed to get you exploring Mexico with zero friction.</p>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h3>Download the app</h3>
+          <p>Free to download on iOS and Android. No account required to explore city guides and travel tools.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <h3>Choose your city</h3>
+          <p>Select from 30+ Mexican cities and get instant access to local guides, neighborhoods, tips, and recommendations.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <h3>Travel with confidence</h3>
+          <p>Set up your eSIM, get insurance, convert currency, and book tours — all without ever leaving the app.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="deco-stripe"></div>
+
+  <!-- DOWNLOAD -->
+  <section class="section download-bg" id="download">
+    <div class="section-inner download-center">
+      <div class="eyebrow">📱 Get the App</div>
+      <h2 class="s-title">Start exploring Mexico today</h2>
+      <p class="s-sub">Free to download. Available on iOS and Android. Your Mexico adventure starts here.</p>
+      <div class="store-row">
+        <a href="#" class="store-btn">
+          <div class="store-btn-icon"></div>
+          <div>
+            <span class="store-btn-sub">Download on the</span>
+            <span class="store-btn-name">App Store</span>
+          </div>
+        </a>
+        <a href="#" class="store-btn">
+          <div class="store-btn-icon">▶</div>
+          <div>
+            <span class="store-btn-sub">Get it on</span>
+            <span class="store-btn-name">Google Play</span>
+          </div>
+        </a>
+      </div>
+      <p class="waitlist-note">🚀 Launching soon — join the waitlist to be first to know.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <div class="deco-stripe"></div>
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="footer-brand-logo">
+            <div class="nav-logo-mark">🌮</div>
+            <span class="footer-wordmark">MexiGuide</span>
+          </a>
+          <p>Your complete travel companion for exploring Mexico. Built for travelers, expats, and digital nomads.</p>
+        </div>
+        <div class="footer-col">
+          <h4>App</h4>
+          <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#tools">Travel Tools</a></li>
+            <li><a href="#cities">Cities</a></li>
+            <li><a href="#download">Download</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Partners</h4>
+          <ul>
+            <li><a href="#">Airalo eSIM</a></li>
+            <li><a href="#">SafetyWing</a></li>
+            <li><a href="#">Wise</a></li>
+            <li><a href="#">NordVPN</a></li>
+            <li><a href="#">GetYourGuide</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 MexiGuide · Built by Rumbotech Labs</p>
+        <p>Affiliate disclosure: MexiGuide may earn commissions from partner links at no extra cost to you.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
