@@ -496,22 +496,36 @@
       transition: transform 0.2s;
     }
     .city-card:hover { transform: scale(1.02); }
+    .city-card a {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
     .city-bg {
       width: 100%; height: 100%;
       display: flex; flex-direction: column;
-      justify-content: space-between;
+      justify-content: flex-end;
       padding: 16px;
       position: relative;
+      background-size: cover;
+      background-position: center;
     }
-    .city-bg-cdmx  { background: linear-gradient(160deg, #0F2419 0%, #1B4332 60%, #2D6A4F 100%); }
-    .city-bg-cancun{ background: linear-gradient(160deg, #0C4A6E 0%, #0E7490 60%, #164E63 100%); }
-    .city-bg-oax   { background: linear-gradient(160deg, #451A03 0%, #92400E 60%, #713F12 100%); }
-    .city-bg-gdl   { background: linear-gradient(160deg, #2E1065 0%, #5B21B6 60%, #4C1D95 100%); }
+    .city-bg::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0.05) 100%);
+      z-index: 1;
+    }
+    .city-bg > * { position: relative; z-index: 2; }
+    .city-bg-cdmx  { background-image: url('https://images.unsplash.com/photo-1518659526054-190340b32735?w=600&q=80'); }
+    .city-bg-cancun{ background-image: url('https://images.unsplash.com/photo-1510097467424-192d713fd8b2?w=600&q=80'); }
+    .city-bg-oax   { background-image: url('https://images.unsplash.com/photo-1601937474567-76c23768a84c?w=600&q=80'); }
+    .city-bg-gdl   { background-image: url('https://images.unsplash.com/photo-1561058022-29b74bfba6ab?w=600&q=80'); }
     .city-emoji-bg {
-      font-size: 52px; opacity: 0.2;
-      position: absolute; top: 50%; left: 50%;
-      transform: translate(-50%,-55%);
-      pointer-events: none;
+      display: none;
     }
     .city-top { display: flex; justify-content: flex-end; }
     .city-label {
@@ -854,64 +868,68 @@
       <p class="s-sub">From the buzzing capital to beachside paradises and colonial gems — discover Mexico like a local.</p>
       <div class="cities-grid">
         <div class="city-card">
-          <div class="city-bg city-bg-cdmx">
-            <div class="city-emoji-bg">🏙️</div>
-            <div class="city-top"></div>
-            <div>
-              <div class="city-label">Capital</div>
-              <div class="city-name">Mexico City</div>
-              <div class="city-chips">
-                <span class="city-chip">🏛️ History</span>
-                <span class="city-chip">🍜 Food</span>
-                <span class="city-chip">🎨 Art</span>
+          <a href="https://mexiguide.org/city.html?id=mex_ciudad_de_mexico_cuauhtemoc">
+            <div class="city-bg city-bg-cdmx">
+              <div class="city-emoji-bg">🏙️</div>
+              <div>
+                <div class="city-label">Capital</div>
+                <div class="city-name">Mexico City</div>
+                <div class="city-chips">
+                  <span class="city-chip">🏛️ History</span>
+                  <span class="city-chip">🍜 Food</span>
+                  <span class="city-chip">🎨 Art</span>
+                </div>
               </div>
             </div>
-          </div>
+          </a>
         </div>
         <div class="city-card">
-          <div class="city-bg city-bg-cancun">
-            <div class="city-emoji-bg">🏖️</div>
-            <div class="city-top"></div>
-            <div>
-              <div class="city-label">Caribbean Coast</div>
-              <div class="city-name">Cancún</div>
-              <div class="city-chips">
-                <span class="city-chip">🏖️ Beaches</span>
-                <span class="city-chip">💧 Cenotes</span>
-                <span class="city-chip">🏯 Ruins</span>
+          <a href="https://mexiguide.org/city.html?id=mex_quintana_roo_cancun">
+            <div class="city-bg city-bg-cancun">
+              <div class="city-emoji-bg">🏖️</div>
+              <div>
+                <div class="city-label">Caribbean Coast</div>
+                <div class="city-name">Cancún</div>
+                <div class="city-chips">
+                  <span class="city-chip">🏖️ Beaches</span>
+                  <span class="city-chip">💧 Cenotes</span>
+                  <span class="city-chip">🏯 Ruins</span>
+                </div>
               </div>
             </div>
-          </div>
+          </a>
         </div>
         <div class="city-card">
-          <div class="city-bg city-bg-oax">
-            <div class="city-emoji-bg">🌺</div>
-            <div class="city-top"></div>
-            <div>
-              <div class="city-label">South Mexico</div>
-              <div class="city-name">Oaxaca</div>
-              <div class="city-chips">
-                <span class="city-chip">🌿 Culture</span>
-                <span class="city-chip">🥃 Mezcal</span>
-                <span class="city-chip">🍫 Cuisine</span>
+          <a href="https://mexiguide.org/city.html?id=mex_oaxaca_oaxaca_de_juarez">
+            <div class="city-bg city-bg-oax">
+              <div class="city-emoji-bg">🌺</div>
+              <div>
+                <div class="city-label">South Mexico</div>
+                <div class="city-name">Oaxaca</div>
+                <div class="city-chips">
+                  <span class="city-chip">🌿 Culture</span>
+                  <span class="city-chip">🥃 Mezcal</span>
+                  <span class="city-chip">🍫 Cuisine</span>
+                </div>
               </div>
             </div>
-          </div>
+          </a>
         </div>
         <div class="city-card">
-          <div class="city-bg city-bg-gdl">
-            <div class="city-emoji-bg">🎺</div>
-            <div class="city-top"></div>
-            <div>
-              <div class="city-label">Western Mexico</div>
-              <div class="city-name">Guadalajara</div>
-              <div class="city-chips">
-                <span class="city-chip">🎺 Mariachi</span>
-                <span class="city-chip">🥃 Tequila</span>
-                <span class="city-chip">🎨 Art</span>
+          <a href="https://mexiguide.org/city.html?id=mex_jalisco_guadalajara">
+            <div class="city-bg city-bg-gdl">
+              <div class="city-emoji-bg">🎺</div>
+              <div>
+                <div class="city-label">Western Mexico</div>
+                <div class="city-name">Guadalajara</div>
+                <div class="city-chips">
+                  <span class="city-chip">🎺 Mariachi</span>
+                  <span class="city-chip">🥃 Tequila</span>
+                  <span class="city-chip">🎨 Art</span>
+                </div>
               </div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </div>
