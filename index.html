@@ -310,7 +310,7 @@
       justify-content: center;
     }
     .phone {
-      width: 260px;
+      width: 280px;
       background: #0A1410;
       border-radius: 44px;
       border: 7px solid #1a2820;
@@ -323,72 +323,169 @@
     .phone-notch {
       position: absolute; top: 10px; left: 50%;
       transform: translateX(-50%);
-      width: 72px; height: 22px;
+      width: 80px; height: 24px;
       background: #060e0a;
-      border-radius: 11px;
-      z-index: 5;
+      border-radius: 12px;
+      z-index: 10;
     }
     .phone-screen {
-      padding: 44px 14px 18px;
-      background: linear-gradient(170deg, #0F2419 0%, #1B4332 60%, #2D6A4F 100%);
-      min-height: 520px;
+      position: relative;
+      min-height: 560px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
     }
-    .ps-label {
-      font-size: 9px; font-weight: 700; letter-spacing: 3px;
-      color: rgba(255,255,255,0.38); text-transform: uppercase;
-      margin-bottom: 3px;
+
+    /* Map background */
+    .ps-map {
+      flex: 1;
+      position: relative;
+      background: #d4e6d9;
+      background-image:
+        /* Water bodies */
+        radial-gradient(ellipse 120px 80px at 15% 25%, #a8c8d8 0%, transparent 70%),
+        radial-gradient(ellipse 60px 40px at 75% 60%, #b0d0e0 0%, transparent 70%),
+        /* Safety zone polygons */
+        linear-gradient(135deg, transparent 20%, rgba(129,199,132,0.35) 20%, rgba(129,199,132,0.35) 28%, transparent 28%),
+        linear-gradient(150deg, transparent 35%, rgba(253,216,53,0.3) 35%, rgba(253,216,53,0.3) 45%, transparent 45%),
+        linear-gradient(120deg, transparent 50%, rgba(40,167,69,0.3) 50%, rgba(40,167,69,0.3) 58%, transparent 58%),
+        linear-gradient(160deg, transparent 60%, rgba(129,199,132,0.35) 60%, rgba(129,199,132,0.35) 72%, transparent 72%),
+        linear-gradient(140deg, transparent 10%, rgba(239,108,0,0.25) 10%, rgba(239,108,0,0.25) 18%, transparent 18%);
     }
-    .ps-h1 {
-      font-family: 'Merriweather', serif;
-      font-size: 19px; font-weight: 700;
-      color: white; line-height: 1.2; margin-bottom: 14px;
+    /* Map grid lines */
+    .ps-map::before {
+      content: '';
+      position: absolute; inset: 0;
+      background-image:
+        linear-gradient(rgba(0,0,0,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,0,0,0.04) 1px, transparent 1px);
+      background-size: 28px 28px;
+      z-index: 1;
     }
-    .ps-card {
-      background: rgba(255,255,255,0.07);
-      border: 1px solid rgba(255,255,255,0.10);
-      border-radius: 14px;
-      padding: 11px 12px;
-      margin-bottom: 8px;
+    /* Road lines */
+    .ps-map::after {
+      content: '';
+      position: absolute; inset: 0;
+      background:
+        linear-gradient(25deg, transparent 48.5%, rgba(255,255,255,0.5) 48.5%, rgba(255,255,255,0.5) 49.5%, transparent 49.5%),
+        linear-gradient(110deg, transparent 44%, rgba(255,255,255,0.4) 44%, rgba(255,255,255,0.4) 44.8%, transparent 44.8%),
+        linear-gradient(75deg, transparent 52%, rgba(255,255,255,0.35) 52%, rgba(255,255,255,0.35) 52.6%, transparent 52.6%);
+      z-index: 2;
     }
-    .ps-card-tag {
-      font-size: 8px; font-weight: 700; letter-spacing: 1.5px;
-      color: var(--jade); text-transform: uppercase; margin-bottom: 4px;
+
+    /* Zone label overlays */
+    .ps-zone-label {
+      position: absolute;
+      font-size: 7px;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+      color: rgba(0,0,0,0.45);
+      z-index: 3;
+      pointer-events: none;
     }
-    .ps-card-tag.gold { color: var(--gold); }
-    .ps-card-tag.teal { color: var(--teal); }
-    .ps-card-val {
-      font-size: 13px; font-weight: 700; color: white;
+
+    /* User location dot */
+    .ps-user-dot {
+      position: absolute;
+      top: 46%; left: 48%;
+      width: 14px; height: 14px;
+      z-index: 5;
     }
-    .ps-card-sub {
-      font-size: 10px; color: rgba(255,255,255,0.38); margin-top: 2px;
+    .ps-user-dot::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: #4285F4;
+      border: 2.5px solid white;
+      border-radius: 50%;
+      box-shadow: 0 1px 6px rgba(66,133,244,0.5);
     }
-    .ps-chips-row {
-      display: flex; flex-wrap: wrap; gap: 4px; margin-top: 7px;
+    .ps-user-dot::after {
+      content: '';
+      position: absolute;
+      top: -6px; left: -6px;
+      width: 26px; height: 26px;
+      background: rgba(66,133,244,0.15);
+      border-radius: 50%;
+      animation: ps-pulse 2s ease-out infinite;
     }
-    .ps-chip {
-      background: var(--jade-dim);
-      border: 1px solid rgba(74,158,128,0.3);
-      color: var(--jade);
-      padding: 2px 7px; border-radius: 20px;
-      font-size: 8px; font-weight: 600;
+    @keyframes ps-pulse {
+      0% { transform: scale(0.8); opacity: 1; }
+      100% { transform: scale(1.6); opacity: 0; }
     }
-    .ps-chip.gold {
-      background: var(--gold-dim);
-      border-color: rgba(233,196,106,0.3);
-      color: var(--gold);
+
+    /* Floating location button */
+    .ps-fab {
+      position: absolute;
+      bottom: 72px; right: 12px;
+      width: 36px; height: 36px;
+      background: var(--jade);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 3px 12px rgba(74,158,128,0.45);
+      z-index: 6;
     }
+    .ps-fab svg { width: 16px; height: 16px; fill: white; }
+
+    /* Safety banner */
+    .ps-safety-banner {
+      position: absolute;
+      top: 44px; left: 10px; right: 10px;
+      background: rgba(245,240,235,0.82);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255,255,255,0.5);
+      border-radius: 16px;
+      padding: 10px 12px;
+      z-index: 6;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    }
+    .ps-banner-row {
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .ps-banner-city {
+      font-size: 13px; font-weight: 800; color: var(--g-dark); line-height: 1.2;
+    }
+    .ps-banner-state {
+      font-size: 9px; color: var(--text-mid); font-weight: 500; margin-top: 1px;
+    }
+    .ps-banner-badge {
+      font-size: 8px; font-weight: 700; letter-spacing: 0.3px;
+      padding: 3px 8px; border-radius: 20px;
+      white-space: nowrap;
+    }
+    .ps-badge-moderate {
+      background: rgba(253,216,53,0.18);
+      color: #E6A800;
+      border: 1px solid rgba(253,216,53,0.35);
+    }
+    .ps-banner-advisory {
+      font-size: 8px; color: var(--text-lo); margin-top: 6px;
+      line-height: 1.4; padding-top: 6px;
+      border-top: 1px solid rgba(27,67,50,0.08);
+    }
+
+    /* Bottom nav */
     .ps-nav {
+      background: rgba(245,240,235,0.88);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-top: 1px solid rgba(255,255,255,0.5);
       display: flex; justify-content: space-around; align-items: center;
-      padding: 10px 0 4px;
-      border-top: 1px solid rgba(255,255,255,0.07);
-      margin-top: 8px;
+      padding: 8px 0 14px;
+      position: relative;
+      z-index: 6;
     }
     .ps-nav-item {
       display: flex; flex-direction: column; align-items: center; gap: 2px;
-      font-size: 8px; color: rgba(255,255,255,0.3); font-weight: 600;
+      font-size: 8px; color: #8AA898; font-weight: 600;
     }
-    .ps-nav-item.active { color: var(--jade); }
-    .ps-nav-icon { font-size: 14px; }
+    .ps-nav-item.active { color: var(--g-dark); }
+    .ps-nav-icon { font-size: 16px; line-height: 1; }
+    .ps-nav-dot {
+      width: 4px; height: 4px; border-radius: 50%;
+      background: var(--jade);
+      margin-top: 1px;
+    }
 
     /* ── STATS ── */
     .stats {
@@ -740,40 +837,54 @@
         <div class="phone">
           <div class="phone-notch"></div>
           <div class="phone-screen">
-            <div class="ps-label">MexiGuide</div>
-            <div class="ps-h1">Good morning,<br/>explorer 👋</div>
-            <div class="ps-card">
-              <div class="ps-card-tag">📍 Featured City</div>
-              <div class="ps-card-val">Mexico City</div>
-              <div class="ps-card-sub">Capital · 12M+ residents</div>
-              <div class="ps-chips-row">
-                <span class="ps-chip">🏛️ History</span>
-                <span class="ps-chip">🍜 Food</span>
-                <span class="ps-chip gold">🎨 Art</span>
+            <!-- Map area -->
+            <div class="ps-map">
+              <!-- Zone labels -->
+              <div class="ps-zone-label" style="top:30%;left:18%;">Cuajimalpa</div>
+              <div class="ps-zone-label" style="top:55%;left:22%;">Coyoacán</div>
+              <div class="ps-zone-label" style="top:38%;left:58%;">Cuauhtémoc</div>
+              <div class="ps-zone-label" style="top:68%;left:55%;">Iztapalapa</div>
+              <div class="ps-zone-label" style="top:22%;left:42%;">Azcapotzalco</div>
+
+              <!-- User location blue dot -->
+              <div class="ps-user-dot"></div>
+
+              <!-- Safety banner overlay -->
+              <div class="ps-safety-banner">
+                <div class="ps-banner-row">
+                  <div>
+                    <div class="ps-banner-city">Ciudad de México</div>
+                    <div class="ps-banner-state">Cuauhtémoc · CDMX</div>
+                  </div>
+                  <div class="ps-banner-badge ps-badge-moderate">⚠ Moderate</div>
+                </div>
+                <div class="ps-banner-advisory">Stay aware of your surroundings. Avoid displaying valuables in crowded areas.</div>
+              </div>
+
+              <!-- Floating location button -->
+              <div class="ps-fab">
+                <svg viewBox="0 0 24 24"><path d="M12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm8.94 3A8.994 8.994 0 0 0 13 3.06V1h-2v2.06A8.994 8.994 0 0 0 3.06 11H1v2h2.06A8.994 8.994 0 0 0 11 20.94V23h2v-2.06A8.994 8.994 0 0 0 20.94 13H23v-2h-2.06zM12 19c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7z"/></svg>
               </div>
             </div>
-            <div class="ps-card">
-              <div class="ps-card-tag teal">📶 eSIM</div>
-              <div class="ps-card-val">Airalo — From $5 USD</div>
-              <div class="ps-card-sub">190+ countries · Instant activation</div>
-            </div>
-            <div class="ps-card">
-              <div class="ps-card-tag gold">💱 Exchange Rate</div>
-              <div class="ps-card-val">1 USD = 17.2 MXN</div>
-              <div class="ps-card-sub">Real-time rate via Wise</div>
-            </div>
+
+            <!-- Bottom nav bar -->
             <div class="ps-nav">
-              <div class="ps-nav-item active">
-                <div class="ps-nav-icon">🏠</div>
-                <div>Home</div>
-              </div>
               <div class="ps-nav-item">
-                <div class="ps-nav-icon">🗺️</div>
+                <div class="ps-nav-icon">🧭</div>
                 <div>Explore</div>
               </div>
               <div class="ps-nav-item">
                 <div class="ps-nav-icon">🔧</div>
                 <div>Tools</div>
+              </div>
+              <div class="ps-nav-item active">
+                <div class="ps-nav-icon">🗺️</div>
+                <div>Map</div>
+                <div class="ps-nav-dot"></div>
+              </div>
+              <div class="ps-nav-item">
+                <div class="ps-nav-icon">🛡️</div>
+                <div>Safety</div>
               </div>
               <div class="ps-nav-item">
                 <div class="ps-nav-icon">👤</div>
