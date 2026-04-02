@@ -1,0 +1,173 @@
+{
+  "city_id": "mex_michoacan_morelia_michoacan",
+  "city_name": "Morelia",
+  "state": "Michoacán",
+  "has_detailed_guide": true,
+  "security": {
+    "level": 3,
+    "label": "Precaución / Caution"
+  },
+  "quick_stats": {
+    "best_time": "Oct – Apr (dry season; Day of the Dead late Oct/early Nov)",
+    "connectivity": "Good (Cafe Wi-Fi / 4G)",
+    "airport_iata": "MLM"
+  },
+  "quick_warnings": [
+    "Stay within the centro histórico and established tourist areas; avoid driving rural highways at night.",
+    "Morelia is a university city — the centro is lively but can get noisy on weekends.",
+    "Day of the Dead celebrations (late Oct/early Nov) are spectacular but book accommodations months ahead."
+  ],
+  "detail_guide": {
+    "getting_around": "The pink-stone centro histórico is walkable and pedestrian-friendly. City buses and taxis cover the wider metro area. Uber is available. MLM airport is ~30 minutes from downtown. ADO and other bus lines connect to Mexico City (~4 hr), Pátzcuaro (~1 hr), and Guadalajara (~3.5 hr).",
+    "top_sights": [
+      {
+        "id": "mor_cathedral",
+        "name": "Catedral de Morelia",
+        "category": "landmark",
+        "description": "A towering 18th-century baroque cathedral made of pink cantera stone, with an ornate pipe organ and dramatic nighttime illumination.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Catedral+de+Morelia,+Morelia,+Mexico"
+      },
+      {
+        "id": "mor_aqueduct",
+        "name": "Acueducto de Morelia",
+        "category": "landmark",
+        "description": "A graceful 253-arch aqueduct from 1789 running 1.7 km through the city, especially beautiful when lit at night.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Acueducto+de+Morelia,+Morelia,+Mexico"
+      },
+      {
+        "id": "mor_callejón_romance",
+        "name": "Callejón del Romance",
+        "category": "culture",
+        "description": "A charming alley with plaques bearing romantic poems set into the pink stone walls — a favorite evening stroll.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Callej%C3%B3n+del+Romance,+Morelia,+Mexico"
+      }
+    ],
+    "museums": [
+      {
+        "id": "mor_museo_colonial",
+        "name": "Museo del Virreinato (Palacio Clavijero)",
+        "category": "museum",
+        "description": "Former Jesuit college with a grand courtyard, hosting rotating exhibitions on colonial and contemporary art.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Museo+del+Virreinato+%28Palacio+Clavijero%29,+Morelia,+Mexico"
+      }
+    ],
+    "parks": [
+      {
+        "id": "mor_bosque_cuauhtemoc",
+        "name": "Bosque Cuauhtémoc",
+        "category": "park",
+        "description": "A shaded urban park adjacent to the aqueduct, popular for morning runs and weekend family outings.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Bosque+Cuauht%C3%A9moc,+Morelia,+Mexico"
+      }
+    ],
+    "eat_drink_work": [
+      {
+        "id": "mor_gazpacho",
+        "name": "Gazpachos y Nieves del Centro",
+        "category": "street food",
+        "description": "Try Morelia's signature gazpacho — a fruit cup with jicama, mango, pineapple, cheese, and chili — from stands on the plaza.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Gazpachos+y+Nieves+del+Centro,+Morelia,+Mexico"
+      },
+      {
+        "id": "mor_lu",
+        "name": "Lu Cocina Michoacana",
+        "category": "restaurant",
+        "description": "Elevated Michoacán cuisine showcasing carnitas, corundas, and uchepos in a contemporary setting.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Lu+Cocina+Michoacana,+Morelia,+Mexico"
+      },
+      {
+        "id": "mor_cafe_michelena",
+        "name": "Café Michelena",
+        "category": "cafe",
+        "description": "A local favorite for Michoacán-grown coffee, churros, and people-watching on the portales.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Caf%C3%A9+Michelena,+Morelia,+Mexico"
+      }
+    ],
+    "available_translations": [
+      "en",
+      "es",
+      "fr"
+    ]
+  },
+  "translations": {
+    "es": {
+      "quick_warnings": [
+        "Mantente dentro del centro histórico y las zonas turísticas establecidas; evita manejar por carreteras rurales de noche.",
+        "Morelia es una ciudad universitaria — el centro es animado pero puede ponerse ruidoso los fines de semana.",
+        "Las celebraciones de Día de Muertos (finales de octubre/principios de noviembre) son espectaculares, pero reserva alojamiento con meses de anticipación."
+      ],
+      "detail_guide": {
+        "getting_around": "El centro histórico de cantera rosa se recorre a pie y es amigable para peatones. Los autobuses urbanos y taxis cubren el área metropolitana. Uber está disponible. El aeropuerto MLM está a ~30 minutos del centro. ADO y otras líneas de autobús conectan con Ciudad de México (~4 hr), Pátzcuaro (~1 hr) y Guadalajara (~3.5 hr).",
+        "top_sights": [
+          {
+            "id": "mor_cathedral",
+            "name": "Catedral de Morelia",
+            "category": "monumento",
+            "description": "Una imponente catedral barroca del siglo XVIII construida en cantera rosa, con un ornamentado órgano tubular y una espectacular iluminación nocturna.",
+            "maps_url": ""
+          },
+          {
+            "id": "mor_aqueduct",
+            "name": "Acueducto de Morelia",
+            "category": "monumento",
+            "description": "Un elegante acueducto de 253 arcos de 1789 que recorre 1.7 km por la ciudad, especialmente hermoso cuando se ilumina por la noche.",
+            "maps_url": ""
+          },
+          {
+            "id": "mor_callejón_romance",
+            "name": "Callejón del Romance",
+            "category": "cultura",
+            "description": "Un encantador callejón con placas que llevan poemas románticos incrustados en las paredes de cantera rosa — un paseo nocturno favorito.",
+            "maps_url": ""
+          }
+        ],
+        "museums": [
+          {
+            "id": "mor_museo_colonial",
+            "name": "Museo del Virreinato (Palacio Clavijero)",
+            "category": "museo",
+            "description": "Antiguo colegio jesuita con un gran patio, que alberga exposiciones rotativas de arte colonial y contemporáneo.",
+            "maps_url": ""
+          }
+        ],
+        "parks": [
+          {
+            "id": "mor_bosque_cuauhtemoc",
+            "name": "Bosque Cuauhtémoc",
+            "category": "parque",
+            "description": "Un parque urbano arbolado junto al acueducto, popular para correr por las mañanas y paseos familiares de fin de semana.",
+            "maps_url": ""
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "mor_gazpacho",
+            "name": "Gazpachos y Nieves del Centro",
+            "category": "comida callejera",
+            "description": "Prueba el gazpacho moreliano — un vaso de frutas con jícama, mango, piña, queso y chile — en los puestos de la plaza.",
+            "maps_url": ""
+          },
+          {
+            "id": "mor_lu",
+            "name": "Lu Cocina Michoacana",
+            "category": "restaurante",
+            "description": "Cocina michoacana de autor que presenta carnitas, corundas y uchepos en un ambiente contemporáneo.",
+            "maps_url": ""
+          },
+          {
+            "id": "mor_cafe_michelena",
+            "name": "Café Michelena",
+            "category": "cafetería",
+            "description": "Un favorito local para café cultivado en Michoacán, churros y ver pasar a la gente desde los portales.",
+            "maps_url": ""
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,229 @@
+{
+  "city_id": "mex_ciudad_de_mexico_cuauhtemoc",
+  "city_name": "Ciudad de México",
+  "state": "Ciudad de México",
+  "has_detailed_guide": true,
+  "security": {
+    "level": 3,
+    "label": "Riesgo Moderado / Moderate Risk"
+  },
+  "quick_stats": {
+    "best_time": "Oct – Apr",
+    "connectivity": "Excellent (Fiber)",
+    "airport_iata": "MEX"
+  },
+  "quick_warnings": [
+    "Never hail street taxis — always use Uber, InDriver, or authorized airport taxis with a fixed fare.",
+    "Altitude is 2,240 m (7,350 ft). Allow 1–2 days to acclimatize before intense activity.",
+    "Metro pickpockets are common — keep phones and wallets out of sight, especially during rush hour."
+  ],
+  "detail_guide": {
+    "getting_around": "The Metro (MXN ~6/ride) is fast, cheap, and covers the entire city. Use Uber or InDriver for door-to-door trips. Avoid street taxis entirely. Ecobici bike-share is excellent in Roma, Condesa, and Polanco.",
+    "top_sights": [
+      {
+        "id": "sight_zocalo",
+        "name": "Zócalo & Historic Centre",
+        "category": "Landmark",
+        "description": "One of the world's largest city squares. Surrounded by the Metropolitan Cathedral, National Palace with Diego Rivera murals, and Aztec Templo Mayor ruins.",
+        "maps_url": "https://maps.app.goo.gl/zocalocdmx"
+      },
+      {
+        "id": "sight_chapultepec",
+        "name": "Chapultepec Castle",
+        "category": "History",
+        "description": "19th-century hilltop castle with panoramic city views, inside one of the largest urban parks in the world.",
+        "maps_url": "https://maps.app.goo.gl/chapultepeccastillo"
+      },
+      {
+        "id": "sight_xochimilco",
+        "name": "Xochimilco Canals",
+        "category": "Unique",
+        "description": "UNESCO-listed floating gardens. Take a colorful trajinera boat on the ancient Aztec canal system on weekends.",
+        "maps_url": "https://maps.app.goo.gl/xochimilcocdmx"
+      }
+    ],
+    "museums": [
+      {
+        "id": "museum_anthropology",
+        "name": "Museo Nacional de Antropología",
+        "category": "World-class",
+        "description": "Mexico's most important museum. Houses the Aztec Sun Stone and artifacts from every major pre-Columbian civilization.",
+        "maps_url": "https://maps.app.goo.gl/mnacdmx"
+      },
+      {
+        "id": "museum_frida",
+        "name": "Museo Frida Kahlo (Casa Azul)",
+        "category": "Art / Culture",
+        "description": "Frida Kahlo's vibrant blue home in Coyoacán. Book tickets online well in advance — sells out weeks ahead.",
+        "maps_url": "https://maps.app.goo.gl/casaazulcdmx"
+      },
+      {
+        "id": "museum_soumaya",
+        "name": "Museo Soumaya",
+        "category": "Art / Free Entry",
+        "description": "Carlos Slim's iconic silver-clad building in Polanco. Free admission. Rodin sculptures and 66,000+ art pieces.",
+        "maps_url": "https://maps.app.goo.gl/soumayacdmx"
+      }
+    ],
+    "parks": [
+      {
+        "id": "park_chapultepec",
+        "name": "Bosque de Chapultepec",
+        "category": "Urban Park",
+        "description": "4 km² green lung of the city. Lakes, jogging paths, zoo, and several museums. Best on Sunday mornings.",
+        "maps_url": "https://maps.app.goo.gl/chapultepecbosque"
+      },
+      {
+        "id": "park_viveros",
+        "name": "Viveros de Coyoacán",
+        "category": "Nature / Running",
+        "description": "Quiet tree nursery turned beloved jogging and walking park. Calm escape from the urban noise of Coyoacán.",
+        "maps_url": "https://maps.app.goo.gl/viveroscdmx"
+      }
+    ],
+    "eat_drink_work": [
+      {
+        "id": "eat_mercado_roma",
+        "name": "Mercado Roma",
+        "category": "Food Hall",
+        "description": "Curated gourmet market in Colonia Roma. Craft beers, artisanal tacos, and international street food. Great for a casual lunch between meetings.",
+        "maps_url": "https://maps.app.goo.gl/mercadoromacdmx"
+      },
+      {
+        "id": "eat_el_hidalguense",
+        "name": "El Hidalguense",
+        "category": "Local Food",
+        "description": "Legendary carnitas restaurant in Roma Norte. Cash only. Arrive before 1 PM — they sell out by early afternoon.",
+        "maps_url": "https://maps.app.goo.gl/hidalguensecdmx"
+      },
+      {
+        "id": "work_selina_roma",
+        "name": "Selina Roma Norte",
+        "category": "Coworking",
+        "description": "Reliable high-speed Wi-Fi, hot desks, private offices, and a rooftop pool. Day passes available. Strong digital nomad community.",
+        "maps_url": "https://maps.app.goo.gl/selinardmx"
+      },
+      {
+        "id": "work_wework_reforma",
+        "name": "WeWork Paseo de la Reforma",
+        "category": "Coworking",
+        "description": "Premium coworking on CDMX's main corporate boulevard. Day passes and monthly memberships. Meeting rooms available.",
+        "maps_url": "https://maps.app.goo.gl/weworkreformacdmx"
+      }
+    ],
+    "available_translations": [
+      "en",
+      "es",
+      "fr"
+    ]
+  },
+  "translations": {
+    "es": {
+      "quick_warnings": [
+        "Nunca pares un taxi en la calle — usa siempre Uber, InDriver o taxis autorizados del aeropuerto con tarifa fija.",
+        "La altitud es de 2,240 m. Permite 1–2 días de aclimatación antes de realizar actividad intensa.",
+        "Los carteristas en el Metro son frecuentes — mantén el teléfono y la cartera fuera de vista, especialmente en hora pico."
+      ],
+      "detail_guide": {
+        "getting_around": "El Metro (MXN ~6/viaje) es rápido, económico y cubre toda la ciudad. Usa Uber o InDriver para viajes puerta a puerta. Evita los taxis de calle por completo. Ecobici (bicicletas compartidas) funciona muy bien en Roma, Condesa y Polanco.",
+        "top_sights": [
+          {
+            "id": "sight_zocalo",
+            "name": "Zócalo & Centro Histórico",
+            "category": "Punto de interés",
+            "description": "Una de las plazas más grandes del mundo. Rodeada por la Catedral Metropolitana, el Palacio Nacional con murales de Diego Rivera y las ruinas aztecas del Templo Mayor.",
+            "maps_url": "https://maps.app.goo.gl/zocalocdmx"
+          },
+          {
+            "id": "sight_chapultepec",
+            "name": "Castillo de Chapultepec",
+            "category": "Historia",
+            "description": "Castillo del siglo XIX en la cima de una colina con vistas panorámicas de la ciudad, dentro de uno de los parques urbanos más grandes del mundo.",
+            "maps_url": "https://maps.app.goo.gl/chapultepeccastillo"
+          },
+          {
+            "id": "sight_xochimilco",
+            "name": "Canales de Xochimilco",
+            "category": "Único",
+            "description": "Jardines flotantes declarados Patrimonio de la Humanidad por la UNESCO. Pasea en una colorida trajinera por el antiguo sistema de canales aztecas los fines de semana.",
+            "maps_url": "https://maps.app.goo.gl/xochimilcocdmx"
+          }
+        ],
+        "museums": [
+          {
+            "id": "museum_anthropology",
+            "name": "Museo Nacional de Antropología",
+            "category": "De clase mundial",
+            "description": "El museo más importante de México. Alberga la Piedra del Sol azteca y artefactos de todas las principales civilizaciones precolombinas.",
+            "maps_url": "https://maps.app.goo.gl/mnacdmx"
+          },
+          {
+            "id": "museum_frida",
+            "name": "Museo Frida Kahlo (Casa Azul)",
+            "category": "Arte / Cultura",
+            "description": "La vibrante casa azul de Frida Kahlo en Coyoacán. Compra boletos en línea con mucha anticipación — se agotan semanas antes.",
+            "maps_url": "https://maps.app.goo.gl/casaazulcdmx"
+          },
+          {
+            "id": "museum_soumaya",
+            "name": "Museo Soumaya",
+            "category": "Arte / Entrada gratuita",
+            "description": "El icónico edificio plateado de Carlos Slim en Polanco. Entrada gratuita. Esculturas de Rodin y más de 66,000 piezas de arte.",
+            "maps_url": "https://maps.app.goo.gl/soumayacdmx"
+          }
+        ],
+        "parks": [
+          {
+            "id": "park_chapultepec",
+            "name": "Bosque de Chapultepec",
+            "category": "Parque urbano",
+            "description": "Pulmón verde de 4 km² de la ciudad. Lagos, senderos para correr, zoológico y varios museos. Mejor los domingos por la mañana.",
+            "maps_url": "https://maps.app.goo.gl/chapultepecbosque"
+          },
+          {
+            "id": "park_viveros",
+            "name": "Viveros de Coyoacán",
+            "category": "Naturaleza / Running",
+            "description": "Tranquilo vivero convertido en un querido parque para correr y caminar. Un escape sereno del ruido urbano de Coyoacán.",
+            "maps_url": "https://maps.app.goo.gl/viveroscdmx"
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "eat_mercado_roma",
+            "name": "Mercado Roma",
+            "category": "Mercado gourmet",
+            "description": "Mercado gourmet curado en la Colonia Roma. Cervezas artesanales, tacos artesanales y comida callejera internacional. Ideal para un almuerzo casual entre reuniones.",
+            "maps_url": "https://maps.app.goo.gl/mercadoromacdmx"
+          },
+          {
+            "id": "eat_el_hidalguense",
+            "name": "El Hidalguense",
+            "category": "Comida local",
+            "description": "Legendario restaurante de carnitas en Roma Norte. Solo efectivo. Llega antes de la 1 PM — se agotan a primera hora de la tarde.",
+            "maps_url": "https://maps.app.goo.gl/hidalguensecdmx"
+          },
+          {
+            "id": "work_selina_roma",
+            "name": "Selina Roma Norte",
+            "category": "Coworking",
+            "description": "Wi-Fi de alta velocidad confiable, escritorios compartidos, oficinas privadas y alberca en la azotea. Pases por día disponibles. Fuerte comunidad de nómadas digitales.",
+            "maps_url": "https://maps.app.goo.gl/selinardmx"
+          },
+          {
+            "id": "work_wework_reforma",
+            "name": "WeWork Paseo de la Reforma",
+            "category": "Coworking",
+            "description": "Coworking premium en el principal bulevar corporativo de CDMX. Pases diarios y membresías mensuales. Salas de reuniones disponibles.",
+            "maps_url": "https://maps.app.goo.gl/weworkreformacdmx"
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr"
+        ]
+      }
+    }
+  }
+}

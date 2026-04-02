@@ -1,0 +1,171 @@
+{
+  "city_id": "mex_quintana_roo_isla_mujeres",
+  "city_name": "Isla Mujeres",
+  "state": "Quintana Roo",
+  "has_detailed_guide": true,
+  "security": {
+    "level": 2,
+    "label": "Seguro / Safe"
+  },
+  "quick_stats": {
+    "best_time": "Nov – Apr (dry season, calm seas)",
+    "connectivity": "Good (Hotel Wi-Fi / 4G)",
+    "airport_iata": "CUN"
+  },
+  "quick_warnings": [
+    "Ferries from Cancún run frequently but can be rough in high winds — take motion sickness meds if needed.",
+    "Golf cart rentals are the main transport; drive slowly on narrow streets and watch for pedestrians.",
+    "Jellyfish are common in summer months — ask locals about conditions before swimming."
+  ],
+  "detail_guide": {
+    "getting_around": "The island is only 7 km long. Golf carts are the most popular way to get around and can be rented near the ferry dock. Walking and bicycling work well for the downtown area. Ultramar ferries run every 30 minutes from Cancún.",
+    "top_sights": [
+      {
+        "id": "im_playa_norte",
+        "name": "Playa Norte",
+        "category": "beach",
+        "description": "Consistently ranked among Mexico's best beaches, with calm turquoise water, white sand, and beachfront bars.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Playa+Norte,+Isla+Mujeres,+Mexico"
+      },
+      {
+        "id": "im_punta_sur",
+        "name": "Punta Sur Sculpture Garden",
+        "category": "landmark / nature",
+        "description": "Clifftop park at the island's southern tip with ocean views, Maya temple ruins, and colorful modern sculptures.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Punta+Sur+Sculpture+Garden,+Isla+Mujeres,+Mexico"
+      },
+      {
+        "id": "im_musa",
+        "name": "MUSA Underwater Museum",
+        "category": "art / snorkeling",
+        "description": "Over 500 submerged sculptures on the sea floor, viewable by snorkeling or diving — a unique art-meets-reef experience.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=MUSA+Underwater+Museum,+Isla+Mujeres,+Mexico"
+      }
+    ],
+    "museums": [],
+    "parks": [
+      {
+        "id": "im_garrafon",
+        "name": "Parque Garrafón",
+        "category": "nature / adventure",
+        "description": "Reef park on the island's south side with snorkeling, zip-lines, and kayaking over coral gardens.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Parque+Garraf%C3%B3n,+Isla+Mujeres,+Mexico"
+      },
+      {
+        "id": "im_tortugranja",
+        "name": "Tortugranja (Turtle Farm)",
+        "category": "wildlife",
+        "description": "Sea turtle conservation center where you can learn about and see green and hawksbill turtles up close.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Tortugranja+%28Turtle+Farm%29,+Isla+Mujeres,+Mexico"
+      }
+    ],
+    "eat_drink_work": [
+      {
+        "id": "im_hidalgo",
+        "name": "Calle Hidalgo (Restaurant Row)",
+        "category": "dining street",
+        "description": "The island's main pedestrian strip packed with taco stands, seafood restaurants, and bars with live music.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Calle+Hidalgo+%28Restaurant+Row%29,+Isla+Mujeres,+Mexico"
+      },
+      {
+        "id": "im_lola_valentina",
+        "name": "Lola Valentina",
+        "category": "restaurant",
+        "description": "Charming rooftop restaurant serving fresh fish tacos, mezcal cocktails, and Yucatecan specialties.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Lola+Valentina,+Isla+Mujeres,+Mexico"
+      },
+      {
+        "id": "im_mango_cafe",
+        "name": "Mango Cafe",
+        "category": "cafe",
+        "description": "Famous for its massive breakfasts and strong coffee; expect a wait but it's worth it.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Mango+Cafe,+Isla+Mujeres,+Mexico"
+      }
+    ],
+    "available_translations": [
+      "en",
+      "es",
+      "fr"
+    ]
+  },
+  "translations": {
+    "es": {
+      "quick_warnings": [
+        "Los ferrys desde Cancún salen con frecuencia pero pueden ser bruscos con viento fuerte — toma pastillas para el mareo si es necesario.",
+        "Los carritos de golf son el transporte principal; conduce despacio en calles estrechas y atención a los peatones.",
+        "Las medusas son comunes en los meses de verano — pregunta a los locales sobre las condiciones antes de nadar."
+      ],
+      "detail_guide": {
+        "getting_around": "La isla mide solo 7 km de largo. Los carritos de golf son la forma más popular de moverse y se rentan cerca del muelle del ferry. Caminar y andar en bicicleta funcionan bien en el centro. Los ferrys Ultramar salen cada 30 minutos desde Cancún.",
+        "top_sights": [
+          {
+            "id": "im_playa_norte",
+            "name": "Playa Norte",
+            "category": "playa",
+            "description": "Constantemente clasificada entre las mejores playas de México, con agua turquesa tranquila, arena blanca y bares frente al mar.",
+            "maps_url": ""
+          },
+          {
+            "id": "im_punta_sur",
+            "name": "Jardín de Esculturas de Punta Sur",
+            "category": "punto de interés / naturaleza",
+            "description": "Parque en el acantilado de la punta sur de la isla con vistas al océano, ruinas de templos mayas y coloridas esculturas modernas.",
+            "maps_url": ""
+          },
+          {
+            "id": "im_musa",
+            "name": "MUSA Museo Subacuático de Arte",
+            "category": "arte / snorkel",
+            "description": "Más de 500 esculturas sumergidas en el fondo marino, visibles haciendo snorkel o buceo — una experiencia única de arte y arrecife.",
+            "maps_url": ""
+          }
+        ],
+        "museums": [],
+        "parks": [
+          {
+            "id": "im_garrafon",
+            "name": "Parque Garrafón",
+            "category": "naturaleza / aventura",
+            "description": "Parque de arrecife en el sur de la isla con snorkel, tirolesas y kayak sobre jardines de coral.",
+            "maps_url": ""
+          },
+          {
+            "id": "im_tortugranja",
+            "name": "Tortugranja",
+            "category": "vida silvestre",
+            "description": "Centro de conservación de tortugas marinas donde puedes conocer y ver de cerca tortugas verdes y carey.",
+            "maps_url": ""
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "im_hidalgo",
+            "name": "Calle Hidalgo (Zona de Restaurantes)",
+            "category": "calle gastronómica",
+            "description": "La principal calle peatonal de la isla, llena de puestos de tacos, restaurantes de mariscos y bares con música en vivo.",
+            "maps_url": ""
+          },
+          {
+            "id": "im_lola_valentina",
+            "name": "Lola Valentina",
+            "category": "restaurante",
+            "description": "Encantador restaurante en azotea que sirve tacos de pescado fresco, cócteles de mezcal y especialidades yucatecas.",
+            "maps_url": ""
+          },
+          {
+            "id": "im_mango_cafe",
+            "name": "Mango Cafe",
+            "category": "cafetería",
+            "description": "Famoso por sus desayunos abundantes y café fuerte; espera algo de fila pero vale la pena.",
+            "maps_url": ""
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr"
+        ]
+      }
+    }
+  }
+}

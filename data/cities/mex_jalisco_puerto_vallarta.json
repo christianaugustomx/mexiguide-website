@@ -1,0 +1,201 @@
+{
+  "city_id": "mex_jalisco_puerto_vallarta",
+  "city_name": "Puerto Vallarta",
+  "state": "Jalisco",
+  "has_detailed_guide": true,
+  "security": {
+    "level": 3,
+    "label": "Moderado / Moderate"
+  },
+  "quick_stats": {
+    "best_time": "Nov – Apr",
+    "connectivity": "Excellent (Fiber / 5G — Top Nomad Destination)",
+    "airport_iata": "PVR"
+  },
+  "quick_warnings": [
+    "Avoid hailing street taxis — use Uber or authorized airport transfers to prevent overcharging.",
+    "Stay within tourist corridors (El Centro, Romantic Zone, Marina). Avoid night travel on highways outside the city.",
+    "Ocean currents at some beaches can be strong — obey flag warnings and ask locals before swimming."
+  ],
+  "detail_guide": {
+    "getting_around": "El Centro and the Romantic Zone are highly walkable — most sights are within 20 minutes on foot. For the Hotel Zone, Marina, or airport, use Uber (widely available and reliable). Avoid street taxis entirely.",
+    "top_sights": [
+      {
+        "id": "sight_malecon",
+        "name": "Malecón Boardwalk",
+        "category": "Landmark",
+        "description": "A vibrant 1-mile esplanade along Banderas Bay lined with world-class sculptures, street performers, and stunning sunset views. Start at the north end and walk south.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Malec%C3%B3n+Boardwalk,+Puerto+Vallarta,+Mexico"
+      },
+      {
+        "id": "sight_guadalupe",
+        "name": "Parish of Our Lady of Guadalupe",
+        "category": "Architecture",
+        "description": "PV's most iconic landmark — the ornate wrought-iron crown atop the bell tower is visible from across the city. The surrounding plaza is great for people-watching.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Parish+of+Our+Lady+of+Guadalupe,+Puerto+Vallarta,+Mexico"
+      },
+      {
+        "id": "sight_los_arcos",
+        "name": "Los Arcos National Marine Park",
+        "category": "Adventure",
+        "description": "Granite rock formations rising from the sea south of the city, offering the best snorkeling and diving in the region. Book a half-day boat tour from the Marina.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Los+Arcos+National+Marine+Park,+Puerto+Vallarta,+Mexico"
+      }
+    ],
+    "museums": [
+      {
+        "id": "museum_rio_cuale",
+        "name": "Museo del Cuale",
+        "category": "Archaeology",
+        "description": "A small but worthwhile free museum on Cuale Island showcasing pre-Columbian artifacts from the region. The island itself is a shaded oasis in the middle of the river.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Museo+del+Cuale,+Puerto+Vallarta,+Mexico"
+      },
+      {
+        "id": "museum_galeria_pacifico",
+        "name": "Galería Pacífico",
+        "category": "Contemporary Art",
+        "description": "One of PV's best commercial galleries, showing works by established Mexican and international artists. Free to enter — part of the Thursday art walk circuit.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Galer%C3%ADa+Pac%C3%ADfico,+Puerto+Vallarta,+Mexico"
+      }
+    ],
+    "parks": [
+      {
+        "id": "nature_botanical_gardens",
+        "name": "Vallarta Botanical Gardens",
+        "category": "Nature",
+        "description": "One of the top botanical gardens in North America, featuring exotic orchids, cactus collections, and jungle hiking trails. 30 min south by Uber — worth the trip.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Vallarta+Botanical+Gardens,+Puerto+Vallarta,+Mexico"
+      },
+      {
+        "id": "nature_los_muertos",
+        "name": "Playa de los Muertos",
+        "category": "Beach",
+        "description": "The most popular and lively beach in the city, centered around the iconic modern pier. Best in the morning before beach clubs fill up. Lined with restaurants and parasailing operators.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Playa+de+los+Muertos,+Puerto+Vallarta,+Mexico"
+      }
+    ],
+    "eat_drink_work": [
+      {
+        "id": "eat_panchos",
+        "name": "Pancho's Takos",
+        "category": "Authentic Food",
+        "description": "A beloved Romantic Zone institution for Al Pastor tacos. Expect a line — it moves fast and is worth every minute. Cash only, open late.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Pancho%27s+Takos,+Puerto+Vallarta,+Mexico"
+      },
+      {
+        "id": "eat_vitea",
+        "name": "Vitea Oceanfront Bistro",
+        "category": "Upscale Dining",
+        "description": "Contemporary Mexican cuisine right on the Malecón. Excellent for client dinners — seafood-forward menu, strong wine list, sunset views included.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Vitea+Oceanfront+Bistro,+Puerto+Vallarta,+Mexico"
+      },
+      {
+        "id": "work_vallarta_cowork",
+        "name": "Vallarta Cowork",
+        "category": "Coworking",
+        "description": "Purpose-built coworking space with ergonomic chairs, private booths, and high-speed fiber. Strong expat and nomad community — good for networking. Day and monthly passes available.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Vallarta+Cowork,+Puerto+Vallarta,+Mexico"
+      }
+    ],
+    "available_translations": [
+      "en",
+      "es",
+      "fr"
+    ]
+  },
+  "translations": {
+    "es": {
+      "quick_warnings": [
+        "Evita parar taxis en la calle — usa Uber o traslados autorizados del aeropuerto para evitar cobros excesivos.",
+        "Mantente dentro de los corredores turísticos (El Centro, Zona Romántica, Marina). Evita viajar de noche por carreteras fuera de la ciudad.",
+        "Las corrientes oceánicas en algunas playas pueden ser fuertes — obedece las advertencias de banderas y pregunta a los locales antes de nadar."
+      ],
+      "detail_guide": {
+        "getting_around": "El Centro y la Zona Romántica son muy caminables — la mayoría de los sitios de interés están a 20 minutos a pie. Para la Zona Hotelera, Marina o aeropuerto, usa Uber (ampliamente disponible y confiable). Evita los taxis de calle por completo.",
+        "top_sights": [
+          {
+            "id": "sight_malecon",
+            "name": "Malecón",
+            "category": "Punto de interés",
+            "description": "Un vibrante paseo marítimo de 1.5 km a lo largo de la Bahía de Banderas con esculturas de clase mundial, artistas callejeros y espectaculares vistas del atardecer. Comienza por el extremo norte y camina hacia el sur.",
+            "maps_url": "https://maps.app.goo.gl/placeholder36"
+          },
+          {
+            "id": "sight_guadalupe",
+            "name": "Parroquia de Nuestra Señora de Guadalupe",
+            "category": "Arquitectura",
+            "description": "El punto de referencia más icónico de PV — la ornamentada corona de hierro forjado sobre la torre del campanario es visible desde toda la ciudad. La plaza circundante es ideal para observar a la gente.",
+            "maps_url": "https://maps.app.goo.gl/placeholder37"
+          },
+          {
+            "id": "sight_los_arcos",
+            "name": "Parque Nacional Marino Los Arcos",
+            "category": "Aventura",
+            "description": "Formaciones rocosas de granito que emergen del mar al sur de la ciudad, ofreciendo el mejor snorkel y buceo de la región. Reserva un tour en bote de medio día desde la Marina.",
+            "maps_url": "https://maps.app.goo.gl/placeholder38"
+          }
+        ],
+        "museums": [
+          {
+            "id": "museum_rio_cuale",
+            "name": "Museo del Cuale",
+            "category": "Arqueología",
+            "description": "Un museo gratuito pequeño pero que vale la pena en la Isla del Cuale, exhibiendo artefactos precolombinos de la región. La isla en sí es un oasis sombreado en medio del río.",
+            "maps_url": "https://maps.app.goo.gl/placeholderCuale"
+          },
+          {
+            "id": "museum_galeria_pacifico",
+            "name": "Galería Pacífico",
+            "category": "Arte contemporáneo",
+            "description": "Una de las mejores galerías comerciales de PV, mostrando obras de artistas mexicanos e internacionales establecidos. Entrada gratuita — parte del circuito de caminata de arte de los jueves.",
+            "maps_url": "https://maps.app.goo.gl/placeholderGaleriaPacifico"
+          }
+        ],
+        "parks": [
+          {
+            "id": "nature_botanical_gardens",
+            "name": "Jardín Botánico de Vallarta",
+            "category": "Naturaleza",
+            "description": "Uno de los mejores jardines botánicos de Norteamérica, con orquídeas exóticas, colecciones de cactus y senderos de selva. 30 min al sur en Uber — vale la pena el viaje.",
+            "maps_url": "https://maps.app.goo.gl/placeholder39"
+          },
+          {
+            "id": "nature_los_muertos",
+            "name": "Playa de los Muertos",
+            "category": "Playa",
+            "description": "La playa más popular y animada de la ciudad, centrada alrededor del icónico muelle moderno. Mejor por la mañana antes de que se llenen los clubes de playa. Bordeada de restaurantes y operadores de parasailing.",
+            "maps_url": "https://maps.app.goo.gl/placeholder40"
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "eat_panchos",
+            "name": "Pancho's Takos",
+            "category": "Comida auténtica",
+            "description": "Una querida institución de la Zona Romántica para tacos Al Pastor. Espera fila — avanza rápido y vale cada minuto. Solo efectivo, abierto hasta tarde.",
+            "maps_url": "https://maps.app.goo.gl/placeholder41"
+          },
+          {
+            "id": "eat_vitea",
+            "name": "Vitea Oceanfront Bistro",
+            "category": "Alta cocina",
+            "description": "Cocina mexicana contemporánea justo en el Malecón. Excelente para cenas con clientes — menú centrado en mariscos, buena carta de vinos, vistas al atardecer incluidas.",
+            "maps_url": "https://maps.app.goo.gl/placeholderVitea"
+          },
+          {
+            "id": "work_vallarta_cowork",
+            "name": "Vallarta Cowork",
+            "category": "Coworking",
+            "description": "Espacio de coworking diseñado a propósito con sillas ergonómicas, cabinas privadas y fibra de alta velocidad. Fuerte comunidad expat y nómada — ideal para networking. Pases diarios y mensuales disponibles.",
+            "maps_url": "https://maps.app.goo.gl/placeholder42"
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "city_id": "mex_slp_xilitla_slp",
+  "city_name": "Xilitla",
+  "state": "San Luis Potosí",
+  "has_detailed_guide": true,
+  "security": {
+    "level": 3,
+    "label": "Precaución / Caution"
+  },
+  "quick_stats": {
+    "best_time": "Nov – Mar (dry season, clearer trails)",
+    "connectivity": "Limited (Hotel Wi-Fi / 4G weak)",
+    "airport_iata": "SLP"
+  },
+  "quick_warnings": [
+    "The drive from SLP airport is 5–6 hours on winding mountain roads — travel only during daylight.",
+    "Xilitla is in the cloud forest and rain is frequent year-round; pack a waterproof jacket and sturdy shoes.",
+    "Cell service and ATMs are very limited; bring sufficient cash and download offline maps."
+  ],
+  "detail_guide": {
+    "getting_around": "Xilitla is a small mountain town walkable on foot. Taxis and mototaxis cover the area. Las Pozas surrealist garden is a short taxi ride from the town center. Reaching Xilitla requires a car or bus from Ciudad Valles (~1.5 hr) or San Luis Potosí city (~5 hr).",
+    "top_sights": [
+      {
+        "id": "xil_las_pozas",
+        "name": "Las Pozas (Edward James Surrealist Garden)",
+        "category": "art / nature",
+        "description": "A jaw-dropping surrealist sculpture garden built in the jungle by British eccentric Edward James, with concrete towers, bridges, and pools woven into the rainforest.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Las+Pozas+%28Edward+James+Surrealist+Garden%29,+Xilitla,+Mexico"
+      },
+      {
+        "id": "xil_sotano_golondrinas",
+        "name": "Sótano de las Golondrinas (day trip)",
+        "category": "nature",
+        "description": "A massive open-air pit cave (~2 hr away) where thousands of swifts spiral out at dawn — one of Mexico's great natural spectacles.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=S%C3%B3tano+de+las+Golondrinas+%28day+trip%29,+Xilitla,+Mexico"
+      },
+      {
+        "id": "xil_cascada_tamul",
+        "name": "Cascada de Tamul (day trip)",
+        "category": "nature",
+        "description": "A dramatic 105-meter waterfall reached by boat through a turquoise river canyon in the Huasteca Potosina.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Cascada+de+Tamul+%28day+trip%29,+Xilitla,+Mexico"
+      }
+    ],
+    "museums": [],
+    "parks": [
+      {
+        "id": "xil_jardin_edward_james",
+        "name": "Jilitla Coffee Plantations",
+        "category": "nature / agritourism",
+        "description": "Shade-grown coffee fincas in the surrounding cloud forest offer tours, tastings, and walks through lush greenery.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Jilitla+Coffee+Plantations,+Xilitla,+Mexico"
+      }
+    ],
+    "eat_drink_work": [
+      {
+        "id": "xil_posada_james",
+        "name": "El Castillo de Edward James (Posada)",
+        "category": "restaurant / hotel",
+        "description": "Dine in the surrealist former home of Edward James; regional dishes served among jungle gardens and art-filled rooms.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=El+Castillo+de+Edward+James+%28Posada%29,+Xilitla,+Mexico"
+      },
+      {
+        "id": "xil_zacahuil",
+        "name": "Mercado Municipal de Xilitla",
+        "category": "food market",
+        "description": "Try zacahuil, the giant Huastecan tamale baked in banana leaves, along with enchiladas huastecas and local coffee.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Mercado+Municipal+de+Xilitla,+Xilitla,+Mexico"
+      }
+    ],
+    "available_translations": [
+      "en",
+      "es",
+      "fr"
+    ]
+  },
+  "translations": {
+    "es": {
+      "quick_warnings": [
+        "El trayecto desde el aeropuerto de SLP es de 5 a 6 horas por carreteras sinuosas de montaña — viaja solo durante el día.",
+        "Xilitla está en el bosque de niebla y la lluvia es frecuente todo el año; lleva una chamarra impermeable y zapatos resistentes.",
+        "La señal de celular y los cajeros automáticos son muy limitados; lleva suficiente efectivo y descarga mapas sin conexión."
+      ],
+      "detail_guide": {
+        "getting_around": "Xilitla es un pequeño pueblo de montaña que se recorre a pie. Los taxis y mototaxis cubren la zona. El jardín surrealista de Las Pozas está a un corto trayecto en taxi desde el centro del pueblo. Para llegar a Xilitla se necesita auto o autobús desde Ciudad Valles (~1.5 hr) o la ciudad de San Luis Potosí (~5 hr).",
+        "top_sights": [
+          {
+            "id": "xil_las_pozas",
+            "name": "Las Pozas (Jardín Surrealista de Edward James)",
+            "category": "arte / naturaleza",
+            "description": "Un impresionante jardín de esculturas surrealistas construido en la selva por el excéntrico británico Edward James, con torres de concreto, puentes y pozas integradas en la selva tropical.",
+            "maps_url": ""
+          },
+          {
+            "id": "xil_sotano_golondrinas",
+            "name": "Sótano de las Golondrinas (excursión de un día)",
+            "category": "naturaleza",
+            "description": "Un enorme abismo a cielo abierto (~2 hr de distancia) donde miles de vencejos salen en espiral al amanecer — uno de los grandes espectáculos naturales de México.",
+            "maps_url": ""
+          },
+          {
+            "id": "xil_cascada_tamul",
+            "name": "Cascada de Tamul (excursión de un día)",
+            "category": "naturaleza",
+            "description": "Una espectacular cascada de 105 metros a la que se llega en lancha por un cañón de río turquesa en la Huasteca Potosina.",
+            "maps_url": ""
+          }
+        ],
+        "museums": [],
+        "parks": [
+          {
+            "id": "xil_jardin_edward_james",
+            "name": "Cafetales de Xilitla",
+            "category": "naturaleza / agroturismo",
+            "description": "Fincas de café de sombra en el bosque de niebla circundante que ofrecen recorridos, degustaciones y caminatas entre la exuberante vegetación.",
+            "maps_url": ""
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "xil_posada_james",
+            "name": "El Castillo de Edward James (Posada)",
+            "category": "restaurante / hotel",
+            "description": "Come en la antigua casa surrealista de Edward James; platillos regionales servidos entre jardines selváticos y habitaciones llenas de arte.",
+            "maps_url": ""
+          },
+          {
+            "id": "xil_zacahuil",
+            "name": "Mercado Municipal de Xilitla",
+            "category": "mercado de comida",
+            "description": "Prueba el zacahuil, el tamal gigante huasteco horneado en hojas de plátano, junto con enchiladas huastecas y café local.",
+            "maps_url": ""
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr"
+        ]
+      }
+    }
+  }
+}

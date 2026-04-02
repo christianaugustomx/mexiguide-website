@@ -1,0 +1,173 @@
+{
+  "city_id": "mex_baja_california_ensenada_baja_california",
+  "city_name": "Ensenada",
+  "state": "Baja California",
+  "has_detailed_guide": true,
+  "security": {
+    "level": 3,
+    "label": "Precaución / Caution"
+  },
+  "quick_stats": {
+    "best_time": "Apr – Oct (warm, wine harvest Aug–Oct)",
+    "connectivity": "Good (Cafe Wi-Fi / 4G)",
+    "airport_iata": "TIJ"
+  },
+  "quick_warnings": [
+    "Nearest commercial airport is Tijuana (TIJ), ~90 min north; use the CBX bridge if coming from San Diego.",
+    "The toll road (cuota) from Tijuana is safer and faster than the free road, especially at night.",
+    "Street food is excellent but stick to busy stalls with high turnover to avoid stomach issues."
+  ],
+  "detail_guide": {
+    "getting_around": "Downtown and the Malecón are walkable. Taxis and ride-hailing cover the city. A rental car is essential for visiting the Valle de Guadalupe wine region (~30 min east) and La Bufadora blowhole (~30 min south).",
+    "top_sights": [
+      {
+        "id": "ens_valle_guadalupe",
+        "name": "Valle de Guadalupe",
+        "category": "wine region",
+        "description": "Mexico's premier wine country with over 100 boutique wineries, innovative restaurants, and rolling vineyard landscapes.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Valle+de+Guadalupe,+Ensenada,+Mexico"
+      },
+      {
+        "id": "ens_la_bufadora",
+        "name": "La Bufadora",
+        "category": "nature",
+        "description": "A powerful marine blowhole that shoots seawater up to 30 meters high, set on a scenic coastal cliff.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=La+Bufadora,+Ensenada,+Mexico"
+      },
+      {
+        "id": "ens_fish_market",
+        "name": "Mercado Negro (Fish Market)",
+        "category": "food / market",
+        "description": "Bustling waterfront market where fishermen sell the day's catch; try the ceviche and fish tacos at the stalls.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Mercado+Negro+%28Fish+Market%29,+Ensenada,+Mexico"
+      }
+    ],
+    "museums": [
+      {
+        "id": "ens_riviera",
+        "name": "Centro Cultural Riviera de Ensenada",
+        "category": "museum / cultural center",
+        "description": "A beautifully restored 1930s hotel turned cultural center with art exhibitions and a history museum.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Centro+Cultural+Riviera+de+Ensenada,+Ensenada,+Mexico"
+      }
+    ],
+    "parks": [
+      {
+        "id": "ens_parque_nacional",
+        "name": "Parque Nacional Sierra de San Pedro Mártir",
+        "category": "national park",
+        "description": "Baja's highest peaks with pine forests, condor habitat, and the national astronomical observatory; a 3-hour drive inland.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Parque+Nacional+Sierra+de+San+Pedro+M%C3%A1rtir,+Ensenada,+Mexico"
+      }
+    ],
+    "eat_drink_work": [
+      {
+        "id": "ens_tacos_fenix",
+        "name": "Tacos El Fenix",
+        "category": "street food",
+        "description": "Legendary fish taco stand near the fish market — battered and fried with creamy salsa, a local institution.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Tacos+El+Fenix,+Ensenada,+Mexico"
+      },
+      {
+        "id": "ens_boules",
+        "name": "Boules Restaurant",
+        "category": "restaurant",
+        "description": "Chef-driven Baja Med cuisine blending Mexican, Mediterranean, and Asian flavors with local wines.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Boules+Restaurant,+Ensenada,+Mexico"
+      },
+      {
+        "id": "ens_wendlandt",
+        "name": "Cervecería Wendlandt",
+        "category": "brewery",
+        "description": "Leading Baja craft brewery with a taproom serving creative beers and bar bites near the waterfront.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Cervecer%C3%ADa+Wendlandt,+Ensenada,+Mexico"
+      }
+    ],
+    "available_translations": [
+      "en",
+      "es",
+      "fr"
+    ]
+  },
+  "translations": {
+    "es": {
+      "quick_warnings": [
+        "El aeropuerto comercial más cercano es Tijuana (TIJ), a ~90 min al norte; usa el puente CBX si vienes desde San Diego.",
+        "La carretera de cuota desde Tijuana es más segura y rápida que la libre, especialmente de noche.",
+        "La comida callejera es excelente, pero elige puestos concurridos con alta rotación para evitar problemas estomacales."
+      ],
+      "detail_guide": {
+        "getting_around": "El centro y el Malecón se recorren a pie. Taxis y apps de transporte cubren la ciudad. Un auto rentado es esencial para visitar la región vinícola del Valle de Guadalupe (~30 min al este) y La Bufadora (~30 min al sur).",
+        "top_sights": [
+          {
+            "id": "ens_valle_guadalupe",
+            "name": "Valle de Guadalupe",
+            "category": "región vinícola",
+            "description": "La principal zona vinícola de México con más de 100 bodegas boutique, restaurantes innovadores y paisajes de viñedos.",
+            "maps_url": ""
+          },
+          {
+            "id": "ens_la_bufadora",
+            "name": "La Bufadora",
+            "category": "naturaleza",
+            "description": "Un poderoso géiser marino que lanza agua de mar hasta 30 metros de altura, ubicado en un acantilado costero escénico.",
+            "maps_url": ""
+          },
+          {
+            "id": "ens_fish_market",
+            "name": "Mercado Negro (Mercado de Pescado)",
+            "category": "gastronomía / mercado",
+            "description": "Bullicioso mercado frente al mar donde los pescadores venden la pesca del día; prueba el ceviche y los tacos de pescado en los puestos.",
+            "maps_url": ""
+          }
+        ],
+        "museums": [
+          {
+            "id": "ens_riviera",
+            "name": "Centro Cultural Riviera de Ensenada",
+            "category": "museo / centro cultural",
+            "description": "Un hermoso hotel de los años 30 restaurado y convertido en centro cultural con exposiciones de arte y un museo de historia.",
+            "maps_url": ""
+          }
+        ],
+        "parks": [
+          {
+            "id": "ens_parque_nacional",
+            "name": "Parque Nacional Sierra de San Pedro Mártir",
+            "category": "parque nacional",
+            "description": "Las cumbres más altas de Baja con bosques de pinos, hábitat del cóndor y el observatorio astronómico nacional; a 3 horas en auto tierra adentro.",
+            "maps_url": ""
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "ens_tacos_fenix",
+            "name": "Tacos El Fenix",
+            "category": "comida callejera",
+            "description": "Legendario puesto de tacos de pescado cerca del mercado — empanizados y fritos con salsa cremosa, toda una institución local.",
+            "maps_url": ""
+          },
+          {
+            "id": "ens_boules",
+            "name": "Boules Restaurant",
+            "category": "restaurante",
+            "description": "Cocina Baja Med de autor que fusiona sabores mexicanos, mediterráneos y asiáticos con vinos locales.",
+            "maps_url": ""
+          },
+          {
+            "id": "ens_wendlandt",
+            "name": "Cervecería Wendlandt",
+            "category": "cervecería",
+            "description": "Cervecería artesanal líder de Baja con taproom que sirve cervezas creativas y botanas cerca del malecón.",
+            "maps_url": ""
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr"
+        ]
+      }
+    }
+  }
+}

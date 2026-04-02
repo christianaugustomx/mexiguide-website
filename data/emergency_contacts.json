@@ -1,0 +1,53 @@
+{
+  "mexico": {
+    "general": {
+      "emergency": "911",
+      "police": "911",
+      "ambulance": "911",
+      "fire": "911",
+      "tourist_assistance": "078"
+    },
+    "embassies": {
+      "American": {
+        "name": "U.S. Embassy Mexico City",
+        "phone": "+52-55-5080-2000",
+        "address": "Paseo de la Reforma 305, Cuauhtémoc, 06500 Ciudad de México"
+      },
+      "Canadian": {
+        "name": "Embassy of Canada in Mexico",
+        "phone": "+52-55-5724-7900",
+        "address": "Schiller 529, Polanco, 11560 Ciudad de México"
+      },
+      "British": {
+        "name": "British Embassy Mexico City",
+        "phone": "+52-55-1670-3200",
+        "address": "Río Lerma 71, Cuauhtémoc, 06500 Ciudad de México"
+      },
+      "French": {
+        "name": "Ambassade de France au Mexique",
+        "phone": "+52-55-9171-9700",
+        "address": "Campos Elíseos 339, Polanco, 11560 Ciudad de México"
+      },
+      "German": {
+        "name": "Deutsche Botschaft Mexiko-Stadt",
+        "phone": "+52-55-5283-2200",
+        "address": "Horacio 1506, Polanco, 11510 Ciudad de México"
+      },
+      "Spanish": {
+        "name": "Embajada de España en México",
+        "phone": "+52-55-5282-2974",
+        "address": "Galileo 114, Polanco, 11560 Ciudad de México"
+      },
+      "Australian": {
+        "name": "Australian Embassy Mexico City",
+        "phone": "+52-55-1101-2200",
+        "address": "Rubén Darío 55, Polanco, 11580 Ciudad de México"
+      },
+      "Italian": {
+        "name": "Ambasciata d'Italia in Messico",
+        "phone": "+52-55-5596-3655",
+        "address": "Paseo de las Palmas 1994, Lomas de Chapultepec, 11000 Ciudad de México"
+      }
+    }
+  }
+}

@@ -1,0 +1,257 @@
+{
+  "city_id": "mex_guanajuato_guanajuato_guanajuato",
+  "city_name": "Guanajuato",
+  "state": "Guanajuato",
+  "has_detailed_guide": true,
+  "security": {
+    "level": 4,
+    "label": "Inseguro / Unsafe"
+  },
+  "quick_stats": {
+    "airport_iata": "BJX",
+    "best_time": "Mar – Jun / Sep – Nov",
+    "connectivity": "Good (Fiber in Centro / 4G — University City)"
+  },
+  "quick_warnings": [
+    "State highways between cities in Guanajuato have reported cartel activity — use ADO buses or fly into BJX rather than driving between cities after dark.",
+    "The city's labyrinthine alley system is easy to get disoriented in — download offline maps (Maps.me or Google offline) before arriving. Getting lost after dark in the wrong direction can be risky.",
+    "Pickpockets operate in the most crowded tourist spots — Callejón del Beso, Jardín de la Unión, and the Mummies Museum area. Keep valuables secured."
+  ],
+  "detail_guide": {
+    "getting_around": "Guanajuato's historic centre is pedestrian-only by design — most streets are narrow callejones (alleyways) accessible only on foot. This is a feature, not a bug: the city is made for walking. The underground road system (built in repurposed mine tunnels and a riverbed) carries car traffic beneath the city — confusing for first-timers but easy once you get your bearings. Uber operates above and below ground. The Funicular up to Pípila statue is the easiest way to get elevated views. The BJX airport (León/Bajío) is 1.5 hours by shuttle — book in advance.",
+    "top_sights": [
+      {
+        "id": "sight_callejon_del_beso",
+        "name": "Callejón del Beso",
+        "category": "Landmark",
+        "description": "The most famous alley in Mexico — two balconies on opposite sides so close together (68cm apart) that couples can kiss across them. Legend has it couples who kiss on the third step will enjoy seven years of happiness; those who don't will have seven years of bad luck. The alley is genuinely tiny and atmospheric; arrive early morning or late evening to avoid the perpetual tour-group crowds.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Callej%C3%B3n+del+Beso,+Guanajuato,+Mexico"
+      },
+      {
+        "id": "sight_pipila",
+        "name": "Monumento al Pípila & Vista Panorámica",
+        "category": "Viewpoint / History",
+        "description": "A giant stone monument to Juan José de los Reyes Martínez — the miner hero who torched the Alhóndiga granary door to allow the independence forces in. The viewing terrace behind the statue offers the definitive panoramic view of Guanajuato's coloured houses cascading down the hillside. Take the funicular from Centro (MXN 50) or walk up the steep path.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Monumento+al+P%C3%ADpila+%26+Vista+Panor%C3%A1mica,+Guanajuato,+Mexico"
+      },
+      {
+        "id": "sight_alhondiga",
+        "name": "Alhóndiga de Granaditas",
+        "category": "History / Museum",
+        "description": "The granary-turned-fortress that was the site of the first major battle of Mexico's War of Independence in 1810. The heads of independence leaders Hidalgo, Allende, Aldama, and Jiménez were displayed in iron cages on its four corners for a decade after their executions — hooks still visible today. Now houses a regional history and archaeology museum. One of the most historically significant buildings in Mexico.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Alh%C3%B3ndiga+de+Granaditas,+Guanajuato,+Mexico"
+      },
+      {
+        "id": "sight_jardin_union",
+        "name": "Jardín de la Unión",
+        "category": "Landmark",
+        "description": "The triangular heart of the city — a shaded plaza flanked by the Teatro Juárez and Templo de San Diego. The best people-watching spot in Guanajuato, where student musicians (estudiantinas) in medieval costume perform serenades and city life revolves around café tables spilling onto the cobblestones. Liveliest Thursday through Sunday evenings.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Jard%C3%ADn+de+la+Uni%C3%B3n,+Guanajuato,+Mexico"
+      },
+      {
+        "id": "sight_teatro_juarez",
+        "name": "Teatro Juárez",
+        "category": "Architecture",
+        "description": "One of the most opulent theatres in Latin America — a neo-classical exterior with Doric columns and bronze Muses, opening into an art nouveau interior of red velvet, gilded boxes, and Moorish-influenced details. Tours run throughout the day when no performance is scheduled (MXN 50). The venue for the Festival Internacional Cervantino each October — book months ahead if visiting then.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Teatro+Ju%C3%A1rez,+Guanajuato,+Mexico"
+      }
+    ],
+    "museums": [
+      {
+        "id": "museum_momias",
+        "name": "Museo de las Momias",
+        "category": "Unique / Macabre",
+        "description": "One of the most visited and bizarre museums in Mexico — 59 naturally mummified human remains exhumed from the local cemetery between 1865 and 1989, displayed in glass cases with their original clothing and expressions preserved. The mineral-rich soil and arid conditions caused accidental mummification. Deeply unsettling and genuinely fascinating; not suitable for young children or the faint-hearted. Budget 1–1.5 hours.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Museo+de+las+Momias,+Guanajuato,+Mexico"
+      },
+      {
+        "id": "museum_diego_rivera",
+        "name": "Museo Casa Diego Rivera",
+        "category": "Art / History",
+        "description": "The birthplace of muralist Diego Rivera — a modest colonial house containing his childhood bedroom, family furniture, and a strong collection of his early works and sketches before his muralism period. A worthwhile complement to seeing his mature work in Mexico City's Palacio Nacional. Entrance MXN 50.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Museo+Casa+Diego+Rivera,+Guanajuato,+Mexico"
+      },
+      {
+        "id": "museum_iconografico_quijote",
+        "name": "Museo Iconográfico del Quijote",
+        "category": "Art",
+        "description": "A remarkable niche museum housing over 600 interpretations of Don Quixote in painting, sculpture, tapestry, and stained glass by international artists. Guanajuato's deep connection to Cervantes (the annual Cervantino Festival is one of Latin America's largest arts events) gives this museum real cultural weight. Free entry.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Museo+Iconogr%C3%A1fico+del+Quijote,+Guanajuato,+Mexico"
+      }
+    ],
+    "parks": [
+      {
+        "id": "nature_presa_de_la_olla",
+        "name": "Presa de la Olla",
+        "category": "Park / Lake",
+        "description": "A colonial-era reservoir at the eastern edge of the city — a local escape with a lakeside promenade, rowing boats for rent, and weekend food stalls. Calm and unhurried compared to the city centre. The surrounding hillside neighbourhood has some of the most colourful facades in the city. 20 min on foot from the Jardín de la Unión.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Presa+de+la+Olla,+Guanajuato,+Mexico"
+      },
+      {
+        "id": "nature_cerro_cubilete",
+        "name": "Cerro del Cubilete — Cristo Rey",
+        "category": "Viewpoint / Pilgrimage",
+        "description": "A 2,700m volcanic peak 40km west of Guanajuato crowned with a monumental Christ the King statue — said to mark the geographic centre of Mexico. A popular pilgrimage site and a spectacular viewpoint over the Bajío valley. Reached by a winding mountain road (hire a taxi or join a tour); open year-round but best avoided during major Catholic feast days when crowds are immense.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Cerro+del+Cubilete+%E2%80%94+Cristo+Rey,+Guanajuato,+Mexico"
+      }
+    ],
+    "eat_drink_work": [
+      {
+        "id": "eat_mercado_hidalgo_gto",
+        "name": "Mercado Hidalgo",
+        "category": "Authentic Food / Market",
+        "description": "Guanajuato's main market in a beautiful 1910 iron-and-glass structure — the upper level has the best local food stalls serving enchiladas mineras (the city's signature dish: stuffed tortillas in chile sauce topped with carrot and potato), gorditas, and fresh fruit cups. The ground floor is artisan goods and cheese. Budget MXN 60–120. Arrive before noon.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Mercado+Hidalgo,+Guanajuato,+Mexico"
+      },
+      {
+        "id": "eat_tasca_de_los_santos",
+        "name": "Tasca de los Santos",
+        "category": "Regional Cuisine",
+        "description": "The best sit-down restaurant for traditional Bajío and Guanajuatan cuisine — set in a beautiful colonial house with a central courtyard. The enchiladas mineras, chiles rellenos, and sopa azteca are standouts. Popular with both tourists and well-heeled locals. Reservations recommended for dinner, especially weekends.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Tasca+de+los+Santos,+Guanajuato,+Mexico"
+      },
+      {
+        "id": "eat_cafe_conquistador",
+        "name": "Café El Conquistador",
+        "category": "Café",
+        "description": "The most atmospheric café in the city — a dark wood interior with views over the Jardín de la Unión and an excellent café de olla. The second-floor balcony is prime people-watching territory. Good for breakfast, light lunches, and afternoon coffee between museums. Consistently reliable over many years.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Caf%C3%A9+El+Conquistador,+Guanajuato,+Mexico"
+      },
+      {
+        "id": "work_remote_guanajuato",
+        "name": "Remote work in Guanajuato",
+        "category": "Remote Work",
+        "description": "Guanajuato is not a dedicated nomad hub but the university town infrastructure helps — fast WiFi is available in most cafés around the Jardín de la Unión and Campus areas. La Última Vez and Café Tal have the most reliable connections and power outlets. A formal coworking space (El Hub Guanajuato) operates near the University. Best suited for stays of a few days rather than long-term base.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Remote+work+in+Guanajuato,+Guanajuato,+Mexico"
+      }
+    ],
+    "available_translations": [
+      "en",
+      "es",
+      "fr"
+    ]
+  },
+  "translations": {
+    "es": {
+      "quick_warnings": [
+        "Las carreteras estatales entre ciudades en Guanajuato han reportado actividad del crimen organizado — usa autobuses ADO o vuela a BJX en lugar de manejar entre ciudades después del anochecer.",
+        "El laberíntico sistema de callejones de la ciudad es fácil para desorientarse — descarga mapas sin conexión (Maps.me o Google offline) antes de llegar. Perderse después del anochecer en la dirección equivocada puede ser riesgoso.",
+        "Los carteristas operan en los sitios turísticos más concurridos — Callejón del Beso, Jardín de la Unión y la zona del Museo de las Momias. Mantén tus objetos de valor seguros."
+      ],
+      "detail_guide": {
+        "getting_around": "El centro histórico de Guanajuato es peatonal por diseño — la mayoría de las calles son callejones estrechos accesibles solo a pie. Esto es una característica, no un defecto: la ciudad está hecha para caminar. El sistema de carreteras subterráneas (construido en túneles mineros reutilizados y un lecho de río) lleva el tráfico vehicular bajo la ciudad — confuso para los primerizos pero fácil una vez que te orientas. Uber opera arriba y abajo del suelo. El Funicular hasta la estatua del Pípila es la forma más fácil de obtener vistas elevadas. El aeropuerto BJX (León/Bajío) está a 1.5 horas en shuttle — reserva con anticipación.",
+        "top_sights": [
+          {
+            "id": "sight_callejon_del_beso",
+            "name": "Callejón del Beso",
+            "category": "Punto de interés",
+            "description": "El callejón más famoso de México — dos balcones en lados opuestos tan cerca (68 cm de distancia) que las parejas pueden besarse a través de ellos. La leyenda dice que las parejas que se besan en el tercer escalón disfrutarán siete años de felicidad; quienes no lo hagan tendrán siete años de mala suerte. El callejón es genuinamente diminuto y atmosférico; llega temprano por la mañana o al anochecer para evitar las perpetuas multitudes de grupos turísticos.",
+            "maps_url": "https://maps.app.goo.gl/placeholderCallejonBeso"
+          },
+          {
+            "id": "sight_pipila",
+            "name": "Monumento al Pípila y Vista Panorámica",
+            "category": "Mirador / Historia",
+            "description": "Un gigante monumento de piedra a Juan José de los Reyes Martínez — el minero héroe que incendió la puerta de la Alhóndiga para permitir la entrada de las fuerzas independentistas. La terraza mirador detrás de la estatua ofrece la vista panorámica definitiva de las casas de colores de Guanajuato cayendo en cascada por la ladera. Toma el funicular desde el Centro (MXN 50) o sube por el empinado sendero.",
+            "maps_url": "https://maps.app.goo.gl/placeholderPipila"
+          },
+          {
+            "id": "sight_alhondiga",
+            "name": "Alhóndiga de Granaditas",
+            "category": "Historia / Museo",
+            "description": "La alhóndiga convertida en fortaleza que fue el sitio de la primera gran batalla de la Guerra de Independencia de México en 1810. Las cabezas de los líderes independentistas Hidalgo, Allende, Aldama y Jiménez fueron exhibidas en jaulas de hierro en sus cuatro esquinas durante una década después de sus ejecuciones — los ganchos aún son visibles hoy. Ahora alberga un museo regional de historia y arqueología. Uno de los edificios más históricamente significativos de México.",
+            "maps_url": "https://maps.app.goo.gl/placeholderAlhondiga"
+          },
+          {
+            "id": "sight_jardin_union",
+            "name": "Jardín de la Unión",
+            "category": "Punto de interés",
+            "description": "El corazón triangular de la ciudad — una plaza sombreada flanqueada por el Teatro Juárez y el Templo de San Diego. El mejor lugar para observar gente en Guanajuato, donde músicos estudiantiles (estudiantinas) con trajes medievales interpretan serenatas y la vida de la ciudad gira alrededor de mesas de café que se desbordan sobre los empedrados. Más animado de jueves a domingo por la noche.",
+            "maps_url": "https://maps.app.goo.gl/placeholderJardinUnion"
+          },
+          {
+            "id": "sight_teatro_juarez",
+            "name": "Teatro Juárez",
+            "category": "Arquitectura",
+            "description": "Uno de los teatros más opulentos de Latinoamérica — un exterior neoclásico con columnas dóricas y Musas de bronce que se abre a un interior art nouveau de terciopelo rojo, palcos dorados y detalles de influencia morisca. Los recorridos se realizan durante todo el día cuando no hay función programada (MXN 50). Sede del Festival Internacional Cervantino cada octubre — reserva con meses de anticipación si visitas entonces.",
+            "maps_url": "https://maps.app.goo.gl/placeholderTeatroJuarez"
+          }
+        ],
+        "museums": [
+          {
+            "id": "museum_momias",
+            "name": "Museo de las Momias",
+            "category": "Único / Macabro",
+            "description": "Uno de los museos más visitados y extraños de México — 59 restos humanos naturalmente momificados exhumados del cementerio local entre 1865 y 1989, exhibidos en vitrinas con su ropa original y expresiones preservadas. El suelo rico en minerales y las condiciones áridas causaron la momificación accidental. Profundamente perturbador y genuinamente fascinante; no apto para niños pequeños ni personas sensibles. Reserva 1–1.5 horas.",
+            "maps_url": "https://maps.app.goo.gl/placeholderMomias"
+          },
+          {
+            "id": "museum_diego_rivera",
+            "name": "Museo Casa Diego Rivera",
+            "category": "Arte / Historia",
+            "description": "El lugar de nacimiento del muralista Diego Rivera — una modesta casa colonial que contiene su dormitorio de infancia, muebles familiares y una sólida colección de sus obras tempranas y bocetos antes de su periodo muralista. Un complemento valioso para ver su obra madura en el Palacio Nacional de la Ciudad de México. Entrada MXN 50.",
+            "maps_url": "https://maps.app.goo.gl/placeholderCasaDiegoRivera"
+          },
+          {
+            "id": "museum_iconografico_quijote",
+            "name": "Museo Iconográfico del Quijote",
+            "category": "Arte",
+            "description": "Un notable museo de nicho que alberga más de 600 interpretaciones de Don Quijote en pintura, escultura, tapiz y vitral por artistas internacionales. La profunda conexión de Guanajuato con Cervantes (el Festival Cervantino anual es uno de los eventos artísticos más grandes de Latinoamérica) le da a este museo un verdadero peso cultural. Entrada gratuita.",
+            "maps_url": "https://maps.app.goo.gl/placeholderMuseoQuijote"
+          }
+        ],
+        "parks": [
+          {
+            "id": "nature_presa_de_la_olla",
+            "name": "Presa de la Olla",
+            "category": "Parque / Lago",
+            "description": "Un embalse de la época colonial al borde este de la ciudad — un escape local con un paseo junto al lago, botes de remos para renta y puestos de comida los fines de semana. Tranquilo y sin prisas comparado con el centro de la ciudad. El barrio de la ladera circundante tiene algunas de las fachadas más coloridas de la ciudad. A 20 min a pie del Jardín de la Unión.",
+            "maps_url": "https://maps.app.goo.gl/placeholderPresaOlla"
+          },
+          {
+            "id": "nature_cerro_cubilete",
+            "name": "Cerro del Cubilete — Cristo Rey",
+            "category": "Mirador / Peregrinación",
+            "description": "Un pico volcánico de 2,700 m a 40 km al oeste de Guanajuato coronado con un monumental Cristo Rey — se dice que marca el centro geográfico de México. Un sitio de peregrinación popular y un espectacular mirador sobre el valle del Bajío. Se llega por una sinuosa carretera de montaña (contrata un taxi o únete a un tour); abierto todo el año pero mejor evitarlo durante las grandes fiestas católicas cuando las multitudes son inmensas.",
+            "maps_url": "https://maps.app.goo.gl/placeholderCristoCubilete"
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "eat_mercado_hidalgo_gto",
+            "name": "Mercado Hidalgo",
+            "category": "Comida auténtica / Mercado",
+            "description": "El mercado principal de Guanajuato en una hermosa estructura de hierro y vidrio de 1910 — el nivel superior tiene los mejores puestos de comida local sirviendo enchiladas mineras (el platillo emblemático de la ciudad: tortillas rellenas en salsa de chile cubiertas con zanahoria y papa), gorditas y vasos de fruta fresca. La planta baja es de artesanías y quesos. Presupuesta MXN 60–120. Llega antes del mediodía.",
+            "maps_url": "https://maps.app.goo.gl/placeholderMercadoHidalgoGto"
+          },
+          {
+            "id": "eat_tasca_de_los_santos",
+            "name": "Tasca de los Santos",
+            "category": "Cocina regional",
+            "description": "El mejor restaurante formal para cocina tradicional del Bajío y guanajuatense — ubicado en una hermosa casa colonial con patio central. Las enchiladas mineras, chiles rellenos y sopa azteca son los favoritos. Popular tanto con turistas como con locales acomodados. Reservaciones recomendadas para la cena, especialmente fines de semana.",
+            "maps_url": "https://maps.app.goo.gl/placeholderTascaSantos"
+          },
+          {
+            "id": "eat_cafe_conquistador",
+            "name": "Café El Conquistador",
+            "category": "Café",
+            "description": "El café con más atmósfera de la ciudad — un interior de madera oscura con vistas al Jardín de la Unión y un excelente café de olla. El balcón del segundo piso es territorio prime para observar gente. Bueno para desayunos, almuerzos ligeros y café por la tarde entre museos. Consistentemente confiable a lo largo de muchos años.",
+            "maps_url": "https://maps.app.goo.gl/placeholderCafeConquistador"
+          },
+          {
+            "id": "work_remote_guanajuato",
+            "name": "Trabajo remoto en Guanajuato",
+            "category": "Trabajo remoto",
+            "description": "Guanajuato no es un hub nómada dedicado pero la infraestructura de ciudad universitaria ayuda — WiFi rápido está disponible en la mayoría de los cafés alrededor del Jardín de la Unión y las zonas del Campus. La Última Vez y Café Tal tienen las conexiones y enchufes más confiables. Un espacio formal de coworking (El Hub Guanajuato) opera cerca de la Universidad. Más adecuado para estancias de unos días que como base a largo plazo.",
+            "maps_url": "https://maps.app.goo.gl/placeholderHubGuanajuato"
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr"
+        ]
+      }
+    }
+  }
+}

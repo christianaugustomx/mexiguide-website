@@ -1,0 +1,215 @@
+{
+  "city_id": "mex_baja_california_tijuana_baja_california",
+  "city_name": "Tijuana",
+  "state": "Baja California",
+  "has_detailed_guide": true,
+  "security": {
+    "level": 5,
+    "label": "Peligroso / Dangerous"
+  },
+  "quick_stats": {
+    "best_time": "Mar – May / Sep – Nov",
+    "connectivity": "Excellent (Fiber / 5G — major border city)",
+    "airport_iata": "TIJ"
+  },
+  "quick_warnings": [
+    "⚠️ CAUTION: Tijuana has one of the highest homicide rates of any city in the world. Violence is primarily cartel-on-cartel but has affected tourists. Stay strictly within tourist corridors and do not venture off the main streets.",
+    "Do not drive a US-plated vehicle into Tijuana without Mexican auto insurance — US policies are not valid in Mexico and vehicle theft is common.",
+    "Do not accept rides from informal taxi drivers. Use the official yellow-and-white licensed taxis from the regulated ranks only, or pre-arranged transport."
+  ],
+  "detail_guide": {
+    "getting_around": "Most visitors cross on foot from San Ysidro (San Diego) via the world's busiest land border crossing — walk across, explore Avenida Revolución and the Zona Río on foot or by licensed taxi, then walk back. If driving from the US, purchase Mexican auto insurance before crossing (available online or at kiosks near the border). The Cross-Border Xpress (CBX) bridge at Tijuana airport is a convenient option for travellers flying in or out of TIJ from the US side. Uber operates in Tijuana and is generally safer than street taxis.",
+    "top_sights": [
+      {
+        "id": "sight_avenida_revolucion",
+        "name": "Avenida Revolución",
+        "category": "Landmark",
+        "description": "The original tourist street of Tijuana — a lively, somewhat chaotic strip of pharmacies, curio shops, taco stands, bars, and street art. Once tacky and now partially gentrified. The famous painted donkey photo-op still exists for the nostalgic. Best explored during daylight hours; the character changes significantly at night. The Arco monument at the northern end marks the entry to the main strip.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Avenida+Revoluci%C3%B3n,+Tijuana,+Mexico"
+      },
+      {
+        "id": "sight_cecut",
+        "name": "Centro Cultural Tijuana (CECUT)",
+        "category": "Culture",
+        "description": "Tijuana's premier cultural institution — a striking modernist complex in the Zona Río with a spherical IMAX theatre (the 'Omnimax'), a contemporary art museum, and rotating exhibitions that genuinely reflect the US-Mexico border experience. A world away from the Avenida Revolución tourist strip. Free entry to the grounds; small fees for exhibitions and films.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Centro+Cultural+Tijuana+%28CECUT%29,+Tijuana,+Mexico"
+      },
+      {
+        "id": "sight_valle_guadalupe",
+        "name": "Valle de Guadalupe (Wine Country)",
+        "category": "Food & Wine",
+        "description": "Mexico's premier wine region, just 90 minutes south of Tijuana in a valley that produces surprisingly world-class bottles. A half or full day trip from Tijuana — rent a car or join a tour. The constellation of acclaimed restaurants (Laja, Fauna, Malva) combined with winery visits makes this one of Baja's top experiences. Best April–November; harvest season (Aug–Oct) is most atmospheric.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Valle+de+Guadalupe+%28Wine+Country%29,+Tijuana,+Mexico"
+      },
+      {
+        "id": "sight_playas_tijuana",
+        "name": "Playas de Tijuana",
+        "category": "Beach / Landmark",
+        "description": "Tijuana's Pacific beach neighborhood, ending at the border fence that extends into the ocean — one of the most striking visual symbols of the US-Mexico border in existence. The beach itself is clean and the surrounding barrio has a genuine local feel. The beachfront boulevard has food stalls and a relaxed atmosphere very different from the city centre.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Playas+de+Tijuana,+Tijuana,+Mexico"
+      },
+      {
+        "id": "sight_mercado_hidalgo",
+        "name": "Mercado Hidalgo",
+        "category": "Market",
+        "description": "Tijuana's main public market — fresh produce, Baja cheeses (the region produces excellent aged cheeses), dried chiles, handmade tortillas, and a chaotic energy that is authentically Mexican and far from tourist TJ. The food stalls on the upper level serve good breakfast burritos and seafood tostadas. Safe during daylight hours.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Mercado+Hidalgo,+Tijuana,+Mexico"
+      }
+    ],
+    "museums": [
+      {
+        "id": "museum_cecut_arte",
+        "name": "Museo de las Californias — CECUT",
+        "category": "Regional History",
+        "description": "Inside the CECUT complex, this museum covers the natural and human history of the Californias — from pre-Columbian Kumeyaay people through the Spanish missions, the Gold Rush era, and the birth of modern Tijuana. Compact but well-curated with bilingual (Spanish/English) exhibits that acknowledge the border's complexity honestly.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Museo+de+las+Californias+%E2%80%94+CECUT,+Tijuana,+Mexico"
+      }
+    ],
+    "parks": [
+      {
+        "id": "nature_parque_morelos",
+        "name": "Parque Morelos",
+        "category": "Urban Park",
+        "description": "Tijuana's largest urban park — a green space with a small zoo, walking paths, weekend food vendors, and a lake. Used primarily by locals and a good place to observe everyday Tijuana life away from the tourist areas. Busiest on Sunday mornings. Stay near the main paths and go during daylight.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Parque+Morelos,+Tijuana,+Mexico"
+      }
+    ],
+    "eat_drink_work": [
+      {
+        "id": "eat_caesar_salad",
+        "name": "Caesar's Restaurant — Birthplace of the Caesar Salad",
+        "category": "Historic / Dining",
+        "description": "The Caesar salad was invented here in 1924 — the original Hotel Caesar on Avenida Revolución still prepares it tableside with theatrical flair. A historical novelty as much as a dining experience. The salad is authentic; the rest of the menu is solid Mexican-American fare. Worth a lunch stop for the story alone.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Caesar%27s+Restaurant+%E2%80%94+Birthplace+of+the+Caesar+Salad,+Tijuana,+Mexico"
+      },
+      {
+        "id": "eat_tacos_el_gordo",
+        "name": "Tacos El Gordo",
+        "category": "Street Food / Legendary",
+        "description": "An institution — Tijuana's most famous taco spot and a legitimate reason to cross the border. The adobada (marinated pork from the trompo) and cabeza tacos are extraordinary. Multiple locations on Revolución; expect lines at peak times. The assembly-line efficiency is part of the experience. Cash only.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Tacos+El+Gordo,+Tijuana,+Mexico"
+      },
+      {
+        "id": "eat_mision19",
+        "name": "Misión 19",
+        "category": "Fine Dining",
+        "description": "Chef Javier Plascencia's flagship restaurant in the Zona Río — widely considered one of the best restaurants in Mexico and a pioneer of Baja Med cuisine (Mexican technique, Mediterranean sensibility, Baja ingredients). The tasting menu showcases Valle de Guadalupe wines paired with locally sourced seafood and produce. Reservations essential.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Misi%C3%B3n+19,+Tijuana,+Mexico"
+      },
+      {
+        "id": "work_remote_tijuana",
+        "name": "Remote work in Tijuana",
+        "category": "Remote Work",
+        "description": "Tijuana has surprisingly good infrastructure for remote work — fast fiber, US-compatible power (120V), and a growing tech sector. The Zona Río and Zona Centro have cafés with strong WiFi. Plaza Fiesta in the Zona Río has a concentration of cafés and coworking-friendly spots. Some US workers use Tijuana as a lower-cost base while maintaining US proximity via the border.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Remote+work+in+Tijuana,+Tijuana,+Mexico"
+      }
+    ],
+    "available_translations": [
+      "en",
+      "es",
+      "fr"
+    ]
+  },
+  "translations": {
+    "es": {
+      "quick_warnings": [
+        "⚠️ PRECAUCIÓN: Tijuana tiene una de las tasas de homicidio más altas de cualquier ciudad en el mundo. La violencia es principalmente entre cárteles pero ha afectado a turistas. Mantente estrictamente dentro de los corredores turísticos y no te aventures fuera de las calles principales.",
+        "No manejes un vehículo con placas estadounidenses en Tijuana sin seguro automotriz mexicano — las pólizas de EE.UU. no son válidas en México y el robo de vehículos es común.",
+        "No aceptes viajes de taxistas informales. Usa únicamente los taxis oficiales amarillos y blancos de los sitios regulados, o transporte previamente arreglado."
+      ],
+      "detail_guide": {
+        "getting_around": "La mayoría de los visitantes cruzan a pie desde San Ysidro (San Diego) por el cruce fronterizo terrestre más transitado del mundo — cruza caminando, explora la Avenida Revolución y la Zona Río a pie o en taxi con licencia, luego regresa caminando. Si manejas desde EE.UU., compra seguro automotriz mexicano antes de cruzar (disponible en línea o en quioscos cerca de la frontera). El puente Cross-Border Xpress (CBX) en el aeropuerto de Tijuana es una opción conveniente para viajeros que vuelan desde o hacia TIJ desde el lado estadounidense. Uber opera en Tijuana y generalmente es más seguro que los taxis de calle.",
+        "top_sights": [
+          {
+            "id": "sight_avenida_revolucion",
+            "name": "Avenida Revolución",
+            "category": "Punto de interés",
+            "description": "La calle turística original de Tijuana — una franja animada y algo caótica de farmacias, tiendas de curiosidades, puestos de tacos, bares y arte callejero. Antes kitsch y ahora parcialmente gentrificada. La famosa foto con el burro pintado aún existe para los nostálgicos. Mejor explorar durante el día; el carácter cambia significativamente por la noche. El monumento del Arco en el extremo norte marca la entrada a la franja principal.",
+            "maps_url": "https://maps.app.goo.gl/placeholderAvenidaRevolucion"
+          },
+          {
+            "id": "sight_cecut",
+            "name": "Centro Cultural Tijuana (CECUT)",
+            "category": "Cultura",
+            "description": "La principal institución cultural de Tijuana — un llamativo complejo modernista en la Zona Río con un teatro IMAX esférico (el 'Omnimax'), un museo de arte contemporáneo y exposiciones rotativas que genuinamente reflejan la experiencia fronteriza México-EE.UU. Un mundo aparte de la franja turística de Avenida Revolución. Entrada gratuita al recinto; pequeñas tarifas para exposiciones y películas.",
+            "maps_url": "https://maps.app.goo.gl/placeholderCECUT"
+          },
+          {
+            "id": "sight_valle_guadalupe",
+            "name": "Valle de Guadalupe (Región Vinícola)",
+            "category": "Gastronomía y Vino",
+            "description": "La principal región vinícola de México, a solo 90 minutos al sur de Tijuana en un valle que produce vinos sorprendentemente de clase mundial. Una excursión de medio día o día completo desde Tijuana — renta un auto o únete a un tour. La constelación de restaurantes aclamados (Laja, Fauna, Malva) combinados con visitas a viñedos hacen de esta una de las mejores experiencias de Baja. Mejor de abril a noviembre; la temporada de vendimia (ago–oct) es la más atmosférica.",
+            "maps_url": "https://maps.app.goo.gl/placeholderValleGuadalupe"
+          },
+          {
+            "id": "sight_playas_tijuana",
+            "name": "Playas de Tijuana",
+            "category": "Playa / Punto de interés",
+            "description": "El barrio playero del Pacífico de Tijuana, terminando en la cerca fronteriza que se extiende hacia el océano — uno de los símbolos visuales más impactantes de la frontera México-EE.UU. La playa en sí está limpia y el barrio circundante tiene un genuino ambiente local. El bulevar frente a la playa tiene puestos de comida y una atmósfera relajada muy diferente al centro de la ciudad.",
+            "maps_url": "https://maps.app.goo.gl/placeholderPlayasTijuana"
+          },
+          {
+            "id": "sight_mercado_hidalgo",
+            "name": "Mercado Hidalgo",
+            "category": "Mercado",
+            "description": "El principal mercado público de Tijuana — frutas y verduras frescas, quesos de Baja (la región produce excelentes quesos añejados), chiles secos, tortillas hechas a mano y una energía caótica que es auténticamente mexicana y lejos de la TJ turística. Los puestos de comida en el nivel superior sirven buenos burritos de desayuno y tostadas de mariscos. Seguro durante las horas de luz.",
+            "maps_url": "https://maps.app.goo.gl/placeholderMercadoHidalgo"
+          }
+        ],
+        "museums": [
+          {
+            "id": "museum_cecut_arte",
+            "name": "Museo de las Californias — CECUT",
+            "category": "Historia regional",
+            "description": "Dentro del complejo CECUT, este museo cubre la historia natural y humana de las Californias — desde los pueblos precolombinos kumeyaay pasando por las misiones españolas, la era de la Fiebre del Oro y el nacimiento de la Tijuana moderna. Compacto pero bien curado con exhibiciones bilingües (español/inglés) que reconocen honestamente la complejidad de la frontera.",
+            "maps_url": "https://maps.app.goo.gl/placeholderMuseoCalifornias"
+          }
+        ],
+        "parks": [
+          {
+            "id": "nature_parque_morelos",
+            "name": "Parque Morelos",
+            "category": "Parque urbano",
+            "description": "El parque urbano más grande de Tijuana — un espacio verde con un pequeño zoológico, senderos para caminar, vendedores de comida los fines de semana y un lago. Usado principalmente por locales y un buen lugar para observar la vida cotidiana de Tijuana lejos de las zonas turísticas. Más concurrido los domingos por la mañana. Mantente cerca de los senderos principales y ve durante el día.",
+            "maps_url": "https://maps.app.goo.gl/placeholderParqueMorelos"
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "eat_caesar_salad",
+            "name": "Caesar's Restaurant — Cuna de la Ensalada César",
+            "category": "Histórico / Restaurante",
+            "description": "La ensalada César se inventó aquí en 1924 — el Hotel Caesar original en la Avenida Revolución aún la prepara en la mesa con estilo teatral. Una novedad histórica tanto como una experiencia gastronómica. La ensalada es auténtica; el resto del menú es sólida comida mexicano-americana. Vale una parada para almorzar solo por la historia.",
+            "maps_url": "https://maps.app.goo.gl/placeholderCaesarsRestaurant"
+          },
+          {
+            "id": "eat_tacos_el_gordo",
+            "name": "Tacos El Gordo",
+            "category": "Comida callejera / Legendario",
+            "description": "Una institución — el puesto de tacos más famoso de Tijuana y una razón legítima para cruzar la frontera. Los tacos de adobada (cerdo marinado del trompo) y de cabeza son extraordinarios. Múltiples ubicaciones en Revolución; espera filas en horas pico. La eficiencia de línea de ensamblaje es parte de la experiencia. Solo efectivo.",
+            "maps_url": "https://maps.app.goo.gl/placeholderTacosElGordo"
+          },
+          {
+            "id": "eat_mision19",
+            "name": "Misión 19",
+            "category": "Alta cocina",
+            "description": "El restaurante insignia del Chef Javier Plascencia en la Zona Río — ampliamente considerado uno de los mejores restaurantes de México y pionero de la cocina Baja Med (técnica mexicana, sensibilidad mediterránea, ingredientes de Baja). El menú degustación presenta vinos del Valle de Guadalupe maridados con mariscos y productos de origen local. Reservaciones esenciales.",
+            "maps_url": "https://maps.app.goo.gl/placeholderMision19"
+          },
+          {
+            "id": "work_remote_tijuana",
+            "name": "Trabajo remoto en Tijuana",
+            "category": "Trabajo remoto",
+            "description": "Tijuana tiene infraestructura sorprendentemente buena para trabajo remoto — fibra rápida, corriente eléctrica compatible con EE.UU. (120V) y un sector tech en crecimiento. La Zona Río y Zona Centro tienen cafés con WiFi fuerte. Plaza Fiesta en la Zona Río tiene una concentración de cafés y espacios amigables para coworking. Algunos trabajadores estadounidenses usan Tijuana como base de menor costo mientras mantienen proximidad a EE.UU. vía la frontera.",
+            "maps_url": "https://maps.app.goo.gl/placeholderZonaRio"
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr"
+        ]
+      }
+    }
+  }
+}

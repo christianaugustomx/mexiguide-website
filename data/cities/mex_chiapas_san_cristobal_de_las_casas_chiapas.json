@@ -1,0 +1,173 @@
+{
+  "city_id": "mex_chiapas_san_cristobal_de_las_casas_chiapas",
+  "city_name": "San Cristóbal de las Casas",
+  "state": "Chiapas",
+  "has_detailed_guide": true,
+  "security": {
+    "level": 3,
+    "label": "Precaución / Caution"
+  },
+  "quick_stats": {
+    "best_time": "Nov – Apr (dry season, cool highland weather)",
+    "connectivity": "Moderate (Cafe Wi-Fi / 4G)",
+    "airport_iata": "TGZ"
+  },
+  "quick_warnings": [
+    "At 2,200 m elevation, nights are cold even in summer — pack layers and a warm jacket.",
+    "Road blockades by local groups occasionally disrupt travel to/from the city; check conditions before driving.",
+    "Tuxtla Gutiérrez airport (TGZ) is ~1 hour away by winding mountain road; budget extra travel time."
+  ],
+  "detail_guide": {
+    "getting_around": "The cobblestoned centro is compact and walkable. Colectivos run to indigenous villages like San Juan Chamula and Zinacantán. Taxis are inexpensive. ADO buses connect to Palenque, Tuxtla, and Oaxaca. Many travelers rent cars for trips to Sumidero Canyon and Montebello Lakes.",
+    "top_sights": [
+      {
+        "id": "sclc_chamula",
+        "name": "San Juan Chamula",
+        "category": "culture / indigenous village",
+        "description": "A Tzotzil Maya village with a famous syncretic church where candles, pine needles, and incense replace pews — photography inside is strictly prohibited.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=San+Juan+Chamula,+San+Crist%C3%B3bal+de+las+Casas,+Mexico"
+      },
+      {
+        "id": "sclc_canon_sumidero",
+        "name": "Cañón del Sumidero (day trip)",
+        "category": "nature",
+        "description": "A dramatic river canyon with 1,000-meter walls; boat tours depart from Chiapa de Corzo, about 1.5 hours away.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Ca%C3%B1%C3%B3n+del+Sumidero+%28day+trip%29,+San+Crist%C3%B3bal+de+las+Casas,+Mexico"
+      },
+      {
+        "id": "sclc_andador",
+        "name": "Andador Eclesiástico & Real de Guadalupe",
+        "category": "culture / shopping",
+        "description": "The main pedestrian streets lined with amber shops, textile galleries, craft markets, and cozy cafes.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Andador+Eclesi%C3%A1stico+%26+Real+de+Guadalupe,+San+Crist%C3%B3bal+de+las+Casas,+Mexico"
+      }
+    ],
+    "museums": [
+      {
+        "id": "sclc_museo_ambar",
+        "name": "Museo del Ámbar de Chiapas",
+        "category": "museum",
+        "description": "Dedicated to Chiapas amber, with displays of insect inclusions, Maya amber artifacts, and the mining process.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Museo+del+%C3%81mbar+de+Chiapas,+San+Crist%C3%B3bal+de+las+Casas,+Mexico"
+      }
+    ],
+    "parks": [
+      {
+        "id": "sclc_huitepec",
+        "name": "Reserva Ecológica Huitepec",
+        "category": "nature reserve",
+        "description": "Cloud forest reserve just outside town with hiking trails through orchid-rich highland forest.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Reserva+Ecol%C3%B3gica+Huitepec,+San+Crist%C3%B3bal+de+las+Casas,+Mexico"
+      }
+    ],
+    "eat_drink_work": [
+      {
+        "id": "sclc_tierradentro",
+        "name": "TierrAdentro",
+        "category": "restaurant",
+        "description": "Chiapanecan cuisine with a modern twist, using local ingredients like highland mushrooms, heirloom corn, and Chiapas coffee.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=TierrAdentro,+San+Crist%C3%B3bal+de+las+Casas,+Mexico"
+      },
+      {
+        "id": "sclc_cafemantico",
+        "name": "Cafémantico",
+        "category": "cafe",
+        "description": "Third-wave coffee roaster serving single-origin Chiapas beans in a cozy space perfect for working.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Caf%C3%A9mantico,+San+Crist%C3%B3bal+de+las+Casas,+Mexico"
+      },
+      {
+        "id": "sclc_cacao_nativa",
+        "name": "Kakaw Museo del Cacao",
+        "category": "cafe / museum",
+        "description": "Chocolate cafe and small cacao museum where you can learn about Mesoamerican chocolate traditions and taste artisanal drinks.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Kakaw+Museo+del+Cacao,+San+Crist%C3%B3bal+de+las+Casas,+Mexico"
+      }
+    ],
+    "available_translations": [
+      "en",
+      "es",
+      "fr"
+    ]
+  },
+  "translations": {
+    "es": {
+      "quick_warnings": [
+        "A 2,200 m de altitud, las noches son frías incluso en verano — lleva varias capas de ropa y una chamarra abrigadora.",
+        "Los bloqueos de carreteras por grupos locales ocasionalmente interrumpen el tránsito hacia y desde la ciudad; verifica las condiciones antes de manejar.",
+        "El aeropuerto de Tuxtla Gutiérrez (TGZ) está a ~1 hora por carretera sinuosa de montaña; calcula tiempo extra de traslado."
+      ],
+      "detail_guide": {
+        "getting_around": "El centro empedrado es compacto y se recorre fácilmente a pie. Los colectivos van a pueblos indígenas como San Juan Chamula y Zinacantán. Los taxis son económicos. Los autobuses ADO conectan con Palenque, Tuxtla y Oaxaca. Muchos viajeros rentan auto para ir al Cañón del Sumidero y los Lagos de Montebello.",
+        "top_sights": [
+          {
+            "id": "sclc_chamula",
+            "name": "San Juan Chamula",
+            "category": "cultura / pueblo indígena",
+            "description": "Un pueblo tzotzil maya con una famosa iglesia sincrética donde velas, hojas de pino e incienso reemplazan a las bancas — la fotografía en el interior está estrictamente prohibida.",
+            "maps_url": ""
+          },
+          {
+            "id": "sclc_canon_sumidero",
+            "name": "Cañón del Sumidero (excursión de un día)",
+            "category": "naturaleza",
+            "description": "Un impresionante cañón fluvial con paredes de 1,000 metros; los recorridos en lancha salen desde Chiapa de Corzo, a aproximadamente 1.5 horas.",
+            "maps_url": ""
+          },
+          {
+            "id": "sclc_andador",
+            "name": "Andador Eclesiástico y Real de Guadalupe",
+            "category": "cultura / compras",
+            "description": "Las principales calles peatonales con tiendas de ámbar, galerías textiles, mercados artesanales y acogedoras cafeterías.",
+            "maps_url": ""
+          }
+        ],
+        "museums": [
+          {
+            "id": "sclc_museo_ambar",
+            "name": "Museo del Ámbar de Chiapas",
+            "category": "museo",
+            "description": "Dedicado al ámbar de Chiapas, con exhibiciones de inclusiones de insectos, artefactos mayas de ámbar y el proceso de extracción.",
+            "maps_url": ""
+          }
+        ],
+        "parks": [
+          {
+            "id": "sclc_huitepec",
+            "name": "Reserva Ecológica Huitepec",
+            "category": "reserva natural",
+            "description": "Reserva de bosque de niebla a las afueras del pueblo con senderos entre un bosque de altura rico en orquídeas.",
+            "maps_url": ""
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "sclc_tierradentro",
+            "name": "TierrAdentro",
+            "category": "restaurante",
+            "description": "Cocina chiapaneca con un toque moderno, usando ingredientes locales como hongos de montaña, maíz criollo y café de Chiapas.",
+            "maps_url": ""
+          },
+          {
+            "id": "sclc_cafemantico",
+            "name": "Cafémantico",
+            "category": "cafetería",
+            "description": "Tostador de café de tercera ola que sirve granos de origen único de Chiapas en un espacio acogedor ideal para trabajar.",
+            "maps_url": ""
+          },
+          {
+            "id": "sclc_cacao_nativa",
+            "name": "Kakaw Museo del Cacao",
+            "category": "cafetería / museo",
+            "description": "Cafetería de chocolate y pequeño museo del cacao donde puedes aprender sobre las tradiciones mesoamericanas del chocolate y probar bebidas artesanales.",
+            "maps_url": ""
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,215 @@
+{
+  "city_id": "mex_jalisco_guadalajara",
+  "city_name": "Guadalajara",
+  "state": "Jalisco",
+  "has_detailed_guide": true,
+  "security": {
+    "level": 4,
+    "label": "Precaución / Use Caution"
+  },
+  "quick_stats": {
+    "best_time": "Oct – Dec & Feb – May",
+    "connectivity": "Excellent (Tech Hub / Fiber / 5G)",
+    "airport_iata": "GDL"
+  },
+  "quick_warnings": [
+    "Stick strictly to the tourist corridors: Centro Histórico, Tlaquepaque, Colonia Americana, and Zapopan. Avoid peripheral areas.",
+    "The city is sprawling with intense traffic — always allocate extra transit time and use Uber or DiDi exclusively.",
+    "Historic downtown is safe by day; take an Uber rather than walking alone after dark."
+  ],
+  "detail_guide": {
+    "getting_around": "Uber and DiDi are essential — the city's vast distances make walking between districts impractical. The Macrobús BRT and light rail (Tren Ligero) are useful for Centro routes but not comprehensive for visitors. Avoid hailing street taxis.",
+    "top_sights": [
+      {
+        "id": "sight_hospicio_cabanas",
+        "name": "Hospicio Cabañas",
+        "category": "Museum / UNESCO",
+        "description": "A stunning neoclassical complex with the breathtaking, fiery murals of José Clemente Orozco. One of the most important works of art in the Americas.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Hospicio+Caba%C3%B1as,+Guadalajara,+Mexico"
+      },
+      {
+        "id": "sight_teatro_degollado",
+        "name": "Teatro Degollado & Centro Histórico",
+        "category": "Landmark",
+        "description": "Walk Plaza de la Liberación to see this spectacular 19th-century neoclassical theater and the twin-towered Guadalajara Cathedral.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Teatro+Degollado+%26+Centro+Hist%C3%B3rico,+Guadalajara,+Mexico"
+      },
+      {
+        "id": "sight_tlaquepaque",
+        "name": "San Pedro Tlaquepaque",
+        "category": "Pueblo Mágico",
+        "description": "A vibrant artisan neighborhood famous for cobblestone streets, talavera pottery, art galleries, and live mariachi on the main plaza.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=San+Pedro+Tlaquepaque,+Guadalajara,+Mexico"
+      },
+      {
+        "id": "sight_tequila_express",
+        "name": "Jose Cuervo Express",
+        "category": "Day Trip",
+        "description": "A luxurious train ride through blue agave fields to the town of Tequila for distillery tours and tastings. Book ahead — fills up fast.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Jose+Cuervo+Express,+Guadalajara,+Mexico"
+      }
+    ],
+    "museums": [
+      {
+        "id": "museum_hospicio",
+        "name": "Hospicio Cabañas",
+        "category": "Art / UNESCO World Heritage",
+        "description": "Orozco's murals in the main chapel are alone worth the trip. Allow 2 hours minimum. Don't miss the Man of Fire ceiling fresco.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Hospicio+Caba%C3%B1as,+Guadalajara,+Mexico"
+      },
+      {
+        "id": "museum_regional_jalisco",
+        "name": "Museo Regional de Guadalajara",
+        "category": "History",
+        "description": "Housed in a magnificent former seminary, covering Jalisco's prehistory through Independence. Excellent pre-Columbian artifacts collection.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Museo+Regional+de+Guadalajara,+Guadalajara,+Mexico"
+      }
+    ],
+    "parks": [
+      {
+        "id": "nature_los_colomos",
+        "name": "Bosque Los Colomos",
+        "category": "Urban Forest",
+        "description": "A peaceful, massive park with walking trails, squirrel feeding stations, and a beautiful Japanese garden. The lungs of the city — popular with joggers and families.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Bosque+Los+Colomos,+Guadalajara,+Mexico"
+      },
+      {
+        "id": "nature_barranca",
+        "name": "Barranca de Huentitán",
+        "category": "Hiking",
+        "description": "A massive canyon on the city's edge with rigorous hiking trails and spectacular panoramic views of the Río Santiago valley. Go early to avoid the heat.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Barranca+de+Huentit%C3%A1n,+Guadalajara,+Mexico"
+      }
+    ],
+    "eat_drink_work": [
+      {
+        "id": "eat_san_juan_de_dios",
+        "name": "Mercado Libertad (San Juan de Dios)",
+        "category": "Authentic Food",
+        "description": "The largest indoor market in Latin America. Try a Torta Ahogada (drowned sandwich) or Birria de Chivo. Go for lunch — vendors close by mid-afternoon.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Mercado+Libertad+%28San+Juan+de+Dios%29,+Guadalajara,+Mexico"
+      },
+      {
+        "id": "eat_andares",
+        "name": "Plaza Andares (Zapopan)",
+        "category": "Upscale Dining",
+        "description": "GDL's most modern district with luxury shopping and premium corporate dining. Best for client entertainment — Grupo Anderson's restaurants are reliable anchors.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Plaza+Andares+%28Zapopan%29,+Guadalajara,+Mexico"
+      },
+      {
+        "id": "work_colonia_americana",
+        "name": "Colonia Americana",
+        "category": "Coworking & Cafes",
+        "description": "Voted the 'coolest neighborhood in the world' by Time Out. Packed with specialty coffee shops, indie coworking spaces, and neo-gothic architecture. The go-to hub for GDL's tech scene.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Colonia+Americana,+Guadalajara,+Mexico"
+      }
+    ],
+    "available_translations": [
+      "en",
+      "es",
+      "fr"
+    ]
+  },
+  "translations": {
+    "es": {
+      "quick_warnings": [
+        "Mantente estrictamente en los corredores turísticos: Centro Histórico, Tlaquepaque, Colonia Americana y Zapopan. Evita las áreas periféricas.",
+        "La ciudad es extensa con tráfico intenso — siempre reserva tiempo extra de traslado y usa exclusivamente Uber o DiDi.",
+        "El centro histórico es seguro de día; toma un Uber en lugar de caminar solo después del anochecer."
+      ],
+      "detail_guide": {
+        "getting_around": "Uber y DiDi son esenciales — las vastas distancias de la ciudad hacen que caminar entre distritos sea poco práctico. El Macrobús BRT y el tren ligero son útiles para rutas del Centro pero no son completos para visitantes. Evita parar taxis en la calle.",
+        "top_sights": [
+          {
+            "id": "sight_hospicio_cabanas",
+            "name": "Hospicio Cabañas",
+            "category": "Museo / UNESCO",
+            "description": "Un impresionante complejo neoclásico con los espectaculares murales de fuego de José Clemente Orozco. Una de las obras de arte más importantes de las Américas.",
+            "maps_url": "https://maps.app.goo.gl/placeholder30"
+          },
+          {
+            "id": "sight_teatro_degollado",
+            "name": "Teatro Degollado y Centro Histórico",
+            "category": "Punto de interés",
+            "description": "Camina por la Plaza de la Liberación para ver este espectacular teatro neoclásico del siglo XIX y la Catedral de Guadalajara con sus torres gemelas.",
+            "maps_url": "https://maps.app.goo.gl/placeholder31"
+          },
+          {
+            "id": "sight_tlaquepaque",
+            "name": "San Pedro Tlaquepaque",
+            "category": "Pueblo Mágico",
+            "description": "Un vibrante barrio artesanal famoso por sus calles empedradas, cerámica de talavera, galerías de arte y mariachi en vivo en la plaza principal.",
+            "maps_url": "https://maps.app.goo.gl/placeholder32"
+          },
+          {
+            "id": "sight_tequila_express",
+            "name": "Jose Cuervo Express",
+            "category": "Excursión de un día",
+            "description": "Un lujoso viaje en tren a través de campos de agave azul hasta el pueblo de Tequila para tours de destilería y degustaciones. Reserva con anticipación — se llena rápido.",
+            "maps_url": "https://maps.app.goo.gl/placeholder33"
+          }
+        ],
+        "museums": [
+          {
+            "id": "museum_hospicio",
+            "name": "Hospicio Cabañas",
+            "category": "Arte / Patrimonio Mundial UNESCO",
+            "description": "Los murales de Orozco en la capilla principal por sí solos valen el viaje. Reserva un mínimo de 2 horas. No te pierdas el fresco del Hombre de Fuego en el techo.",
+            "maps_url": "https://maps.app.goo.gl/placeholder30"
+          },
+          {
+            "id": "museum_regional_jalisco",
+            "name": "Museo Regional de Guadalajara",
+            "category": "Historia",
+            "description": "Alojado en un magnífico antiguo seminario, cubre desde la prehistoria de Jalisco hasta la Independencia. Excelente colección de artefactos precolombinos.",
+            "maps_url": "https://maps.app.goo.gl/placeholderMRJ"
+          }
+        ],
+        "parks": [
+          {
+            "id": "nature_los_colomos",
+            "name": "Bosque Los Colomos",
+            "category": "Bosque urbano",
+            "description": "Un parque pacífico y enorme con senderos para caminar, estaciones para alimentar ardillas y un hermoso jardín japonés. Los pulmones de la ciudad — popular entre corredores y familias.",
+            "maps_url": "https://maps.app.goo.gl/placeholder34"
+          },
+          {
+            "id": "nature_barranca",
+            "name": "Barranca de Huentitán",
+            "category": "Senderismo",
+            "description": "Un enorme cañón al borde de la ciudad con senderos exigentes y espectaculares vistas panorámicas del valle del Río Santiago. Ve temprano para evitar el calor.",
+            "maps_url": "https://maps.app.goo.gl/placeholder35"
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "eat_san_juan_de_dios",
+            "name": "Mercado Libertad (San Juan de Dios)",
+            "category": "Comida auténtica",
+            "description": "El mercado techado más grande de Latinoamérica. Prueba una Torta Ahogada o Birria de Chivo. Ve a almorzar — los puestos cierran a media tarde.",
+            "maps_url": "https://maps.app.goo.gl/placeholder36"
+          },
+          {
+            "id": "eat_andares",
+            "name": "Plaza Andares (Zapopan)",
+            "category": "Alta cocina",
+            "description": "El distrito más moderno de GDL con shopping de lujo y restaurantes corporativos premium. Ideal para entretenimiento de clientes — los restaurantes de Grupo Anderson son opciones confiables.",
+            "maps_url": "https://maps.app.goo.gl/placeholder37"
+          },
+          {
+            "id": "work_colonia_americana",
+            "name": "Colonia Americana",
+            "category": "Coworking y Cafés",
+            "description": "Votado como 'el barrio más cool del mundo' por Time Out. Repleto de cafés de especialidad, espacios indie de coworking y arquitectura neogótica. El hub por excelencia de la escena tech de GDL.",
+            "maps_url": "https://maps.app.goo.gl/placeholder38"
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr"
+        ]
+      }
+    }
+  }
+}

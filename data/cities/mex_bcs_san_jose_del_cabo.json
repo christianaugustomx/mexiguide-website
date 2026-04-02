@@ -1,0 +1,187 @@
+{
+  "city_id": "mex_bcs_san_jose_del_cabo",
+  "city_name": "San José del Cabo",
+  "state": "Baja California Sur",
+  "has_detailed_guide": true,
+  "security": {
+    "level": 2,
+    "label": "Seguro / Safe"
+  },
+  "quick_stats": {
+    "best_time": "Dec – Apr (whale season)",
+    "connectivity": "Good (Resort Wi-Fi / 4G)",
+    "airport_iata": "SJD"
+  },
+  "quick_warnings": [
+    "Pacific-facing beaches have dangerous currents — obey flag system strictly. Stick to designated swim zones.",
+    "Airport exit is prime territory for timeshare solicitations. Decline firmly and proceed directly to your pre-booked transfer.",
+    "Street taxis charge premium rates — agree on price before getting in or use a pre-booked shuttle."
+  ],
+  "detail_guide": {
+    "getting_around": "MMSD airport is right on the edge of town — transfers are short. Uber is available and more reliable here than in Cabo San Lucas. The tourist corridor between SJC and CSL is best covered by private shuttle or rental car.",
+    "top_sights": [
+      {
+        "id": "sight_art_walk",
+        "name": "Art Walk — Historic District",
+        "category": "Culture",
+        "description": "Every Thursday evening (Nov–Jun), galleries open their doors for a sophisticated stroll through colonial streets with wine, art, and live music. The best cultural experience in Los Cabos.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Art+Walk+%E2%80%94+Historic+District,+San+Jos%C3%A9+del+Cabo,+Mexico"
+      },
+      {
+        "id": "sight_iglesia_mision",
+        "name": "Misión de San José del Cabo",
+        "category": "History",
+        "description": "The 18th-century mission church on the main plaza. The historic town square surrounding it is far more authentic than anything in Cabo San Lucas.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Misi%C3%B3n+de+San+Jos%C3%A9+del+Cabo,+San+Jos%C3%A9+del+Cabo,+Mexico"
+      },
+      {
+        "id": "sight_estero",
+        "name": "Estero San José (Bird Sanctuary)",
+        "category": "Nature",
+        "description": "A freshwater lagoon and nature reserve adjacent to the beach — home to 200+ bird species and a stark contrast to the resort strip next door.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Estero+San+Jos%C3%A9+%28Bird+Sanctuary%29,+San+Jos%C3%A9+del+Cabo,+Mexico"
+      }
+    ],
+    "museums": [
+      {
+        "id": "museum_house_of_culture",
+        "name": "Casa de la Cultura",
+        "category": "Art & Culture",
+        "description": "Community arts center hosting rotating exhibits by local Baja artists. Free entry, low-key, and a genuine window into non-resort life here.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Casa+de+la+Cultura,+San+Jos%C3%A9+del+Cabo,+Mexico"
+      }
+    ],
+    "parks": [
+      {
+        "id": "nature_playa_hotelera",
+        "name": "Playa Hotelera",
+        "category": "Beach",
+        "description": "The main beach running along the hotel zone. Calmer surf than Cabo San Lucas but check flags — Pacific swells can still be dangerous outside designated zones.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Playa+Hotelera,+San+Jos%C3%A9+del+Cabo,+Mexico"
+      },
+      {
+        "id": "nature_chileno_bay",
+        "name": "Chileno Bay",
+        "category": "Snorkeling",
+        "description": "Best approached from San José — fewer crowds than from CSL side. Calm waters, good snorkeling, and a public beach with no mandatory club fees.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Chileno+Bay,+San+Jos%C3%A9+del+Cabo,+Mexico"
+      }
+    ],
+    "eat_drink_work": [
+      {
+        "id": "eat_salsas",
+        "name": "Salsas Restaurant",
+        "category": "Upscale Dining",
+        "description": "Long-standing fine dining institution in the historic district. Contemporary Mexican cuisine in a beautifully restored colonial courtyard.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Salsas+Restaurant,+San+Jos%C3%A9+del+Cabo,+Mexico"
+      },
+      {
+        "id": "eat_taqueria_rossy",
+        "name": "Taqueria Rossy",
+        "category": "Authentic Food",
+        "description": "A cash-only, no-frills local taqueria beloved by residents. Fish and shrimp tacos for a fraction of the tourist-zone price. Queue is your guide — follow it.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Taqueria+Rossy,+San+Jos%C3%A9+del+Cabo,+Mexico"
+      },
+      {
+        "id": "work_todo_local_hub",
+        "name": "Todo Local Cowork Hub",
+        "category": "Coworking",
+        "description": "Small boutique coworking space in the historic center. Community-focused, locally run, and walking distance from the Art Walk galleries.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Todo+Local+Cowork+Hub,+San+Jos%C3%A9+del+Cabo,+Mexico"
+      }
+    ],
+    "available_translations": [
+      "en",
+      "es",
+      "fr"
+    ]
+  },
+  "translations": {
+    "es": {
+      "quick_warnings": [
+        "Las playas que dan al Pacífico tienen corrientes peligrosas — obedece estrictamente el sistema de banderas. Quédate en las zonas de nado designadas.",
+        "La salida del aeropuerto es territorio principal para solicitudes de tiempo compartido. Declina firmemente y dirígete directamente a tu traslado previamente reservado.",
+        "Los taxis de calle cobran tarifas premium — acuerda el precio antes de subir o usa un shuttle previamente reservado."
+      ],
+      "detail_guide": {
+        "getting_around": "El aeropuerto MMSD está justo al borde del pueblo — los traslados son cortos. Uber está disponible y es más confiable aquí que en Cabo San Lucas. El corredor turístico entre SJC y CSL se cubre mejor con shuttle privado o auto rentado.",
+        "top_sights": [
+          {
+            "id": "sight_art_walk",
+            "name": "Art Walk — Distrito Histórico",
+            "category": "Cultura",
+            "description": "Cada jueves por la noche (nov–jun), las galerías abren sus puertas para un sofisticado paseo por las calles coloniales con vino, arte y música en vivo. La mejor experiencia cultural en Los Cabos.",
+            "maps_url": "https://maps.app.goo.gl/placeholder21"
+          },
+          {
+            "id": "sight_iglesia_mision",
+            "name": "Misión de San José del Cabo",
+            "category": "Historia",
+            "description": "La iglesia misional del siglo XVIII en la plaza principal. La plaza histórica que la rodea es mucho más auténtica que cualquier cosa en Cabo San Lucas.",
+            "maps_url": "https://maps.app.goo.gl/placeholderMision"
+          },
+          {
+            "id": "sight_estero",
+            "name": "Estero San José (Santuario de Aves)",
+            "category": "Naturaleza",
+            "description": "Una laguna de agua dulce y reserva natural adyacente a la playa — hogar de más de 200 especies de aves y un marcado contraste con la franja de resorts de al lado.",
+            "maps_url": "https://maps.app.goo.gl/placeholderEstero"
+          }
+        ],
+        "museums": [
+          {
+            "id": "museum_house_of_culture",
+            "name": "Casa de la Cultura",
+            "category": "Arte y Cultura",
+            "description": "Centro de artes comunitario con exposiciones rotativas de artistas locales de Baja. Entrada gratuita, relajado y una ventana genuina a la vida fuera de los resorts.",
+            "maps_url": "https://maps.app.goo.gl/placeholderCasaCultura"
+          }
+        ],
+        "parks": [
+          {
+            "id": "nature_playa_hotelera",
+            "name": "Playa Hotelera",
+            "category": "Playa",
+            "description": "La playa principal a lo largo de la zona hotelera. Oleaje más tranquilo que Cabo San Lucas pero revisa las banderas — las marejadas del Pacífico aún pueden ser peligrosas fuera de las zonas designadas.",
+            "maps_url": "https://maps.app.goo.gl/placeholderPlayaHotelera"
+          },
+          {
+            "id": "nature_chileno_bay",
+            "name": "Bahía Chileno",
+            "category": "Snorkel",
+            "description": "Mejor acercarse desde San José — menos multitudes que desde el lado de CSL. Aguas tranquilas, buen snorkel y una playa pública sin cuotas obligatorias de club.",
+            "maps_url": "https://maps.app.goo.gl/placeholder23"
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "eat_salsas",
+            "name": "Salsas Restaurant",
+            "category": "Alta cocina",
+            "description": "Institución de alta cocina de larga trayectoria en el distrito histórico. Cocina mexicana contemporánea en un hermoso patio colonial restaurado.",
+            "maps_url": "https://maps.app.goo.gl/placeholderSalsas"
+          },
+          {
+            "id": "eat_taqueria_rossy",
+            "name": "Taqueria Rossy",
+            "category": "Comida auténtica",
+            "description": "Una taquería local sin pretensiones y solo efectivo, querida por los residentes. Tacos de pescado y camarón a una fracción del precio de la zona turística. La fila es tu guía — síguela.",
+            "maps_url": "https://maps.app.goo.gl/placeholderRossy"
+          },
+          {
+            "id": "work_todo_local_hub",
+            "name": "Todo Local Cowork Hub",
+            "category": "Coworking",
+            "description": "Pequeño espacio boutique de coworking en el centro histórico. Enfocado en la comunidad, manejado localmente y a distancia caminable de las galerías del Art Walk.",
+            "maps_url": "https://maps.app.goo.gl/placeholderTodoLocal"
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr"
+        ]
+      }
+    }
+  }
+}

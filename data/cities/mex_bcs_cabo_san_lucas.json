@@ -1,0 +1,187 @@
+{
+  "city_id": "mex_bcs_cabo_san_lucas",
+  "city_name": "Cabo San Lucas",
+  "state": "Baja California Sur",
+  "has_detailed_guide": true,
+  "security": {
+    "level": 2,
+    "label": "Seguro / Safe"
+  },
+  "quick_stats": {
+    "best_time": "Dec – Apr (whale season)",
+    "connectivity": "Good (Resort Wi-Fi / 4G)",
+    "airport_iata": "SJD"
+  },
+  "quick_warnings": [
+    "Pacific-facing beaches have dangerous currents — obey flag system strictly. Never swim on red or black flag days.",
+    "Aggressive timeshare solicitations begin at the airport exit. Politely decline and keep moving.",
+    "Street taxis are notoriously expensive. Pre-book private transfers from MMSD — Uber is often blocked from resort entrances."
+  ],
+  "detail_guide": {
+    "getting_around": "Pre-book a private transfer from San José del Cabo airport (MMSD) — it's 45 min away. Uber works in the city but is often blocked at resort gates. Water taxis are the best way to reach El Arco and Playa del Amor.",
+    "top_sights": [
+      {
+        "id": "sight_el_arco",
+        "name": "El Arco (The Arch)",
+        "category": "Landmark",
+        "description": "The iconic limestone arch at Land's End where the Pacific meets the Sea of Cortez. Best viewed by glass-bottom boat or catamaran sunset tour.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=El+Arco+%28The+Arch%29,+Cabo+San+Lucas,+Mexico"
+      },
+      {
+        "id": "sight_marina",
+        "name": "Marina Cabo San Lucas",
+        "category": "Entertainment",
+        "description": "The bustling heart of the city — luxury yachts, open-air restaurants, and world-class nightlife all in one walkable strip.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Marina+Cabo+San+Lucas,+Cabo+San+Lucas,+Mexico"
+      },
+      {
+        "id": "sight_medano_beach",
+        "name": "Playa El Médano",
+        "category": "Beach",
+        "description": "The main swimmable beach in Cabo San Lucas. Lined with beach clubs, water sports rentals, and bars. Best access point from the marina.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Playa+El+M%C3%A9dano,+Cabo+San+Lucas,+Mexico"
+      }
+    ],
+    "museums": [
+      {
+        "id": "museum_cabo_whale",
+        "name": "Museo de la Ballena",
+        "category": "Natural History",
+        "description": "Small but fascinating museum dedicated to the gray and humpback whales that migrate through the Sea of Cortez every winter.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Museo+de+la+Ballena,+Cabo+San+Lucas,+Mexico"
+      }
+    ],
+    "parks": [
+      {
+        "id": "nature_playa_del_amor",
+        "name": "Playa del Amor (Lover's Beach)",
+        "category": "Beach",
+        "description": "A swimmable beach tucked right next to El Arco — accessible only by water taxi from the marina. One of the most photographed spots in Mexico.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Playa+del+Amor+%28Lover%27s+Beach%29,+Cabo+San+Lucas,+Mexico"
+      },
+      {
+        "id": "nature_chileno_bay",
+        "name": "Chileno Bay",
+        "category": "Snorkeling",
+        "description": "The best public snorkeling beach in the tourist corridor. Calm, clear water and abundant marine life. No umbrellas or vendors — bring your own gear.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Chileno+Bay,+Cabo+San+Lucas,+Mexico"
+      }
+    ],
+    "eat_drink_work": [
+      {
+        "id": "eat_sunset_monalisa",
+        "name": "Sunset Monalisa",
+        "category": "Upscale Dining",
+        "description": "Carved into a cliff overlooking the ocean — Mediterranean cuisine with arguably the best sunset views in the region. Reserve well in advance.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Sunset+Monalisa,+Cabo+San+Lucas,+Mexico"
+      },
+      {
+        "id": "eat_ediths",
+        "name": "Edith's",
+        "category": "Authentic Food",
+        "description": "A vibrant local institution blending Guerreran and Baja Californian flavors with ultra-fresh local seafood. Cash-friendly, casual, excellent.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Edith%27s,+Cabo+San+Lucas,+Mexico"
+      },
+      {
+        "id": "work_lci_coworking",
+        "name": "LCI Coworking Space",
+        "category": "Coworking",
+        "description": "Centrally located in downtown Cabo San Lucas. AC, ergonomic setups, reliable fiber, and flexible day/week passes for digital nomads.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=LCI+Coworking+Space,+Cabo+San+Lucas,+Mexico"
+      }
+    ],
+    "available_translations": [
+      "en",
+      "es",
+      "fr"
+    ]
+  },
+  "translations": {
+    "es": {
+      "quick_warnings": [
+        "Las playas que dan al Pacífico tienen corrientes peligrosas — obedece estrictamente el sistema de banderas. Nunca nades en días de bandera roja o negra.",
+        "Las solicitudes agresivas de tiempo compartido comienzan en la salida del aeropuerto. Declina cortésmente y sigue caminando.",
+        "Los taxis de calle son notoriamente caros. Reserva traslados privados desde MMSD con anticipación — Uber frecuentemente está bloqueado en las entradas de los resorts."
+      ],
+      "detail_guide": {
+        "getting_around": "Reserva con anticipación un traslado privado desde el aeropuerto de San José del Cabo (MMSD) — está a 45 min. Uber funciona en la ciudad pero frecuentemente está bloqueado en las puertas de los resorts. Los taxis acuáticos son la mejor forma de llegar a El Arco y Playa del Amor.",
+        "top_sights": [
+          {
+            "id": "sight_el_arco",
+            "name": "El Arco",
+            "category": "Punto de interés",
+            "description": "El icónico arco de piedra caliza en Finisterra donde el Pacífico se encuentra con el Mar de Cortés. Mejor visto en bote con fondo de cristal o en un tour de catamarán al atardecer.",
+            "maps_url": "https://maps.app.goo.gl/placeholder19"
+          },
+          {
+            "id": "sight_marina",
+            "name": "Marina Cabo San Lucas",
+            "category": "Entretenimiento",
+            "description": "El bullicioso corazón de la ciudad — yates de lujo, restaurantes al aire libre y vida nocturna de clase mundial en una franja caminable.",
+            "maps_url": "https://maps.app.goo.gl/placeholder20"
+          },
+          {
+            "id": "sight_medano_beach",
+            "name": "Playa El Médano",
+            "category": "Playa",
+            "description": "La principal playa apta para nadar en Cabo San Lucas. Bordeada de clubes de playa, renta de deportes acuáticos y bares. Mejor punto de acceso desde la marina.",
+            "maps_url": "https://maps.app.goo.gl/placeholderMedano"
+          }
+        ],
+        "museums": [
+          {
+            "id": "museum_cabo_whale",
+            "name": "Museo de la Ballena",
+            "category": "Historia natural",
+            "description": "Un museo pequeño pero fascinante dedicado a las ballenas grises y jorobadas que migran por el Mar de Cortés cada invierno.",
+            "maps_url": "https://maps.app.goo.gl/placeholderWhaleMuseum"
+          }
+        ],
+        "parks": [
+          {
+            "id": "nature_playa_del_amor",
+            "name": "Playa del Amor",
+            "category": "Playa",
+            "description": "Una playa apta para nadar justo al lado de El Arco — accesible solo por taxi acuático desde la marina. Uno de los lugares más fotografiados de México.",
+            "maps_url": "https://maps.app.goo.gl/placeholder22"
+          },
+          {
+            "id": "nature_chileno_bay",
+            "name": "Bahía Chileno",
+            "category": "Snorkel",
+            "description": "La mejor playa pública para snorkel en el corredor turístico. Agua clara y tranquila con abundante vida marina. Sin sombrillas ni vendedores — lleva tu propio equipo.",
+            "maps_url": "https://maps.app.goo.gl/placeholder23"
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "eat_sunset_monalisa",
+            "name": "Sunset Monalisa",
+            "category": "Alta cocina",
+            "description": "Tallado en un acantilado con vista al océano — cocina mediterránea con posiblemente las mejores vistas del atardecer de la región. Reserva con mucha anticipación.",
+            "maps_url": "https://maps.app.goo.gl/placeholder24"
+          },
+          {
+            "id": "eat_ediths",
+            "name": "Edith's",
+            "category": "Comida auténtica",
+            "description": "Una vibrante institución local que fusiona sabores guerrerenses y bajacalifornianos con mariscos locales ultrafrescos. Acepta efectivo, casual, excelente.",
+            "maps_url": "https://maps.app.goo.gl/placeholder25"
+          },
+          {
+            "id": "work_lci_coworking",
+            "name": "LCI Coworking Space",
+            "category": "Coworking",
+            "description": "Ubicación céntrica en el centro de Cabo San Lucas. Aire acondicionado, configuraciones ergonómicas, fibra confiable y pases flexibles por día/semana para nómadas digitales.",
+            "maps_url": "https://maps.app.goo.gl/placeholder26"
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr"
+        ]
+      }
+    }
+  }
+}

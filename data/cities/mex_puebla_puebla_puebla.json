@@ -1,0 +1,257 @@
+{
+  "city_id": "mex_puebla_puebla_puebla",
+  "city_name": "Puebla",
+  "state": "Puebla",
+  "has_detailed_guide": true,
+  "security": {
+    "level": 3,
+    "label": "Riesgo Moderado / Moderate Risk"
+  },
+  "quick_stats": {
+    "airport_iata": "PBC",
+    "best_time": "Mar – May / Sep – Nov",
+    "connectivity": "Excellent (Fiber / 5G — University City)"
+  },
+  "quick_warnings": [
+    "Pedestrian robbery in and around the Centro Histórico is common — keep phones holstered, bags in front, and avoid walking distracted at night.",
+    "Popocatépetl volcano is active — light ash fall can occur with little warning. Check CENAPRED alerts if you plan hikes in the region.",
+    "Traffic is dense and chaotic; if driving, avoid Centro on weekday rush hours (7–9am, 6–8pm) and during the frequent street closures for events."
+  ],
+  "detail_guide": {
+    "getting_around": "Puebla's Centro Histórico is compact and walkable — most major sights, the cathedral, and Barrio del Artista are within 15–20 minutes on foot from the Zócalo. Uber is widely available, reliable, and cheap. The city has a modern Metrobús network for longer cross-city trips. Avoid driving in Centro on weekends when event closures are common. The CAPU bus terminal connects Puebla to Mexico City (2 hours) and Oaxaca (5 hours) via ADO, making it a natural stop on a Mexico City–Oaxaca route.",
+    "top_sights": [
+      {
+        "id": "sight_zocalo_puebla",
+        "name": "Zócalo & Cathedral of Puebla",
+        "category": "Landmark / Architecture",
+        "description": "One of the most beautiful main plazas in Mexico — the 16th-century cathedral flanking the north side has the tallest towers of any cathedral in the country. The interior features ornate churrigueresque altarpieces and a remarkable onyx ciborium. The Zócalo itself is surrounded by 16th–17th century portales (arcaded buildings) housing cafés and restaurants. Free to enter the cathedral.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Z%C3%B3calo+%26+Cathedral+of+Puebla,+Puebla,+Mexico"
+      },
+      {
+        "id": "sight_barrio_de_los_sapos",
+        "name": "Barrio de los Sapos & Antigüedades",
+        "category": "Culture",
+        "description": "Puebla's antiques and artisan quarter — a neighbourhood of colourful colonial buildings south of the cathedral packed with antique shops, talavera pottery studios, and weekend tianguis markets. Sunday morning is the best time: the flea market takes over the streets with vintage finds, local food, and live music. A genuinely unhurried, local experience.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Barrio+de+los+Sapos+%26+Antig%C3%BCedades,+Puebla,+Mexico"
+      },
+      {
+        "id": "sight_fuertes_loreto_guadalupe",
+        "name": "Fuertes de Loreto y Guadalupe",
+        "category": "History",
+        "description": "The twin hilltop forts where Mexico's army defeated the French in the Battle of Puebla on May 5, 1862 — the origin of Cinco de Mayo. The Fuerte de Loreto houses a museum covering the battle and the French Intervention. The surrounding Cerro de Guadalupe park has sweeping views over the city and towards Popocatépetl. Free on Sundays.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Fuertes+de+Loreto+y+Guadalupe,+Puebla,+Mexico"
+      },
+      {
+        "id": "sight_cholula",
+        "name": "Cholula — Great Pyramid & Iglesia de los Remedios",
+        "category": "Archaeology",
+        "description": "The largest pyramid by volume in the world — bigger than Cheops — buried under a hill 15km west of Puebla, with a Spanish colonial church improbably perched on top. Walk the external tunnels that cut through the pyramid, then climb to the church for views of Popocatépetl. The surrounding town of San Andrés Cholula has a wonderful zócalo lined with bars and restaurants favoured by students from nearby UDLAP university. 30 min by Uber.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Cholula+%E2%80%94+Great+Pyramid+%26+Iglesia+de+los+Remedios,+Puebla,+Mexico"
+      },
+      {
+        "id": "sight_callejon_de_los_sapos",
+        "name": "Calle de los Dulces (6 Oriente)",
+        "category": "Food / Culture",
+        "description": "A one-block street dedicated entirely to Pueblan sweets — camotes (sweet potato candy), tortitas de Santa Clara, and muéganos piled high in century-old confiterias. One of the most concentrated sensory experiences in the city's food scene. Buy a mixed selection to take home; most shops will vacuum-seal for travel.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Calle+de+los+Dulces+%286+Oriente%29,+Puebla,+Mexico"
+      }
+    ],
+    "museums": [
+      {
+        "id": "museum_amparo",
+        "name": "Museo Amparo",
+        "category": "Pre-Hispanic & Colonial Art",
+        "description": "One of the finest art museums in Mexico — a beautifully converted colonial hospital housing a world-class collection of pre-Hispanic ceramics, colonial paintings, and contemporary Mexican art in dialogue with ancient pieces. The interface between the 16th-century building and the modern exhibition design is exceptional. Budget 2–3 hours. Closed Tuesdays.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Museo+Amparo,+Puebla,+Mexico"
+      },
+      {
+        "id": "museum_bello",
+        "name": "Museo Bello y Zetina",
+        "category": "Decorative Arts",
+        "description": "A lavish 19th-century mansion museum showcasing the private collection of industrialist José Luis Bello — Talavera pottery, Chinese porcelain, European furniture, and Pueblan silver accumulated over decades. One of the most eccentrically personal and charming museums in the country. Free entry; guided tours available in Spanish.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Museo+Bello+y+Zetina,+Puebla,+Mexico"
+      },
+      {
+        "id": "museum_casa_del_alfeñique",
+        "name": "Casa del Alfeñique",
+        "category": "Architecture / History",
+        "description": "An 18th-century baroque mansion with an elaborately decorated white stucco exterior resembling alfeñique sugar candy — one of the most distinctive buildings in a city full of them. Now a regional history museum with colonial-era artifacts. The façade alone is worth the detour.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Casa+del+Alfe%C3%B1ique,+Puebla,+Mexico"
+      }
+    ],
+    "parks": [
+      {
+        "id": "nature_parque_ecologico",
+        "name": "Parque Ecológico Metropolitano",
+        "category": "Urban Park",
+        "description": "A large green space on the eastern edge of the city with jogging trails, picnic areas, and views toward the volcanoes on clear days. A favourite of local runners and families — far less touristy than Centro and a good place to experience everyday Pueblan life.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Parque+Ecol%C3%B3gico+Metropolitano,+Puebla,+Mexico"
+      },
+      {
+        "id": "nature_estrella_de_puebla",
+        "name": "Estrella de Puebla Observation Wheel",
+        "category": "Viewpoint",
+        "description": "At 80m, one of the tallest observation Ferris wheels in the world — with unobstructed 360° views of the city, the twin volcanoes Popocatépetl and Iztaccíhuatl, and on clear days, even Pico de Orizaba. Located in the Angelópolis shopping district, 20 min from Centro by Uber. Best at sunset.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Estrella+de+Puebla+Observation+Wheel,+Puebla,+Mexico"
+      }
+    ],
+    "eat_drink_work": [
+      {
+        "id": "eat_mercado_el_carmen",
+        "name": "Mercado El Carmen",
+        "category": "Authentic Food",
+        "description": "Puebla's most atmospheric traditional market — the go-to for mole negro, chalupas, cemitas, and a bowl of caldo tlalpeño in a busy, unpretentious setting. The cemitas (sesame-seeded sandwiches stuffed with milanesa, avocado, chipotle, and quesillo) are Puebla's iconic street food and best eaten here. Budget MXN 60–120 per person.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Mercado+El+Carmen,+Puebla,+Mexico"
+      },
+      {
+        "id": "eat_mesones_sacristia",
+        "name": "Mesones Sacristía de la Compañía",
+        "category": "Regional Cuisine",
+        "description": "An elegant restaurant and boutique hotel in a 17th-century building near the cathedral — the gold standard for Pueblan cuisine. The mole poblano (the mother of all moles, invented in Puebla) and chiles en nogada (in season Aug–Sep) are the dishes to order. Expensive by Mexican standards but authentic and beautifully executed.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Mesones+Sacrist%C3%ADa+de+la+Compa%C3%B1%C3%ADa,+Puebla,+Mexico"
+      },
+      {
+        "id": "eat_la_noria",
+        "name": "La Noria",
+        "category": "Casual / Local",
+        "description": "A beloved low-key restaurant in Barrio de los Sapos serving generous regional plates — the best value mole negro in Centro, plus excellent enfrijoladas and Pueblan-style tamales. Packed with locals at lunch. Cash preferred; closed evenings.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=La+Noria,+Puebla,+Mexico"
+      },
+      {
+        "id": "work_cowork_puebla",
+        "name": "Grupo Expansiva Coworking",
+        "category": "Coworking",
+        "description": "Puebla's most established coworking hub, well-located in the Zona Universitaria — fast fiber, private offices, meeting rooms, and a community of local entrepreneurs and remote workers. Day and monthly passes available. The presence of multiple universities (BUAP, UDLAP, Iberoamericana) makes Puebla's remote work infrastructure better than its tourism profile suggests.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Grupo+Expansiva+Coworking,+Puebla,+Mexico"
+      }
+    ],
+    "available_translations": [
+      "en",
+      "es",
+      "fr"
+    ]
+  },
+  "translations": {
+    "es": {
+      "quick_warnings": [
+        "El robo a peatones en y alrededor del Centro Histórico es común — mantén el teléfono guardado, las bolsas al frente y evita caminar distraído de noche.",
+        "El volcán Popocatépetl está activo — pueden ocurrir lluvias ligeras de ceniza con poca advertencia. Consulta las alertas del CENAPRED si planeas caminatas en la región.",
+        "El tráfico es denso y caótico; si manejas, evita el Centro en horas pico entre semana (7–9am, 6–8pm) y durante los frecuentes cierres de calles por eventos."
+      ],
+      "detail_guide": {
+        "getting_around": "El Centro Histórico de Puebla es compacto y caminable — la mayoría de los sitios principales, la catedral y el Barrio del Artista están a 15–20 minutos a pie del Zócalo. Uber está ampliamente disponible, es confiable y económico. La ciudad cuenta con una red moderna de Metrobús para viajes más largos por la ciudad. Evita manejar en el Centro los fines de semana cuando los cierres por eventos son comunes. La terminal CAPU conecta Puebla con Ciudad de México (2 horas) y Oaxaca (5 horas) vía ADO, haciéndola una parada natural en la ruta Ciudad de México–Oaxaca.",
+        "top_sights": [
+          {
+            "id": "sight_zocalo_puebla",
+            "name": "Zócalo y Catedral de Puebla",
+            "category": "Punto de interés / Arquitectura",
+            "description": "Una de las plazas principales más hermosas de México — la catedral del siglo XVI que flanquea el lado norte tiene las torres más altas de cualquier catedral del país. El interior presenta ornamentados retablos churriguerescos y un notable ciborium de ónix. El Zócalo está rodeado de portales de los siglos XVI–XVII que albergan cafés y restaurantes. Entrada gratuita a la catedral.",
+            "maps_url": "https://maps.app.goo.gl/placeholderZocaloPuebla"
+          },
+          {
+            "id": "sight_barrio_de_los_sapos",
+            "name": "Barrio de los Sapos y Antigüedades",
+            "category": "Cultura",
+            "description": "El barrio de antigüedades y artesanías de Puebla — un vecindario de coloridos edificios coloniales al sur de la catedral lleno de tiendas de antigüedades, estudios de talavera y tianguis de fin de semana. El domingo por la mañana es el mejor momento: el mercado de pulgas se apodera de las calles con hallazgos vintage, comida local y música en vivo. Una experiencia genuinamente tranquila y local.",
+            "maps_url": "https://maps.app.goo.gl/placeholderBarrioSapos"
+          },
+          {
+            "id": "sight_fuertes_loreto_guadalupe",
+            "name": "Fuertes de Loreto y Guadalupe",
+            "category": "Historia",
+            "description": "Los fuertes gemelos en la cima de la colina donde el ejército mexicano derrotó a los franceses en la Batalla de Puebla el 5 de mayo de 1862 — el origen del Cinco de Mayo. El Fuerte de Loreto alberga un museo sobre la batalla y la Intervención Francesa. El Cerro de Guadalupe circundante tiene amplias vistas sobre la ciudad y hacia el Popocatépetl. Gratis los domingos.",
+            "maps_url": "https://maps.app.goo.gl/placeholderFuertesPuebla"
+          },
+          {
+            "id": "sight_cholula",
+            "name": "Cholula — Gran Pirámide e Iglesia de los Remedios",
+            "category": "Arqueología",
+            "description": "La pirámide más grande del mundo por volumen — más grande que Keops — enterrada bajo una colina a 15 km al oeste de Puebla, con una iglesia colonial española improbablemente posada en la cima. Recorre los túneles externos que atraviesan la pirámide y luego sube a la iglesia para vistas del Popocatépetl. El pueblo circundante de San Andrés Cholula tiene un maravilloso zócalo bordeado de bares y restaurantes favoritos de estudiantes de la cercana universidad UDLAP. 30 min en Uber.",
+            "maps_url": "https://maps.app.goo.gl/placeholderCholula"
+          },
+          {
+            "id": "sight_callejon_de_los_sapos",
+            "name": "Calle de los Dulces (6 Oriente)",
+            "category": "Gastronomía / Cultura",
+            "description": "Una calle de una cuadra dedicada enteramente a los dulces poblanos — camotes, tortitas de Santa Clara y muéganos apilados en confiterías centenarias. Una de las experiencias sensoriales más concentradas de la escena gastronómica de la ciudad. Compra una selección variada para llevar; la mayoría de las tiendas sellan al vacío para viaje.",
+            "maps_url": "https://maps.app.goo.gl/placeholderCalleDulces"
+          }
+        ],
+        "museums": [
+          {
+            "id": "museum_amparo",
+            "name": "Museo Amparo",
+            "category": "Arte prehispánico y colonial",
+            "description": "Uno de los museos de arte más finos de México — un hospital colonial bellamente reconvertido que alberga una colección de clase mundial de cerámicas prehispánicas, pinturas coloniales y arte mexicano contemporáneo en diálogo con piezas antiguas. La interfaz entre el edificio del siglo XVI y el diseño de exhibición moderno es excepcional. Reserva 2–3 horas. Cerrado los martes.",
+            "maps_url": "https://maps.app.goo.gl/placeholderMuseoAmparo"
+          },
+          {
+            "id": "museum_bello",
+            "name": "Museo Bello y Zetina",
+            "category": "Artes decorativas",
+            "description": "Un lujoso museo en mansión del siglo XIX que exhibe la colección privada del industrial José Luis Bello — talavera, porcelana china, muebles europeos y plata poblana acumulados durante décadas. Uno de los museos más excéntricamente personales y encantadores del país. Entrada gratuita; visitas guiadas disponibles en español.",
+            "maps_url": "https://maps.app.goo.gl/placeholderMuseoBello"
+          },
+          {
+            "id": "museum_casa_del_alfeñique",
+            "name": "Casa del Alfeñique",
+            "category": "Arquitectura / Historia",
+            "description": "Una mansión barroca del siglo XVIII con un elaborado exterior de estuco blanco que asemeja dulce de alfeñique — uno de los edificios más distintivos en una ciudad llena de ellos. Ahora es un museo de historia regional con artefactos de la era colonial. La fachada sola vale el desvío.",
+            "maps_url": "https://maps.app.goo.gl/placeholderCasaAlfeñique"
+          }
+        ],
+        "parks": [
+          {
+            "id": "nature_parque_ecologico",
+            "name": "Parque Ecológico Metropolitano",
+            "category": "Parque urbano",
+            "description": "Un gran espacio verde al borde este de la ciudad con senderos para correr, áreas de picnic y vistas hacia los volcanes en días despejados. Un favorito de corredores y familias locales — mucho menos turístico que el Centro y un buen lugar para experimentar la vida cotidiana poblana.",
+            "maps_url": "https://maps.app.goo.gl/placeholderParqueEcologico"
+          },
+          {
+            "id": "nature_estrella_de_puebla",
+            "name": "Estrella de Puebla — Rueda de Observación",
+            "category": "Mirador",
+            "description": "Con 80 m, una de las ruedas de observación más altas del mundo — con vistas despejadas de 360° de la ciudad, los volcanes gemelos Popocatépetl e Iztaccíhuatl y en días claros, incluso el Pico de Orizaba. Ubicada en el distrito comercial Angelópolis, a 20 min del Centro en Uber. Mejor al atardecer.",
+            "maps_url": "https://maps.app.goo.gl/placeholderEstrellaPuebla"
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "eat_mercado_el_carmen",
+            "name": "Mercado El Carmen",
+            "category": "Comida auténtica",
+            "description": "El mercado tradicional con más atmósfera de Puebla — el lugar para mole negro, chalupas, cemitas y un plato de caldo tlalpeño en un ambiente concurrido y sin pretensiones. Las cemitas (tortas de ajonjolí rellenas de milanesa, aguacate, chipotle y quesillo) son la comida callejera icónica de Puebla y se comen mejor aquí. Presupuesta MXN 60–120 por persona.",
+            "maps_url": "https://maps.app.goo.gl/placeholderMercadoCarmen"
+          },
+          {
+            "id": "eat_mesones_sacristia",
+            "name": "Mesones Sacristía de la Compañía",
+            "category": "Cocina regional",
+            "description": "Un elegante restaurante y hotel boutique en un edificio del siglo XVII cerca de la catedral — el estándar de oro de la cocina poblana. El mole poblano (la madre de todos los moles, inventado en Puebla) y los chiles en nogada (en temporada ago–sep) son los platillos que debes pedir. Caro para estándares mexicanos pero auténtico y bellamente ejecutado.",
+            "maps_url": "https://maps.app.goo.gl/placeholderMesonesSacristia"
+          },
+          {
+            "id": "eat_la_noria",
+            "name": "La Noria",
+            "category": "Casual / Local",
+            "description": "Un querido restaurante discreto en el Barrio de los Sapos sirviendo generosos platillos regionales — el mejor mole negro por su precio en el Centro, además de excelentes enfrijoladas y tamales estilo poblano. Lleno de locales a la hora del almuerzo. Se prefiere efectivo; cerrado por la noche.",
+            "maps_url": "https://maps.app.goo.gl/placeholderLaNoria"
+          },
+          {
+            "id": "work_cowork_puebla",
+            "name": "Grupo Expansiva Coworking",
+            "category": "Coworking",
+            "description": "El hub de coworking más establecido de Puebla, bien ubicado en la Zona Universitaria — fibra rápida, oficinas privadas, salas de reuniones y una comunidad de emprendedores locales y trabajadores remotos. Pases diarios y mensuales disponibles. La presencia de múltiples universidades (BUAP, UDLAP, Iberoamericana) hace que la infraestructura de trabajo remoto de Puebla sea mejor de lo que sugiere su perfil turístico.",
+            "maps_url": "https://maps.app.goo.gl/placeholderCoworkPuebla"
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "city_id": "mex_campeche_campeche_campeche",
+  "city_name": "Campeche",
+  "state": "Campeche",
+  "has_detailed_guide": true,
+  "security": {
+    "level": 1,
+    "label": "Seguro / Safe"
+  },
+  "quick_stats": {
+    "best_time": "Nov – Mar (cooler, dry season)",
+    "connectivity": "Good (Hotel Wi-Fi / 4G)",
+    "airport_iata": "CPE"
+  },
+  "quick_warnings": [
+    "Humidity is extremely high year-round; drink plenty of water and wear light clothing.",
+    "Few international flights serve CPE — most visitors connect through Mexico City or Mérida.",
+    "The old city walls are beautiful but uneven underfoot; wear comfortable walking shoes."
+  ],
+  "detail_guide": {
+    "getting_around": "The UNESCO-listed walled centro histórico is compact and best explored on foot. A tourist trolley (El Guapo) loops through the old city. Taxis are cheap and abundant. ADO buses connect to Mérida (~2.5 hr) and Palenque (~5 hr). Rent a car to visit Calakmul or Edzná ruins.",
+    "top_sights": [
+      {
+        "id": "cam_centro_historico",
+        "name": "Centro Histórico (Walled City)",
+        "category": "landmark / UNESCO",
+        "description": "A UNESCO World Heritage site with colorful colonial buildings, fortified walls, and cobblestone streets dating to the 1600s.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Centro+Hist%C3%B3rico+%28Walled+City%29,+Campeche,+Mexico"
+      },
+      {
+        "id": "cam_calakmul",
+        "name": "Calakmul Archaeological Zone (day trip)",
+        "category": "archaeology",
+        "description": "One of the largest Maya cities ever discovered, deep in the jungle biosphere reserve — a 3-hour drive but unforgettable.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Calakmul+Archaeological+Zone+%28day+trip%29,+Campeche,+Mexico"
+      },
+      {
+        "id": "cam_edzna",
+        "name": "Edzná Archaeological Zone",
+        "category": "archaeology",
+        "description": "Impressive Maya site just 1 hour from the city, featuring a five-story pyramid and well-preserved stucco facades.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Edzn%C3%A1+Archaeological+Zone,+Campeche,+Mexico"
+      }
+    ],
+    "museums": [
+      {
+        "id": "cam_museo_arquitectura",
+        "name": "Museo de la Arquitectura Maya",
+        "category": "museum",
+        "description": "Housed inside the Baluarte de la Soledad, this museum displays Maya stelae, lintels, and architectural fragments.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Museo+de+la+Arquitectura+Maya,+Campeche,+Mexico"
+      }
+    ],
+    "parks": [
+      {
+        "id": "cam_malecon",
+        "name": "Malecón de Campeche",
+        "category": "waterfront",
+        "description": "A long seaside promenade with sculptures, exercise areas, and gorgeous Gulf of Mexico sunsets.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Malec%C3%B3n+de+Campeche,+Campeche,+Mexico"
+      }
+    ],
+    "eat_drink_work": [
+      {
+        "id": "cam_la_pigua",
+        "name": "La Pigua",
+        "category": "restaurant",
+        "description": "The city's most celebrated seafood restaurant, famous for coconut shrimp and pan de cazón (layered shark tortilla).",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=La+Pigua,+Campeche,+Mexico"
+      },
+      {
+        "id": "cam_chocol_ha",
+        "name": "Chocol-Ha",
+        "category": "cafe",
+        "description": "Charming chocolate-themed cafe offering artisanal hot chocolate, Campechano coffee, and light pastries.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Chocol-Ha,+Campeche,+Mexico"
+      },
+      {
+        "id": "cam_marganzo",
+        "name": "Marganzo",
+        "category": "restaurant",
+        "description": "Regional Campechano cuisine in a beautiful colonial courtyard; try the papadzules and camarones al coco.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Marganzo,+Campeche,+Mexico"
+      }
+    ],
+    "available_translations": [
+      "en",
+      "es",
+      "fr"
+    ]
+  },
+  "translations": {
+    "es": {
+      "quick_warnings": [
+        "La humedad es extremadamente alta todo el año; bebe mucha agua y usa ropa ligera.",
+        "Pocos vuelos internacionales llegan a CPE — la mayoría de los visitantes hacen conexión por Ciudad de México o Mérida.",
+        "Las murallas de la ciudad antigua son hermosas pero el suelo es irregular; usa zapatos cómodos para caminar."
+      ],
+      "detail_guide": {
+        "getting_around": "El centro histórico amurallado, declarado Patrimonio de la Humanidad por la UNESCO, es compacto y se recorre mejor a pie. Un tranvía turístico (El Guapo) hace un recorrido por la ciudad antigua. Los taxis son baratos y abundantes. Los autobuses ADO conectan con Mérida (~2.5 hr) y Palenque (~5 hr). Renta un auto para visitar las ruinas de Calakmul o Edzná.",
+        "top_sights": [
+          {
+            "id": "cam_centro_historico",
+            "name": "Centro Histórico (Ciudad Amurallada)",
+            "category": "monumento / UNESCO",
+            "description": "Patrimonio de la Humanidad por la UNESCO con coloridos edificios coloniales, murallas fortificadas y calles empedradas que datan del siglo XVII.",
+            "maps_url": ""
+          },
+          {
+            "id": "cam_calakmul",
+            "name": "Zona Arqueológica de Calakmul (excursión de un día)",
+            "category": "arqueología",
+            "description": "Una de las ciudades mayas más grandes jamás descubiertas, en lo profundo de la reserva de la biosfera selvática — a 3 horas en auto pero inolvidable.",
+            "maps_url": ""
+          },
+          {
+            "id": "cam_edzna",
+            "name": "Zona Arqueológica de Edzná",
+            "category": "arqueología",
+            "description": "Impresionante sitio maya a solo 1 hora de la ciudad, con una pirámide de cinco pisos y fachadas de estuco bien conservadas.",
+            "maps_url": ""
+          }
+        ],
+        "museums": [
+          {
+            "id": "cam_museo_arquitectura",
+            "name": "Museo de la Arquitectura Maya",
+            "category": "museo",
+            "description": "Ubicado dentro del Baluarte de la Soledad, este museo exhibe estelas mayas, dinteles y fragmentos arquitectónicos.",
+            "maps_url": ""
+          }
+        ],
+        "parks": [
+          {
+            "id": "cam_malecon",
+            "name": "Malecón de Campeche",
+            "category": "paseo marítimo",
+            "description": "Un largo paseo costero con esculturas, áreas de ejercicio y hermosos atardeceres sobre el Golfo de México.",
+            "maps_url": ""
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "cam_la_pigua",
+            "name": "La Pigua",
+            "category": "restaurante",
+            "description": "El restaurante de mariscos más famoso de la ciudad, conocido por sus camarones al coco y el pan de cazón (tortilla de cazón en capas).",
+            "maps_url": ""
+          },
+          {
+            "id": "cam_chocol_ha",
+            "name": "Chocol-Ha",
+            "category": "cafetería",
+            "description": "Encantadora cafetería temática de chocolate que ofrece chocolate caliente artesanal, café campechano y repostería ligera.",
+            "maps_url": ""
+          },
+          {
+            "id": "cam_marganzo",
+            "name": "Marganzo",
+            "category": "restaurante",
+            "description": "Cocina regional campechana en un hermoso patio colonial; prueba los papadzules y los camarones al coco.",
+            "maps_url": ""
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr"
+        ]
+      }
+    }
+  }
+}

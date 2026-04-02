@@ -1,0 +1,229 @@
+{
+  "city_id": "mex_oaxaca_santa_maria_huatulco",
+  "city_name": "Huatulco",
+  "state": "Oaxaca",
+  "has_detailed_guide": true,
+  "security": {
+    "level": 2,
+    "label": "Seguro / Safe"
+  },
+  "quick_stats": {
+    "best_time": "Nov – Apr",
+    "connectivity": "Moderate (4G LTE — patchy in some bays; bring a local SIM)",
+    "airport_iata": "HUX"
+  },
+  "quick_warnings": [
+    "Summer heat (May–Sep) is intense — plan outdoor activities before 10am and after 4pm.",
+    "Hurricane season overlaps peak heat; check forecasts before booking boat tours.",
+    "Taxis have no meters — always negotiate the fare before you get in. Standard Centro–Tangolunda is around MXN 80–120."
+  ],
+  "detail_guide": {
+    "getting_around": "Huatulco's nine bays are spread over 35km of coastline — you need transport to move between them. Colectivo taxis (shared, fixed-route) run between Santa Cruz, La Crucecita (the residential hub), and Tangolunda and are the cheapest option. Hire a private taxi or join a boat tour to reach more remote bays like San Agustín or Maguey. Uber is not available. Rent a scooter from La Crucecita for flexible day exploration.",
+    "top_sights": [
+      {
+        "id": "sight_parque_nacional_huatulco",
+        "name": "Parque Nacional Huatulco — The Nine Bays",
+        "category": "Nature",
+        "description": "Mexico's only certified sustainable tourist destination encompasses 9 bays and 36 beaches within a protected national park. The clearest water and best snorkeling is at Bahía San Agustín and Bahía Maguey. Book a full-day boat tour from Santa Cruz Marina (MXN 400–600 pp) that hits 4–5 bays with a fresh seafood lunch included.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Parque+Nacional+Huatulco+%E2%80%94+The+Nine+Bays,+Huatulco,+Mexico"
+      },
+      {
+        "id": "sight_bahia_santa_cruz",
+        "name": "Bahía de Santa Cruz",
+        "category": "Beach",
+        "description": "The most accessible and developed bay — calm protected water ideal for swimming, a marina with charter boats, seafood restaurants, and artisan shops along the waterfront. A good base for day-tripping to wilder bays. The snorkeling at La Entrega beach (a 10-min walk east along the headland) is excellent.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Bah%C3%ADa+de+Santa+Cruz,+Huatulco,+Mexico"
+      },
+      {
+        "id": "sight_la_entrega",
+        "name": "Playa La Entrega",
+        "category": "Snorkeling",
+        "description": "A sheltered crescent beach at the eastern edge of Santa Cruz Bay with a healthy coral reef just meters from shore. Rent snorkel gear on the beach for MXN 50. The name ('The Surrender') refers to the spot where Mexican independence hero Vicente Guerrero was handed over to Spanish forces in 1831.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Playa+La+Entrega,+Huatulco,+Mexico"
+      },
+      {
+        "id": "sight_cascadas_magicas",
+        "name": "Cascadas Mágicas",
+        "category": "Nature",
+        "description": "Freshwater cascades and natural swimming pools tucked into the Sierra de Huatulco highlands, about 45 minutes by car from the coast. A refreshing escape from beach heat — the cool mountain air and jungle setting are a complete contrast to the bays. Best visited Oct–Jan when water levels are highest after rainy season.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Cascadas+M%C3%A1gicas,+Huatulco,+Mexico"
+      },
+      {
+        "id": "sight_la_crucecita",
+        "name": "La Crucecita — Zócalo & Mural",
+        "category": "Culture",
+        "description": "The real town of Huatulco, built in 1985 to house workers for the planned resort. The central plaza has a lovely church with a massive Our Lady of Guadalupe mural painted on the ceiling dome — said to be one of the largest in the world. The surrounding streets have the best local restaurants, taquerias, and markets far from tourist prices.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=La+Crucecita+%E2%80%94+Z%C3%B3calo+%26+Mural,+Huatulco,+Mexico"
+      }
+    ],
+    "museums": [
+      {
+        "id": "museum_cafe_museo",
+        "name": "Café Museo Café",
+        "category": "Coffee & Culture",
+        "description": "A small but charming museum-café in La Crucecita dedicated to Oaxacan coffee culture — from bean cultivation in the Sierra Sur to processing and cupping. The café serves single-origin Oaxacan coffee and light snacks. An easy 30-minute visit that pairs perfectly with a morning walk through the market.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Caf%C3%A9+Museo+Caf%C3%A9,+Huatulco,+Mexico"
+      }
+    ],
+    "parks": [
+      {
+        "id": "nature_bahia_maguey",
+        "name": "Bahía Maguey",
+        "category": "Beach",
+        "description": "One of the most beautiful and relatively unspoiled bays in the park — calm turquoise water, a handful of rustic palapa restaurants serving fresh catch, and usually far fewer crowds than Santa Cruz. Accessible by a short dirt road or by boat. Arrive before 11am for the best conditions.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Bah%C3%ADa+Maguey,+Huatulco,+Mexico"
+      },
+      {
+        "id": "nature_bahia_san_agustin",
+        "name": "Bahía San Agustín",
+        "category": "Snorkeling / Beach",
+        "description": "The most remote major bay, reachable by a 20km dirt road or boat, which keeps it less crowded. The reef snorkeling here rivals anything in Cancún — large parrotfish, sea turtles, and schools of tropical fish in clear shallow water. Bring your own gear or rent on arrival. Basic food stalls only — pack supplies.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Bah%C3%ADa+San+Agust%C3%ADn,+Huatulco,+Mexico"
+      }
+    ],
+    "eat_drink_work": [
+      {
+        "id": "eat_mercado_crucecita",
+        "name": "Mercado de La Crucecita",
+        "category": "Authentic Food",
+        "description": "The daily market in La Crucecita is the best place to eat like a local — fresh tlayudas, memelas, and seafood tostadas at a fraction of tourist zone prices. The breakfast comida corrida (set meal) stalls open from 7am and are where fishermen eat before heading out. Budget MXN 60–100 per person.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Mercado+de+La+Crucecita,+Huatulco,+Mexico"
+      },
+      {
+        "id": "eat_avalos",
+        "name": "Mariscos Avalos",
+        "category": "Seafood",
+        "description": "A beloved beachfront palapa on Santa Cruz Bay known for the freshest catch — the mixed ceviche and whole grilled huachinango (red snapper) are standouts. Lunch-only. Arrive by noon as popular dishes sell out. Cash preferred.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Mariscos+Avalos,+Huatulco,+Mexico"
+      },
+      {
+        "id": "eat_tipsy",
+        "name": "Tipsy Bar & Grill",
+        "category": "Sunset Drinks",
+        "description": "Perched above Chahué Bay with panoramic Pacific views — the best spot for a sundowner in Huatulco. Mezcal cocktails, decent bar snacks, and a reliably spectacular sunset. No reservation needed; arrive 30 min before sunset to get a good table.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Tipsy+Bar+%26+Grill,+Huatulco,+Mexico"
+      },
+      {
+        "id": "work_cowork_huatulco",
+        "name": "Work options in Huatulco",
+        "category": "Remote Work",
+        "description": "Dedicated coworking is limited — most remote workers use hotel lobbies or the cafés around La Crucecita's Zócalo. Café Don Porfirio has the most reliable WiFi and power outlets. Signal drops in some bays so plan any calls or uploads from La Crucecita or Tangolunda hotel zones. A local Telcel SIM is strongly recommended.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Work+options+in+Huatulco,+Huatulco,+Mexico"
+      }
+    ],
+    "available_translations": [
+      "en",
+      "es",
+      "fr"
+    ]
+  },
+  "translations": {
+    "es": {
+      "quick_warnings": [
+        "El calor del verano (may–sep) es intenso — planea actividades al aire libre antes de las 10am y después de las 4pm.",
+        "La temporada de huracanes coincide con el calor máximo; revisa los pronósticos antes de reservar tours en bote.",
+        "Los taxis no tienen taxímetro — siempre negocia la tarifa antes de subir. El trayecto estándar Centro–Tangolunda ronda los MXN 80–120."
+      ],
+      "detail_guide": {
+        "getting_around": "Las nueve bahías de Huatulco se extienden a lo largo de 35 km de costa — necesitas transporte para moverte entre ellas. Los taxis colectivos (compartidos, ruta fija) circulan entre Santa Cruz, La Crucecita (el centro residencial) y Tangolunda y son la opción más económica. Contrata un taxi privado o únete a un tour en bote para llegar a bahías más remotas como San Agustín o Maguey. Uber no está disponible. Renta una motoneta en La Crucecita para exploración flexible durante el día.",
+        "top_sights": [
+          {
+            "id": "sight_parque_nacional_huatulco",
+            "name": "Parque Nacional Huatulco — Las Nueve Bahías",
+            "category": "Naturaleza",
+            "description": "El único destino turístico sustentable certificado de México abarca 9 bahías y 36 playas dentro de un parque nacional protegido. El agua más cristalina y el mejor snorkel están en Bahía San Agustín y Bahía Maguey. Reserva un tour en bote de día completo desde la Marina de Santa Cruz (MXN 400–600 pp) que cubre 4–5 bahías con almuerzo de mariscos frescos incluido.",
+            "maps_url": "https://maps.app.goo.gl/placeholderHuatulcoNP"
+          },
+          {
+            "id": "sight_bahia_santa_cruz",
+            "name": "Bahía de Santa Cruz",
+            "category": "Playa",
+            "description": "La bahía más accesible y desarrollada — agua protegida y tranquila ideal para nadar, una marina con botes de charter, restaurantes de mariscos y tiendas artesanales a lo largo del malecón. Una buena base para excursiones a bahías más salvajes. El snorkel en playa La Entrega (10 min caminando al este por el promontorio) es excelente.",
+            "maps_url": "https://maps.app.goo.gl/placeholderSantaCruzBay"
+          },
+          {
+            "id": "sight_la_entrega",
+            "name": "Playa La Entrega",
+            "category": "Snorkel",
+            "description": "Una playa protegida en forma de media luna en el extremo este de la Bahía de Santa Cruz con un arrecife de coral saludable a pocos metros de la orilla. Renta equipo de snorkel en la playa por MXN 50. El nombre ('La Entrega') se refiere al lugar donde el héroe de la independencia mexicana Vicente Guerrero fue entregado a las fuerzas españolas en 1831.",
+            "maps_url": "https://maps.app.goo.gl/placeholderLaEntrega"
+          },
+          {
+            "id": "sight_cascadas_magicas",
+            "name": "Cascadas Mágicas",
+            "category": "Naturaleza",
+            "description": "Cascadas de agua dulce y albercas naturales enclavadas en las tierras altas de la Sierra de Huatulco, a unos 45 minutos en auto desde la costa. Un refrescante escape del calor playero — el aire fresco de montaña y el entorno selvático son un contraste total con las bahías. Mejor visitarlas de oct a ene cuando el nivel del agua es más alto después de la temporada de lluvias.",
+            "maps_url": "https://maps.app.goo.gl/placeholderCascadasMagicas"
+          },
+          {
+            "id": "sight_la_crucecita",
+            "name": "La Crucecita — Zócalo y Mural",
+            "category": "Cultura",
+            "description": "El verdadero pueblo de Huatulco, construido en 1985 para alojar a los trabajadores del resort planificado. La plaza central tiene una encantadora iglesia con un enorme mural de la Virgen de Guadalupe pintado en la cúpula del techo — se dice que es uno de los más grandes del mundo. Las calles circundantes tienen los mejores restaurantes locales, taquerías y mercados lejos de precios turísticos.",
+            "maps_url": "https://maps.app.goo.gl/placeholderLaCrucecita"
+          }
+        ],
+        "museums": [
+          {
+            "id": "museum_cafe_museo",
+            "name": "Café Museo Café",
+            "category": "Café y Cultura",
+            "description": "Un pequeño pero encantador museo-café en La Crucecita dedicado a la cultura cafetalera oaxaqueña — desde el cultivo del grano en la Sierra Sur hasta el procesamiento y la cata. El café sirve café oaxaqueño de origen único y bocadillos ligeros. Una visita fácil de 30 minutos que combina perfectamente con un paseo matutino por el mercado.",
+            "maps_url": "https://maps.app.goo.gl/placeholderCafeMuseo"
+          }
+        ],
+        "parks": [
+          {
+            "id": "nature_bahia_maguey",
+            "name": "Bahía Maguey",
+            "category": "Playa",
+            "description": "Una de las bahías más hermosas y relativamente vírgenes del parque — agua turquesa tranquila, un puñado de restaurantes rústicos de palapa sirviendo pescado fresco y generalmente muchas menos multitudes que Santa Cruz. Accesible por un corto camino de terracería o en bote. Llega antes de las 11am para las mejores condiciones.",
+            "maps_url": "https://maps.app.goo.gl/placeholderBahiaMaguey"
+          },
+          {
+            "id": "nature_bahia_san_agustin",
+            "name": "Bahía San Agustín",
+            "category": "Snorkel / Playa",
+            "description": "La bahía principal más remota, accesible por un camino de terracería de 20 km o en bote, lo que la mantiene menos concurrida. El snorkel de arrecife aquí rivaliza con cualquier cosa en Cancún — grandes peces loro, tortugas marinas y cardúmenes de peces tropicales en agua clara y poco profunda. Lleva tu propio equipo o renta al llegar. Solo puestos de comida básicos — lleva provisiones.",
+            "maps_url": "https://maps.app.goo.gl/placeholderSanAgustin"
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "eat_mercado_crucecita",
+            "name": "Mercado de La Crucecita",
+            "category": "Comida auténtica",
+            "description": "El mercado diario en La Crucecita es el mejor lugar para comer como local — tlayudas frescas, memelas y tostadas de mariscos a una fracción de los precios de la zona turística. Los puestos de comida corrida para desayunar abren desde las 7am y son donde los pescadores comen antes de salir. Presupuesta MXN 60–100 por persona.",
+            "maps_url": "https://maps.app.goo.gl/placeholderMercadoCrucecita"
+          },
+          {
+            "id": "eat_avalos",
+            "name": "Mariscos Avalos",
+            "category": "Mariscos",
+            "description": "Una querida palapa frente a la playa en la Bahía de Santa Cruz conocida por la pesca más fresca — el ceviche mixto y el huachinango entero a la parrilla son los favoritos. Solo almuerzo. Llega antes del mediodía ya que los platillos populares se agotan. Se prefiere efectivo.",
+            "maps_url": "https://maps.app.goo.gl/placeholderAvalos"
+          },
+          {
+            "id": "eat_tipsy",
+            "name": "Tipsy Bar & Grill",
+            "category": "Tragos al atardecer",
+            "description": "Ubicado sobre la Bahía Chahué con vistas panorámicas al Pacífico — el mejor lugar para un trago al atardecer en Huatulco. Cócteles de mezcal, buenas botanas y un atardecer confiablemente espectacular. No se necesita reservación; llega 30 min antes del atardecer para conseguir buena mesa.",
+            "maps_url": "https://maps.app.goo.gl/placeholderTipsy"
+          },
+          {
+            "id": "work_cowork_huatulco",
+            "name": "Opciones de trabajo en Huatulco",
+            "category": "Trabajo remoto",
+            "description": "El coworking dedicado es limitado — la mayoría de los trabajadores remotos usan lobbies de hoteles o los cafés alrededor del Zócalo de La Crucecita. Café Don Porfirio tiene el WiFi y los enchufes más confiables. La señal se pierde en algunas bahías, así que planea tus llamadas o cargas desde La Crucecita o las zonas hoteleras de Tangolunda. Se recomienda ampliamente un SIM local de Telcel.",
+            "maps_url": "https://maps.app.goo.gl/placeholderCrucecitaCafe"
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr"
+        ]
+      }
+    }
+  }
+}

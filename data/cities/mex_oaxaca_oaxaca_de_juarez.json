@@ -1,0 +1,271 @@
+{
+  "city_id": "mex_oaxaca_oaxaca_de_juarez",
+  "city_name": "Oaxaca de Juárez",
+  "state": "Oaxaca",
+  "has_detailed_guide": true,
+  "security": {
+    "level": 2,
+    "label": "Seguro / Safe"
+  },
+  "quick_stats": {
+    "best_time": "Oct – Apr",
+    "connectivity": "Good (Fiber in Centro / 4G LTE — Growing Nomad Scene)",
+    "airport_iata": "OAX"
+  },
+  "quick_warnings": [
+    "Road blockades from protests are very common — check local news (e.g. @OaxacaInfo on social media) before any highway trip, especially to Monte Albán.",
+    "Active seismic zone — learn your hotel's earthquake protocol on arrival.",
+    "Pickpockets operate in Mercado Benito Juárez and Mercado 20 de Noviembre — use a crossbody bag and keep your phone off the table."
+  ],
+  "detail_guide": {
+    "getting_around": "The historic center (Centro Histórico) is highly walkable — most sights, restaurants, and markets are within 15 minutes on foot from the Zócalo. For Monte Albán (45 min away), book the official Autobuses Turísticos shuttle from Calle Mina near the second-class bus station — it's cheap, reliable, and departs every 30 min. Uber operates in the city with mixed availability; licensed taxis from sitios (taxi stands) are safe and metered. Avoid informal taxis.",
+    "top_sights": [
+      {
+        "id": "sight_monte_alban",
+        "name": "Monte Albán",
+        "category": "Archaeology",
+        "description": "One of Mesoamerica's greatest archaeological sites — a 2,500-year-old Zapotec city perched on a leveled mountaintop with sweeping 360° views of the valley. Arrive at opening (8am) to beat the heat and crowds. The climb from the entrance is steep; bring water. Budget 3 hours minimum.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Monte+Alb%C3%A1n,+Oaxaca+de+Ju%C3%A1rez,+Mexico"
+      },
+      {
+        "id": "sight_santo_domingo",
+        "name": "Templo de Santo Domingo de Guzmán",
+        "category": "Architecture",
+        "description": "Oaxaca's crown jewel — a 16th-century baroque Dominican church whose gold-leaf interior is among the most ornate in the Americas. The attached former convent now houses the excellent Museo de las Culturas de Oaxaca (MACO). Free to enter the church; small fee for the museum.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Templo+de+Santo+Domingo+de+Guzm%C3%A1n,+Oaxaca+de+Ju%C3%A1rez,+Mexico"
+      },
+      {
+        "id": "sight_hierve_el_agua",
+        "name": "Hierve el Agua",
+        "category": "Nature",
+        "description": "Petrified waterfalls and mineral-rich infinity pools on a cliff edge, 70km east of the city. Go on a day tour (book through any reputable agency in Centro) to combine it with the Tule Tree, Mitla ruins, and a mezcal distillery — the 'Sierra Juárez Circuit' is a full, efficient day.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Hierve+el+Agua,+Oaxaca+de+Ju%C3%A1rez,+Mexico"
+      },
+      {
+        "id": "sight_tule_tree",
+        "name": "Árbol del Tule",
+        "category": "Landmark",
+        "description": "A 2,000-year-old Montezuma cypress in the town of Santa María del Tule, just 9km from Oaxaca City. Its trunk is the widest of any tree on Earth. A 30-min colectivo ride from the second-class bus terminal — easy and cheap to visit independently.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=%C3%81rbol+del+Tule,+Oaxaca+de+Ju%C3%A1rez,+Mexico"
+      },
+      {
+        "id": "sight_zocalo",
+        "name": "El Zócalo (Plaza de la Constitución)",
+        "category": "Landmark",
+        "description": "The social heart of the city — a shaded plaza flanked by the State Palace and the Cathedral. At its best in the evenings when marimba bands play and families stroll. The surrounding pedestrian streets (Macedonio Alcalá) are the city's most scenic corridor.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=El+Z%C3%B3calo+%28Plaza+de+la+Constituci%C3%B3n%29,+Oaxaca+de+Ju%C3%A1rez,+Mexico"
+      }
+    ],
+    "museums": [
+      {
+        "id": "museum_maco",
+        "name": "Museo de las Culturas de Oaxaca (MACO)",
+        "category": "History & Archaeology",
+        "description": "Housed in a stunning 16th-century convent adjacent to Santo Domingo, MACO holds the treasures of Tomb 7 of Monte Albán — gold, jade, and obsidian Mixtec jewellery that rivals anything in Mexico City. One of the best regional museums in the country. Budget 2 hours.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Museo+de+las+Culturas+de+Oaxaca+%28MACO%29,+Oaxaca+de+Ju%C3%A1rez,+Mexico"
+      },
+      {
+        "id": "museum_textile",
+        "name": "Museo Textil de Oaxaca",
+        "category": "Craft & Culture",
+        "description": "A beautifully curated free museum dedicated to Oaxacan weaving traditions — from pre-Columbian backstrap looms to contemporary tapestry. Strong rotating exhibitions. In the heart of Centro, easy to combine with a Santo Domingo visit.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Museo+Textil+de+Oaxaca,+Oaxaca+de+Ju%C3%A1rez,+Mexico"
+      },
+      {
+        "id": "museum_rufino_tamayo",
+        "name": "Museo de Arte Prehispánico Rufino Tamayo",
+        "category": "Pre-Columbian Art",
+        "description": "A world-class collection of 4,000+ pre-Columbian ceramic pieces donated by Oaxacan painter Rufino Tamayo. The curation is exceptional — intimate and thoughtful. Small entrance fee; closed Tuesdays.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Museo+de+Arte+Prehisp%C3%A1nico+Rufino+Tamayo,+Oaxaca+de+Ju%C3%A1rez,+Mexico"
+      }
+    ],
+    "parks": [
+      {
+        "id": "nature_llano_park",
+        "name": "Parque El Llano",
+        "category": "Urban Park",
+        "description": "The neighbourhood park favoured by locals — shaded benches, Sunday food stalls, and a distinctly non-touristy vibe. Great for an evening walk after visiting the nearby Mercado de la Merced. 10 min walk east of the Zócalo.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Parque+El+Llano,+Oaxaca+de+Ju%C3%A1rez,+Mexico"
+      },
+      {
+        "id": "nature_cerro_del_fortin",
+        "name": "Cerro del Fortín",
+        "category": "Viewpoint",
+        "description": "A hill 15 minutes on foot from Centro with panoramic views over the city and valley — best at sunset. Home to the Guelaguetza amphitheatre (the site of Oaxaca's major July folk dance festival). A quiet, safe walk during daylight hours.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Cerro+del+Fort%C3%ADn,+Oaxaca+de+Ju%C3%A1rez,+Mexico"
+      }
+    ],
+    "eat_drink_work": [
+      {
+        "id": "eat_mercado_20_noviembre",
+        "name": "Mercado 20 de Noviembre",
+        "category": "Authentic Food",
+        "description": "The best introduction to Oaxacan food — rows of smoke-filled stalls grilling chorizo, cecina, and tasajo over charcoal. Pick a stall, order a tlayuda, and pair it with a tejate (pre-Hispanic cacao drink). Budget MXN 80–150 per person. Go for lunch (11am–2pm) before it winds down.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Mercado+20+de+Noviembre,+Oaxaca+de+Ju%C3%A1rez,+Mexico"
+      },
+      {
+        "id": "eat_la_teca",
+        "name": "La Teca",
+        "category": "Regional Cuisine",
+        "description": "A celebrated family-run restaurant specialising in Istmo Zapotec cuisine — rarer and earthier than standard Oaxacan food. The memelas and yellow mole are standouts. Beloved by locals and food writers alike. Reservations recommended for dinner.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=La+Teca,+Oaxaca+de+Ju%C3%A1rez,+Mexico"
+      },
+      {
+        "id": "eat_in_situ_mezcal",
+        "name": "In Situ Mezcal Bar",
+        "category": "Mezcal",
+        "description": "The most serious mezcal bar in the city — 200+ expressions sourced directly from small-batch palenques across Oaxaca. Staff are knowledgeable and will guide you through a tasting without pressure. Essential for anyone wanting to understand Oaxacan mezcal beyond the tourist shops.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=In+Situ+Mezcal+Bar,+Oaxaca+de+Ju%C3%A1rez,+Mexico"
+      },
+      {
+        "id": "eat_boulenc",
+        "name": "Boulenc",
+        "category": "Café / Breakfast",
+        "description": "The best breakfast spot in the city — sourdough baked fresh daily, excellent espresso, and Oaxacan honey. A favourite of the digital nomad crowd. Arrives at opening (8am) fills up fast. On Calle García Vigil, a block from Santo Domingo.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Boulenc,+Oaxaca+de+Ju%C3%A1rez,+Mexico"
+      },
+      {
+        "id": "work_coworking_oaxaca",
+        "name": "Coworking Oaxaca",
+        "category": "Coworking",
+        "description": "The most established cowork space in Centro — ergonomic setup, reliable 200Mbps fiber, quiet private rooms, and a ground-floor café. Day and weekly passes available. Well-connected to the expat and remote-work community in the city.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Coworking+Oaxaca,+Oaxaca+de+Ju%C3%A1rez,+Mexico"
+      }
+    ],
+    "available_translations": [
+      "en",
+      "es",
+      "fr"
+    ]
+  },
+  "translations": {
+    "es": {
+      "quick_warnings": [
+        "Los bloqueos de carreteras por protestas son muy comunes — consulta las noticias locales (ej. @OaxacaInfo en redes sociales) antes de cualquier viaje por carretera, especialmente a Monte Albán.",
+        "Zona sísmica activa — conoce el protocolo de tu hotel ante sismos al llegar.",
+        "Los carteristas operan en el Mercado Benito Juárez y el Mercado 20 de Noviembre — usa una bolsa cruzada y no dejes el teléfono sobre la mesa."
+      ],
+      "detail_guide": {
+        "getting_around": "El Centro Histórico es muy caminable — la mayoría de los sitios de interés, restaurantes y mercados están a 15 minutos a pie del Zócalo. Para Monte Albán (a 45 min), reserva el shuttle oficial de Autobuses Turísticos desde la Calle Mina cerca de la terminal de autobuses de segunda clase — es barato, confiable y sale cada 30 min. Uber opera en la ciudad con disponibilidad variable; los taxis con licencia de sitios son seguros y con taxímetro. Evita taxis informales.",
+        "top_sights": [
+          {
+            "id": "sight_monte_alban",
+            "name": "Monte Albán",
+            "category": "Arqueología",
+            "description": "Uno de los sitios arqueológicos más importantes de Mesoamérica — una ciudad zapoteca de 2,500 años en la cima de una montaña nivelada con vistas panorámicas de 360° del valle. Llega a la apertura (8am) para evitar el calor y las multitudes. La subida desde la entrada es empinada; lleva agua. Reserva un mínimo de 3 horas.",
+            "maps_url": "https://maps.app.goo.gl/placeholderMonteAlban"
+          },
+          {
+            "id": "sight_santo_domingo",
+            "name": "Templo de Santo Domingo de Guzmán",
+            "category": "Arquitectura",
+            "description": "La joya de la corona de Oaxaca — una iglesia dominica barroca del siglo XVI cuyo interior con lámina de oro es de los más ornamentados de las Américas. El antiguo convento adjunto ahora alberga el excelente Museo de las Culturas de Oaxaca (MACO). Entrada gratuita a la iglesia; pequeña tarifa para el museo.",
+            "maps_url": "https://maps.app.goo.gl/placeholderSantoDomingo"
+          },
+          {
+            "id": "sight_hierve_el_agua",
+            "name": "Hierve el Agua",
+            "category": "Naturaleza",
+            "description": "Cascadas petrificadas y albercas naturales ricas en minerales al borde de un acantilado, a 70 km al este de la ciudad. Haz un tour de un día (reserva en cualquier agencia de confianza en el Centro) para combinarlo con el Árbol del Tule, las ruinas de Mitla y una destilería de mezcal — el 'Circuito Sierra Juárez' es un día completo y eficiente.",
+            "maps_url": "https://maps.app.goo.gl/placeholderHierveElAgua"
+          },
+          {
+            "id": "sight_tule_tree",
+            "name": "Árbol del Tule",
+            "category": "Punto de interés",
+            "description": "Un ciprés de Montezuma de 2,000 años en el pueblo de Santa María del Tule, a solo 9 km de la ciudad de Oaxaca. Su tronco es el más ancho de cualquier árbol en la Tierra. Un viaje de 30 minutos en colectivo desde la terminal de autobuses de segunda clase — fácil y barato de visitar de forma independiente.",
+            "maps_url": "https://maps.app.goo.gl/placeholderTuleTree"
+          },
+          {
+            "id": "sight_zocalo",
+            "name": "El Zócalo (Plaza de la Constitución)",
+            "category": "Punto de interés",
+            "description": "El corazón social de la ciudad — una plaza arbolada flanqueada por el Palacio de Gobierno y la Catedral. En su mejor momento por las tardes cuando las bandas de marimba tocan y las familias pasean. Las calles peatonales circundantes (Macedonio Alcalá) son el corredor más pintoresco de la ciudad.",
+            "maps_url": "https://maps.app.goo.gl/placeholderZocalo"
+          }
+        ],
+        "museums": [
+          {
+            "id": "museum_maco",
+            "name": "Museo de las Culturas de Oaxaca (MACO)",
+            "category": "Historia y Arqueología",
+            "description": "Alojado en un impresionante convento del siglo XVI adyacente a Santo Domingo, el MACO alberga los tesoros de la Tumba 7 de Monte Albán — joyería mixteca de oro, jade y obsidiana que rivaliza con cualquier cosa en la Ciudad de México. Uno de los mejores museos regionales del país. Reserva 2 horas.",
+            "maps_url": "https://maps.app.goo.gl/placeholderMACO"
+          },
+          {
+            "id": "museum_textile",
+            "name": "Museo Textil de Oaxaca",
+            "category": "Artesanía y Cultura",
+            "description": "Un museo gratuito bellamente curado dedicado a las tradiciones textiles oaxaqueñas — desde los telares de cintura precolombinos hasta el tapiz contemporáneo. Fuertes exposiciones rotativas. En el corazón del Centro, fácil de combinar con una visita a Santo Domingo.",
+            "maps_url": "https://maps.app.goo.gl/placeholderTextileMuseum"
+          },
+          {
+            "id": "museum_rufino_tamayo",
+            "name": "Museo de Arte Prehispánico Rufino Tamayo",
+            "category": "Arte precolombino",
+            "description": "Una colección de clase mundial de más de 4,000 piezas cerámicas precolombinas donadas por el pintor oaxaqueño Rufino Tamayo. La curaduría es excepcional — íntima y reflexiva. Pequeña tarifa de entrada; cerrado los martes.",
+            "maps_url": "https://maps.app.goo.gl/placeholderTamayo"
+          }
+        ],
+        "parks": [
+          {
+            "id": "nature_llano_park",
+            "name": "Parque El Llano",
+            "category": "Parque urbano",
+            "description": "El parque del barrio preferido por los locales — bancas sombreadas, puestos de comida los domingos y un ambiente decididamente no turístico. Ideal para un paseo vespertino después de visitar el cercano Mercado de la Merced. A 10 min a pie al este del Zócalo.",
+            "maps_url": "https://maps.app.goo.gl/placeholderLlano"
+          },
+          {
+            "id": "nature_cerro_del_fortin",
+            "name": "Cerro del Fortín",
+            "category": "Mirador",
+            "description": "Una colina a 15 minutos a pie del Centro con vistas panorámicas de la ciudad y el valle — mejor al atardecer. Hogar del anfiteatro de la Guelaguetza (sede del gran festival de danza folclórica de Oaxaca en julio). Una caminata tranquila y segura durante las horas de luz.",
+            "maps_url": "https://maps.app.goo.gl/placeholderFortin"
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "eat_mercado_20_noviembre",
+            "name": "Mercado 20 de Noviembre",
+            "category": "Comida auténtica",
+            "description": "La mejor introducción a la comida oaxaqueña — hileras de puestos llenos de humo asando chorizo, cecina y tasajo al carbón. Escoge un puesto, pide una tlayuda y acompáñala con un tejate (bebida prehispánica de cacao). Presupuesta MXN 80–150 por persona. Ve a almorzar (11am–2pm) antes de que cierre.",
+            "maps_url": "https://maps.app.goo.gl/placeholder20Noviembre"
+          },
+          {
+            "id": "eat_la_teca",
+            "name": "La Teca",
+            "category": "Cocina regional",
+            "description": "Un celebrado restaurante familiar especializado en cocina zapoteca del Istmo — más rara y terrosa que la comida oaxaqueña estándar. Las memelas y el mole amarillo son los favoritos. Querido tanto por locales como por escritores gastronómicos. Reservaciones recomendadas para la cena.",
+            "maps_url": "https://maps.app.goo.gl/placeholderLaTeca"
+          },
+          {
+            "id": "eat_in_situ_mezcal",
+            "name": "In Situ Mezcal Bar",
+            "category": "Mezcal",
+            "description": "El bar de mezcal más serio de la ciudad — más de 200 expresiones obtenidas directamente de pequeños palenques en todo Oaxaca. El personal es conocedor y te guiará a través de una degustación sin presión. Esencial para quien quiera entender el mezcal oaxaqueño más allá de las tiendas turísticas.",
+            "maps_url": "https://maps.app.goo.gl/placeholderInSitu"
+          },
+          {
+            "id": "eat_boulenc",
+            "name": "Boulenc",
+            "category": "Café / Desayuno",
+            "description": "El mejor lugar para desayunar en la ciudad — pan de masa madre horneado fresco diario, excelente espresso y miel oaxaqueña. Un favorito de la comunidad nómada digital. Al abrir (8am) se llena rápido. En la Calle García Vigil, a una cuadra de Santo Domingo.",
+            "maps_url": "https://maps.app.goo.gl/placeholderBoulenc"
+          },
+          {
+            "id": "work_coworking_oaxaca",
+            "name": "Coworking Oaxaca",
+            "category": "Coworking",
+            "description": "El espacio de cowork más establecido en el Centro — configuración ergonómica, fibra confiable de 200Mbps, salas privadas silenciosas y un café en planta baja. Pases diarios y semanales disponibles. Bien conectado con la comunidad expat y de trabajo remoto en la ciudad.",
+            "maps_url": "https://maps.app.goo.gl/placeholderCoworkOaxaca"
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr"
+        ]
+      }
+    }
+  }
+}

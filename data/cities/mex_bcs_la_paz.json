@@ -1,0 +1,173 @@
+{
+  "city_id": "mex_bcs_la_paz",
+  "city_name": "La Paz",
+  "state": "Baja California Sur",
+  "has_detailed_guide": true,
+  "security": {
+    "level": 2,
+    "label": "Seguro / Safe"
+  },
+  "quick_stats": {
+    "best_time": "Oct – May (whale sharks Oct–Apr, pleasant heat)",
+    "connectivity": "Good (Cafe Wi-Fi / 4G)",
+    "airport_iata": "LAP"
+  },
+  "quick_warnings": [
+    "Summer heat is extreme (40°C+); plan outdoor activities for early morning or late afternoon.",
+    "Whale shark tours require booking with licensed operators — unlicensed boats may harass wildlife.",
+    "Some beaches on Isla Espíritu Santo have no shade or services; bring ample water and sun protection."
+  ],
+  "detail_guide": {
+    "getting_around": "The Malecón is a beautiful 5-km waterfront walk. Downtown is compact and walkable. Taxis and Uber cover the city. A rental car is recommended for reaching beaches like Balandra and Tecolote. Ferries cross to Mazatlán and Topolobampo.",
+    "top_sights": [
+      {
+        "id": "lp_balandra",
+        "name": "Playa Balandra",
+        "category": "beach",
+        "description": "Iconic shallow turquoise bay with the famous mushroom rock; widely regarded as one of Mexico's most beautiful beaches.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Playa+Balandra,+La+Paz,+Mexico"
+      },
+      {
+        "id": "lp_espiritu_santo",
+        "name": "Isla Espíritu Santo",
+        "category": "nature / wildlife",
+        "description": "UNESCO-protected island with sea lion colonies, kayaking, snorkeling, and camping on pristine beaches.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Isla+Esp%C3%ADritu+Santo,+La+Paz,+Mexico"
+      },
+      {
+        "id": "lp_whale_sharks",
+        "name": "Whale Shark Snorkeling",
+        "category": "wildlife",
+        "description": "Swim with gentle whale sharks in the Bay of La Paz from October through April with licensed guides.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Whale+Shark+Snorkeling,+La+Paz,+Mexico"
+      }
+    ],
+    "museums": [
+      {
+        "id": "lp_museo_ballena",
+        "name": "Museo de la Ballena y Ciencias del Mar",
+        "category": "museum",
+        "description": "Whale and marine science museum with full-size skeleton displays and interactive exhibits on Sea of Cortez ecology.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Museo+de+la+Ballena+y+Ciencias+del+Mar,+La+Paz,+Mexico"
+      }
+    ],
+    "parks": [
+      {
+        "id": "lp_malecon",
+        "name": "Malecón de La Paz",
+        "category": "waterfront park",
+        "description": "A scenic seaside promenade with sculptures, playgrounds, and sunset views over the Sea of Cortez.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Malec%C3%B3n+de+La+Paz,+La+Paz,+Mexico"
+      }
+    ],
+    "eat_drink_work": [
+      {
+        "id": "lp_bismark",
+        "name": "Bismark-cito",
+        "category": "restaurant",
+        "description": "Legendary family-run seafood spot since 1968; try the chocolate clams and fish tacos.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Bismark-cito,+La+Paz,+Mexico"
+      },
+      {
+        "id": "lp_doce_cuarenta",
+        "name": "Doce Cuarenta",
+        "category": "cafe / cowork",
+        "description": "Modern cafe and coworking space with strong espresso, fast Wi-Fi, and a creative community.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Doce+Cuarenta,+La+Paz,+Mexico"
+      },
+      {
+        "id": "lp_rancho_viejo",
+        "name": "Rancho Viejo",
+        "category": "restaurant",
+        "description": "Beloved local taquería serving carne asada tacos, machaca burritos, and BCS-style grilled meats.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Rancho+Viejo,+La+Paz,+Mexico"
+      }
+    ],
+    "available_translations": [
+      "en",
+      "es",
+      "fr"
+    ]
+  },
+  "translations": {
+    "es": {
+      "quick_warnings": [
+        "El calor en verano es extremo (más de 40 °C); planea actividades al aire libre para temprano en la mañana o por la tarde.",
+        "Los tours de tiburón ballena requieren reservar con operadores autorizados — las lanchas sin licencia pueden acosar a la fauna.",
+        "Algunas playas en Isla Espíritu Santo no tienen sombra ni servicios; lleva suficiente agua y protección solar."
+      ],
+      "detail_guide": {
+        "getting_around": "El Malecón es un hermoso paseo costero de 5 km. El centro es compacto y se recorre a pie. Taxis y Uber cubren la ciudad. Se recomienda rentar auto para llegar a playas como Balandra y Tecolote. Los ferrys cruzan a Mazatlán y Topolobampo.",
+        "top_sights": [
+          {
+            "id": "lp_balandra",
+            "name": "Playa Balandra",
+            "category": "playa",
+            "description": "Icónica bahía de aguas turquesas poco profundas con la famosa roca hongo; considerada una de las playas más hermosas de México.",
+            "maps_url": ""
+          },
+          {
+            "id": "lp_espiritu_santo",
+            "name": "Isla Espíritu Santo",
+            "category": "naturaleza / vida silvestre",
+            "description": "Isla protegida por la UNESCO con colonias de lobos marinos, kayak, snorkel y campamento en playas vírgenes.",
+            "maps_url": ""
+          },
+          {
+            "id": "lp_whale_sharks",
+            "name": "Snorkel con Tiburón Ballena",
+            "category": "vida silvestre",
+            "description": "Nada con los dóciles tiburones ballena en la Bahía de La Paz de octubre a abril con guías autorizados.",
+            "maps_url": ""
+          }
+        ],
+        "museums": [
+          {
+            "id": "lp_museo_ballena",
+            "name": "Museo de la Ballena y Ciencias del Mar",
+            "category": "museo",
+            "description": "Museo de ballenas y ciencias marinas con esqueletos de tamaño real y exhibiciones interactivas sobre la ecología del Mar de Cortés.",
+            "maps_url": ""
+          }
+        ],
+        "parks": [
+          {
+            "id": "lp_malecon",
+            "name": "Malecón de La Paz",
+            "category": "parque costero",
+            "description": "Un pintoresco paseo marítimo con esculturas, áreas de juego y vistas del atardecer sobre el Mar de Cortés.",
+            "maps_url": ""
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "lp_bismark",
+            "name": "Bismark-cito",
+            "category": "restaurante",
+            "description": "Legendario restaurante familiar de mariscos desde 1968; prueba las almejas chocolatas y los tacos de pescado.",
+            "maps_url": ""
+          },
+          {
+            "id": "lp_doce_cuarenta",
+            "name": "Doce Cuarenta",
+            "category": "cafetería / cowork",
+            "description": "Cafetería moderna y espacio de coworking con buen espresso, Wi-Fi rápido y una comunidad creativa.",
+            "maps_url": ""
+          },
+          {
+            "id": "lp_rancho_viejo",
+            "name": "Rancho Viejo",
+            "category": "restaurante",
+            "description": "Querida taquería local que sirve tacos de carne asada, burritos de machaca y carnes asadas al estilo BCS.",
+            "maps_url": ""
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr"
+        ]
+      }
+    }
+  }
+}

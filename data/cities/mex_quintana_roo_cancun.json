@@ -1,0 +1,187 @@
+{
+  "city_id": "mex_quintana_roo_cancun",
+  "city_name": "Cancún",
+  "state": "Quintana Roo",
+  "has_detailed_guide": true,
+  "security": {
+    "level": 2,
+    "label": "Seguro / Safe"
+  },
+  "quick_stats": {
+    "best_time": "Dec – Apr",
+    "connectivity": "Excellent (Fiber)",
+    "airport_iata": "CUN"
+  },
+  "quick_warnings": [
+    "Avoid hailing street taxis — use authorized pre-booked transfers or ADO buses only.",
+    "Sargassum (seaweed) season typically runs May through August — check beach conditions before visiting.",
+    "The Hotel Zone (Zona Hotelera) is very tourist-friendly, but downtown Cancún requires more caution after dark."
+  ],
+  "detail_guide": {
+    "getting_around": "Official ADO buses connect the airport, downtown, and Hotel Zone reliably. For door-to-door trips, use pre-booked private transfers or the Uber app (available in the Hotel Zone). Never hail unmarked street taxis.",
+    "top_sights": [
+      {
+        "id": "sight_musa",
+        "name": "MUSA (Underwater Museum)",
+        "category": "Unique / Adventure",
+        "description": "A one-of-a-kind snorkeling and diving experience featuring hundreds of submerged life-sized sculptures in the Caribbean Sea.",
+        "maps_url": "https://maps.app.goo.gl/exampleMusa"
+      },
+      {
+        "id": "sight_museo_maya",
+        "name": "Museo Maya de Cancún",
+        "category": "Culture",
+        "description": "Sleek, modern museum in the Hotel Zone housing an important collection of Maya artifacts from across the Yucatán Peninsula.",
+        "maps_url": "https://maps.app.goo.gl/exampleMaya"
+      },
+      {
+        "id": "sight_el_rey",
+        "name": "El Rey Ruins",
+        "category": "History",
+        "description": "A quick, accessible archaeological zone right in the heart of the Hotel Zone. Often overlooked — rarely crowded.",
+        "maps_url": "https://maps.app.goo.gl/exampleElRey"
+      }
+    ],
+    "museums": [
+      {
+        "id": "museum_maya",
+        "name": "Museo Maya de Cancún",
+        "category": "Archaeology",
+        "description": "The most significant Maya museum in the region, with 400+ artifacts and a neighboring archaeological zone (San Miguelito). Air-conditioned.",
+        "maps_url": "https://maps.app.goo.gl/exampleMayaMuseum"
+      }
+    ],
+    "parks": [
+      {
+        "id": "nature_delfines",
+        "name": "Playa Delfines",
+        "category": "Beach",
+        "description": "Expansive public beach with unobstructed Caribbean views and the famous Cancún city sign. No resort crowds — locals' favorite.",
+        "maps_url": "https://maps.app.goo.gl/exampleDelfines"
+      },
+      {
+        "id": "nature_isla_mujeres",
+        "name": "Isla Mujeres",
+        "category": "Day Trip",
+        "description": "A quick 20-minute ferry ride to a car-free, walkable island. Turquoise water, golf carts, and a much more relaxed pace than Cancún.",
+        "maps_url": "https://maps.app.goo.gl/exampleIsla"
+      }
+    ],
+    "eat_drink_work": [
+      {
+        "id": "eat_mercado28",
+        "name": "Mercado 28",
+        "category": "Authentic Food",
+        "description": "Downtown spot for authentic, affordable Yucatecan street food. Try Cochinita Pibil and Sopa de Lima. Busy at lunch — arrive by noon.",
+        "maps_url": "https://maps.app.goo.gl/exampleMercado"
+      },
+      {
+        "id": "eat_el_fish_fritanga",
+        "name": "El Fish Fritanga",
+        "category": "Seafood",
+        "description": "No-frills local seafood spot near downtown. Fried whole fish, ceviche, and cold beer at prices a fraction of Hotel Zone restaurants.",
+        "maps_url": "https://maps.app.goo.gl/exampleFishFritanga"
+      },
+      {
+        "id": "work_selina",
+        "name": "Selina Cancun Laguna",
+        "category": "Coworking",
+        "description": "Dedicated desks, high-speed Wi-Fi, and a strong digital nomad community on the lagoon side of the Hotel Zone. Day passes available.",
+        "maps_url": "https://maps.app.goo.gl/exampleSelina"
+      }
+    ],
+    "available_translations": [
+      "en",
+      "es",
+      "fr"
+    ]
+  },
+  "translations": {
+    "es": {
+      "quick_warnings": [
+        "Evita parar taxis en la calle — usa únicamente traslados autorizados previamente reservados o autobuses ADO.",
+        "La temporada de sargazo generalmente va de mayo a agosto — verifica las condiciones de las playas antes de visitar.",
+        "La Zona Hotelera es muy amigable para turistas, pero el centro de Cancún requiere más precaución después del anochecer."
+      ],
+      "detail_guide": {
+        "getting_around": "Los autobuses oficiales ADO conectan el aeropuerto, el centro y la Zona Hotelera de forma confiable. Para viajes puerta a puerta, usa traslados privados previamente reservados o la app de Uber (disponible en la Zona Hotelera). Nunca pares taxis sin identificación en la calle.",
+        "top_sights": [
+          {
+            "id": "sight_musa",
+            "name": "MUSA (Museo Subacuático de Arte)",
+            "category": "Único / Aventura",
+            "description": "Una experiencia única de snorkel y buceo con cientos de esculturas sumergidas a tamaño real en el Mar Caribe.",
+            "maps_url": "https://maps.app.goo.gl/exampleMusa"
+          },
+          {
+            "id": "sight_museo_maya",
+            "name": "Museo Maya de Cancún",
+            "category": "Cultura",
+            "description": "Museo moderno y elegante en la Zona Hotelera que alberga una importante colección de artefactos mayas de toda la Península de Yucatán.",
+            "maps_url": "https://maps.app.goo.gl/exampleMaya"
+          },
+          {
+            "id": "sight_el_rey",
+            "name": "Zona Arqueológica El Rey",
+            "category": "Historia",
+            "description": "Una zona arqueológica accesible y rápida de visitar en plena Zona Hotelera. A menudo pasada por alto — rara vez está llena.",
+            "maps_url": "https://maps.app.goo.gl/exampleElRey"
+          }
+        ],
+        "museums": [
+          {
+            "id": "museum_maya",
+            "name": "Museo Maya de Cancún",
+            "category": "Arqueología",
+            "description": "El museo maya más importante de la región, con más de 400 artefactos y una zona arqueológica adyacente (San Miguelito). Con aire acondicionado.",
+            "maps_url": "https://maps.app.goo.gl/exampleMayaMuseum"
+          }
+        ],
+        "parks": [
+          {
+            "id": "nature_delfines",
+            "name": "Playa Delfines",
+            "category": "Playa",
+            "description": "Amplia playa pública con vistas despejadas al Caribe y el famoso letrero de Cancún. Sin multitudes de resorts — la favorita de los locales.",
+            "maps_url": "https://maps.app.goo.gl/exampleDelfines"
+          },
+          {
+            "id": "nature_isla_mujeres",
+            "name": "Isla Mujeres",
+            "category": "Excursión de un día",
+            "description": "Un rápido viaje en ferry de 20 minutos a una isla sin autos y muy caminable. Agua turquesa, carritos de golf y un ritmo mucho más relajado que Cancún.",
+            "maps_url": "https://maps.app.goo.gl/exampleIsla"
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "eat_mercado28",
+            "name": "Mercado 28",
+            "category": "Comida auténtica",
+            "description": "Lugar en el centro para comida yucateca callejera auténtica y accesible. Prueba la Cochinita Pibil y la Sopa de Lima. Muy concurrido a la hora del almuerzo — llega antes del mediodía.",
+            "maps_url": "https://maps.app.goo.gl/exampleMercado"
+          },
+          {
+            "id": "eat_el_fish_fritanga",
+            "name": "El Fish Fritanga",
+            "category": "Mariscos",
+            "description": "Local de mariscos sin pretensiones cerca del centro. Pescado frito entero, ceviche y cerveza fría a precios muy inferiores a los de la Zona Hotelera.",
+            "maps_url": "https://maps.app.goo.gl/exampleFishFritanga"
+          },
+          {
+            "id": "work_selina",
+            "name": "Selina Cancun Laguna",
+            "category": "Coworking",
+            "description": "Escritorios dedicados, Wi-Fi de alta velocidad y una fuerte comunidad de nómadas digitales en el lado de la laguna de la Zona Hotelera. Pases por día disponibles.",
+            "maps_url": "https://maps.app.goo.gl/exampleSelina"
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,229 @@
+{
+  "city_id": "mex_quintana_roo_tulum",
+  "city_name": "Tulum",
+  "state": "Quintana Roo",
+  "has_detailed_guide": true,
+  "security": {
+    "level": 3,
+    "label": "Riesgo Moderado / Moderate Risk"
+  },
+  "quick_stats": {
+    "best_time": "Nov – Apr",
+    "connectivity": "Fair (Fiber in hotel zone / 4G patchy — bring a Telcel SIM)",
+    "airport_iata": "TQO / CUN"
+  },
+  "quick_warnings": [
+    "⚠️ Cartel-related shootings have killed foreign tourists in Tulum's hotel zone (2021–2024). Stay alert, avoid confrontations, and leave any area immediately if a situation feels wrong.",
+    "Drink spiking at beach clubs and nightlife venues is well-documented — never leave your drink unattended and decline drinks from strangers.",
+    "Never walk the dark, unlit road between Tulum town and the hotel beach zone at any hour — use Uber or hotel transport only."
+  ],
+  "detail_guide": {
+    "getting_around": "Tulum has two distinct areas: the town (pueblo) inland and the hotel beach zone (Zona Hotelera) 3km away on the coast — they are not walkable between each other safely, especially at night. Use Uber (available and reliable) or arranged hotel transport exclusively for that stretch. Within the hotel zone, cycling is the preferred mode — most hotels rent bikes and the flat jungle path is pleasant in the morning. Colectivos run frequently from the town bus station north to Playa del Carmen and south to Bacalar.",
+    "top_sights": [
+      {
+        "id": "sight_zona_arqueologica",
+        "name": "Zona Arqueológica de Tulum",
+        "category": "Archaeology",
+        "description": "A fortified Maya port city perched on a cliff above the Caribbean — one of the most dramatically situated archaeological sites in Mexico. Arrive at opening (8am sharp) to get 30–60 minutes before tour group buses arrive. The site is relatively small (1–2 hours) but the cliff-top views of turquoise water below are stunning. Tickets available online; bring cash for the shuttle from the parking area.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Zona+Arqueol%C3%B3gica+de+Tulum,+Tulum,+Mexico"
+      },
+      {
+        "id": "sight_gran_cenote",
+        "name": "Gran Cenote",
+        "category": "Nature / Swimming",
+        "description": "One of the most beautiful cenotes in the Yucatán — a partially open cavern system with crystal-clear water, stalactites, and schools of turtles. Snorkeling gear available for rent (MXN 50). Go at 8–9am before the crowds; afternoons are significantly busier. 3km west of Tulum town by bike or Uber. No sunscreen allowed in the water — bring biodegradable alternatives.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Gran+Cenote,+Tulum,+Mexico"
+      },
+      {
+        "id": "sight_sian_kaan",
+        "name": "Sian Ka'an Biosphere Reserve",
+        "category": "Nature / Eco-Tourism",
+        "description": "A UNESCO World Heritage reserve covering 5,000 km² of jungle, wetlands, and Caribbean coast south of Tulum. The guided boat tour through the reserve's canals (floating down ancient Maya channels) and snorkeling in the lagoon is one of the most memorable experiences on the Yucatán Peninsula. Book through a certified eco-tourism operator in Tulum — half-day from MXN 800 pp. Essential for nature-focused visitors.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Sian+Ka%27an+Biosphere+Reserve,+Tulum,+Mexico"
+      },
+      {
+        "id": "sight_cenote_dos_ojos",
+        "name": "Cenote Dos Ojos",
+        "category": "Nature / Diving",
+        "description": "Two interconnected cenotes (the 'Two Eyes') forming part of one of the world's longest underwater cave systems. The open-water snorkeling cenote is accessible without certification; certified divers can explore the cavern passages. 25km north of Tulum town. Book in advance — popular with dive groups.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Cenote+Dos+Ojos,+Tulum,+Mexico"
+      },
+      {
+        "id": "sight_playa_paraiso",
+        "name": "Playa Paraíso",
+        "category": "Beach",
+        "description": "The postcard beach of Tulum — white sand, calm turquoise shallows, and the archaeological zone visible on the cliff in the background. Free public access at the southern end; beach clubs line the northern stretch. Best early morning when the ruins are bathed in golden light. Note: sargassum seaweed accumulates seasonally (Apr–Aug) and can significantly affect the beach experience.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Playa+Para%C3%ADso,+Tulum,+Mexico"
+      }
+    ],
+    "museums": [
+      {
+        "id": "museum_casa_tortuga",
+        "name": "Casa Tortuga Cenotes",
+        "category": "Nature / Multi-Cenote",
+        "description": "A private park with four connected cenotes of different character — open, semi-open, cavern, and a jungle freshwater pool. One of the better-managed multi-cenote experiences near Tulum with good facilities and controlled visitor numbers. MXN 400–500 pp. More relaxed than the public cenotes on weekdays.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Casa+Tortuga+Cenotes,+Tulum,+Mexico"
+      }
+    ],
+    "parks": [
+      {
+        "id": "nature_laguna_kaan_luum",
+        "name": "Laguna Kaan Luum",
+        "category": "Nature",
+        "description": "A striking circular lagoon in the jungle south of Tulum with a mysterious deep-blue cenote sinkhole at its centre — one of the most photogenic spots in the region. Swimming is restricted but the viewpoint and surrounding jungle walk are worth the trip. Free entry; 20 min by Uber from the hotel zone.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Laguna+Kaan+Luum,+Tulum,+Mexico"
+      },
+      {
+        "id": "nature_playa_norte_tulum",
+        "name": "Playa Ruinas (below the ruins)",
+        "category": "Beach",
+        "description": "A small pocket beach accessible by a steep path below the archaeological zone — one of the few swimmable beaches directly accessible from the ruins. The current can be strong; check conditions before entering the water. Arrive early (with your ruins ticket) to have it nearly to yourself before the day-trippers arrive.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Playa+Ruinas+%28below+the+ruins%29,+Tulum,+Mexico"
+      }
+    ],
+    "eat_drink_work": [
+      {
+        "id": "eat_taqueria_honorio",
+        "name": "Taquería El Camello Jr.",
+        "category": "Authentic Food",
+        "description": "The most beloved taco spot in Tulum town — a no-frills roadside stand serving outstanding fish and shrimp tacos with house-made salsas. Dirt-cheap and genuinely delicious. A reminder that the best food in Tulum is in the pueblo, not the hotel zone. Cash only, open from 9am until they sell out.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Taquer%C3%ADa+El+Camello+Jr.,+Tulum,+Mexico"
+      },
+      {
+        "id": "eat_hartwood",
+        "name": "Hartwood",
+        "category": "Upscale Dining",
+        "description": "The restaurant that put Tulum on the global food map — an open-fire kitchen in the jungle serving a market-driven menu of Yucatecan and Caribbean ingredients. No reservations; arrive at 6pm when they open and expect to wait. Expensive but genuinely exceptional. Cash and cards accepted.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Hartwood,+Tulum,+Mexico"
+      },
+      {
+        "id": "eat_mateo_burritos",
+        "name": "Mateo's Mexican Grill",
+        "category": "Casual / Budget",
+        "description": "A popular and safe lunch spot in Tulum town for generous burritos, quesadillas, and fresh aguas. Reliable quality, fair prices, and a comfortable sit-down setting for midday meals away from the overpriced hotel zone.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Mateo%27s+Mexican+Grill,+Tulum,+Mexico"
+      },
+      {
+        "id": "work_cowork_tulum",
+        "name": "Remote work in Tulum",
+        "category": "Remote Work",
+        "description": "Dedicated coworking options are limited compared to Playa del Carmen. Selina Tulum is the most reliable option with hot desks, fiber WiFi, and a community of nomads. Many cafés in Tulum town (not the hotel zone) have reliable WiFi — Matcha Mama and Burrito Amor are popular. Power cuts occur occasionally during rainy season. Video calls are better placed from the town than from beach-zone accommodation.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Remote+work+in+Tulum,+Tulum,+Mexico"
+      }
+    ],
+    "available_translations": [
+      "en",
+      "es",
+      "fr"
+    ]
+  },
+  "translations": {
+    "es": {
+      "quick_warnings": [
+        "⚠️ Tiroteos relacionados con el crimen organizado han matado a turistas extranjeros en la zona hotelera de Tulum (2021–2024). Mantente alerta, evita confrontaciones y abandona cualquier área de inmediato si la situación se siente mal.",
+        "La adulteración de bebidas en clubes de playa y lugares de vida nocturna está bien documentada — nunca dejes tu bebida sin atención y rechaza bebidas de desconocidos.",
+        "Nunca camines por el camino oscuro y sin iluminación entre el pueblo de Tulum y la zona hotelera de playa a ninguna hora — usa únicamente Uber o transporte del hotel."
+      ],
+      "detail_guide": {
+        "getting_around": "Tulum tiene dos áreas distintas: el pueblo tierra adentro y la zona hotelera de playa (Zona Hotelera) a 3 km en la costa — no es seguro caminar entre ellas, especialmente de noche. Usa exclusivamente Uber (disponible y confiable) o transporte del hotel para ese tramo. Dentro de la zona hotelera, la bicicleta es el modo preferido — la mayoría de los hoteles rentan bicis y el sendero plano por la selva es agradable por la mañana. Los colectivos salen frecuentemente de la estación de autobuses del pueblo hacia el norte a Playa del Carmen y al sur a Bacalar.",
+        "top_sights": [
+          {
+            "id": "sight_zona_arqueologica",
+            "name": "Zona Arqueológica de Tulum",
+            "category": "Arqueología",
+            "description": "Una ciudad portuaria maya fortificada sobre un acantilado frente al Caribe — uno de los sitios arqueológicos más dramáticamente ubicados de México. Llega a la apertura (8am en punto) para tener 30–60 minutos antes de que lleguen los autobuses de grupos turísticos. El sitio es relativamente pequeño (1–2 horas) pero las vistas del agua turquesa desde el acantilado son impresionantes. Boletos disponibles en línea; lleva efectivo para el shuttle desde el estacionamiento.",
+            "maps_url": "https://maps.app.goo.gl/placeholderTulumRuins"
+          },
+          {
+            "id": "sight_gran_cenote",
+            "name": "Gran Cenote",
+            "category": "Naturaleza / Nado",
+            "description": "Uno de los cenotes más hermosos de Yucatán — un sistema de caverna parcialmente abierto con agua cristalina, estalactitas y grupos de tortugas. Equipo de snorkel disponible para renta (MXN 50). Ve de 8–9am antes de las multitudes; las tardes son significativamente más concurridas. A 3 km al oeste del pueblo de Tulum en bici o Uber. No se permite bloqueador solar en el agua — lleva alternativas biodegradables.",
+            "maps_url": "https://maps.app.goo.gl/placeholderGranCenote"
+          },
+          {
+            "id": "sight_sian_kaan",
+            "name": "Reserva de la Biosfera de Sian Ka'an",
+            "category": "Naturaleza / Ecoturismo",
+            "description": "Una reserva Patrimonio de la Humanidad de la UNESCO que abarca 5,000 km² de selva, humedales y costa caribeña al sur de Tulum. El tour guiado en bote por los canales de la reserva (flotando por antiguos canales mayas) y el snorkel en la laguna es una de las experiencias más memorables de la Península de Yucatán. Reserva con un operador de ecoturismo certificado en Tulum — medio día desde MXN 800 pp. Esencial para visitantes enfocados en la naturaleza.",
+            "maps_url": "https://maps.app.goo.gl/placeholderSianKaan"
+          },
+          {
+            "id": "sight_cenote_dos_ojos",
+            "name": "Cenote Dos Ojos",
+            "category": "Naturaleza / Buceo",
+            "description": "Dos cenotes interconectados (los 'Dos Ojos') que forman parte de uno de los sistemas de cuevas subacuáticas más largos del mundo. El cenote de snorkel en agua abierta es accesible sin certificación; los buzos certificados pueden explorar los pasajes de la caverna. A 25 km al norte del pueblo de Tulum. Reserva con anticipación — popular entre grupos de buceo.",
+            "maps_url": "https://maps.app.goo.gl/placeholderDosOjos"
+          },
+          {
+            "id": "sight_playa_paraiso",
+            "name": "Playa Paraíso",
+            "category": "Playa",
+            "description": "La playa de postal de Tulum — arena blanca, aguas turquesas poco profundas y tranquilas, y la zona arqueológica visible en el acantilado de fondo. Acceso público gratuito en el extremo sur; los clubes de playa bordean el tramo norte. Mejor temprano por la mañana cuando las ruinas se bañan de luz dorada. Nota: el sargazo se acumula estacionalmente (abr–ago) y puede afectar significativamente la experiencia playera.",
+            "maps_url": "https://maps.app.goo.gl/placeholderPlayaParaiso"
+          }
+        ],
+        "museums": [
+          {
+            "id": "museum_casa_tortuga",
+            "name": "Casa Tortuga Cenotes",
+            "category": "Naturaleza / Multi-cenote",
+            "description": "Un parque privado con cuatro cenotes conectados de diferente carácter — abierto, semi-abierto, caverna y una piscina de agua dulce en la selva. Una de las mejores experiencias multi-cenote cerca de Tulum con buenas instalaciones y número controlado de visitantes. MXN 400–500 pp. Más relajado que los cenotes públicos entre semana.",
+            "maps_url": "https://maps.app.goo.gl/placeholderCasaTortuga"
+          }
+        ],
+        "parks": [
+          {
+            "id": "nature_laguna_kaan_luum",
+            "name": "Laguna Kaan Luum",
+            "category": "Naturaleza",
+            "description": "Una impresionante laguna circular en la selva al sur de Tulum con un misterioso sumidero de cenote azul profundo en su centro — uno de los lugares más fotogénicos de la región. El nado está restringido pero el mirador y la caminata por la selva circundante valen la pena. Entrada gratuita; 20 min en Uber desde la zona hotelera.",
+            "maps_url": "https://maps.app.goo.gl/placeholderKaanLuum"
+          },
+          {
+            "id": "nature_playa_norte_tulum",
+            "name": "Playa Ruinas (bajo las ruinas)",
+            "category": "Playa",
+            "description": "Una pequeña playa accesible por un sendero empinado debajo de la zona arqueológica — una de las pocas playas donde se puede nadar con acceso directo desde las ruinas. La corriente puede ser fuerte; verifica las condiciones antes de entrar al agua. Llega temprano (con tu boleto de las ruinas) para tenerla casi para ti solo antes de que lleguen los excursionistas.",
+            "maps_url": "https://maps.app.goo.gl/placeholderPlayaRuinas"
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "eat_taqueria_honorio",
+            "name": "Taquería El Camello Jr.",
+            "category": "Comida auténtica",
+            "description": "El puesto de tacos más querido del pueblo de Tulum — un puesto al lado de la carretera sin pretensiones que sirve extraordinarios tacos de pescado y camarón con salsas caseras. Baratísimo y genuinamente delicioso. Un recordatorio de que la mejor comida en Tulum está en el pueblo, no en la zona hotelera. Solo efectivo, abierto desde las 9am hasta agotar existencias.",
+            "maps_url": "https://maps.app.goo.gl/placeholderCamellos"
+          },
+          {
+            "id": "eat_hartwood",
+            "name": "Hartwood",
+            "category": "Alta cocina",
+            "description": "El restaurante que puso a Tulum en el mapa gastronómico mundial — una cocina de fuego abierto en la selva que sirve un menú basado en el mercado con ingredientes yucatecos y caribeños. Sin reservaciones; llega a las 6pm cuando abren y espera hacer fila. Caro pero genuinamente excepcional. Se aceptan efectivo y tarjetas.",
+            "maps_url": "https://maps.app.goo.gl/placeholderHartwood"
+          },
+          {
+            "id": "eat_mateo_burritos",
+            "name": "Mateo's Mexican Grill",
+            "category": "Casual / Económico",
+            "description": "Un lugar popular y seguro para almorzar en el pueblo de Tulum con generosos burritos, quesadillas y aguas frescas. Calidad confiable, precios justos y un cómodo lugar para sentarse a comer al mediodía lejos de la sobrevaluada zona hotelera.",
+            "maps_url": "https://maps.app.goo.gl/placeholderMateos"
+          },
+          {
+            "id": "work_cowork_tulum",
+            "name": "Trabajo remoto en Tulum",
+            "category": "Trabajo remoto",
+            "description": "Las opciones de coworking dedicadas son limitadas en comparación con Playa del Carmen. Selina Tulum es la opción más confiable con escritorios compartidos, WiFi de fibra y una comunidad de nómadas. Muchos cafés en el pueblo de Tulum (no en la zona hotelera) tienen WiFi confiable — Matcha Mama y Burrito Amor son populares. Los cortes de luz ocurren ocasionalmente durante la temporada de lluvias. Las videollamadas funcionan mejor desde el pueblo que desde el alojamiento en la zona de playa.",
+            "maps_url": "https://maps.app.goo.gl/placeholderSelinaTulum"
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "city_id": "mex_chiapas_palenque_chiapas",
+  "city_name": "Palenque",
+  "state": "Chiapas",
+  "has_detailed_guide": true,
+  "security": {
+    "level": 3,
+    "label": "Precaución / Caution"
+  },
+  "quick_stats": {
+    "best_time": "Nov – Apr (dry season, less humidity)",
+    "connectivity": "Limited (Hotel Wi-Fi / 4G spotty)",
+    "airport_iata": "VHC"
+  },
+  "quick_warnings": [
+    "The jungle climate is hot and humid year-round; bring insect repellent, sunscreen, and ample water.",
+    "Travel between Palenque and San Cristóbal only during daylight on the main highway; road blockades can occur.",
+    "Villahermosa airport (VHC) is ~2 hours away; alternatively fly into Tuxtla Gutiérrez (TGZ) with a longer drive."
+  ],
+  "detail_guide": {
+    "getting_around": "Palenque town is compact and walkable. Combis run between town and the archaeological zone (~8 km). Taxis are plentiful and inexpensive. ADO buses connect to Villahermosa, San Cristóbal, Campeche, and Mérida. A rental car is helpful for reaching Agua Azul and Misol-Ha waterfalls.",
+    "top_sights": [
+      {
+        "id": "pal_ruinas",
+        "name": "Zona Arqueológica de Palenque",
+        "category": "archaeology / UNESCO",
+        "description": "One of Mexico's finest Maya sites, with the Temple of Inscriptions, the Palace tower, and jungle-framed pyramids — a UNESCO World Heritage site.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Zona+Arqueol%C3%B3gica+de+Palenque,+Palenque,+Mexico"
+      },
+      {
+        "id": "pal_agua_azul",
+        "name": "Cascadas de Agua Azul",
+        "category": "nature",
+        "description": "A series of stunning turquoise waterfalls and pools cascading through the jungle, about 1.5 hours from town.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Cascadas+de+Agua+Azul,+Palenque,+Mexico"
+      },
+      {
+        "id": "pal_misol_ha",
+        "name": "Cascada de Misol-Há",
+        "category": "nature",
+        "description": "A 35-meter jungle waterfall with a swimming hole and a path behind the curtain of water; en route to Agua Azul.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Cascada+de+Misol-H%C3%A1,+Palenque,+Mexico"
+      }
+    ],
+    "museums": [
+      {
+        "id": "pal_museo_sitio",
+        "name": "Museo de Sitio de Palenque",
+        "category": "museum",
+        "description": "On-site museum at the ruins displaying jade funerary masks, carved panels, and artifacts from the tombs of Palenque's rulers.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Museo+de+Sitio+de+Palenque,+Palenque,+Mexico"
+      }
+    ],
+    "parks": [
+      {
+        "id": "pal_aluxes",
+        "name": "Ecoparque Aluxes",
+        "category": "nature / wildlife",
+        "description": "A rescue and conservation center near the ruins housing jaguars, monkeys, macaws, and crocodiles native to the Chiapas jungle.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Ecoparque+Aluxes,+Palenque,+Mexico"
+      }
+    ],
+    "eat_drink_work": [
+      {
+        "id": "pal_monte_verde",
+        "name": "Monte Verde",
+        "category": "restaurant",
+        "description": "Open-air restaurant on the road to the ruins serving regional Chiapas dishes, fresh juices, and Chiapas coffee.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Monte+Verde,+Palenque,+Mexico"
+      },
+      {
+        "id": "pal_el_huachinango",
+        "name": "Restaurant Maya Cañada",
+        "category": "restaurant",
+        "description": "Popular local spot for grilled river fish, tamales chiapanecos, and cold beer after a day at the ruins.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Restaurant+Maya+Ca%C3%B1ada,+Palenque,+Mexico"
+      },
+      {
+        "id": "pal_cafe_jade",
+        "name": "Café de Yara",
+        "category": "cafe",
+        "description": "Small cafe in town serving shade-grown Chiapas coffee and fresh pastries; a reliable morning stop.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Caf%C3%A9+de+Yara,+Palenque,+Mexico"
+      }
+    ],
+    "available_translations": [
+      "en",
+      "es",
+      "fr"
+    ]
+  },
+  "translations": {
+    "es": {
+      "quick_warnings": [
+        "El clima selvático es caluroso y húmedo todo el año; lleva repelente de insectos, bloqueador solar y abundante agua.",
+        "Viaja entre Palenque y San Cristóbal solo durante el día por la carretera principal; pueden ocurrir bloqueos de carreteras.",
+        "El aeropuerto de Villahermosa (VHC) está a ~2 horas; alternativamente puedes volar a Tuxtla Gutiérrez (TGZ) con un trayecto más largo en auto."
+      ],
+      "detail_guide": {
+        "getting_around": "El pueblo de Palenque es compacto y se recorre a pie. Las combis van entre el pueblo y la zona arqueológica (~8 km). Los taxis son abundantes y económicos. Los autobuses ADO conectan con Villahermosa, San Cristóbal, Campeche y Mérida. Un auto rentado es útil para llegar a las cascadas de Agua Azul y Misol-Há.",
+        "top_sights": [
+          {
+            "id": "pal_ruinas",
+            "name": "Zona Arqueológica de Palenque",
+            "category": "arqueología / UNESCO",
+            "description": "Uno de los mejores sitios mayas de México, con el Templo de las Inscripciones, la torre del Palacio y pirámides enmarcadas por la selva — Patrimonio de la Humanidad por la UNESCO.",
+            "maps_url": ""
+          },
+          {
+            "id": "pal_agua_azul",
+            "name": "Cascadas de Agua Azul",
+            "category": "naturaleza",
+            "description": "Una serie de impresionantes cascadas y pozas turquesas que caen entre la selva, a aproximadamente 1.5 horas del pueblo.",
+            "maps_url": ""
+          },
+          {
+            "id": "pal_misol_ha",
+            "name": "Cascada de Misol-Há",
+            "category": "naturaleza",
+            "description": "Una cascada selvática de 35 metros con una poza para nadar y un sendero detrás de la cortina de agua; en camino a Agua Azul.",
+            "maps_url": ""
+          }
+        ],
+        "museums": [
+          {
+            "id": "pal_museo_sitio",
+            "name": "Museo de Sitio de Palenque",
+            "category": "museo",
+            "description": "Museo en la zona arqueológica que exhibe máscaras funerarias de jade, paneles tallados y artefactos de las tumbas de los gobernantes de Palenque.",
+            "maps_url": ""
+          }
+        ],
+        "parks": [
+          {
+            "id": "pal_aluxes",
+            "name": "Ecoparque Aluxes",
+            "category": "naturaleza / vida silvestre",
+            "description": "Un centro de rescate y conservación cerca de las ruinas que alberga jaguares, monos, guacamayas y cocodrilos nativos de la selva chiapaneca.",
+            "maps_url": ""
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "pal_monte_verde",
+            "name": "Monte Verde",
+            "category": "restaurante",
+            "description": "Restaurante al aire libre en el camino a las ruinas que sirve platillos regionales chiapanecos, jugos frescos y café de Chiapas.",
+            "maps_url": ""
+          },
+          {
+            "id": "pal_el_huachinango",
+            "name": "Restaurant Maya Cañada",
+            "category": "restaurante",
+            "description": "Popular lugar local para pescado de río a la parrilla, tamales chiapanecos y cerveza fría después de un día en las ruinas.",
+            "maps_url": ""
+          },
+          {
+            "id": "pal_cafe_jade",
+            "name": "Café de Yara",
+            "category": "cafetería",
+            "description": "Pequeña cafetería en el pueblo que sirve café de sombra de Chiapas y repostería fresca; una parada matutina confiable.",
+            "maps_url": ""
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "city_id": "mex_queretaro_bernal_queretaro",
+  "city_name": "Bernal",
+  "state": "Querétaro",
+  "has_detailed_guide": true,
+  "security": {
+    "level": 2,
+    "label": "Seguro / Safe"
+  },
+  "quick_stats": {
+    "best_time": "Mar (spring equinox festival); Oct – Apr (dry, pleasant)",
+    "connectivity": "Limited (Hotel Wi-Fi / 4G weak)",
+    "airport_iata": "QRO"
+  },
+  "quick_warnings": [
+    "Bernal is a tiny Pueblo Mágico — it gets very crowded on weekends and holidays; visit midweek for a calmer experience.",
+    "The Peña hike is exposed and steep toward the top; bring water, sunscreen, and start early in the morning.",
+    "Few ATMs in town and some shops are cash-only — bring pesos from Querétaro."
+  ],
+  "detail_guide": {
+    "getting_around": "Bernal is a small village easily explored on foot in an hour. From Querétaro city, it is a 40-minute drive or colectivo ride. There is no public transit within Bernal itself. Parking can be scarce on weekends; arrive early.",
+    "top_sights": [
+      {
+        "id": "ber_pena",
+        "name": "Peña de Bernal",
+        "category": "nature / landmark",
+        "description": "A 350-meter monolith — the world's third tallest — with a well-marked hiking trail to a viewpoint about two-thirds up.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Pe%C3%B1a+de+Bernal,+Bernal,+Mexico"
+      },
+      {
+        "id": "ber_centro",
+        "name": "Centro Histórico de Bernal",
+        "category": "culture / Pueblo Mágico",
+        "description": "Charming cobblestone streets with colorful buildings, artisan shops selling wool textiles, and the Parroquia de San Sebastián.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Centro+Hist%C3%B3rico+de+Bernal,+Bernal,+Mexico"
+      }
+    ],
+    "museums": [],
+    "parks": [
+      {
+        "id": "ber_trail",
+        "name": "Sendero de la Peña",
+        "category": "hiking trail",
+        "description": "The main trail ascending the Peña, passing through scrubland with cactus and wildflowers and ending at a dramatic viewpoint.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Sendero+de+la+Pe%C3%B1a,+Bernal,+Mexico"
+      }
+    ],
+    "eat_drink_work": [
+      {
+        "id": "ber_gorditas",
+        "name": "Gorditas de Bernal",
+        "category": "street food",
+        "description": "Bernal is famous for its gorditas de migaja (pork-crackle stuffed corn cakes) sold from stalls around the main plaza.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Gorditas+de+Bernal,+Bernal,+Mexico"
+      },
+      {
+        "id": "ber_vinos",
+        "name": "Finca Sala Vivé by Freixenet",
+        "category": "winery",
+        "description": "Nearby sparkling wine estate offering cave tours, tastings, and vineyard views in the Querétaro wine country.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Finca+Sala+Viv%C3%A9+by+Freixenet,+Bernal,+Mexico"
+      },
+      {
+        "id": "ber_cafe_pena",
+        "name": "Café de la Peña",
+        "category": "cafe",
+        "description": "Cozy plaza-facing cafe serving regional coffee, hot chocolate, and tamales with views of the monolith.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Caf%C3%A9+de+la+Pe%C3%B1a,+Bernal,+Mexico"
+      }
+    ],
+    "available_translations": [
+      "en",
+      "es",
+      "fr"
+    ]
+  },
+  "translations": {
+    "es": {
+      "quick_warnings": [
+        "Bernal es un pequeño Pueblo Mágico — se llena mucho los fines de semana y días festivos; visítalo entre semana para una experiencia más tranquila.",
+        "La caminata a la Peña es expuesta y empinada hacia la cima; lleva agua, bloqueador solar y comienza temprano por la mañana.",
+        "Hay pocos cajeros automáticos en el pueblo y algunas tiendas solo aceptan efectivo — lleva pesos desde Querétaro."
+      ],
+      "detail_guide": {
+        "getting_around": "Bernal es un pueblo pequeño que se recorre fácilmente a pie en una hora. Desde la ciudad de Querétaro, son 40 minutos en auto o en colectivo. No hay transporte público dentro de Bernal. El estacionamiento puede escasear los fines de semana; llega temprano.",
+        "top_sights": [
+          {
+            "id": "ber_pena",
+            "name": "Peña de Bernal",
+            "category": "naturaleza / monumento",
+            "description": "Un monolito de 350 metros — el tercero más alto del mundo — con un sendero bien señalizado hasta un mirador a unos dos tercios de la cima.",
+            "maps_url": ""
+          },
+          {
+            "id": "ber_centro",
+            "name": "Centro Histórico de Bernal",
+            "category": "cultura / Pueblo Mágico",
+            "description": "Encantadoras calles empedradas con edificios coloridos, tiendas artesanales de textiles de lana y la Parroquia de San Sebastián.",
+            "maps_url": ""
+          }
+        ],
+        "museums": [],
+        "parks": [
+          {
+            "id": "ber_trail",
+            "name": "Sendero de la Peña",
+            "category": "sendero",
+            "description": "El sendero principal que asciende la Peña, pasando por matorral con cactus y flores silvestres y terminando en un mirador espectacular.",
+            "maps_url": ""
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "ber_gorditas",
+            "name": "Gorditas de Bernal",
+            "category": "comida callejera",
+            "description": "Bernal es famoso por sus gorditas de migaja (gorditas de maíz rellenas de chicharrón) que se venden en puestos alrededor de la plaza principal.",
+            "maps_url": ""
+          },
+          {
+            "id": "ber_vinos",
+            "name": "Finca Sala Vivé by Freixenet",
+            "category": "viñedo",
+            "description": "Hacienda vinícola cercana que ofrece recorridos por las cavas, degustaciones y vistas de los viñedos en la zona vinícola de Querétaro.",
+            "maps_url": ""
+          },
+          {
+            "id": "ber_cafe_pena",
+            "name": "Café de la Peña",
+            "category": "cafetería",
+            "description": "Acogedora cafetería frente a la plaza que sirve café regional, chocolate caliente y tamales con vista al monolito.",
+            "maps_url": ""
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "city_id": "mex_quintana_roo_bacalar",
+  "city_name": "Bacalar",
+  "state": "Quintana Roo",
+  "has_detailed_guide": true,
+  "security": {
+    "level": 2,
+    "label": "Seguro / Safe"
+  },
+  "quick_stats": {
+    "best_time": "Nov – Apr (dry season, clearest water)",
+    "connectivity": "Moderate (Hotel Wi-Fi / 4G variable)",
+    "airport_iata": "CTM"
+  },
+  "quick_warnings": [
+    "Wear reef-safe sunscreen only — the lagoon's stromatolites are ancient and extremely fragile.",
+    "Nearest major airport (Chetumal CTM) is ~40 min away; Cancún is a 4.5-hour drive.",
+    "Mosquitoes are heavy near the lagoon at dusk — bring repellent."
+  ],
+  "detail_guide": {
+    "getting_around": "Bacalar is a small town easily navigated on foot or by bicycle. Tuk-tuks and taxis cover the lakefront road. ADO buses connect to Chetumal and Cancún. Renting a kayak or hiring a boat is the best way to explore the lagoon.",
+    "top_sights": [
+      {
+        "id": "bac_lagoon",
+        "name": "Laguna de Bacalar (Lake of Seven Colors)",
+        "category": "nature",
+        "description": "A stunning freshwater lagoon with layers of turquoise, blue, and indigo water stretching over 50 km.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Laguna+de+Bacalar+%28Lake+of+Seven+Colors%29,+Bacalar,+Mexico"
+      },
+      {
+        "id": "bac_fort",
+        "name": "Fuerte de San Felipe",
+        "category": "landmark",
+        "description": "An 18th-century Spanish fort overlooking the lagoon, now a small museum on piracy and colonial history.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Fuerte+de+San+Felipe,+Bacalar,+Mexico"
+      },
+      {
+        "id": "bac_cenote_azul",
+        "name": "Cenote Azul",
+        "category": "nature",
+        "description": "A wide, deep cenote just south of town perfect for swimming and cliff jumping into crystal-clear water.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Cenote+Azul,+Bacalar,+Mexico"
+      }
+    ],
+    "museums": [
+      {
+        "id": "bac_museo_fuerte",
+        "name": "Museo del Fuerte de San Felipe",
+        "category": "museum",
+        "description": "Inside the fort, exhibits cover the region's pirate history and Maya heritage.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Museo+del+Fuerte+de+San+Felipe,+Bacalar,+Mexico"
+      }
+    ],
+    "parks": [
+      {
+        "id": "bac_canal_piratas",
+        "name": "Canal de los Piratas",
+        "category": "nature",
+        "description": "A narrow channel with mangroves and vivid water colors; best explored by kayak or boat tour.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Canal+de+los+Piratas,+Bacalar,+Mexico"
+      }
+    ],
+    "eat_drink_work": [
+      {
+        "id": "bac_la_playita",
+        "name": "La Playita",
+        "category": "restaurant",
+        "description": "Lakefront restaurant with docks and hammocks, serving fresh ceviche and regional dishes over the water.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=La+Playita,+Bacalar,+Mexico"
+      },
+      {
+        "id": "bac_mango_cafe",
+        "name": "Mango y Chile",
+        "category": "cafe",
+        "description": "Colorful cafe with healthy breakfasts, fresh juices, and a relaxed vibe popular with travelers.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Mango+y+Chile,+Bacalar,+Mexico"
+      }
+    ],
+    "available_translations": [
+      "en",
+      "es",
+      "fr"
+    ]
+  },
+  "translations": {
+    "es": {
+      "quick_warnings": [
+        "Usa solo protector solar biodegradable — los estromatolitos de la laguna son antiguos y extremadamente frágiles.",
+        "El aeropuerto más cercano (Chetumal CTM) está a ~40 min; Cancún queda a 4.5 horas en auto.",
+        "Los mosquitos son abundantes cerca de la laguna al atardecer — lleva repelente."
+      ],
+      "detail_guide": {
+        "getting_around": "Bacalar es un pueblo pequeño fácil de recorrer a pie o en bicicleta. Mototaxis y taxis cubren la carretera frente a la laguna. Los autobuses ADO conectan con Chetumal y Cancún. Rentar un kayak o contratar una lancha es la mejor forma de explorar la laguna.",
+        "top_sights": [
+          {
+            "id": "bac_lagoon",
+            "name": "Laguna de Bacalar (Laguna de los Siete Colores)",
+            "category": "naturaleza",
+            "description": "Una impresionante laguna de agua dulce con capas de agua turquesa, azul e índigo que se extiende por más de 50 km.",
+            "maps_url": ""
+          },
+          {
+            "id": "bac_fort",
+            "name": "Fuerte de San Felipe",
+            "category": "punto de interés",
+            "description": "Un fuerte español del siglo XVIII con vista a la laguna, ahora un pequeño museo sobre piratería e historia colonial.",
+            "maps_url": ""
+          },
+          {
+            "id": "bac_cenote_azul",
+            "name": "Cenote Azul",
+            "category": "naturaleza",
+            "description": "Un cenote amplio y profundo al sur del pueblo, perfecto para nadar y saltar desde las rocas al agua cristalina.",
+            "maps_url": ""
+          }
+        ],
+        "museums": [
+          {
+            "id": "bac_museo_fuerte",
+            "name": "Museo del Fuerte de San Felipe",
+            "category": "museo",
+            "description": "Dentro del fuerte, las exhibiciones cubren la historia pirata de la región y el patrimonio maya.",
+            "maps_url": ""
+          }
+        ],
+        "parks": [
+          {
+            "id": "bac_canal_piratas",
+            "name": "Canal de los Piratas",
+            "category": "naturaleza",
+            "description": "Un canal estrecho con manglares y colores de agua vívidos; se explora mejor en kayak o tour en lancha.",
+            "maps_url": ""
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "bac_la_playita",
+            "name": "La Playita",
+            "category": "restaurante",
+            "description": "Restaurante frente a la laguna con muelles y hamacas, que sirve ceviche fresco y platillos regionales sobre el agua.",
+            "maps_url": ""
+          },
+          {
+            "id": "bac_mango_cafe",
+            "name": "Mango y Chile",
+            "category": "cafetería",
+            "description": "Cafetería colorida con desayunos saludables, jugos frescos y un ambiente relajado popular entre viajeros.",
+            "maps_url": ""
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr"
+        ]
+      }
+    }
+  }
+}

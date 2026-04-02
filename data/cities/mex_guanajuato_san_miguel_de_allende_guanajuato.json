@@ -1,0 +1,229 @@
+{
+  "city_id": "mex_guanajuato_san_miguel_de_allende_guanajuato",
+  "city_name": "San Miguel de Allende",
+  "state": "Guanajuato",
+  "has_detailed_guide": true,
+  "security": {
+    "level": 3,
+    "label": "Riesgo Moderado / Moderate Risk"
+  },
+  "quick_stats": {
+    "best_time": "Oct – Apr",
+    "connectivity": "Good (Fiber in Centro / 4G — Established Expat Scene)",
+    "airport_iata": "BJX"
+  },
+  "quick_warnings": [
+    "Cobblestone streets are beautiful but treacherous when wet — wear flat, rubber-soled shoes. Ankle injuries from slipping are the most common tourist incident.",
+    "Highway access roads have reported insecurity — use the ADO bus or pre-arranged airport transfers rather than driving in at night.",
+    "Prices are heavily dollar-denominated in tourist areas — significantly higher than anywhere else in inland Mexico. Budget accordingly."
+  ],
+  "detail_guide": {
+    "getting_around": "San Miguel's historic Centro is compact and walkable — most sights, restaurants, and galleries are within 15–20 minutes on foot from the Jardín Principal (main square). The terrain is hilly and the cobblestones uneven, so comfortable walking shoes are non-negotiable. Licensed taxis are widely available and cheap for longer distances. The nearest major airport is Guanajuato (BJX), 1.5 hours away — book a shuttle in advance. León (BJX) is the most commonly used airport; Mexico City (MEX) connections are also popular via ADO bus (4 hours).",
+    "top_sights": [
+      {
+        "id": "sight_parroquia",
+        "name": "Parroquia de San Miguel Arcángel",
+        "category": "Landmark / Architecture",
+        "description": "The neo-Gothic pink stone parish church that has become Mexico's most-photographed building — its spiky silhouette against the blue sky is on every travel magazine cover. The current façade was designed in the 1880s by a self-taught indigenous stonemason who based it on European postcard images. The interior is more modest than the exterior promises. The Jardín Principal (main square) in front is the true heart of the city.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Parroquia+de+San+Miguel+Arc%C3%A1ngel,+San+Miguel+de+Allende,+Mexico"
+      },
+      {
+        "id": "sight_fabrica_aurora",
+        "name": "Fábrica La Aurora",
+        "category": "Art",
+        "description": "A converted 19th-century textile factory now housing 30+ art galleries, antique dealers, design studios, and artisan workshops. One of the best contemporary art spaces in central Mexico — free to enter and wander. The Saturday farmer's market in the courtyard is a highlight. 10 minutes on foot north of Centro.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=F%C3%A1brica+La+Aurora,+San+Miguel+de+Allende,+Mexico"
+      },
+      {
+        "id": "sight_mirador",
+        "name": "El Mirador Viewpoint",
+        "category": "Viewpoint",
+        "description": "The classic postcard viewpoint of San Miguel — a terrace on the eastern edge of Centro with a panoramic view over the rooftops, the Parroquia spires, and the surrounding semi-arid valley. Best at sunrise (6:30–7:30am) and golden hour (30 min before sunset). A short steep walk uphill from the Jardín; take a taxi back down.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=El+Mirador+Viewpoint,+San+Miguel+de+Allende,+Mexico"
+      },
+      {
+        "id": "sight_hot_springs",
+        "name": "La Gruta & Escondido Place Hot Springs",
+        "category": "Wellness / Nature",
+        "description": "Natural thermal springs 8km northeast of the city — La Gruta features a cave pool accessed through a narrow tunnel of warm mineral water, one of the most atmospheric bathing experiences in Mexico. Escondido Place nearby is more developed with multiple pools, a spa, and a restaurant. Both accessible by taxi (MXN 100–150). Weekdays are far less crowded.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=La+Gruta+%26+Escondido+Place+Hot+Springs,+San+Miguel+de+Allende,+Mexico"
+      },
+      {
+        "id": "sight_jardin_principal",
+        "name": "Jardín Principal & Centro Histórico",
+        "category": "Landmark",
+        "description": "The tree-lined central plaza and surrounding streets form one of the best-preserved colonial town centres in the Americas — a UNESCO World Heritage Site. The blocks around the Jardín are lined with 18th-century mansions, now housing boutique hotels, restaurants, and galleries. Sunday mornings bring local vendors, brass bands, and a uniquely festive atmosphere.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Jard%C3%ADn+Principal+%26+Centro+Hist%C3%B3rico,+San+Miguel+de+Allende,+Mexico"
+      }
+    ],
+    "museums": [
+      {
+        "id": "museum_bellas_artes",
+        "name": "Centro Cultural El Nigromante (Bellas Artes)",
+        "category": "Art / Culture",
+        "description": "A former convent turned arts centre with murals by David Alfaro Siqueiros — including an unfinished and partly controversial work he painted during a residency in 1948. Houses art studios, exhibition spaces, and a beautiful cloistered garden. Free entry; one of the most atmospheric spaces in the city.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Centro+Cultural+El+Nigromante+%28Bellas+Artes%29,+San+Miguel+de+Allende,+Mexico"
+      },
+      {
+        "id": "museum_casa_allende",
+        "name": "Museo Casa de Allende",
+        "category": "History",
+        "description": "The birthplace of Ignacio Allende — one of the key leaders of Mexico's War of Independence (executed 1811). The colonial mansion museum covers his life, the independence movement, and the history of San Miguel with good bilingual exhibits. Small entrance fee; the building itself is as interesting as the collection.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Museo+Casa+de+Allende,+San+Miguel+de+Allende,+Mexico"
+      }
+    ],
+    "parks": [
+      {
+        "id": "nature_parque_juarez",
+        "name": "Parque Juárez (El Chorro)",
+        "category": "Urban Park",
+        "description": "A terraced garden park below the Mirador, built around the historic spring (El Chorro) that first sustained the city. The laundry basins at the base are still used by local women — a living piece of the city's history. A quiet, shaded escape from the crowded Centro streets. Bring water and enjoy the views from the upper terraces.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Parque+Ju%C3%A1rez+%28El+Chorro%29,+San+Miguel+de+Allende,+Mexico"
+      }
+    ],
+    "eat_drink_work": [
+      {
+        "id": "eat_mercado_ignacio_ramirez",
+        "name": "Mercado Ignacio Ramírez",
+        "category": "Authentic Food / Budget",
+        "description": "The best antidote to San Miguel's gentrified prices — a busy working market two blocks from the Jardín with breakfast comida corrida stalls serving enchiladas, quesadillas, and fresh juices for MXN 60–100. The produce section is outstanding for picnic supplies. The contrast with the upscale restaurants 200 metres away is stark.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Mercado+Ignacio+Ram%C3%ADrez,+San+Miguel+de+Allende,+Mexico"
+      },
+      {
+        "id": "eat_the_restaurant",
+        "name": "The Restaurant",
+        "category": "Fine Dining",
+        "description": "Donnie Masterton's celebrated flagship — an intimate fine-dining experience in a beautiful colonial space near the Jardín. The tasting menu changes with the seasons and showcases local Bajío ingredients with French-influenced technique. One of the best dining experiences in the Mexican highlands. Reservations essential, especially November–March.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=The+Restaurant,+San+Miguel+de+Allende,+Mexico"
+      },
+      {
+        "id": "eat_lavanda_cafe",
+        "name": "Lavanda Café",
+        "category": "Café / Breakfast",
+        "description": "The most popular café in the expat community — excellent espresso, European-style pastries, and a bright terrace ideal for a working morning. Reliable WiFi and power outlets make it one of the better spots for a few hours of focused work. Fills up by 9am on weekends.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Lavanda+Caf%C3%A9,+San+Miguel+de+Allende,+Mexico"
+      },
+      {
+        "id": "work_cowork_sma",
+        "name": "The Creative Hub San Miguel",
+        "category": "Coworking",
+        "description": "San Miguel's most established coworking space — ergonomic setup, fast fiber, private meeting rooms, and a community skewed toward artists, freelancers, and location-independent entrepreneurs. The expat base here is substantial and English is widely spoken. Day and monthly passes available.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=The+Creative+Hub+San+Miguel,+San+Miguel+de+Allende,+Mexico"
+      }
+    ],
+    "available_translations": [
+      "en",
+      "es",
+      "fr"
+    ]
+  },
+  "translations": {
+    "es": {
+      "quick_warnings": [
+        "Las calles empedradas son hermosas pero traicioneras cuando están mojadas — usa zapatos planos con suela de goma. Las lesiones de tobillo por resbalones son el incidente turístico más común.",
+        "Las carreteras de acceso han reportado inseguridad — usa el autobús ADO o traslados aeroportuarios prearreglados en lugar de manejar de noche.",
+        "Los precios están fuertemente dolarizados en las zonas turísticas — significativamente más altos que en cualquier otro lugar del interior de México. Presupuesta en consecuencia."
+      ],
+      "detail_guide": {
+        "getting_around": "El Centro histórico de San Miguel es compacto y caminable — la mayoría de los sitios de interés, restaurantes y galerías están a 15–20 minutos a pie del Jardín Principal. El terreno es montañoso y los empedrados irregulares, así que zapatos cómodos para caminar son indispensables. Los taxis con licencia están ampliamente disponibles y son baratos para distancias mayores. El aeropuerto más cercano es Guanajuato (BJX), a 1.5 horas — reserva un shuttle con anticipación. León (BJX) es el aeropuerto más utilizado; las conexiones desde Ciudad de México (MEX) también son populares vía autobús ADO (4 horas).",
+        "top_sights": [
+          {
+            "id": "sight_parroquia",
+            "name": "Parroquia de San Miguel Arcángel",
+            "category": "Punto de interés / Arquitectura",
+            "description": "La iglesia parroquial neogótica de piedra rosa que se ha convertido en el edificio más fotografiado de México — su puntiaguda silueta contra el cielo azul aparece en cada portada de revista de viajes. La fachada actual fue diseñada en la década de 1880 por un cantero indígena autodidacta que se basó en imágenes de postales europeas. El interior es más modesto de lo que promete el exterior. El Jardín Principal frente a ella es el verdadero corazón de la ciudad.",
+            "maps_url": "https://maps.app.goo.gl/placeholderParroquia"
+          },
+          {
+            "id": "sight_fabrica_aurora",
+            "name": "Fábrica La Aurora",
+            "category": "Arte",
+            "description": "Una fábrica textil del siglo XIX reconvertida que ahora alberga más de 30 galerías de arte, anticuarios, estudios de diseño y talleres artesanales. Uno de los mejores espacios de arte contemporáneo del centro de México — entrada gratuita para recorrer. El mercado de productores del sábado en el patio es un punto alto. A 10 minutos a pie al norte del Centro.",
+            "maps_url": "https://maps.app.goo.gl/placeholderFabricaAurora"
+          },
+          {
+            "id": "sight_mirador",
+            "name": "El Mirador",
+            "category": "Mirador",
+            "description": "El clásico mirador de postal de San Miguel — una terraza en el borde este del Centro con vista panorámica sobre los techos, las torres de la Parroquia y el valle semiárido circundante. Mejor al amanecer (6:30–7:30am) y en la hora dorada (30 min antes del atardecer). Una corta pero empinada caminata cuesta arriba desde el Jardín; toma taxi de regreso.",
+            "maps_url": "https://maps.app.goo.gl/placeholderMiradorSMA"
+          },
+          {
+            "id": "sight_hot_springs",
+            "name": "La Gruta y Escondido Place — Aguas Termales",
+            "category": "Bienestar / Naturaleza",
+            "description": "Aguas termales naturales a 8 km al noreste de la ciudad — La Gruta cuenta con una alberca en cueva accesible a través de un estrecho túnel de agua mineral tibia, una de las experiencias de baño más atmosféricas de México. Escondido Place cerca es más desarrollado con múltiples albercas, spa y restaurante. Ambos accesibles en taxi (MXN 100–150). Entre semana hay mucha menos gente.",
+            "maps_url": "https://maps.app.goo.gl/placeholderLaGruta"
+          },
+          {
+            "id": "sight_jardin_principal",
+            "name": "Jardín Principal y Centro Histórico",
+            "category": "Punto de interés",
+            "description": "La plaza central arbolada y las calles circundantes forman uno de los centros coloniales mejor preservados de las Américas — Patrimonio de la Humanidad de la UNESCO. Las cuadras alrededor del Jardín están bordeadas de mansiones del siglo XVIII que ahora albergan hoteles boutique, restaurantes y galerías. Los domingos por la mañana llegan vendedores locales, bandas de viento y un ambiente festivo único.",
+            "maps_url": "https://maps.app.goo.gl/placeholderJardinSMA"
+          }
+        ],
+        "museums": [
+          {
+            "id": "museum_bellas_artes",
+            "name": "Centro Cultural El Nigromante (Bellas Artes)",
+            "category": "Arte / Cultura",
+            "description": "Un antiguo convento convertido en centro de artes con murales de David Alfaro Siqueiros — incluyendo una obra inconclusa y parcialmente controversial que pintó durante una residencia en 1948. Alberga estudios de arte, espacios de exhibición y un hermoso jardín claustral. Entrada gratuita; uno de los espacios con más atmósfera de la ciudad.",
+            "maps_url": "https://maps.app.goo.gl/placeholderBellasArtesSMA"
+          },
+          {
+            "id": "museum_casa_allende",
+            "name": "Museo Casa de Allende",
+            "category": "Historia",
+            "description": "El lugar de nacimiento de Ignacio Allende — uno de los líderes clave de la Guerra de Independencia de México (ejecutado en 1811). El museo en la mansión colonial cubre su vida, el movimiento de independencia y la historia de San Miguel con buenas exhibiciones bilingües. Pequeña tarifa de entrada; el edificio en sí es tan interesante como la colección.",
+            "maps_url": "https://maps.app.goo.gl/placeholderCasaAllende"
+          }
+        ],
+        "parks": [
+          {
+            "id": "nature_parque_juarez",
+            "name": "Parque Juárez (El Chorro)",
+            "category": "Parque urbano",
+            "description": "Un parque jardín en terrazas debajo del Mirador, construido alrededor del manantial histórico (El Chorro) que primero sustentó a la ciudad. Los lavaderos en la base aún son usados por mujeres locales — una pieza viva de la historia de la ciudad. Un escape tranquilo y sombreado de las concurridas calles del Centro. Lleva agua y disfruta las vistas desde las terrazas superiores.",
+            "maps_url": "https://maps.app.goo.gl/placeholderParqueJuarez"
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "eat_mercado_ignacio_ramirez",
+            "name": "Mercado Ignacio Ramírez",
+            "category": "Comida auténtica / Económico",
+            "description": "El mejor antídoto contra los precios gentrificados de San Miguel — un mercado activo a dos cuadras del Jardín con puestos de comida corrida para desayunar sirviendo enchiladas, quesadillas y jugos frescos por MXN 60–100. La sección de productos es excelente para provisiones de picnic. El contraste con los restaurantes de lujo a 200 metros es notable.",
+            "maps_url": "https://maps.app.goo.gl/placeholderMercadoRamirez"
+          },
+          {
+            "id": "eat_the_restaurant",
+            "name": "The Restaurant",
+            "category": "Alta cocina",
+            "description": "El celebrado restaurante insignia de Donnie Masterton — una experiencia íntima de alta cocina en un hermoso espacio colonial cerca del Jardín. El menú degustación cambia con las estaciones y destaca ingredientes locales del Bajío con técnica de influencia francesa. Una de las mejores experiencias gastronómicas del altiplano mexicano. Reservaciones esenciales, especialmente de noviembre a marzo.",
+            "maps_url": "https://maps.app.goo.gl/placeholderTheRestaurant"
+          },
+          {
+            "id": "eat_lavanda_cafe",
+            "name": "Lavanda Café",
+            "category": "Café / Desayuno",
+            "description": "El café más popular de la comunidad expat — excelente espresso, repostería estilo europeo y una terraza luminosa ideal para una mañana de trabajo. WiFi confiable y enchufes lo hacen uno de los mejores lugares para unas horas de trabajo enfocado. Se llena para las 9am los fines de semana.",
+            "maps_url": "https://maps.app.goo.gl/placeholderLavanda"
+          },
+          {
+            "id": "work_cowork_sma",
+            "name": "The Creative Hub San Miguel",
+            "category": "Coworking",
+            "description": "El espacio de coworking más establecido de San Miguel — configuración ergonómica, fibra rápida, salas de reuniones privadas y una comunidad orientada a artistas, freelancers y emprendedores independientes de ubicación. La base expat aquí es sustancial y el inglés se habla ampliamente. Pases diarios y mensuales disponibles.",
+            "maps_url": "https://maps.app.goo.gl/placeholderCoworkSMA"
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr"
+        ]
+      }
+    }
+  }
+}

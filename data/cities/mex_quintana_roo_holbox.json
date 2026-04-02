@@ -1,0 +1,171 @@
+{
+  "city_id": "mex_quintana_roo_holbox",
+  "city_name": "Holbox",
+  "state": "Quintana Roo",
+  "has_detailed_guide": true,
+  "security": {
+    "level": 2,
+    "label": "Seguro / Safe"
+  },
+  "quick_stats": {
+    "best_time": "Jun – Sep (whale shark season); Nov – Apr (dry)",
+    "connectivity": "Limited (Cafe Wi-Fi / 4G weak)",
+    "airport_iata": "CUN"
+  },
+  "quick_warnings": [
+    "No cars on the island — only golf carts, bikes, and walking; book ferry from Chiquilá in advance during holidays.",
+    "Whale shark tours sell out quickly Jun–Sep; reserve a few days ahead.",
+    "ATMs are unreliable — bring enough cash; many places don't accept cards."
+  ],
+  "detail_guide": {
+    "getting_around": "Holbox is a car-free island. Get around by rented golf cart, bicycle, or on foot along sandy streets. Ferries depart from Chiquilá (~2.5 hours from Cancún). Boat taxis can take you to nearby islands and sandbars.",
+    "top_sights": [
+      {
+        "id": "hol_whale_sharks",
+        "name": "Whale Shark Snorkeling Tours",
+        "category": "nature / wildlife",
+        "description": "Swim alongside the world's largest fish in the warm waters north of the island from June to September.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Whale+Shark+Snorkeling+Tours,+Holbox,+Mexico"
+      },
+      {
+        "id": "hol_punta_cocos",
+        "name": "Punta Cocos",
+        "category": "beach / nature",
+        "description": "A serene western beach famous for bioluminescent plankton on dark nights and spectacular sunsets.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Punta+Cocos,+Holbox,+Mexico"
+      },
+      {
+        "id": "hol_street_art",
+        "name": "Holbox Street Art",
+        "category": "culture",
+        "description": "Colorful murals by international artists cover buildings throughout the village, making the town itself a gallery.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Holbox+Street+Art,+Holbox,+Mexico"
+      }
+    ],
+    "museums": [],
+    "parks": [
+      {
+        "id": "hol_yum_balam",
+        "name": "Área de Protección Yum Balam",
+        "category": "nature reserve",
+        "description": "Protected mangrove and wetland reserve home to flamingos, pelicans, and other tropical birds.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=%C3%81rea+de+Protecci%C3%B3n+Yum+Balam,+Holbox,+Mexico"
+      },
+      {
+        "id": "hol_isla_pajaros",
+        "name": "Isla Pájaros",
+        "category": "nature",
+        "description": "A small island sanctuary teeming with frigatebirds, herons, and flamingos; viewable by boat.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Isla+P%C3%A1jaros,+Holbox,+Mexico"
+      }
+    ],
+    "eat_drink_work": [
+      {
+        "id": "hol_roots",
+        "name": "Roots Pizza & Bar",
+        "category": "restaurant",
+        "description": "Popular beachfront spot with wood-fired pizza, craft cocktails, and sandy-feet dining.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Roots+Pizza+%26+Bar,+Holbox,+Mexico"
+      },
+      {
+        "id": "hol_luuma",
+        "name": "Luuma",
+        "category": "restaurant",
+        "description": "Fresh seafood and Mexican-Mediterranean fusion in a candlelit garden setting.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Luuma,+Holbox,+Mexico"
+      },
+      {
+        "id": "hol_hot_corner",
+        "name": "Hot Corner Coffee",
+        "category": "cafe",
+        "description": "Specialty coffee shop with pastries and smoothie bowls; one of the best Wi-Fi spots on the island.",
+        "maps_url": "https://www.google.com/maps/search/?api=1&query=Hot+Corner+Coffee,+Holbox,+Mexico"
+      }
+    ],
+    "available_translations": [
+      "en",
+      "es",
+      "fr"
+    ]
+  },
+  "translations": {
+    "es": {
+      "quick_warnings": [
+        "No hay coches en la isla — solo carritos de golf, bicicletas y caminar; reserva el ferry desde Chiquilá con anticipación en días festivos.",
+        "Los tours de tiburón ballena se agotan rápido de jun a sep; reserva con algunos días de anticipación.",
+        "Los cajeros automáticos son poco confiables — lleva suficiente efectivo; muchos lugares no aceptan tarjeta."
+      ],
+      "detail_guide": {
+        "getting_around": "Holbox es una isla libre de coches. Muévete en carrito de golf rentado, bicicleta o a pie por las calles de arena. Los ferrys salen de Chiquilá (~2.5 horas desde Cancún). Las lanchas taxi te llevan a islas cercanas y bancos de arena.",
+        "top_sights": [
+          {
+            "id": "hol_whale_sharks",
+            "name": "Tours de Snorkel con Tiburón Ballena",
+            "category": "naturaleza / vida silvestre",
+            "description": "Nada junto al pez más grande del mundo en las cálidas aguas al norte de la isla de junio a septiembre.",
+            "maps_url": ""
+          },
+          {
+            "id": "hol_punta_cocos",
+            "name": "Punta Cocos",
+            "category": "playa / naturaleza",
+            "description": "Una playa serena al oeste famosa por el plancton bioluminiscente en noches oscuras y atardeceres espectaculares.",
+            "maps_url": ""
+          },
+          {
+            "id": "hol_street_art",
+            "name": "Arte Urbano de Holbox",
+            "category": "cultura",
+            "description": "Coloridos murales de artistas internacionales cubren los edificios del pueblo, convirtiendo la isla en una galería al aire libre.",
+            "maps_url": ""
+          }
+        ],
+        "museums": [],
+        "parks": [
+          {
+            "id": "hol_yum_balam",
+            "name": "Área de Protección Yum Balam",
+            "category": "reserva natural",
+            "description": "Reserva protegida de manglares y humedales, hogar de flamingos, pelícanos y otras aves tropicales.",
+            "maps_url": ""
+          },
+          {
+            "id": "hol_isla_pajaros",
+            "name": "Isla Pájaros",
+            "category": "naturaleza",
+            "description": "Un pequeño santuario insular repleto de fragatas, garzas y flamingos; se puede observar desde una lancha.",
+            "maps_url": ""
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "hol_roots",
+            "name": "Roots Pizza & Bar",
+            "category": "restaurante",
+            "description": "Popular lugar frente a la playa con pizza al horno de leña, cócteles artesanales y comida con los pies en la arena.",
+            "maps_url": ""
+          },
+          {
+            "id": "hol_luuma",
+            "name": "Luuma",
+            "category": "restaurante",
+            "description": "Mariscos frescos y fusión mexicano-mediterránea en un jardín iluminado con velas.",
+            "maps_url": ""
+          },
+          {
+            "id": "hol_hot_corner",
+            "name": "Hot Corner Coffee",
+            "category": "cafetería",
+            "description": "Cafetería de especialidad con repostería y bowls de smoothie; uno de los mejores puntos de Wi-Fi en la isla.",
+            "maps_url": ""
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr"
+        ]
+      }
+    }
+  }
+}
