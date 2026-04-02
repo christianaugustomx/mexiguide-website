@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Destinations | MexiGuide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --base: #E8E2DA;
+      --card: #F5F0EB;
+      --white: #FFFFFF;
+      --border: rgba(27, 67, 50, 0.10);
+      --g-darkest: #0F2419;
+      --g-dark: #1B4332;
+      --g-mid: #2D6A4F;
+      --jade: #4A9E80;
+      --gold: #E9C46A;
+      --coral: #E76F51;
+      --amber: #F4A261;
+      --teal: #2A9D8F;
+      --text-hi: #0F2419;
+      --text-mid: #4A7A60;
+      --text-lo: #8AA898;
+
+      /* Safety level colors */
+      --safety-1: #2D9E5F;
+      --safety-2: #52C778;
+      --safety-3: #F0A500;
+      --safety-4: #EF6C00;
+      --safety-5: #C62828;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--base);
+      color: var(--text-hi);
+      line-height: 1.6;
+    }
+
+    /* Navigation */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background-color: rgba(245, 240, 235, 0.92);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+      padding: 1rem 2rem;
+    }
+
+    .nav-container {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .nav-logo {
+      font-family: 'Merriweather', serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--text-hi);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .nav-links a {
+      color: var(--text-hi);
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--jade);
+    }
+
+    .nav-links a.active {
+      color: var(--jade);
+      border-bottom: 2px solid var(--jade);
+      padding-bottom: 0.25rem;
+    }
+
+    .nav-cta {
+      background: linear-gradient(135deg, var(--coral) 0%, var(--amber) 100%);
+      color: var(--white);
+      padding: 0.625rem 1.25rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      cursor: pointer;
+      border: none;
+    }
+
+    .nav-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 16px rgba(231, 111, 81, 0.3);
+    }
+
+    /* Hero Section */
+    .hero {
+      margin-top: 5rem;
+      padding: 3rem 2rem;
+      text-align: center;
+      background: linear-gradient(135deg, var(--card) 0%, var(--white) 100%);
+      border-bottom: 3px solid;
+      border-image: repeating-linear-gradient(90deg, #E76F51 0px, #E76F51 8px, #F4A261 8px, #F4A261 16px, #2A9D8F 16px, #2A9D8F 24px, #E9C46A 24px, #E9C46A 32px) 0 0 1 0;
+    }
+
+    .hero-content {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .hero h1 {
+      font-family: 'Merriweather', serif;
+      font-size: 3rem;
+      font-weight: 700;
+      color: var(--text-hi);
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.125rem;
+      color: var(--text-mid);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Main Container */
+    main {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+
+    /* Filter Section */
+    .filters-section {
+      margin-bottom: 3rem;
+      background: var(--white);
+      padding: 2rem;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+    }
+
+    .search-box {
+      margin-bottom: 2rem;
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 0.875rem 1.25rem;
+      font-size: 1rem;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      font-family: 'Inter', sans-serif;
+      background-color: var(--card);
+      color: var(--text-hi);
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .search-box input::placeholder {
+      color: var(--text-lo);
+    }
+
+    .search-box input:focus {
+      outline: none;
+      border-color: var(--jade);
+      box-shadow: 0 0 0 3px rgba(74, 158, 128, 0.1);
+    }
+
+    .filter-buttons {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .filter-btn {
+      padding: 0.625rem 1.25rem;
+      border: 2px solid var(--border);
+      background-color: var(--card);
+      color: var(--text-hi);
+      border-radius: 24px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: all 0.3s ease;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .filter-btn:hover {
+      border-color: var(--jade);
+      background-color: var(--white);
+    }
+
+    .filter-btn.active {
+      background-color: var(--jade);
+      border-color: var(--jade);
+      color: var(--white);
+    }
+
+    .filter-btn[data-level="1"] {
+      --safety-color: var(--safety-1);
+    }
+
+    .filter-btn[data-level="2"] {
+      --safety-color: var(--safety-2);
+    }
+
+    .filter-btn[data-level="3"] {
+      --safety-color: var(--safety-3);
+    }
+
+    .filter-btn[data-level="4"] {
+      --safety-color: var(--safety-4);
+    }
+
+    .filter-btn[data-level="5"] {
+      --safety-color: var(--safety-5);
+    }
+
+    .filter-btn[data-level].active {
+      background-color: var(--safety-color);
+      border-color: var(--safety-color);
+    }
+
+    /* Results Count */
+    .results-count {
+      font-size: 1rem;
+      color: var(--text-mid);
+      margin-bottom: 2rem;
+      font-weight: 500;
+    }
+
+    /* City Grid */
+    .cities-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    @media (max-width: 1024px) {
+      .cities-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .cities-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .nav-links {
+        gap: 1rem;
+      }
+
+      nav {
+        padding: 0.75rem 1rem;
+      }
+    }
+
+    /* City Card */
+    .city-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      animation: fadeInUp 0.6s ease forwards;
+      opacity: 0;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .city-card:nth-child(1) { animation-delay: 0.05s; }
+    .city-card:nth-child(2) { animation-delay: 0.1s; }
+    .city-card:nth-child(3) { animation-delay: 0.15s; }
+    .city-card:nth-child(4) { animation-delay: 0.2s; }
+    .city-card:nth-child(5) { animation-delay: 0.25s; }
+    .city-card:nth-child(6) { animation-delay: 0.3s; }
+    .city-card:nth-child(7) { animation-delay: 0.35s; }
+    .city-card:nth-child(8) { animation-delay: 0.4s; }
+    .city-card:nth-child(9) { animation-delay: 0.45s; }
+    .city-card:nth-child(n+10) { animation-delay: 0.5s; }
+
+    .city-card:hover {
+      box-shadow: 0 16px 32px rgba(0, 0, 0, 0.1);
+      transform: translateY(-4px);
+    }
+
+    .city-safety-bar {
+      height: 4px;
+      background-color: var(--text-hi);
+    }
+
+    .city-card[data-level="1"] .city-safety-bar {
+      background-color: var(--safety-1);
+    }
+
+    .city-card[data-level="2"] .city-safety-bar {
+      background-color: var(--safety-2);
+    }
+
+    .city-card[data-level="3"] .city-safety-bar {
+      background-color: var(--safety-3);
+    }
+
+    .city-card[data-level="4"] .city-safety-bar {
+      background-color: var(--safety-4);
+    }
+
+    .city-card[data-level="5"] .city-safety-bar {
+      background-color: var(--safety-5);
+    }
+
+    .card-content {
+      padding: 1.5rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .city-header {
+      margin-bottom: 1rem;
+    }
+
+    .city-name {
+      font-family: 'Merriweather', serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--text-hi);
+      margin-bottom: 0.25rem;
+    }
+
+    .city-state {
+      font-size: 0.875rem;
+      color: var(--text-lo);
+      font-weight: 500;
+    }
+
+    .safety-badge {
+      display: inline-block;
+      padding: 0.375rem 0.875rem;
+      border-radius: 16px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--white);
+      margin-bottom: 1rem;
+      width: fit-content;
+    }
+
+    .city-card[data-level="1"] .safety-badge {
+      background-color: var(--safety-1);
+    }
+
+    .city-card[data-level="2"] .safety-badge {
+      background-color: var(--safety-2);
+    }
+
+    .city-card[data-level="3"] .safety-badge {
+      background-color: var(--safety-3);
+      color: var(--text-hi);
+    }
+
+    .city-card[data-level="4"] .safety-badge {
+      background-color: var(--safety-4);
+    }
+
+    .city-card[data-level="5"] .safety-badge {
+      background-color: var(--safety-5);
+    }
+
+    .quick-stats {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.9rem;
+      color: var(--text-mid);
+      flex: 1;
+    }
+
+    .stat-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .stat-icon {
+      font-size: 1rem;
+      min-width: 1rem;
+    }
+
+    .stat-text {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .card-button {
+      background: linear-gradient(135deg, var(--coral) 0%, var(--amber) 100%);
+      color: var(--white);
+      border: none;
+      padding: 0.75rem 1.25rem;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      cursor: pointer;
+      text-decoration: none;
+      text-align: center;
+      transition: all 0.3s ease;
+      font-family: 'Inter', sans-serif;
+      display: inline-block;
+    }
+
+    .card-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 16px rgba(231, 111, 81, 0.3);
+    }
+
+    /* Empty State */
+    .empty-state {
+      text-align: center;
+      padding: 4rem 2rem;
+      color: var(--text-mid);
+    }
+
+    .empty-state h2 {
+      font-family: 'Merriweather', serif;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: var(--text-hi);
+    }
+
+    .empty-state p {
+      margin-bottom: 1.5rem;
+    }
+
+    .empty-state button {
+      background: var(--jade);
+      color: var(--white);
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+      font-family: 'Inter', sans-serif;
+      transition: all 0.3s ease;
+    }
+
+    .empty-state button:hover {
+      background: var(--g-mid);
+      transform: translateY(-2px);
+    }
+
+    /* Footer spacing */
+    .footer-spacing {
+      height: 4rem;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .nav-container {
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .nav-links {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .hero h1 {
+        font-size: 2.25rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+
+      main {
+        padding: 1.5rem;
+      }
+
+      .filters-section {
+        padding: 1.5rem;
+      }
+
+      .filter-buttons {
+        gap: 0.5rem;
+      }
+
+      .filter-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <a href="/" class="nav-logo">🌿 MexiGuide</a>
+      <ul class="nav-links">
+        <li><a href="/destinations.html" class="active">Destinations</a></li>
+        <li><a href="/destinations.html">City Guides</a></li>
+        <li><a href="/safety-map.html">Safety Map</a></li>
+        <li><a href="/tools.html">Tools</a></li>
+        <li><a href="/emergency.html">Emergency</a></li>
+        <li><button class="nav-cta">Get the App →</button></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>All Destinations</h1>
+      <p>37 cities across Mexico — with real safety data, local guides, and insider tips.</p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Filters -->
+    <section class="filters-section">
+      <div class="search-box">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search by city or state name..."
+          aria-label="Search destinations"
+        >
+      </div>
+
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all" data-level="all">All</button>
+        <button class="filter-btn" data-filter="level-1" data-level="1">Very Safe</button>
+        <button class="filter-btn" data-filter="level-2" data-level="2">Safe</button>
+        <button class="filter-btn" data-filter="level-3" data-level="3">Moderate</button>
+        <button class="filter-btn" data-filter="level-4" data-level="4">Caution</button>
+        <button class="filter-btn" data-filter="level-5" data-level="5">Dangerous</button>
+      </div>
+    </section>
+
+    <!-- Results Count -->
+    <div class="results-count">
+      Showing <span id="resultCount">37</span> destinations
+    </div>
+
+    <!-- Cities Grid -->
+    <div class="cities-grid" id="citiesGrid"></div>
+
+    <!-- Empty State -->
+    <div id="emptyState" class="empty-state" style="display: none;">
+      <h2>No destinations found</h2>
+      <p>Try adjusting your search filters to find cities that match your interests.</p>
+      <button onclick="resetFilters()">Reset Filters</button>
+    </div>
+  </main>
+
+  <div class="footer-spacing"></div>
+
+  <script>
+    // City data hardcoded for static site
+    const cities = [
+      {"id":"mex_baja_california_ensenada_baja_california","name":"Ensenada","state":"Baja California","level":3,"label":"Precaución / Caution","best_time":"Apr – Oct","airport":"TIJ","connectivity":"Good (4G)"},
+      {"id":"mex_baja_california_tijuana_baja_california","name":"Tijuana","state":"Baja California","level":5,"label":"Peligroso / Dangerous","best_time":"Mar – May / Sep – Nov","airport":"TIJ","connectivity":"Excellent (Fiber/5G)"},
+      {"id":"mex_bcs_cabo_san_lucas","name":"Cabo San Lucas","state":"Baja California Sur","level":2,"label":"Seguro / Safe","best_time":"Dec – Apr","airport":"SJD","connectivity":"Good (4G)"},
+      {"id":"mex_bcs_la_paz","name":"La Paz","state":"Baja California Sur","level":2,"label":"Seguro / Safe","best_time":"Oct – May","airport":"LAP","connectivity":"Good (4G)"},
+      {"id":"mex_bcs_san_jose_del_cabo","name":"San José del Cabo","state":"Baja California Sur","level":2,"label":"Seguro / Safe","best_time":"Dec – Apr","airport":"SJD","connectivity":"Good (4G)"},
+      {"id":"mex_campeche_campeche_campeche","name":"Campeche","state":"Campeche","level":1,"label":"Muy Seguro / Very Safe","best_time":"Nov – Mar","airport":"CPE","connectivity":"Good (4G)"},
+      {"id":"mex_chiapas_palenque_chiapas","name":"Palenque","state":"Chiapas","level":3,"label":"Precaución / Caution","best_time":"Nov – Apr","airport":"VHC","connectivity":"Limited (4G spotty)"},
+      {"id":"mex_chiapas_san_cristobal_de_las_casas_chiapas","name":"San Cristóbal de las Casas","state":"Chiapas","level":3,"label":"Precaución / Caution","best_time":"Nov – Apr","airport":"TGZ","connectivity":"Moderate (4G)"},
+      {"id":"mex_ciudad_de_mexico_cuauhtemoc","name":"Ciudad de México","state":"Ciudad de México","level":3,"label":"Riesgo Moderado / Moderate","best_time":"Oct – Apr","airport":"MEX","connectivity":"Excellent (Fiber)"},
+      {"id":"mex_guanajuato_guanajuato_guanajuato","name":"Guanajuato","state":"Guanajuato","level":4,"label":"Inseguro / Unsafe","best_time":"Mar – Jun / Sep – Nov","airport":"BJX","connectivity":"Good (Fiber/4G)"},
+      {"id":"mex_guanajuato_san_miguel_de_allende_guanajuato","name":"San Miguel de Allende","state":"Guanajuato","level":3,"label":"Riesgo Moderado / Moderate","best_time":"Oct – Apr","airport":"BJX","connectivity":"Good (Fiber/4G)"},
+      {"id":"mex_guerrero_acapulco_guerrero","name":"Acapulco","state":"Guerrero","level":5,"label":"Peligroso / Dangerous","best_time":"Nov – Apr","airport":"ACA","connectivity":"Good (Fiber/4G)"},
+      {"id":"mex_guerrero_ixtapa-zihuatanejo_guerrero","name":"Zihuatanejo","state":"Guerrero","level":4,"label":"Riesgo Moderado / Moderate","best_time":"Nov – Apr","airport":"ZIH","connectivity":"Moderate (4G)"},
+      {"id":"mex_guerrero_taxco_guerrero","name":"Taxco","state":"Guerrero","level":4,"label":"Riesgo Moderado / Moderate","best_time":"Oct – May","airport":"MEX","connectivity":"Moderate (4G)"},
+      {"id":"mex_jalisco_guadalajara","name":"Guadalajara","state":"Jalisco","level":4,"label":"Precaución / Use Caution","best_time":"Oct – Dec & Feb – May","airport":"GDL","connectivity":"Excellent (Fiber/5G)"},
+      {"id":"mex_jalisco_puerto_vallarta","name":"Puerto Vallarta","state":"Jalisco","level":3,"label":"Moderado / Moderate","best_time":"Nov – Apr","airport":"PVR","connectivity":"Excellent (Fiber/5G)"},
+      {"id":"mex_michoacan_morelia_michoacan","name":"Morelia","state":"Michoacán","level":3,"label":"Precaución / Caution","best_time":"Oct – Apr","airport":"MLM","connectivity":"Good (4G)"},
+      {"id":"mex_michoacan_patzcuaro_michoacan","name":"Pátzcuaro","state":"Michoacán","level":5,"label":"Alto Riesgo / High Risk","best_time":"Oct – Nov (Day of Dead)","airport":"MLM","connectivity":"Limited (4G spotty)"},
+      {"id":"mex_nayarit_sayulita_nayarit","name":"Sayulita","state":"Nayarit","level":4,"label":"Riesgo Moderado / Moderate","best_time":"Nov – May","airport":"PVR","connectivity":"Moderate (4G spotty)"},
+      {"id":"mex_nuevo_leon_monterrey","name":"Monterrey","state":"Nuevo León","level":3,"label":"Moderado / Moderate","best_time":"Oct – Nov & Mar – May","airport":"MTY","connectivity":"Excellent (Business Hub)"},
+      {"id":"mex_oaxaca_oaxaca_de_juarez","name":"Oaxaca de Juárez","state":"Oaxaca","level":2,"label":"Seguro / Safe","best_time":"Oct – Apr","airport":"OAX","connectivity":"Good (Fiber/4G)"},
+      {"id":"mex_oaxaca_san_pedro","name":"Puerto Escondido","state":"Oaxaca","level":2,"label":"Seguro / Safe","best_time":"Nov – Feb","airport":"PXM","connectivity":"Fair (4G)"},
+      {"id":"mex_oaxaca_santa_maria_huatulco","name":"Huatulco","state":"Oaxaca","level":2,"label":"Seguro / Safe","best_time":"Nov – Apr","airport":"HUX","connectivity":"Moderate (4G)"},
+      {"id":"mex_puebla_puebla_puebla","name":"Puebla","state":"Puebla","level":3,"label":"Riesgo Moderado / Moderate","best_time":"Mar – May / Sep – Nov","airport":"PBC","connectivity":"Excellent (Fiber/5G)"},
+      {"id":"mex_queretaro_bernal_queretaro","name":"Bernal","state":"Querétaro","level":2,"label":"Seguro / Safe","best_time":"Mar (equinox); Oct – Apr","airport":"QRO","connectivity":"Limited (4G weak)"},
+      {"id":"mex_queretaro_queretaro_queretaro","name":"Querétaro","state":"Querétaro","level":2,"label":"Seguro / Safe","best_time":"Mar – May & Sep – Nov","airport":"QRO","connectivity":"Excellent (4G/5G)"},
+      {"id":"mex_quintana_roo_bacalar","name":"Bacalar","state":"Quintana Roo","level":2,"label":"Seguro / Safe","best_time":"Nov – Apr","airport":"CTM","connectivity":"Moderate (4G)"},
+      {"id":"mex_quintana_roo_cancun","name":"Cancún","state":"Quintana Roo","level":2,"label":"Seguro / Safe","best_time":"Dec – Apr","airport":"CUN","connectivity":"Excellent (Fiber)"},
+      {"id":"mex_quintana_roo_cozumel","name":"Cozumel","state":"Quintana Roo","level":2,"label":"Seguro / Safe","best_time":"Nov – May","airport":"CZM","connectivity":"Good (4G)"},
+      {"id":"mex_quintana_roo_holbox","name":"Holbox","state":"Quintana Roo","level":2,"label":"Seguro / Safe","best_time":"Jun – Sep (whale sharks); Nov – Apr","airport":"CUN","connectivity":"Limited (4G weak)"},
+      {"id":"mex_quintana_roo_isla_mujeres","name":"Isla Mujeres","state":"Quintana Roo","level":2,"label":"Seguro / Safe","best_time":"Nov – Apr","airport":"CUN","connectivity":"Good (4G)"},
+      {"id":"mex_quintana_roo_solidaridad_playa_del_carmen","name":"Playa del Carmen","state":"Quintana Roo","level":3,"label":"Riesgo Moderado / Moderate","best_time":"Nov – Apr","airport":"CUN","connectivity":"Excellent (Fiber/5G)"},
+      {"id":"mex_quintana_roo_tulum","name":"Tulum","state":"Quintana Roo","level":3,"label":"Riesgo Moderado / Moderate","best_time":"Nov – Apr","airport":"TQO/CUN","connectivity":"Fair (Fiber/4G patchy)"},
+      {"id":"mex_sinaloa_mazatlan_sinaloa","name":"Mazatlán","state":"Sinaloa","level":4,"label":"Riesgo Moderado / Moderate","best_time":"Oct – Apr","airport":"MZT","connectivity":"Good (4G)"},
+      {"id":"mex_slp_xilitla_slp","name":"Xilitla","state":"San Luis Potosí","level":3,"label":"Precaución / Caution","best_time":"Nov – Mar","airport":"SLP","connectivity":"Limited (4G weak)"},
+      {"id":"mex_yucatan_merida_yucatan","name":"Mérida","state":"Yucatán","level":1,"label":"Muy Seguro / Very Safe","best_time":"Nov – Feb","airport":"MID","connectivity":"Excellent (Fiber/5G)"},
+      {"id":"mex_yucatan_valladolid_yucatan","name":"Valladolid","state":"Yucatán","level":1,"label":"Seguro / Safe","best_time":"Nov – Mar","airport":"MID","connectivity":"Moderate (4G)"}
+    ];
+
+    let currentFilter = 'all';
+    let currentSearch = '';
+
+    // Initialize
+    document.addEventListener('DOMContentLoaded', function() {
+      renderCities();
+      attachEventListeners();
+    });
+
+    function attachEventListeners() {
+      // Filter buttons
+      document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+          document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+          this.classList.add('active');
+          currentFilter = this.dataset.filter;
+          filterAndRender();
+        });
+      });
+
+      // Search input
+      document.getElementById('searchInput').addEventListener('input', function(e) {
+        currentSearch = e.target.value.toLowerCase();
+        filterAndRender();
+      });
+    }
+
+    function getFilteredCities() {
+      return cities.filter(city => {
+        // Apply level filter
+        let levelMatch = true;
+        if (currentFilter !== 'all') {
+          const level = parseInt(currentFilter.split('-')[1]);
+          levelMatch = city.level === level;
+        }
+
+        // Apply search filter
+        const searchMatch =
+          city.name.toLowerCase().includes(currentSearch) ||
+          city.state.toLowerCase().includes(currentSearch);
+
+        return levelMatch && searchMatch;
+      });
+    }
+
+    function filterAndRender() {
+      const filtered = getFilteredCities();
+      document.getElementById('resultCount').textContent = filtered.length;
+
+      if (filtered.length === 0) {
+        document.getElementById('emptyState').style.display = 'block';
+        document.getElementById('citiesGrid').style.display = 'none';
+      } else {
+        document.getElementById('emptyState').style.display = 'none';
+        document.getElementById('citiesGrid').style.display = 'grid';
+        renderCities(filtered);
+      }
+    }
+
+    function renderCities(citiesToRender = cities) {
+      const grid = document.getElementById('citiesGrid');
+      grid.innerHTML = '';
+
+      citiesToRender.forEach(city => {
+        const card = createCityCard(city);
+        grid.appendChild(card);
+      });
+    }
+
+    function createCityCard(city) {
+      const card = document.createElement('div');
+      card.className = 'city-card';
+      card.setAttribute('data-level', city.level);
+
+      const safetyLabels = {
+        1: 'Very Safe',
+        2: 'Safe',
+        3: 'Moderate',
+        4: 'Caution',
+        5: 'Dangerous'
+      };
+
+      card.innerHTML = `
+        <div class="city-safety-bar"></div>
+        <div class="card-content">
+          <div class="city-header">
+            <div class="city-name">${escapeHtml(city.name)}</div>
+            <div class="city-state">${escapeHtml(city.state)}</div>
+          </div>
+
+          <div class="safety-badge">${safetyLabels[city.level]}</div>
+
+          <div class="quick-stats">
+            <div class="stat-item">
+              <span class="stat-icon">📅</span>
+              <span class="stat-text">${escapeHtml(city.best_time)}</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-icon">✈️</span>
+              <span class="stat-text">${escapeHtml(city.airport)}</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-icon">📶</span>
+              <span class="stat-text">${escapeHtml(city.connectivity)}</span>
+            </div>
+          </div>
+
+          <a href="/city.html?id=${encodeURIComponent(city.id)}" class="card-button">View Guide →</a>
+        </div>
+      `;
+
+      return card;
+    }
+
+    function resetFilters() {
+      currentFilter = 'all';
+      currentSearch = '';
+      document.getElementById('searchInput').value = '';
+      document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+      document.querySelector('[data-filter="all"]').classList.add('active');
+      filterAndRender();
+    }
+
+    function escapeHtml(text) {
+      const map = {
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        '"': '&quot;',
+        "'": '&#039;'
+      };
+      return text.replace(/[&<>"']/g, m => map[m]);
+    }
+  </script>
+</body>
+</html>

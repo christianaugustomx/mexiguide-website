@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Contacts | MexiGuide</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --base: #E8E2DA;
+            --card: #F5F0EB;
+            --white: #FFFFFF;
+            --border: rgba(27, 67, 50, 0.10);
+            --g-darkest: #0F2419;
+            --g-dark: #1B4332;
+            --g-mid: #2D6A4F;
+            --jade: #4A9E80;
+            --gold: #E9C46A;
+            --coral: #E76F51;
+            --amber: #F4A261;
+            --teal: #2A9D8F;
+            --text-hi: #0F2419;
+            --text-mid: #4A7A60;
+            --text-lo: #8AA898;
+            --stripe: repeating-linear-gradient(90deg, #E76F51 0px, #E76F51 8px, #F4A261 8px, #F4A261 16px, #2A9D8F 16px, #2A9D8F 24px, #E9C46A 24px, #E9C46A 32px);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text-hi);
+            background-color: var(--base);
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Merriweather', serif;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: var(--white);
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .nav-logo {
+            font-family: 'Merriweather', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--g-dark);
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            margin: 0;
+            padding: 0;
+            flex-grow: 1;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-mid);
+            font-weight: 500;
+            transition: color 0.3s ease;
+            font-size: 0.95rem;
+        }
+
+        .nav-links a:hover {
+            color: var(--jade);
+        }
+
+        .nav-links a.active {
+            color: var(--coral);
+            border-bottom: 2px solid var(--coral);
+            padding-bottom: 0.25rem;
+        }
+
+        .nav-cta {
+            background-color: var(--jade);
+            color: var(--white);
+            padding: 0.6rem 1.4rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            white-space: nowrap;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-cta:hover {
+            background-color: var(--teal);
+        }
+
+        /* Decorative stripe */
+        .stripe {
+            height: 8px;
+            background: var(--stripe);
+            width: 100%;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, rgba(231, 111, 81, 0.15) 0%, rgba(244, 162, 97, 0.1) 100%);
+            padding: 4rem 2rem;
+            text-align: center;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            color: var(--coral);
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-mid);
+            line-height: 1.8;
+        }
+
+        /* Main container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        /* Emergency banner */
+        .emergency-banner {
+            background-color: var(--white);
+            border: 2px solid var(--coral);
+            border-radius: 12px;
+            padding: 3rem 2rem;
+            text-align: center;
+            margin-bottom: 4rem;
+            box-shadow: 0 8px 24px rgba(231, 111, 81, 0.15);
+        }
+
+        .emergency-banner-number {
+            font-size: 5rem;
+            font-weight: 900;
+            color: var(--coral);
+            margin-bottom: 1rem;
+            font-family: 'Inter', sans-serif;
+            letter-spacing: -2px;
+        }
+
+        .emergency-banner-text {
+            font-size: 1.3rem;
+            color: var(--text-mid);
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .emergency-banner-subtext {
+            font-size: 1rem;
+            color: var(--text-lo);
+            line-height: 1.8;
+        }
+
+        /* Section titles */
+        .section-title {
+            font-size: 2rem;
+            color: var(--g-dark);
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid var(--border);
+            font-weight: 700;
+        }
+
+        /* Key Numbers Grid */
+        .numbers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 4rem;
+        }
+
+        .number-card {
+            background-color: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .number-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px rgba(77, 154, 128, 0.1);
+        }
+
+        .number-card-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .number-card-title {
+            font-size: 1.2rem;
+            color: var(--text-hi);
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .number-card-number {
+            font-size: 1.8rem;
+            color: var(--coral);
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            font-family: 'Inter', sans-serif;
+            letter-spacing: 1px;
+        }
+
+        .number-card-number a {
+            color: var(--coral);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .number-card-number a:hover {
+            color: var(--amber);
+        }
+
+        .number-card-desc {
+            font-size: 0.9rem;
+            color: var(--text-lo);
+            line-height: 1.6;
+        }
+
+        /* Embassies Section */
+        .embassies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 4rem;
+        }
+
+        .embassy-card {
+            background-color: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .embassy-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px rgba(77, 154, 128, 0.1);
+        }
+
+        .embassy-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .embassy-flag {
+            font-size: 2.5rem;
+        }
+
+        .embassy-country {
+            font-size: 1.3rem;
+            color: var(--g-dark);
+            font-weight: 700;
+            font-family: 'Merriweather', serif;
+        }
+
+        .embassy-name {
+            font-size: 1rem;
+            color: var(--text-mid);
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+            line-height: 1.5;
+        }
+
+        .embassy-phone {
+            margin-bottom: 1rem;
+        }
+
+        .embassy-phone-label {
+            font-size: 0.85rem;
+            color: var(--text-lo);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-weight: 600;
+            margin-bottom: 0.3rem;
+        }
+
+        .embassy-phone-number {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--jade);
+        }
+
+        .embassy-phone-number a {
+            color: var(--jade);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .embassy-phone-number a:hover {
+            color: var(--teal);
+        }
+
+        .embassy-address {
+            font-size: 0.9rem;
+            color: var(--text-lo);
+            line-height: 1.6;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+        }
+
+        /* Safety Tips Section */
+        .safety-tips {
+            background-color: var(--card);
+            border-radius: 12px;
+            padding: 2.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .tips-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .tip-item {
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+        }
+
+        .tip-icon {
+            font-size: 1.5rem;
+            flex-shrink: 0;
+            margin-top: 0.2rem;
+        }
+
+        .tip-text {
+            font-size: 1rem;
+            color: var(--text-mid);
+            line-height: 1.7;
+        }
+
+        /* Download Reminder */
+        .download-reminder {
+            background: linear-gradient(135deg, rgba(74, 158, 128, 0.1) 0%, rgba(42, 157, 143, 0.1) 100%);
+            border: 2px solid var(--jade);
+            border-radius: 12px;
+            padding: 2.5rem;
+            text-align: center;
+        }
+
+        .reminder-title {
+            font-size: 1.3rem;
+            color: var(--g-dark);
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .reminder-text {
+            font-size: 1rem;
+            color: var(--text-mid);
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+
+        .reminder-cta {
+            display: inline-block;
+            background-color: var(--jade);
+            color: var(--white);
+            padding: 0.8rem 2rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        .reminder-cta:hover {
+            background-color: var(--teal);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                gap: 1rem;
+                padding: 1rem;
+            }
+
+            .nav-links {
+                gap: 1rem;
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .nav-cta {
+                width: 100%;
+                text-align: center;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .emergency-banner-number {
+                font-size: 3.5rem;
+            }
+
+            .container {
+                padding: 2rem 1rem;
+            }
+
+            .section-title {
+                font-size: 1.5rem;
+            }
+
+            .numbers-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .embassies-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .tips-list {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 1.75rem;
+            }
+
+            .emergency-banner-number {
+                font-size: 3rem;
+            }
+
+            .emergency-banner {
+                padding: 2rem 1.5rem;
+            }
+
+            .embassy-flag {
+                font-size: 2rem;
+            }
+
+            .section-title {
+                font-size: 1.3rem;
+                margin-bottom: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="/" class="nav-logo">🌿 MexiGuide</a>
+            <ul class="nav-links">
+                <li><a href="/destinations.html">Destinations</a></li>
+                <li><a href="/safety-map.html">Safety Map</a></li>
+                <li><a href="/tools.html">Tools</a></li>
+                <li><a href="/emergency.html" class="active">Emergency</a></li>
+            </ul>
+            <a href="#" class="nav-cta">Get the App →</a>
+        </div>
+    </nav>
+
+    <!-- Decorative Stripe -->
+    <div class="stripe"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>🚨 Emergency Contacts</h1>
+            <p>Save these numbers before you go. In Mexico, 911 handles all emergencies.</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Big 911 Banner -->
+        <div class="emergency-banner">
+            <div class="emergency-banner-number">911</div>
+            <div class="emergency-banner-text">Mexico's Universal Emergency Number</div>
+            <div class="emergency-banner-subtext">Dial 911 for Police, Fire & Ambulance services throughout Mexico. English-speaking operators are available in most major cities.</div>
+        </div>
+
+        <!-- Key Numbers Section -->
+        <section>
+            <h2 class="section-title">Key Emergency Numbers</h2>
+            <div class="numbers-grid">
+                <div class="number-card">
+                    <div class="number-card-icon">🚔</div>
+                    <div class="number-card-title">Police</div>
+                    <div class="number-card-number"><a href="tel:911">911</a></div>
+                    <div class="number-card-desc">Federal, state, and local police</div>
+                </div>
+
+                <div class="number-card">
+                    <div class="number-card-icon">🚑</div>
+                    <div class="number-card-title">Ambulance</div>
+                    <div class="number-card-number"><a href="tel:911">911</a></div>
+                    <div class="number-card-desc">Emergency medical services</div>
+                </div>
+
+                <div class="number-card">
+                    <div class="number-card-icon">🔥</div>
+                    <div class="number-card-title">Fire Department</div>
+                    <div class="number-card-number"><a href="tel:911">911</a></div>
+                    <div class="number-card-desc">Fire and rescue services</div>
+                </div>
+
+                <div class="number-card">
+                    <div class="number-card-icon">📞</div>
+                    <div class="number-card-title">Tourist Assistance</div>
+                    <div class="number-card-number"><a href="tel:078">078</a></div>
+                    <div class="number-card-desc">SECTUR tourist hotline with English support</div>
+                </div>
+
+                <div class="number-card">
+                    <div class="number-card-icon">🏥</div>
+                    <div class="number-card-title">Red Cross</div>
+                    <div class="number-card-number"><a href="tel:065">065</a></div>
+                    <div class="number-card-desc">Cruz Roja emergency medical response</div>
+                </div>
+
+                <div class="number-card">
+                    <div class="number-card-icon">📍</div>
+                    <div class="number-card-title">Lost Persons/Info</div>
+                    <div class="number-card-number"><a href="tel:+525556581111">55 5658-1111</a></div>
+                    <div class="number-card-desc">LOCATEL for missing persons and information</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Embassies Section -->
+        <section>
+            <h2 class="section-title">Embassy Contacts</h2>
+            <div class="embassies-grid">
+                <div class="embassy-card">
+                    <div class="embassy-header">
+                        <div class="embassy-flag">🇺🇸</div>
+                        <div class="embassy-country">United States</div>
+                    </div>
+                    <div class="embassy-name">U.S. Embassy Mexico City</div>
+                    <div class="embassy-phone">
+                        <div class="embassy-phone-label">Phone</div>
+                        <div class="embassy-phone-number"><a href="tel:+525250802000">+52-55-5080-2000</a></div>
+                    </div>
+                    <div class="embassy-address">Paseo de la Reforma 305, Cuauhtémoc, Mexico City</div>
+                </div>
+
+                <div class="embassy-card">
+                    <div class="embassy-header">
+                        <div class="embassy-flag">🇨🇦</div>
+                        <div class="embassy-country">Canada</div>
+                    </div>
+                    <div class="embassy-name">Embassy of Canada</div>
+                    <div class="embassy-phone">
+                        <div class="embassy-phone-label">Phone</div>
+                        <div class="embassy-phone-number"><a href="tel:+525257247900">+52-55-5724-7900</a></div>
+                    </div>
+                    <div class="embassy-address">Schiller 529, Polanco, Mexico City</div>
+                </div>
+
+                <div class="embassy-card">
+                    <div class="embassy-header">
+                        <div class="embassy-flag">🇬🇧</div>
+                        <div class="embassy-country">United Kingdom</div>
+                    </div>
+                    <div class="embassy-name">British Embassy</div>
+                    <div class="embassy-phone">
+                        <div class="embassy-phone-label">Phone</div>
+                        <div class="embassy-phone-number"><a href="tel:+525516703200">+52-55-1670-3200</a></div>
+                    </div>
+                    <div class="embassy-address">Río Lerma 71, Cuauhtémoc, Mexico City</div>
+                </div>
+
+                <div class="embassy-card">
+                    <div class="embassy-header">
+                        <div class="embassy-flag">🇫🇷</div>
+                        <div class="embassy-country">France</div>
+                    </div>
+                    <div class="embassy-name">French Embassy</div>
+                    <div class="embassy-phone">
+                        <div class="embassy-phone-label">Phone</div>
+                        <div class="embassy-phone-number"><a href="tel:+525259171970">+52-55-9171-9700</a></div>
+                    </div>
+                    <div class="embassy-address">Campos Elíseos 339, Polanco, Mexico City</div>
+                </div>
+
+                <div class="embassy-card">
+                    <div class="embassy-header">
+                        <div class="embassy-flag">🇩🇪</div>
+                        <div class="embassy-country">Germany</div>
+                    </div>
+                    <div class="embassy-name">German Embassy</div>
+                    <div class="embassy-phone">
+                        <div class="embassy-phone-label">Phone</div>
+                        <div class="embassy-phone-number"><a href="tel:+525252832200">+52-55-5283-2200</a></div>
+                    </div>
+                    <div class="embassy-address">Horacio 1506, Polanco, Mexico City</div>
+                </div>
+
+                <div class="embassy-card">
+                    <div class="embassy-header">
+                        <div class="embassy-flag">🇪🇸</div>
+                        <div class="embassy-country">Spain</div>
+                    </div>
+                    <div class="embassy-name">Spanish Embassy</div>
+                    <div class="embassy-phone">
+                        <div class="embassy-phone-label">Phone</div>
+                        <div class="embassy-phone-number"><a href="tel:+525252822974">+52-55-5282-2974</a></div>
+                    </div>
+                    <div class="embassy-address">Galileo 114, Polanco, Mexico City</div>
+                </div>
+
+                <div class="embassy-card">
+                    <div class="embassy-header">
+                        <div class="embassy-flag">🇦🇺</div>
+                        <div class="embassy-country">Australia</div>
+                    </div>
+                    <div class="embassy-name">Australian Embassy</div>
+                    <div class="embassy-phone">
+                        <div class="embassy-phone-label">Phone</div>
+                        <div class="embassy-phone-number"><a href="tel:+525211012200">+52-55-1101-2200</a></div>
+                    </div>
+                    <div class="embassy-address">Rubén Darío 55, Polanco, Mexico City</div>
+                </div>
+
+                <div class="embassy-card">
+                    <div class="embassy-header">
+                        <div class="embassy-flag">🇮🇹</div>
+                        <div class="embassy-country">Italy</div>
+                    </div>
+                    <div class="embassy-name">Italian Embassy</div>
+                    <div class="embassy-phone">
+                        <div class="embassy-phone-label">Phone</div>
+                        <div class="embassy-phone-number"><a href="tel:+525255963655">+52-55-5596-3655</a></div>
+                    </div>
+                    <div class="embassy-address">Paseo de las Palmas 1994, Lomas de Chapultepec, Mexico City</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Safety Tips Section -->
+        <section>
+            <h2 class="section-title">Important Safety Tips</h2>
+            <div class="safety-tips">
+                <ul class="tips-list">
+                    <li class="tip-item">
+                        <div class="tip-icon">✅</div>
+                        <div class="tip-text"><strong>Save 911 before traveling:</strong> Add Mexico's emergency number to your phone contacts immediately upon arrival.</div>
+                    </li>
+                    <li class="tip-item">
+                        <div class="tip-icon">✅</div>
+                        <div class="tip-text"><strong>Keep your embassy on speed dial:</strong> Critical for passport emergencies, legal issues, or when local authorities can't help.</div>
+                    </li>
+                    <li class="tip-item">
+                        <div class="tip-icon">✅</div>
+                        <div class="tip-text"><strong>Use SECTUR for tourist support:</strong> The 078 line connects you with English-speaking assistance 24/7.</div>
+                    </li>
+                    <li class="tip-item">
+                        <div class="tip-icon">✅</div>
+                        <div class="tip-text"><strong>Look for Policía Turística:</strong> Tourist police in major destinations speak English and patrol tourist zones.</div>
+                    </li>
+                    <li class="tip-item">
+                        <div class="tip-icon">✅</div>
+                        <div class="tip-text"><strong>Screenshot this page:</strong> Save it to your phone for offline access in case you lose service.</div>
+                    </li>
+                    <li class="tip-item">
+                        <div class="tip-icon">✅</div>
+                        <div class="tip-text"><strong>Share with travel companions:</strong> Make sure everyone in your group has these contacts saved.</div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Download Reminder -->
+        <section>
+            <div class="download-reminder">
+                <div class="reminder-title">📲 Download for Offline Access</div>
+                <div class="reminder-text">Screenshot this page or download the MexiGuide app to keep these contacts accessible even without internet connection.</div>
+                <a href="#" class="reminder-cta">Get the App</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer spacing -->
+    <div style="height: 3rem;"></div>
+</body>
+</html>
