@@ -594,7 +594,10 @@
       padding: 20px 14px;
       text-align: center;
       transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
-      cursor: default;
+      cursor: pointer;
+      text-decoration: none;
+      display: block;
+      color: inherit;
     }
     .tool-card:hover {
       transform: translateY(-3px);
@@ -602,6 +605,7 @@
       border-color: var(--jade);
     }
     .tool-emoji { font-size: 28px; margin-bottom: 10px; }
+    .tool-logo { height: 36px; width: auto; max-width: 100px; object-fit: contain; margin: 0 auto 10px; display: block; }
     .tool-name  { font-size: 13px; font-weight: 700; color: var(--text-hi); margin-bottom: 4px; }
     .tool-desc  { font-size: 11px; color: var(--text-lo); line-height: 1.45; }
     .tool-badge {
@@ -1013,36 +1017,36 @@
       <h2 class="s-title">Socios de confianza,<br/>integrados en la app</h2>
       <p class="s-sub">MexiGuide integra los servicios que todo viajero necesita — todos verificados y accesibles con un solo toque desde la app.</p>
       <div class="tools-grid">
-        <div class="tool-card">
+        <a class="tool-card" href="https://airalo.com/mexico-esim?ref=YOUR_REF_CODE" target="_blank" rel="noopener">
           <div class="tool-emoji">📶</div>
           <div class="tool-name">Airalo</div>
           <div class="tool-desc">eSIM para México y 190+ países. Activación instantánea.</div>
           <div class="tool-badge">Desde $5 USD</div>
-        </div>
-        <div class="tool-card">
-          <div class="tool-emoji">🛡️</div>
+        </a>
+        <a class="tool-card" href="https://safetywing.com/?referenceID=26503599&utm_source=26503599&utm_medium=Ambassador" target="_blank" rel="noopener">
+          <img src="/images/safetywing-logo-small.png" alt="SafetyWing" class="tool-logo" />
           <div class="tool-name">SafetyWing</div>
           <div class="tool-desc">Seguro médico de viaje. Inscríbete en 2 minutos.</div>
           <div class="tool-badge">Desde $45 / 4 sem</div>
-        </div>
-        <div class="tool-card">
-          <div class="tool-emoji">💸</div>
+        </a>
+        <a class="tool-card" href="https://wise.prf.hn/click/camref:1011l5FkSn" target="_blank" rel="noopener">
+          <img src="/images/wise-logo.svg" alt="Wise" class="tool-logo" />
           <div class="tool-name">Wise</div>
           <div class="tool-desc">Envía y gasta dinero al tipo de cambio real en todo el mundo.</div>
           <div class="tool-badge">Sin comisiones ocultas</div>
-        </div>
-        <div class="tool-card">
-          <div class="tool-emoji">🔒</div>
+        </a>
+        <a class="tool-card" href="https://go.nordvpn.net/aff_c?offer_id=15&aff_id=144786&url_id=902" target="_blank" rel="noopener">
+          <img src="/images/nordvpn-logo.svg" alt="NordVPN" class="tool-logo" />
           <div class="tool-name">NordVPN</div>
           <div class="tool-desc">Navega seguro en WiFi público en cafés, aeropuertos y hoteles.</div>
           <div class="tool-badge">Desde $3.39/mes</div>
-        </div>
-        <div class="tool-card">
-          <div class="tool-emoji">🏛️</div>
+        </a>
+        <a class="tool-card" href="https://www.getyourguide.com/?partner_id=6LXR1GC8&utm_source=mexiguide&utm_medium=affiliate" target="_blank" rel="noopener">
+          <img src="/images/getyourguide-logo.svg" alt="GetYourGuide" class="tool-logo" />
           <div class="tool-name">GetYourGuide</div>
           <div class="tool-desc">Reserva tours y experiencias en México al instante.</div>
           <div class="tool-badge">Cancelación gratuita</div>
-        </div>
+        </a>
       </div>
     </div>
   </section>
