@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MexiGuide — Account Removal</title>
+  <meta name="description" content="Request removal of your MexiGuide account and associated data." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Merriweather:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --base:       #E8E2DA;
+      --card:       #F5F0EB;
+      --white:      #FFFFFF;
+      --border:     rgba(27,67,50,0.10);
+      --border-hi:  rgba(27,67,50,0.18);
+      --g-darkest:  #0F2419;
+      --g-dark:     #1B4332;
+      --g-mid:      #2D6A4F;
+      --jade:       #4A9E80;
+      --jade-dim:   rgba(74,158,128,0.12);
+      --gold:       #E9C46A;
+      --coral:      #E76F51;
+      --amber:      #F4A261;
+      --teal:       #2A9D8F;
+      --text-hi:    #0F2419;
+      --text-mid:   #4A7A60;
+      --text-lo:    #8AA898;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--base);
+      color: var(--text-hi);
+      line-height: 1.6;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      background: rgba(245,240,235,0.92);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-stripe { height: 3px; background: repeating-linear-gradient(90deg, #E76F51 0px, #E76F51 8px, #F4A261 8px, #F4A261 16px, #2A9D8F 16px, #2A9D8F 24px, #E9C46A 24px, #E9C46A 32px); }
+    .nav-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 32px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+    .nav-logo-mark {
+      width: 34px; height: 34px;
+      background: linear-gradient(135deg, var(--g-dark) 0%, var(--jade) 100%);
+      border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 17px;
+      box-shadow: 0 3px 10px rgba(27,67,50,0.25);
+    }
+    .nav-wordmark {
+      font-family: 'Merriweather', serif;
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--g-dark);
+      letter-spacing: -0.3px;
+    }
+
+    /* ── MAIN CONTENT ── */
+    .content {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 120px 32px 80px;
+    }
+
+    h1 {
+      font-family: 'Merriweather', serif;
+      font-size: 32px;
+      font-weight: 900;
+      color: var(--g-dark);
+      margin-bottom: 12px;
+    }
+
+    .subtitle {
+      font-size: 16px;
+      color: var(--text-mid);
+      margin-bottom: 40px;
+    }
+
+    .card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 32px;
+      margin-bottom: 24px;
+    }
+
+    .card h2 {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--g-dark);
+      margin-bottom: 16px;
+    }
+
+    .card p, .card li {
+      font-size: 15px;
+      color: var(--text-mid);
+      line-height: 1.7;
+    }
+
+    .card ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .card ul li {
+      padding: 8px 0;
+      padding-left: 24px;
+      position: relative;
+    }
+
+    .card ul li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 16px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--coral);
+    }
+
+    .warning-box {
+      background: rgba(231,111,81,0.08);
+      border: 1px solid rgba(231,111,81,0.2);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-top: 16px;
+    }
+
+    .warning-box p {
+      color: var(--coral);
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    /* ── FORM ── */
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--g-dark);
+      margin-bottom: 8px;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%;
+      padding: 12px 16px;
+      border: 1px solid var(--border-hi);
+      border-radius: 10px;
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
+      color: var(--text-hi);
+      background: var(--card);
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      border-color: var(--jade);
+    }
+
+    .form-group textarea {
+      min-height: 100px;
+      resize: vertical;
+    }
+
+    .submit-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--coral);
+      color: white;
+      border: none;
+      padding: 14px 32px;
+      border-radius: 10px;
+      font-family: 'Inter', sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.15s;
+    }
+
+    .submit-btn:hover {
+      background: #d4563d;
+      transform: translateY(-1px);
+    }
+
+    .alt-method {
+      margin-top: 20px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      font-size: 14px;
+      color: var(--text-mid);
+    }
+
+    .alt-method a {
+      color: var(--jade);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .alt-method a:hover {
+      text-decoration: underline;
+    }
+
+    /* ── SUCCESS MESSAGE ── */
+    .success-msg {
+      display: none;
+      background: rgba(74,158,128,0.1);
+      border: 1px solid rgba(74,158,128,0.25);
+      border-radius: 12px;
+      padding: 24px;
+      text-align: center;
+    }
+
+    .success-msg h3 {
+      color: var(--jade);
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .success-msg p {
+      color: var(--text-mid);
+      font-size: 14px;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      text-align: center;
+      padding: 40px 32px;
+      font-size: 13px;
+      color: var(--text-lo);
+    }
+
+    footer a {
+      color: var(--text-mid);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-stripe"></div>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-mark">&#127468;&#127474;</div>
+        <span class="nav-wordmark">MexiGuide</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- CONTENT -->
+  <div class="content">
+    <h1>Account Removal</h1>
+    <p class="subtitle">Request the deletion of your MexiGuide account and all associated data.</p>
+
+    <!-- What gets deleted -->
+    <div class="card">
+      <h2>What happens when you delete your account</h2>
+      <p>When your account removal request is processed, the following data will be permanently deleted:</p>
+      <ul>
+        <li>Your profile information (name, email, profile photo)</li>
+        <li>Saved destinations and travel preferences</li>
+        <li>Bookmarked city guides and favorites</li>
+        <li>App usage history and settings</li>
+        <li>Any other data associated with your account</li>
+      </ul>
+      <div class="warning-box">
+        <p>This action is permanent and cannot be undone. Account removal is typically processed within 7 business days.</p>
+      </div>
+    </div>
+
+    <!-- Request form -->
+    <div class="card" id="form-card">
+      <h2>Request Account Removal</h2>
+
+      <form id="removal-form" onsubmit="handleSubmit(event)">
+        <div class="form-group">
+          <label for="email">Email address associated with your account</label>
+          <input type="email" id="email" name="email" required placeholder="you@example.com" />
+        </div>
+
+        <div class="form-group">
+          <label for="reason">Reason for leaving (optional)</label>
+          <select id="reason" name="reason">
+            <option value="">Select a reason...</option>
+            <option value="no-longer-needed">I no longer need the app</option>
+            <option value="privacy">Privacy concerns</option>
+            <option value="too-many-notifications">Too many notifications</option>
+            <option value="found-alternative">Found an alternative</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="comments">Additional comments (optional)</label>
+          <textarea id="comments" name="comments" placeholder="Let us know if there's anything else..."></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit Removal Request</button>
+      </form>
+
+      <div class="success-msg" id="success-msg">
+        <h3>Request Submitted</h3>
+        <p>We've received your account removal request. Your data will be deleted within 7 business days. You'll receive a confirmation email once the process is complete.</p>
+      </div>
+
+      <div class="alt-method">
+        You can also request account removal by emailing <a href="mailto:support@mexiguide.app">support@mexiguide.app</a> from the email address associated with your account.
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 MexiGuide. All rights reserved. &middot; <a href="index.html">Home</a></p>
+  </footer>
+
+  <script>
+    function handleSubmit(e) {
+      e.preventDefault();
+      document.getElementById('removal-form').style.display = 'none';
+      document.getElementById('success-msg').style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>
