@@ -1,0 +1,10 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.mexiguide.app",
+    "sha256_cert_fingerprints": [
+      "AD:01:85:AA:32:21:D2:BC:71:6C:3D:4C:9B:94:E3:A2:5F:7B:26:44:FB:F1:CA:28:D4:A6:46:F2:87:23:6F:F9"
+    ]
+  }
+}]
