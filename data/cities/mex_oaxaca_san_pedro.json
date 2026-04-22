@@ -114,7 +114,8 @@
     "available_translations": [
       "en",
       "es",
-      "fr"
+      "fr",
+      "pt"
     ]
   },
   "translations": {
@@ -216,6 +217,209 @@
             "category": "Trabajo remoto",
             "description": "Puerto Escondido no es un hub nómada — la conectividad es el mayor desafío. La franja de Zicatela tiene varios cafés con WiFi adecuado para trabajo asíncrono: Café Loup y Third Wave Coffee son los más consistentes. Los cortes de luz ocurren durante la temporada de lluvias. Para videollamadas o grandes cargas, usa la conexión de tu hotel por la mañana cuando el ancho de banda es menor. Un SIM Telcel con plan de datos es esencial — la cobertura de Movistar y AT&T es escasa fuera del centro.",
             "maps_url": "https://maps.app.goo.gl/placeholderPECafe"
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr"
+        ]
+      }
+    },
+    "pt": {
+      "quick_warnings": [
+        "A Praia Zicatela tem algumas das ondas mais perigosas do mundo — NÃO entre na água a menos que você seja um surfista experiente. As correntes de retorno já mataram nadadores fortes.",
+        "Os caixas eletrônicos são escassos e frequentemente estão sem dinheiro — saque dinheiro na Cidade de Oaxaca ou no aeroporto antes de chegar.",
+        "Os mosquitos são intensos durante e depois da temporada de chuvas (jun–out) — leve repelente com DEET."
+      ],
+      "detail_guide": {
+        "getting_around": "Puerto Escondido é um conjunto disperso de praias e bairros distintos espalhados ao longo de vários quilômetros de costa. Os mototáxis (tuk-tuks de três rodas) são a forma padrão e mais econômica de se locomover entre eles — MXN 20–40 por viagem curta. As vans coletivas percorrem a estrada costeira principal. Alugar uma scooter oferece mais flexibilidade para chegar a praias mais tranquilas como Bacocho ou Punta Colorada. Uber não está disponível. O aeroporto fica a 4 km a oeste — apenas táxi, cerca de MXN 150.",
+        "top_sights": [
+          {
+            "id": "sight_zicatela",
+            "name": "Playa Zicatela — O Pipeline Mexicano",
+            "category": "Surfe / Ponto de interesse",
+            "description": "Um dos cinco melhores picos de surfe do mundo — uma praia de quase dois quilômetros com tubos potentes e ocos que regularmente alcançam 5–7 m nos swells de inverno. Um espetáculo impressionante até para quem não surfa: assista da beira da praia ou dos bares na areia. Não entre na água a menos que você seja um surfista avançado. Sede da prestigiada competição Puerto Escondido Cup todo mês de novembro.",
+            "maps_url": "https://maps.app.goo.gl/placeholderZicatela"
+          },
+          {
+            "id": "sight_carrizalillo",
+            "name": "Playa Carrizalillo",
+            "category": "Praia",
+            "description": "A praia mais bonita e adequada para nadar de Puerto Escondido — uma pequena enseada protegida acessível por uma escadaria de 170 degraus, com águas turquesas, claras e calmas, perfeitas para snorkel e para surfistas iniciantes. Fica cheia por volta das 11h; chegue cedo ou volte no fim da tarde. Espreguiçadeiras e guarda-sóis disponíveis para aluguel.",
+            "maps_url": "https://maps.app.goo.gl/placeholderCarrizalillo"
+          },
+          {
+            "id": "sight_laguna_manialtepec",
+            "name": "Laguna de Manialtepec — Tour de Bioluminescência",
+            "category": "Natureza / Aventura",
+            "description": "Uma lagoa costeira a 14 km a oeste da cidade que se ilumina de azul-esverdeado brilhante à noite com plâncton bioluminescente — uma das experiências naturais mais surreais do México. Faça o passeio noturno de caiaque (reserve em qualquer agência em Zicatela; MXN 300–400 por pessoa) para o efeito máximo. Melhor na estação seca (nov–abr), quando a lagoa está menos diluída pela chuva.",
+            "maps_url": "https://maps.app.goo.gl/placeholderManialtepec"
+          },
+          {
+            "id": "sight_punta_zicatela",
+            "name": "Punta Zicatela — Ponto do Pôr do Sol",
+            "category": "Mirante",
+            "description": "O promontório rochoso na ponta sul de Zicatela onde a comunidade do surfe se reúne todas as tardes para ver o pôr do sol. Uma longa fileira de bares de praia e restaurantes de frutos do mar voltados para o oeste — peça uma mezcal, encontre uma cadeira-rede e veja o Pacífico ficar dourado. O melhor espetáculo gratuito da cidade, todas as noites.",
+            "maps_url": "https://maps.app.goo.gl/placeholderPuntaZicatela"
+          },
+          {
+            "id": "sight_mazunte_turtle",
+            "name": "Mazunte e Santuário de Tartarugas",
+            "category": "Ecoturismo",
+            "description": "Um bate-volta de 70 km a oeste pela costa até Mazunte — uma pequena vila praieira hippie com um santuário de tartarugas marinhas (Centro Mexicano de la Tortuga) e praia de roupa opcional. O centro de tartarugas abriga tartarugas-oliva, tartarugas-de-couro e tartarugas-de-pente em piscinas de reabilitação. Combine com uma parada em Zipolite (uma das poucas praias de nudismo legais do México) e em San Agustinillo.",
+            "maps_url": "https://maps.app.goo.gl/placeholderMazunte"
+          }
+        ],
+        "museums": [
+          {
+            "id": "museum_turtle_centre",
+            "name": "Centro Mexicano de la Tortuga (Mazunte)",
+            "category": "Conservação marinha",
+            "description": "O centro nacional mexicano de pesquisa e reabilitação de tartarugas marinhas, localizado na vizinha Mazunte. Veja tartarugas vivas em grandes tanques, conheça o programa de conservação que tirou várias espécies da beira da extinção e — se a época coincidir (jul–dez) — participe de uma caminhada noturna guiada para presenciar um evento de desova em massa na praia. Pequena taxa de entrada; os passeios noturnos guiados precisam ser reservados com antecedência.",
+            "maps_url": "https://maps.app.goo.gl/placeholderCMT"
+          }
+        ],
+        "parks": [
+          {
+            "id": "nature_bacocho",
+            "name": "Playa Bacocho",
+            "category": "Praia / Pôr do sol",
+            "description": "Uma praia selvagem, ampla e batida pelo vento no lado oeste da cidade — agitada demais para nadar, mas espetacular para longas caminhadas ao pôr do sol e para ver pelicanos mergulhando. O penhasco acima abriga vários hotéis de luxo com piscinas de borda infinita. Melhor chegar de mototáxi ou scooter.",
+            "maps_url": "https://maps.app.goo.gl/placeholderBacocho"
+          },
+          {
+            "id": "nature_playa_principal",
+            "name": "Playa Principal e El Adoquín",
+            "category": "Praia / Vida da cidade",
+            "description": "A praia pesqueira original no coração da cidade velha, margeada pela rua de pedestres El Adoquín — a principal faixa de restaurantes, barracas de artesanato e bares de Puerto Escondido. A praia em si é calma o suficiente para nadar de manhã, antes do swell da tarde aumentar. Um bom lugar para ver a frota pesqueira local voltar todos os dias por volta das 7h.",
+            "maps_url": "https://maps.app.goo.gl/placeholderPlayaPrincipal"
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "eat_el_adoquin_tacos",
+            "name": "Taquería El Crucero",
+            "category": "Comida autêntica",
+            "description": "A taqueria noturna mais confiável de El Adoquín — al pastor cortado direto do trompo, tortillas feitas à mão e um balcão de salsas que não brinca em serviço. Aberta até as 2h, o que combina perfeitamente com a rotina da cidade do surfe. Reserve MXN 60–100 para uma refeição completa. Apenas dinheiro.",
+            "maps_url": "https://maps.app.goo.gl/placeholderElCrucero"
+          },
+          {
+            "id": "eat_almoraduz",
+            "name": "Almoraduz",
+            "category": "Alta gastronomia mexicana",
+            "description": "O melhor restaurante para sentar e comer da cidade — um menu criativo com ingredientes regionais oaxaquenhos executado com refinamento, servido em um ambiente relaxado e ao ar livre a uma quadra de Zicatela. A tlayuda com feijão preto, queijo oaxaquenho e cogumelos locais é excepcional. Reservas recomendadas na alta temporada (dez–jan).",
+            "maps_url": "https://maps.app.goo.gl/placeholderAlmoraduz"
+          },
+          {
+            "id": "eat_brisa_marina",
+            "name": "Brisa Marina",
+            "category": "Frutos do mar",
+            "description": "Uma palapa simples à beira-mar na Playa Principal onde os barcos pesqueiros chegam ao amanhecer — o ceviche mais fresco, o pescado zarandeado (grelhado com achiote) e os pratos de camarão grelhado da costa. Apenas almoço. Sente-se nas mesas da frente para ter uma vista direta das ondas e dos pelicanos.",
+            "maps_url": "https://maps.app.goo.gl/placeholderBrisaMarina"
+          },
+          {
+            "id": "work_remote_pe",
+            "name": "Trabalho remoto em Puerto Escondido",
+            "category": "Trabalho remoto",
+            "description": "Puerto Escondido não é um polo de nômades digitais — a conectividade é o maior desafio. A faixa de Zicatela tem alguns cafés com WiFi adequado para trabalho assíncrono: o Café Loup e o Third Wave Coffee são os mais consistentes. Quedas de energia acontecem na temporada de chuvas. Para videochamadas ou uploads grandes, use a conexão do seu hotel pela manhã, quando a banda está menos saturada. Um chip Telcel com plano de dados é essencial — a cobertura da Movistar e da AT&T é fraca fora do centro.",
+            "maps_url": "https://maps.app.goo.gl/placeholderPECafe"
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr",
+          "pt"
+        ]
+      }
+    },
+    "fr": {
+      "quick_warnings": [
+        "Playa Zicatela a certaines des vagues les plus dangereuses au monde — NE vous baignez PAS sauf si vous êtes un surfeur expert. Les courants de retour ont tué des nageurs aguerris.",
+        "Les distributeurs automatiques sont rares et souvent vides — retirez de l'argent à Oaxaca ou à l'aéroport avant d'arriver.",
+        "Les moustiques sont intenses pendant et après la saison des pluies (juin–oct) — apportez un répulsif au DEET."
+      ],
+      "detail_guide": {
+        "getting_around": "Puerto Escondido est une collection dispersée de plages et de quartiers distincts sur plusieurs kilomètres de côte. Les mototaxis (tuk-tuks à trois roues) sont le moyen standard et le plus économique de se déplacer entre eux — 20–40 MXN pour un court trajet. Des colectivos parcourent la route côtière principale. Louer un scooter offre la plus grande flexibilité pour rejoindre des plages plus tranquilles comme Bacocho ou Punta Colorada. Uber n'est pas disponible. L'aéroport est à 4 km à l'ouest — taxi uniquement, environ 150 MXN.",
+        "top_sights": [
+          {
+            "id": "sight_zicatela",
+            "name": "Playa Zicatela — Le Pipeline mexicain",
+            "category": "Surf / Point d'intérêt",
+            "description": "L'un des cinq meilleurs spots de surf au monde — plage d'un mile de long avec de puissants tubes creux qui atteignent régulièrement 5–7 m lors des houles d'hiver. Spectacle impressionnant même pour les non-surfeurs : observez depuis le rivage ou les bars de plage sur le sable. N'entrez pas dans l'eau sauf si vous êtes un surfeur avancé. Accueille la prestigieuse compétition Puerto Escondido Cup chaque novembre."
+          },
+          {
+            "id": "sight_carrizalillo",
+            "name": "Playa Carrizalillo",
+            "category": "Plage",
+            "description": "La plus belle plage de baignade de Puerto Escondido — petite crique protégée accessible par un escalier de 170 marches, aux eaux turquoise claires et calmes parfaites pour le snorkeling et le surf débutant. Saturée dès 11h ; arrivez tôt ou revenez en fin d'après-midi. Transats et parasols à louer."
+          },
+          {
+            "id": "sight_laguna_manialtepec",
+            "name": "Laguna de Manialtepec — Tour de bioluminescence",
+            "category": "Nature / Aventure",
+            "description": "Lagune côtière à 14 km à l'ouest du village qui s'illumine d'un vert-bleu éclatant la nuit grâce au plancton bioluminescent — l'une des expériences naturelles les plus extraordinaires du Mexique. Prenez le tour en kayak nocturne (réservez dans n'importe quelle agence de Zicatela ; 300–400 MXN par personne) pour un effet maximal. Meilleur en saison sèche (nov–avr) quand la lagune est moins diluée par la pluie."
+          },
+          {
+            "id": "sight_punta_zicatela",
+            "name": "Punta Zicatela — Point du coucher de soleil",
+            "category": "Point de vue",
+            "description": "Promontoire rocheux à l'extrémité sud de Zicatela où la communauté des surfeurs se réunit chaque soir pour voir le soleil se coucher. Une longue rangée de bars de plage et de stands de fruits de mer font face à l'ouest — prenez un mezcal, trouvez une chaise hamac et regardez le Pacifique virer à l'or. Le meilleur spectacle gratuit du village, chaque soir."
+          },
+          {
+            "id": "sight_mazunte_turtle",
+            "name": "Mazunte et sanctuaire de tortues",
+            "category": "Écotourisme",
+            "description": "Excursion d'une journée à 70 km à l'ouest le long de la côte jusqu'à Mazunte — petit village hippie de bord de mer avec un sanctuaire de tortues marines (Centro Mexicano de la Tortuga) et une plage au nudisme optionnel. Le centre des tortues abrite tortues olivâtres, luth et caret dans des bassins de réhabilitation. Combinez avec un arrêt à Zipolite (l'une des rares plages nudistes légales du Mexique) et San Agustinillo."
+          }
+        ],
+        "museums": [
+          {
+            "id": "museum_turtle_centre",
+            "name": "Centro Mexicano de la Tortuga (Mazunte)",
+            "category": "Conservation marine",
+            "description": "Centre national mexicain de recherche et de réhabilitation des tortues marines, situé à Mazunte tout près. Voyez des tortues vivantes dans de grands bassins, apprenez-en plus sur le programme de conservation qui a sauvé plusieurs espèces de l'extinction et — si le calendrier coïncide (juil–déc) — rejoignez une marche nocturne guidée pour assister à une ponte massive sur la plage. Petite entrée ; les marches nocturnes guidées doivent être réservées à l'avance."
+          }
+        ],
+        "parks": [
+          {
+            "id": "nature_bacocho",
+            "name": "Playa Bacocho",
+            "category": "Plage / Coucher de soleil",
+            "description": "Plage sauvage, vaste et battue par le vent sur le côté ouest du village — trop forte pour la baignade mais spectaculaire pour de longues promenades au coucher du soleil et observer les pélicans plonger. La falaise au-dessus abrite plusieurs hôtels de luxe avec piscines à débordement. Meilleur accès en mototaxi ou scooter."
+          },
+          {
+            "id": "nature_playa_principal",
+            "name": "Playa Principal et El Adoquín",
+            "category": "Plage / Vie du village",
+            "description": "La plage de pêche originelle au cœur du vieux village, bordée par la rue piétonne El Adoquín — la principale artère de restaurants, stands d'artisanat et bars de Puerto Escondido. La plage est suffisamment calme pour se baigner le matin avant la levée des vagues de l'après-midi. Bon endroit pour voir la flotte de pêche locale rentrer chaque matin vers 7h."
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "eat_el_adoquin_tacos",
+            "name": "Taquería El Crucero",
+            "category": "Cuisine authentique",
+            "description": "Le stand de tacos nocturne le plus fiable d'El Adoquín — al pastor coupé du trompo, tortillas faites maison et une barre de salsas sérieuse. Ouvert jusqu'à 2h du matin, ce qui colle parfaitement à l'horaire du village de surf. Budget 60–100 MXN pour bien manger. Espèces uniquement."
+          },
+          {
+            "id": "eat_almoraduz",
+            "name": "Almoraduz",
+            "category": "Gastronomie mexicaine",
+            "description": "Le meilleur restaurant gastronomique du village — menu créatif d'ingrédients régionaux d'Oaxaca exécuté avec finesse, servi dans un cadre détendu en plein air à une rue de Zicatela. La tlayuda au haricot noir, queso oaxaqueño et champignons locaux est extraordinaire. Réservation conseillée en haute saison (déc–jan)."
+          },
+          {
+            "id": "eat_brisa_marina",
+            "name": "Brisa Marina",
+            "category": "Fruits de mer",
+            "description": "Palapa sans prétention face à la Playa Principal où les bateaux de pêche arrivent à l'aube — le ceviche le plus frais, le pescado zarandeado (grillé au rocou) et les plats de crevettes grillées de la côte. Déjeuner uniquement. Asseyez-vous aux tables avant pour une vue directe sur les vagues et les pélicans."
+          },
+          {
+            "id": "work_remote_pe",
+            "name": "Travail à distance à Puerto Escondido",
+            "category": "Travail à distance",
+            "description": "Puerto Escondido n'est pas un hub nomade — la connectivité est le plus grand défi. La bande de Zicatela compte plusieurs cafés au Wi-Fi adéquat pour le travail asynchrone : Café Loup et Third Wave Coffee sont les plus réguliers. Des coupures de courant surviennent en saison des pluies. Pour les appels vidéo ou les gros transferts, utilisez la connexion de votre hôtel le matin quand la bande passante est moins saturée. Une SIM Telcel avec forfait data est essentielle — la couverture Movistar et AT&T est maigre hors du centre."
           }
         ],
         "available_translations": [

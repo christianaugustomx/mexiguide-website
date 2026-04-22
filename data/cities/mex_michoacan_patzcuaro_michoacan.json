@@ -79,7 +79,8 @@
     "available_translations": [
       "en",
       "es",
-      "fr"
+      "fr",
+      "pt"
     ]
   },
   "translations": {
@@ -146,6 +147,144 @@
             "category": "comida callejera",
             "description": "Pátzcuaro es famoso por su nieve de pasta en sabores como zarzamora, durazno y mamey — encuéntrala alrededor de las plazas.",
             "maps_url": ""
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr"
+        ]
+      }
+    },
+    "pt": {
+      "quick_warnings": [
+        "Michoacán tem preocupações de segurança fora dos corredores turísticos — viaje apenas por rodovias principais durante o dia.",
+        "O Dia dos Mortos na Isla Janitzio é mundialmente famoso, mas extremamente lotado; reserve hospedagem com meses de antecedência.",
+        "O lago está a 2.035 m de altitude e as noites são frias — leve roupas de frio."
+      ],
+      "detail_guide": {
+        "getting_around": "O centro colonial de Pátzcuaro é pequeno e dá para percorrer a pé. As combis (vans compartilhadas) vão até os povoados à beira do lago e à rodovia para Morelia. Os barcos para a Isla de Janitzio saem do Embarcadero General. Há táxis disponíveis para ir a cidades próximas. O aeroporto MLM fica a cerca de 1 hora via Morelia.",
+        "top_sights": [
+          {
+            "id": "pat_janitzio",
+            "name": "Isla de Janitzio",
+            "category": "ponto turístico / cultura",
+            "description": "Uma pequena ilha no Lago de Pátzcuaro coroada por uma estátua gigante de Morelos, famosa por seus pescadores de rede borboleta e pelas cerimônias do Dia dos Mortos.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Isla+Janitzio,+P%C3%A1tzcuaro,+Mexico"
+          },
+          {
+            "id": "pat_basilica",
+            "name": "Basílica de Nuestra Señora de la Salud",
+            "category": "ponto turístico",
+            "description": "Uma basílica do século XVI que abriga uma venerada Virgem feita de pasta de cana de milho, com vista para o lago e as montanhas ao redor.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Bas%C3%ADlica+de+Nuestra+Se%C3%B1ora+de+la+Salud,+P%C3%A1tzcuaro,+Mexico"
+          },
+          {
+            "id": "pat_plaza_vasco",
+            "name": "Plaza Vasco de Quiroga",
+            "category": "ponto turístico",
+            "description": "Uma das maiores e mais bonitas praças da América Latina, cercada por casarões coloniais, cafés e lojas de artesanato.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Plaza+Vasco+de+Quiroga,+P%C3%A1tzcuaro,+Mexico"
+          }
+        ],
+        "museums": [
+          {
+            "id": "pat_museo_artes_populares",
+            "name": "Museo de Artes e Industrias Populares",
+            "category": "museu",
+            "description": "Um antigo colégio que exibe as ricas tradições de arte popular de Michoacán: lacas, cerâmica, têxteis e máscaras.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Museo+de+Artes+e+Industrias+Populares,+P%C3%A1tzcuaro,+Mexico"
+          }
+        ],
+        "parks": [
+          {
+            "id": "pat_cerro_estribo",
+            "name": "Cerro del Estribo Grande",
+            "category": "mirante / natureza",
+            "description": "Um mirante no topo de um morro, alcançado por mais de 400 degraus de pedra, com vistas panorâmicas amplas do lago e da cidade.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Cerro+del+Estribo+Grande,+P%C3%A1tzcuaro,+Mexico"
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "pat_white_fish",
+            "name": "Restaurante El Primer Piso",
+            "category": "restaurante",
+            "description": "Restaurante no segundo andar com vista para a praça principal; experimente os charales (pequenos peixes do lago) e a sopa tarasca, uma sopa defumada de tortilla.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Restaurante+El+Primer+Piso,+P%C3%A1tzcuaro,+Mexico"
+          },
+          {
+            "id": "pat_nieve",
+            "name": "Nieves de Pasta (Sorvete Artesanal)",
+            "category": "comida de rua",
+            "description": "Pátzcuaro é famosa pelo sorvete estilo pasta em sabores como amora, pêssego e mamey — você encontra ao redor das praças.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Nieves+de+Pasta+%28Artisan+Ice+Cream%29,+P%C3%A1tzcuaro,+Mexico"
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr",
+          "pt"
+        ]
+      }
+    },
+    "fr": {
+      "quick_warnings": [
+        "Le Michoacán a des préoccupations de sécurité hors des corridors touristiques — voyagez uniquement sur les routes principales de jour.",
+        "Le Jour des Morts sur l'île de Janitzio est mondialement célèbre mais extrêmement fréquenté ; réservez votre hébergement plusieurs mois à l'avance.",
+        "Le lac est à 2 035 m d'altitude et les nuits sont fraîches — apportez des vêtements chauds."
+      ],
+      "detail_guide": {
+        "getting_around": "Le centre colonial de Pátzcuaro est petit et se parcourt à pied. Les combis (minibus partagés) desservent les villages au bord du lac et la route de Morelia. Les bateaux pour l'île de Janitzio partent de l'Embarcadero General. Des taxis sont disponibles pour les villages voisins. L'aéroport MLM est à ~1 heure via Morelia.",
+        "top_sights": [
+          {
+            "id": "pat_janitzio",
+            "name": "Isla Janitzio",
+            "category": "monument / culture",
+            "description": "Petite île sur le lac de Pátzcuaro couronnée par une statue géante de Morelos, célèbre pour ses pêcheurs à filet-papillon et les cérémonies du Jour des Morts."
+          },
+          {
+            "id": "pat_basilica",
+            "name": "Basilique Notre-Dame de la Salud",
+            "category": "monument",
+            "description": "Basilique du XVIe siècle abritant une vénérée Vierge en pâte de rafle de maïs, avec vue sur le lac et les montagnes environnantes."
+          },
+          {
+            "id": "pat_plaza_vasco",
+            "name": "Plaza Vasco de Quiroga",
+            "category": "monument",
+            "description": "L'une des plus grandes et belles places d'Amérique latine, entourée de demeures coloniales, cafés et boutiques artisanales."
+          }
+        ],
+        "museums": [
+          {
+            "id": "pat_museo_artes_populares",
+            "name": "Musée des arts et industries populaires",
+            "category": "musée",
+            "description": "Ancien collège exposant les riches traditions d'art populaire du Michoacán : laques, céramique, textiles et masques."
+          }
+        ],
+        "parks": [
+          {
+            "id": "pat_cerro_estribo",
+            "name": "Cerro del Estribo Grande",
+            "category": "point de vue / nature",
+            "description": "Belvédère au sommet d'une colline accessible par plus de 400 marches de pierre, avec vues panoramiques sur le lac et le village."
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "pat_white_fish",
+            "name": "Restaurant El Primer Piso",
+            "category": "restaurant",
+            "description": "Salle à l'étage au-dessus de la place principale ; goûtez les charales (petits poissons du lac) et la sopa tarasca, soupe fumée à la tortilla."
+          },
+          {
+            "id": "pat_nieve",
+            "name": "Nieves de Pasta (glace artisanale)",
+            "category": "street food",
+            "description": "Pátzcuaro est réputé pour sa nieve de pasta aux parfums comme mûre, pêche et mamey — à trouver autour des places."
           }
         ],
         "available_translations": [

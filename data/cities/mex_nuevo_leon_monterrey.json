@@ -4,8 +4,8 @@
   "state": "Nuevo León",
   "has_detailed_guide": true,
   "security": {
-    "level": 3,
-    "label": "Moderado / Moderate"
+    "level": 2,
+    "label": "Seguro / Safe"
   },
   "quick_stats": {
     "best_time": "Oct – Nov & Mar – May",
@@ -100,7 +100,8 @@
     "available_translations": [
       "en",
       "es",
-      "fr"
+      "fr",
+      "pt"
     ]
   },
   "translations": {
@@ -188,6 +189,183 @@
             "category": "Coworking",
             "description": "Espacio de trabajo premium en el corazón del distrito corporativo. Ideal para networking, reuniones con clientes e internet de alta velocidad confiable.",
             "maps_url": "https://maps.app.goo.gl/placeholder18"
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr"
+        ]
+      }
+    },
+    "pt": {
+      "quick_warnings": [
+        "Extremamente dependente de carro — não planeje caminhar entre os principais bairros.",
+        "As temperaturas no verão frequentemente ultrapassam 40°C (104°F). Hidratação e ar-condicionado são obrigatórios.",
+        "Use exclusivamente Uber ou DiDi — evite táxis sem identificação, especialmente à noite."
+      ],
+      "detail_guide": {
+        "getting_around": "Uber e DiDi são o padrão-ouro aqui. Alugar um carro também é viável se suas reuniões estiverem espalhadas pela região metropolitana. O transporte público existe, mas não é prático para visitantes de negócios em estadias curtas.",
+        "top_sights": [
+          {
+            "id": "sight_santa_lucia",
+            "name": "Paseo Santa Lucía",
+            "category": "Passeio urbano",
+            "description": "Um impressionante rio artificial de 2,5 km que conecta a Macroplaza ao Parque Fundidora. Melhor percorrer a pé ou de barco ao pôr do sol.",
+            "maps_url": "https://maps.app.goo.gl/placeholder11"
+          },
+          {
+            "id": "sight_marco",
+            "name": "MARCO (Museo de Arte Contemporáneo)",
+            "category": "Museu",
+            "description": "Um dos museus de arte contemporânea mais importantes da América Latina, reconhecível pela gigantesca escultura de pomba de bronze na entrada.",
+            "maps_url": "https://maps.app.goo.gl/placeholder12"
+          },
+          {
+            "id": "sight_macroplaza",
+            "name": "La Macroplaza",
+            "category": "História",
+            "description": "A enorme praça central cercada por edifícios históricos, monumentos e museus. O coração cívico da cidade.",
+            "maps_url": "https://maps.app.goo.gl/placeholder13"
+          }
+        ],
+        "museums": [
+          {
+            "id": "museum_marco",
+            "name": "MARCO",
+            "category": "Arte contemporânea",
+            "description": "Museo de Arte Contemporáneo de Monterrey — uma das principais instituições de arte contemporânea da América Latina. Exposições internacionais rotativas.",
+            "maps_url": "https://maps.app.goo.gl/placeholder12"
+          },
+          {
+            "id": "museum_historia_mexicana",
+            "name": "Museo de Historia Mexicana",
+            "category": "História",
+            "description": "Cobre a história mexicana desde a era pré-colombiana até o presente. Localizado no complexo da Macroplaza, fácil de combinar com uma visita à praça.",
+            "maps_url": "https://maps.app.goo.gl/placeholderMHM"
+          }
+        ],
+        "parks": [
+          {
+            "id": "nature_fundidora",
+            "name": "Parque Fundidora",
+            "category": "Parque urbano",
+            "description": "Um enorme parque público construído sobre uma histórica fundição de aço. Ótimo para corrida, ciclismo e fotografia industrial. Recebe grandes eventos durante todo o ano.",
+            "maps_url": "https://maps.app.goo.gl/placeholder14"
+          },
+          {
+            "id": "nature_chipinque",
+            "name": "Parque Chipinque",
+            "category": "Trilhas e Vistas",
+            "description": "Parque de montanha com trilhas e vistas panorâmicas espetaculares de toda a paisagem urbana de Monterrey. Melhor visitar logo cedo pela manhã para fugir do calor.",
+            "maps_url": "https://maps.app.goo.gl/placeholder15"
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "eat_san_pedro",
+            "name": "San Pedro Garza García",
+            "category": "Alta gastronomia",
+            "description": "O município mais rico do México. Vá até lá para steakhouses premium, cozinha internacional e jantares corporativos. Paseo de Los Leones é a principal avenida.",
+            "maps_url": "https://maps.app.goo.gl/placeholder16"
+          },
+          {
+            "id": "eat_cabrito",
+            "name": "El Rey del Cabrito",
+            "category": "Comida autêntica",
+            "description": "Uma instituição local para o prato mais icônico de Monterrey: cabrito al pastor (cabrito assado). Nenhuma viagem de negócios está completa sem prová-lo.",
+            "maps_url": "https://maps.app.goo.gl/placeholder17"
+          },
+          {
+            "id": "work_wework_san_pedro",
+            "name": "WeWork San Pedro",
+            "category": "Coworking",
+            "description": "Espaço de trabalho premium no coração do distrito corporativo. Ideal para networking, reuniões com clientes e internet de alta velocidade confiável.",
+            "maps_url": "https://maps.app.goo.gl/placeholder18"
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr",
+          "pt"
+        ]
+      }
+    },
+    "fr": {
+      "quick_warnings": [
+        "Extrêmement dépendant de la voiture — ne prévoyez pas de marcher entre les principaux quartiers.",
+        "Les températures estivales dépassent fréquemment 40 °C. Hydratation et climatisation sont obligatoires.",
+        "Utilisez exclusivement Uber ou DiDi — évitez les taxis non identifiés, surtout la nuit."
+      ],
+      "detail_guide": {
+        "getting_around": "Uber et DiDi sont la norme ici. Louer une voiture est également viable si vos réunions sont dispersées dans l'agglomération. Les transports publics existent mais ne sont pas pratiques pour les visiteurs d'affaires en court séjour.",
+        "top_sights": [
+          {
+            "id": "sight_santa_lucia",
+            "name": "Paseo Santa Lucía",
+            "category": "Promenade urbaine",
+            "description": "Impressionnante rivière artificielle de 2,5 km reliant la Macroplaza au Parque Fundidora. À découvrir à pied ou en bateau au coucher du soleil."
+          },
+          {
+            "id": "sight_marco",
+            "name": "MARCO (Musée d'art contemporain)",
+            "category": "Musée",
+            "description": "L'un des plus importants musées d'art contemporain d'Amérique latine, reconnaissable à la gigantesque sculpture de colombe en bronze à l'entrée."
+          },
+          {
+            "id": "sight_macroplaza",
+            "name": "La Macroplaza",
+            "category": "Histoire",
+            "description": "Énorme place centrale entourée de bâtiments historiques, monuments et musées. Le cœur civique de la ville."
+          }
+        ],
+        "museums": [
+          {
+            "id": "museum_marco",
+            "name": "MARCO",
+            "category": "Art contemporain",
+            "description": "Musée d'art contemporain de Monterrey — l'une des principales institutions d'art contemporain d'Amérique latine. Expositions internationales tournantes."
+          },
+          {
+            "id": "museum_historia_mexicana",
+            "name": "Musée d'histoire mexicaine",
+            "category": "Histoire",
+            "description": "Couvre l'histoire mexicaine de l'époque précolombienne à nos jours. Situé dans le complexe de la Macroplaza, facile à combiner avec une visite de la place."
+          }
+        ],
+        "parks": [
+          {
+            "id": "nature_fundidora",
+            "name": "Parque Fundidora",
+            "category": "Parc urbain",
+            "description": "Immense parc public bâti sur une ancienne aciérie historique. Excellent pour la course, le vélo et la photographie industrielle. Accueille de grands événements tout au long de l'année."
+          },
+          {
+            "id": "nature_chipinque",
+            "name": "Parc écologique Chipinque",
+            "category": "Randonnée et vues",
+            "description": "Parc de montagne avec sentiers et vues panoramiques spectaculaires sur toute la ligne urbaine de Monterrey. À visiter tôt le matin pour éviter la chaleur."
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "eat_san_pedro",
+            "name": "San Pedro Garza García",
+            "category": "Gastronomie",
+            "description": "La municipalité la plus riche du Mexique. Rendez-vous ici pour des steakhouses premium, cuisine internationale et dîners d'affaires. Paseo de Los Leones est l'artère principale."
+          },
+          {
+            "id": "eat_cabrito",
+            "name": "El Rey del Cabrito",
+            "category": "Cuisine authentique",
+            "description": "Institution locale pour le plat le plus emblématique de Monterrey : le cabrito al pastor (chevreau rôti). Aucun voyage d'affaires n'est complet sans y goûter."
+          },
+          {
+            "id": "work_wework_san_pedro",
+            "name": "WeWork San Pedro",
+            "category": "Coworking",
+            "description": "Espace de travail premium au cœur du quartier d'affaires. Idéal pour le networking, les réunions clients et un internet haut débit fiable."
           }
         ],
         "available_translations": [

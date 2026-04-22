@@ -86,7 +86,8 @@
     "available_translations": [
       "en",
       "es",
-      "fr"
+      "fr",
+      "pt"
     ]
   },
   "translations": {
@@ -160,6 +161,157 @@
             "category": "cafetería",
             "description": "Un favorito local para café cultivado en Michoacán, churros y ver pasar a la gente desde los portales.",
             "maps_url": ""
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr"
+        ]
+      }
+    },
+    "pt": {
+      "quick_warnings": [
+        "Permaneça dentro do centro histórico e das áreas turísticas estabelecidas; evite dirigir por estradas rurais à noite.",
+        "Morelia é uma cidade universitária — o centro é animado, mas pode ficar barulhento nos fins de semana.",
+        "As celebrações do Dia dos Mortos (final de outubro/início de novembro) são espetaculares, mas reserve hospedagem com meses de antecedência."
+      ],
+      "detail_guide": {
+        "getting_around": "O centro histórico de cantera rosa é caminhável e amigável para pedestres. Ônibus urbanos e táxis cobrem a região metropolitana. O Uber está disponível. O aeroporto MLM fica a ~30 minutos do centro. A ADO e outras linhas de ônibus conectam à Cidade do México (~4 h), Pátzcuaro (~1 h) e Guadalajara (~3,5 h).",
+        "top_sights": [
+          {
+            "id": "mor_cathedral",
+            "name": "Catedral de Morelia",
+            "category": "monumento",
+            "description": "Uma imponente catedral barroca do século XVIII feita em cantera rosa, com um ornamentado órgão de tubos e dramática iluminação noturna.",
+            "maps_url": ""
+          },
+          {
+            "id": "mor_aqueduct",
+            "name": "Acueducto de Morelia",
+            "category": "monumento",
+            "description": "Um elegante aqueduto de 253 arcos de 1789 que percorre 1,7 km pela cidade, especialmente lindo quando iluminado à noite.",
+            "maps_url": ""
+          },
+          {
+            "id": "mor_callejón_romance",
+            "name": "Callejón del Romance",
+            "category": "cultura",
+            "description": "Um charmoso beco com placas trazendo poemas românticos incrustados nas paredes de cantera rosa — um passeio noturno favorito.",
+            "maps_url": ""
+          }
+        ],
+        "museums": [
+          {
+            "id": "mor_museo_colonial",
+            "name": "Museo del Virreinato (Palacio Clavijero)",
+            "category": "museu",
+            "description": "Antigo colégio jesuíta com um grande pátio, que abriga exposições rotativas de arte colonial e contemporânea.",
+            "maps_url": ""
+          }
+        ],
+        "parks": [
+          {
+            "id": "mor_bosque_cuauhtemoc",
+            "name": "Bosque Cuauhtémoc",
+            "category": "parque",
+            "description": "Um parque urbano arborizado ao lado do aqueduto, popular para corridas matinais e passeios em família nos fins de semana.",
+            "maps_url": ""
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "mor_gazpacho",
+            "name": "Gazpachos y Nieves del Centro",
+            "category": "comida de rua",
+            "description": "Experimente o gazpacho moreliano — um copo de frutas com jícama, manga, abacaxi, queijo e pimenta — nas barracas da praça.",
+            "maps_url": ""
+          },
+          {
+            "id": "mor_lu",
+            "name": "Lu Cocina Michoacana",
+            "category": "restaurante",
+            "description": "Cozinha michoacana sofisticada que apresenta carnitas, corundas e uchepos em um ambiente contemporâneo.",
+            "maps_url": ""
+          },
+          {
+            "id": "mor_cafe_michelena",
+            "name": "Café Michelena",
+            "category": "cafeteria",
+            "description": "Um favorito local para café cultivado em Michoacán, churros e observar as pessoas nos portales.",
+            "maps_url": ""
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr",
+          "pt"
+        ]
+      }
+    },
+    "fr": {
+      "quick_warnings": [
+        "Restez dans le centre historique et les zones touristiques établies ; évitez de conduire sur les routes rurales la nuit.",
+        "Morelia est une ville universitaire — le centre est animé mais peut devenir bruyant le week-end.",
+        "Les célébrations du Jour des Morts (fin octobre/début novembre) sont spectaculaires, mais réservez un hébergement plusieurs mois à l'avance."
+      ],
+      "detail_guide": {
+        "getting_around": "Le centre historique en pierre rose se parcourt à pied et est piétonnier. Bus urbains et taxis couvrent l'agglomération. Uber est disponible. L'aéroport MLM est à ~30 minutes du centre. ADO et d'autres compagnies de bus relient Mexico (~4 h), Pátzcuaro (~1 h) et Guadalajara (~3h30).",
+        "top_sights": [
+          {
+            "id": "mor_cathedral",
+            "name": "Cathédrale de Morelia",
+            "category": "monument",
+            "description": "Imposante cathédrale baroque du XVIIIe siècle en pierre rose, avec un orgue à tuyaux orné et un éclairage nocturne spectaculaire."
+          },
+          {
+            "id": "mor_aqueduct",
+            "name": "Aqueduc de Morelia",
+            "category": "monument",
+            "description": "Élégant aqueduc de 253 arches datant de 1789 qui parcourt 1,7 km à travers la ville, particulièrement beau illuminé la nuit."
+          },
+          {
+            "id": "mor_callejón_romance",
+            "name": "Callejón del Romance",
+            "category": "culture",
+            "description": "Charmante ruelle avec des plaques portant des poèmes romantiques incrustées dans les murs de pierre rose — une promenade nocturne favorite."
+          }
+        ],
+        "museums": [
+          {
+            "id": "mor_museo_colonial",
+            "name": "Musée de la vice-royauté (Palacio Clavijero)",
+            "category": "musée",
+            "description": "Ancien collège jésuite avec une grande cour, abritant des expositions tournantes d'art colonial et contemporain."
+          }
+        ],
+        "parks": [
+          {
+            "id": "mor_bosque_cuauhtemoc",
+            "name": "Bosque Cuauhtémoc",
+            "category": "parc",
+            "description": "Parc urbain arboré près de l'aqueduc, apprécié pour la course matinale et les promenades familiales du week-end."
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "mor_gazpacho",
+            "name": "Gazpachos y Nieves del Centro",
+            "category": "street food",
+            "description": "Goûtez le gazpacho de Morelia — un verre de fruits avec jícama, mangue, ananas, fromage et piment — aux stands de la place."
+          },
+          {
+            "id": "mor_lu",
+            "name": "Lu Cocina Michoacana",
+            "category": "restaurant",
+            "description": "Cuisine d'auteur du Michoacán mettant en avant carnitas, corundas et uchepos dans un cadre contemporain."
+          },
+          {
+            "id": "mor_cafe_michelena",
+            "name": "Café Michelena",
+            "category": "café",
+            "description": "Adresse locale favorite pour le café cultivé au Michoacán, les churros et l'observation des passants depuis les arcades."
           }
         ],
         "available_translations": [

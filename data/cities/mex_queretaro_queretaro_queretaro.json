@@ -93,7 +93,8 @@
     "available_translations": [
       "en",
       "es",
-      "fr"
+      "fr",
+      "pt"
     ]
   },
   "translations": {
@@ -174,6 +175,170 @@
             "category": "cafetería / cowork",
             "description": "Popular cafetería de especialidad en el centro con Wi-Fi rápido, un área tranquila en el piso de arriba y excelente repostería.",
             "maps_url": ""
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr"
+        ]
+      }
+    },
+    "pt": {
+      "quick_warnings": [
+        "A cidade fica a 1.800 m de altitude — espere noites frescas e sol forte durante o dia.",
+        "Querétaro é um polo de tecnologia em ascensão; os preços de restaurantes e hotéis subiram bastante nos últimos anos.",
+        "O trânsito pode ser intenso nos horários de pico; o centro histórico é melhor explorado a pé."
+      ],
+      "detail_guide": {
+        "getting_around": "O centro histórico, declarado Patrimônio Mundial pela UNESCO, é caminhável, com amplas praças e ruas de pedestres. Ônibus urbanos e Uber estão amplamente disponíveis. O aeroporto QRO fica a apenas 30 minutos do centro. A cidade está a 2,5 horas de carro da Cidade do México.",
+        "top_sights": [
+          {
+            "id": "qro_aqueduct",
+            "name": "Acueducto de Querétaro",
+            "category": "monumento",
+            "description": "Um icônico aqueduto do século XVIII com 74 arcos que se estendem por 1,3 km — o símbolo mais reconhecível da cidade, lindamente iluminado à noite.",
+            "maps_url": ""
+          },
+          {
+            "id": "qro_templo_santa_cruz",
+            "name": "Templo y Convento de la Santa Cruz",
+            "category": "monumento",
+            "description": "Convento histórico famoso por uma árvore em seu pátio que produz espinhos em formato de cruz, e por suas vistas panorâmicas da cidade.",
+            "maps_url": ""
+          },
+          {
+            "id": "qro_peña_bernal",
+            "name": "Peña de Bernal (passeio de um dia)",
+            "category": "natureza / monumento",
+            "description": "O terceiro maior monólito do mundo, a 40 minutos da cidade, com trilhas de caminhada e um charmoso Pueblo Mágico aos seus pés.",
+            "maps_url": ""
+          }
+        ],
+        "museums": [
+          {
+            "id": "qro_museo_arte",
+            "name": "Museo de Arte de Querétaro",
+            "category": "museu",
+            "description": "Impressionante antigo monastério barroco que abriga coleções de arte europeia e mexicana em salões com entalhes ornamentados.",
+            "maps_url": ""
+          }
+        ],
+        "parks": [
+          {
+            "id": "qro_alameda",
+            "name": "Alameda Hidalgo",
+            "category": "parque",
+            "description": "Parque central arborizado, popular para corridas matinais, feiras de fim de semana e passeios em família, ao lado da cidade antiga.",
+            "maps_url": ""
+          },
+          {
+            "id": "qro_mirador_cimatario",
+            "name": "Parque Natural Cimatario",
+            "category": "natureza",
+            "description": "Reserva natural nas colinas, na borda da cidade, com trilhas para caminhada e mountain bike e vistas do vale.",
+            "maps_url": ""
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "qro_mercado_cruz",
+            "name": "Mercado de la Cruz",
+            "category": "mercado de comida",
+            "description": "Mercado tradicional com gorditas, enchiladas queretanas e sucos frescos a preços acessíveis.",
+            "maps_url": ""
+          },
+          {
+            "id": "qro_1810",
+            "name": "1810 Restaurante",
+            "category": "restaurante",
+            "description": "Alta gastronomia mexicana em um prédio histórico do centro, com menus degustação que destacam os vinhos de Querétaro.",
+            "maps_url": ""
+          },
+          {
+            "id": "qro_cafe_breton",
+            "name": "Café Bretón",
+            "category": "cafeteria / cowork",
+            "description": "Popular cafeteria de cafés especiais no centro, com Wi-Fi rápido, uma área silenciosa no andar de cima e excelentes confeitarias.",
+            "maps_url": ""
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr",
+          "pt"
+        ]
+      }
+    },
+    "fr": {
+      "quick_warnings": [
+        "La ville est à 1 800 m d'altitude — attendez-vous à des nuits fraîches et à un soleil fort en journée.",
+        "Querétaro est un pôle technologique en plein essor ; les prix des restaurants et hôtels ont considérablement augmenté ces dernières années.",
+        "Le trafic peut être intense aux heures de pointe ; le centre historique se parcourt mieux à pied."
+      ],
+      "detail_guide": {
+        "getting_around": "Le centre historique, inscrit au patrimoine mondial de l'UNESCO, se parcourt à pied avec de vastes places et rues piétonnes. Bus urbains et Uber sont largement disponibles. L'aéroport QRO est à seulement 30 minutes du centre. La ville est à 2h30 de route de Mexico.",
+        "top_sights": [
+          {
+            "id": "qro_aqueduct",
+            "name": "Aqueduc de Querétaro",
+            "category": "monument",
+            "description": "Emblématique aqueduc du XVIIIe siècle de 74 arches s'étendant sur 1,3 km — le symbole le plus reconnaissable de la ville, joliment illuminé la nuit."
+          },
+          {
+            "id": "qro_templo_santa_cruz",
+            "name": "Temple et couvent de la Santa Cruz",
+            "category": "monument",
+            "description": "Couvent historique célèbre pour un arbre dans sa cour qui produit des épines en forme de croix, et vues panoramiques sur la ville."
+          },
+          {
+            "id": "qro_peña_bernal",
+            "name": "Peña de Bernal (excursion d'une journée)",
+            "category": "nature / monument",
+            "description": "Troisième plus grand monolithe au monde, à 40 minutes de la ville, avec sentiers et un charmant Pueblo Mágico à ses pieds."
+          }
+        ],
+        "museums": [
+          {
+            "id": "qro_museo_arte",
+            "name": "Musée d'art de Querétaro",
+            "category": "musée",
+            "description": "Impressionnant ancien monastère baroque abritant des collections d'art européen et mexicain dans des salles à la sculpture ornementée."
+          }
+        ],
+        "parks": [
+          {
+            "id": "qro_alameda",
+            "name": "Alameda Hidalgo",
+            "category": "parc",
+            "description": "Parc central arboré apprécié pour la course matinale, les marchés du week-end et les promenades familiales, adjacent à la vieille ville."
+          },
+          {
+            "id": "qro_mirador_cimatario",
+            "name": "Parc naturel Cimatario",
+            "category": "nature",
+            "description": "Réserve naturelle dans les collines en bordure de ville avec sentiers de randonnée, VTT et vues sur la vallée."
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "qro_mercado_cruz",
+            "name": "Mercado de la Cruz",
+            "category": "marché alimentaire",
+            "description": "Marché traditionnel avec gorditas, enchiladas queretanas et jus frais à prix abordables."
+          },
+          {
+            "id": "qro_1810",
+            "name": "1810 Restaurante",
+            "category": "restaurant",
+            "description": "Gastronomie mexicaine dans un édifice historique du centre avec menus de dégustation mettant en valeur les vins de Querétaro."
+          },
+          {
+            "id": "qro_cafe_breton",
+            "name": "Café Bretón",
+            "category": "café / cowork",
+            "description": "Café de spécialité populaire du centre avec Wi-Fi rapide, zone calme à l'étage et excellentes pâtisseries."
           }
         ],
         "available_translations": [

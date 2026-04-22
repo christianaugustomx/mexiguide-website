@@ -86,7 +86,8 @@
     "available_translations": [
       "en",
       "es",
-      "fr"
+      "fr",
+      "pt"
     ]
   },
   "translations": {
@@ -160,6 +161,157 @@
             "category": "cafetería",
             "description": "Cafetería luminosa con buen espresso, smoothies y Wi-Fi — un lugar confiable para nómadas digitales.",
             "maps_url": ""
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr"
+        ]
+      }
+    },
+    "pt": {
+      "quick_warnings": [
+        "O aeroporto de Mérida (MID) fica a ~2 horas a oeste; Cancún (CUN) a ~2 horas a leste — escolha conforme seu itinerário.",
+        "O calor e a umidade são intensos de maio a setembro; leve água e planeje visitas aos cenotes ao meio-dia para se refrescar.",
+        "Chichén Itzá fica a apenas 40 min, mas lota depois das 10h — vá na abertura para ter a melhor experiência."
+      ],
+      "detail_guide": {
+        "getting_around": "Valladolid é uma cidade colonial compacta, fácil de explorar a pé ou de bicicleta. Os colectivos vão até cenotes próximos e Chichén Itzá. Os ônibus da ADO conectam com Mérida e Cancún. Os táxis são baratos para trajetos curtos pela cidade.",
+        "top_sights": [
+          {
+            "id": "val_cenote_zaci",
+            "name": "Cenote Zací",
+            "category": "natureza",
+            "description": "Um grande cenote aberto bem no centro da cidade, com saliência de caverna, estalactites e acesso para nadar.",
+            "maps_url": ""
+          },
+          {
+            "id": "val_convent_san_bernardino",
+            "name": "Convento de San Bernardino de Siena",
+            "category": "ponto turístico",
+            "description": "Uma das igrejas mais antigas de Yucatán (1552), com mosteiro, jardins e um espetáculo de luzes à noite.",
+            "maps_url": ""
+          },
+          {
+            "id": "val_cenote_suytun",
+            "name": "Cenote Suytún",
+            "category": "natureza",
+            "description": "Um fotogênico cenote subterrâneo com uma plataforma circular de pedra e um feixe de luz que atravessa o teto.",
+            "maps_url": ""
+          }
+        ],
+        "museums": [
+          {
+            "id": "val_museo_san_roque",
+            "name": "Museo de San Roque",
+            "category": "museu",
+            "description": "Pequeno museu em uma antiga igreja que conta a história colonial de Valladolid e a Guerra das Castas de Yucatán.",
+            "maps_url": ""
+          }
+        ],
+        "parks": [
+          {
+            "id": "val_parque_francisco_canton",
+            "name": "Parque Francisco Cantón Rosado",
+            "category": "praça principal",
+            "description": "A praça principal cercada por coloridos edifícios coloniais, a catedral e vendedores de petiscos locais.",
+            "maps_url": ""
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "val_bazar_municipal",
+            "name": "Bazar Municipal",
+            "category": "mercado de comida",
+            "description": "Mercado coberto na praça principal que serve pratos yucatecas autênticos como salbutes, panuchos e Lomitos de Valladolid.",
+            "maps_url": ""
+          },
+          {
+            "id": "val_yerbabuena",
+            "name": "Yerbabuena del Sisal",
+            "category": "restaurante",
+            "description": "Restaurante com jardim em um pátio colonial, com versões criativas da culinária yucateca e mezcal artesanal.",
+            "maps_url": ""
+          },
+          {
+            "id": "val_squimz",
+            "name": "Squimz Cafe",
+            "category": "café",
+            "description": "Café claro e arejado com bom espresso, smoothies e Wi-Fi — um lugar confiável para nômades digitais.",
+            "maps_url": ""
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr",
+          "pt"
+        ]
+      }
+    },
+    "fr": {
+      "quick_warnings": [
+        "L'aéroport de Mérida (MID) est à ~2 h à l'ouest ; Cancún (CUN) à ~2 h à l'est — choisissez selon votre itinéraire.",
+        "La chaleur et l'humidité sont intenses de mai à septembre ; emportez de l'eau et planifiez les visites de cenotes à midi pour vous rafraîchir.",
+        "Chichén Itzá n'est qu'à 40 min mais se remplit après 10 h — allez-y à l'ouverture pour la meilleure expérience."
+      ],
+      "detail_guide": {
+        "getting_around": "Valladolid est un village colonial compact, facile à explorer à pied ou à vélo. Les colectivos desservent les cenotes voisins et Chichén Itzá. Les bus ADO relient Mérida et Cancún. Les taxis sont économiques pour les courts trajets dans le village.",
+        "top_sights": [
+          {
+            "id": "val_cenote_zaci",
+            "name": "Cenote Zací",
+            "category": "nature",
+            "description": "Un grand cenote ouvert en plein centre du village, avec un surplomb rocheux, des stalactites et un accès pour la baignade."
+          },
+          {
+            "id": "val_convent_san_bernardino",
+            "name": "Couvent de San Bernardino de Siena",
+            "category": "point d'intérêt",
+            "description": "L'une des plus anciennes églises du Yucatán (1552), avec monastère, jardins et un spectacle son et lumière le soir."
+          },
+          {
+            "id": "val_cenote_suytun",
+            "name": "Cenote Suytún",
+            "category": "nature",
+            "description": "Un cenote souterrain photogénique, avec sa plate-forme circulaire en pierre et un rayon de lumière traversant le plafond."
+          }
+        ],
+        "museums": [
+          {
+            "id": "val_museo_san_roque",
+            "name": "Musée de San Roque",
+            "category": "musée",
+            "description": "Petit musée installé dans une ancienne église qui retrace l'histoire coloniale de Valladolid et la Guerre des Castes du Yucatán."
+          }
+        ],
+        "parks": [
+          {
+            "id": "val_parque_francisco_canton",
+            "name": "Parque Francisco Cantón Rosado",
+            "category": "place principale",
+            "description": "La place principale entourée de bâtiments coloniaux colorés, de la cathédrale et de vendeurs d'antojitos locaux."
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "val_bazar_municipal",
+            "name": "Bazar Municipal",
+            "category": "marché alimentaire",
+            "description": "Marché couvert sur la place principale servant des plats yucatèques authentiques comme salbutes, panuchos et lomitos."
+          },
+          {
+            "id": "val_yerbabuena",
+            "name": "Yerbabuena del Sisal",
+            "category": "restaurant",
+            "description": "Restaurant-jardin dans un patio colonial, avec des versions créatives de la cuisine yucatèque et du mezcal artisanal."
+          },
+          {
+            "id": "val_squimz",
+            "name": "Squimz Cafe",
+            "category": "café",
+            "description": "Café lumineux avec bon espresso, smoothies et Wi-Fi — une valeur sûre pour les nomades numériques."
           }
         ],
         "available_translations": [

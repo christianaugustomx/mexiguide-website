@@ -78,7 +78,8 @@
     "available_translations": [
       "en",
       "es",
-      "fr"
+      "fr",
+      "pt"
     ]
   },
   "translations": {
@@ -144,6 +145,142 @@
             "category": "cafetería / cowork",
             "description": "Cafetería relajada con Wi-Fi confiable, bowls de smoothie y un ambiente amigable para nómadas digitales.",
             "maps_url": ""
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr"
+        ]
+      }
+    },
+    "pt": {
+      "quick_warnings": [
+        "A qualidade da água na praia principal pode ficar ruim depois das chuvas; consulte os avisos locais antes de nadar.",
+        "As ruas são estreitas e a maioria não é pavimentada — use sandálias firmes e cuidado com as poças na temporada de chuvas.",
+        "O aeroporto de PVR fica a cerca de 45 min; organize os traslados com antecedência na alta temporada."
+      ],
+      "detail_guide": {
+        "getting_around": "Sayulita é uma vila pequena que dá para percorrer a pé. Você pode alugar carrinhos de golfe e quadriciclos para explorar as praias próximas. Ônibus e coletivos conectam a Puerto Vallarta e às vilas vizinhas ao longo da Riviera Nayarit.",
+        "top_sights": [
+          {
+            "id": "say_main_beach",
+            "name": "Playa Sayulita",
+            "category": "praia",
+            "description": "A praia principal de surfe, com ondas consistentes e amigáveis para iniciantes, aluguel de pranchas e um clima animado.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Playa+Sayulita,+Sayulita,+Mexico"
+          },
+          {
+            "id": "say_playa_de_los_muertos",
+            "name": "Playa de los Muertos",
+            "category": "praia",
+            "description": "Uma curta caminhada para o sul, atravessando a colina, leva a uma praia mais tranquila e limpa, ideal para snorkel e relaxar.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Playa+de+los+Muertos,+Sayulita,+Mexico"
+          },
+          {
+            "id": "say_marietas",
+            "name": "Islas Marietas (bate-volta)",
+            "category": "natureza",
+            "description": "Reserva insular protegida famosa pela Praia Escondida; os passeios de barco saem de Punta de Mita, ali pertinho.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Islas+Marietas+%28day+trip%29,+Sayulita,+Mexico"
+          }
+        ],
+        "museums": [],
+        "parks": [
+          {
+            "id": "say_monkey_mountain",
+            "name": "Cerro del Mono (Montanha dos Macacos)",
+            "category": "trilha",
+            "description": "Uma trilha na selva que leva a vistas panorâmicas de Sayulita e da costa; fique de olho nos papagaios selvagens e iguanas.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Cerro+del+Mono+%28Monkey+Mountain%29,+Sayulita,+Mexico"
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "say_don_pedros",
+            "name": "Don Pedro's",
+            "category": "restaurante",
+            "description": "Instituição à beira-mar que serve ceviche fresco, tacos de peixe e drinques autorais com vista para o oceano.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Don+Pedro%27s,+Sayulita,+Mexico"
+          },
+          {
+            "id": "say_chocobanana",
+            "name": "ChocoBanana",
+            "category": "café",
+            "description": "Padaria e cafeteria popular, com café forte, doces e um pátio sombreado — ótima para trabalho remoto.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=ChocoBanana,+Sayulita,+Mexico"
+          },
+          {
+            "id": "say_cava_vinos",
+            "name": "Sayulita Cafe",
+            "category": "café / coworking",
+            "description": "Cafeteria descontraída com Wi-Fi confiável, smoothie bowls e clima amigável para nômades digitais.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Sayulita+Cafe,+Sayulita,+Mexico"
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr",
+          "pt"
+        ]
+      }
+    },
+    "fr": {
+      "quick_warnings": [
+        "La qualité de l'eau sur la plage principale peut être mauvaise après la pluie ; consultez les avis locaux avant de vous baigner.",
+        "Les rues sont étroites et en grande partie non pavées — portez des sandales robustes et attention aux flaques en saison des pluies.",
+        "L'aéroport de PVR est à ~45 min ; organisez les transferts à l'avance en haute saison."
+      ],
+      "detail_guide": {
+        "getting_around": "Sayulita est un petit village qui se parcourt à pied. On peut louer des voiturettes de golf et des quads pour explorer les plages voisines. Bus et colectivos relient Puerto Vallarta et les villages voisins le long de la Riviera Nayarit.",
+        "top_sights": [
+          {
+            "id": "say_main_beach",
+            "name": "Playa Sayulita",
+            "category": "plage",
+            "description": "Plage principale pour le surf avec des vagues régulières pour débutants, location de planches et une ambiance animée."
+          },
+          {
+            "id": "say_playa_de_los_muertos",
+            "name": "Playa de los Muertos",
+            "category": "plage",
+            "description": "Une courte marche au sud par la colline mène à une plage plus calme et propre, idéale pour le snorkeling et la détente."
+          },
+          {
+            "id": "say_marietas",
+            "name": "Îles Marietas (excursion d'une journée)",
+            "category": "nature",
+            "description": "Réserve insulaire protégée célèbre pour la Playa Escondida ; les sorties en bateau partent de Punta de Mita, tout près."
+          }
+        ],
+        "museums": [],
+        "parks": [
+          {
+            "id": "say_monkey_mountain",
+            "name": "Cerro del Mono",
+            "category": "randonnée",
+            "description": "Sentier en jungle menant à des vues panoramiques sur Sayulita et la côte ; observez perroquets sauvages et iguanes."
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "say_don_pedros",
+            "name": "Don Pedro's",
+            "category": "restaurant",
+            "description": "Institution en bord de mer servant ceviche frais, tacos de poisson et cocktails artisanaux avec vue sur l'océan."
+          },
+          {
+            "id": "say_chocobanana",
+            "name": "ChocoBanana",
+            "category": "café",
+            "description": "Boulangerie-café populaire avec bon café, pâtisseries et un patio ombragé — idéal pour le télétravail."
+          },
+          {
+            "id": "say_cava_vinos",
+            "name": "Sayulita Cafe",
+            "category": "café / cowork",
+            "description": "Café décontracté avec Wi-Fi fiable, bols de smoothie et une ambiance sympa pour nomades numériques."
           }
         ],
         "available_translations": [

@@ -86,7 +86,8 @@
     "available_translations": [
       "en",
       "es",
-      "fr"
+      "fr",
+      "pt"
     ]
   },
   "translations": {
@@ -166,6 +167,151 @@
           "en",
           "es",
           "fr"
+        ]
+      }
+    },
+    "pt": {
+      "quick_warnings": [
+        "A umidade é extremamente alta o ano todo; beba bastante água e use roupas leves.",
+        "Poucos voos internacionais chegam a CPE — a maioria dos visitantes faz conexão pela Cidade do México ou Mérida.",
+        "As murallas da cidade antiga são lindas, mas o piso é irregular; use sapatos confortáveis para caminhar."
+      ],
+      "detail_guide": {
+        "getting_around": "O centro amurallado, Patrimônio Mundial da UNESCO, é compacto e o melhor jeito de explorá-lo é a pé. Um bondinho turístico (El Guapo) faz um circuito pela cidade antiga. Os táxis são baratos e abundantes. Os ônibus ADO conectam a Mérida (~2,5 h) e a Palenque (~5 h). Alugue um carro para visitar as ruínas de Calakmul ou Edzná.",
+        "top_sights": [
+          {
+            "id": "cam_centro_historico",
+            "name": "Centro Histórico (Cidade Amurallada)",
+            "category": "monumento / UNESCO",
+            "description": "Patrimônio Mundial da UNESCO, com edifícios coloniais coloridos, murallas fortificadas e ruas de paralelepípedos que datam do século XVII.",
+            "maps_url": ""
+          },
+          {
+            "id": "cam_calakmul",
+            "name": "Zona Arqueológica de Calakmul (bate-volta)",
+            "category": "arqueologia",
+            "description": "Uma das maiores cidades maias já descobertas, no coração da reserva da biosfera selvagem — fica a 3 horas de carro, mas é inesquecível.",
+            "maps_url": ""
+          },
+          {
+            "id": "cam_edzna",
+            "name": "Zona Arqueológica de Edzná",
+            "category": "arqueologia",
+            "description": "Impressionante sítio maia a apenas 1 hora da cidade, com uma pirâmide de cinco andares e fachadas de estuque muito bem preservadas.",
+            "maps_url": ""
+          }
+        ],
+        "museums": [
+          {
+            "id": "cam_museo_arquitectura",
+            "name": "Museo de la Arquitectura Maya",
+            "category": "museu",
+            "description": "Localizado dentro do Baluarte de la Soledad, este museu exibe estelas maias, lintéis e fragmentos arquitetônicos.",
+            "maps_url": ""
+          }
+        ],
+        "parks": [
+          {
+            "id": "cam_malecon",
+            "name": "Malecón de Campeche",
+            "category": "orla",
+            "description": "Um longo calçadão à beira-mar com esculturas, áreas para exercícios e belíssimos pores do sol sobre o Golfo do México.",
+            "maps_url": ""
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "cam_la_pigua",
+            "name": "La Pigua",
+            "category": "restaurante",
+            "description": "O restaurante de frutos do mar mais famoso da cidade, conhecido pelos camarões ao coco e pelo pan de cazón campechano (tortilla de cação em camadas).",
+            "maps_url": ""
+          },
+          {
+            "id": "cam_chocol_ha",
+            "name": "Chocol-Ha",
+            "category": "café",
+            "description": "Charmoso café temático de chocolate que oferece chocolate quente artesanal, café campechano e doces leves.",
+            "maps_url": ""
+          },
+          {
+            "id": "cam_marganzo",
+            "name": "Marganzo",
+            "category": "restaurante",
+            "description": "Cozinha regional campechana num lindo pátio colonial; experimente os papadzules e os camarones al coco.",
+            "maps_url": ""
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr",
+          "pt"
+        ]
+      }
+    },
+    "fr": {
+      "quick_warnings": [
+        "L'une des villes les plus sûres du Mexique — la capitale de la sécurité dans le pays.",
+        "Chaleur et humidité intenses de mai à octobre ; buvez beaucoup d'eau et protégez-vous du soleil.",
+        "Le centre historique est fermé à la circulation le soir — idéal pour se promener dans les rues colorées."
+      ],
+      "detail_guide": {
+        "getting_around": "Le centre historique classé UNESCO se parcourt entièrement à pied. Taxis et Uber disponibles. Louez une voiture pour visiter Edzná (~1 h) et la côte.",
+        "top_sights": [
+          {
+            "id": "cam_centro_historico",
+            "name": "Centre historique",
+            "category": "patrimoine UNESCO",
+            "description": "Ville fortifiée coloniale aux maisons pastel ; l'une des villes coloniales les mieux préservées du Mexique.",
+            "maps_url": ""
+          },
+          {
+            "id": "cam_baluartes",
+            "name": "Muraille et bastions",
+            "category": "histoire",
+            "description": "Remparts du XVIIe siècle qui protégeaient la ville des pirates ; plusieurs bastions se visitent.",
+            "maps_url": ""
+          },
+          {
+            "id": "cam_edzna",
+            "name": "Edzná",
+            "category": "site maya",
+            "description": "Cité maya à 1 h de route avec sa célèbre Pyramide des Cinq Étages ; moins fréquentée que Chichén Itzá.",
+            "maps_url": ""
+          }
+        ],
+        "museums": [
+          {
+            "id": "cam_fuerte_san_miguel",
+            "name": "Fuerte de San Miguel",
+            "category": "musée / fort",
+            "description": "Fort côtier du XVIIIe siècle converti en musée maya avec une collection d'artefacts exceptionnelle.",
+            "maps_url": ""
+          }
+        ],
+        "parks": [],
+        "eat_drink_work": [
+          {
+            "id": "cam_marganzo",
+            "name": "Restaurante Marganzo",
+            "category": "cuisine régionale",
+            "description": "Cuisine traditionnelle du Campeche — pan de cazón, pámpano en hoja — dans un cadre colonial.",
+            "maps_url": ""
+          },
+          {
+            "id": "cam_la_pigua",
+            "name": "La Pigua",
+            "category": "fruits de mer",
+            "description": "Une institution pour les fruits de mer frais de la région, notamment le pámpano et les crevettes.",
+            "maps_url": ""
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr",
+          "pt"
         ]
       }
     }

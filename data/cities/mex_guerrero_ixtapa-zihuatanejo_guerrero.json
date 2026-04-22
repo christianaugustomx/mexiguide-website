@@ -86,7 +86,8 @@
     "available_translations": [
       "en",
       "es",
-      "fr"
+      "fr",
+      "pt"
     ]
   },
   "translations": {
@@ -160,6 +161,157 @@
             "category": "cafetería",
             "description": "Cafetería con vista al puerto, buen café y repostería fresca; una buena parada matutina antes de un día de playa.",
             "maps_url": ""
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr"
+        ]
+      }
+    },
+    "pt": {
+      "quick_warnings": [
+        "Mantenha-se dentro do corredor turístico Zihuatanejo-Ixtapa; evite dirigir por estradas rurais à noite.",
+        "A estação chuvosa (jun–out) pode trazer chuvas fortes e furacões ocasionais; consulte a previsão do tempo.",
+        "Forte ressaca em Playa Larga — nade na mais tranquila Playa La Ropa ou Playa Las Gatas."
+      ],
+      "detail_guide": {
+        "getting_around": "O centro da cidade e a Playa La Ropa podem ser percorridos a pé. Microônibus e táxis circulam entre Zihuatanejo e Ixtapa (~10 min). Táxis aquáticos saem do píer municipal para a Playa Las Gatas. Alugar um carro é útil para passeios de um dia até praias mais remotas.",
+        "top_sights": [
+          {
+            "id": "zih_la_ropa",
+            "name": "Playa La Ropa",
+            "category": "praia",
+            "description": "Uma longa praia de areia dourada em uma baía abrigada com águas calmas para nadar, restaurantes à beira-mar e palmeiras ao longo da costa.",
+            "maps_url": ""
+          },
+          {
+            "id": "zih_las_gatas",
+            "name": "Playa Las Gatas",
+            "category": "praia / mergulho",
+            "description": "Praia protegida por recife, acessível por táxi aquático, com excelente mergulho com snorkel e palapas de frutos do mar fresquinhos.",
+            "maps_url": ""
+          },
+          {
+            "id": "zih_paseo_pescador",
+            "name": "Paseo del Pescador (Calçadão do Pescador)",
+            "category": "ponto turístico",
+            "description": "O charmoso calçadão à beira-mar do antigo vilarejo de pescadores, repleto de lojas, galerias e barracas de frutos do mar.",
+            "maps_url": ""
+          }
+        ],
+        "museums": [
+          {
+            "id": "zih_museo_arqueologico",
+            "name": "Museo Arqueológico de la Costa Grande",
+            "category": "museu",
+            "description": "Pequeno museu que documenta as culturas pré-hispânicas da costa de Guerrero com cerâmicas e artefatos.",
+            "maps_url": ""
+          }
+        ],
+        "parks": [
+          {
+            "id": "zih_playa_manzanillo",
+            "name": "Playa Manzanillo",
+            "category": "praia / natureza",
+            "description": "Uma enseada rochosa tranquila, ideal para mergulho com snorkel entre peixes tropicais, longe das multidões de turistas.",
+            "maps_url": ""
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "zih_la_sirena_gorda",
+            "name": "La Sirena Gorda",
+            "category": "restaurante",
+            "description": "Icônico restaurante de frutos do mar ao lado do píer, famoso pelos seus tacos de peixe e camarão em tortillas feitas à mão.",
+            "maps_url": ""
+          },
+          {
+            "id": "zih_il_funghetto",
+            "name": "Il Funghetto",
+            "category": "restaurante",
+            "description": "Fusão ítalo-mexicana em um terraço iluminado por velas; massas frescas e frutos do mar locais em um ambiente intimista.",
+            "maps_url": ""
+          },
+          {
+            "id": "zih_cafe_marina",
+            "name": "Café Marina",
+            "category": "cafeteria",
+            "description": "Cafeteria com vista para o porto, com café forte e doces fresquinhos; uma boa parada matinal antes de um dia de praia.",
+            "maps_url": ""
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr",
+          "pt"
+        ]
+      }
+    },
+    "fr": {
+      "quick_warnings": [
+        "Restez dans le corridor touristique Zihuatanejo-Ixtapa ; évitez de rouler sur des routes rurales la nuit.",
+        "La saison des pluies (juin–oct) peut apporter de fortes averses et des ouragans occasionnels ; consultez les prévisions météo.",
+        "Forts courants de retour à Playa Larga — nagez plutôt dans les plus calmes Playa La Ropa ou Playa Las Gatas."
+      ],
+      "detail_guide": {
+        "getting_around": "Le centre du village et Playa La Ropa se parcourent à pied. Microbus et taxis relient Zihuatanejo et Ixtapa (~10 min). Les bateaux-taxis partent du quai municipal vers Playa Las Gatas. Louer une voiture est utile pour des excursions vers des plages plus isolées.",
+        "top_sights": [
+          {
+            "id": "zih_la_ropa",
+            "name": "Playa La Ropa",
+            "category": "plage",
+            "description": "Longue plage de sable doré dans une baie protégée aux eaux calmes, avec restaurants en bord de mer et cocotiers."
+          },
+          {
+            "id": "zih_las_gatas",
+            "name": "Playa Las Gatas",
+            "category": "plage / snorkeling",
+            "description": "Plage protégée par un récif accessible en bateau-taxi, avec un excellent snorkeling et des palapas de fruits de mer frais."
+          },
+          {
+            "id": "zih_paseo_pescador",
+            "name": "Paseo del Pescador",
+            "category": "point d'intérêt",
+            "description": "Charmante promenade côtière de l'ancien village de pêcheurs, bordée de boutiques, galeries et stands de fruits de mer."
+          }
+        ],
+        "museums": [
+          {
+            "id": "zih_museo_arqueologico",
+            "name": "Musée archéologique de la Costa Grande",
+            "category": "musée",
+            "description": "Petit musée documentant les cultures préhispaniques de la côte du Guerrero avec céramiques et artefacts."
+          }
+        ],
+        "parks": [
+          {
+            "id": "zih_playa_manzanillo",
+            "name": "Playa Manzanillo",
+            "category": "plage / nature",
+            "description": "Calanque rocheuse tranquille idéale pour faire du snorkeling parmi les poissons tropicaux, loin des foules touristiques."
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "zih_la_sirena_gorda",
+            "name": "La Sirena Gorda",
+            "category": "restaurant",
+            "description": "Restaurant de fruits de mer emblématique près du quai, réputé pour ses tacos de poisson et de crevette sur tortillas faites maison."
+          },
+          {
+            "id": "zih_il_funghetto",
+            "name": "Il Funghetto",
+            "category": "restaurant",
+            "description": "Fusion italo-mexicaine sur une terrasse éclairée à la bougie ; pâtes fraîches et fruits de mer locaux dans un cadre intime."
+          },
+          {
+            "id": "zih_cafe_marina",
+            "name": "Café Marina",
+            "category": "café",
+            "description": "Café avec vue sur le port, bon café et pâtisseries fraîches ; une bonne halte matinale avant une journée à la plage."
           }
         ],
         "available_translations": [

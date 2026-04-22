@@ -128,7 +128,8 @@
     "available_translations": [
       "en",
       "es",
-      "fr"
+      "fr",
+      "pt"
     ]
   },
   "translations": {
@@ -244,6 +245,235 @@
             "category": "Coworking",
             "description": "El espacio de coworking más establecido del Centro — fibra rápida, estaciones de trabajo ergonómicas, cabinas privadas para llamadas y una fuerte comunidad de trabajadores remotos y emprendedores locales. Pases diarios y mensuales. La escena nómada en Mérida ha crecido constantemente desde 2021 y la infraestructura ahora lo refleja.",
             "maps_url": "https://maps.app.goo.gl/placeholderIDSMerida"
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr"
+        ]
+      }
+    },
+    "pt": {
+      "quick_warnings": [
+        "O calor é extremo o ano todo e brutal de junho a setembro (38–40°C / 100–104°F com umidade alta). Planeje toda atividade ao ar livre antes das 10h ou depois das 17h.",
+        "Cuidado com guias turísticos falsos nos principais sítios — reserve passeios a Chichén Itzá e aos cenotes apenas com agências licenciadas e escritório físico.",
+        "Dirija com cuidado nas rodovias à noite — animais, pouca iluminação e topes (lombadas) sem sinalização são perigos reais fora da cidade."
+      ],
+      "detail_guide": {
+        "getting_around": "O Centro histórico é caminhável para fazer turismo — a maioria dos museus, praças e restaurantes fica a 15 minutos a pé da Plaza Grande. Para distâncias maiores use Uber (amplamente disponível e confiável) ou os modernos bondinhos elétricos. Alugar um carro é recomendado se você planeja visitar cenotes ou Chichén Itzá por conta própria — a rodovia é bem conservada. Evite dirigir até o Centro aos domingos, quando a avenida principal fecha para carros por causa do ciclopaseo semanal (passeio de bicicleta).",
+        "top_sights": [
+          {
+            "id": "sight_plaza_grande",
+            "name": "Plaza Grande e Catedral de San Ildefonso",
+            "category": "Ponto de interesse",
+            "description": "O coração de Mérida — uma das catedrais mais antigas das Américas (concluída em 1598), ladeada pelo Palácio do Governo e pela Prefeitura, com murais ao estilo Diego Rivera em seu interior. A praça fica mais animada aos domingos à noite, quando as famílias locais a ocupam e há apresentações gratuitas de música e dança tradicionais yucatecas.",
+            "maps_url": "https://maps.app.goo.gl/placeholderPlazaGrandeMerida"
+          },
+          {
+            "id": "sight_paseo_montejo",
+            "name": "Paseo de Montejo",
+            "category": "Arquitetura",
+            "description": "A grande avenida do século XIX de Mérida, ladeada por mansões da era do henequém — uma espécie de Champs-Élysées yucateca construída quando a cidade era uma das mais ricas das Américas. Caminhe rumo ao norte a partir do Centro, passando por palácios restaurados que hoje abrigam bancos, museus e restaurantes. Melhor logo pela manhã, antes do calor chegar.",
+            "maps_url": "https://maps.app.goo.gl/placeholderPaseoMontejo"
+          },
+          {
+            "id": "sight_chichen_itza",
+            "name": "Chichén Itzá (Bate e volta)",
+            "category": "Arqueologia",
+            "description": "Uma das Sete Maravilhas do Mundo — uma cidade maia de 1.000 anos a 120 km a leste de Mérida. Reserve um tour guiado saindo de Mérida (MXN 600–900 por pessoa) com saída cedo (7h) para chegar na abertura e fugir tanto das multidões quanto do calor do meio-dia. Compre os ingressos online com antecedência. Reserve pelo menos 3 horas no local. Combine com um mergulho no cenote Ik Kil na volta.",
+            "maps_url": "https://maps.app.goo.gl/placeholderChichenItza"
+          },
+          {
+            "id": "sight_cenote_xlacah",
+            "name": "Cenote Xlacah — Dzibilchaltún",
+            "category": "Natureza",
+            "description": "Um belo cenote acessível dentro da zona arqueológica de Dzibilchaltún, a apenas 15 km ao norte de Mérida. O sítio inclui um templo maia notavelmente bem preservado, perfeitamente alinhado com o nascer do sol nos equinócios de primavera e outono. Nade no profundo cenote de águas cristalinas depois de explorar as ruínas. Fácil de fazer por conta própria de Uber.",
+            "maps_url": "https://maps.app.goo.gl/placeholderXlacah"
+          },
+          {
+            "id": "sight_uxmal",
+            "name": "Uxmal (Bate e volta)",
+            "category": "Arqueologia",
+            "description": "Arquitetonicamente talvez mais impressionante do que Chichén Itzá e bem menos cheia — uma cidade maia do Clássico Tardio a 80 km ao sul de Mérida, com a notável Pirâmide do Adivinho e sua incomum base oval. Melhor combinar com outros sítios da Rota Puuc (Kabah, Sayil, Labná) em um tour de dia inteiro. Menos vendedores e mais espaço para respirar do que em Chichén Itzá.",
+            "maps_url": "https://maps.app.goo.gl/placeholderUxmal"
+          }
+        ],
+        "museums": [
+          {
+            "id": "museum_gran_museo_maya",
+            "name": "Gran Museo del Mundo Maya",
+            "category": "Imperdível",
+            "description": "Um dos melhores museus maias do mundo — mais de 1.100 artefatos que cobrem 3.000 anos de civilização maia por Yucatán, Campeche, Chiapas e além. O prédio em si é espetacular: uma estrutura em forma de folha alinhada com os quatro pontos cardeais. Reserve 2–3 horas. Localizado ao norte do Centro, 15 min de Uber.",
+            "maps_url": "https://maps.app.goo.gl/placeholderGranMuseoMaya"
+          },
+          {
+            "id": "museum_palacio_canton",
+            "name": "Palacio Cantón — Museo de Antropología",
+            "category": "História",
+            "description": "Uma mansão Belle Époque no Paseo de Montejo que abriga a coleção regional de antropologia — jade maia, cerâmicas e restos ósseos com crânios deformados que revelam antigas práticas de beleza. O prédio por si só já vale a visita. Pequena taxa de entrada; fechado às segundas.",
+            "maps_url": "https://maps.app.goo.gl/placeholderPalacioCanton"
+          },
+          {
+            "id": "museum_casa_montejo",
+            "name": "Casa de Montejo",
+            "category": "Arquitetura / História",
+            "description": "Uma mansão de conquistador do século XVI na Plaza Grande, com uma fachada de pedra entalhada que mostra conquistadores pisando sobre as cabeças de guerreiros maias — uma das peças mais perturbadoras da iconografia colonial no México. Hoje é uma agência bancária (entrada gratuita no horário comercial) com um pátio interno lindamente restaurado.",
+            "maps_url": "https://maps.app.goo.gl/placeholderCasaMontejo"
+          }
+        ],
+        "parks": [
+          {
+            "id": "nature_parque_centenario",
+            "name": "Parque Centenario",
+            "category": "Parque urbano / Zoológico",
+            "description": "Um grande parque sombreado no extremo oeste do Centro, com um zoológico gratuito e fauna yucateca — onças-pintadas, macacos-aranha, flamingos e antas. Um dos poucos zoológicos gratuitos do México. Popular entre as famílias locais nas manhãs de fim de semana. Uma boa opção para uma caminhada bem cedinho, antes do calor apertar.",
+            "maps_url": "https://maps.app.goo.gl/placeholderParqueCentenario"
+          },
+          {
+            "id": "nature_hacienda_sotuta",
+            "name": "Hacienda Sotuta de Peón",
+            "category": "Cultural / Natureza",
+            "description": "Uma fazenda de henequém em funcionamento a 35 km de Mérida, onde você pode ver todo o processo tradicional de produção de corda de sisal, passear em vagões puxados por cavalos entre os campos de agave e nadar em um cenote privativo dentro da propriedade. Uma das experiências culturais mais imersivas perto da cidade. Reserve o tour de meio dia com antecedência.",
+            "maps_url": "https://maps.app.goo.gl/placeholderHaciendaSotuta"
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "eat_mercado_lucas_galvez",
+            "name": "Mercado Lucas de Gálvez",
+            "category": "Comida autêntica",
+            "description": "O principal mercado público do Centro — o melhor lugar para um café da manhã yucateco barato e autêntico. Peça sopa de lima, panuchos ou huevos motuleños nas fondas (barracas do mercado) do andar superior. Orçamento de MXN 60–120 por pessoa. Chegue até as 8h para as opções mais fresquinhas.",
+            "maps_url": "https://maps.app.goo.gl/placeholderMercadoLucas"
+          },
+          {
+            "id": "eat_manjar_blanco",
+            "name": "Manjar Blanco",
+            "category": "Cozinha regional",
+            "description": "Um dos melhores restaurantes formais de cozinha yucateca tradicional — cochinita pibil, poc chuc e relleno negro preparados com esmero em uma elegante casa colonial. Preços médios, excelente atendimento e um cardápio que vai muito além dos pratos turísticos de sempre. Reservas recomendadas.",
+            "maps_url": "https://maps.app.goo.gl/placeholderManjarBlanco"
+          },
+          {
+            "id": "eat_apoala",
+            "name": "Apoala",
+            "category": "Mexicano contemporâneo",
+            "description": "Um restaurante aclamado em uma rua tranquila ao lado da Plaza Grande, que combina sabores oaxaquenhos e yucatecos com técnica moderna. A carta de mezcais é levada a sério e o menu degustação tem um custo-benefício excepcional. Uma das melhores experiências gastronômicas da cidade — reserve com antecedência nos fins de semana.",
+            "maps_url": "https://maps.app.goo.gl/placeholderApoala"
+          },
+          {
+            "id": "work_coworking_merida",
+            "name": "IDS Centro — Coworking Mérida",
+            "category": "Coworking",
+            "description": "O espaço de coworking mais consolidado do Centro — fibra rápida, estações de trabalho ergonômicas, cabines privativas para chamadas e uma forte comunidade de trabalhadores remotos e empreendedores locais. Passes diários e mensais. A cena nômade em Mérida cresceu de forma constante desde 2021 e a infraestrutura hoje reflete isso.",
+            "maps_url": "https://maps.app.goo.gl/placeholderIDSMerida"
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr",
+          "pt"
+        ]
+      }
+    },
+    "fr": {
+      "quick_warnings": [
+        "La chaleur est extrême toute l'année et brutale de juin à septembre (38–40 °C avec forte humidité). Planifiez toute activité en extérieur avant 10 h ou après 17 h.",
+        "Méfiez-vous des faux guides touristiques sur les sites principaux — ne réservez vos excursions à Chichén Itzá et aux cenotes qu'avec des agences agréées ayant un bureau physique.",
+        "Conduisez prudemment la nuit sur les routes — animaux, éclairage limité et ralentisseurs non signalés sont de vrais dangers hors ville."
+      ],
+      "detail_guide": {
+        "getting_around": "Le Centro historique se parcourt à pied pour visiter — la plupart des musées, places et restaurants sont à 15 min à pied de la Plaza Grande. Pour les plus longues distances, utilisez Uber (largement disponible et fiable) ou les tramways électriques modernes. Louer une voiture est recommandé si vous comptez visiter des cenotes ou Chichén Itzá par vos propres moyens — la route est bien entretenue. Évitez de conduire jusqu'au Centro le dimanche, quand le boulevard principal ferme aux voitures pour la balade cycliste hebdomadaire.",
+        "top_sights": [
+          {
+            "id": "sight_plaza_grande",
+            "name": "Plaza Grande et Cathédrale San Ildefonso",
+            "category": "Point d'intérêt",
+            "description": "Le cœur de Mérida — l'une des plus anciennes cathédrales des Amériques (achevée en 1598), encadrée par le Palais du Gouvernement et la mairie, ornés de fresques dans le style de Diego Rivera à l'intérieur. La place est la plus animée le dimanche après-midi, quand les familles locales s'y rassemblent, avec des spectacles gratuits de musique et de danse traditionnelles yucatèques."
+          },
+          {
+            "id": "sight_paseo_montejo",
+            "name": "Paseo de Montejo",
+            "category": "Architecture",
+            "description": "Le grand boulevard du XIXᵉ siècle de Mérida, bordé de demeures de l'ère du henequén — des Champs-Élysées yucatèques construits quand la ville était parmi les plus riches des Amériques. Promenez-vous vers le nord depuis le Centro devant des palais restaurés abritant banques, musées et restaurants. À privilégier tôt le matin avant l'arrivée de la chaleur."
+          },
+          {
+            "id": "sight_chichen_itza",
+            "name": "Chichén Itzá (excursion à la journée)",
+            "category": "Archéologie",
+            "description": "L'une des Sept Merveilles du Monde — une cité maya vieille de 1 000 ans à 120 km à l'est de Mérida. Réservez un tour guidé depuis Mérida (600–900 MXN par personne) avec un départ tôt (7 h) pour arriver à l'ouverture et éviter à la fois les foules et la chaleur de midi. Achetez vos billets d'entrée en ligne à l'avance. Prévoyez au moins 3 heures sur place. Combinez avec une baignade au cenote Ik Kil voisin au retour."
+          },
+          {
+            "id": "sight_cenote_xlacah",
+            "name": "Cenote Xlacah — Dzibilchaltún",
+            "category": "Nature",
+            "description": "Un magnifique cenote accessible au sein de la zone archéologique de Dzibilchaltún, à seulement 15 km au nord de Mérida. Le site comprend un temple maya remarquablement bien conservé, parfaitement aligné pour le lever du soleil aux équinoxes de printemps et d'automne. Baignez-vous dans le profond cenote cristallin après avoir exploré les ruines. Facile à faire par vous-même en Uber."
+          },
+          {
+            "id": "sight_uxmal",
+            "name": "Uxmal (excursion à la journée)",
+            "category": "Archéologie",
+            "description": "Sans doute plus impressionnant architecturalement que Chichén Itzá et bien moins fréquenté — une cité maya du Classique tardif, à 80 km au sud de Mérida, avec la remarquable Pyramide du Devin à base ovale. À combiner avec d'autres sites de la Route Puuc (Kabah, Sayil, Labná) sur une excursion d'une journée complète. Moins de vendeurs et plus d'espace qu'à Chichén Itzá."
+          }
+        ],
+        "museums": [
+          {
+            "id": "museum_gran_museo_maya",
+            "name": "Gran Museo del Mundo Maya",
+            "category": "De classe mondiale",
+            "description": "L'un des meilleurs musées mayas au monde — plus de 1 100 objets couvrant 3 000 ans de civilisation maya à travers Yucatán, Campeche, Chiapas et au-delà. Le bâtiment lui-même est spectaculaire : une structure en forme de feuille alignée sur les quatre points cardinaux. Comptez 2 à 3 heures. Situé au nord du Centro, 15 min en Uber."
+          },
+          {
+            "id": "museum_palacio_canton",
+            "name": "Palacio Cantón — Musée d'Anthropologie",
+            "category": "Histoire",
+            "description": "Une demeure Belle Époque sur le Paseo de Montejo qui abrite la collection régionale d'anthropologie — jade maya, céramiques et restes osseux aux crânes déformés, révélant d'anciennes pratiques de beauté. Le bâtiment à lui seul vaut la visite. Petit droit d'entrée ; fermé le lundi."
+          },
+          {
+            "id": "museum_casa_montejo",
+            "name": "Casa de Montejo",
+            "category": "Architecture / Histoire",
+            "description": "Une demeure de conquistador du XVIᵉ siècle sur la Plaza Grande, à la façade de pierre sculptée représentant des conquistadors debout sur des têtes de guerriers mayas — l'une des pièces d'iconographie coloniale les plus dérangeantes du Mexique. Aujourd'hui succursale bancaire (entrée libre aux heures d'ouverture), avec un patio intérieur magnifiquement restauré."
+          }
+        ],
+        "parks": [
+          {
+            "id": "nature_parque_centenario",
+            "name": "Parque Centenario",
+            "category": "Parc urbain / Zoo",
+            "description": "Un grand parc ombragé à la bordure ouest du Centro, avec un zoo gratuit abritant la faune yucatèque — jaguars, singes araignées, flamants et tapirs. L'un des rares zoos gratuits du Mexique. Populaire auprès des familles locales le week-end au matin. Une bonne option pour une balade tôt avant l'installation de la chaleur."
+          },
+          {
+            "id": "nature_hacienda_sotuta",
+            "name": "Hacienda Sotuta de Peón",
+            "category": "Culturel / Nature",
+            "description": "Une hacienda henéquenière encore en activité à 35 km de Mérida, où vous pouvez voir le processus complet de production traditionnelle de corde de sisal, vous promener en wagons tirés par des chevaux entre les champs d'agave et nager dans un cenote privé sur la propriété. L'une des expériences culturelles les plus immersives près de la ville. Réservez la visite d'une demi-journée à l'avance."
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "eat_mercado_lucas_galvez",
+            "name": "Mercado Lucas de Gálvez",
+            "category": "Cuisine authentique",
+            "description": "Le principal marché public du Centro — le meilleur endroit pour un petit-déjeuner yucatèque authentique et économique. Commandez une sopa de lima, des panuchos ou des huevos motuleños aux fondas de l'étage. Comptez 60–120 MXN par personne. Venez avant 8 h pour les produits les plus frais."
+          },
+          {
+            "id": "eat_manjar_blanco",
+            "name": "Manjar Blanco",
+            "category": "Cuisine régionale",
+            "description": "L'un des meilleurs restaurants formels de cuisine yucatèque traditionnelle — cochinita pibil, poc chuc et relleno negro exécutés avec soin dans une élégante maison coloniale. Prix moyens, excellent service et une carte qui va bien au-delà des classiques touristiques. Réservation recommandée."
+          },
+          {
+            "id": "eat_apoala",
+            "name": "Apoala",
+            "category": "Mexicain contemporain",
+            "description": "Un restaurant réputé dans une rue calme à côté de la Plaza Grande, qui marie saveurs oaxaqueñas et yucatèques avec une technique moderne. La carte de mezcal est sérieuse et le menu dégustation offre un rapport qualité-prix exceptionnel. L'une des meilleures expériences gastronomiques de la ville — réservez à l'avance le week-end."
+          },
+          {
+            "id": "work_coworking_merida",
+            "name": "IDS Centro — Coworking Mérida",
+            "category": "Coworking",
+            "description": "L'espace de coworking le plus établi du Centro — fibre rapide, postes de travail ergonomiques, cabines téléphoniques privées et une solide communauté de travailleurs à distance et d'entrepreneurs locaux. Pass journaliers et mensuels. La scène nomade à Mérida n'a cessé de croître depuis 2021 et l'infrastructure le reflète désormais."
           }
         ],
         "available_translations": [

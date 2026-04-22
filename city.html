@@ -601,7 +601,8 @@
         <li><a href="/safety-map.html">Safety Map</a></li>
         <li><a href="/tools.html">Tools</a></li>
         <li><a href="/emergency.html">Emergency</a></li>
-        <li><a href="/es/city.html" class="lang-switch"><span class="lang-flag">🇲🇽</span> Español</a></li>
+        <li><a href="/es/city.html" class="lang-switch"><span class="lang-flag">🇲🇽</span> ES</a></li>
+        <li><a href="#" class="lang-switch"><span class="lang-flag">🇧🇷</span> PT</a></li>
       </ul>
       <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
       <a href="#" class="nav-pill">Get the App →</a>
@@ -609,10 +610,7 @@
   </nav>
 
   <!-- LANGUAGE TOGGLE -->
-  <div class="language-toggle" id="langToggle" style="display: none;">
-    <button class="lang-btn active" data-lang="en">EN</button>
-    <button class="lang-btn" data-lang="es">ES</button>
-  </div>
+  <div class="language-toggle" id="langToggle" style="display: none;"></div>
 
   <!-- PAGE CONTAINER -->
   <div class="page-container">
@@ -741,6 +739,8 @@
       }
     }
 
+    const LANG_LABELS = { en: 'EN', es: 'ES', fr: 'FR', pt: 'PT' };
+
     function renderPage() {
       // Hide loading
       document.getElementById('loadingState').style.display = 'none';
@@ -749,9 +749,19 @@
       document.getElementById('headerCard').style.display = 'block';
       document.getElementById('mainContent').style.display = 'block';
 
-      // Show language toggle if translations exist
-      if (currentCity.translations && currentCity.translations.es) {
-        document.getElementById('langToggle').style.display = 'flex';
+      // Build language toggle dynamically from available translations
+      const available = ['en'];
+      if (currentCity.translations) {
+        Object.keys(currentCity.translations).forEach(l => {
+          if (LANG_LABELS[l] && !available.includes(l)) available.push(l);
+        });
+      }
+      if (available.length > 1) {
+        const toggle = document.getElementById('langToggle');
+        toggle.innerHTML = available
+          .map(l => `<button class="lang-btn${l === currentLanguage ? ' active' : ''}" data-lang="${l}">${LANG_LABELS[l]}</button>`)
+          .join('');
+        toggle.style.display = 'flex';
       }
 
       renderHeader();
@@ -759,10 +769,13 @@
       attachLanguageListeners();
     }
 
-    function renderHeader() {
-      const lang = currentLanguage;
-      const data = lang === 'es' && currentCity.translations?.es ? currentCity.translations.es : currentCity;
+    function localized(section) {
+      if (currentLanguage === 'en') return currentCity[section];
+      const t = currentCity.translations?.[currentLanguage];
+      return (t && t[section]) ? t[section] : currentCity[section];
+    }
 
+    function renderHeader() {
       // Title and state
       document.getElementById('cityName').textContent = currentCity.city_name;
       document.getElementById('cityState').textContent = currentCity.state;
@@ -795,7 +808,7 @@
       document.getElementById('quickStats').innerHTML = statsHtml;
 
       // Quick warnings
-      const warnings = lang === 'es' && data.quick_warnings ? data.quick_warnings : currentCity.quick_warnings;
+      const warnings = localized('quick_warnings') || [];
       const warningsHtml = warnings.map(w => `
         <div class="warning-alert">${w}</div>
       `).join('');
@@ -803,9 +816,7 @@
     }
 
     function renderSections() {
-      const lang = currentLanguage;
-      const data = lang === 'es' && currentCity.translations?.es ? currentCity.translations.es : currentCity;
-      const guide = data.detail_guide || currentCity.detail_guide;
+      const guide = localized('detail_guide') || {};
 
       // Getting Around
       if (guide.getting_around) {

@@ -79,7 +79,8 @@
     "available_translations": [
       "en",
       "es",
-      "fr"
+      "fr",
+      "pt"
     ]
   },
   "translations": {
@@ -146,6 +147,144 @@
             "category": "cafetería",
             "description": "Cafetería colorida con desayunos saludables, jugos frescos y un ambiente relajado popular entre viajeros.",
             "maps_url": ""
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr"
+        ]
+      }
+    },
+    "pt": {
+      "quick_warnings": [
+        "Use apenas protetor solar biodegradável — os estromatólitos da lagoa são antigos e extremamente frágeis.",
+        "O aeroporto mais próximo (Chetumal CTM) fica a cerca de 40 min; Cancún está a 4,5 horas de carro.",
+        "Os mosquitos são abundantes perto da lagoa ao entardecer — leve repelente."
+      ],
+      "detail_guide": {
+        "getting_around": "Bacalar é uma cidade pequena fácil de explorar a pé ou de bicicleta. Mototáxis e táxis cobrem a estrada à beira da lagoa. Os ônibus ADO conectam a Chetumal e Cancún. Alugar um caiaque ou contratar uma lancha é a melhor forma de explorar a lagoa.",
+        "top_sights": [
+          {
+            "id": "bac_lagoon",
+            "name": "Laguna de Bacalar (Lagoa dos Sete Cores)",
+            "category": "natureza",
+            "description": "Uma deslumbrante lagoa de água doce com camadas de água turquesa, azul e índigo que se estendem por mais de 50 km.",
+            "maps_url": ""
+          },
+          {
+            "id": "bac_fort",
+            "name": "Fuerte de San Felipe",
+            "category": "ponto turístico",
+            "description": "Um forte espanhol do século XVIII com vista para a lagoa, hoje um pequeno museu sobre pirataria e história colonial.",
+            "maps_url": ""
+          },
+          {
+            "id": "bac_cenote_azul",
+            "name": "Cenote Azul",
+            "category": "natureza",
+            "description": "Um cenote amplo e profundo logo ao sul da cidade, perfeito para nadar e saltar dos penhascos em águas cristalinas.",
+            "maps_url": ""
+          }
+        ],
+        "museums": [
+          {
+            "id": "bac_museo_fuerte",
+            "name": "Museo del Fuerte de San Felipe",
+            "category": "museu",
+            "description": "Dentro do forte, as exposições abordam a história pirata da região e a herança maia.",
+            "maps_url": ""
+          }
+        ],
+        "parks": [
+          {
+            "id": "bac_canal_piratas",
+            "name": "Canal de los Piratas",
+            "category": "natureza",
+            "description": "Um canal estreito com manguezais e cores de água vibrantes; melhor explorado de caiaque ou em passeio de lancha.",
+            "maps_url": ""
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "bac_la_playita",
+            "name": "La Playita",
+            "category": "restaurante",
+            "description": "Restaurante à beira da lagoa com píeres e redes, servindo ceviche fresco e pratos regionais sobre a água.",
+            "maps_url": ""
+          },
+          {
+            "id": "bac_mango_cafe",
+            "name": "Mango y Chile",
+            "category": "cafeteria",
+            "description": "Cafeteria colorida com cafés da manhã saudáveis, sucos frescos e um clima descontraído popular entre viajantes.",
+            "maps_url": ""
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr",
+          "pt"
+        ]
+      }
+    },
+    "fr": {
+      "quick_warnings": [
+        "Utilisez uniquement une crème solaire biodégradable — les stromatolites de la lagune sont anciens et extrêmement fragiles.",
+        "L'aéroport le plus proche (Chetumal CTM) est à ~40 min ; Cancún est à 4h30 de route.",
+        "Les moustiques abondent près de la lagune au coucher du soleil — apportez du répulsif."
+      ],
+      "detail_guide": {
+        "getting_around": "Bacalar est un petit village facile à parcourir à pied ou à vélo. Mototaxis et taxis couvrent la route en bordure de lagune. Les bus ADO relient Chetumal et Cancún. Louer un kayak ou engager une lancha est la meilleure façon d'explorer la lagune.",
+        "top_sights": [
+          {
+            "id": "bac_lagoon",
+            "name": "Laguna de Bacalar (Lagune des Sept Couleurs)",
+            "category": "nature",
+            "description": "Impressionnante lagune d'eau douce aux couches d'eau turquoise, bleue et indigo qui s'étend sur plus de 50 km."
+          },
+          {
+            "id": "bac_fort",
+            "name": "Fort San Felipe",
+            "category": "point d'intérêt",
+            "description": "Fort espagnol du XVIIIe siècle surplombant la lagune, aujourd'hui un petit musée sur la piraterie et l'histoire coloniale."
+          },
+          {
+            "id": "bac_cenote_azul",
+            "name": "Cenote Azul",
+            "category": "nature",
+            "description": "Vaste cenote profond au sud du village, parfait pour nager et sauter des rochers dans l'eau cristalline."
+          }
+        ],
+        "museums": [
+          {
+            "id": "bac_museo_fuerte",
+            "name": "Musée du Fort San Felipe",
+            "category": "musée",
+            "description": "À l'intérieur du fort, les expositions couvrent l'histoire pirate de la région et l'héritage maya."
+          }
+        ],
+        "parks": [
+          {
+            "id": "bac_canal_piratas",
+            "name": "Canal des Pirates",
+            "category": "nature",
+            "description": "Canal étroit avec mangrove et couleurs d'eau vives ; à explorer en kayak ou en tour en lancha."
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "bac_la_playita",
+            "name": "La Playita",
+            "category": "restaurant",
+            "description": "Restaurant en bord de lagune avec pontons et hamacs, servant ceviche frais et plats régionaux au-dessus de l'eau."
+          },
+          {
+            "id": "bac_mango_cafe",
+            "name": "Mango y Chile",
+            "category": "café",
+            "description": "Café coloré avec petits-déjeuners sains, jus frais et ambiance détendue populaire auprès des voyageurs."
           }
         ],
         "available_translations": [

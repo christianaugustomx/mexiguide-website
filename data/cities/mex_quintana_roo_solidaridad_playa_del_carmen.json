@@ -4,8 +4,8 @@
   "state": "Quintana Roo",
   "has_detailed_guide": true,
   "security": {
-    "level": 3,
-    "label": "Riesgo Moderado / Moderate Risk"
+    "level": 2,
+    "label": "Seguro / Safe"
   },
   "quick_stats": {
     "best_time": "Nov – Apr",
@@ -114,7 +114,8 @@
     "available_translations": [
       "en",
       "es",
-      "fr"
+      "fr",
+      "pt"
     ]
   },
   "translations": {
@@ -216,6 +217,209 @@
             "category": "Coworking",
             "description": "El hub nómada más popular de Playa — WiFi confiable de alta velocidad, escritorios compartidos, oficinas privadas, alberca en la azotea y una comunidad muy activa de trabajadores remotos. Pases diarios y mensuales. Múltiples ubicaciones en la ciudad; la sucursal de Quinta Avenida tiene la mejor infraestructura. Reserva con anticipación en temporada alta.",
             "maps_url": "https://maps.app.goo.gl/placeholderSelinaPlaya"
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr"
+        ]
+      }
+    },
+    "pt": {
+      "quick_warnings": [
+        "A adulteração de bebidas em bares e baladas na Quinta Avenida e arredores é um risco documentado e contínuo — nunca deixe sua bebida sem supervisão e evite aceitar bebidas de estranhos.",
+        "A Quinta Avenida depois da meia-noite é significativamente mais arriscada — fique em áreas bem iluminadas e movimentadas ou volte cedo para casa.",
+        "Sempre confira as contas dos restaurantes com atenção — cobranças ocultas e totais incorretos são comuns na zona turística."
+      ],
+      "detail_guide": {
+        "getting_around": "Playa del Carmen é extremamente caminhável — a Quinta Avenida e a praia correm paralelas por vários quilômetros e a maioria dos hotéis, restaurantes e atrações fica entre elas. O Uber está amplamente disponível e é confiável para trajetos mais longos. Os colectivos (vans compartilhadas) seguem para o norte até Cancún e para o sul até Tulum de forma barata e frequente, saindo da Calle 2 Norte. O terminal de ônibus ADO atende rotas de longa distância. Evite táxis sem identificação à noite.",
+        "top_sights": [
+          {
+            "id": "sight_quinta_avenida",
+            "name": "Quinta Avenida",
+            "category": "Ponto de interesse",
+            "description": "Um calçadão de 5 km que é a espinha dorsal de Playa del Carmen — repleto de boutiques, restaurantes, bares de cenote e artistas de rua. Melhor explorar pela manhã (9–11h) antes do pico de turistas. O trecho ao norte da Calle 38 é mais tranquilo, mais local e melhor para encontrar comida autêntica.",
+            "maps_url": "https://maps.app.goo.gl/placeholderQuintaAvenida"
+          },
+          {
+            "id": "sight_cozumel_ferry",
+            "name": "Ilha de Cozumel (Bate-volta)",
+            "category": "Natureza / Mergulho",
+            "description": "Um ferry de 45 minutos do píer principal leva você até Cozumel — lar do Recife Mesoamericano, o segundo maior sistema de recifes de coral do mundo. Mergulho e snorkel de classe mundial; alugue equipamento na chegada ou reserve um mergulho guiado. Os ferries saem a cada hora das 6h à meia-noite (MXN 200–250 por trajeto). Compre o bilhete de volta antes de explorar.",
+            "maps_url": "https://maps.app.goo.gl/placeholderCozumel"
+          },
+          {
+            "id": "sight_xcaret",
+            "name": "Xcaret Park",
+            "category": "Ecoturismo",
+            "description": "Um grande parque eco-arqueológico a 6 km ao sul de Playa, construído em torno de uma enseada natural — rios subterrâneos para nadar, uma aldeia maia, aquário de coral, santuário de tartarugas marinhas e espetáculo folclórico noturno. Caro (MXN 1.500–2.000 por pessoa) mas uma experiência de dia inteiro. Reserve online para obter desconto. Mais voltado para famílias do que para a vida noturna.",
+            "maps_url": "https://maps.app.goo.gl/placeholderXcaret"
+          },
+          {
+            "id": "sight_cenote_azul",
+            "name": "Cenote Azul",
+            "category": "Natureza",
+            "description": "Um dos cenotes mais acessíveis perto de Playa — um grande cenote aberto com água azul cristalina a 10 km ao sul pela rodovia. Snorkel, plataformas para saltos (3 m e 6 m) e um restaurante de palapa na borda. Entrada MXN 150. Chegue antes das 10h, antes da chegada dos ônibus de turismo. Um refrescante passeio de meio dia.",
+            "maps_url": "https://maps.app.goo.gl/placeholderCenoteAzul"
+          },
+          {
+            "id": "sight_playa_mamitas",
+            "name": "Playa Mamitas",
+            "category": "Praia",
+            "description": "A faixa de beach clubs mais icônica de Playa — água caribenha turquesa, areia branca e um animado clima de beach club. Acesso gratuito à praia pública; pague por uma espreguiçadeira em um dos clubes (MXN 200–400 com crédito de consumo). Mais calmo pela manhã — as tardes trazem DJ sets e multidões maiores.",
+            "maps_url": "https://maps.app.goo.gl/placeholderPlayaMamitas"
+          }
+        ],
+        "museums": [
+          {
+            "id": "museum_frida_playa",
+            "name": "Museo Frida Kahlo Playa del Carmen",
+            "category": "Arte",
+            "description": "Uma exposição curada sobre a vida e obra de Frida Kahlo em uma casa de estilo colonial perto da Quinta Avenida. Menor e mais intimista do que a Casa Azul em Coyoacán — uma boa opção para quem não vai à CDMX. Exposições rotativas complementam um acervo permanente de gravuras, fotos e objetos pessoais. Entrada MXN 250.",
+            "maps_url": "https://maps.app.goo.gl/placeholderFridaPlaya"
+          }
+        ],
+        "parks": [
+          {
+            "id": "nature_xpu_ha",
+            "name": "Praia Xpu-Ha",
+            "category": "Praia",
+            "description": "Uma praia em grande parte sem desenvolvimento, a 20 km ao sul de Playa — ampla, tranquila e muito menos cheia do que a zona hoteleira. Uma mistura de praia pública gratuita e alguns restaurantes de palapa discretos. Melhor chegar de colectivo até a entrada de Xpu-Ha. O snorkel na ponta norte rochosa é excelente.",
+            "maps_url": "https://maps.app.goo.gl/placeholderXpuHa"
+          },
+          {
+            "id": "nature_laguna_chakal",
+            "name": "Laguna Chakal",
+            "category": "Natureza / Cenote",
+            "description": "Uma lagoa de cenote escondida na selva perto de Puerto Morelos, 30 km ao norte — menos visitada do que os cenotes do circuito turístico. Balanços de corda, manguezal e água surpreendentemente cristalina. Acessível apenas de carro ou em tour. Vale o desvio para viajantes que buscam algo fora do comum.",
+            "maps_url": "https://maps.app.goo.gl/placeholderLagunaChakal"
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "eat_la_cueva_del_chango",
+            "name": "La Cueva del Chango",
+            "category": "Café da manhã / Mexicana",
+            "description": "Um adorado restaurante com jardim de selva escondido atrás da Quinta Avenida — ambiente de palapa ao ar livre, ingredientes frescos e o melhor café da manhã mexicano de Playa. As enfrijoladas e os pratos de fruta fresca são destaques. Espere fila nos fins de semana. Prefere-se dinheiro; chegue cedo.",
+            "maps_url": "https://maps.app.goo.gl/placeholderCuevaChango"
+          },
+          {
+            "id": "eat_carboncitos",
+            "name": "Carboncitos",
+            "category": "Comida local",
+            "description": "Uma instituição local sem pretensões — carnes grelhadas no carvão, tortillas frescas e pratos de influência iucateca a preços justos em um terraço na cobertura. Os tacos de cochinita pibil e as bebidas de chaya (espinafre nativo) são os destaques. Boa relação custo-benefício em um corredor turístico geralmente caro.",
+            "maps_url": "https://maps.app.goo.gl/placeholderCarboncitos"
+          },
+          {
+            "id": "eat_salmon_guru",
+            "name": "Salmon Guru Playa",
+            "category": "Bar de coquetéis",
+            "description": "Uma filial do aclamado bar de coquetéis de Madri — mixologia séria em um ambiente elegante na Quinta Avenida. Um dos lugares de vida noturna mais seguros e respeitados de Playa; bem administrado, sem as preocupações de adulteração de bebidas associadas aos beach clubs. Ideal para um drinque à noite antes do jantar.",
+            "maps_url": "https://maps.app.goo.gl/placeholderSalmonGuru"
+          },
+          {
+            "id": "work_selina_playa",
+            "name": "Selina Playa del Carmen",
+            "category": "Coworking",
+            "description": "O hub de nômades mais popular de Playa — Wi-Fi confiável de alta velocidade, hot desks, escritórios privativos, piscina no terraço e uma comunidade muito ativa de trabalhadores remotos. Passes diários e mensais. Várias unidades na cidade; a filial da Quinta Avenida tem a melhor infraestrutura. Reserve com antecedência na alta temporada.",
+            "maps_url": "https://maps.app.goo.gl/placeholderSelinaPlaya"
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr",
+          "pt"
+        ]
+      }
+    },
+    "fr": {
+      "quick_warnings": [
+        "Le piégeage des boissons dans les bars et clubs de la Quinta Avenida et des alentours est un risque documenté et actuel — ne laissez jamais votre verre sans surveillance et n'acceptez pas de boisson d'un inconnu.",
+        "La Quinta Avenida passé minuit est nettement plus risquée — restez dans les zones bien éclairées et fréquentées, ou rentrez tôt.",
+        "Vérifiez toujours attentivement l'addition au restaurant — les frais cachés et les totaux erronés sont fréquents dans la zone touristique."
+      ],
+      "detail_guide": {
+        "getting_around": "Playa del Carmen se parcourt très bien à pied — la Quinta Avenida et la plage sont parallèles sur plusieurs kilomètres et la plupart des hôtels, restaurants et attractions se trouvent entre les deux. Uber est largement disponible et fiable pour les trajets plus longs. Les colectivos (vans partagés) vont vers le nord à Cancún et vers le sud à Tulum, de façon économique et fréquente depuis la Calle 2 Norte. La gare routière ADO dessert les longues distances. Évitez les taxis sans signalétique la nuit.",
+        "top_sights": [
+          {
+            "id": "sight_quinta_avenida",
+            "name": "Quinta Avenida",
+            "category": "Point d'intérêt",
+            "description": "Un boulevard piéton de 5 km qui constitue l'épine dorsale de Playa del Carmen — bordé de boutiques, restaurants, bars à cenote et artistes de rue. À explorer le matin (9 h–11 h) avant l'arrivée des foules touristiques. Le tronçon nord au-dessus de la Calle 38 est plus calme, plus local et meilleur pour trouver une cuisine authentique."
+          },
+          {
+            "id": "sight_cozumel_ferry",
+            "name": "Île de Cozumel (excursion à la journée)",
+            "category": "Nature / Plongée",
+            "description": "Un ferry de 45 minutes depuis le quai principal vous conduit à Cozumel — qui abrite le Récif Mésoaméricain, le deuxième plus grand système corallien au monde. Plongée et snorkeling de classe mondiale ; louez l'équipement sur place ou réservez une plongée guidée. Les ferries partent toutes les heures de 6 h à minuit (200–250 MXN l'aller). Achetez le retour avant d'explorer."
+          },
+          {
+            "id": "sight_xcaret",
+            "name": "Parc Xcaret",
+            "category": "Écotourisme",
+            "description": "Un vaste éco-parc archéologique à 6 km au sud de Playa, construit autour d'une crique naturelle — rivières souterraines pour la baignade, village maya, aquarium corallien, sanctuaire de tortues marines et spectacle folklorique en soirée. Onéreux (1 500–2 000 MXN par personne) mais c'est une expérience d'une journée entière. Réservez en ligne pour une remise. Plus familial qu'orienté vie nocturne."
+          },
+          {
+            "id": "sight_cenote_azul",
+            "name": "Cenote Azul",
+            "category": "Nature",
+            "description": "L'un des cenotes les plus accessibles près de Playa — un grand cenote ouvert aux eaux bleu cristallin, à 10 km au sud par la route. Snorkeling, plateformes de saut (3 m et 6 m) et un restaurant sous palapa au bord. Entrée 150 MXN. Arrivez avant 10 h, avant les bus touristiques. Une escapade rafraîchissante d'une demi-journée."
+          },
+          {
+            "id": "sight_playa_mamitas",
+            "name": "Playa Mamitas",
+            "category": "Plage",
+            "description": "La bande la plus emblématique de beach clubs de Playa — eaux caribéennes turquoise, sable blanc et ambiance beach club animée. Accès gratuit à la plage publique ; payez un transat dans l'un des clubs (200–400 MXN, consommation incluse). Plus calme le matin — les après-midi amènent DJ sets et plus de monde."
+          }
+        ],
+        "museums": [
+          {
+            "id": "museum_frida_playa",
+            "name": "Musée Frida Kahlo Playa del Carmen",
+            "category": "Art",
+            "description": "Une exposition soignée sur la vie et l'œuvre de Frida Kahlo dans une maison coloniale près de la Quinta Avenida. Plus petit et plus intimiste que la Casa Azul de Coyoacán — une bonne option pour qui ne visite pas Mexico. Des expositions temporaires complètent une collection permanente de gravures, photos et objets personnels. Entrée 250 MXN."
+          }
+        ],
+        "parks": [
+          {
+            "id": "nature_xpu_ha",
+            "name": "Playa Xpu-Ha",
+            "category": "Plage",
+            "description": "Une plage en grande partie non aménagée à 20 km au sud de Playa — vaste, calme et bien moins fréquentée que la zone hôtelière. Mix de plage publique gratuite et de quelques palapas discrètes. Le mieux est d'arriver en colectivo vers le sud jusqu'à l'entrée de Xpu-Ha. Le snorkeling à la pointe rocheuse nord est excellent."
+          },
+          {
+            "id": "nature_laguna_chakal",
+            "name": "Laguna Chakal",
+            "category": "Nature / Cenote",
+            "description": "Une lagune-cenote cachée dans la jungle près de Puerto Morelos, 30 km au nord — moins visitée que les cenotes du circuit touristique. Balançoires en corde, forêt de mangrove et eau d'une incroyable limpidité. Accessible uniquement en voiture ou en tour. Le détour vaut la peine pour qui cherche à sortir des sentiers battus."
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "eat_la_cueva_del_chango",
+            "name": "La Cueva del Chango",
+            "category": "Petit-déjeuner / Mexicain",
+            "description": "Un restaurant adoré caché dans un jardin-jungle derrière la Quinta Avenida — ambiance palapa en plein air, produits frais et le meilleur petit-déjeuner mexicain de Playa. Les enfrijoladas et les assiettes de fruits frais sont les favoris. Prévoyez de la file le week-end. Paiement en espèces de préférence ; venez tôt."
+          },
+          {
+            "id": "eat_carboncitos",
+            "name": "Carboncitos",
+            "category": "Cuisine locale",
+            "description": "Une institution locale sans prétention — viandes grillées au charbon, tortillas fraîches et plats d'influence yucatèque à prix justes, sur une terrasse en rooftop. Les tacos de cochinita pibil et les boissons à la chaya (épinard indigène) sont les favoris. Excellent rapport qualité-prix dans un corridor touristique généralement cher."
+          },
+          {
+            "id": "eat_salmon_guru",
+            "name": "Salmon Guru Playa",
+            "category": "Bar à cocktails",
+            "description": "Une succursale du célèbre bar à cocktails madrilène — mixologie sérieuse dans un décor élégant surplombant la Quinta Avenida. L'un des lieux de vie nocturne les plus sûrs et réputés de Playa ; bien géré, sans inquiétude de boissons piégées comme certains beach clubs. Parfait pour un verre en début de soirée avant le dîner."
+          },
+          {
+            "id": "work_selina_playa",
+            "name": "Selina Playa del Carmen",
+            "category": "Coworking",
+            "description": "Le hub nomade le plus populaire de Playa — Wi-Fi fibre haute vitesse, postes partagés, bureaux privés, piscine en rooftop et une communauté très active de travailleurs à distance. Pass journaliers et mensuels. Plusieurs sites en ville ; la succursale de la Quinta Avenida a la meilleure infrastructure. Réservez à l'avance en haute saison."
           }
         ],
         "available_translations": [

@@ -86,7 +86,8 @@
     "available_translations": [
       "en",
       "es",
-      "fr"
+      "fr",
+      "pt"
     ]
   },
   "translations": {
@@ -160,6 +161,158 @@
             "category": "cafetería / museo",
             "description": "Cafetería de chocolate y pequeño museo del cacao donde puedes aprender sobre las tradiciones mesoamericanas del chocolate y probar bebidas artesanales.",
             "maps_url": ""
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr",
+          "pt"
+        ]
+      }
+    },
+    "pt": {
+      "quick_warnings": [
+        "A 2.200 m de altitude, as noites são frias mesmo no verão — leve várias camadas de roupa e uma jaqueta quente.",
+        "Bloqueios de estradas por grupos locais ocasionalmente interrompem o trânsito de e para a cidade; verifique as condições antes de dirigir.",
+        "O aeroporto de Tuxtla Gutiérrez (TGZ) fica a cerca de 1 hora por uma estrada sinuosa de montanha; reserve tempo extra de deslocamento."
+      ],
+      "detail_guide": {
+        "getting_around": "O centro de paralelepípedos é compacto e fácil de percorrer a pé. Os colectivos vão a vilas indígenas como San Juan Chamula e Zinacantán. Os táxis são baratos. Os ônibus ADO conectam a Palenque, Tuxtla e Oaxaca. Muitos viajantes alugam carro para ir ao Cañón del Sumidero e aos Lagos de Montebello.",
+        "top_sights": [
+          {
+            "id": "sclc_chamula",
+            "name": "San Juan Chamula",
+            "category": "cultura / vila indígena",
+            "description": "Uma vila tzotzil maia com uma famosa igreja sincrética onde velas, agulhas de pinheiro e incenso substituem os bancos — fotografar dentro é estritamente proibido.",
+            "maps_url": ""
+          },
+          {
+            "id": "sclc_canon_sumidero",
+            "name": "Cañón del Sumidero (passeio de um dia)",
+            "category": "natureza",
+            "description": "Um cânion fluvial impressionante com paredes de 1.000 metros; os passeios de barco saem de Chiapa de Corzo, a cerca de 1,5 hora de distância.",
+            "maps_url": ""
+          },
+          {
+            "id": "sclc_andador",
+            "name": "Andador Eclesiástico e Real de Guadalupe",
+            "category": "cultura / compras",
+            "description": "As principais ruas de pedestres repletas de lojas de âmbar, galerias de tecidos, mercados de artesanato e cafés aconchegantes.",
+            "maps_url": ""
+          }
+        ],
+        "museums": [
+          {
+            "id": "sclc_museo_ambar",
+            "name": "Museo del Ámbar de Chiapas",
+            "category": "museu",
+            "description": "Dedicado ao âmbar de Chiapas, com exposições de inclusões de insetos, artefatos maias de âmbar e o processo de extração.",
+            "maps_url": ""
+          }
+        ],
+        "parks": [
+          {
+            "id": "sclc_huitepec",
+            "name": "Reserva Ecológica Huitepec",
+            "category": "reserva natural",
+            "description": "Reserva de floresta nublada bem na saída da cidade, com trilhas pela floresta de altitude rica em orquídeas.",
+            "maps_url": ""
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "sclc_tierradentro",
+            "name": "TierrAdentro",
+            "category": "restaurante",
+            "description": "Cozinha chiapaneca com toque moderno, usando ingredientes locais como cogumelos das montanhas, milho crioulo e café de Chiapas.",
+            "maps_url": ""
+          },
+          {
+            "id": "sclc_cafemantico",
+            "name": "Cafémantico",
+            "category": "café",
+            "description": "Torrefação de café de terceira onda que serve grãos de origem única de Chiapas em um espaço aconchegante, perfeito para trabalhar.",
+            "maps_url": ""
+          },
+          {
+            "id": "sclc_cacao_nativa",
+            "name": "Kakaw Museo del Cacao",
+            "category": "café / museu",
+            "description": "Café de chocolate e pequeno museu do cacau onde você pode aprender sobre as tradições mesoamericanas do chocolate e provar bebidas artesanais.",
+            "maps_url": ""
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr",
+          "pt"
+        ]
+      }
+    },
+    "fr": {
+      "quick_warnings": [
+        "À 2 200 m d'altitude, les nuits sont fraîches même en été — prévoyez plusieurs couches et une veste chaude.",
+        "Les blocages de routes par des groupes locaux perturbent occasionnellement la circulation vers et depuis la ville ; vérifiez les conditions avant de rouler.",
+        "L'aéroport de Tuxtla Gutiérrez (TGZ) est à ~1 heure par route de montagne sinueuse ; prévoyez du temps de trajet supplémentaire."
+      ],
+      "detail_guide": {
+        "getting_around": "Le centre pavé est compact et facile à parcourir à pied. Des colectivos desservent les villages indigènes comme San Juan Chamula et Zinacantán. Les taxis sont bon marché. Les bus ADO relient Palenque, Tuxtla et Oaxaca. Beaucoup de voyageurs louent une voiture pour rejoindre le Cañón del Sumidero et les Lagos de Montebello.",
+        "top_sights": [
+          {
+            "id": "sclc_chamula",
+            "name": "San Juan Chamula",
+            "category": "culture / village indigène",
+            "description": "Village tzotzil maya avec une église syncrétique célèbre où bougies, aiguilles de pin et encens remplacent les bancs — la photo à l'intérieur est strictement interdite."
+          },
+          {
+            "id": "sclc_canon_sumidero",
+            "name": "Cañón del Sumidero (excursion d'une journée)",
+            "category": "nature",
+            "description": "Impressionnant canyon fluvial aux parois de 1 000 mètres ; les excursions en bateau partent de Chiapa de Corzo, à environ 1h30."
+          },
+          {
+            "id": "sclc_andador",
+            "name": "Andador Eclesiástico et Real de Guadalupe",
+            "category": "culture / shopping",
+            "description": "Les principales rues piétonnes avec boutiques d'ambre, galeries textiles, marchés artisanaux et cafés accueillants."
+          }
+        ],
+        "museums": [
+          {
+            "id": "sclc_museo_ambar",
+            "name": "Musée de l'ambre du Chiapas",
+            "category": "musée",
+            "description": "Consacré à l'ambre du Chiapas, avec des expositions d'inclusions d'insectes, d'artefacts mayas en ambre et du processus d'extraction."
+          }
+        ],
+        "parks": [
+          {
+            "id": "sclc_huitepec",
+            "name": "Réserve écologique Huitepec",
+            "category": "réserve naturelle",
+            "description": "Réserve de forêt de nuages à la lisière du village avec des sentiers à travers une forêt d'altitude riche en orchidées."
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "sclc_tierradentro",
+            "name": "TierrAdentro",
+            "category": "restaurant",
+            "description": "Cuisine du Chiapas avec une touche moderne, utilisant des ingrédients locaux comme les champignons de montagne, le maïs criollo et le café de Chiapas."
+          },
+          {
+            "id": "sclc_cafemantico",
+            "name": "Cafémantico",
+            "category": "café",
+            "description": "Torréfacteur de spécialité servant des grains d'origine unique du Chiapas dans un espace convivial idéal pour travailler."
+          },
+          {
+            "id": "sclc_cacao_nativa",
+            "name": "Kakaw Museo del Cacao",
+            "category": "café / musée",
+            "description": "Café-chocolaterie et petit musée du cacao où vous pouvez découvrir les traditions mésoaméricaines du chocolat et goûter aux boissons artisanales."
           }
         ],
         "available_translations": [

@@ -86,7 +86,8 @@
     "available_translations": [
       "en",
       "es",
-      "fr"
+      "fr",
+      "pt"
     ]
   },
   "translations": {
@@ -166,6 +167,151 @@
           "en",
           "es",
           "fr"
+        ]
+      }
+    },
+    "pt": {
+      "quick_warnings": [
+        "O calor no verão é extremo (mais de 40 °C); planeje atividades ao ar livre para o início da manhã ou final da tarde.",
+        "Os passeios de tubarão-baleia exigem reserva com operadores licenciados — barcos sem licença podem perturbar a fauna.",
+        "Algumas praias na Isla Espíritu Santo não têm sombra nem serviços; leve bastante água e proteção solar."
+      ],
+      "detail_guide": {
+        "getting_around": "O Malecón é uma linda orla de 5 km para caminhar. O centro é compacto e dá para percorrer a pé. Táxis e Uber cobrem a cidade. Recomenda-se alugar um carro para chegar a praias como Balandra e Tecolote. Os ferries cruzam para Mazatlán e Topolobampo.",
+        "top_sights": [
+          {
+            "id": "lp_balandra",
+            "name": "Playa Balandra",
+            "category": "praia",
+            "description": "Icônica baía de águas turquesas rasas com a famosa pedra em forma de cogumelo; considerada uma das praias mais bonitas do México.",
+            "maps_url": ""
+          },
+          {
+            "id": "lp_espiritu_santo",
+            "name": "Isla Espíritu Santo",
+            "category": "natureza / vida selvagem",
+            "description": "Ilha protegida pela UNESCO com colônias de leões-marinhos, caiaque, snorkel e camping em praias intocadas.",
+            "maps_url": ""
+          },
+          {
+            "id": "lp_whale_sharks",
+            "name": "Snorkel com Tubarão-Baleia",
+            "category": "vida selvagem",
+            "description": "Nade com os dóceis tubarões-baleia na Baía de La Paz de outubro a abril com guias licenciados.",
+            "maps_url": ""
+          }
+        ],
+        "museums": [
+          {
+            "id": "lp_museo_ballena",
+            "name": "Museo de la Ballena y Ciencias del Mar",
+            "category": "museu",
+            "description": "Museu de baleias e ciências marinhas com esqueletos em tamanho real e exposições interativas sobre a ecologia do Mar de Cortez.",
+            "maps_url": ""
+          }
+        ],
+        "parks": [
+          {
+            "id": "lp_malecon",
+            "name": "Malecón de La Paz",
+            "category": "parque à beira-mar",
+            "description": "Um pitoresco calçadão à beira-mar com esculturas, áreas de recreação e vistas do pôr do sol sobre o Mar de Cortez.",
+            "maps_url": ""
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "lp_bismark",
+            "name": "Bismark-cito",
+            "category": "restaurante",
+            "description": "Lendário restaurante familiar de frutos do mar desde 1968; experimente as almejas chocolatas e os tacos de peixe.",
+            "maps_url": ""
+          },
+          {
+            "id": "lp_doce_cuarenta",
+            "name": "Doce Cuarenta",
+            "category": "cafeteria / cowork",
+            "description": "Cafeteria moderna e espaço de coworking com bom espresso, Wi-Fi rápido e uma comunidade criativa.",
+            "maps_url": ""
+          },
+          {
+            "id": "lp_rancho_viejo",
+            "name": "Rancho Viejo",
+            "category": "restaurante",
+            "description": "Querida taqueria local que serve tacos de carne assada, burritos de machaca e carnes grelhadas no estilo BCS.",
+            "maps_url": ""
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr",
+          "pt"
+        ]
+      }
+    },
+    "fr": {
+      "quick_warnings": [
+        "La Paz est beaucoup plus tranquille que Cabo — sûre, détendue et authentique.",
+        "Louez une voiture pour explorer les plages (Balandra, Tecolote) ; elles sont difficiles d'accès sans véhicule.",
+        "Attention au soleil intense : crème solaire reef-safe obligatoire si vous nagez."
+      ],
+      "detail_guide": {
+        "getting_around": "Le Malecón et le centre-ville se parcourent à pied. Une voiture de location est essentielle pour les plages emblématiques (Balandra, El Tecolote). Les taxis et Uber desservent la ville.",
+        "top_sights": [
+          {
+            "id": "lpz_balandra",
+            "name": "Playa Balandra",
+            "category": "plage emblématique",
+            "description": "L'une des plus belles plages du Mexique ; eau turquoise peu profonde et le célèbre « champignon » rocheux.",
+            "maps_url": ""
+          },
+          {
+            "id": "lpz_malecon",
+            "name": "Malecón de La Paz",
+            "category": "promenade",
+            "description": "Promenade en bord de mer de 5 km avec sculptures, restaurants et vues sur la mer de Cortés.",
+            "maps_url": ""
+          },
+          {
+            "id": "lpz_espiritu_santo",
+            "name": "Isla Espíritu Santo",
+            "category": "aventure",
+            "description": "Île classée UNESCO avec otaries, snorkeling avec requins-baleines (saison) et plages désertes.",
+            "maps_url": ""
+          }
+        ],
+        "museums": [
+          {
+            "id": "lpz_antropologia",
+            "name": "Museo Regional de Antropología e Historia",
+            "category": "musée",
+            "description": "Histoire et archéologie de la Basse-Californie du Sud, des populations autochtones à l'époque coloniale.",
+            "maps_url": ""
+          }
+        ],
+        "parks": [],
+        "eat_drink_work": [
+          {
+            "id": "lpz_mariscos_moyeyo",
+            "name": "Mariscos Moyeyo",
+            "category": "fruits de mer",
+            "description": "Classique local pour tacos de poisson et aguachile dans une ambiance décontractée.",
+            "maps_url": ""
+          },
+          {
+            "id": "lpz_doce_cuarenta",
+            "name": "Doce Cuarenta Café",
+            "category": "café",
+            "description": "Torréfacteur artisanal et café branché idéal pour travailler avec un bon espresso.",
+            "maps_url": ""
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr",
+          "pt"
         ]
       }
     }

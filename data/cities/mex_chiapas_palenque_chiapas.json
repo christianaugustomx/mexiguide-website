@@ -86,7 +86,8 @@
     "available_translations": [
       "en",
       "es",
-      "fr"
+      "fr",
+      "pt"
     ]
   },
   "translations": {
@@ -160,6 +161,157 @@
             "category": "cafetería",
             "description": "Pequeña cafetería en el pueblo que sirve café de sombra de Chiapas y repostería fresca; una parada matutina confiable.",
             "maps_url": ""
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr"
+        ]
+      }
+    },
+    "pt": {
+      "quick_warnings": [
+        "O clima da selva é quente e úmido o ano todo; leve repelente de insetos, protetor solar e bastante água.",
+        "Viaje entre Palenque e San Cristóbal apenas durante o dia pela rodovia principal; bloqueios de estrada podem acontecer.",
+        "O aeroporto de Villahermosa (VHC) fica a ~2 horas; como alternativa, você pode voar para Tuxtla Gutiérrez (TGZ) com um trajeto mais longo de carro."
+      ],
+      "detail_guide": {
+        "getting_around": "A cidade de Palenque é compacta e dá para percorrer a pé. As combis fazem o trajeto entre a cidade e a zona arqueológica (~8 km). Os táxis são abundantes e baratos. Os ônibus ADO conectam com Villahermosa, San Cristóbal, Campeche e Mérida. Um carro alugado é útil para chegar às cachoeiras de Agua Azul e Misol-Há.",
+        "top_sights": [
+          {
+            "id": "pal_ruinas",
+            "name": "Zona Arqueológica de Palenque",
+            "category": "arqueologia / UNESCO",
+            "description": "Um dos melhores sítios maias do México, com o Templo das Inscrições, a torre do Palácio e pirâmides emolduradas pela selva — Patrimônio Mundial da UNESCO.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Zona+Arqueol%C3%B3gica+de+Palenque,+Palenque,+Mexico"
+          },
+          {
+            "id": "pal_agua_azul",
+            "name": "Cascadas de Agua Azul",
+            "category": "natureza",
+            "description": "Uma série de impressionantes cachoeiras e poças turquesas que descem pela selva, a cerca de 1,5 hora da cidade.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Cascadas+de+Agua+Azul,+Palenque,+Mexico"
+          },
+          {
+            "id": "pal_misol_ha",
+            "name": "Cascada de Misol-Há",
+            "category": "natureza",
+            "description": "Uma cachoeira de selva de 35 metros com uma poça para nadar e uma trilha por trás da cortina de água; no caminho para Agua Azul.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Cascada+de+Misol-H%C3%A1,+Palenque,+Mexico"
+          }
+        ],
+        "museums": [
+          {
+            "id": "pal_museo_sitio",
+            "name": "Museo de Sitio de Palenque",
+            "category": "museu",
+            "description": "Museu na zona arqueológica que exibe máscaras funerárias de jade, painéis esculpidos e artefatos das tumbas dos governantes de Palenque.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Museo+de+Sitio+de+Palenque,+Palenque,+Mexico"
+          }
+        ],
+        "parks": [
+          {
+            "id": "pal_aluxes",
+            "name": "Ecoparque Aluxes",
+            "category": "natureza / vida selvagem",
+            "description": "Um centro de resgate e conservação perto das ruínas que abriga onças-pintadas, macacos, araras e crocodilos nativos da selva chiapaneca.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Ecoparque+Aluxes,+Palenque,+Mexico"
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "pal_monte_verde",
+            "name": "Monte Verde",
+            "category": "restaurante",
+            "description": "Restaurante ao ar livre no caminho para as ruínas que serve pratos regionais de Chiapas, sucos frescos e café de Chiapas.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Monte+Verde,+Palenque,+Mexico"
+          },
+          {
+            "id": "pal_el_huachinango",
+            "name": "Restaurant Maya Cañada",
+            "category": "restaurante",
+            "description": "Lugar local popular para peixe de rio na grelha, tamales chiapanecos e cerveja gelada depois de um dia nas ruínas.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Restaurant+Maya+Ca%C3%B1ada,+Palenque,+Mexico"
+          },
+          {
+            "id": "pal_cafe_jade",
+            "name": "Café de Yara",
+            "category": "cafeteria",
+            "description": "Pequena cafeteria na cidade que serve café de sombra de Chiapas e doces frescos; uma parada matinal confiável.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Caf%C3%A9+de+Yara,+Palenque,+Mexico"
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr",
+          "pt"
+        ]
+      }
+    },
+    "fr": {
+      "quick_warnings": [
+        "Le climat tropical est chaud et humide toute l'année ; prévoyez répulsif anti-insectes, crème solaire et beaucoup d'eau.",
+        "Voyagez entre Palenque et San Cristóbal uniquement de jour sur la route principale ; des blocages routiers peuvent survenir.",
+        "L'aéroport de Villahermosa (VHC) est à ~2 heures ; vous pouvez aussi atterrir à Tuxtla Gutiérrez (TGZ) avec un trajet routier plus long."
+      ],
+      "detail_guide": {
+        "getting_around": "Le village de Palenque est compact et se parcourt à pied. Des minibus (combis) relient le village à la zone archéologique (~8 km). Les taxis sont nombreux et bon marché. Les bus ADO desservent Villahermosa, San Cristóbal, Campeche et Mérida. Une voiture de location est utile pour accéder aux cascades d'Agua Azul et de Misol-Há.",
+        "top_sights": [
+          {
+            "id": "pal_ruinas",
+            "name": "Zone archéologique de Palenque",
+            "category": "archéologie / UNESCO",
+            "description": "L'un des plus beaux sites mayas du Mexique, avec le Temple des Inscriptions, la tour du Palais et des pyramides encadrées par la jungle — patrimoine mondial de l'UNESCO."
+          },
+          {
+            "id": "pal_agua_azul",
+            "name": "Cascades d'Agua Azul",
+            "category": "nature",
+            "description": "Une série de cascades spectaculaires et de bassins turquoise tombant au cœur de la jungle, à environ 1h30 du village."
+          },
+          {
+            "id": "pal_misol_ha",
+            "name": "Cascade de Misol-Há",
+            "category": "nature",
+            "description": "Une cascade de 35 mètres dans la jungle avec un bassin de baignade et un sentier derrière le rideau d'eau ; en route vers Agua Azul."
+          }
+        ],
+        "museums": [
+          {
+            "id": "pal_museo_sitio",
+            "name": "Musée de site de Palenque",
+            "category": "musée",
+            "description": "Musée sur le site archéologique présentant des masques funéraires en jade, des panneaux sculptés et des artefacts issus des tombes des dirigeants de Palenque."
+          }
+        ],
+        "parks": [
+          {
+            "id": "pal_aluxes",
+            "name": "Écoparque Aluxes",
+            "category": "nature / faune",
+            "description": "Centre de sauvetage et de conservation près des ruines abritant jaguars, singes, aras et crocodiles originaires de la jungle du Chiapas."
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "pal_monte_verde",
+            "name": "Monte Verde",
+            "category": "restaurant",
+            "description": "Restaurant en plein air sur la route des ruines servant des plats régionaux du Chiapas, des jus frais et du café de Chiapas."
+          },
+          {
+            "id": "pal_el_huachinango",
+            "name": "Restaurant Maya Cañada",
+            "category": "restaurant",
+            "description": "Adresse locale populaire pour le poisson de rivière grillé, les tamales du Chiapas et la bière fraîche après une journée aux ruines."
+          },
+          {
+            "id": "pal_cafe_jade",
+            "name": "Café de Yara",
+            "category": "café",
+            "description": "Petit café dans le village servant du café de Chiapas d'ombre et des pâtisseries fraîches ; une étape matinale fiable."
           }
         ],
         "available_translations": [

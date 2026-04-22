@@ -86,7 +86,8 @@
     "available_translations": [
       "en",
       "es",
-      "fr"
+      "fr",
+      "pt"
     ]
   },
   "translations": {
@@ -166,6 +167,166 @@
           "en",
           "es",
           "fr"
+        ]
+      }
+    },
+    "pt": {
+      "quick_warnings": [
+        "O aeroporto comercial mais próximo é o de Tijuana (TIJ), a cerca de 90 min ao norte; use a ponte CBX se você estiver vindo de San Diego.",
+        "A rodovia com pedágio (cuota) saindo de Tijuana é mais segura e rápida do que a estrada gratuita, especialmente à noite.",
+        "A comida de rua é excelente, mas escolha barracas movimentadas com alta rotatividade para evitar problemas estomacais."
+      ],
+      "detail_guide": {
+        "getting_around": "O centro e o Malecón podem ser percorridos a pé. Táxis e aplicativos de transporte cobrem a cidade. Um carro alugado é essencial para visitar a região vinícola do Valle de Guadalupe (~30 min a leste) e o La Bufadora (~30 min ao sul).",
+        "top_sights": [
+          {
+            "id": "ens_valle_guadalupe",
+            "name": "Valle de Guadalupe",
+            "category": "região vinícola",
+            "description": "A principal região vinícola do México, com mais de 100 vinícolas boutique, restaurantes inovadores e paisagens de vinhedos ondulados.",
+            "maps_url": ""
+          },
+          {
+            "id": "ens_la_bufadora",
+            "name": "La Bufadora",
+            "category": "natureza",
+            "description": "Um poderoso bufadouro marinho que lança água do mar a até 30 metros de altura, situado em um penhasco costeiro deslumbrante.",
+            "maps_url": ""
+          },
+          {
+            "id": "ens_fish_market",
+            "name": "Mercado Negro (Mercado de Peixe)",
+            "category": "gastronomia / mercado",
+            "description": "Mercado movimentado à beira-mar onde os pescadores vendem a pesca do dia; experimente o ceviche e os tacos de peixe nas barracas.",
+            "maps_url": ""
+          }
+        ],
+        "museums": [
+          {
+            "id": "ens_riviera",
+            "name": "Centro Cultural Riviera de Ensenada",
+            "category": "museu / centro cultural",
+            "description": "Um lindo hotel dos anos 1930 restaurado e transformado em centro cultural, com exposições de arte e um museu de história.",
+            "maps_url": ""
+          }
+        ],
+        "parks": [
+          {
+            "id": "ens_parque_nacional",
+            "name": "Parque Nacional Sierra de San Pedro Mártir",
+            "category": "parque nacional",
+            "description": "Os picos mais altos da Baja, com florestas de pinheiros, habitat do condor e o observatório astronômico nacional; cerca de 3 horas de carro pelo interior.",
+            "maps_url": ""
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "ens_tacos_fenix",
+            "name": "Tacos El Fenix",
+            "category": "comida de rua",
+            "description": "Lendária barraca de tacos de peixe perto do mercado de peixe — empanados e fritos com molho cremoso, uma verdadeira instituição local.",
+            "maps_url": ""
+          },
+          {
+            "id": "ens_boules",
+            "name": "Boules Restaurant",
+            "category": "restaurante",
+            "description": "Cozinha autoral Baja Med que mistura sabores mexicanos, mediterrâneos e asiáticos com vinhos locais.",
+            "maps_url": ""
+          },
+          {
+            "id": "ens_wendlandt",
+            "name": "Cervecería Wendlandt",
+            "category": "cervejaria",
+            "description": "Cervejaria artesanal de destaque na Baja, com taproom servindo cervejas criativas e petiscos perto do calçadão.",
+            "maps_url": ""
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr",
+          "pt"
+        ]
+      }
+    },
+    "fr": {
+      "quick_warnings": [
+        "L'aéroport commercial le plus proche est Tijuana (TIJ), à environ 90 min au nord ; utilisez le pont CBX si vous venez de San Diego.",
+        "La route à péage (cuota) depuis Tijuana est plus sûre et plus rapide que la gratuite, surtout la nuit.",
+        "La cuisine de rue est excellente, mais choisissez des stands fréquentés avec forte rotation pour éviter les problèmes digestifs."
+      ],
+      "detail_guide": {
+        "getting_around": "Le centre-ville et le Malecón se parcourent à pied. Taxis et VTC couvrent la ville. Une voiture de location est indispensable pour visiter la région viticole du Valle de Guadalupe (~30 min à l'est) et La Bufadora (~30 min au sud).",
+        "top_sights": [
+          {
+            "id": "ens_valle_guadalupe",
+            "name": "Valle de Guadalupe",
+            "category": "région viticole",
+            "description": "La principale zone viticole du Mexique avec plus de 100 vignobles boutique, des restaurants innovants et des paysages de vignes.",
+            "maps_url": ""
+          },
+          {
+            "id": "ens_la_bufadora",
+            "name": "La Bufadora",
+            "category": "nature",
+            "description": "Un puissant geyser marin qui projette l'eau de mer jusqu'à 30 mètres de haut, situé sur une falaise côtière spectaculaire.",
+            "maps_url": ""
+          },
+          {
+            "id": "ens_fish_market",
+            "name": "Mercado Negro (Marché aux poissons)",
+            "category": "gastronomie / marché",
+            "description": "Marché animé en bord de mer où les pêcheurs vendent la pêche du jour ; goûtez au ceviche et aux tacos de poisson des stands.",
+            "maps_url": ""
+          }
+        ],
+        "museums": [
+          {
+            "id": "ens_riviera",
+            "name": "Centro Cultural Riviera de Ensenada",
+            "category": "musée / centre culturel",
+            "description": "Un magnifique hôtel des années 30 restauré et transformé en centre culturel avec des expositions d'art et un musée d'histoire.",
+            "maps_url": ""
+          }
+        ],
+        "parks": [
+          {
+            "id": "ens_parque_nacional",
+            "name": "Parc National Sierra de San Pedro Mártir",
+            "category": "parc national",
+            "description": "Les plus hauts sommets de Basse-Californie avec forêts de pins, habitat du condor et l'observatoire astronomique national ; à 3 h de route vers l'intérieur.",
+            "maps_url": ""
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "ens_tacos_fenix",
+            "name": "Tacos El Fenix",
+            "category": "cuisine de rue",
+            "description": "Stand légendaire de tacos de poisson près du marché — panés et frits avec sauce crémeuse, une véritable institution locale.",
+            "maps_url": ""
+          },
+          {
+            "id": "ens_boules",
+            "name": "Boules Restaurant",
+            "category": "restaurant",
+            "description": "Cuisine Baja Med de chef qui fusionne saveurs mexicaines, méditerranéennes et asiatiques avec vins locaux.",
+            "maps_url": ""
+          },
+          {
+            "id": "ens_wendlandt",
+            "name": "Cervecería Wendlandt",
+            "category": "brasserie",
+            "description": "Brasserie artisanale pionnière avec bières primées et ambiance décontractée en bord de mer.",
+            "maps_url": ""
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr",
+          "pt"
         ]
       }
     }

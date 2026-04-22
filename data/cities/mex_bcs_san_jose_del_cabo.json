@@ -93,7 +93,8 @@
     "available_translations": [
       "en",
       "es",
-      "fr"
+      "fr",
+      "pt"
     ]
   },
   "translations": {
@@ -180,6 +181,158 @@
           "en",
           "es",
           "fr"
+        ]
+      }
+    },
+    "pt": {
+      "quick_warnings": [
+        "As praias voltadas para o Pacífico têm correntes perigosas — obedeça rigorosamente o sistema de bandeiras. Fique nas zonas de banho designadas.",
+        "A saída do aeroporto é território principal de abordagens para venda de time-share. Recuse com firmeza e siga direto para o seu transfer pré-reservado.",
+        "Os táxis de rua cobram tarifas premium — combine o preço antes de entrar ou use um shuttle pré-reservado."
+      ],
+      "detail_guide": {
+        "getting_around": "O aeroporto MMSD fica bem na borda da cidade — os transfers são curtos. O Uber está disponível e é mais confiável aqui do que em Cabo San Lucas. O corredor turístico entre SJC e CSL é melhor percorrido com shuttle privado ou carro alugado.",
+        "top_sights": [
+          {
+            "id": "sight_art_walk",
+            "name": "Art Walk — Distrito Histórico",
+            "category": "Cultura",
+            "description": "Toda quinta-feira à noite (nov–jun), as galerias abrem suas portas para um passeio sofisticado pelas ruas coloniais com vinho, arte e música ao vivo. A melhor experiência cultural de Los Cabos.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Art+Walk+%E2%80%94+Historic+District,+San+Jos%C3%A9+del+Cabo,+Mexico"
+          },
+          {
+            "id": "sight_iglesia_mision",
+            "name": "Misión de San José del Cabo",
+            "category": "História",
+            "description": "A igreja missionária do século XVIII na praça principal. A praça histórica que a cerca é muito mais autêntica do que qualquer coisa em Cabo San Lucas.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Misi%C3%B3n+de+San+Jos%C3%A9+del+Cabo,+San+Jos%C3%A9+del+Cabo,+Mexico"
+          },
+          {
+            "id": "sight_estero",
+            "name": "Estero San José (Santuário de Aves)",
+            "category": "Natureza",
+            "description": "Uma lagoa de água doce e reserva natural ao lado da praia — abriga mais de 200 espécies de aves e contrasta fortemente com a faixa de resorts ao lado.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Estero+San+Jos%C3%A9+%28Bird+Sanctuary%29,+San+Jos%C3%A9+del+Cabo,+Mexico"
+          }
+        ],
+        "museums": [
+          {
+            "id": "museum_house_of_culture",
+            "name": "Casa de la Cultura",
+            "category": "Arte e Cultura",
+            "description": "Centro cultural comunitário com exposições rotativas de artistas locais da Baja. Entrada gratuita, descontraído e uma janela genuína para a vida fora dos resorts.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Casa+de+la+Cultura,+San+Jos%C3%A9+del+Cabo,+Mexico"
+          }
+        ],
+        "parks": [
+          {
+            "id": "nature_playa_hotelera",
+            "name": "Playa Hotelera",
+            "category": "Praia",
+            "description": "A praia principal ao longo da zona hoteleira. Ondas mais calmas do que em Cabo San Lucas, mas confira as bandeiras — as ondulações do Pacífico ainda podem ser perigosas fora das zonas designadas.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Playa+Hotelera,+San+Jos%C3%A9+del+Cabo,+Mexico"
+          },
+          {
+            "id": "nature_chileno_bay",
+            "name": "Chileno Bay",
+            "category": "Snorkel",
+            "description": "Melhor acessada a partir de San José — menos multidões do que pelo lado de CSL. Águas calmas, bom snorkel e uma praia pública sem taxas obrigatórias de clube.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Chileno+Bay,+San+Jos%C3%A9+del+Cabo,+Mexico"
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "eat_salsas",
+            "name": "Salsas Restaurant",
+            "category": "Alta gastronomia",
+            "description": "Instituição de alta gastronomia de longa data no distrito histórico. Cozinha mexicana contemporânea em um lindo pátio colonial restaurado.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Salsas+Restaurant,+San+Jos%C3%A9+del+Cabo,+Mexico"
+          },
+          {
+            "id": "eat_taqueria_rossy",
+            "name": "Taqueria Rossy",
+            "category": "Comida autêntica",
+            "description": "Uma taqueria local sem frescuras, só dinheiro, adorada pelos moradores. Tacos de peixe e camarão por uma fração do preço da zona turística. A fila é o seu guia — siga-a.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Taqueria+Rossy,+San+Jos%C3%A9+del+Cabo,+Mexico"
+          },
+          {
+            "id": "work_todo_local_hub",
+            "name": "Todo Local Cowork Hub",
+            "category": "Coworking",
+            "description": "Pequeno espaço boutique de coworking no centro histórico. Focado na comunidade, gerido localmente e a uma caminhada das galerias do Art Walk.",
+            "maps_url": "https://www.google.com/maps/search/?api=1&query=Todo+Local+Cowork+Hub,+San+Jos%C3%A9+del+Cabo,+Mexico"
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr",
+          "pt"
+        ]
+      }
+    },
+    "fr": {
+      "quick_warnings": [
+        "Plus tranquille et plus authentique que Cabo San Lucas ; idéal pour les voyageurs cherchant le calme.",
+        "Le quartier des galeries d'art anime les jeudis soirs en haute saison avec la Art Walk.",
+        "Comme à Cabo, évitez de nager hors des zones avec drapeau vert."
+      ],
+      "detail_guide": {
+        "getting_around": "Le centre historique et le quartier des galeries se parcourent à pied. Taxis et Uber relient San José à Cabo San Lucas (~30 min via le corridor). Louez une voiture pour explorer la côte est.",
+        "top_sights": [
+          {
+            "id": "sjd_art_district",
+            "name": "Quartier des galeries d'art",
+            "category": "culture",
+            "description": "Centre historique charmant avec dizaines de galeries, restaurants et l'Art Walk les jeudis soirs.",
+            "maps_url": ""
+          },
+          {
+            "id": "sjd_mision",
+            "name": "Misión de San José del Cabo",
+            "category": "histoire",
+            "description": "Mission du XVIIIe siècle au cœur du centre, symbole fondateur de la ville.",
+            "maps_url": ""
+          },
+          {
+            "id": "sjd_estuario",
+            "name": "Estuario de San José",
+            "category": "nature",
+            "description": "Zone humide protégée avec des oiseaux migrateurs, sentier de randonnée et vues sur l'océan.",
+            "maps_url": ""
+          }
+        ],
+        "museums": [],
+        "parks": [
+          {
+            "id": "sjd_cabo_pulmo",
+            "name": "Parc National de Cabo Pulmo",
+            "category": "parc marin",
+            "description": "Réserve marine UNESCO à 1h de route ; plongée et snorkeling parmi les meilleurs du Mexique.",
+            "maps_url": ""
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "sjd_flora_field",
+            "name": "Flora's Field Kitchen",
+            "category": "ferme-restaurant",
+            "description": "Restaurant champêtre dans une ferme biologique ; l'une des expériences culinaires les plus célèbres de la région.",
+            "maps_url": ""
+          },
+          {
+            "id": "sjd_huerta",
+            "name": "La Huerta",
+            "category": "restaurant",
+            "description": "Cuisine mexicaine moderne avec produits locaux et jardin magnifique ; ambiance romantique.",
+            "maps_url": ""
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr",
+          "pt"
         ]
       }
     }

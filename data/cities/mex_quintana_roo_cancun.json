@@ -93,7 +93,8 @@
     "available_translations": [
       "en",
       "es",
-      "fr"
+      "fr",
+      "pt"
     ]
   },
   "translations": {
@@ -174,6 +175,171 @@
             "category": "Coworking",
             "description": "Escritorios dedicados, Wi-Fi de alta velocidad y una fuerte comunidad de nómadas digitales en el lado de la laguna de la Zona Hotelera. Pases por día disponibles.",
             "maps_url": "https://maps.app.goo.gl/exampleSelina"
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr",
+          "pt"
+        ]
+      }
+    },
+    "pt": {
+      "quick_warnings": [
+        "Evite pegar táxis na rua — use apenas traslados autorizados reservados com antecedência ou ônibus ADO.",
+        "A temporada de sargaço (alga marinha) geralmente vai de maio a agosto — verifique as condições da praia antes de visitar.",
+        "A Zona Hotelera é muito amigável aos turistas, mas o centro de Cancún exige mais cuidado depois de escurecer."
+      ],
+      "detail_guide": {
+        "getting_around": "Os ônibus oficiais ADO conectam o aeroporto, o centro e a Zona Hotelera de forma confiável. Para trajetos porta a porta, use traslados privativos reservados com antecedência ou o app da Uber (disponível na Zona Hotelera). Nunca pegue táxis sem identificação na rua.",
+        "top_sights": [
+          {
+            "id": "sight_musa",
+            "name": "MUSA (Museu Subaquático)",
+            "category": "Único / Aventura",
+            "description": "Uma experiência única de snorkel e mergulho com centenas de esculturas em tamanho real submersas no Mar do Caribe.",
+            "maps_url": "https://maps.app.goo.gl/exampleMusa"
+          },
+          {
+            "id": "sight_museo_maya",
+            "name": "Museo Maya de Cancún",
+            "category": "Cultura",
+            "description": "Museu moderno e elegante na Zona Hotelera que abriga uma importante coleção de artefatos maias de toda a Península de Yucatán.",
+            "maps_url": "https://maps.app.goo.gl/exampleMaya"
+          },
+          {
+            "id": "sight_el_rey",
+            "name": "Ruínas El Rey",
+            "category": "História",
+            "description": "Uma zona arqueológica acessível e rápida de visitar bem no coração da Zona Hotelera. Frequentemente esquecida — raramente está cheia.",
+            "maps_url": "https://maps.app.goo.gl/exampleElRey"
+          }
+        ],
+        "museums": [
+          {
+            "id": "museum_maya",
+            "name": "Museo Maya de Cancún",
+            "category": "Arqueologia",
+            "description": "O museu maia mais importante da região, com mais de 400 artefatos e uma zona arqueológica adjacente (San Miguelito). Com ar-condicionado.",
+            "maps_url": "https://maps.app.goo.gl/exampleMayaMuseum"
+          }
+        ],
+        "parks": [
+          {
+            "id": "nature_delfines",
+            "name": "Playa Delfines",
+            "category": "Praia",
+            "description": "Ampla praia pública com vistas desobstruídas do Caribe e o famoso letreiro de Cancún. Sem multidões de resorts — a favorita dos locais.",
+            "maps_url": "https://maps.app.goo.gl/exampleDelfines"
+          },
+          {
+            "id": "nature_isla_mujeres",
+            "name": "Isla Mujeres",
+            "category": "Bate-volta",
+            "description": "Um rápido trajeto de balsa de 20 minutos até uma ilha sem carros e bem caminhável. Água turquesa, carrinhos de golfe e um ritmo muito mais relaxado que Cancún.",
+            "maps_url": "https://maps.app.goo.gl/exampleIsla"
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "eat_mercado28",
+            "name": "Mercado 28",
+            "category": "Comida autêntica",
+            "description": "Lugar no centro para comida de rua yucateca autêntica e em conta. Experimente a Cochinita Pibil e a Sopa de Lima. Lotado na hora do almoço — chegue antes do meio-dia.",
+            "maps_url": "https://maps.app.goo.gl/exampleMercado"
+          },
+          {
+            "id": "eat_el_fish_fritanga",
+            "name": "El Fish Fritanga",
+            "category": "Frutos do mar",
+            "description": "Local sem frescuras de frutos do mar perto do centro. Peixe inteiro frito, ceviche e cerveja gelada por uma fração do preço dos restaurantes da Zona Hotelera.",
+            "maps_url": "https://maps.app.goo.gl/exampleFishFritanga"
+          },
+          {
+            "id": "work_selina",
+            "name": "Selina Cancun Laguna",
+            "category": "Coworking",
+            "description": "Mesas dedicadas, Wi-Fi de alta velocidade e uma forte comunidade de nômades digitais no lado da lagoa da Zona Hotelera. Passes diários disponíveis.",
+            "maps_url": "https://maps.app.goo.gl/exampleSelina"
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr",
+          "pt"
+        ]
+      }
+    },
+    "fr": {
+      "quick_warnings": [
+        "Évitez de héler des taxis dans la rue — utilisez uniquement des transferts agréés réservés à l'avance ou les bus ADO.",
+        "La saison des sargasses va généralement de mai à août — vérifiez l'état des plages avant de visiter.",
+        "La Zona Hotelera est très sûre pour les touristes, mais le centre de Cancún demande plus de vigilance après la tombée de la nuit."
+      ],
+      "detail_guide": {
+        "getting_around": "Les bus officiels ADO relient de façon fiable l'aéroport, le centre et la Zona Hotelera. Pour les trajets porte-à-porte, utilisez des transferts privés réservés à l'avance ou l'application Uber (disponible dans la Zona Hotelera). Ne hélez jamais un taxi sans signalétique dans la rue.",
+        "top_sights": [
+          {
+            "id": "sight_musa",
+            "name": "MUSA (Musée Sous-Marin d'Art)",
+            "category": "Unique / Aventure",
+            "description": "Une expérience unique de snorkeling et de plongée avec des centaines de sculptures grandeur nature immergées dans la mer des Caraïbes."
+          },
+          {
+            "id": "sight_museo_maya",
+            "name": "Musée Maya de Cancún",
+            "category": "Culture",
+            "description": "Musée moderne et élégant situé dans la Zona Hotelera qui abrite une importante collection d'objets mayas provenant de toute la péninsule du Yucatán."
+          },
+          {
+            "id": "sight_el_rey",
+            "name": "Zone Archéologique El Rey",
+            "category": "Histoire",
+            "description": "Un site archéologique accessible et rapide à visiter en plein cœur de la Zona Hotelera. Souvent négligé — rarement bondé."
+          }
+        ],
+        "museums": [
+          {
+            "id": "museum_maya",
+            "name": "Musée Maya de Cancún",
+            "category": "Archéologie",
+            "description": "Le plus important musée maya de la région, avec plus de 400 objets et un site archéologique attenant (San Miguelito). Climatisé."
+          }
+        ],
+        "parks": [
+          {
+            "id": "nature_delfines",
+            "name": "Playa Delfines",
+            "category": "Plage",
+            "description": "Vaste plage publique avec une vue dégagée sur les Caraïbes et le célèbre panneau Cancún. Sans la foule des resorts — la préférée des locaux."
+          },
+          {
+            "id": "nature_isla_mujeres",
+            "name": "Isla Mujeres",
+            "category": "Excursion à la journée",
+            "description": "Un rapide trajet en ferry de 20 minutes vers une île sans voitures, très agréable à pied. Eaux turquoise, voiturettes de golf et un rythme bien plus détendu que Cancún."
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "eat_mercado28",
+            "name": "Mercado 28",
+            "category": "Cuisine authentique",
+            "description": "Adresse en centre-ville pour une street food yucatèque authentique et abordable. Goûtez la Cochinita Pibil et la Sopa de Lima. Très fréquenté au déjeuner — venez avant midi."
+          },
+          {
+            "id": "eat_el_fish_fritanga",
+            "name": "El Fish Fritanga",
+            "category": "Fruits de mer",
+            "description": "Adresse fruits de mer sans chichi près du centre-ville. Poisson frit entier, ceviche et bière fraîche à des prix bien inférieurs à ceux de la Zona Hotelera."
+          },
+          {
+            "id": "work_selina",
+            "name": "Selina Cancun Laguna",
+            "category": "Coworking",
+            "description": "Postes de travail dédiés, Wi-Fi haute vitesse et une solide communauté de nomades numériques côté lagune de la Zona Hotelera. Pass journaliers disponibles."
           }
         ],
         "available_translations": [

@@ -86,7 +86,8 @@
     "available_translations": [
       "en",
       "es",
-      "fr"
+      "fr",
+      "pt"
     ]
   },
   "translations": {
@@ -160,6 +161,157 @@
             "category": "cafetería",
             "description": "Acogedora cafetería en el centro con granos tostados de Chiapas, comida ligera y un ambiente tranquilo para trabajar.",
             "maps_url": ""
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr"
+        ]
+      }
+    },
+    "pt": {
+      "quick_warnings": [
+        "Os dias de cruzeiro lotam San Miguel de turistas — planeje seus passeios ao recife bem cedo pela manhã ou em dias sem cruzeiros.",
+        "A costa leste tem correntes fortes e ondas pesadas; nade somente nas praias protegidas do lado oeste.",
+        "Alugar uma motoneta é popular, mas as estradas podem ficar escorregadias — use capacete e dirija com cautela."
+      ],
+      "detail_guide": {
+        "getting_around": "Você consegue percorrer San Miguel a pé. Os táxis têm tarifas fixas afixadas no píer do ferry. Alugar um carro ou motoneta é a melhor forma de explorar a costa leste e o interior da ilha. Os ferries conectam a Playa del Carmen a cada 30 minutos.",
+        "top_sights": [
+          {
+            "id": "coz_palancar",
+            "name": "Arrecife Palancar",
+            "category": "mergulho / snorkel",
+            "description": "Parte do Sistema Mesoamericano de Recifes, oferece mergulho de deriva de classe mundial com imponentes formações de coral e vida marinha abundante.",
+            "maps_url": ""
+          },
+          {
+            "id": "coz_san_gervasio",
+            "name": "Sítio Arqueológico de San Gervasio",
+            "category": "arqueologia",
+            "description": "A principal ruína maia da ilha, antigo local de peregrinação dedicado à deusa Ixchel, situado na selva do interior.",
+            "maps_url": ""
+          },
+          {
+            "id": "coz_punta_sur",
+            "name": "Parque Punta Sur (Faro Celarain)",
+            "category": "natureza / parque",
+            "description": "Eco-parque na ponta sul da ilha com farol, lagoa de crocodilos e praias intocadas para snorkel.",
+            "maps_url": ""
+          }
+        ],
+        "museums": [
+          {
+            "id": "coz_museo_isla",
+            "name": "Museo de la Isla de Cozumel",
+            "category": "museu",
+            "description": "Museu à beira-mar que aborda a ecologia do recife de coral, a história maia e o passado colonial da ilha.",
+            "maps_url": ""
+          }
+        ],
+        "parks": [
+          {
+            "id": "coz_chankanaab",
+            "name": "Parque Chankanaab",
+            "category": "natureza / parque de praia",
+            "description": "Eco-parque para a família com jardim botânico, lagoa para snorkel, encontros com golfinhos e acesso à praia.",
+            "maps_url": ""
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "coz_la_cocay",
+            "name": "La Cocay",
+            "category": "restaurante",
+            "description": "Restaurante intimista com pátio que serve fusão mediterrânea-mexicana e uma excelente carta de vinhos.",
+            "maps_url": ""
+          },
+          {
+            "id": "coz_buccanos",
+            "name": "Buccanos at Night",
+            "category": "restaurante",
+            "description": "Jantar sofisticado à beira-mar com frutos do mar frescos, sushi e coquetéis em um ambiente descontraído.",
+            "maps_url": ""
+          },
+          {
+            "id": "coz_cafebal",
+            "name": "Cafebal",
+            "category": "café",
+            "description": "Cafeteria aconchegante no centro com grãos torrados de Chiapas, refeições leves e um clima tranquilo para trabalhar.",
+            "maps_url": ""
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr",
+          "pt"
+        ]
+      }
+    },
+    "fr": {
+      "quick_warnings": [
+        "Les jours de croisière envahissent San Miguel de touristes — planifiez vos visites du récif tôt le matin ou lors des jours sans paquebot.",
+        "La côte est présente des courants forts et une houle importante ; ne nagez que sur les plages protégées du côté ouest.",
+        "Louer un scooter est populaire, mais les routes peuvent être glissantes — portez un casque et conduisez avec prudence."
+      ],
+      "detail_guide": {
+        "getting_around": "San Miguel se parcourt à pied. Les taxis ont des tarifs fixes affichés au quai du ferry. Louer une voiture ou un scooter est la meilleure façon d'explorer la côte est et l'intérieur de l'île. Les ferries rallient Playa del Carmen toutes les 30 minutes.",
+        "top_sights": [
+          {
+            "id": "coz_palancar",
+            "name": "Récif de Palancar",
+            "category": "plongée / snorkeling",
+            "description": "Partie du Récif Mésoaméricain, il offre une plongée dérivante de classe mondiale avec d'impressionnantes formations coralliennes et une faune marine abondante."
+          },
+          {
+            "id": "coz_san_gervasio",
+            "name": "Zone Archéologique de San Gervasio",
+            "category": "archéologie",
+            "description": "Les principales ruines mayas de l'île, ancien lieu de pèlerinage dédié à la déesse Ixchel, nichées dans la forêt intérieure."
+          },
+          {
+            "id": "coz_punta_sur",
+            "name": "Parc Punta Sur (Phare Celarain)",
+            "category": "nature / parc",
+            "description": "Écoparc à la pointe sud de l'île avec un phare, une lagune à crocodiles et des plages vierges propices au snorkeling."
+          }
+        ],
+        "museums": [
+          {
+            "id": "coz_museo_isla",
+            "name": "Musée de l'Île de Cozumel",
+            "category": "musée",
+            "description": "Musée en bord de mer consacré à l'écologie du récif corallien, à l'histoire maya et au passé colonial de l'île."
+          }
+        ],
+        "parks": [
+          {
+            "id": "coz_chankanaab",
+            "name": "Parc Chankanaab",
+            "category": "nature / parc de plage",
+            "description": "Écoparc familial avec jardin botanique, lagune de snorkeling, nage avec les dauphins et accès à la plage."
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "coz_la_cocay",
+            "name": "La Cocay",
+            "category": "restaurant",
+            "description": "Restaurant intimiste avec patio servant une fusion méditerranéo-mexicaine, accompagnée d'une belle carte des vins."
+          },
+          {
+            "id": "coz_buccanos",
+            "name": "Buccanos at Night",
+            "category": "restaurant",
+            "description": "Dîner haut de gamme en bord de mer avec fruits de mer frais, sushis et cocktails dans une ambiance décontractée."
+          },
+          {
+            "id": "coz_cafebal",
+            "name": "Cafebal",
+            "category": "café",
+            "description": "Café chaleureux du centre-ville avec des grains torréfiés du Chiapas, petite restauration et ambiance calme pour travailler."
           }
         ],
         "available_translations": [

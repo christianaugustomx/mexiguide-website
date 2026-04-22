@@ -85,7 +85,8 @@
     "available_translations": [
       "en",
       "es",
-      "fr"
+      "fr",
+      "pt"
     ]
   },
   "translations": {
@@ -158,6 +159,155 @@
             "category": "cafetería",
             "description": "Famoso por sus desayunos abundantes y café fuerte; espera algo de fila pero vale la pena.",
             "maps_url": ""
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr"
+        ]
+      }
+    },
+    "pt": {
+      "quick_warnings": [
+        "As balsas de Cancún saem com frequência, mas podem balançar bastante com vento forte — tome remédio para enjoo se precisar.",
+        "Os carrinhos de golfe são o transporte principal; dirija devagar nas ruas estreitas e fique atento aos pedestres.",
+        "Águas-vivas são comuns nos meses de verão — pergunte aos locais sobre as condições antes de entrar no mar."
+      ],
+      "detail_guide": {
+        "getting_around": "A ilha tem apenas 7 km de comprimento. Os carrinhos de golfe são a forma mais popular de circular e podem ser alugados perto do píer da balsa. Caminhar e andar de bicicleta funcionam bem no centro. As balsas Ultramar saem a cada 30 minutos de Cancún.",
+        "top_sights": [
+          {
+            "id": "im_playa_norte",
+            "name": "Playa Norte",
+            "category": "praia",
+            "description": "Constantemente classificada entre as melhores praias do México, com águas turquesas calmas, areia branca e bares à beira-mar.",
+            "maps_url": ""
+          },
+          {
+            "id": "im_punta_sur",
+            "name": "Jardim de Esculturas de Punta Sur",
+            "category": "ponto turístico / natureza",
+            "description": "Parque no penhasco da ponta sul da ilha com vistas para o oceano, ruínas de templos maias e esculturas modernas coloridas.",
+            "maps_url": ""
+          },
+          {
+            "id": "im_musa",
+            "name": "MUSA Museu Subaquático de Arte",
+            "category": "arte / mergulho",
+            "description": "Mais de 500 esculturas submersas no fundo do mar, visíveis com snorkel ou mergulho — uma experiência única que mistura arte e recife.",
+            "maps_url": ""
+          }
+        ],
+        "museums": [],
+        "parks": [
+          {
+            "id": "im_garrafon",
+            "name": "Parque Garrafón",
+            "category": "natureza / aventura",
+            "description": "Parque de recife no sul da ilha com snorkel, tirolesas e caiaque sobre jardins de coral.",
+            "maps_url": ""
+          },
+          {
+            "id": "im_tortugranja",
+            "name": "Tortugranja (Fazenda de Tartarugas)",
+            "category": "vida selvagem",
+            "description": "Centro de conservação de tartarugas marinhas onde você pode aprender e ver de perto tartarugas-verdes e de pente.",
+            "maps_url": ""
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "im_hidalgo",
+            "name": "Calle Hidalgo (Rua dos Restaurantes)",
+            "category": "rua gastronômica",
+            "description": "A principal rua de pedestres da ilha, repleta de barracas de tacos, restaurantes de frutos do mar e bares com música ao vivo.",
+            "maps_url": ""
+          },
+          {
+            "id": "im_lola_valentina",
+            "name": "Lola Valentina",
+            "category": "restaurante",
+            "description": "Encantador restaurante no terraço servindo tacos de peixe fresco, coquetéis de mezcal e especialidades iucatecas.",
+            "maps_url": ""
+          },
+          {
+            "id": "im_mango_cafe",
+            "name": "Mango Cafe",
+            "category": "café",
+            "description": "Famoso pelos cafés da manhã fartos e café forte; espere uma fila, mas vale a pena.",
+            "maps_url": ""
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr",
+          "pt"
+        ]
+      }
+    },
+    "fr": {
+      "quick_warnings": [
+        "Les ferries depuis Cancún sont fréquents, mais la traversée peut être agitée par vent fort — prenez un médicament contre le mal des transports si besoin.",
+        "Les voiturettes de golf sont le principal moyen de transport ; roulez lentement dans les rues étroites et faites attention aux piétons.",
+        "Les méduses sont fréquentes en été — demandez aux locaux les conditions du jour avant de vous baigner."
+      ],
+      "detail_guide": {
+        "getting_around": "L'île ne fait que 7 km de long. Les voiturettes de golf sont le moyen le plus populaire pour se déplacer et se louent près du quai du ferry. La marche et le vélo fonctionnent bien dans le centre. Les ferries Ultramar partent toutes les 30 minutes depuis Cancún.",
+        "top_sights": [
+          {
+            "id": "im_playa_norte",
+            "name": "Playa Norte",
+            "category": "plage",
+            "description": "Régulièrement classée parmi les plus belles plages du Mexique, avec des eaux turquoise calmes, du sable blanc et des bars en bord de mer."
+          },
+          {
+            "id": "im_punta_sur",
+            "name": "Jardin de Sculptures de Punta Sur",
+            "category": "point d'intérêt / nature",
+            "description": "Parc perché sur une falaise à la pointe sud de l'île, avec vues océaniques, ruines d'un temple maya et sculptures modernes colorées."
+          },
+          {
+            "id": "im_musa",
+            "name": "MUSA Musée Sous-Marin d'Art",
+            "category": "art / snorkeling",
+            "description": "Plus de 500 sculptures immergées au fond de la mer, visibles en snorkeling ou en plongée — une expérience unique mêlant art et récif."
+          }
+        ],
+        "museums": [],
+        "parks": [
+          {
+            "id": "im_garrafon",
+            "name": "Parc Garrafón",
+            "category": "nature / aventure",
+            "description": "Parc-récif au sud de l'île proposant snorkeling, tyroliennes et kayak au-dessus des jardins de corail."
+          },
+          {
+            "id": "im_tortugranja",
+            "name": "Tortugranja",
+            "category": "faune",
+            "description": "Centre de conservation de tortues marines où vous pouvez observer de près tortues vertes et imbriquées."
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "im_hidalgo",
+            "name": "Calle Hidalgo (rue gastronomique)",
+            "category": "rue gastronomique",
+            "description": "La rue piétonne principale de l'île, bordée de stands de tacos, de restaurants de fruits de mer et de bars avec musique live."
+          },
+          {
+            "id": "im_lola_valentina",
+            "name": "Lola Valentina",
+            "category": "restaurant",
+            "description": "Charmant restaurant en rooftop servant des tacos au poisson frais, des cocktails au mezcal et des spécialités yucatèques."
+          },
+          {
+            "id": "im_mango_cafe",
+            "name": "Mango Cafe",
+            "category": "café",
+            "description": "Réputé pour ses petits-déjeuners copieux et son café corsé ; attendez-vous à un peu d'attente, mais ça vaut le coup."
           }
         ],
         "available_translations": [

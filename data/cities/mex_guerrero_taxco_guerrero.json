@@ -86,7 +86,8 @@
     "available_translations": [
       "en",
       "es",
-      "fr"
+      "fr",
+      "pt"
     ]
   },
   "translations": {
@@ -160,6 +161,157 @@
             "category": "cafetería",
             "description": "Pequeña cafetería de estilo europeo cerca de la plaza con espresso, crepas y un ambiente tranquilo para leer.",
             "maps_url": ""
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr"
+        ]
+      }
+    },
+    "pt": {
+      "quick_warnings": [
+        "O estado de Guerrero tem preocupações de segurança — viaje somente pela rodovia principal Autopista del Sol e durante o dia.",
+        "As ruas são extremamente íngremes e de paralelepípedos; use sapatos resistentes e tenha cuidado quando chover.",
+        "O aeroporto da Cidade do México (MEX) fica a ~3 horas de carro; reserve tempo para o trânsito ao sair da capital."
+      ],
+      "detail_guide": {
+        "getting_around": "Taxco é uma cidade na encosta com ruas estreitas de mão única. Caminhar é a principal forma de explorar o centro, embora os táxis Fusca (o icônico transporte local) consigam navegar pelas ladeiras íngremes. As combis circulam entre os bairros. Ônibus de primeira classe conectam a cidade à Cidade do México (~3 h) e a Cuernavaca (~1,5 h).",
+        "top_sights": [
+          {
+            "id": "tax_santa_prisca",
+            "name": "Templo de Santa Prisca",
+            "category": "monumento",
+            "description": "Uma elaborada igreja churrigueresca do século 18 com torres gêmeas em pedra rosa e luxuosos interiores em folha de ouro, dominando a praça principal.",
+            "maps_url": ""
+          },
+          {
+            "id": "tax_silver_market",
+            "name": "Mercado de Plata",
+            "category": "compras / cultura",
+            "description": "Taxco é a capital da prata do México — dezenas de lojas e ateliês vendem joias artesanais, talheres e peças decorativas.",
+            "maps_url": ""
+          },
+          {
+            "id": "tax_teleferico",
+            "name": "Teleférico de Taxco",
+            "category": "mirante",
+            "description": "Um passeio de teleférico do centro até o hotel Monte Taxco, com vistas amplas da cidade caiada de branco na encosta.",
+            "maps_url": ""
+          }
+        ],
+        "museums": [
+          {
+            "id": "tax_museo_spratling",
+            "name": "Museo Guillermo Spratling",
+            "category": "museu",
+            "description": "Museu em homenagem ao ourives americano que ressuscitou a indústria da prata de Taxco, com artefatos pré-colombianos e arte em prata.",
+            "maps_url": ""
+          }
+        ],
+        "parks": [
+          {
+            "id": "tax_grutas_cacahuamilpa",
+            "name": "Grutas de Cacahuamilpa (bate-volta)",
+            "category": "natureza",
+            "description": "Um dos maiores sistemas de cavernas do mundo, a 30 minutos de Taxco, com enormes câmaras iluminadas e formações de estalactites.",
+            "maps_url": ""
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "tax_pozole",
+            "name": "Pozolería Tía Calla",
+            "category": "restaurante",
+            "description": "Uma instituição de Taxco que serve pozole verde e branco no estilo Guerrero na praça principal — vá na quinta-feira, o dia tradicional do pozole.",
+            "maps_url": ""
+          },
+          {
+            "id": "tax_del_angel",
+            "name": "Del Angel Inn",
+            "category": "restaurante",
+            "description": "Restaurante em terraço com vistas da Santa Prisca, servindo clássicos mexicanos e coquetéis de mezcal.",
+            "maps_url": ""
+          },
+          {
+            "id": "tax_cafe_sasha",
+            "name": "Café Sasha",
+            "category": "cafeteria",
+            "description": "Pequeno café de estilo europeu perto da praça, com espresso, crepes e um ambiente tranquilo para leitura.",
+            "maps_url": ""
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr",
+          "pt"
+        ]
+      }
+    },
+    "fr": {
+      "quick_warnings": [
+        "L'État du Guerrero a des préoccupations de sécurité — voyagez uniquement par la Autopista del Sol et de jour.",
+        "Les rues sont extrêmement raides et pavées ; portez des chaussures robustes et soyez prudent sous la pluie.",
+        "L'aéroport de Mexico (MEX) est à ~3 heures en voiture ; prévoyez le trafic à la sortie de la capitale."
+      ],
+      "detail_guide": {
+        "getting_around": "Taxco est un village à flanc de colline aux rues étroites à sens unique. La marche est la principale façon d'explorer le centre, bien que les taxis Vocho (transport local emblématique) naviguent les ruelles escarpées. Des combis relient les quartiers. Les bus de première classe desservent Mexico (~3 h) et Cuernavaca (~1h30).",
+        "top_sights": [
+          {
+            "id": "tax_santa_prisca",
+            "name": "Temple de Santa Prisca",
+            "category": "monument",
+            "description": "Élaborée église churrigueresque du XVIIIe siècle avec ses tours jumelles en pierre rose et ses intérieurs luxueux à la feuille d'or, dominant la place principale."
+          },
+          {
+            "id": "tax_silver_market",
+            "name": "Marché de l'argent",
+            "category": "shopping / culture",
+            "description": "Taxco est la capitale de l'argent du Mexique — des dizaines de boutiques et d'ateliers vendent bijoux artisanaux, couverts et pièces décoratives."
+          },
+          {
+            "id": "tax_teleferico",
+            "name": "Téléphérique de Taxco",
+            "category": "point de vue",
+            "description": "Trajet en téléphérique du centre à l'hôtel Monte Taxco, avec vues étendues du village chaulé sur le flanc de la colline."
+          }
+        ],
+        "museums": [
+          {
+            "id": "tax_museo_spratling",
+            "name": "Musée Guillermo Spratling",
+            "category": "musée",
+            "description": "Musée en l'honneur de l'argentier américain qui relança l'industrie de l'argent à Taxco, avec artefacts préhispaniques et art en argent."
+          }
+        ],
+        "parks": [
+          {
+            "id": "tax_grutas_cacahuamilpa",
+            "name": "Grottes de Cacahuamilpa (excursion d'une journée)",
+            "category": "nature",
+            "description": "L'un des plus grands systèmes de grottes au monde, à 30 minutes de Taxco, avec d'énormes salles éclairées et des formations de stalactites."
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "tax_pozole",
+            "name": "Pozolería Tía Calla",
+            "category": "restaurant",
+            "description": "Institution de Taxco servant le pozole vert et blanc façon Guerrero sur la place principale — venez le jeudi, jour traditionnel du pozole."
+          },
+          {
+            "id": "tax_del_angel",
+            "name": "Del Angel Inn",
+            "category": "restaurant",
+            "description": "Salle en terrasse avec vue sur Santa Prisca, servant des classiques mexicains et des cocktails au mezcal."
+          },
+          {
+            "id": "tax_cafe_sasha",
+            "name": "Café Sasha",
+            "category": "café",
+            "description": "Petit café à l'européenne près de la place avec espresso, crêpes et une ambiance calme pour lire."
           }
         ],
         "available_translations": [

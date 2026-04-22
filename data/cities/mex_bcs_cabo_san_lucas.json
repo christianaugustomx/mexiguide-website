@@ -93,7 +93,8 @@
     "available_translations": [
       "en",
       "es",
-      "fr"
+      "fr",
+      "pt"
     ]
   },
   "translations": {
@@ -180,6 +181,158 @@
           "en",
           "es",
           "fr"
+        ]
+      }
+    },
+    "pt": {
+      "quick_warnings": [
+        "As praias voltadas para o Pacífico têm correntes perigosas — obedeça rigorosamente o sistema de bandeiras. Nunca entre na água em dias de bandeira vermelha ou preta.",
+        "As abordagens agressivas de timeshare começam logo na saída do aeroporto. Recuse com educação e siga em frente.",
+        "Os táxis de rua são notoriamente caros. Reserve com antecedência transfers privados a partir do MMSD — o Uber costuma ser bloqueado nas entradas dos resorts."
+      ],
+      "detail_guide": {
+        "getting_around": "Reserve com antecedência um transfer privado a partir do aeroporto de San José del Cabo (MMSD) — fica a 45 min. O Uber funciona na cidade, mas costuma ser bloqueado nos portões dos resorts. Os táxis aquáticos são a melhor forma de chegar a El Arco e Playa del Amor.",
+        "top_sights": [
+          {
+            "id": "sight_el_arco",
+            "name": "El Arco",
+            "category": "Ponto de interesse",
+            "description": "O icônico arco de calcário em Land's End, onde o Pacífico encontra o Mar de Cortés. Melhor visto a bordo de um barco com fundo de vidro ou em um passeio de catamarã ao pôr do sol.",
+            "maps_url": "https://maps.app.goo.gl/placeholder19"
+          },
+          {
+            "id": "sight_marina",
+            "name": "Marina Cabo San Lucas",
+            "category": "Entretenimento",
+            "description": "O agitado coração da cidade — iates de luxo, restaurantes ao ar livre e vida noturna de classe mundial em uma faixa fácil de percorrer a pé.",
+            "maps_url": "https://maps.app.goo.gl/placeholder20"
+          },
+          {
+            "id": "sight_medano_beach",
+            "name": "Playa El Médano",
+            "category": "Praia",
+            "description": "A principal praia para banho em Cabo San Lucas. Repleta de beach clubs, aluguel de esportes aquáticos e bares. Melhor acesso a partir da marina.",
+            "maps_url": "https://maps.app.goo.gl/placeholderMedano"
+          }
+        ],
+        "museums": [
+          {
+            "id": "museum_cabo_whale",
+            "name": "Museu da Baleia",
+            "category": "História natural",
+            "description": "Pequeno mas fascinante museu dedicado às baleias-cinzentas e jubartes que migram pelo Mar de Cortés todo inverno.",
+            "maps_url": "https://maps.app.goo.gl/placeholderWhaleMuseum"
+          }
+        ],
+        "parks": [
+          {
+            "id": "nature_playa_del_amor",
+            "name": "Playa del Amor",
+            "category": "Praia",
+            "description": "Uma praia para banho bem ao lado de El Arco — acessível somente por táxi aquático a partir da marina. Um dos lugares mais fotografados do México.",
+            "maps_url": "https://maps.app.goo.gl/placeholder22"
+          },
+          {
+            "id": "nature_chileno_bay",
+            "name": "Baía de Chileno",
+            "category": "Snorkel",
+            "description": "A melhor praia pública para snorkel no corredor turístico. Água calma e cristalina com vida marinha abundante. Sem guarda-sóis nem vendedores — leve seu próprio equipamento.",
+            "maps_url": "https://maps.app.goo.gl/placeholder23"
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "eat_sunset_monalisa",
+            "name": "Sunset Monalisa",
+            "category": "Alta gastronomia",
+            "description": "Encravado em um penhasco com vista para o oceano — culinária mediterrânea com possivelmente as melhores vistas do pôr do sol da região. Reserve com bastante antecedência.",
+            "maps_url": "https://maps.app.goo.gl/placeholder24"
+          },
+          {
+            "id": "eat_ediths",
+            "name": "Edith's",
+            "category": "Comida autêntica",
+            "description": "Vibrante instituição local que mistura sabores guerrerenses e da Baixa Califórnia com frutos do mar locais ultrafrescos. Aceita dinheiro, casual, excelente.",
+            "maps_url": "https://maps.app.goo.gl/placeholder25"
+          },
+          {
+            "id": "work_lci_coworking",
+            "name": "LCI Coworking Space",
+            "category": "Coworking",
+            "description": "Localização central no centro de Cabo San Lucas. Ar-condicionado, configurações ergonômicas, fibra confiável e passes flexíveis por dia/semana para nômades digitais.",
+            "maps_url": "https://maps.app.goo.gl/placeholder26"
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr",
+          "pt"
+        ]
+      }
+    },
+    "fr": {
+      "quick_warnings": [
+        "Évitez de boire l'eau du robinet ; utilisez de l'eau embouteillée même pour vous brosser les dents.",
+        "Méfiez-vous des vendeurs agressifs sur les plages et la marina — un « non » ferme suffit généralement.",
+        "La mer peut être dangereuse : baignez-vous uniquement sur les plages avec drapeau vert (Médano, Chileno)."
+      ],
+      "detail_guide": {
+        "getting_around": "La zone marina / centre se parcourt à pied. Taxis et Uber fonctionnent bien. Pour El Arco, les bateaux-taxis partent de la Playa El Médano. Louez une voiture si vous voulez visiter Todos Santos ou San José del Cabo.",
+        "top_sights": [
+          {
+            "id": "csl_el_arco",
+            "name": "El Arco de Cabo San Lucas",
+            "category": "emblématique",
+            "description": "La formation rocheuse emblématique à la pointe de la péninsule ; accessible uniquement par bateau-taxi depuis la Playa El Médano.",
+            "maps_url": ""
+          },
+          {
+            "id": "csl_playa_amor",
+            "name": "Playa del Amor",
+            "category": "plage",
+            "description": "Plage cachée entre deux océans, accessible uniquement par bateau ; eau turquoise et paysage spectaculaire.",
+            "maps_url": ""
+          },
+          {
+            "id": "csl_marina",
+            "name": "Marina de Cabo San Lucas",
+            "category": "promenade",
+            "description": "Port de plaisance animé avec restaurants, boutiques, et point de départ des croisières et excursions de pêche.",
+            "maps_url": ""
+          }
+        ],
+        "museums": [],
+        "parks": [
+          {
+            "id": "csl_cabo_pulmo",
+            "name": "Parc National de Cabo Pulmo",
+            "category": "parc marin",
+            "description": "Réserve marine classée UNESCO avec l'un des récifs coralliens les plus anciens du Pacifique ; plongée et snorkeling exceptionnels.",
+            "maps_url": ""
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "csl_flora_farms",
+            "name": "Flora Farms",
+            "category": "ferme-restaurant",
+            "description": "Ferme biologique avec restaurant champêtre, spa et boutiques ; une expérience culinaire incontournable.",
+            "maps_url": ""
+          },
+          {
+            "id": "csl_el_farallon",
+            "name": "El Farallón",
+            "category": "restaurant de luxe",
+            "description": "Restaurant sur falaise au-dessus du Pacifique ; fruits de mer frais et vue coucher de soleil spectaculaire.",
+            "maps_url": ""
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr",
+          "pt"
         ]
       }
     }

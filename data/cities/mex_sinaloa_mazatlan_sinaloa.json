@@ -86,7 +86,8 @@
     "available_translations": [
       "en",
       "es",
-      "fr"
+      "fr",
+      "pt"
     ]
   },
   "translations": {
@@ -160,6 +161,157 @@
             "category": "cervecería",
             "description": "Cervecería histórica donde nace la cerveza Pacífico; haz el recorrido y prueba cervezas frescas de origen.",
             "maps_url": ""
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr"
+        ]
+      }
+    },
+    "pt": {
+      "quick_warnings": [
+        "Fique pela Zona Dorada e pelo centro histórico; evite se aventurar pelas colônias periféricas à noite.",
+        "Correntes de retorno são comuns nas praias de mar aberto — só entre na água onde houver salva-vidas.",
+        "A temporada de chuvas (jun–out) traz umidade e furacões ocasionais; confira a previsão do tempo."
+      ],
+      "detail_guide": {
+        "getting_around": "O Malecón se estende por mais de 20 km e pode ser percorrido a pé ou de bicicleta. As pulmonías verde e branca (táxis abertos) são o transporte local clássico. O Uber está disponível. Os ônibus urbanos circulam pelas avenidas principais, mas costumam ficar lotados.",
+        "top_sights": [
+          {
+            "id": "maz_malecon",
+            "name": "Malecón de Mazatlán",
+            "category": "ponto turístico",
+            "description": "Um dos calçadões à beira-mar mais longos do mundo, repleto de esculturas, restaurantes e vistas para o oceano.",
+            "maps_url": ""
+          },
+          {
+            "id": "maz_cathedral",
+            "name": "Catedral Basílica da Imaculada Conceição",
+            "category": "ponto turístico",
+            "description": "Uma imponente catedral do século XIX no coração do centro histórico, com detalhes interiores ornamentados.",
+            "maps_url": ""
+          },
+          {
+            "id": "maz_el_faro",
+            "name": "El Faro (Farol)",
+            "category": "mirante",
+            "description": "Uma trilha curta, porém íngreme, até um dos faróis naturais mais altos do mundo, com vistas panorâmicas da cidade e da costa.",
+            "maps_url": ""
+          }
+        ],
+        "museums": [
+          {
+            "id": "maz_museo_arte",
+            "name": "Museo de Arte de Mazatlán",
+            "category": "museu",
+            "description": "Pequeno museu de arte em um edifício histórico restaurado que exibe arte regional e contemporânea mexicana.",
+            "maps_url": ""
+          }
+        ],
+        "parks": [
+          {
+            "id": "maz_isla_piedra",
+            "name": "Isla de la Piedra (Ilha de Pedra)",
+            "category": "praia / natureza",
+            "description": "Uma curta travessia de barco a partir da marina leva a uma faixa tranquila de praia com restaurantes de palapa e passeios a cavalo.",
+            "maps_url": ""
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "maz_plazuela_machado",
+            "name": "Plazuela Machado",
+            "category": "gastronomia / vida noturna",
+            "description": "Praça histórica cercada por restaurantes, cafés e música ao vivo — o coração social da velha Mazatlán.",
+            "maps_url": ""
+          },
+          {
+            "id": "maz_mariscos",
+            "name": "El Presidio (Frutos do Mar)",
+            "category": "restaurante",
+            "description": "Releitura sofisticada da culinária sinaloense; experimente o aguachile sinaloense e as tostadas de marlim defumado.",
+            "maps_url": ""
+          },
+          {
+            "id": "maz_pacifico",
+            "name": "Cervecería del Pacífico",
+            "category": "cervejaria",
+            "description": "Cervejaria histórica, casa da cerveja Pacífico; faça o tour e prove cervejas frescas direto da fonte.",
+            "maps_url": ""
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr",
+          "pt"
+        ]
+      }
+    },
+    "fr": {
+      "quick_warnings": [
+        "Restez dans la Zona Dorada et le centre historique ; évitez de vous aventurer dans les quartiers périphériques la nuit.",
+        "Les courants d'arrachement sont fréquents sur les plages ouvertes — ne nagez que là où il y a des sauveteurs.",
+        "La saison des pluies (juin–oct) amène humidité et ouragans occasionnels ; consultez la météo."
+      ],
+      "detail_guide": {
+        "getting_around": "Le Malecón s'étire sur plus de 20 km et se parcourt à pied ou à vélo. Les pulmonías vertes et blanches (taxis découverts) sont le transport local emblématique. Uber est disponible. Les bus urbains circulent sur les grandes avenues mais peuvent être bondés.",
+        "top_sights": [
+          {
+            "id": "maz_malecon",
+            "name": "Malecón de Mazatlán",
+            "category": "point d'intérêt",
+            "description": "L'une des plus longues promenades maritimes au monde, ornée de sculptures, de restaurants et de vues sur l'océan."
+          },
+          {
+            "id": "maz_cathedral",
+            "name": "Cathédrale-Basilique de l'Immaculée Conception",
+            "category": "point d'intérêt",
+            "description": "Une impressionnante cathédrale du XIXᵉ siècle au cœur du centre historique, aux détails intérieurs richement ornés."
+          },
+          {
+            "id": "maz_el_faro",
+            "name": "El Faro",
+            "category": "belvédère",
+            "description": "Une courte mais raide ascension jusqu'à l'un des plus hauts phares naturels au monde, avec une vue panoramique sur la ville et la côte."
+          }
+        ],
+        "museums": [
+          {
+            "id": "maz_museo_arte",
+            "name": "Musée d'Art de Mazatlán",
+            "category": "musée",
+            "description": "Petit musée d'art dans un bâtiment historique restauré, présentant de l'art régional et contemporain mexicain."
+          }
+        ],
+        "parks": [
+          {
+            "id": "maz_isla_piedra",
+            "name": "Isla de la Piedra",
+            "category": "plage / nature",
+            "description": "Un court trajet en barque depuis la marina mène à une paisible bande de plage avec restaurants sous palapa et balades à cheval."
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "maz_plazuela_machado",
+            "name": "Plazuela Machado",
+            "category": "gastronomie / vie nocturne",
+            "description": "Place historique entourée de restaurants, cafés et musique live — le cœur social du vieux Mazatlán."
+          },
+          {
+            "id": "maz_mariscos",
+            "name": "El Presidio (fruits de mer)",
+            "category": "restaurant",
+            "description": "Cuisine sinaloense haut de gamme ; goûtez l'aguachile et les tostadas de marlin fumé."
+          },
+          {
+            "id": "maz_pacifico",
+            "name": "Cervecería del Pacífico",
+            "category": "brasserie",
+            "description": "Brasserie historique où est née la bière Pacífico ; faites la visite et dégustez des bières fraîches à la source."
           }
         ],
         "available_translations": [

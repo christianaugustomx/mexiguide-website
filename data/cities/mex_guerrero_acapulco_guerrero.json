@@ -4,8 +4,8 @@
   "state": "Guerrero",
   "has_detailed_guide": true,
   "security": {
-    "level": 5,
-    "label": "Peligroso / Dangerous"
+    "level": 4,
+    "label": "Precaución Extra / Extra Caution"
   },
   "quick_stats": {
     "airport_iata": "ACA",
@@ -114,7 +114,8 @@
     "available_translations": [
       "en",
       "es",
-      "fr"
+      "fr",
+      "pt"
     ]
   },
   "translations": {
@@ -216,6 +217,209 @@
             "category": "Trabajo remoto",
             "description": "Acapulco no es un destino de trabajo remoto — la infraestructura fue severamente afectada por el Huracán Otis y la situación de seguridad limita significativamente la movilidad. El WiFi de la zona hotelera ha sido restaurado en gran parte en las propiedades principales (Las Brisas, Camino Real). No existe coworking dedicado. Si necesitas trabajar aquí, usa el centro de negocios de tu hotel y evita cualquier movimiento innecesario fuera de la zona hotelera.",
             "maps_url": "https://maps.app.goo.gl/placeholderAcapulcoHotel"
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr"
+        ]
+      }
+    },
+    "pt": {
+      "quick_warnings": [
+        "⚠️ ATENÇÃO: Acapulco tem uma das maiores taxas de homicídio do mundo e possui alertas de viagem ativos dos governos dos EUA, Reino Unido e Canadá. Permaneça estritamente dentro dos corredores hoteleiros da Zona Dorada e Diamante e use apenas transporte arranjado pelo hotel ou previamente reservado.",
+        "O Furacão Otis (outubro de 2023, Categoria 5) causou danos catastróficos à cidade — a infraestrutura ainda está sendo reconstruída. Verifique se o seu hotel está operacional e confirme a disponibilidade de passeios antes de reservar.",
+        "Não viaje por estrada para o interior do estado de Guerrero ou através dele — a presença de cartéis nas rodovias é grave. Voe exclusivamente para dentro e fora de ACA."
+      ],
+      "detail_guide": {
+        "getting_around": "Permaneça dentro dos dois corredores turísticos seguros: a Zona Dorada (a faixa hoteleira original ao longo da Costera Miguel Alemán) e Punta Diamante (o desenvolvimento de luxo mais novo no extremo sul). O transporte dentro dessas zonas deve ser feito por shuttle do hotel, Uber ou táxis licenciados chamados pela recepção do seu hotel — nunca pegue um na rua. Os clavadistas de La Quebrada ficam na zona da Velha Acapulco (Zona Tradicional), a uma curta corrida de táxi da Zona Dorada — vá em um táxi licenciado, fique para o espetáculo e volte diretamente. Não circule pelas ruas vizinhas.",
+        "top_sights": [
+          {
+            "id": "sight_la_quebrada",
+            "name": "Clavadistas de La Quebrada",
+            "category": "Espetáculo / Ponto de interesse",
+            "description": "A imagem que define Acapulco — clavadistas treinados mergulham de uma estreita saliência de penhasco a 35 metros de altura em uma enseada de mar agitado, sincronizando cada salto com as ondas abaixo. Apresentado várias vezes ao dia (espetáculos às 13h, 19h15, 20h15, 21h15 e 22h15) por mergulhadores das mesmas famílias que fazem isso desde 1934. Os espetáculos noturnos com tochas são os mais dramáticos. Assista da área pública (MXN 65) ou do restaurante La Perla para uma vista elevada com jantar.",
+            "maps_url": "https://maps.app.goo.gl/placeholderLaQuebrada"
+          },
+          {
+            "id": "sight_fuerte_san_diego",
+            "name": "Fuerte de San Diego",
+            "category": "História / Museu",
+            "description": "Um forte colonial espanhol em forma de estrela construído em 1616 para proteger a rota comercial do Galeão de Manila de Acapulco — durante 250 anos o porto mais importante das Américas para o comércio do Pacífico. Hoje abriga o Museu Histórico de Acapulco, com uma excelente coleção sobre o comércio do Galeão de Manila, o intercâmbio cultural filipino e asiático e a guerra de independência. Um dos museus históricos mais subestimados do México.",
+            "maps_url": "https://maps.app.goo.gl/placeholderFuerteSanDiego"
+          },
+          {
+            "id": "sight_isla_roqueta",
+            "name": "Isla Roqueta",
+            "category": "Natureza / Praia",
+            "description": "Uma pequena ilha a uma curta travessia de barco da praia de Caleta, com águas calmas para mergulho com snorkel, um farol, um pequeno zoológico e vários restaurantes de praia. O passeio de barco com fundo de vidro do píer de Caleta passa sobre uma estátua submersa da Virgem de Guadalupe. Uma das excursões mais seguras e familiares saindo da zona hoteleira. A praia da ilha é mais tranquila do que qualquer uma do continente.",
+            "maps_url": "https://maps.app.goo.gl/placeholderIslaRoqueta"
+          },
+          {
+            "id": "sight_pie_de_la_cuesta",
+            "name": "Praia e Lagoa de Pie de la Cuesta",
+            "category": "Praia / Pôr do sol",
+            "description": "Uma praia selvagem e não desenvolvida do Pacífico, 10 km ao norte do centro de Acapulco, separada da Laguna de Coyuca por uma estreita faixa de areia. A praia dá para o Pacífico aberto e é agitada demais para banho, mas os pores do sol são espetaculares e o lado da lagoa oferece passeios calmos de caiaque e tours de lancha pelos manguezais. Vá com um motorista arranjado pelo hotel e volte antes do anoitecer.",
+            "maps_url": "https://maps.app.goo.gl/placeholderPieDeLaCuesta"
+          },
+          {
+            "id": "sight_costera_zona_dorada",
+            "name": "Costera Miguel Alemán — Zona Dorada",
+            "category": "Ponto de interesse / Praia",
+            "description": "O grande bulevar de 10 km que já foi a faixa de resort mais glamorosa da América Latina — repleto de hotéis, restaurantes e clubes de praia das décadas de 1950 a 70 que receberam estrelas de Hollywood e a jet set internacional. Muito ainda está se recuperando do Otis, mas as vistas da baía, o acesso à praia e a concentração de serviços turísticos permanecem. Caminhar pela Costera dá a melhor noção do auge de meados do século de Acapulco e de seu presente complicado.",
+            "maps_url": "https://maps.app.goo.gl/placeholderCostera"
+          }
+        ],
+        "museums": [
+          {
+            "id": "museum_historico_acapulco",
+            "name": "Museu Histórico de Acapulco — Fuerte de San Diego",
+            "category": "História",
+            "description": "Dentro do Fuerte de San Diego — aborda o extraordinário papel de Acapulco no comércio do Galeão de Manila (1565–1815), a maior rota comercial transoceânica da história. O museu apresenta o intercâmbio cultural entre México, Filipinas, China e Espanha com artefatos bem curados, incluindo instrumentos de navegação, sedas, porcelana e arte religiosa que chegaram pelo Pacífico. Um dos melhores museus de história colonial do México.",
+            "maps_url": "https://maps.app.goo.gl/placeholderMuseoAcapulco"
+          }
+        ],
+        "parks": [
+          {
+            "id": "nature_laguna_coyuca",
+            "name": "Laguna de Coyuca",
+            "category": "Natureza / Eco-tour",
+            "description": "Uma grande lagoa costeira a noroeste da cidade, cercada por manguezais e lar de abundante vida selvagem — garças, pelicanos, fragatas e espécies migratórias na temporada. Os passeios de lancha saindo de Pie de la Cuesta oferecem circuitos de 1 a 2 horas pelos canais e até pequenas praias de banco de areia dentro da lagoa. Um dos ambientes naturais mais tranquilos e preservados perto de Acapulco.",
+            "maps_url": "https://maps.app.goo.gl/placeholderLagunaCoyuca"
+          },
+          {
+            "id": "nature_playa_diamante",
+            "name": "Playa Diamante",
+            "category": "Praia",
+            "description": "A praia mais sofisticada de Acapulco — uma ampla faixa voltada para o Pacífico, no extremo sul da baía, repleta de hotéis de luxo (Las Brisas, Banyan Tree) que em grande parte escaparam do pior dos danos do Otis. Mais limpa e tranquila do que as praias da Costera, com melhores comodidades. O acesso é principalmente por meio dos clubes de praia dos hotéis; ligue com antecedência para confirmar a situação atual pós-Otis.",
+            "maps_url": "https://maps.app.goo.gl/placeholderPlayaDiamante"
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "eat_mariscos_nacho",
+            "name": "Mariscos Nacho",
+            "category": "Frutos do mar",
+            "description": "Uma instituição querida na Costera — o lugar certo para frutos do mar frescos do Pacífico: ceviche de camarón, pescado a la talla (peixe grelhado marinado em achiote) e ostras na concha. Sobreviveu ao Furacão Otis e reabriu — um verdadeiro marco em uma cidade que está reconstruindo sua cena gastronômica. Prefere-se dinheiro; chegue antes das 13h para a seleção mais fresca.",
+            "maps_url": "https://maps.app.goo.gl/placeholderMariscosNacho"
+          },
+          {
+            "id": "eat_el_amigo_miguel",
+            "name": "El Amigo Miguel",
+            "category": "Frutos do mar / Local",
+            "description": "Um clássico de Acapulco desde 1969 — porções generosas de pratos tradicionais de frutos do mar em um ambiente sem frescuras perto de La Quebrada. O pescado zarandeado e o prato misto de frutos do mar são as especialidades da casa. Um favorito dos locais e de quem conheceu a velha Acapulco. Um dos restaurantes em funcionamento há mais tempo na cidade.",
+            "maps_url": "https://maps.app.goo.gl/placeholderAmigoMiguel"
+          },
+          {
+            "id": "eat_baikal",
+            "name": "Baikal",
+            "category": "Alta gastronomia",
+            "description": "Um restaurante de alta gastronomia no alto de um penhasco em Punta Diamante, com vistas panorâmicas da baía — a experiência gastronômica mais elegante da Acapulco moderna. Cozinha mexicana com influência francesa e forte foco em frutos do mar. Espetacular ao pôr do sol. Reservas são essenciais; confirme o status operacional pós-Otis antes de reservar.",
+            "maps_url": "https://maps.app.goo.gl/placeholderBaikal"
+          },
+          {
+            "id": "work_remote_acapulco",
+            "name": "Trabalho remoto em Acapulco",
+            "category": "Trabalho remoto",
+            "description": "Acapulco não é um destino de trabalho remoto — a infraestrutura foi gravemente afetada pelo Furacão Otis e a situação de segurança limita significativamente a mobilidade. O WiFi da zona hoteleira foi em grande parte restaurado nas principais propriedades (Las Brisas, Camino Real). Não existe coworking dedicado. Se você precisar trabalhar aqui, use o centro de negócios do seu hotel e evite qualquer movimentação desnecessária fora da zona hoteleira.",
+            "maps_url": "https://maps.app.goo.gl/placeholderAcapulcoHotel"
+          }
+        ],
+        "available_translations": [
+          "en",
+          "es",
+          "fr",
+          "pt"
+        ]
+      }
+    },
+    "fr": {
+      "quick_warnings": [
+        "⚠️ ATTENTION : Acapulco a l'un des taux d'homicides les plus élevés au monde et fait l'objet d'alertes de voyage actives des gouvernements américain, britannique et canadien. Restez strictement dans les corridors hôteliers de Zona Dorada et Diamante et utilisez uniquement le transport organisé par l'hôtel ou préréservé.",
+        "L'ouragan Otis (octobre 2023, catégorie 5) a causé des dégâts catastrophiques à la ville — les infrastructures sont encore en reconstruction. Vérifiez que votre hôtel est opérationnel et confirmez la disponibilité des excursions avant de réserver.",
+        "Ne voyagez pas par la route vers ou à travers l'intérieur de l'État du Guerrero — la présence du crime organisé sur les routes est sévère. Prenez l'avion exclusivement pour entrer et sortir par ACA."
+      ],
+      "detail_guide": {
+        "getting_around": "Restez dans les deux corridors touristiques sûrs : la Zona Dorada (la bande hôtelière originelle le long de la Costera Miguel Alemán) et Punta Diamante (le développement de luxe plus récent à l'extrême sud). Le transport au sein de ces zones doit se faire par navette d'hôtel, Uber ou taxis licenciés appelés à la réception de votre hôtel — jamais hélés dans la rue. Les plongeurs de La Quebrada sont dans la zone du Vieux Acapulco (Zona Tradicional), à un court trajet en taxi depuis la Zona Dorada — allez-y en taxi licencié, restez pour le spectacle, rentrez directement. Ne vous promenez pas dans les rues environnantes.",
+        "top_sights": [
+          {
+            "id": "sight_la_quebrada",
+            "name": "Plongeurs de La Quebrada",
+            "category": "Spectacle / Point d'intérêt",
+            "description": "L'image emblématique d'Acapulco — des plongeurs entraînés s'élancent d'une corniche étroite de 35 mètres vers une crique agitée, synchronisant chaque plongeon avec les vagues. Plusieurs représentations par jour (spectacles à 13h, 19h15, 20h15, 21h15, 22h15) par des plongeurs issus des mêmes familles depuis 1934. Les spectacles nocturnes aux flambeaux sont les plus spectaculaires. Observez depuis la zone de vue publique (65 MXN) ou depuis le restaurant La Perla pour une vue en hauteur avec dîner."
+          },
+          {
+            "id": "sight_fuerte_san_diego",
+            "name": "Fort de San Diego",
+            "category": "Histoire / Musée",
+            "description": "Fort colonial espagnol en forme d'étoile construit en 1616 pour protéger la route commerciale du Galion de Manille — durant 250 ans le port le plus important des Amériques pour le commerce du Pacifique. Abrite désormais le Musée historique d'Acapulco avec une excellente collection sur le commerce du Galion de Manille, les échanges culturels philippins et asiatiques et la guerre d'indépendance. L'un des musées historiques les plus sous-estimés du Mexique."
+          },
+          {
+            "id": "sight_isla_roqueta",
+            "name": "Isla Roqueta",
+            "category": "Nature / Plage",
+            "description": "Petite île accessible par un court trajet en bateau depuis la plage Caleta, aux eaux calmes pour le snorkeling, avec un phare, un petit zoo et plusieurs restaurants de plage. Le bateau à fond de verre depuis le quai de Caleta passe au-dessus d'une statue immergée de la Vierge de Guadalupe. L'une des excursions les plus sûres et familiales depuis la zone hôtelière. La plage de l'île est plus calme que n'importe quelle plage sur le continent."
+          },
+          {
+            "id": "sight_pie_de_la_cuesta",
+            "name": "Plage Pie de la Cuesta et Laguna",
+            "category": "Plage / Coucher de soleil",
+            "description": "Plage sauvage et non aménagée du Pacifique à 10 km au nord du centre d'Acapulco, séparée de la Laguna de Coyuca par une étroite bande de sable. La plage fait face au Pacifique ouvert et est trop forte pour la baignade, mais les couchers de soleil sont spectaculaires et le côté lagune offre du kayak tranquille et des tours en bateau dans la mangrove. Allez-y avec un chauffeur organisé par l'hôtel et rentrez avant la nuit."
+          },
+          {
+            "id": "sight_costera_zona_dorada",
+            "name": "Costera Miguel Alemán — Zona Dorada",
+            "category": "Point d'intérêt / Plage",
+            "description": "Le grand boulevard de 10 km qui fut jadis la bande touristique la plus glamour d'Amérique latine — bordé d'hôtels, restaurants et beach clubs des années 1950–70 qui accueillaient les stars d'Hollywood et la jet-set internationale. Beaucoup se remettent encore d'Otis mais les vues sur la baie, l'accès à la plage et la concentration de services touristiques demeurent. Marcher sur la Costera donne la meilleure idée de l'âge d'or d'Acapulco au milieu du siècle et de son présent complexe."
+          }
+        ],
+        "museums": [
+          {
+            "id": "museum_historico_acapulco",
+            "name": "Musée historique d'Acapulco — Fort de San Diego",
+            "category": "Histoire",
+            "description": "À l'intérieur du Fort de San Diego — couvre le rôle extraordinaire d'Acapulco dans le commerce du Galion de Manille (1565–1815), la plus grande route commerciale transocéanique de l'histoire. Le musée présente les échanges culturels entre Mexique, Philippines, Chine et Espagne avec des artefacts bien choisis dont instruments de navigation, soieries, porcelaines et art religieux arrivés via le Pacifique. L'un des meilleurs musées d'histoire coloniale du Mexique."
+          }
+        ],
+        "parks": [
+          {
+            "id": "nature_laguna_coyuca",
+            "name": "Laguna de Coyuca",
+            "category": "Nature / Éco-tour",
+            "description": "Grande lagune côtière au nord-ouest de la ville bordée de mangroves et abritant une faune abondante — hérons, pélicans, frégates et espèces migratrices en saison. Les excursions en bateau depuis Pie de la Cuesta offrent des circuits de 1 à 2 heures à travers les canaux et jusqu'aux petites plages de banc de sable à l'intérieur de la lagune. L'un des environnements naturels les plus calmes et vierges près d'Acapulco."
+          },
+          {
+            "id": "nature_playa_diamante",
+            "name": "Playa Diamante",
+            "category": "Plage",
+            "description": "La plage haut de gamme d'Acapulco — large bande face au Pacifique à l'extrémité sud de la baie bordée d'hôtels de luxe (Las Brisas, Banyan Tree) qui ont largement évité le pire des dégâts d'Otis. Plus propre et plus calme que les plages de la Costera, avec de meilleures installations. Accès principalement via les beach clubs d'hôtel ; appelez à l'avance pour confirmer l'état actuel post-Otis."
+          }
+        ],
+        "eat_drink_work": [
+          {
+            "id": "eat_mariscos_nacho",
+            "name": "Mariscos Nacho",
+            "category": "Fruits de mer",
+            "description": "Institution aimée sur la Costera — l'adresse pour les fruits de mer frais du Pacifique : ceviche de crevettes, pescado a la talla (poisson grillé mariné au rocou) et huîtres en coquille. A survécu à l'ouragan Otis et a rouvert — une vraie valeur sûre dans une ville qui reconstruit sa scène gastronomique. Espèces préférées ; arrivez avant 13h pour la sélection la plus fraîche."
+          },
+          {
+            "id": "eat_el_amigo_miguel",
+            "name": "El Amigo Miguel",
+            "category": "Fruits de mer / Local",
+            "description": "Un classique d'Acapulco depuis 1969 — généreuses portions de plats de fruits de mer traditionnels dans une ambiance sans prétention près de La Quebrada. Le pescado zarandeado et le plat mixte de fruits de mer sont les spécialités de la maison. Favori des locaux et de ceux qui ont connu l'ancien Acapulco. L'un des restaurants les plus anciennement en activité de la ville."
+          },
+          {
+            "id": "eat_baikal",
+            "name": "Baikal",
+            "category": "Gastronomie",
+            "description": "Restaurant gastronomique sur une falaise de Punta Diamante avec vues panoramiques sur la baie — l'expérience gastronomique la plus raffinée de l'Acapulco moderne. Cuisine mexicaine d'inspiration française avec fort accent sur les fruits de mer. Spectaculaire au coucher du soleil. Réservations indispensables ; confirmez l'état d'exploitation post-Otis avant de réserver."
+          },
+          {
+            "id": "work_remote_acapulco",
+            "name": "Travail à distance à Acapulco",
+            "category": "Travail à distance",
+            "description": "Acapulco n'est pas une destination de travail à distance — l'infrastructure a été sévèrement touchée par l'ouragan Otis et la situation sécuritaire limite significativement la mobilité. Le Wi-Fi de la zone hôtelière a été largement restauré dans les principales propriétés (Las Brisas, Camino Real). Pas de coworking dédié. Si vous devez travailler ici, utilisez le business center de votre hôtel et évitez tout déplacement inutile hors de la zone hôtelière."
           }
         ],
         "available_translations": [
