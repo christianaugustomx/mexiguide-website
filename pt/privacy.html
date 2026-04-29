@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <title>Política de Privacidade — MexiGuide</title>
+  <meta name="description" content="Política de Privacidade do MexiGuide. Saiba como coletamos, usamos e protegemos seus dados." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Merriweather:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --base: #E8E2DA; --card: #F5F0EB; --white: #FFFFFF;
+      --border: rgba(27,67,50,0.10); --border-hi: rgba(27,67,50,0.18);
+      --g-darkest: #0F2419; --g-dark: #1B4332; --g-mid: #2D6A4F;
+      --jade: #4A9E80; --jade-dim: rgba(74,158,128,0.12);
+      --gold: #E9C46A; --gold-dim: rgba(233,196,106,0.15);
+      --coral: #E76F51; --amber: #F4A261; --teal: #2A9D8F;
+      --text-hi: #0F2419; --text-mid: #4A7A60; --text-lo: #8AA898;
+      --text-inv: rgba(255,255,255,0.88); --text-inv-lo: rgba(255,255,255,0.45);
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; background: var(--base); color: var(--text-hi); line-height: 1.6; }
+
+    /* NAV */
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(245,240,235,0.92); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); }
+    .nav-stripe { height: 3px; background: repeating-linear-gradient(90deg, #E76F51 0px, #E76F51 8px, #F4A261 8px, #F4A261 16px, #2A9D8F 16px, #2A9D8F 24px, #E9C46A 24px, #E9C46A 32px); }
+    .nav-inner { max-width: 1120px; margin: 0 auto; padding: 0 32px; height: 60px; display: flex; align-items: center; justify-content: space-between; }
+    .nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .nav-wordmark { font-family: 'Merriweather', serif; font-size: 17px; font-weight: 700; color: var(--g-dark); letter-spacing: -0.3px; }
+    .nav-links { display: flex; align-items: center; gap: 28px; list-style: none; }
+    .nav-links a { text-decoration: none; color: var(--text-mid); font-size: 14px; font-weight: 500; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--g-dark); }
+    .nav-pill { background: var(--jade) !important; color: white !important; padding: 7px 18px; border-radius: 8px; font-weight: 700 !important; font-size: 13px !important; box-shadow: 0 2px 10px rgba(74,158,128,0.3); transition: background 0.2s !important, transform 0.15s !important; }
+    .nav-pill:hover { background: var(--g-mid) !important; transform: translateY(-1px) !important; }
+    .lang-switch { display: inline-flex; align-items: center; gap: 5px; text-decoration: none; font-size: 13px; font-weight: 600; color: var(--text-mid); background: rgba(27,67,50,0.06); border: 1px solid var(--border); padding: 5px 12px; border-radius: 8px; transition: background 0.2s, color 0.2s; white-space: nowrap; }
+    .lang-switch:hover { background: rgba(27,67,50,0.12); color: var(--g-dark); }
+    .lang-flag { font-size: 16px; line-height: 1; }
+    .nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 4px; z-index: 200; }
+    .nav-toggle span { display: block; width: 22px; height: 2px; background: var(--g-dark); margin: 5px 0; border-radius: 2px; transition: transform 0.3s, opacity 0.3s; }
+    .nav-toggle.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+    .nav-toggle.open span:nth-child(2) { opacity: 0; }
+    .nav-toggle.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+    @media (max-width: 960px) {
+      .nav-toggle { display: block; }
+      .nav-links { display: none; position: absolute; top: 63px; left: 0; right: 0; background: rgba(245,240,235,0.98); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); flex-direction: column; padding: 16px 24px; gap: 0; border-bottom: 1px solid var(--border); box-shadow: 0 8px 24px rgba(0,0,0,0.08); list-style: none; }
+      .nav-links.show { display: flex; }
+      .nav-links li { width: 100%; }
+      .nav-links a { display: block; padding: 12px 0; border-bottom: 1px solid var(--border); font-size: 15px; }
+      .nav-links li:last-child a { border-bottom: none; }
+      .nav-links .nav-pill { display: inline-block; margin-top: 8px; text-align: center; }
+      .nav-inner { padding: 0 20px; }
+    }
+
+    /* CONTENT */
+    .legal-hero { background: linear-gradient(160deg, var(--g-darkest) 0%, var(--g-dark) 50%, var(--g-mid) 100%); padding: 120px 32px 48px; text-align: center; }
+    .legal-hero h1 { font-family: 'Merriweather', serif; font-size: 36px; font-weight: 900; color: white; margin-bottom: 8px; }
+    .legal-hero p { color: var(--text-inv-lo); font-size: 14px; }
+    .legal-content { max-width: 780px; margin: 0 auto; padding: 48px 32px 72px; }
+    .legal-content h2 { font-family: 'Merriweather', serif; font-size: 20px; font-weight: 700; color: var(--g-dark); margin: 36px 0 12px; }
+    .legal-content h2:first-of-type { margin-top: 0; }
+    .legal-content p, .legal-content li { font-size: 15px; color: var(--text-hi); line-height: 1.7; margin-bottom: 12px; }
+    .legal-content ul { padding-left: 24px; margin-bottom: 16px; }
+    .legal-content li { margin-bottom: 6px; }
+    .legal-content a { color: var(--jade); text-decoration: underline; }
+    .legal-content a:hover { color: var(--g-mid); }
+
+    /* FOOTER */
+    .footer { background: var(--g-darkest); padding: 52px 32px 28px; }
+    .footer-inner { max-width: 1120px; margin: 0 auto; }
+    .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 36px; }
+    .footer-brand-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; margin-bottom: 14px; }
+    .footer-wordmark { font-family: 'Merriweather', serif; font-size: 17px; font-weight: 700; color: white; }
+    .footer-brand p { font-size: 13px; color: rgba(255,255,255,0.45); line-height: 1.6; }
+    .footer-col h4 { font-size: 13px; font-weight: 700; color: rgba(255,255,255,0.55); text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 14px; }
+    .footer-col ul { list-style: none; }
+    .footer-col li { margin-bottom: 9px; }
+    .footer-col a { text-decoration: none; color: rgba(255,255,255,0.5); font-size: 13px; transition: color 0.2s; }
+    .footer-col a:hover { color: rgba(255,255,255,0.85); }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.06); padding-top: 20px; text-align: center; }
+    .footer-bottom p { font-size: 12px; color: rgba(255,255,255,0.22); }
+    @media (max-width: 768px) {
+      .legal-hero h1 { font-size: 28px; }
+      .legal-content { padding: 36px 20px 56px; }
+      .footer-grid { grid-template-columns: 1fr 1fr; gap: 28px; }
+      .footer { padding: 44px 20px 24px; }
+    }
+    @media (max-width: 480px) {
+      .footer-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-stripe"></div>
+    <div class="nav-inner">
+      <a href="/pt/" class="nav-logo">
+        <img src="/logo.png" alt="MexiGuide" style="width:34px;height:34px;border-radius:10px;object-fit:contain;background:#1B4332;padding:3px;box-shadow:0 3px 10px rgba(27,67,50,0.25);">
+        <span class="nav-wordmark">MexiGuide</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/pt/destinations.html">Destinos</a></li>
+        <li><a href="/pt/safety-map.html">Mapa de Segurança</a></li>
+        <li><a href="/pt/tools.html">Ferramentas de Viagem</a></li>
+        <li><a href="/pt/emergency.html">Emergências</a></li>
+        <li><a href="/pt/#download" class="nav-pill">Baixar Grátis</a></li>
+        <li><a href="/privacy.html" class="lang-switch"><span class="lang-flag">🇺🇸</span> EN</a></li>
+        <li><a href="/es/privacy.html" class="lang-switch"><span class="lang-flag">🇲🇽</span> ES</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section class="legal-hero">
+    <h1>Política de Privacidade</h1>
+    <p>Última atualização: 2 de abril de 2026</p>
+  </section>
+
+  <div class="legal-content">
+
+    <p><em>Este Aviso de Privacidade também está disponível em <a href="/privacy.html">inglês (English)</a> e <a href="/es/privacy.html">espanhol (Español)</a>. Em caso de conflito, a versão em espanhol prevalecerá para usuários localizados no México.</em></p>
+
+    <h2>1. Introdução</h2>
+    <p>O MexiGuide ("nós", "nos" ou "nosso"), operado pela Rumbotech Labs, opera o site e o aplicativo móvel MexiGuide. Este Aviso de Privacidade (<em>Aviso de Privacidad</em>) explica como coletamos, usamos, divulgamos e protegemos seus dados pessoais em conformidade com a Lei Federal de Proteção de Dados Pessoais em Posse de Particulares (<em>Ley Federal de Protección de Datos Personales en Posesión de los Particulares</em>, "LFPDPPP") e seus Regulamentos.</p>
+    <p><strong>Controlador de Dados:</strong> Rumbotech Labs<br>
+    <strong>Contato:</strong> privacy@mexiguide.org</p>
+
+    <h2>2. Informações que Coletamos</h2>
+    <p><strong>Informações que você fornece:</strong></p>
+    <ul>
+      <li>Dados de cadastro (nome, endereço de e-mail)</li>
+      <li>Preferências de perfil (idioma, interesses de viagem)</li>
+      <li>Feedbacks e solicitações de suporte</li>
+    </ul>
+    <p><strong>Informações coletadas automaticamente:</strong></p>
+    <ul>
+      <li>Informações do dispositivo (tipo de dispositivo, sistema operacional, navegador)</li>
+      <li>Dados de uso (páginas visitadas, recursos utilizados, tempo de acesso)</li>
+      <li>Dados de localização (somente quando você concede permissão, usados para recursos de segurança e recomendações próximas)</li>
+      <li>Dados de análise via serviços de terceiros (ex.: Google Analytics)</li>
+    </ul>
+    <p><strong>Dados sensíveis:</strong> Podemos coletar dados de geolocalização precisa, considerados sensíveis pela LFPDPPP. Esses dados são coletados apenas com seu consentimento expresso e utilizados exclusivamente para mapas de segurança, recursos de emergência e recomendações baseadas em localização.</p>
+
+    <h2>3. Finalidade do Tratamento de Dados</h2>
+    <p><strong>Finalidades primárias</strong> (necessárias para o Serviço):</p>
+    <ul>
+      <li>Fornecer e melhorar nossos recursos de segurança de viagem, guias de cidades e ferramentas</li>
+      <li>Oferecer recomendações personalizadas e alertas de segurança</li>
+      <li>Enviar notificações de segurança importantes e atualizações do serviço</li>
+      <li>Responder às suas dúvidas e solicitações de suporte</li>
+      <li>Processar pagamentos por recursos premium</li>
+    </ul>
+    <p><strong>Finalidades secundárias</strong> (não essenciais, você pode recusar):</p>
+    <ul>
+      <li>Analisar tendências de uso para melhorar a experiência do aplicativo</li>
+      <li>Exibir ofertas relevantes de parceiros afiliados (eSIM, seguro, VPN)</li>
+      <li>Enviar comunicações de marketing sobre novos recursos</li>
+    </ul>
+    <p>Você pode cancelar as finalidades secundárias a qualquer momento entrando em contato pelo privacy@mexiguide.org, sem que isso afete os serviços primários.</p>
+
+    <h2>4. Base Legal</h2>
+    <p>Tratamos seus dados pessoais com base no seu consentimento expresso fornecido no momento do cadastro. Para recursos acessíveis sem conta, o uso do Serviço constitui consentimento implícito para os dados coletados automaticamente. Você pode revogar seu consentimento a qualquer momento (veja a Seção 10).</p>
+
+    <h2>5. Dados de Localização</h2>
+    <p>O MexiGuide utiliza dados de localização para alimentar mapas de segurança, recursos de emergência e recomendações próximas. O acesso à localização é sempre opcional e pode ser revogado a qualquer momento nas configurações do seu dispositivo. Não vendemos nem compartilhamos dados de localização precisa com terceiros.</p>
+
+    <h2>6. Serviços de Terceiros e Transferências de Dados</h2>
+    <p>Nosso aplicativo integra parceiros terceiros, incluindo:</p>
+    <ul>
+      <li><strong>Airalo</strong> — Serviços de eSIM</li>
+      <li><strong>SafetyWing</strong> — Seguro viagem</li>
+      <li><strong>Wise</strong> — Câmbio de moedas</li>
+      <li><strong>NordVPN</strong> — Serviços de VPN</li>
+      <li><strong>GetYourGuide</strong> — Passeios e atividades</li>
+      <li><strong>Ko-fi</strong> — Caixinha de gorjetas / doações</li>
+      <li><strong>Supabase</strong> — Infraestrutura de back-end</li>
+    </ul>
+    <p>Ao usar esses serviços de terceiros pelo MexiGuide, seus dados podem ser transferidos a esses provedores. Cada serviço possui sua própria política de privacidade. Garantimos que qualquer transferência de dados a terceiros esteja em conformidade com a LFPDPPP e que acordos adequados de proteção de dados estejam em vigor.</p>
+
+    <h2>7. Cookies e Rastreamento</h2>
+    <p>Nosso site usa cookies e tecnologias similares para melhorar sua experiência de navegação, lembrar preferências e coletar análises. Você pode gerenciar as preferências de cookies nas configurações do seu navegador.</p>
+
+    <h2>8. Segurança dos Dados</h2>
+    <p>Implementamos medidas de segurança administrativas, técnicas e físicas padrão do setor para proteger seus dados, incluindo criptografia em trânsito (HTTPS/TLS) e em repouso. No entanto, nenhum método de transmissão eletrônica ou armazenamento é 100% seguro.</p>
+
+    <h2>9. Retenção de Dados</h2>
+    <p>Retemos seus dados pessoais apenas pelo tempo necessário para cumprir as finalidades descritas neste Aviso de Privacidade, ou conforme exigido pela legislação aplicável. Você pode solicitar a exclusão da sua conta e dos dados associados a qualquer momento.</p>
+
+    <h2>10. Seus Direitos ARCO</h2>
+    <p>Pela lei mexicana (LFPDPPP), você tem o direito de:</p>
+    <ul>
+      <li><strong>Acesso</strong> (<em>Acceso</em>): Saber quais dados pessoais temos sobre você</li>
+      <li><strong>Retificação</strong> (<em>Rectificación</em>): Corrigir dados imprecisos ou incompletos</li>
+      <li><strong>Cancelamento</strong> (<em>Cancelación</em>): Solicitar a exclusão dos seus dados</li>
+      <li><strong>Oposição</strong> (<em>Oposición</em>): Opor-se ao tratamento dos seus dados para finalidades específicas</li>
+    </ul>
+    <p>Você também tem o direito de:</p>
+    <ul>
+      <li>Revogar seu consentimento para o tratamento de dados</li>
+      <li>Limitar o uso ou a divulgação dos seus dados</li>
+      <li>Cancelar comunicações de marketing</li>
+      <li>Solicitar uma cópia dos seus dados em formato portátil</li>
+      <li>Retirar o consentimento para rastreamento de localização</li>
+    </ul>
+    <p><strong>Como exercer seus direitos:</strong> Envie uma solicitação para privacy@mexiguide.org incluindo seu nome completo, e-mail associado à sua conta, uma descrição do(s) direito(s) que deseja exercer e qualquer documentação de suporte. Responderemos em até 20 dias úteis, conforme exigido pela LFPDPPP.</p>
+
+    <h2>11. Privacidade de Crianças</h2>
+    <p>O MexiGuide não é direcionado a crianças menores de 13 anos. Não coletamos intencionalmente informações pessoais de crianças. Se você acredita que uma criança nos forneceu dados pessoais, entre em contato conosco para que possamos removê-los.</p>
+
+    <h2>12. Usuários Internacionais</h2>
+    <p>O MexiGuide é operado a partir do México. Se você acessa nossos serviços de fora do México, seus dados podem ser transferidos e processados no México ou em outros países onde nossos provedores de serviço operam. Garantimos que qualquer transferência internacional de dados esteja em conformidade com os requisitos da LFPDPPP.</p>
+
+    <h2>13. Alterações neste Aviso de Privacidade</h2>
+    <p>Podemos atualizar este Aviso de Privacidade periodicamente. Para alterações relevantes, notificaremos você com pelo menos 30 dias de antecedência por e-mail ou notificação no aplicativo. Também atualizaremos a data de "Última atualização" acima. Se você não concordar com as alterações, poderá encerrar sua conta antes que elas entrem em vigor.</p>
+
+    <h2>14. Fale Conosco</h2>
+    <p>Se você tiver dúvidas sobre este Aviso de Privacidade ou desejar exercer seus direitos ARCO, entre em contato:</p>
+    <p><strong>Controlador de Dados:</strong> Rumbotech Labs<br>
+    <strong>E-mail:</strong> privacy@mexiguide.org<br>
+    <strong>Site:</strong> <a href="https://mexiguide.org">mexiguide.org</a></p>
+
+  </div>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/pt/" class="footer-brand-logo">
+            <img src="/logo.png" alt="MexiGuide" style="width:34px;height:34px;border-radius:10px;object-fit:contain;background:#1B4332;padding:3px;box-shadow:0 3px 10px rgba(27,67,50,0.25);">
+            <span class="footer-wordmark">MexiGuide</span>
+          </a>
+          <p>Seu guia completo de viagem para explorar o México. Feito para viajantes, expatriados e nômades digitais.</p>
+        </div>
+        <div class="footer-col">
+          <h4>App</h4>
+          <ul>
+            <li><a href="/pt/#features">Recursos</a></li>
+            <li><a href="/pt/tools.html">Ferramentas de Viagem</a></li>
+            <li><a href="/pt/destinations.html">Cidades</a></li>
+            <li><a href="/pt/#download">Baixar</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Parceiros</h4>
+          <ul>
+            <li><a href="#">Airalo eSIM</a></li>
+            <li><a href="#">SafetyWing</a></li>
+            <li><a href="https://wise.prf.hn/click/camref:1011l5FkSn" target="_blank" rel="noopener">Wise</a></li>
+            <li><a href="#">NordVPN</a></li>
+            <li><a href="#">GetYourGuide</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Empresa</h4>
+          <ul>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="/pt/privacy.html">Política de Privacidade</a></li>
+            <li><a href="/pt/terms.html">Termos de Serviço</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 MexiGuide &middot; Feito por Rumbotech Labs</p>
+        <p>Divulgação de afiliados: o MexiGuide pode receber comissões de links de parceiros sem custo adicional para você.</p>
+      </div>
+    </div>
+  </footer>
+
+<script>
+  document.getElementById('navToggle').addEventListener('click', function() {
+    this.classList.toggle('open');
+    document.getElementById('navLinks').classList.toggle('show');
+  });
+</script>
+</body>
+</html>

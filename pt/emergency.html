@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <title>Contatos de Emergência | MexiGuide</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --base: #E8E2DA; --card: #F5F0EB; --white: #FFFFFF;
+            --border: rgba(27, 67, 50, 0.10);
+            --g-darkest: #0F2419; --g-dark: #1B4332; --g-mid: #2D6A4F;
+            --jade: #4A9E80; --gold: #E9C46A; --coral: #E76F51;
+            --amber: #F4A261; --teal: #2A9D8F;
+            --text-hi: #0F2419; --text-mid: #4A7A60; --text-lo: #8AA898;
+            --stripe: repeating-linear-gradient(90deg, #E76F51 0px, #E76F51 8px, #F4A261 8px, #F4A261 16px, #2A9D8F 16px, #2A9D8F 24px, #E9C46A 24px, #E9C46A 32px);
+        }
+
+        body { font-family: 'Inter', sans-serif; color: var(--text-hi); background-color: var(--base); line-height: 1.6; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Merriweather', serif; }
+
+        nav { background-color: var(--white); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        .nav-container { max-width: 1200px; margin: 0 auto; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; gap: 2rem; }
+        .nav-logo { font-family: 'Merriweather', serif; font-size: 1.5rem; font-weight: 700; color: var(--g-dark); text-decoration: none; white-space: nowrap; }
+        .nav-links { display: flex; list-style: none; gap: 2rem; margin: 0; padding: 0; flex-grow: 1; }
+        .nav-links a { text-decoration: none; color: var(--text-mid); font-weight: 500; transition: color 0.3s ease; font-size: 0.95rem; }
+        .nav-links a:hover { color: var(--jade); }
+        .nav-links a.active { color: var(--coral); border-bottom: 2px solid var(--coral); padding-bottom: 0.25rem; }
+        .nav-cta { background-color: var(--jade); color: var(--white); padding: 0.6rem 1.4rem; border-radius: 4px; text-decoration: none; font-weight: 600; font-size: 0.95rem; white-space: nowrap; transition: background-color 0.3s ease; }
+        .nav-cta:hover { background-color: var(--teal); }
+
+        .stripe { height: 8px; background: var(--stripe); width: 100%; }
+
+        .hero { background: linear-gradient(135deg, rgba(231,111,81,0.15) 0%, rgba(244,162,97,0.1) 100%); padding: 4rem 2rem; text-align: center; border-bottom: 1px solid var(--border); }
+        .hero-content { max-width: 800px; margin: 0 auto; }
+        .hero h1 { font-size: 3rem; color: var(--coral); margin-bottom: 1rem; font-weight: 700; }
+        .hero p { font-size: 1.2rem; color: var(--text-mid); line-height: 1.8; }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 3rem 2rem; }
+
+        .emergency-banner { background-color: var(--white); border: 2px solid var(--coral); border-radius: 12px; padding: 3rem 2rem; text-align: center; margin-bottom: 4rem; box-shadow: 0 8px 24px rgba(231,111,81,0.15); }
+        .emergency-banner-number { font-size: 5rem; font-weight: 900; color: var(--coral); margin-bottom: 1rem; font-family: 'Inter', sans-serif; letter-spacing: -2px; }
+        .emergency-banner-text { font-size: 1.3rem; color: var(--text-mid); margin-bottom: 1rem; font-weight: 600; }
+        .emergency-banner-subtext { font-size: 1rem; color: var(--text-lo); line-height: 1.8; }
+
+        .section-title { font-size: 2rem; color: var(--g-dark); margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 2px solid var(--border); font-weight: 700; }
+
+        .numbers-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-bottom: 4rem; }
+        .number-card { background-color: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 2rem; text-align: center; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .number-card:hover { transform: translateY(-4px); box-shadow: 0 12px 24px rgba(77,154,128,0.1); }
+        .number-card-icon { font-size: 2.5rem; margin-bottom: 1rem; }
+        .number-card-title { font-size: 1.2rem; color: var(--text-hi); margin-bottom: 0.5rem; font-weight: 600; }
+        .number-card-number { font-size: 1.8rem; color: var(--coral); font-weight: 700; margin-bottom: 0.5rem; font-family: 'Inter', sans-serif; letter-spacing: 1px; }
+        .number-card-number a { color: var(--coral); text-decoration: none; transition: color 0.3s ease; }
+        .number-card-number a:hover { color: var(--amber); }
+        .number-card-desc { font-size: 0.9rem; color: var(--text-lo); line-height: 1.6; }
+
+        .embassies-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1.5rem; margin-bottom: 4rem; }
+        .embassy-card { background-color: var(--white); border: 1px solid var(--border); border-radius: 12px; padding: 2rem; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .embassy-card:hover { transform: translateY(-4px); box-shadow: 0 12px 24px rgba(77,154,128,0.1); }
+        .embassy-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; }
+        .embassy-flag { font-size: 2.5rem; }
+        .embassy-country { font-size: 1.3rem; color: var(--g-dark); font-weight: 700; font-family: 'Merriweather', serif; }
+        .embassy-name { font-size: 1rem; color: var(--text-mid); font-weight: 500; margin-bottom: 1.5rem; line-height: 1.5; }
+        .embassy-phone { margin-bottom: 1rem; }
+        .embassy-phone-label { font-size: 0.85rem; color: var(--text-lo); text-transform: uppercase; letter-spacing: 0.5px; font-weight: 600; margin-bottom: 0.3rem; }
+        .embassy-phone-number { font-size: 1.2rem; font-weight: 700; color: var(--jade); }
+        .embassy-phone-number a { color: var(--jade); text-decoration: none; transition: color 0.3s ease; }
+        .embassy-phone-number a:hover { color: var(--teal); }
+        .embassy-address { font-size: 0.9rem; color: var(--text-lo); line-height: 1.6; padding-top: 1rem; border-top: 1px solid var(--border); }
+
+        .safety-tips { background-color: var(--card); border-radius: 12px; padding: 2.5rem; margin-bottom: 3rem; }
+        .tips-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; list-style: none; }
+        .tip-item { display: flex; gap: 1rem; align-items: flex-start; }
+        .tip-icon { font-size: 1.5rem; flex-shrink: 0; margin-top: 0.2rem; }
+        .tip-text { font-size: 1rem; color: var(--text-mid); line-height: 1.7; }
+
+        .download-reminder { background: linear-gradient(135deg, rgba(74,158,128,0.1) 0%, rgba(42,157,143,0.1) 100%); border: 2px solid var(--jade); border-radius: 12px; padding: 2.5rem; text-align: center; }
+        .reminder-title { font-size: 1.3rem; color: var(--g-dark); margin-bottom: 1rem; font-weight: 700; }
+        .reminder-text { font-size: 1rem; color: var(--text-mid); margin-bottom: 1.5rem; line-height: 1.7; }
+        .reminder-cta { display: inline-block; background-color: var(--jade); color: var(--white); padding: 0.8rem 2rem; border-radius: 6px; text-decoration: none; font-weight: 600; transition: background-color 0.3s ease; }
+        .reminder-cta:hover { background-color: var(--teal); }
+
+        .lang-switch { display: inline-flex; align-items: center; gap: 5px; text-decoration: none; font-size: 13px; font-weight: 600; color: var(--text-mid); background: rgba(27,67,50,0.06); border: 1px solid var(--border); padding: 5px 12px; border-radius: 8px; transition: background 0.2s, color 0.2s; white-space: nowrap; }
+        .lang-switch:hover { background: rgba(27,67,50,0.12); color: var(--g-dark); }
+        .lang-flag { font-size: 16px; line-height: 1; }
+
+        .nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 4px; z-index: 200; }
+        .nav-toggle span { display: block; width: 22px; height: 2px; background: var(--g-dark); margin: 5px 0; border-radius: 2px; transition: transform 0.3s, opacity 0.3s; }
+        .nav-toggle.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+        .nav-toggle.open span:nth-child(2) { opacity: 0; }
+        .nav-toggle.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+        @media (max-width: 768px) {
+            .nav-toggle { display: block; }
+            .nav-container { position: relative; }
+            .nav-links { display: none; position: absolute; top: 100%; left: 0; right: 0; background: rgba(255,255,255,0.98); backdrop-filter: blur(20px); flex-direction: column; padding: 16px 24px; gap: 0; border-bottom: 1px solid var(--border); box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+            .nav-links.show { display: flex; }
+            .nav-links a { display: block; padding: 12px 0; border-bottom: 1px solid var(--border); font-size: 15px; }
+            .nav-links a:last-child { border-bottom: none; }
+            .nav-cta { display: none; }
+            .hero h1 { font-size: 2rem; }
+            .hero p { font-size: 1rem; }
+            .emergency-banner-number { font-size: 3.5rem; }
+            .container { padding: 2rem 1rem; }
+            .section-title { font-size: 1.5rem; }
+            .numbers-grid { grid-template-columns: 1fr; gap: 1rem; }
+            .embassies-grid { grid-template-columns: 1fr; gap: 1rem; }
+            .tips-list { grid-template-columns: 1fr; gap: 1.5rem; }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 { font-size: 1.75rem; }
+            .emergency-banner-number { font-size: 3rem; }
+            .emergency-banner { padding: 2rem 1.5rem; }
+            .embassy-flag { font-size: 2rem; }
+            .section-title { font-size: 1.3rem; margin-bottom: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="/pt/" class="nav-logo"><img src="/logo.png" alt="MexiGuide" style="width:32px;height:32px;border-radius:9px;object-fit:contain;background:#1B4332;padding:3px;vertical-align:middle;box-shadow:0 3px 10px rgba(27,67,50,0.25);"> <span>MexiGuide</span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="/pt/destinations.html">Destinos</a></li>
+                <li><a href="/pt/safety-map.html">Mapa de Segurança</a></li>
+                <li><a href="/pt/tools.html">Ferramentas de Viagem</a></li>
+                <li><a href="/pt/emergency.html" class="active">Emergências</a></li>
+                <li><a href="/emergency.html" class="lang-switch"><span class="lang-flag">🇺🇸</span> EN</a></li>
+                <li><a href="/es/emergency.html" class="lang-switch"><span class="lang-flag">🇲🇽</span> ES</a></li>
+            </ul>
+            <a href="/pt/#download" class="nav-cta">Baixar App →</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <div class="stripe"></div>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>🚨 Contatos de Emergência</h1>
+            <p>Salve esses números antes de viajar. No México, o 911 atende todas as emergências.</p>
+        </div>
+    </section>
+
+    <main class="container">
+        <div class="emergency-banner">
+            <div class="emergency-banner-number">911</div>
+            <div class="emergency-banner-text">Número Universal de Emergências do México</div>
+            <div class="emergency-banner-subtext">Disque 911 para Polícia, Bombeiros e Ambulância em todo o México. Operadores que falam inglês estão disponíveis na maioria das principais cidades.</div>
+        </div>
+
+        <section>
+            <h2 class="section-title">Números de Emergência Essenciais</h2>
+            <div class="numbers-grid">
+                <div class="number-card">
+                    <div class="number-card-icon">🚔</div>
+                    <div class="number-card-title">Polícia</div>
+                    <div class="number-card-number"><a href="tel:911">911</a></div>
+                    <div class="number-card-desc">Polícia federal, estadual e local</div>
+                </div>
+
+                <div class="number-card">
+                    <div class="number-card-icon">🚑</div>
+                    <div class="number-card-title">Ambulância</div>
+                    <div class="number-card-number"><a href="tel:911">911</a></div>
+                    <div class="number-card-desc">Serviços médicos de emergência</div>
+                </div>
+
+                <div class="number-card">
+                    <div class="number-card-icon">🔥</div>
+                    <div class="number-card-title">Bombeiros</div>
+                    <div class="number-card-number"><a href="tel:911">911</a></div>
+                    <div class="number-card-desc">Serviços de bombeiros e resgate</div>
+                </div>
+
+                <div class="number-card">
+                    <div class="number-card-icon">📞</div>
+                    <div class="number-card-title">Assistência ao Turista</div>
+                    <div class="number-card-number"><a href="tel:078">078</a></div>
+                    <div class="number-card-desc">Linha turística da SECTUR com atendimento em inglês</div>
+                </div>
+
+                <div class="number-card">
+                    <div class="number-card-icon">🏥</div>
+                    <div class="number-card-title">Cruz Vermelha</div>
+                    <div class="number-card-number"><a href="tel:065">065</a></div>
+                    <div class="number-card-desc">Resposta médica de emergência da Cruz Vermelha</div>
+                </div>
+
+                <div class="number-card">
+                    <div class="number-card-icon">📍</div>
+                    <div class="number-card-title">Pessoas Desaparecidas / Info</div>
+                    <div class="number-card-number"><a href="tel:+525556581111">55 5658-1111</a></div>
+                    <div class="number-card-desc">LOCATEL para pessoas desaparecidas e informações gerais</div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Contatos de Embaixadas</h2>
+            <div class="embassies-grid">
+                <div class="embassy-card">
+                    <div class="embassy-header">
+                        <div class="embassy-flag">🇺🇸</div>
+                        <div class="embassy-country">Estados Unidos</div>
+                    </div>
+                    <div class="embassy-name">Embaixada dos EUA na Cidade do México</div>
+                    <div class="embassy-phone">
+                        <div class="embassy-phone-label">Telefone</div>
+                        <div class="embassy-phone-number"><a href="tel:+525250802000">+52-55-5080-2000</a></div>
+                    </div>
+                    <div class="embassy-address">Paseo de la Reforma 305, Cuauhtémoc, Cidade do México</div>
+                </div>
+
+                <div class="embassy-card">
+                    <div class="embassy-header">
+                        <div class="embassy-flag">🇨🇦</div>
+                        <div class="embassy-country">Canadá</div>
+                    </div>
+                    <div class="embassy-name">Embaixada do Canadá</div>
+                    <div class="embassy-phone">
+                        <div class="embassy-phone-label">Telefone</div>
+                        <div class="embassy-phone-number"><a href="tel:+525257247900">+52-55-5724-7900</a></div>
+                    </div>
+                    <div class="embassy-address">Schiller 529, Polanco, Cidade do México</div>
+                </div>
+
+                <div class="embassy-card">
+                    <div class="embassy-header">
+                        <div class="embassy-flag">🇬🇧</div>
+                        <div class="embassy-country">Reino Unido</div>
+                    </div>
+                    <div class="embassy-name">Embaixada Britânica</div>
+                    <div class="embassy-phone">
+                        <div class="embassy-phone-label">Telefone</div>
+                        <div class="embassy-phone-number"><a href="tel:+525516703200">+52-55-1670-3200</a></div>
+                    </div>
+                    <div class="embassy-address">Rio Lerma 71, Cuauhtémoc, Cidade do México</div>
+                </div>
+
+                <div class="embassy-card">
+                    <div class="embassy-header">
+                        <div class="embassy-flag">🇫🇷</div>
+                        <div class="embassy-country">França</div>
+                    </div>
+                    <div class="embassy-name">Embaixada da França</div>
+                    <div class="embassy-phone">
+                        <div class="embassy-phone-label">Telefone</div>
+                        <div class="embassy-phone-number"><a href="tel:+525259171970">+52-55-9171-9700</a></div>
+                    </div>
+                    <div class="embassy-address">Campos Elíseos 339, Polanco, Cidade do México</div>
+                </div>
+
+                <div class="embassy-card">
+                    <div class="embassy-header">
+                        <div class="embassy-flag">🇩🇪</div>
+                        <div class="embassy-country">Alemanha</div>
+                    </div>
+                    <div class="embassy-name">Embaixada da Alemanha</div>
+                    <div class="embassy-phone">
+                        <div class="embassy-phone-label">Telefone</div>
+                        <div class="embassy-phone-number"><a href="tel:+525252832200">+52-55-5283-2200</a></div>
+                    </div>
+                    <div class="embassy-address">Horacio 1506, Polanco, Cidade do México</div>
+                </div>
+
+                <div class="embassy-card">
+                    <div class="embassy-header">
+                        <div class="embassy-flag">🇪🇸</div>
+                        <div class="embassy-country">Espanha</div>
+                    </div>
+                    <div class="embassy-name">Embaixada da Espanha</div>
+                    <div class="embassy-phone">
+                        <div class="embassy-phone-label">Telefone</div>
+                        <div class="embassy-phone-number"><a href="tel:+525252822974">+52-55-5282-2974</a></div>
+                    </div>
+                    <div class="embassy-address">Galileo 114, Polanco, Cidade do México</div>
+                </div>
+
+                <div class="embassy-card">
+                    <div class="embassy-header">
+                        <div class="embassy-flag">🇦🇺</div>
+                        <div class="embassy-country">Austrália</div>
+                    </div>
+                    <div class="embassy-name">Embaixada da Austrália</div>
+                    <div class="embassy-phone">
+                        <div class="embassy-phone-label">Telefone</div>
+                        <div class="embassy-phone-number"><a href="tel:+525211012200">+52-55-1101-2200</a></div>
+                    </div>
+                    <div class="embassy-address">Rubén Darío 55, Polanco, Cidade do México</div>
+                </div>
+
+                <div class="embassy-card">
+                    <div class="embassy-header">
+                        <div class="embassy-flag">🇮🇹</div>
+                        <div class="embassy-country">Itália</div>
+                    </div>
+                    <div class="embassy-name">Embaixada da Itália</div>
+                    <div class="embassy-phone">
+                        <div class="embassy-phone-label">Telefone</div>
+                        <div class="embassy-phone-number"><a href="tel:+525255963655">+52-55-5596-3655</a></div>
+                    </div>
+                    <div class="embassy-address">Paseo de las Palmas 1994, Lomas de Chapultepec, Cidade do México</div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Dicas Importantes de Segurança</h2>
+            <div class="safety-tips">
+                <ul class="tips-list">
+                    <li class="tip-item">
+                        <div class="tip-icon">✅</div>
+                        <div class="tip-text"><strong>Salve o 911 antes de viajar:</strong> Adicione o número de emergências do México aos seus contatos do celular assim que chegar.</div>
+                    </li>
+                    <li class="tip-item">
+                        <div class="tip-icon">✅</div>
+                        <div class="tip-text"><strong>Tenha a embaixada na discagem rápida:</strong> Fundamental para emergências de passaporte, problemas legais ou quando as autoridades locais não conseguem ajudar.</div>
+                    </li>
+                    <li class="tip-item">
+                        <div class="tip-icon">✅</div>
+                        <div class="tip-text"><strong>Use a SECTUR para apoio turístico:</strong> A linha 078 conecta você a assistência em inglês 24 horas por dia, 7 dias por semana.</div>
+                    </li>
+                    <li class="tip-item">
+                        <div class="tip-icon">✅</div>
+                        <div class="tip-text"><strong>Procure a Polícia Turística:</strong> A polícia turística nos principais destinos fala inglês e patrulha as áreas turísticas.</div>
+                    </li>
+                    <li class="tip-item">
+                        <div class="tip-icon">✅</div>
+                        <div class="tip-text"><strong>Tire um print desta página:</strong> Salve no celular para acesso offline caso perca o sinal.</div>
+                    </li>
+                    <li class="tip-item">
+                        <div class="tip-icon">✅</div>
+                        <div class="tip-text"><strong>Compartilhe com seus companheiros de viagem:</strong> Certifique-se de que todos do grupo tenham esses contatos salvos.</div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class="download-reminder">
+                <div class="reminder-title">📲 Baixe para Acesso Offline</div>
+                <div class="reminder-text">Tire um print desta página ou baixe o app do MexiGuide para manter esses contatos acessíveis mesmo sem conexão à internet.</div>
+                <a href="/pt/#download" class="reminder-cta">Baixar App</a>
+            </div>
+        </section>
+    </main>
+
+    <div style="height: 3rem;"></div>
+
+<!-- ── TIP JAR WIDGET ── -->
+<div id="tip-jar" style="position:fixed;bottom:20px;right:20px;z-index:9999;max-width:300px;font-family:'Inter',sans-serif;display:block;">
+  <div style="background:#F5F0EB;border:1px solid rgba(196,128,64,0.35);border-radius:14px;box-shadow:0 6px 28px rgba(0,0,0,0.14);padding:14px 16px 12px;position:relative;">
+    <button onclick="document.getElementById('tip-jar').style.display='none'" style="position:absolute;top:8px;right:10px;background:none;border:none;cursor:pointer;font-size:14px;color:#8AA898;line-height:1;" aria-label="Fechar">✕</button>
+    <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">
+      <div style="width:28px;height:28px;background:rgba(196,128,64,0.12);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:15px;">☕</div>
+      <div>
+        <div style="font-size:11px;font-weight:700;color:#0F2419;">Curtiu o MexiGuide?</div>
+        <div style="font-size:10px;color:#4A7A60;">Nos pague um café para mantê-lo gratuito ✌️</div>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:10px;">
+      <a href="https://ko-fi.com/mexiguide?amount=5" target="_blank" rel="noopener" style="text-align:center;padding:7px 4px;background:rgba(196,128,64,0.10);border:1px solid rgba(196,128,64,0.25);border-radius:8px;text-decoration:none;color:#0F2419;font-size:10px;font-weight:600;transition:background 0.2s;" onmouseover="this.style.background='rgba(196,128,64,0.2)'" onmouseout="this.style.background='rgba(196,128,64,0.10)'">☕ Café<br><span style="font-weight:400;color:#4A7A60;">$5</span></a>
+      <a href="https://ko-fi.com/mexiguide?amount=10" target="_blank" rel="noopener" style="text-align:center;padding:7px 4px;background:rgba(196,128,64,0.10);border:1px solid rgba(196,128,64,0.25);border-radius:8px;text-decoration:none;color:#0F2419;font-size:10px;font-weight:600;transition:background 0.2s;" onmouseover="this.style.background='rgba(196,128,64,0.2)'" onmouseout="this.style.background='rgba(196,128,64,0.10)'">🌮 Taco<br><span style="font-weight:400;color:#4A7A60;">$10</span></a>
+      <a href="https://ko-fi.com/mexiguide?amount=15" target="_blank" rel="noopener" style="text-align:center;padding:7px 4px;background:rgba(196,128,64,0.10);border:1px solid rgba(196,128,64,0.25);border-radius:8px;text-decoration:none;color:#0F2419;font-size:10px;font-weight:600;transition:background 0.2s;" onmouseover="this.style.background='rgba(196,128,64,0.2)'" onmouseout="this.style.background='rgba(196,128,64,0.10)'">🍺 Cerveja<br><span style="font-weight:400;color:#4A7A60;">$15</span></a>
+      <a href="https://ko-fi.com/mexiguide?amount=25" target="_blank" rel="noopener" style="text-align:center;padding:7px 4px;background:rgba(196,128,64,0.10);border:1px solid rgba(196,128,64,0.25);border-radius:8px;text-decoration:none;color:#0F2419;font-size:10px;font-weight:600;transition:background 0.2s;" onmouseover="this.style.background='rgba(196,128,64,0.2)'" onmouseout="this.style.background='rgba(196,128,64,0.10)'">🎉 Incrível!<br><span style="font-weight:400;color:#4A7A60;">$25</span></a>
+    </div>
+    <a href="https://ko-fi.com/mexiguide" target="_blank" rel="noopener" style="display:block;text-align:center;background:linear-gradient(135deg,#C48040,#E9C46A);color:#fff;font-size:11px;font-weight:700;padding:8px;border-radius:8px;text-decoration:none;letter-spacing:0.3px;">Gorjeta ☕ →</a>
+  </div>
+</div>
+
+<script>
+  document.getElementById('navToggle').addEventListener('click', function() {
+    this.classList.toggle('open');
+    document.getElementById('navLinks').classList.toggle('show');
+  });
+</script>
+</body>
+</html>

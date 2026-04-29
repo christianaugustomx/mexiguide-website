@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <title>Todos os Destinos | MexiGuide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --base: #E8E2DA; --card: #F5F0EB; --white: #FFFFFF;
+      --border: rgba(27, 67, 50, 0.10);
+      --g-darkest: #0F2419; --g-dark: #1B4332; --g-mid: #2D6A4F;
+      --jade: #4A9E80; --gold: #E9C46A; --coral: #E76F51;
+      --amber: #F4A261; --teal: #2A9D8F;
+      --text-hi: #0F2419; --text-mid: #4A7A60; --text-lo: #8AA898;
+      --safety-1: #2D9E5F; --safety-2: #52C778; --safety-3: #F0A500;
+      --safety-4: #EF6C00; --safety-5: #C62828;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body { font-family: 'Inter', sans-serif; background-color: var(--base); color: var(--text-hi); line-height: 1.6; }
+
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background-color: rgba(245,240,235,0.92); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); padding: 1rem 2rem; }
+    .nav-container { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; position: relative; }
+    .nav-logo { font-family: 'Merriweather', serif; font-size: 1.5rem; font-weight: 700; color: var(--text-hi); text-decoration: none; display: flex; align-items: center; gap: 0.5rem; }
+    .nav-links { display: flex; list-style: none; gap: 2rem; align-items: center; }
+    .nav-links a { color: var(--text-hi); text-decoration: none; font-size: 0.95rem; font-weight: 500; transition: color 0.3s ease; }
+    .nav-links a:hover { color: var(--jade); }
+    .nav-links a.active { color: var(--jade); border-bottom: 2px solid var(--jade); padding-bottom: 0.25rem; }
+    .nav-cta { background: linear-gradient(135deg, var(--coral) 0%, var(--amber) 100%); color: var(--white); padding: 0.625rem 1.25rem; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 0.9rem; transition: transform 0.2s ease, box-shadow 0.2s ease; cursor: pointer; border: none; }
+    .nav-cta:hover { transform: translateY(-2px); box-shadow: 0 8px 16px rgba(231,111,81,0.3); }
+
+    .hero { margin-top: 5rem; padding: 3rem 2rem; text-align: center; background: linear-gradient(135deg, var(--card) 0%, var(--white) 100%); border-bottom: 3px solid; border-image: repeating-linear-gradient(90deg, #E76F51 0px, #E76F51 8px, #F4A261 8px, #F4A261 16px, #2A9D8F 16px, #2A9D8F 24px, #E9C46A 24px, #E9C46A 32px) 0 0 1 0; }
+    .hero-content { max-width: 1400px; margin: 0 auto; }
+    .hero h1 { font-family: 'Merriweather', serif; font-size: 3rem; font-weight: 700; color: var(--text-hi); margin-bottom: 1rem; }
+    .hero p { font-size: 1.125rem; color: var(--text-mid); max-width: 600px; margin: 0 auto; }
+
+    main { max-width: 1400px; margin: 0 auto; padding: 2rem; }
+
+    .filters-section { margin-bottom: 3rem; background: var(--white); padding: 2rem; border-radius: 8px; border: 1px solid var(--border); }
+    .search-box { margin-bottom: 2rem; }
+    .search-box input { width: 100%; padding: 0.875rem 1.25rem; font-size: 1rem; border: 1px solid var(--border); border-radius: 6px; font-family: 'Inter', sans-serif; background-color: var(--card); color: var(--text-hi); transition: border-color 0.3s ease, box-shadow 0.3s ease; }
+    .search-box input::placeholder { color: var(--text-lo); }
+    .search-box input:focus { outline: none; border-color: var(--jade); box-shadow: 0 0 0 3px rgba(74,158,128,0.1); }
+    .filter-buttons { display: flex; gap: 1rem; flex-wrap: wrap; }
+    .filter-btn { padding: 0.625rem 1.25rem; border: 2px solid var(--border); background-color: var(--card); color: var(--text-hi); border-radius: 24px; cursor: pointer; font-weight: 600; font-size: 0.9rem; transition: all 0.3s ease; font-family: 'Inter', sans-serif; }
+    .filter-btn:hover { border-color: var(--jade); background-color: var(--white); }
+    .filter-btn.active { background-color: var(--jade); border-color: var(--jade); color: var(--white); }
+    .filter-btn[data-level="1"] { --safety-color: var(--safety-1); }
+    .filter-btn[data-level="2"] { --safety-color: var(--safety-2); }
+    .filter-btn[data-level="3"] { --safety-color: var(--safety-3); }
+    .filter-btn[data-level="4"] { --safety-color: var(--safety-4); }
+    .filter-btn[data-level="5"] { --safety-color: var(--safety-5); }
+    .filter-btn[data-level].active { background-color: var(--safety-color); border-color: var(--safety-color); }
+
+    .results-count { font-size: 1rem; color: var(--text-mid); margin-bottom: 2rem; font-weight: 500; }
+
+    .cities-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-bottom: 3rem; }
+
+    @media (max-width: 1024px) { .cities-grid { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; } }
+    @media (max-width: 640px) { .cities-grid { grid-template-columns: 1fr; gap: 1rem; } .hero h1 { font-size: 2rem; } }
+
+    .city-card { background: var(--white); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; transition: all 0.3s ease; display: flex; flex-direction: column; animation: fadeInUp 0.6s ease forwards; opacity: 0; }
+    @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    .city-card:nth-child(1) { animation-delay: 0.05s; }
+    .city-card:nth-child(2) { animation-delay: 0.1s; }
+    .city-card:nth-child(3) { animation-delay: 0.15s; }
+    .city-card:nth-child(4) { animation-delay: 0.2s; }
+    .city-card:nth-child(5) { animation-delay: 0.25s; }
+    .city-card:nth-child(6) { animation-delay: 0.3s; }
+    .city-card:nth-child(n+7) { animation-delay: 0.35s; }
+    .city-card:hover { box-shadow: 0 16px 32px rgba(0,0,0,0.1); transform: translateY(-4px); }
+    .city-safety-bar { height: 4px; background-color: var(--text-hi); }
+    .city-card[data-level="1"] .city-safety-bar { background-color: var(--safety-1); }
+    .city-card[data-level="2"] .city-safety-bar { background-color: var(--safety-2); }
+    .city-card[data-level="3"] .city-safety-bar { background-color: var(--safety-3); }
+    .city-card[data-level="4"] .city-safety-bar { background-color: var(--safety-4); }
+    .city-card[data-level="5"] .city-safety-bar { background-color: var(--safety-5); }
+    .card-content { padding: 1.5rem; flex: 1; display: flex; flex-direction: column; }
+    .city-header { margin-bottom: 1rem; }
+    .city-name { font-family: 'Merriweather', serif; font-size: 1.5rem; font-weight: 700; color: var(--text-hi); margin-bottom: 0.25rem; }
+    .city-state { font-size: 0.875rem; color: var(--text-lo); font-weight: 500; }
+    .safety-badge { display: inline-block; padding: 0.375rem 0.875rem; border-radius: 16px; font-size: 0.8rem; font-weight: 600; color: var(--white); margin-bottom: 1rem; width: fit-content; }
+    .city-card[data-level="1"] .safety-badge { background-color: var(--safety-1); }
+    .city-card[data-level="2"] .safety-badge { background-color: var(--safety-2); }
+    .city-card[data-level="3"] .safety-badge { background-color: var(--safety-3); color: var(--text-hi); }
+    .city-card[data-level="4"] .safety-badge { background-color: var(--safety-4); }
+    .city-card[data-level="5"] .safety-badge { background-color: var(--safety-5); }
+    .quick-stats { display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); font-size: 0.9rem; color: var(--text-mid); flex: 1; }
+    .stat-item { display: flex; align-items: center; gap: 0.5rem; }
+    .stat-icon { font-size: 1rem; min-width: 1rem; }
+    .stat-text { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .card-button { background: linear-gradient(135deg, var(--coral) 0%, var(--amber) 100%); color: var(--white); border: none; padding: 0.75rem 1.25rem; border-radius: 6px; font-weight: 600; font-size: 0.9rem; cursor: pointer; text-decoration: none; text-align: center; transition: all 0.3s ease; font-family: 'Inter', sans-serif; display: inline-block; }
+    .card-button:hover { transform: translateY(-2px); box-shadow: 0 8px 16px rgba(231,111,81,0.3); }
+
+    .empty-state { text-align: center; padding: 4rem 2rem; color: var(--text-mid); }
+    .empty-state h2 { font-family: 'Merriweather', serif; font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-hi); }
+    .empty-state p { margin-bottom: 1.5rem; }
+    .empty-state button { background: var(--jade); color: var(--white); border: none; padding: 0.75rem 1.5rem; border-radius: 6px; font-weight: 600; cursor: pointer; font-family: 'Inter', sans-serif; transition: all 0.3s ease; }
+    .empty-state button:hover { background: var(--g-mid); transform: translateY(-2px); }
+
+    .footer-spacing { height: 4rem; }
+
+    .lang-switch { display: inline-flex; align-items: center; gap: 5px; text-decoration: none; font-size: 13px; font-weight: 600; color: var(--text-mid); background: rgba(27,67,50,0.06); border: 1px solid var(--border); padding: 5px 12px; border-radius: 8px; transition: background 0.2s, color 0.2s; white-space: nowrap; }
+    .lang-switch:hover { background: rgba(27,67,50,0.12); color: var(--g-dark); }
+    .lang-flag { font-size: 16px; line-height: 1; }
+
+    .nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 4px; z-index: 200; }
+    .nav-toggle span { display: block; width: 22px; height: 2px; background: var(--g-dark); margin: 5px 0; border-radius: 2px; transition: transform 0.3s, opacity 0.3s; }
+    .nav-toggle.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+    .nav-toggle.open span:nth-child(2) { opacity: 0; }
+    .nav-toggle.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+    @media (max-width: 768px) {
+      .nav-toggle { display: block; }
+      .nav-links { display: none; position: absolute; top: 100%; left: 0; right: 0; background: rgba(245,240,235,0.98); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); flex-direction: column; padding: 16px 24px; gap: 0; border-bottom: 1px solid var(--border); box-shadow: 0 8px 24px rgba(0,0,0,0.08); list-style: none; }
+      .nav-links.show { display: flex; }
+      .nav-links li { width: 100%; }
+      .nav-links a { display: block; padding: 12px 0; border-bottom: 1px solid var(--border); font-size: 15px; }
+      .nav-links li:last-child a { border-bottom: none; }
+      .hero h1 { font-size: 2.25rem; }
+      .hero p { font-size: 1rem; }
+      main { padding: 1.5rem; }
+      .filters-section { padding: 1.5rem; }
+      .filter-buttons { gap: 0.5rem; }
+      .filter-btn { padding: 0.5rem 1rem; font-size: 0.85rem; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-container">
+      <a href="/pt/" class="nav-logo"><img src="/logo.png" alt="MexiGuide" style="width:32px;height:32px;border-radius:9px;object-fit:contain;background:#1B4332;padding:3px;vertical-align:middle;box-shadow:0 3px 10px rgba(27,67,50,0.25);"> <span>MexiGuide</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/pt/destinations.html" class="active">Destinos</a></li>
+        <li><a href="/pt/safety-map.html">Mapa de Segurança</a></li>
+        <li><a href="/pt/tools.html">Ferramentas de Viagem</a></li>
+        <li><a href="/pt/emergency.html">Emergências</a></li>
+        <li><a href="/destinations.html" class="lang-switch"><span class="lang-flag">🇺🇸</span> EN</a></li>
+        <li><a href="/es/destinations.html" class="lang-switch"><span class="lang-flag">🇲🇽</span> ES</a></li>
+      </ul>
+      <a href="/pt/#download" class="nav-cta">Baixar o App →</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Todos os Destinos</h1>
+      <p>37 cidades em todo o México — com dados reais de segurança, guias locais e dicas de especialistas.</p>
+    </div>
+  </section>
+
+  <main>
+    <section class="filters-section">
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Buscar por nome de cidade ou estado..." aria-label="Buscar destinos">
+      </div>
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all" data-level="all">Todos</button>
+        <button class="filter-btn" data-filter="level-1" data-level="1">Muito Seguro</button>
+        <button class="filter-btn" data-filter="level-2" data-level="2">Seguro</button>
+        <button class="filter-btn" data-filter="level-3" data-level="3">Moderado</button>
+        <button class="filter-btn" data-filter="level-4" data-level="4">Cuidado</button>
+        <button class="filter-btn" data-filter="level-5" data-level="5">Perigoso</button>
+      </div>
+    </section>
+
+    <div class="results-count">
+      Mostrando <span id="resultCount">37</span> destinos
+    </div>
+
+    <div class="cities-grid" id="citiesGrid"></div>
+
+    <div id="emptyState" class="empty-state" style="display: none;">
+      <h2>Nenhum destino encontrado</h2>
+      <p>Tente ajustar os filtros de busca para encontrar cidades que correspondam aos seus interesses.</p>
+      <button onclick="resetFilters()">Redefinir Filtros</button>
+    </div>
+  </main>
+
+  <div class="footer-spacing"></div>
+
+  <script>
+    const cities = [
+      {"id":"mex_baja_california_ensenada_baja_california","name":"Ensenada","state":"Baja California","level":3,"best_time":"Abr – Out","airport":"TIJ","connectivity":"Boa (4G)"},
+      {"id":"mex_baja_california_tijuana_baja_california","name":"Tijuana","state":"Baja California","level":5,"best_time":"Mar – Mai / Set – Nov","airport":"TIJ","connectivity":"Excelente (Fibra/5G)"},
+      {"id":"mex_bcs_cabo_san_lucas","name":"Cabo San Lucas","state":"Baja California Sur","level":2,"best_time":"Dez – Abr","airport":"SJD","connectivity":"Boa (4G)"},
+      {"id":"mex_bcs_la_paz","name":"La Paz","state":"Baja California Sur","level":2,"best_time":"Out – Mai","airport":"LAP","connectivity":"Boa (4G)"},
+      {"id":"mex_bcs_san_jose_del_cabo","name":"San José del Cabo","state":"Baja California Sur","level":2,"best_time":"Dez – Abr","airport":"SJD","connectivity":"Boa (4G)"},
+      {"id":"mex_campeche_campeche_campeche","name":"Campeche","state":"Campeche","level":1,"best_time":"Nov – Mar","airport":"CPE","connectivity":"Boa (4G)"},
+      {"id":"mex_chiapas_palenque_chiapas","name":"Palenque","state":"Chiapas","level":3,"best_time":"Nov – Abr","airport":"VHC","connectivity":"Limitada (4G intermitente)"},
+      {"id":"mex_chiapas_san_cristobal_de_las_casas_chiapas","name":"San Cristóbal de las Casas","state":"Chiapas","level":3,"best_time":"Nov – Abr","airport":"TGZ","connectivity":"Moderada (4G)"},
+      {"id":"mex_ciudad_de_mexico_cuauhtemoc","name":"Cidade do México","state":"Cidade do México","level":3,"best_time":"Out – Abr","airport":"MEX","connectivity":"Excelente (Fibra)"},
+      {"id":"mex_guanajuato_guanajuato_guanajuato","name":"Guanajuato","state":"Guanajuato","level":4,"best_time":"Mar – Jun / Set – Nov","airport":"BJX","connectivity":"Boa (Fibra/4G)"},
+      {"id":"mex_guanajuato_san_miguel_de_allende_guanajuato","name":"San Miguel de Allende","state":"Guanajuato","level":3,"best_time":"Out – Abr","airport":"BJX","connectivity":"Boa (Fibra/4G)"},
+      {"id":"mex_guerrero_acapulco_guerrero","name":"Acapulco","state":"Guerrero","level":5,"best_time":"Nov – Abr","airport":"ACA","connectivity":"Boa (Fibra/4G)"},
+      {"id":"mex_guerrero_ixtapa-zihuatanejo_guerrero","name":"Zihuatanejo","state":"Guerrero","level":4,"best_time":"Nov – Abr","airport":"ZIH","connectivity":"Moderada (4G)"},
+      {"id":"mex_guerrero_taxco_guerrero","name":"Taxco","state":"Guerrero","level":4,"best_time":"Out – Mai","airport":"MEX","connectivity":"Moderada (4G)"},
+      {"id":"mex_jalisco_guadalajara","name":"Guadalajara","state":"Jalisco","level":4,"best_time":"Out – Dez & Fev – Mai","airport":"GDL","connectivity":"Excelente (Fibra/5G)"},
+      {"id":"mex_jalisco_puerto_vallarta","name":"Puerto Vallarta","state":"Jalisco","level":3,"best_time":"Nov – Abr","airport":"PVR","connectivity":"Excelente (Fibra/5G)"},
+      {"id":"mex_michoacan_morelia_michoacan","name":"Morelia","state":"Michoacán","level":3,"best_time":"Out – Abr","airport":"MLM","connectivity":"Boa (4G)"},
+      {"id":"mex_michoacan_patzcuaro_michoacan","name":"Pátzcuaro","state":"Michoacán","level":5,"best_time":"Out – Nov (Dia dos Mortos)","airport":"MLM","connectivity":"Limitada (4G intermitente)"},
+      {"id":"mex_nayarit_sayulita_nayarit","name":"Sayulita","state":"Nayarit","level":4,"best_time":"Nov – Mai","airport":"PVR","connectivity":"Moderada (4G intermitente)"},
+      {"id":"mex_nuevo_leon_monterrey","name":"Monterrey","state":"Nuevo León","level":3,"best_time":"Out – Nov & Mar – Mai","airport":"MTY","connectivity":"Excelente (Centro de Negócios)"},
+      {"id":"mex_oaxaca_oaxaca_de_juarez","name":"Oaxaca de Juárez","state":"Oaxaca","level":2,"best_time":"Out – Abr","airport":"OAX","connectivity":"Boa (Fibra/4G)"},
+      {"id":"mex_oaxaca_san_pedro","name":"Puerto Escondido","state":"Oaxaca","level":2,"best_time":"Nov – Fev","airport":"PXM","connectivity":"Regular (4G)"},
+      {"id":"mex_oaxaca_santa_maria_huatulco","name":"Huatulco","state":"Oaxaca","level":2,"best_time":"Nov – Abr","airport":"HUX","connectivity":"Moderada (4G)"},
+      {"id":"mex_puebla_puebla_puebla","name":"Puebla","state":"Puebla","level":3,"best_time":"Mar – Mai / Set – Nov","airport":"PBC","connectivity":"Excelente (Fibra/5G)"},
+      {"id":"mex_queretaro_bernal_queretaro","name":"Bernal","state":"Querétaro","level":2,"best_time":"Mar (equinócio); Out – Abr","airport":"QRO","connectivity":"Limitada (4G fraco)"},
+      {"id":"mex_queretaro_queretaro_queretaro","name":"Querétaro","state":"Querétaro","level":2,"best_time":"Mar – Mai & Set – Nov","airport":"QRO","connectivity":"Excelente (4G/5G)"},
+      {"id":"mex_quintana_roo_bacalar","name":"Bacalar","state":"Quintana Roo","level":2,"best_time":"Nov – Abr","airport":"CTM","connectivity":"Moderada (4G)"},
+      {"id":"mex_quintana_roo_cancun","name":"Cancún","state":"Quintana Roo","level":2,"best_time":"Dez – Abr","airport":"CUN","connectivity":"Excelente (Fibra)"},
+      {"id":"mex_quintana_roo_cozumel","name":"Cozumel","state":"Quintana Roo","level":2,"best_time":"Nov – Mai","airport":"CZM","connectivity":"Boa (4G)"},
+      {"id":"mex_quintana_roo_holbox","name":"Holbox","state":"Quintana Roo","level":2,"best_time":"Jun – Set (tubarão-baleia); Nov – Abr","airport":"CUN","connectivity":"Limitada (4G fraco)"},
+      {"id":"mex_quintana_roo_isla_mujeres","name":"Isla Mujeres","state":"Quintana Roo","level":2,"best_time":"Nov – Abr","airport":"CUN","connectivity":"Boa (4G)"},
+      {"id":"mex_quintana_roo_solidaridad_playa_del_carmen","name":"Playa del Carmen","state":"Quintana Roo","level":3,"best_time":"Nov – Abr","airport":"CUN","connectivity":"Excelente (Fibra/5G)"},
+      {"id":"mex_quintana_roo_tulum","name":"Tulum","state":"Quintana Roo","level":3,"best_time":"Nov – Abr","airport":"TQO/CUN","connectivity":"Regular (Fibra/4G irregular)"},
+      {"id":"mex_sinaloa_mazatlan_sinaloa","name":"Mazatlán","state":"Sinaloa","level":4,"best_time":"Out – Abr","airport":"MZT","connectivity":"Boa (4G)"},
+      {"id":"mex_slp_xilitla_slp","name":"Xilitla","state":"San Luis Potosí","level":3,"best_time":"Nov – Mar","airport":"SLP","connectivity":"Limitada (4G fraco)"},
+      {"id":"mex_yucatan_merida_yucatan","name":"Mérida","state":"Yucatán","level":1,"best_time":"Nov – Fev","airport":"MID","connectivity":"Excelente (Fibra/5G)"},
+      {"id":"mex_yucatan_valladolid_yucatan","name":"Valladolid","state":"Yucatán","level":1,"best_time":"Nov – Mar","airport":"MID","connectivity":"Moderada (4G)"}
+    ];
+
+    let currentFilter = 'all';
+    let currentSearch = '';
+
+    document.addEventListener('DOMContentLoaded', function() {
+      renderCities();
+      attachEventListeners();
+    });
+
+    function attachEventListeners() {
+      document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+          document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+          this.classList.add('active');
+          currentFilter = this.dataset.filter;
+          filterAndRender();
+        });
+      });
+
+      document.getElementById('searchInput').addEventListener('input', function(e) {
+        currentSearch = e.target.value.toLowerCase();
+        filterAndRender();
+      });
+    }
+
+    function getFilteredCities() {
+      return cities.filter(city => {
+        let levelMatch = true;
+        if (currentFilter !== 'all') {
+          const level = parseInt(currentFilter.split('-')[1]);
+          levelMatch = city.level === level;
+        }
+        const searchMatch =
+          city.name.toLowerCase().includes(currentSearch) ||
+          city.state.toLowerCase().includes(currentSearch);
+        return levelMatch && searchMatch;
+      });
+    }
+
+    function filterAndRender() {
+      const filtered = getFilteredCities();
+      document.getElementById('resultCount').textContent = filtered.length;
+      if (filtered.length === 0) {
+        document.getElementById('emptyState').style.display = 'block';
+        document.getElementById('citiesGrid').style.display = 'none';
+      } else {
+        document.getElementById('emptyState').style.display = 'none';
+        document.getElementById('citiesGrid').style.display = 'grid';
+        renderCities(filtered);
+      }
+    }
+
+    function renderCities(citiesToRender = cities) {
+      const grid = document.getElementById('citiesGrid');
+      grid.innerHTML = '';
+      citiesToRender.forEach(city => {
+        const card = createCityCard(city);
+        grid.appendChild(card);
+      });
+    }
+
+    function createCityCard(city) {
+      const card = document.createElement('div');
+      card.className = 'city-card';
+      card.setAttribute('data-level', city.level);
+
+      const safetyLabels = {
+        1: 'Muito Seguro',
+        2: 'Seguro',
+        3: 'Moderado',
+        4: 'Cuidado',
+        5: 'Perigoso'
+      };
+
+      card.innerHTML = `
+        <div class="city-safety-bar"></div>
+        <div class="card-content">
+          <div class="city-header">
+            <div class="city-name">${escapeHtml(city.name)}</div>
+            <div class="city-state">${escapeHtml(city.state)}</div>
+          </div>
+          <div class="safety-badge">${safetyLabels[city.level]}</div>
+          <div class="quick-stats">
+            <div class="stat-item">
+              <span class="stat-icon">📅</span>
+              <span class="stat-text">${escapeHtml(city.best_time)}</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-icon">✈️</span>
+              <span class="stat-text">${escapeHtml(city.airport)}</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-icon">📶</span>
+              <span class="stat-text">${escapeHtml(city.connectivity)}</span>
+            </div>
+          </div>
+          <a href="/pt/city.html?id=${encodeURIComponent(city.id)}" class="card-button">Ver Guia →</a>
+        </div>
+      `;
+
+      return card;
+    }
+
+    function resetFilters() {
+      currentFilter = 'all';
+      currentSearch = '';
+      document.getElementById('searchInput').value = '';
+      document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+      document.querySelector('[data-filter="all"]').classList.add('active');
+      filterAndRender();
+    }
+
+    function escapeHtml(text) {
+      const map = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;' };
+      return text.replace(/[&<>"']/g, m => map[m]);
+    }
+  </script>
+
+<!-- ── TIP JAR WIDGET ── -->
+<div id="tip-jar" style="position:fixed;bottom:20px;right:20px;z-index:9999;max-width:300px;font-family:'Inter',sans-serif;display:block;">
+  <div style="background:#F5F0EB;border:1px solid rgba(196,128,64,0.35);border-radius:14px;box-shadow:0 6px 28px rgba(0,0,0,0.14);padding:14px 16px 12px;position:relative;">
+    <button onclick="document.getElementById('tip-jar').style.display='none'" style="position:absolute;top:8px;right:10px;background:none;border:none;cursor:pointer;font-size:14px;color:#8AA898;line-height:1;" aria-label="Fechar">✕</button>
+    <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">
+      <div style="width:28px;height:28px;background:rgba(196,128,64,0.12);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:15px;">☕</div>
+      <div>
+        <div style="font-size:11px;font-weight:700;color:#0F2419;">Curtiu o MexiGuide?</div>
+        <div style="font-size:10px;color:#4A7A60;">Nos pague um café para mantê-lo gratuito ✌️</div>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:10px;">
+      <a href="https://ko-fi.com/mexiguide?amount=5" target="_blank" rel="noopener" style="text-align:center;padding:7px 4px;background:rgba(196,128,64,0.10);border:1px solid rgba(196,128,64,0.25);border-radius:8px;text-decoration:none;color:#0F2419;font-size:10px;font-weight:600;transition:background 0.2s;" onmouseover="this.style.background='rgba(196,128,64,0.2)'" onmouseout="this.style.background='rgba(196,128,64,0.10)'">☕ Café<br><span style="font-weight:400;color:#4A7A60;">$5</span></a>
+      <a href="https://ko-fi.com/mexiguide?amount=10" target="_blank" rel="noopener" style="text-align:center;padding:7px 4px;background:rgba(196,128,64,0.10);border:1px solid rgba(196,128,64,0.25);border-radius:8px;text-decoration:none;color:#0F2419;font-size:10px;font-weight:600;transition:background 0.2s;" onmouseover="this.style.background='rgba(196,128,64,0.2)'" onmouseout="this.style.background='rgba(196,128,64,0.10)'">🌮 Taco<br><span style="font-weight:400;color:#4A7A60;">$10</span></a>
+      <a href="https://ko-fi.com/mexiguide?amount=15" target="_blank" rel="noopener" style="text-align:center;padding:7px 4px;background:rgba(196,128,64,0.10);border:1px solid rgba(196,128,64,0.25);border-radius:8px;text-decoration:none;color:#0F2419;font-size:10px;font-weight:600;transition:background 0.2s;" onmouseover="this.style.background='rgba(196,128,64,0.2)'" onmouseout="this.style.background='rgba(196,128,64,0.10)'">🍺 Cerveja<br><span style="font-weight:400;color:#4A7A60;">$15</span></a>
+      <a href="https://ko-fi.com/mexiguide?amount=10" target="_blank" rel="noopener" style="text-align:center;padding:7px 4px;background:rgba(196,128,64,0.10);border:1px solid rgba(196,128,64,0.25);border-radius:8px;text-decoration:none;color:#0F2419;font-size:10px;font-weight:600;transition:background 0.2s;" onmouseover="this.style.background='rgba(196,128,64,0.2)'" onmouseout="this.style.background='rgba(196,128,64,0.10)'">🎉 Incrível!<br><span style="font-weight:400;color:#4A7A60;">$10</span></a>
+    </div>
+    <a href="https://ko-fi.com/mexiguide" target="_blank" rel="noopener" style="display:block;text-align:center;background:linear-gradient(135deg,#C48040,#E9C46A);color:#fff;font-size:11px;font-weight:700;padding:8px;border-radius:8px;text-decoration:none;letter-spacing:0.3px;">Gorjeta ☕ →</a>
+  </div>
+</div>
+
+<script>
+  document.getElementById('navToggle').addEventListener('click', function() {
+    this.classList.toggle('open');
+    document.getElementById('navLinks').classList.toggle('show');
+  });
+</script>
+</body>
+</html>

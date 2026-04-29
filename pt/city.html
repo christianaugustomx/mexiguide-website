@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,8 +7,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-  <title>Guía de Ciudad — MexiGuide</title>
-  <meta name="description" content="Explora guías detalladas de ciudades en MexiGuide." />
+  <title>Guia da Cidade — MexiGuide</title>
+  <meta name="description" content="Explore guias detalhados de cidades no MexiGuide." />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Merriweather:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
@@ -592,27 +592,27 @@
   <nav>
     <div class="nav-stripe"></div>
     <div class="nav-inner">
-      <a href="/es/" class="nav-logo">
+      <a href="/pt/" class="nav-logo">
         <img src="/logo.png" alt="MexiGuide" style="width:34px;height:34px;border-radius:10px;object-fit:contain;background:#1B4332;padding:3px;box-shadow:0 3px 10px rgba(27,67,50,0.25);">
         <div class="nav-wordmark">MexiGuide</div>
       </a>
       <ul class="nav-links" id="navLinks">
-        <li><a href="/es/destinations.html">Destinos</a></li>
-        <li><a href="/es/safety-map.html">Mapa de Seguridad</a></li>
-        <li><a href="/es/tools.html">Herramientas</a></li>
-        <li><a href="/es/emergency.html">Emergencias</a></li>
-        <li><a href="/city.html" class="lang-switch"><span class="lang-flag">🇺🇸</span> English</a></li>
-        <li><a href="/pt/city.html" class="lang-switch"><span class="lang-flag">🇧🇷</span> PT</a></li>
+        <li><a href="/pt/destinations.html">Destinos</a></li>
+        <li><a href="/pt/safety-map.html">Mapa de Segurança</a></li>
+        <li><a href="/pt/tools.html">Ferramentas de Viagem</a></li>
+        <li><a href="/pt/emergency.html">Emergências</a></li>
+        <li><a href="/city.html" class="lang-switch"><span class="lang-flag">🇺🇸</span> EN</a></li>
+        <li><a href="/es/city.html" class="lang-switch"><span class="lang-flag">🇲🇽</span> ES</a></li>
       </ul>
       <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
-      <a href="#" class="nav-pill">Obtener la App →</a>
+      <a href="/pt/#download" class="nav-pill">Baixar o App →</a>
     </div>
   </nav>
 
   <!-- LANGUAGE TOGGLE -->
   <div class="language-toggle" id="langToggle" style="display: none;">
     <button class="lang-btn" data-lang="en">EN</button>
-    <button class="lang-btn active" data-lang="es">ES</button>
+    <button class="lang-btn" data-lang="es">ES</button>
   </div>
 
   <!-- PAGE CONTAINER -->
@@ -626,9 +626,9 @@
     <div id="errorState" style="display: none;">
       <div class="error-container">
         <div class="error-icon">⚠️</div>
-        <h1 class="error-title">Ciudad no encontrada</h1>
-        <p class="error-message">Lo sentimos, no pudimos encontrar una guía para esta ciudad. Por favor, intenta seleccionar una ciudad desde nuestra página de Destinos.</p>
-        <a href="/es/destinations.html" class="btn-jade">← Volver a Destinos</a>
+        <h1 class="error-title">Cidade não encontrada</h1>
+        <p class="error-message">Desculpe, não encontramos um guia para esta cidade. Por favor, selecione uma cidade na nossa página de Destinos.</p>
+        <a href="/pt/destinations.html" class="btn-jade">← Voltar a Destinos</a>
       </div>
     </div>
 
@@ -638,14 +638,14 @@
         <div class="header-glow-1"></div>
         <div class="header-glow-2"></div>
         <div class="header-inner">
-          <a href="/es/destinations.html" class="breadcrumb">
+          <a href="/pt/destinations.html" class="breadcrumb">
             <span class="breadcrumb-arrow">←</span>
-            <span>Todos los Destinos</span>
+            <span>Todos os Destinos</span>
           </a>
 
           <div class="header-title-row">
             <div class="header-title-group">
-              <h1 id="cityName">Cargando...</h1>
+              <h1 id="cityName">Carregando...</h1>
               <div class="state" id="cityState"></div>
             </div>
             <div class="safety-badge" id="safetyBadge"></div>
@@ -665,7 +665,7 @@
       <div id="gettingAroundSection" class="section" style="display: none;">
         <div class="section-header">
           <span class="section-icon">🚗</span>
-          <span id="gettingAroundTitle">Cómo Moverse</span>
+          <span id="gettingAroundTitle">Como Se Locomover</span>
         </div>
         <div class="section-description" id="gettingAroundText"></div>
       </div>
@@ -674,7 +674,7 @@
       <div id="topSightsSection" class="section" style="display: none;">
         <div class="section-header">
           <span class="section-icon">🏛️</span>
-          <span id="topSightsTitle">Lugares Principales</span>
+          <span id="topSightsTitle">Pontos Turísticos</span>
         </div>
         <div class="cards-grid" id="topSightsGrid"></div>
       </div>
@@ -683,7 +683,7 @@
       <div id="museumsSection" class="section" style="display: none;">
         <div class="section-header">
           <span class="section-icon">🖼️</span>
-          <span id="museumsTitle">Museos</span>
+          <span id="museumsTitle">Museus</span>
         </div>
         <div class="cards-grid" id="museumsGrid"></div>
       </div>
@@ -692,7 +692,7 @@
       <div id="parksSection" class="section" style="display: none;">
         <div class="section-header">
           <span class="section-icon">🌳</span>
-          <span id="parksTitle">Parques y Naturaleza</span>
+          <span id="parksTitle">Parques e Natureza</span>
         </div>
         <div class="cards-grid" id="parksGrid"></div>
       </div>
@@ -701,27 +701,27 @@
       <div id="eatDrinkWorkSection" class="section" style="display: none;">
         <div class="section-header">
           <span class="section-icon">🍽️</span>
-          <span id="eatDrinkWorkTitle">Comer, Beber y Trabajar</span>
+          <span id="eatDrinkWorkTitle">Comer, Beber e Trabalhar</span>
         </div>
         <div class="cards-grid" id="eatDrinkWorkGrid"></div>
       </div>
 
       <!-- BACK BUTTON -->
-      <a href="/es/destinations.html" class="back-button">← Volver a Todas las Ciudades</a>
+      <a href="/pt/destinations.html" class="back-button">← Voltar a Todos os Destinos</a>
     </div>
   </div>
 
   <script>
     const SAFETY_COLORS = {
-      1: { color: '#2D9E5F', label: 'Muy Seguro' },
+      1: { color: '#2D9E5F', label: 'Muito Seguro' },
       2: { color: '#52C778', label: 'Seguro' },
-      3: { color: '#F0A500', label: 'Riesgo Moderado' },
-      4: { color: '#EF6C00', label: 'Precaución' },
-      5: { color: '#C62828', label: 'Peligroso' }
+      3: { color: '#F0A500', label: 'Risco Moderado' },
+      4: { color: '#EF6C00', label: 'Cuidado' },
+      5: { color: '#C62828', label: 'Perigoso' }
     };
 
     let currentCity = null;
-    let currentLanguage = 'es';
+    let currentLanguage = 'pt';
 
     async function initPage() {
       const params = new URLSearchParams(window.location.search);
@@ -734,7 +734,7 @@
 
       try {
         const response = await fetch(`/data/cities/${cityId}.json`);
-        if (!response.ok) throw new Error('Ciudad no encontrada');
+        if (!response.ok) throw new Error('Cidade não encontrada');
         currentCity = await response.json();
         renderPage();
       } catch (error) {
@@ -762,7 +762,9 @@
 
     function renderHeader() {
       const lang = currentLanguage;
-      const data = lang === 'es' && currentCity.translations?.es ? currentCity.translations.es : currentCity;
+      const data = (lang === 'pt' && currentCity.translations?.pt)
+        ? currentCity.translations.pt
+        : (currentCity.translations?.es || currentCity);
 
       // Title and state
       document.getElementById('cityName').textContent = currentCity.city_name;
@@ -779,18 +781,18 @@
       // Quick stats
       const statsHtml = `
         <div class="stat-box">
-          <span class="stat-box-label">📅 Mejor Época</span>
-          <div class="stat-box-value">${currentCity.quick_stats.best_time || 'Todo el año'}</div>
+          <span class="stat-box-label">📅 Melhor Época</span>
+          <div class="stat-box-value">${currentCity.quick_stats.best_time || 'O ano todo'}</div>
         </div>
         ${currentCity.quick_stats.airport_iata ? `
           <div class="stat-box">
-            <span class="stat-box-label">✈️ Aeropuerto</span>
+            <span class="stat-box-label">✈️ Aeroporto</span>
             <div class="stat-box-value">${currentCity.quick_stats.airport_iata}</div>
           </div>
         ` : ''}
         <div class="stat-box">
-          <span class="stat-box-label">📶 Conectividad</span>
-          <div class="stat-box-value">${currentCity.quick_stats.connectivity || 'Buena'}</div>
+          <span class="stat-box-label">📶 Conectividade</span>
+          <div class="stat-box-value">${currentCity.quick_stats.connectivity || 'Boa'}</div>
         </div>
       `;
       document.getElementById('quickStats').innerHTML = statsHtml;
@@ -805,7 +807,9 @@
 
     function renderSections() {
       const lang = currentLanguage;
-      const data = lang === 'es' && currentCity.translations?.es ? currentCity.translations.es : currentCity;
+      const data = (lang === 'pt' && currentCity.translations?.pt)
+        ? currentCity.translations.pt
+        : (currentCity.translations?.es || currentCity);
       const guide = data.detail_guide || currentCity.detail_guide;
 
       // Getting Around
@@ -855,7 +859,7 @@
           <p class="card-description">${item.description}</p>
           <a href="${item.maps_url}" target="_blank" class="card-button">
             <span>📍</span>
-            <span>Ver en Mapa</span>
+            <span>Ver no Mapa</span>
           </a>
         </div>
       `;
@@ -885,21 +889,21 @@
 <!-- ── TIP JAR WIDGET ── -->
 <div id="tip-jar" style="position:fixed;bottom:20px;right:20px;z-index:9999;max-width:300px;font-family:'Inter',sans-serif;display:block;">
   <div style="background:#F5F0EB;border:1px solid rgba(196,128,64,0.35);border-radius:14px;box-shadow:0 6px 28px rgba(0,0,0,0.14);padding:14px 16px 12px;position:relative;">
-    <button onclick="document.getElementById('tip-jar').style.display='none'" style="position:absolute;top:8px;right:10px;background:none;border:none;cursor:pointer;font-size:14px;color:#8AA898;line-height:1;" aria-label="Cerrar">✕</button>
+    <button onclick="document.getElementById('tip-jar').style.display='none'" style="position:absolute;top:8px;right:10px;background:none;border:none;cursor:pointer;font-size:14px;color:#8AA898;line-height:1;" aria-label="Fechar">✕</button>
     <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">
       <div style="width:28px;height:28px;background:rgba(196,128,64,0.12);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:15px;">☕</div>
       <div>
-        <div style="font-size:11px;font-weight:700;color:#0F2419;">¿Te gusta MexiGuide?</div>
-        <div style="font-size:10px;color:#4A7A60;">Invítanos un café para mantenerlo gratis ✌️</div>
+        <div style="font-size:11px;font-weight:700;color:#0F2419;">Curtiu o MexiGuide?</div>
+        <div style="font-size:10px;color:#4A7A60;">Nos pague um café para mantê-lo gratuito ✌️</div>
       </div>
     </div>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:10px;">
       <a href="https://ko-fi.com/mexiguide?amount=5" target="_blank" rel="noopener" style="text-align:center;padding:7px 4px;background:rgba(196,128,64,0.10);border:1px solid rgba(196,128,64,0.25);border-radius:8px;text-decoration:none;color:#0F2419;font-size:10px;font-weight:600;transition:background 0.2s;" onmouseover="this.style.background='rgba(196,128,64,0.2)'" onmouseout="this.style.background='rgba(196,128,64,0.10)'">☕ Café<br><span style="font-weight:400;color:#4A7A60;">$5</span></a>
       <a href="https://ko-fi.com/mexiguide?amount=10" target="_blank" rel="noopener" style="text-align:center;padding:7px 4px;background:rgba(196,128,64,0.10);border:1px solid rgba(196,128,64,0.25);border-radius:8px;text-decoration:none;color:#0F2419;font-size:10px;font-weight:600;transition:background 0.2s;" onmouseover="this.style.background='rgba(196,128,64,0.2)'" onmouseout="this.style.background='rgba(196,128,64,0.10)'">🌮 Taco<br><span style="font-weight:400;color:#4A7A60;">$10</span></a>
-      <a href="https://ko-fi.com/mexiguide?amount=15" target="_blank" rel="noopener" style="text-align:center;padding:7px 4px;background:rgba(196,128,64,0.10);border:1px solid rgba(196,128,64,0.25);border-radius:8px;text-decoration:none;color:#0F2419;font-size:10px;font-weight:600;transition:background 0.2s;" onmouseover="this.style.background='rgba(196,128,64,0.2)'" onmouseout="this.style.background='rgba(196,128,64,0.10)'">🍺 Cerveza<br><span style="font-weight:400;color:#4A7A60;">$15</span></a>
-      <a href="https://ko-fi.com/mexiguide?amount=10" target="_blank" rel="noopener" style="text-align:center;padding:7px 4px;background:rgba(196,128,64,0.10);border:1px solid rgba(196,128,64,0.25);border-radius:8px;text-decoration:none;color:#0F2419;font-size:10px;font-weight:600;transition:background 0.2s;" onmouseover="this.style.background='rgba(196,128,64,0.2)'" onmouseout="this.style.background='rgba(196,128,64,0.10)'">🎉 ¡Increíble!<br><span style="font-weight:400;color:#4A7A60;">$10</span></a>
+      <a href="https://ko-fi.com/mexiguide?amount=15" target="_blank" rel="noopener" style="text-align:center;padding:7px 4px;background:rgba(196,128,64,0.10);border:1px solid rgba(196,128,64,0.25);border-radius:8px;text-decoration:none;color:#0F2419;font-size:10px;font-weight:600;transition:background 0.2s;" onmouseover="this.style.background='rgba(196,128,64,0.2)'" onmouseout="this.style.background='rgba(196,128,64,0.10)'">🍺 Cerveja<br><span style="font-weight:400;color:#4A7A60;">$15</span></a>
+      <a href="https://ko-fi.com/mexiguide?amount=10" target="_blank" rel="noopener" style="text-align:center;padding:7px 4px;background:rgba(196,128,64,0.10);border:1px solid rgba(196,128,64,0.25);border-radius:8px;text-decoration:none;color:#0F2419;font-size:10px;font-weight:600;transition:background 0.2s;" onmouseover="this.style.background='rgba(196,128,64,0.2)'" onmouseout="this.style.background='rgba(196,128,64,0.10)'">🎉 Incrível!<br><span style="font-weight:400;color:#4A7A60;">$10</span></a>
     </div>
-    <a href="https://ko-fi.com/mexiguide" target="_blank" rel="noopener" style="display:block;text-align:center;background:linear-gradient(135deg,#C48040,#E9C46A);color:#fff;font-size:11px;font-weight:700;padding:8px;border-radius:8px;text-decoration:none;letter-spacing:0.3px;">Propina ☕ →</a>
+    <a href="https://ko-fi.com/mexiguide" target="_blank" rel="noopener" style="display:block;text-align:center;background:linear-gradient(135deg,#C48040,#E9C46A);color:#fff;font-size:11px;font-weight:700;padding:8px;border-radius:8px;text-decoration:none;letter-spacing:0.3px;">Gorjeta ☕ →</a>
   </div>
 </div>
 

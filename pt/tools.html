@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <title>Travel Tools – MexiGuide</title>
+    <title>Ferramentas de Viagem – MexiGuide</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
@@ -30,11 +30,7 @@
             --text-lo: #8AA898;
         }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
 
         html, body {
             font-family: 'Inter', sans-serif;
@@ -85,13 +81,9 @@
             position: relative;
         }
 
-        .nav-links a:hover {
-            color: var(--jade);
-        }
+        .nav-links a:hover { color: var(--jade); }
 
-        .nav-links a.active {
-            color: var(--jade);
-        }
+        .nav-links a.active { color: var(--jade); }
 
         .nav-links a.active::after {
             content: '';
@@ -126,14 +118,10 @@
             height: 8px;
             background: repeating-linear-gradient(
                 90deg,
-                #E76F51 0px,
-                #E76F51 8px,
-                #F4A261 8px,
-                #F4A261 16px,
-                #2A9D8F 16px,
-                #2A9D8F 24px,
-                #E9C46A 24px,
-                #E9C46A 32px
+                #E76F51 0px, #E76F51 8px,
+                #F4A261 8px, #F4A261 16px,
+                #2A9D8F 16px, #2A9D8F 24px,
+                #E9C46A 24px, #E9C46A 32px
             );
             width: 100%;
         }
@@ -163,11 +151,7 @@
         }
 
         /* Main Container */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 3rem 2rem;
-        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 3rem 2rem; }
 
         /* Section Headers */
         .section-header {
@@ -181,10 +165,7 @@
             font-weight: 700;
         }
 
-        .section-header::before {
-            content: attr(data-emoji);
-            font-size: 2rem;
-        }
+        .section-header::before { content: attr(data-emoji); font-size: 2rem; }
 
         /* Card Grid */
         .cards-grid {
@@ -211,39 +192,15 @@
             box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
         }
 
-        .product-card.coral-accent {
-            border-left-color: var(--coral);
-        }
+        .product-card.coral-accent { border-left-color: var(--coral); }
+        .product-card.amber-accent { border-left-color: var(--amber); }
+        .product-card.teal-accent { border-left-color: var(--teal); }
 
-        .product-card.amber-accent {
-            border-left-color: var(--amber);
-        }
+        .card-header { display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1rem; }
 
-        .product-card.teal-accent {
-            border-left-color: var(--teal);
-        }
+        .card-icon { font-size: 2.5rem; line-height: 1; flex-shrink: 0; }
 
-        /* Card Header with Logo/Name */
-        .card-header {
-            display: flex;
-            align-items: flex-start;
-            gap: 1rem;
-            margin-bottom: 1rem;
-        }
-
-        .card-icon {
-            font-size: 2.5rem;
-            line-height: 1;
-            flex-shrink: 0;
-        }
-
-        .card-logo {
-            height: 40px;
-            width: auto;
-            max-width: 120px;
-            object-fit: contain;
-            flex-shrink: 0;
-        }
+        .card-logo { height: 40px; width: auto; max-width: 120px; object-fit: contain; flex-shrink: 0; }
 
         .card-name {
             font-family: 'Merriweather', serif;
@@ -253,14 +210,8 @@
             margin-bottom: 0.25rem;
         }
 
-        .card-tagline {
-            color: var(--text-mid);
-            font-size: 0.95rem;
-            line-height: 1.5;
-            margin-bottom: 1.5rem;
-        }
+        .card-tagline { color: var(--text-mid); font-size: 0.95rem; line-height: 1.5; margin-bottom: 1.5rem; }
 
-        /* Price Badge */
         .price-badge {
             display: inline-block;
             background-color: var(--jade);
@@ -272,13 +223,7 @@
             margin-bottom: 1rem;
         }
 
-        /* Coverage Chips */
-        .coverage-chips {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.6rem;
-            margin-bottom: 1.5rem;
-        }
+        .coverage-chips { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-bottom: 1.5rem; }
 
         .chip {
             background-color: var(--card);
@@ -290,7 +235,6 @@
             border: 1px solid var(--border);
         }
 
-        /* Highlight Box */
         .highlight-box {
             background: linear-gradient(135deg, var(--gold) 0%, var(--amber) 100%);
             padding: 1rem;
@@ -301,11 +245,8 @@
             margin-bottom: 1.5rem;
         }
 
-        .highlight-box strong {
-            font-weight: 600;
-        }
+        .highlight-box strong { font-weight: 600; }
 
-        /* CTA Button */
         .cta-button {
             background: linear-gradient(135deg, var(--jade) 0%, var(--teal) 100%);
             color: var(--white);
@@ -329,7 +270,6 @@
             box-shadow: 0 8px 20px rgba(74, 158, 128, 0.3);
         }
 
-        /* Disclaimer */
         .disclaimer {
             font-size: 0.75rem;
             color: var(--text-lo);
@@ -337,15 +277,6 @@
             padding-top: 0.5rem;
             border-top: 1px solid var(--border);
             margin-top: auto;
-        }
-
-        /* Airalo Special Logo Text */
-        .airalo-logo {
-            font-family: 'Merriweather', serif;
-            font-size: 1.4rem;
-            font-weight: 700;
-            color: var(--g-dark);
-            margin-bottom: 0.25rem;
         }
 
         /* Footer */
@@ -357,22 +288,10 @@
             border-top: 1px solid var(--border);
         }
 
-        footer p {
-            margin-bottom: 1rem;
-            opacity: 0.9;
-            font-size: 0.95rem;
-        }
+        footer p { margin-bottom: 1rem; opacity: 0.9; font-size: 0.95rem; }
 
-        footer a {
-            color: var(--gold);
-            text-decoration: none;
-            transition: opacity 0.3s ease;
-        }
-
-        footer a:hover {
-            opacity: 0.8;
-            text-decoration: underline;
-        }
+        footer a { color: var(--gold); text-decoration: none; transition: opacity 0.3s ease; }
+        footer a:hover { opacity: 0.8; text-decoration: underline; }
 
         /* Lang Switcher */
         .lang-switch {
@@ -415,7 +334,6 @@
         .nav-toggle.open span:nth-child(2) { opacity: 0; }
         .nav-toggle.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
 
-        /* Responsive */
         @media (max-width: 768px) {
             .nav-toggle { display: block; }
             nav { position: relative; }
@@ -433,47 +351,30 @@
                 box-shadow: 0 8px 24px rgba(0,0,0,0.08);
             }
             .nav-links.show { display: flex; }
-            .nav-links a {
-                display: block;
-                padding: 12px 0;
-                border-bottom: 1px solid var(--border);
-                font-size: 15px;
-            }
+            .nav-links a { display: block; padding: 12px 0; border-bottom: 1px solid var(--border); font-size: 15px; }
             .nav-links a:last-child { border-bottom: none; }
             .nav-cta { display: none; }
-
-            .hero h1 {
-                font-size: 2rem;
-            }
-
-            .hero p {
-                font-size: 1rem;
-            }
-
-            .section-header {
-                font-size: 1.4rem;
-            }
-
-            .cards-grid {
-                grid-template-columns: 1fr;
-            }
+            .hero h1 { font-size: 2rem; }
+            .hero p { font-size: 1rem; }
+            .section-header { font-size: 1.4rem; }
+            .cards-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
 <body>
     <!-- Navigation -->
     <nav>
-        <a href="/" class="nav-brand">🌿 MexiGuide</a>
+        <a href="/pt/" class="nav-brand">🌿 MexiGuide</a>
         <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
         <ul class="nav-links" id="navLinks">
-            <li><a href="/destinations.html">Destinations</a></li>
-            <li><a href="/safety-map.html">Safety Map</a></li>
-            <li><a href="/tools.html" class="active">Tools</a></li>
-            <li><a href="/emergency.html">Emergency</a></li>
+            <li><a href="/pt/destinations.html">Destinos</a></li>
+            <li><a href="/pt/safety-map.html">Mapa de Segurança</a></li>
+            <li><a href="/pt/tools.html" class="active">Ferramentas de Viagem</a></li>
+            <li><a href="/pt/emergency.html">Emergências</a></li>
+            <li><a href="/tools.html" class="lang-switch"><span class="lang-flag">🇺🇸</span> EN</a></li>
             <li><a href="/es/tools.html" class="lang-switch"><span class="lang-flag">🇲🇽</span> ES</a></li>
-            <li><a href="/pt/tools.html" class="lang-switch"><span class="lang-flag">🇧🇷</span> PT</a></li>
         </ul>
-        <button class="nav-cta">Get the App →</button>
+        <a href="/pt/#download" class="nav-cta">Baixar o App →</a>
     </nav>
 
     <!-- Decorative Stripe -->
@@ -481,156 +382,137 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <h1>Travel Tools</h1>
-        <p>Everything you need before and during your Mexico trip — handpicked by the MexiGuide team.</p>
+        <h1>Ferramentas de Viagem</h1>
+        <p>Tudo que você precisa antes e durante sua viagem ao México — selecionado pela equipe do MexiGuide.</p>
     </section>
 
     <!-- Main Content -->
     <div class="container">
         <!-- eSIM Section -->
-        <h2 class="section-header" data-emoji="📶">Get a Mexico eSIM</h2>
+        <h2 class="section-header" data-emoji="📶">Obtenha um eSIM para o México</h2>
         <div class="cards-grid">
             <div class="product-card">
                 <div class="card-header">
                     <img src="/images/airalo-logo.png" alt="Airalo" class="card-logo" />
                 </div>
-                <p class="card-tagline">Most trusted eSIM — 190+ countries, instant activation</p>
-                <span class="price-badge">From $5 USD</span>
+                <p class="card-tagline">O eSIM mais confiável — mais de 190 países, ativação instantânea</p>
+                <span class="price-badge">A partir de $5 USD</span>
                 <div class="highlight-box">
-                    <strong>🆕 New to Airalo?</strong> Get your first eSIM through our link.
+                    <strong>🆕 Novo no Airalo?</strong> Obtenha seu primeiro eSIM pelo nosso link.
                 </div>
-                <a href="https://www.airalo.com/?irclickid=mexiguide" class="cta-button">Buy on Airalo →</a>
-                <p class="disclaimer">First-time Airalo users only. MexiGuide earns a small commission at no extra cost to you.</p>
-            </div>
-        </div>
-
-        <!-- Hotels & Accommodation Section -->
-        <h2 class="section-header" data-emoji="🏨">Hotels &amp; Accommodation</h2>
-        <div class="cards-grid">
-            <div class="product-card teal-accent">
-                <div class="card-header">
-                    <img src="/images/booking-logo.svg" alt="Booking.com" class="card-logo" />
-                </div>
-                <p class="card-tagline">Compare millions of hotels, apartments, and villas across Mexico — best price guaranteed</p>
-                <span class="price-badge">Best price guarantee</span>
-                <div class="coverage-chips">
-                    <span class="chip">Hotels</span>
-                    <span class="chip">Villas</span>
-                    <span class="chip">Apartments</span>
-                    <span class="chip">Free cancellation</span>
-                </div>
-                <a href="/go/booking.html" target="_blank" rel="noopener" class="cta-button">Search Hotels →</a>
-                <p class="disclaimer">MexiGuide earns a small commission at no extra cost to you.</p>
+                <a href="https://www.airalo.com/?irclickid=mexiguide" class="cta-button">Comprar no Airalo →</a>
+                <p class="disclaimer">Apenas para novos usuários do Airalo. O MexiGuide recebe uma pequena comissão sem custo adicional para você.</p>
             </div>
         </div>
 
         <!-- Travel Insurance Section -->
-        <h2 class="section-header" data-emoji="🛡️">Travel Insurance</h2>
+        <h2 class="section-header" data-emoji="🛡️">Seguro de Viagem</h2>
         <div class="cards-grid">
             <div class="product-card coral-accent">
                 <div class="card-header">
                     <img src="/images/safetywing-logo-small.png" alt="SafetyWing" class="card-logo" />
                 </div>
-                <p class="card-tagline">Medical coverage for travelers — enroll online in 2 minutes, no agent needed</p>
-                <span class="price-badge">From $45 / 4 weeks</span>
+                <p class="card-tagline">Cobertura médica para viajantes — cadastre-se online em 2 minutos, sem precisar de corretor</p>
+                <span class="price-badge">A partir de $45 / 4 semanas</span>
                 <div class="coverage-chips">
-                    <span class="chip">Medical</span>
-                    <span class="chip">Emergency Evacuation</span>
-                    <span class="chip">Trip Interruption</span>
+                    <span class="chip">Médico</span>
+                    <span class="chip">Evacuação de Emergência</span>
+                    <span class="chip">Interrupção de Viagem</span>
                 </div>
-                <a href="/go/safetywing.html" target="_blank" rel="noopener" class="cta-button">Get Covered →</a>
-                <p class="disclaimer">MexiGuide earns a small commission at no extra cost to you.</p>
+                <a href="/go/safetywing.html" target="_blank" rel="noopener" class="cta-button">Obter Cobertura →</a>
+                <p class="disclaimer">O MexiGuide recebe uma pequena comissão sem custo adicional para você.</p>
             </div>
 
             <div class="product-card amber-accent">
                 <div class="card-header">
                     <img src="/images/getyourguide-logo.svg" alt="GetYourGuide" class="card-logo" />
                 </div>
-                <p class="card-tagline">Book tours, day trips & experiences — skip-the-line tickets included</p>
-                <span class="price-badge">Prices vary</span>
-                <a href="/go/getyourguide.html" target="_blank" rel="noopener" class="cta-button">Browse Experiences →</a>
-                <p class="disclaimer">MexiGuide earns a small commission at no extra cost to you.</p>
+                <p class="card-tagline">Reserve passeios, excursões e experiências — ingressos sem fila incluídos</p>
+                <span class="price-badge">Preços variados</span>
+                <a href="/go/getyourguide.html" target="_blank" rel="noopener" class="cta-button">Explorar Experiências →</a>
+                <p class="disclaimer">O MexiGuide recebe uma pequena comissão sem custo adicional para você.</p>
             </div>
         </div>
 
         <!-- Money Transfer Section -->
-        <h2 class="section-header" data-emoji="💸">Send & Spend Money</h2>
+        <h2 class="section-header" data-emoji="💸">Envie e Gaste Dinheiro</h2>
         <div class="cards-grid">
             <div class="product-card teal-accent">
                 <div class="card-header">
                     <img src="/images/wise-logo.svg" alt="Wise" class="card-logo" />
                 </div>
-                <p class="card-tagline">Send money abroad & spend in MXN with real exchange rates — no hidden fees</p>
-                <span class="price-badge">Free to open</span>
+                <p class="card-tagline">Envie dinheiro para o exterior e gaste em MXN com a taxa de câmbio real — sem taxas ocultas</p>
+                <span class="price-badge">Grátis para abrir</span>
                 <div class="coverage-chips">
-                    <span class="chip">Real exchange rate</span>
-                    <span class="chip">Multi-currency</span>
-                    <span class="chip">Free card</span>
+                    <span class="chip">Taxa de câmbio real</span>
+                    <span class="chip">Multicurrency</span>
+                    <span class="chip">Cartão grátis</span>
                 </div>
-                <a href="/go/wise.html" target="_blank" rel="noopener" class="cta-button">Open a Wise Account →</a>
-                <p class="disclaimer">MexiGuide earns a small commission at no extra cost to you.</p>
+                <a href="/go/wise.html" target="_blank" rel="noopener" class="cta-button">Abrir uma Conta Wise →</a>
+                <p class="disclaimer">O MexiGuide recebe uma pequena comissão sem custo adicional para você.</p>
             </div>
         </div>
 
         <!-- VPN Section -->
-        <h2 class="section-header" data-emoji="🔒">Stay Safe Online</h2>
+        <h2 class="section-header" data-emoji="🔒">Fique Seguro Online</h2>
         <div class="cards-grid">
             <div class="product-card">
                 <div class="card-header">
                     <img src="/images/nordvpn-logo.svg" alt="NordVPN" class="card-logo" />
                 </div>
-                <p class="card-tagline">Access your home streaming services, secure public Wi-Fi, and protect your data while traveling</p>
-                <span class="price-badge">From ~$3.99/mo</span>
+                <p class="card-tagline">Acesse seus serviços de streaming de casa, proteja o Wi-Fi público e mantenha seus dados seguros durante a viagem</p>
+                <span class="price-badge">A partir de ~$3,99/mês</span>
                 <div class="coverage-chips">
-                    <span class="chip">Public Wi-Fi Protection</span>
-                    <span class="chip">Streaming Access</span>
-                    <span class="chip">60+ servers in Mexico</span>
+                    <span class="chip">Proteção de Wi-Fi Público</span>
+                    <span class="chip">Acesso a Streaming</span>
+                    <span class="chip">Mais de 60 servidores no México</span>
                 </div>
-                <a href="/go/nordvpn.html" target="_blank" rel="noopener" class="cta-button">Get NordVPN →</a>
-                <p class="disclaimer">MexiGuide earns a small commission at no extra cost to you.</p>
+                <a href="/go/nordvpn.html" target="_blank" rel="noopener" class="cta-button">Obter NordVPN →</a>
+                <p class="disclaimer">O MexiGuide recebe uma pequena comissão sem custo adicional para você.</p>
             </div>
 
             <div class="product-card">
                 <div class="card-header">
                     <img src="/images/nordpass-logo.png" alt="NordPass" class="card-logo" />
                 </div>
-                <p class="card-tagline">Store and autofill your passwords securely — travel without remembering dozens of logins</p>
-                <span class="price-badge">From ~$1.49/mo</span>
+                <p class="card-tagline">Salve e preencha automaticamente suas senhas com segurança — viaje sem precisar lembrar dezenas de acessos</p>
+                <span class="price-badge">A partir de ~$1,49/mês</span>
                 <div class="coverage-chips">
-                    <span class="chip">Password Manager</span>
-                    <span class="chip">Secure Notes</span>
-                    <span class="chip">Passkey Support</span>
+                    <span class="chip">Gerenciador de Senhas</span>
+                    <span class="chip">Notas Seguras</span>
+                    <span class="chip">Suporte a Passkey</span>
                 </div>
-                <a href="/go/nordpass.html" target="_blank" rel="noopener" class="cta-button">Get NordPass →</a>
-                <p class="disclaimer">MexiGuide earns a small commission at no extra cost to you.</p>
+                <a href="/go/nordpass.html" target="_blank" rel="noopener" class="cta-button">Obter NordPass →</a>
+                <p class="disclaimer">O MexiGuide recebe uma pequena comissão sem custo adicional para você.</p>
             </div>
         </div>
     </div>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2026 MexiGuide. All rights reserved.</p>
-        <p><a href="/privacy.html">Privacy Policy</a> | <a href="/terms.html">Terms of Service</a></p>
+        <p>&copy; 2026 MexiGuide. Todos os direitos reservados.</p>
+        <p><a href="/pt/privacy.html">Política de Privacidade</a> | <a href="/pt/terms.html">Termos de Serviço</a></p>
+        <p style="margin-top:8px;font-size:0.8rem;opacity:0.6;">Feito por Rumbotech Labs</p>
     </footer>
 
 <!-- ── TIP JAR WIDGET ── -->
 <div id="tip-jar" style="position:fixed;bottom:20px;right:20px;z-index:9999;max-width:300px;font-family:'Inter',sans-serif;display:block;">
   <div style="background:#F5F0EB;border:1px solid rgba(196,128,64,0.35);border-radius:14px;box-shadow:0 6px 28px rgba(0,0,0,0.14);padding:14px 16px 12px;position:relative;">
-    <button onclick="document.getElementById('tip-jar').style.display='none'" style="position:absolute;top:8px;right:10px;background:none;border:none;cursor:pointer;font-size:14px;color:#8AA898;line-height:1;" aria-label="Close">✕</button>
+    <button onclick="document.getElementById('tip-jar').style.display='none'" style="position:absolute;top:8px;right:10px;background:none;border:none;cursor:pointer;font-size:14px;color:#8AA898;line-height:1;" aria-label="Fechar">✕</button>
     <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">
       <div style="width:28px;height:28px;background:rgba(196,128,64,0.12);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:15px;">☕</div>
       <div>
-        <div style="font-size:11px;font-weight:700;color:#0F2419;">Enjoying MexiGuide?</div>
-        <div style="font-size:10px;color:#4A7A60;">Buy us a coffee to keep it free ✌️</div>
+        <div style="font-size:11px;font-weight:700;color:#0F2419;">Curtiu o MexiGuide?</div>
+        <div style="font-size:10px;color:#4A7A60;">Nos pague um café para mantê-lo gratuito ✌️</div>
       </div>
     </div>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:10px;">
-      <a href="https://ko-fi.com/mexiguide?amount=5" target="_blank" rel="noopener" style="text-align:center;padding:7px 4px;background:rgba(196,128,64,0.10);border:1px solid rgba(196,128,64,0.25);border-radius:8px;text-decoration:none;color:#0F2419;font-size:10px;font-weight:600;transition:background 0.2s;" onmouseover="this.style.background='rgba(196,128,64,0.2)'" onmouseout="this.style.background='rgba(196,128,64,0.10)'">☕ Coffee<br><span style="font-weight:400;color:#4A7A60;">$5</span></a>
+      <a href="https://ko-fi.com/mexiguide?amount=5" target="_blank" rel="noopener" style="text-align:center;padding:7px 4px;background:rgba(196,128,64,0.10);border:1px solid rgba(196,128,64,0.25);border-radius:8px;text-decoration:none;color:#0F2419;font-size:10px;font-weight:600;transition:background 0.2s;" onmouseover="this.style.background='rgba(196,128,64,0.2)'" onmouseout="this.style.background='rgba(196,128,64,0.10)'">☕ Café<br><span style="font-weight:400;color:#4A7A60;">$5</span></a>
       <a href="https://ko-fi.com/mexiguide?amount=10" target="_blank" rel="noopener" style="text-align:center;padding:7px 4px;background:rgba(196,128,64,0.10);border:1px solid rgba(196,128,64,0.25);border-radius:8px;text-decoration:none;color:#0F2419;font-size:10px;font-weight:600;transition:background 0.2s;" onmouseover="this.style.background='rgba(196,128,64,0.2)'" onmouseout="this.style.background='rgba(196,128,64,0.10)'">🌮 Taco<br><span style="font-weight:400;color:#4A7A60;">$10</span></a>
-      <a href="https://ko-fi.com/mexiguide?amount=15" target="_blank" rel="noopener" style="text-align:center;padding:7px 4px;background:rgba(196,128,64,0.10);border:1px solid rgba(196,128,64,0.25);border-radius:8px;text-decoration:none;color:#0F2419;font-size:10px;font-weight:600;transition:background 0.2s;" onmouseover="this.style.background='rgba(196,128,64,0.2)'" onmouseout="this.style.background='rgba(196,128,64,0.10)'">🍺 Beer<br><span style="font-weight:400;color:#4A7A60;">$15</span></a>
-      <a href="https://ko-fi.com/mexiguide?amount=25" target="_blank" rel="noopener" style="text-align:center;padding:7px 4px;background:rgba(196,128,64,0.10);border:1px solid rgba(196,128,64,0.25);border-radius:8px;text-decoration:none;color:#0F2419;font-size:10px;font-weight:600;transition:background 0.2s;" onmouseover="this.style.background='rgba(196,128,64,0.2)'" onmouseout="this.style.background='rgba(196,128,64,0.10)'">🎉 Amazing!<br><span style="font-weight:400;color:#4A7A60;">$25</span></a>
+      <a href="https://ko-fi.com/mexiguide?amount=15" target="_blank" rel="noopener" style="text-align:center;padding:7px 4px;background:rgba(196,128,64,0.10);border:1px solid rgba(196,128,64,0.25);border-radius:8px;text-decoration:none;color:#0F2419;font-size:10px;font-weight:600;transition:background 0.2s;" onmouseover="this.style.background='rgba(196,128,64,0.2)'" onmouseout="this.style.background='rgba(196,128,64,0.10)'">🍺 Cerveja<br><span style="font-weight:400;color:#4A7A60;">$15</span></a>
+      <a href="https://ko-fi.com/mexiguide?amount=10" target="_blank" rel="noopener" style="text-align:center;padding:7px 4px;background:rgba(196,128,64,0.10);border:1px solid rgba(196,128,64,0.25);border-radius:8px;text-decoration:none;color:#0F2419;font-size:10px;font-weight:600;transition:background 0.2s;" onmouseover="this.style.background='rgba(196,128,64,0.2)'" onmouseout="this.style.background='rgba(196,128,64,0.10)'">🎉 Incrível!<br><span style="font-weight:400;color:#4A7A60;">$10</span></a>
     </div>
-    <a href="https://ko-fi.com/mexiguide" target="_blank" rel="noopener" style="display:block;text-align:center;background:linear-gradient(135deg,#C48040,#E9C46A);color:#fff;font-size:11px;font-weight:700;padding:8px;border-radius:8px;text-decoration:none;letter-spacing:0.3px;">Tip Jar ☕ →</a>
+    <a href="https://ko-fi.com/mexiguide" target="_blank" rel="noopener" style="display:block;text-align:center;background:linear-gradient(135deg,#C48040,#E9C46A);color:#fff;font-size:11px;font-weight:700;padding:8px;border-radius:8px;text-decoration:none;letter-spacing:0.3px;">Gorjeta ☕ →</a>
   </div>
 </div>
 

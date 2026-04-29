@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <title>Termos de Serviço — MexiGuide</title>
+  <meta name="description" content="Termos de Serviço do MexiGuide. Leia os termos e condições de uso do MexiGuide." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Merriweather:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --base: #E8E2DA; --card: #F5F0EB; --white: #FFFFFF;
+      --border: rgba(27,67,50,0.10); --border-hi: rgba(27,67,50,0.18);
+      --g-darkest: #0F2419; --g-dark: #1B4332; --g-mid: #2D6A4F;
+      --jade: #4A9E80; --jade-dim: rgba(74,158,128,0.12);
+      --gold: #E9C46A; --gold-dim: rgba(233,196,106,0.15);
+      --coral: #E76F51; --amber: #F4A261; --teal: #2A9D8F;
+      --text-hi: #0F2419; --text-mid: #4A7A60; --text-lo: #8AA898;
+      --text-inv: rgba(255,255,255,0.88); --text-inv-lo: rgba(255,255,255,0.45);
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; background: var(--base); color: var(--text-hi); line-height: 1.6; }
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(245,240,235,0.92); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); }
+    .nav-stripe { height: 3px; background: repeating-linear-gradient(90deg, #E76F51 0px, #E76F51 8px, #F4A261 8px, #F4A261 16px, #2A9D8F 16px, #2A9D8F 24px, #E9C46A 24px, #E9C46A 32px); }
+    .nav-inner { max-width: 1120px; margin: 0 auto; padding: 0 32px; height: 60px; display: flex; align-items: center; justify-content: space-between; }
+    .nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .nav-wordmark { font-family: 'Merriweather', serif; font-size: 17px; font-weight: 700; color: var(--g-dark); letter-spacing: -0.3px; }
+    .nav-links { display: flex; align-items: center; gap: 28px; list-style: none; }
+    .nav-links a { text-decoration: none; color: var(--text-mid); font-size: 14px; font-weight: 500; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--g-dark); }
+    .nav-pill { background: var(--jade) !important; color: white !important; padding: 7px 18px; border-radius: 8px; font-weight: 700 !important; font-size: 13px !important; box-shadow: 0 2px 10px rgba(74,158,128,0.3); transition: background 0.2s !important, transform 0.15s !important; }
+    .nav-pill:hover { background: var(--g-mid) !important; transform: translateY(-1px) !important; }
+    .lang-switch { display: inline-flex; align-items: center; gap: 5px; text-decoration: none; font-size: 13px; font-weight: 600; color: var(--text-mid); background: rgba(27,67,50,0.06); border: 1px solid var(--border); padding: 5px 12px; border-radius: 8px; transition: background 0.2s, color 0.2s; white-space: nowrap; }
+    .lang-switch:hover { background: rgba(27,67,50,0.12); color: var(--g-dark); }
+    .lang-flag { font-size: 16px; line-height: 1; }
+    .nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 4px; z-index: 200; }
+    .nav-toggle span { display: block; width: 22px; height: 2px; background: var(--g-dark); margin: 5px 0; border-radius: 2px; transition: transform 0.3s, opacity 0.3s; }
+    .nav-toggle.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+    .nav-toggle.open span:nth-child(2) { opacity: 0; }
+    .nav-toggle.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+    @media (max-width: 960px) {
+      .nav-toggle { display: block; }
+      .nav-links { display: none; position: absolute; top: 63px; left: 0; right: 0; background: rgba(245,240,235,0.98); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); flex-direction: column; padding: 16px 24px; gap: 0; border-bottom: 1px solid var(--border); box-shadow: 0 8px 24px rgba(0,0,0,0.08); list-style: none; }
+      .nav-links.show { display: flex; }
+      .nav-links li { width: 100%; }
+      .nav-links a { display: block; padding: 12px 0; border-bottom: 1px solid var(--border); font-size: 15px; }
+      .nav-links li:last-child a { border-bottom: none; }
+      .nav-links .nav-pill { display: inline-block; margin-top: 8px; text-align: center; }
+      .nav-inner { padding: 0 20px; }
+    }
+    .legal-hero { background: linear-gradient(160deg, var(--g-darkest) 0%, var(--g-dark) 50%, var(--g-mid) 100%); padding: 120px 32px 48px; text-align: center; }
+    .legal-hero h1 { font-family: 'Merriweather', serif; font-size: 36px; font-weight: 900; color: white; margin-bottom: 8px; }
+    .legal-hero p { color: var(--text-inv-lo); font-size: 14px; }
+    .legal-content { max-width: 780px; margin: 0 auto; padding: 48px 32px 72px; }
+    .legal-content h2 { font-family: 'Merriweather', serif; font-size: 20px; font-weight: 700; color: var(--g-dark); margin: 36px 0 12px; }
+    .legal-content h2:first-of-type { margin-top: 0; }
+    .legal-content p, .legal-content li { font-size: 15px; color: var(--text-hi); line-height: 1.7; margin-bottom: 12px; }
+    .legal-content ul { padding-left: 24px; margin-bottom: 16px; }
+    .legal-content li { margin-bottom: 6px; }
+    .legal-content a { color: var(--jade); text-decoration: underline; }
+    .legal-content a:hover { color: var(--g-mid); }
+    .footer { background: var(--g-darkest); padding: 52px 32px 28px; }
+    .footer-inner { max-width: 1120px; margin: 0 auto; }
+    .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 36px; }
+    .footer-brand-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; margin-bottom: 14px; }
+    .footer-wordmark { font-family: 'Merriweather', serif; font-size: 17px; font-weight: 700; color: white; }
+    .footer-brand p { font-size: 13px; color: rgba(255,255,255,0.45); line-height: 1.6; }
+    .footer-col h4 { font-size: 13px; font-weight: 700; color: rgba(255,255,255,0.55); text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 14px; }
+    .footer-col ul { list-style: none; }
+    .footer-col li { margin-bottom: 9px; }
+    .footer-col a { text-decoration: none; color: rgba(255,255,255,0.5); font-size: 13px; transition: color 0.2s; }
+    .footer-col a:hover { color: rgba(255,255,255,0.85); }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.06); padding-top: 20px; text-align: center; }
+    .footer-bottom p { font-size: 12px; color: rgba(255,255,255,0.22); }
+    @media (max-width: 768px) {
+      .legal-hero h1 { font-size: 28px; }
+      .legal-content { padding: 36px 20px 56px; }
+      .footer-grid { grid-template-columns: 1fr 1fr; gap: 28px; }
+      .footer { padding: 44px 20px 24px; }
+    }
+    @media (max-width: 480px) { .footer-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-stripe"></div>
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">
+        <img src="/logo.png" alt="MexiGuide" style="width:34px;height:34px;border-radius:10px;object-fit:contain;background:#1B4332;padding:3px;box-shadow:0 3px 10px rgba(27,67,50,0.25);">
+        <span class="nav-wordmark">MexiGuide</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/pt/destinations.html">Destinos</a></li>
+        <li><a href="/pt/safety-map.html">Mapa de Segurança</a></li>
+        <li><a href="/pt/tools.html">Ferramentas de Viagem</a></li>
+        <li><a href="/pt/emergency.html">Emergências</a></li>
+        <li><a href="/#download" class="nav-pill">Baixar Grátis</a></li>
+        <li><a href="/terms.html" class="lang-switch"><span class="lang-flag">🇺🇸</span> EN</a></li>
+        <li><a href="/es/terms.html" class="lang-switch"><span class="lang-flag">🇲🇽</span> ES</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <section class="legal-hero">
+    <h1>Termos de Serviço</h1>
+    <p>Última atualização: 2 de abril de 2026</p>
+  </section>
+
+  <div class="legal-content">
+
+    <p><em>Estes Termos estão disponíveis em <a href="/terms.html">inglês</a> e <a href="/es/terms.html">espanhol</a>. Em caso de conflito, a versão em espanhol prevalecerá para usuários localizados no México.</em></p>
+
+    <h2>1. Aceitação dos Termos</h2>
+    <p>Ao criar uma conta ou baixar o aplicativo móvel MexiGuide, você aceita expressamente estes Termos de Serviço ("Termos"). Para recursos acessíveis sem conta, o uso do Serviço constitui aceitação implícita destes Termos.</p>
+    <p>MexiGuide ("o Serviço") inclui o site em mexiguide.org e o aplicativo móvel MexiGuide, operados pela Rumbotech Labs. Se você não concordar com estes Termos, não utilize o Serviço.</p>
+
+    <h2>2. Descrição do Serviço</h2>
+    <p>O MexiGuide fornece informações de viagem, guias de cidades, mapas de segurança, recursos de emergência e ferramentas de viagem para pessoas que visitam ou vivem no México. O Serviço inclui recursos gratuitos e premium.</p>
+
+    <h2>3. Contas de Usuário</h2>
+    <ul>
+      <li>Você pode usar certos recursos sem criar uma conta, incluindo recursos de emergência.</li>
+      <li>Se você criar uma conta, é responsável por manter a confidencialidade de suas credenciais.</li>
+      <li>Você deve fornecer informações precisas e atualizadas ao se registrar.</li>
+      <li>Você é responsável por toda atividade realizada em sua conta.</li>
+    </ul>
+
+    <h2>4. Proteção de Dados e Privacidade</h2>
+    <p>Seus dados pessoais são processados de acordo com nossa <a href="/pt/privacy.html">Política de Privacidade (Aviso de Privacidad)</a> e a Lei Federal de Proteção de Dados Pessoais em Posse de Particulares (<em>Ley Federal de Protección de Datos Personales en Posesión de los Particulares</em>, "LFPDPPP").</p>
+    <p>Ao criar uma conta, você consente com a coleta e o processamento dos seus dados pessoais conforme descrito em nossa Política de Privacidade. A base legal para o processamento é o seu consentimento expresso no momento do cadastro.</p>
+    <p><strong>Seus Direitos ARCO:</strong> Sob a lei mexicana, você tem o direito de Acessar, Retificar, Cancelar e Opor-se ("ARCO") ao processamento de seus dados pessoais. Para exercer seus direitos ARCO ou revogar seu consentimento, entre em contato com nosso responsável pelo tratamento de dados:</p>
+    <ul>
+      <li><strong>Responsável pelo Tratamento:</strong> Rumbotech Labs</li>
+      <li><strong>E-mail:</strong> privacy@mexiguide.org</li>
+      <li><strong>Prazo de resposta:</strong> Responderemos às solicitações ARCO em até 20 dias úteis, conforme exigido pela LFPDPPP.</li>
+    </ul>
+
+    <h2>5. Uso Aceitável</h2>
+    <p>Você concorda em não:</p>
+    <ul>
+      <li>Usar o Serviço para qualquer finalidade ilegal</li>
+      <li>Tentar fazer engenharia reversa, copiar ou redistribuir o aplicativo ou seu conteúdo</li>
+      <li>Coletar dados do Serviço sem permissão</li>
+      <li>Interferir ou interromper a infraestrutura do Serviço</li>
+      <li>Personificar qualquer pessoa ou entidade</li>
+      <li>Enviar relatórios de segurança falsos ou informações enganosas</li>
+    </ul>
+
+    <h2>6. Isenção de Responsabilidade sobre Segurança</h2>
+    <p><strong>O MexiGuide fornece informações de segurança apenas para orientação geral.</strong> As condições de segurança no México podem mudar rapidamente. Embora nos esforcemos para manter nossos mapas, classificações e alertas atualizados, não podemos garantir a precisão ou pontualidade de todos os dados.</p>
+    <p>Você deve sempre:</p>
+    <ul>
+      <li>Consultar avisos oficiais de viagem do governo (ex.: Ministério das Relações Exteriores do Brasil)</li>
+      <li>Usar seu próprio julgamento ao viajar</li>
+      <li>Não depender exclusivamente do MexiGuide para decisões de segurança</li>
+    </ul>
+
+    <h2>7. Recursos de Emergência</h2>
+    <p>O MexiGuide fornece informações de contato de emergência como conveniência. Esses recursos não substituem o acionamento direto dos serviços de emergência locais. Não garantimos a disponibilidade ou o tempo de resposta de nenhum serviço de emergência listado no aplicativo.</p>
+
+    <h2>8. Links de Afiliados e Serviços de Terceiros</h2>
+    <p>O MexiGuide contém links de afiliados para serviços de terceiros, incluindo provedores de eSIM, seguradoras, serviços de VPN e operadores de turismo. Quando você realiza uma compra por meio desses links, o MexiGuide pode receber uma comissão sem custo adicional para você.</p>
+    <p>Não somos responsáveis pelos produtos, serviços ou políticas de provedores terceiros. O uso de serviços de terceiros é regido por seus respectivos termos e políticas.</p>
+
+    <h2>9. Propriedade Intelectual</h2>
+    <p>Todo o conteúdo, design, gráficos, logotipos e software do MexiGuide são de propriedade da Rumbotech Labs ou de seus licenciantes e estão protegidos pelas leis de propriedade intelectual. Você não pode reproduzir, distribuir ou criar obras derivadas sem nosso consentimento por escrito.</p>
+
+    <h2>10. Conteúdo Gerado pelo Usuário</h2>
+    <p>Se você enviar avaliações, dicas ou outro conteúdo ao MexiGuide, você nos concede uma licença não exclusiva, isenta de royalties e mundial para usar, exibir e distribuir esse conteúdo <strong>exclusivamente para fins de operação e promoção do Serviço</strong>. Você mantém a propriedade integral do seu conteúdo.</p>
+    <p>Você pode solicitar a exclusão do seu conteúdo a qualquer momento entrando em contato conosco em contact@mexiguide.org, e o removeremos em até 30 dias.</p>
+
+    <h2>11. Limitação de Responsabilidade</h2>
+    <p>Na máxima extensão permitida pela lei aplicável, o MexiGuide e a Rumbotech Labs não serão responsáveis por danos indiretos, incidentais, especiais, consequentes ou punitivos decorrentes do uso do Serviço. Isso inclui, entre outros, danos resultantes de:</p>
+    <ul>
+      <li>Dependência de informações de segurança ou classificações de zonas</li>
+      <li>Perda de dados ou acesso não autorizado à sua conta</li>
+      <li>Problemas com serviços de terceiros acessados pelo aplicativo</li>
+      <li>Interrupção ou indisponibilidade do Serviço</li>
+    </ul>
+    <p><strong>Nada nesta seção limita a responsabilidade por danos causados por negligência grave, má conduta intencional ou fraude por parte do MexiGuide ou da Rumbotech Labs.</strong></p>
+
+    <h2>12. Indenização</h2>
+    <p>Você concorda em indenizar e isentar o MexiGuide, a Rumbotech Labs e seus diretores, funcionários e afiliados de quaisquer reclamações, danos ou despesas decorrentes de sua violação deliberada destes Termos ou uso indevido do Serviço.</p>
+
+    <h2>13. Rescisão</h2>
+    <p><strong>Contas gratuitas:</strong> Podemos suspender ou encerrar seu acesso ao Serviço com ou sem aviso, por condutas que consideremos violadoras destes Termos ou prejudiciais a outros usuários.</p>
+    <p><strong>Contas pagas/premium:</strong> Forneceremos pelo menos 15 dias corridos de aviso prévio por escrito antes de encerrar sua conta, junto com um reembolso proporcional por qualquer período pré-pago não utilizado, a menos que a rescisão seja por violação material destes Termos.</p>
+
+    <h2>14. Direito de Arrependimento</h2>
+    <p>Para assinaturas premium adquiridas pelo aplicativo ou site, você tem o direito de cancelar dentro de 5 dias úteis a partir da compra para obter um reembolso integral, em conformidade com o Artigo 56 da Lei Federal de Proteção ao Consumidor. Para exercer esse direito, entre em contato conosco em contact@mexiguide.org com os detalhes da sua compra.</p>
+
+    <h2>15. Lei Aplicável e Resolução de Disputas</h2>
+    <p>Estes Termos são regidos pelas leis federais dos Estados Unidos Mexicanos.</p>
+    <p>Para disputas de consumo, você pode registrar uma reclamação perante a PROFECO. Para disputas judiciais, as partes submetem-se aos tribunais competentes da Cidade do México.</p>
+
+    <h2>16. Alterações nos Termos</h2>
+    <p>Podemos atualizar estes Termos a qualquer momento. Para alterações materiais, notificaremos você com pelo menos 30 dias corridos de antecedência por e-mail ou notificação no aplicativo. O uso continuado do Serviço após a data de vigência constitui aceitação dos Termos revisados.</p>
+
+    <h2>17. Idioma</h2>
+    <p>Estes Termos estão disponíveis em inglês, espanhol e português. Em caso de conflito, a <a href="/es/terms.html">versão em espanhol</a> prevalecerá para usuários localizados no México.</p>
+
+    <h2>18. Fale Conosco</h2>
+    <p>Se tiver dúvidas sobre estes Termos, entre em contato:</p>
+    <p><strong>E-mail:</strong> contact@mexiguide.org<br>
+    <strong>Privacidade de Dados:</strong> privacy@mexiguide.org<br>
+    <strong>Site:</strong> <a href="https://mexiguide.org">mexiguide.org</a><br>
+    <strong>Empresa:</strong> Rumbotech Labs</p>
+
+  </div>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="footer-brand-logo">
+            <img src="/logo.png" alt="MexiGuide" style="width:34px;height:34px;border-radius:10px;object-fit:contain;background:#1B4332;padding:3px;box-shadow:0 3px 10px rgba(27,67,50,0.25);">
+            <span class="footer-wordmark">MexiGuide</span>
+          </a>
+          <p>Seu guia completo para explorar o México. Feito para viajantes, expatriados e nômades digitais.</p>
+        </div>
+        <div class="footer-col">
+          <h4>App</h4>
+          <ul>
+            <li><a href="/#features">Recursos</a></li>
+            <li><a href="/pt/tools.html">Ferramentas de Viagem</a></li>
+            <li><a href="/pt/destinations.html">Cidades</a></li>
+            <li><a href="/#download">Baixar</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Parceiros</h4>
+          <ul>
+            <li><a href="/go/airalo.html" target="_blank" rel="noopener">Airalo eSIM</a></li>
+            <li><a href="/go/safetywing.html" target="_blank" rel="noopener">SafetyWing</a></li>
+            <li><a href="https://wise.prf.hn/click/camref:1011l5FkSn" target="_blank" rel="noopener">Wise</a></li>
+            <li><a href="/go/nordvpn.html" target="_blank" rel="noopener">NordVPN</a></li>
+            <li><a href="/go/getyourguide.html" target="_blank" rel="noopener">GetYourGuide</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Empresa</h4>
+          <ul>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="/pt/privacy.html">Política de Privacidade</a></li>
+            <li><a href="/pt/terms.html">Termos de Serviço</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 MexiGuide &middot; Feito por Rumbotech Labs</p>
+        <p>Divulgação de afiliados: o MexiGuide pode receber comissões por links de parceiros sem custo adicional para você.</p>
+      </div>
+    </div>
+  </footer>
+
+<script>
+  document.getElementById('navToggle').addEventListener('click', function() {
+    this.classList.toggle('open');
+    document.getElementById('navLinks').classList.toggle('show');
+  });
+</script>
+</body>
+</html>
