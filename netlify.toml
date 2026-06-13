@@ -1,3 +1,34 @@
+# ── Build: pre-render static city pages on every deploy ──
+[build]
+  command = "node build-cities.js"
+  publish = "."
+
+# Old JS-driven URLs → new clean static URLs (301, SEO-safe)
+[[redirects]]
+  from = "/destinations.html"
+  to = "/destinations/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/city.html"
+  to = "/destinations/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/es/city.html"
+  to = "/es/destinos/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pt/city.html"
+  to = "/pt/destinos/"
+  status = 301
+  force = true
+
+# Pretty URLs serve their index.html
 [[headers]]
   for = "/.well-known/*"
   [headers.values]
