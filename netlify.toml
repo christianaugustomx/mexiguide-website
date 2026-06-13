@@ -28,6 +28,18 @@
   status = 301
   force = true
 
+[[redirects]]
+  from = "/es/destinations.html"
+  to = "/es/destinos/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/pt/destinations.html"
+  to = "/pt/destinos/"
+  status = 301
+  force = true
+
 # Pretty URLs serve their index.html
 [[headers]]
   for = "/.well-known/*"
