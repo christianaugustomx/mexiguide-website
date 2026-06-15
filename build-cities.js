@@ -20,6 +20,8 @@ const TEMPLATE   = path.join(ROOT, 'city.html');
 const SITE_URL   = 'https://mexiguide.org';
 const OUT_LANGS  = ['en', 'es', 'pt', 'fr'];     // generation order
 const APP_URL    = 'https://apps.apple.com/app/id6761962437';
+const YEAR       = new Date().getFullYear();
+const OG_LOCALE  = { en: 'en_US', es: 'es_MX', pt: 'pt_BR', fr: 'fr_FR' };
 
 // ── Extract the canonical <style> block from city.html so generated pages
 //    inherit the exact visual identity (single source of truth for CSS). ──
@@ -29,14 +31,14 @@ const STYLE = (templateHtml.match(/<style>[\s\S]*?<\/style>/i) || ['<style></sty
 // ── Localised UI strings ──
 const UI = {
   en: {
-    titleTpl: (c) => `Is ${c} Safe in 2026? Travel & Safety Guide | MexiGuide`,
+    titleTpl: (c) => `Is ${c} Safe in ${YEAR}? Travel & Safety Guide | MexiGuide`,
     h1: (c) => `Is ${c} safe to visit?`,
-    metaTpl: (c, s, lbl) => `${c}, ${s} safety rating: ${lbl}. Honest local tips — getting around, what to avoid, top sights, and where to eat. Updated 2026.`,
-    introTpl: (c, s, lbl) => `As of 2026, ${c} in ${s} has an overall traveler safety rating of "${lbl}". Below is a practical, local breakdown of what to watch out for, how to get around, and what's actually worth your time.`,
+    metaTpl: (c, s, lbl) => `${c}, ${s} safety rating: ${lbl}. Honest local tips — getting around, what to avoid, top sights, and where to eat. Updated ${YEAR}.`,
+    introTpl: (c, s, lbl) => `As of ${YEAR}, ${c} in ${s} has an overall traveler safety rating of "${lbl}". Below is a practical, local breakdown of what to watch out for, how to get around, and what's actually worth your time.`,
     safetyHeading: (c) => `${c} safety: what to know`,
     sections: { getting_around: 'Getting Around', top_sights: 'Top Sights', museums: 'Museums', parks: 'Parks & Nature', eat_drink_work: 'Eat, Drink & Work' },
     viewMap: 'View on Map', allDest: 'All Destinations', back: '← Back to Destinations',
-    destTitle: 'Mexico Travel & Safety Guides by City (2026) | MexiGuide',
+    destTitle: `Mexico Travel & Safety Guides by City (${YEAR}) | MexiGuide`,
     destH1: 'Mexico travel guides — by city',
     destIntro: 'Up-to-date safety ratings and local guides for every major destination in Mexico. Pick a city to see what to expect.',
     getApp: 'Get the App →', langName: 'EN',
@@ -45,14 +47,14 @@ const UI = {
     pathWord: 'destinations',
   },
   es: {
-    titleTpl: (c) => `¿Es seguro ${c} en 2026? Guía de viaje y seguridad | MexiGuide`,
+    titleTpl: (c) => `¿Es seguro ${c} en ${YEAR}? Guía de viaje y seguridad | MexiGuide`,
     h1: (c) => `¿Es seguro viajar a ${c}?`,
-    metaTpl: (c, s, lbl) => `Nivel de seguridad de ${c}, ${s}: ${lbl}. Consejos locales reales — cómo moverte, qué evitar, qué ver y dónde comer. Actualizado 2026.`,
-    introTpl: (c, s, lbl) => `En 2026, ${c} (${s}) tiene una calificación general de seguridad para viajeros de "${lbl}". Abajo te dejamos un desglose práctico y local: qué cuidar, cómo moverte y qué vale realmente la pena.`,
+    metaTpl: (c, s, lbl) => `Nivel de seguridad de ${c}, ${s}: ${lbl}. Consejos locales reales — cómo moverte, qué evitar, qué ver y dónde comer. Actualizado ${YEAR}.`,
+    introTpl: (c, s, lbl) => `En ${YEAR}, ${c} (${s}) tiene una calificación general de seguridad para viajeros de "${lbl}". Abajo te dejamos un desglose práctico y local: qué cuidar, cómo moverte y qué vale realmente la pena.`,
     safetyHeading: (c) => `Seguridad en ${c}: lo que debes saber`,
     sections: { getting_around: 'Cómo moverse', top_sights: 'Atracciones principales', museums: 'Museos', parks: 'Parques y naturaleza', eat_drink_work: 'Comer, beber y trabajar' },
     viewMap: 'Ver en el mapa', allDest: 'Todos los destinos', back: '← Volver a destinos',
-    destTitle: 'Guías de viaje y seguridad de México por ciudad (2026) | MexiGuide',
+    destTitle: `Guías de viaje y seguridad de México por ciudad (${YEAR}) | MexiGuide`,
     destH1: 'Guías de viaje de México — por ciudad',
     destIntro: 'Calificaciones de seguridad actualizadas y guías locales para cada destino importante de México. Elige una ciudad para saber qué esperar.',
     getApp: 'Descarga la App →', langName: 'ES',
@@ -61,14 +63,14 @@ const UI = {
     pathWord: 'destinos',
   },
   pt: {
-    titleTpl: (c) => `${c} é seguro em 2026? Guia de viagem e segurança | MexiGuide`,
+    titleTpl: (c) => `${c} é seguro em ${YEAR}? Guia de viagem e segurança | MexiGuide`,
     h1: (c) => `${c} é seguro para visitar?`,
-    metaTpl: (c, s, lbl) => `Nível de segurança de ${c}, ${s}: ${lbl}. Dicas locais reais — como se locomover, o que evitar, o que ver e onde comer. Atualizado 2026.`,
-    introTpl: (c, s, lbl) => `Em 2026, ${c} (${s}) tem uma classificação geral de segurança para viajantes de "${lbl}". Abaixo, um resumo prático e local: o que observar, como se locomover e o que realmente vale a pena.`,
+    metaTpl: (c, s, lbl) => `Nível de segurança de ${c}, ${s}: ${lbl}. Dicas locais reais — como se locomover, o que evitar, o que ver e onde comer. Atualizado ${YEAR}.`,
+    introTpl: (c, s, lbl) => `Em ${YEAR}, ${c} (${s}) tem uma classificação geral de segurança para viajantes de "${lbl}". Abaixo, um resumo prático e local: o que observar, como se locomover e o que realmente vale a pena.`,
     safetyHeading: (c) => `Segurança em ${c}: o que saber`,
     sections: { getting_around: 'Como se locomover', top_sights: 'Principais atrações', museums: 'Museus', parks: 'Parques e natureza', eat_drink_work: 'Comer, beber e trabalhar' },
     viewMap: 'Ver no mapa', allDest: 'Todos os destinos', back: '← Voltar aos destinos',
-    destTitle: 'Guias de viagem e segurança do México por cidade (2026) | MexiGuide',
+    destTitle: `Guias de viagem e segurança do México por cidade (${YEAR}) | MexiGuide`,
     destH1: 'Guias de viagem do México — por cidade',
     destIntro: 'Classificações de segurança atualizadas e guias locais para cada destino importante do México. Escolha uma cidade para saber o que esperar.',
     getApp: 'Baixar o App →', langName: 'PT',
@@ -77,14 +79,14 @@ const UI = {
     pathWord: 'destinos',
   },
   fr: {
-    titleTpl: (c) => `${c} est-il sûr en 2026 ? Guide voyage et sécurité | MexiGuide`,
+    titleTpl: (c) => `${c} est-il sûr en ${YEAR} ? Guide voyage et sécurité | MexiGuide`,
     h1: (c) => `Est-il sûr de visiter ${c} ?`,
-    metaTpl: (c, s, lbl) => `Niveau de sécurité de ${c}, ${s} : ${lbl}. Conseils locaux concrets — se déplacer, quoi éviter, sites à voir et où manger. Mis à jour 2026.`,
-    introTpl: (c, s, lbl) => `En 2026, ${c} (${s}) affiche une note globale de sécurité pour les voyageurs de « ${lbl} ». Voici un aperçu pratique et local : ce à quoi faire attention, comment circuler et ce qui vaut vraiment le détour.`,
+    metaTpl: (c, s, lbl) => `Niveau de sécurité de ${c}, ${s} : ${lbl}. Conseils locaux concrets — se déplacer, quoi éviter, sites à voir et où manger. Mis à jour ${YEAR}.`,
+    introTpl: (c, s, lbl) => `En ${YEAR}, ${c} (${s}) affiche une note globale de sécurité pour les voyageurs de « ${lbl} ». Voici un aperçu pratique et local : ce à quoi faire attention, comment circuler et ce qui vaut vraiment le détour.`,
     safetyHeading: (c) => `Sécurité à ${c} : l'essentiel`,
     sections: { getting_around: 'Se déplacer', top_sights: 'Sites incontournables', museums: 'Musées', parks: 'Parcs et nature', eat_drink_work: 'Manger, boire et travailler' },
     viewMap: 'Voir sur la carte', allDest: 'Toutes les destinations', back: '← Retour aux destinations',
-    destTitle: 'Guides voyage et sécurité du Mexique par ville (2026) | MexiGuide',
+    destTitle: `Guides voyage et sécurité du Mexique par ville (${YEAR}) | MexiGuide`,
     destH1: 'Guides de voyage du Mexique — par ville',
     destIntro: 'Notes de sécurité à jour et guides locaux pour chaque grande destination du Mexique. Choisissez une ville pour savoir à quoi vous attendre.',
     getApp: "Télécharger l'app →", langName: 'FR',
@@ -176,17 +178,32 @@ function buildSection(id, icon, title, cards) {
 }
 
 function jsonLd(city, lang, canonical, label) {
-  const data = {
+  const t = UI[lang];
+  const guide = localized(city, lang, 'detail_guide') || {};
+  const dest = {
     '@context': 'https://schema.org',
     '@type': 'TouristDestination',
     name: city.city_name,
     address: { '@type': 'PostalAddress', addressRegion: city.state, addressCountry: 'MX' },
     url: SITE_URL + canonical,
-    description: UI[lang].metaTpl(city.city_name, city.state, label),
+    description: t.metaTpl(city.city_name, city.state, label),
     isAccessibleForFree: true,
     publisher: { '@type': 'Organization', name: 'MexiGuide', url: SITE_URL },
   };
-  return `<script type="application/ld+json">${JSON.stringify(data)}</script>`;
+  const faq = [];
+  faq.push({
+    '@type': 'Question',
+    name: t.h1(city.city_name),
+    acceptedAnswer: { '@type': 'Answer', text: t.introTpl(city.city_name, city.state, label) },
+  });
+  if (guide.getting_around) {
+    const q = { en: `How do you get around ${city.city_name}?`, es: `¿Cómo moverse en ${city.city_name}?`, pt: `Como se locomover em ${city.city_name}?`, fr: `Comment se déplacer à ${city.city_name} ?` }[lang];
+    faq.push({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: guide.getting_around } });
+  }
+  const faqLd = faq.length ? { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq } : null;
+  const out = [`<script type="application/ld+json">${JSON.stringify(dest)}</script>`];
+  if (faqLd) out.push(`<script type="application/ld+json">${JSON.stringify(faqLd)}</script>`);
+  return out.join('\n  ');
 }
 
 function buildPage(city, lang, alternates) {
@@ -243,8 +260,12 @@ function buildPage(city, lang, alternates) {
   <meta property="og:description" content="${esc(t.metaTpl(city.city_name, city.state, label))}" />
   <meta property="og:url" content="${SITE_URL}${canonical}" />
   <meta property="og:image" content="${SITE_URL}/logo.png" />
-  <meta property="og:locale" content="${lang}" />
+  <meta property="og:site_name" content="MexiGuide" />
+  <meta property="og:locale" content="${OG_LOCALE[lang]}" />
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="${esc(t.titleTpl(city.city_name))}" />
+  <meta name="twitter:description" content="${esc(t.metaTpl(city.city_name, city.state, label))}" />
+  <meta name="twitter:image" content="${SITE_URL}/logo.png" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Merriweather:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet" />
   ${jsonLd(city, lang, canonical, label)}
   ${STYLE}
@@ -308,8 +329,17 @@ function buildDestIndex(lang, cities, alternates) {
   <meta name="description" content="${esc(t.destIntro)}" />
   <link rel="canonical" href="${SITE_URL}${canonical}" />
   ${hreflang}
+  <meta property="og:type" content="website" />
   <meta property="og:title" content="${esc(t.destTitle)}" />
+  <meta property="og:description" content="${esc(t.destIntro)}" />
   <meta property="og:url" content="${SITE_URL}${canonical}" />
+  <meta property="og:image" content="${SITE_URL}/logo.png" />
+  <meta property="og:site_name" content="MexiGuide" />
+  <meta property="og:locale" content="${OG_LOCALE[lang]}" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="${esc(t.destTitle)}" />
+  <meta name="twitter:description" content="${esc(t.destIntro)}" />
+  <meta name="twitter:image" content="${SITE_URL}/logo.png" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Merriweather:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet" />
   ${STYLE}
 </head>
