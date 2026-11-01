@@ -40,6 +40,93 @@
   status = 301
   force = true
 
+# Affiliate links: server-side 302 (temporary — partner URLs may change) so crawlers
+# don't index empty meta-refresh pages. Old /go/*.html URLs keep working.
+
+[[redirects]]
+  from = "/go/airalo"
+  to = "https://airalo.pxf.io/Mexiguide"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/go/airalo.html"
+  to = "https://airalo.pxf.io/Mexiguide"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/go/booking"
+  to = "https://www.awin1.com/cread.php?awinmid=6776&awinaffid=2864151&ued=https%3A%2F%2Fwww.booking.com%2Fsearchresults.html%3Fdest_type%3Dcountry%26dest_id%3Dmx%26ss%3DMexico"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/go/booking.html"
+  to = "https://www.awin1.com/cread.php?awinmid=6776&awinaffid=2864151&ued=https%3A%2F%2Fwww.booking.com%2Fsearchresults.html%3Fdest_type%3Dcountry%26dest_id%3Dmx%26ss%3DMexico"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/go/getyourguide"
+  to = "https://www.getyourguide.com/?partner_id=6LXR1GC8&utm_source=mexiguide&utm_medium=affiliate"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/go/getyourguide.html"
+  to = "https://www.getyourguide.com/?partner_id=6LXR1GC8&utm_source=mexiguide&utm_medium=affiliate"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/go/nordpass"
+  to = "https://go.nordpass.io/aff_c?offer_id=488&aff_id=144786&url_id=9356"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/go/nordpass.html"
+  to = "https://go.nordpass.io/aff_c?offer_id=488&aff_id=144786&url_id=9356"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/go/nordvpn"
+  to = "https://go.nordvpn.net/aff_c?offer_id=15&aff_id=144786&url_id=902"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/go/nordvpn.html"
+  to = "https://go.nordvpn.net/aff_c?offer_id=15&aff_id=144786&url_id=902"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/go/safetywing"
+  to = "https://safetywing.com/?referenceID=26503599&utm_source=26503599&utm_medium=Ambassador"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/go/safetywing.html"
+  to = "https://safetywing.com/?referenceID=26503599&utm_source=26503599&utm_medium=Ambassador"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/go/wise"
+  to = "https://wise.prf.hn/click/camref:1011l5FkSn"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/go/wise.html"
+  to = "https://wise.prf.hn/click/camref:1011l5FkSn"
+  status = 302
+  force = true
+
 # Pretty URLs serve their index.html
 [[headers]]
   for = "/.well-known/*"

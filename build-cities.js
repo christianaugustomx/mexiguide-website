@@ -21,6 +21,7 @@ const SITE_URL   = 'https://mexiguide.org';
 const OUT_LANGS  = ['en', 'es', 'pt', 'fr'];     // generation order
 const APP_URL    = 'https://apps.apple.com/app/id6761962437';
 const YEAR       = new Date().getFullYear();
+const STATIC_PAGE_LANGS = ['en', 'es', 'pt'];  // langs with hand-written home/map/tools/emergency pages
 const OG_LOCALE  = { en: 'en_US', es: 'es_MX', pt: 'pt_BR', fr: 'fr_FR' };
 
 // ── Extract the canonical <style> block from city.html so generated pages
@@ -129,7 +130,6 @@ function urlFor(lang, slug) {
 // ── Page builders ──
 function buildNav(lang, alternates) {
   const t = UI[lang];
-  const homeHref = lang === 'en' ? '/' : `/${lang}/`;
   const langLinks = OUT_LANGS.filter(l => alternates[l]).map(l => {
     const flag = { en: '🇺🇸', es: '🇲🇽', pt: '🇧🇷', fr: '🇫🇷' }[l];
     const active = l === lang ? ' style="opacity:1;font-weight:700;"' : '';
@@ -137,18 +137,21 @@ function buildNav(lang, alternates) {
   }).join('\n        ');
   const dWord = t.pathWord;
   const dHref = lang === 'en' ? `/${dWord}/` : `/${lang}/${dWord}/`;
+  // Static pages (home, map, tools, emergency) only exist in these languages;
+  // other languages (e.g. FR) fall back to the English versions to avoid 404s.
+  const pagePrefix = STATIC_PAGE_LANGS.includes(lang) && lang !== 'en' ? `/${lang}` : '';
   return `<nav>
     <div class="nav-stripe"></div>
     <div class="nav-inner">
-      <a href="${homeHref}" class="nav-logo">
+      <a href="${pagePrefix}/" class="nav-logo">
         <img src="/logo.png" alt="MexiGuide" style="width:34px;height:34px;border-radius:10px;object-fit:contain;background:#1B4332;padding:3px;box-shadow:0 3px 10px rgba(27,67,50,0.25);">
         <div class="nav-wordmark">MexiGuide</div>
       </a>
       <ul class="nav-links" id="navLinks">
         <li><a href="${dHref}">${t.navDest}</a></li>
-        <li><a href="${lang === 'en' ? '' : '/' + lang}/safety-map.html">${t.navSafety}</a></li>
-        <li><a href="${lang === 'en' ? '' : '/' + lang}/tools.html">${t.navTools}</a></li>
-        <li><a href="${lang === 'en' ? '' : '/' + lang}/emergency.html">${t.navEmergency}</a></li>
+        <li><a href="${pagePrefix}/safety-map.html">${t.navSafety}</a></li>
+        <li><a href="${pagePrefix}/tools.html">${t.navTools}</a></li>
+        <li><a href="${pagePrefix}/emergency.html">${t.navEmergency}</a></li>
         ${langLinks}
       </ul>
       <a href="${APP_URL}" class="nav-pill" target="_blank" rel="noopener">${t.getApp}</a>
