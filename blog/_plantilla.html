@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!--
+  PLANTILLA DE ARTÍCULO — NO PUBLICAR TAL CUAL.
+  1. Copia este archivo a /es/blog/<slug>.html (español) y/o /blog/<slug-en>.html (inglés).
+  2. Reemplaza todo lo que esté entre {{ }}.
+  3. Quita la línea <meta name="robots" content="noindex"> del archivo copiado.
+  4. Agrega la tarjeta al índice (/es/blog/index.html y /blog/index.html) y la URL a /sitemap.xml.
+  Instrucciones completas en /BLOG.md.
+-->
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <title>{{TÍTULO SEO, máx. ~60 caracteres}} | MexiGuide</title>
+  <meta name="description" content="{{Descripción de 140–160 caracteres con la palabra clave principal}}" />
+  <link rel="canonical" href="https://mexiguide.org/es/blog/{{slug}}.html" />
+  <link rel="alternate" hreflang="es" href="https://mexiguide.org/es/blog/{{slug}}.html" />
+  <link rel="alternate" hreflang="en" href="https://mexiguide.org/blog/{{slug-en}}.html" />
+  <link rel="alternate" hreflang="x-default" href="https://mexiguide.org/blog/{{slug-en}}.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="MexiGuide" />
+  <meta property="og:title" content="{{Título para redes}}" />
+  <meta property="og:description" content="{{Descripción corta para redes}}" />
+  <meta property="og:url" content="https://mexiguide.org/es/blog/{{slug}}.html" />
+  <meta property="og:image" content="https://mexiguide.org/images/blog/{{slug}}/og-{{slug}}.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="{{Descripción de la imagen}}" />
+  <meta property="og:locale" content="es_MX" />
+  <meta property="article:published_time" content="{{AAAA-MM-DD}}" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preload" as="image" href="/images/blog/{{slug}}/{{portada}}.webp" fetchpriority="high" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Merriweather:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/blog/blog.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BlogPosting",
+        "headline": "{{Título}}",
+        "description": "{{Descripción}}",
+        "inLanguage": "es-MX",
+        "datePublished": "{{AAAA-MM-DD}}",
+        "dateModified": "{{AAAA-MM-DD}}",
+        "mainEntityOfPage": "https://mexiguide.org/es/blog/{{slug}}.html",
+        "author": { "@type": "Organization", "name": "MexiGuide", "url": "https://mexiguide.org/es/" },
+        "publisher": { "@type": "Organization", "name": "MexiGuide", "url": "https://mexiguide.org", "logo": { "@type": "ImageObject", "url": "https://mexiguide.org/logo.png" } },
+        "image": ["https://mexiguide.org/images/blog/{{slug}}/og-{{slug}}.jpg"]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://mexiguide.org/es/" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://mexiguide.org/es/blog/" },
+          { "@type": "ListItem", "position": 3, "name": "{{Título corto}}" }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "{{Pregunta 1}}", "acceptedAnswer": { "@type": "Answer", "text": "{{Respuesta 1 (igual que en la sección FAQ)}}" } }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-stripe"></div>
+    <div class="nav-inner">
+      <a href="/es/" class="nav-logo">
+        <img src="/logo.png" alt="MexiGuide" width="34" height="34">
+        <span class="nav-wordmark">MexiGuide</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/es/destinos/">Destinos</a></li>
+        <li><a href="/es/safety-map.html">Mapa de Seguridad</a></li>
+        <li><a href="/es/tools.html">Herramientas de Viaje</a></li>
+        <li><a href="/es/blog/" class="active">Blog</a></li>
+        <li><a href="/es/emergency.html">Emergencias</a></li>
+        <li><a href="/es/#download" class="nav-pill">Descargar Gratis</a></li>
+        <li><a href="/blog/{{slug-en}}.html" class="lang-switch" hreflang="en"><span class="lang-flag">🇺🇸</span> EN</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+    <article>
+      <header class="post-hero">
+        <img src="/images/blog/{{slug}}/{{portada}}.webp" alt="{{Alt descriptivo de la portada}}" width="{{ancho}}" height="{{alto}}" fetchpriority="high">
+        <div class="post-hero-inner">
+          <div class="breadcrumb"><a href="/es/">Inicio</a> › <a href="/es/blog/">Blog</a> › {{Título corto}}</div>
+          <span class="post-tag">{{Categoría}}</span>
+          <h1>{{Título H1}}</h1>
+          <p class="post-lede">{{Entradilla de 1–2 frases}}</p>
+          <div class="post-meta"><span>Por el equipo de MexiGuide</span><span>·</span><time datetime="{{AAAA-MM-DD}}">{{fecha legible}}</time><span>·</span><span>Lectura de {{N}} min</span></div>
+        </div>
+        <span class="hero-credit">Foto: <a href="{{URL de la foto}}" target="_blank" rel="noopener">{{Autor}}</a>, <a href="{{URL licencia}}" target="_blank" rel="noopener license">{{Licencia}}</a></span>
+      </header>
+
+      <div class="post-wrap">
+        <div class="post-body">
+
+          <p>{{Introducción con la palabra clave principal en las primeras 100 palabras.}}</p>
+
+          <nav class="toc" aria-label="Contenido">
+            <div class="toc-title">En este artículo</div>
+            <ol>
+              <li><a href="#seccion-1">{{Sección 1}}</a></li>
+              <li><a href="#faq">Preguntas frecuentes</a></li>
+            </ol>
+          </nav>
+
+          <h2 id="seccion-1">{{Sección 1}}</h2>
+          <p>{{Texto}}</p>
+
+          <figure>
+            <img src="/images/blog/{{slug}}/{{imagen}}.webp" alt="{{Alt descriptivo}}" width="{{ancho}}" height="{{alto}}" loading="lazy" decoding="async">
+            <figcaption>{{Pie de foto}}
+              <span class="credit">Foto: <a href="{{URL}}" target="_blank" rel="noopener">{{Autor}}</a> / Wikimedia Commons, <a href="{{URL licencia}}" target="_blank" rel="noopener license">{{Licencia}}</a></span>
+            </figcaption>
+          </figure>
+
+          <div class="callout">
+            <p><span class="callout-title">¿Sabías que…?</span>{{Dato curioso}}</p>
+          </div>
+
+          <div class="place">
+            <h3>{{Destino}}</h3>
+            <p><span class="place-tag">{{Etiqueta}}</span></p>
+            <p>{{Descripción con enlace a la guía: <a href="/es/destinos/<ciudad>/">guía de ...</a>}}</p>
+          </div>
+
+          <h2 id="faq">Preguntas frecuentes</h2>
+          <div class="faq">
+            <details>
+              <summary>{{Pregunta 1}}</summary>
+              <p>{{Respuesta 1}}</p>
+            </details>
+          </div>
+
+          <div class="cta-box">
+            <h2>Planea tu viaje con MexiGuide</h2>
+            <p>Guías de ciudades, mapa de seguridad, números de emergencia y herramientas de viaje en una sola app gratuita.</p>
+            <div class="cta-links">
+              <a href="/es/#download" class="primary">Descargar gratis</a>
+              <a href="/es/destinos/">Ver destinos</a>
+              <a href="/es/tools.html">Herramientas de viaje</a>
+            </div>
+          </div>
+
+          <p class="affiliate-note">Aviso de afiliación: algunos enlaces de este artículo son de socios y MexiGuide puede recibir una comisión sin costo adicional para ti.</p>
+
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <!-- FOOTER: copiar el de /es/blog/dia-de-muertos.html -->
+
+<script src="/blog/blog.js"></script>
+</body>
+</html>

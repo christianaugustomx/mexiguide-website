@@ -151,6 +151,7 @@ function buildNav(lang, alternates) {
         <li><a href="${dHref}">${t.navDest}</a></li>
         <li><a href="${pagePrefix}/safety-map.html">${t.navSafety}</a></li>
         <li><a href="${pagePrefix}/tools.html">${t.navTools}</a></li>
+        <li><a href="${lang === 'es' ? '/es/blog/' : '/blog/'}">Blog</a></li>
         <li><a href="${pagePrefix}/emergency.html">${t.navEmergency}</a></li>
         ${langLinks}
       </ul>
@@ -411,6 +412,21 @@ for (const lang of OUT_LANGS) {
   const rel = (idxAlt[lang].replace(/\/$/, '') + '/index.html').replace(/^\//, '');
   write(rel, buildDestIndex(lang, list, idxAlt));
   sitemap.push(`<url><loc>${SITE_URL}${idxAlt[lang]}</loc><priority>0.8</priority></url>`);
+}
+
+// Blog: hand-written pages in /blog (EN) and /es/blog (ES). Files starting with "_"
+// (e.g. the post template) are skipped; hreflang alternates are read from each page.
+for (const dir of ['blog', 'es/blog']) {
+  const full = path.join(ROOT, dir);
+  if (!fs.existsSync(full)) continue;
+  for (const f of fs.readdirSync(full).filter(f => f.endsWith('.html') && !f.startsWith('_'))) {
+    const html = fs.readFileSync(path.join(full, f), 'utf8');
+    const xAlt = [...html.matchAll(/<link rel="alternate" hreflang="([a-z-]+)" href="([^"]+)"/g)]
+      .filter(m => m[1] !== 'x-default')
+      .map(m => `<xhtml:link rel="alternate" hreflang="${m[1]}" href="${m[2]}"/>`).join('');
+    const loc = f === 'index.html' ? `/${dir}/` : `/${dir}/${f}`;
+    sitemap.push(`<url><loc>${SITE_URL}${loc}</loc><priority>${f === 'index.html' ? '0.8' : '0.7'}</priority>${xAlt}</url>`);
+  }
 }
 
 // sitemap.xml + robots.txt

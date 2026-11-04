@@ -654,6 +654,56 @@
       font-size: 9px; font-weight: 600;
     }
 
+    /* ── HOME: SECTION LINKS ── */
+    .section-head-row { display: flex; align-items: flex-end; justify-content: space-between; gap: 20px; flex-wrap: wrap; margin-bottom: 44px; }
+    .section-head-row .s-sub { margin-bottom: 0; }
+    .btn-outline {
+      display: inline-flex; align-items: center; gap: 6px;
+      border: 1.5px solid var(--g-dark); color: var(--g-dark);
+      padding: 11px 20px; border-radius: 10px;
+      font-size: 14px; font-weight: 700; text-decoration: none;
+      transition: background 0.2s, color 0.2s; white-space: nowrap;
+    }
+    .btn-outline:hover { background: var(--g-dark); color: white; }
+    .section-more { margin-top: 28px; text-align: center; }
+    .hero-news {
+      display: inline-flex; align-items: center; gap: 10px; flex-wrap: wrap;
+      margin: 0 0 18px; padding: 7px 14px 7px 7px;
+      background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.16);
+      border-radius: 30px; text-decoration: none;
+      color: var(--text-inv); font-size: 13px; font-weight: 500;
+      transition: background 0.2s;
+    }
+    .hero-news:hover { background: rgba(255,255,255,0.13); }
+    .hero-news-tag { background: var(--coral); color: white; font-size: 10px; font-weight: 800; letter-spacing: 0.8px; text-transform: uppercase; padding: 4px 10px; border-radius: 20px; }
+
+    /* ── HOME: BLOG ── */
+    .blog-home-bg { background: var(--card); }
+    .blog-home-grid { display: grid; grid-template-columns: 1.5fr 1fr; gap: 18px; }
+    .blog-feature {
+      position: relative; border-radius: 18px; overflow: hidden; min-height: 400px;
+      display: flex; align-items: flex-end; text-decoration: none; color: white;
+      background: var(--g-darkest);
+    }
+    .blog-feature img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s; }
+    .blog-feature:hover img { transform: scale(1.03); }
+    .blog-feature::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(15,36,25,0.95) 0%, rgba(15,36,25,0.35) 55%, rgba(15,36,25,0.05) 100%); }
+    .blog-feature-body { position: relative; z-index: 2; padding: 28px; }
+    .blog-feature-tag { display: inline-block; background: var(--gold); color: var(--g-darkest); font-size: 10px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; padding: 4px 10px; border-radius: 20px; margin-bottom: 12px; }
+    .blog-feature h3 { font-family: 'Merriweather', serif; font-size: clamp(20px, 2.4vw, 28px); line-height: 1.25; margin-bottom: 8px; }
+    .blog-feature p { font-size: 14px; color: var(--text-inv); line-height: 1.6; max-width: 520px; }
+    .blog-feature-more { display: inline-block; margin-top: 12px; font-size: 13px; font-weight: 700; color: var(--gold); }
+    .blog-side { display: flex; flex-direction: column; gap: 12px; }
+    .blog-side-title { font-size: 11px; font-weight: 800; letter-spacing: 1.2px; text-transform: uppercase; color: var(--text-mid); margin: 4px 0 2px; }
+    .blog-mini { background: var(--white); border: 1px solid var(--border); border-radius: 14px; padding: 16px 18px; }
+    .blog-mini-date { font-size: 11px; font-weight: 700; color: var(--coral); text-transform: uppercase; letter-spacing: 0.5px; }
+    .blog-mini h4 { font-family: 'Merriweather', serif; font-size: 15px; color: var(--g-dark); margin: 4px 0 3px; line-height: 1.35; }
+    .blog-mini p { font-size: 13px; color: var(--text-lo); line-height: 1.5; }
+    @media (max-width: 960px) {
+      .blog-home-grid { grid-template-columns: 1fr; }
+      .blog-feature { min-height: 340px; }
+    }
+
     /* ── HOW IT WORKS ── */
     .how-bg {
       background: linear-gradient(160deg, var(--g-darkest) 0%, var(--g-dark) 100%);
@@ -796,6 +846,7 @@
         <li><a href="/es/destinos/">Destinos</a></li>
         <li><a href="/es/safety-map.html">Mapa de Seguridad</a></li>
         <li><a href="/es/tools.html">Herramientas de Viaje</a></li>
+        <li><a href="/es/blog/">Blog</a></li>
         <li><a href="/es/emergency.html">Emergencias</a></li>
         <li><a href="#download" class="nav-pill">Descargar Gratis</a></li>
         <li><a href="/" class="lang-switch"><span class="lang-flag">🇺🇸</span> EN</a></li>
@@ -820,8 +871,9 @@
         <p class="hero-sub">Descubre las mejores ciudades, barrios, comida y experiencias que México tiene para ofrecer. Diseñada para viajeros, expatriados y nómadas digitales — con las herramientas que realmente necesitas en el camino.</p>
         <div class="hero-ctas">
           <a href="#download" class="btn-jade">📱 Descargar Gratis</a>
-          <a href="#features" class="btn-ghost">Ver Funciones →</a>
+          <a href="/es/destinos/" class="btn-ghost">🗺️ Explorar Destinos →</a>
         </div>
+        <a href="/es/blog/dia-de-muertos.html" class="hero-news"><span class="hero-news-tag">Nuevo en el blog</span> Día de Muertos en México: dónde vivirlo →</a>
         <div class="hero-chips">
           <span class="hero-chip">🗺️ 37 Guías de Ciudad</span>
           <span class="hero-chip">🤖 Tips de IA</span>
@@ -938,6 +990,113 @@
     </div>
   </div>
 
+  <!-- CITIES -->
+  <section class="section cities-bg" id="cities">
+    <div class="section-inner">
+      <div class="eyebrow">📍 Destinos</div>
+      <h2 class="s-title">Explora las ciudades<br/>más icónicas de México</h2>
+      <p class="s-sub">Desde la vibrante capital hasta paraísos costeros y joyas coloniales — descubre México como un local.</p>
+      <div class="cities-grid">
+        <div class="city-card">
+          <a href="/es/destinos/ciudad-de-mexico/">
+            <div class="city-bg city-bg-cdmx">
+              <div class="city-emoji-bg">🏙️</div>
+              <div>
+                <div class="city-label">Capital</div>
+                <div class="city-name">Ciudad de México</div>
+                <div class="city-chips">
+                  <span class="city-chip">🏛️ Historia</span>
+                  <span class="city-chip">🍜 Comida</span>
+                  <span class="city-chip">🎨 Arte</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="city-card">
+          <a href="/es/destinos/cancun/">
+            <div class="city-bg city-bg-cancun">
+              <div class="city-emoji-bg">🏖️</div>
+              <div>
+                <div class="city-label">Costa Caribeña</div>
+                <div class="city-name">Cancún</div>
+                <div class="city-chips">
+                  <span class="city-chip">🏖️ Playas</span>
+                  <span class="city-chip">💧 Cenotes</span>
+                  <span class="city-chip">🏯 Ruinas</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="city-card">
+          <a href="/es/destinos/oaxaca-de-juarez/">
+            <div class="city-bg city-bg-oax">
+              <div class="city-emoji-bg">🌺</div>
+              <div>
+                <div class="city-label">Sur de México</div>
+                <div class="city-name">Oaxaca</div>
+                <div class="city-chips">
+                  <span class="city-chip">🌿 Cultura</span>
+                  <span class="city-chip">🥃 Mezcal</span>
+                  <span class="city-chip">🍫 Gastronomía</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="city-card">
+          <a href="/es/destinos/guadalajara/">
+            <div class="city-bg city-bg-gdl">
+              <div class="city-emoji-bg">🎺</div>
+              <div>
+                <div class="city-label">Occidente de México</div>
+                <div class="city-name">Guadalajara</div>
+                <div class="city-chips">
+                  <span class="city-chip">🎺 Mariachi</span>
+                  <span class="city-chip">🥃 Tequila</span>
+                  <span class="city-chip">🎨 Arte</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="section-more"><a href="/es/destinos/" class="btn-outline">Ver los 37 destinos →</a></div>
+    </div>
+  </section>
+
+  <!-- BLOG -->
+  <section class="section blog-home-bg" id="blog">
+    <div class="section-inner">
+      <div class="eyebrow">📰 Blog</div>
+      <div class="section-head-row">
+        <div>
+          <h2 class="s-title">Festividades, cultura<br/>e historias de viaje</h2>
+          <p class="s-sub">Las tradiciones de México explicadas temporada por temporada, y a dónde ir para vivirlas.</p>
+        </div>
+        <a href="/es/blog/" class="btn-outline">Ir al blog →</a>
+      </div>
+      <div class="blog-home-grid">
+        <a href="/es/blog/dia-de-muertos.html" class="blog-feature">
+          <img src="/images/blog/dia-de-muertos/noche-de-muertos-janitzio-michoacan.webp" alt="Panteón de Janitzio iluminado con cientos de velas durante la Noche de Muertos en Michoacán" width="1600" height="1059" loading="lazy" decoding="async">
+          <div class="blog-feature-body">
+            <span class="blog-feature-tag">Artículo más reciente</span>
+            <h3>Día de Muertos en México: guía completa de la tradición y dónde vivirla</h3>
+            <p>Qué lleva una ofrenda, la historia de la Catrina y los mejores lugares para vivirlo, de Janitzio a Mixquic y Oaxaca.</p>
+            <span class="blog-feature-more">Leer la guía →</span>
+          </div>
+        </a>
+        <div class="blog-side">
+          <div class="blog-side-title">Próximamente · Temporada navideña</div>
+          <div class="blog-mini"><span class="blog-mini-date">12 dic</span><h4>Día de la Virgen de Guadalupe</h4><p>La peregrinación a la Basílica y la fiesta religiosa más grande del país.</p></div>
+          <div class="blog-mini"><span class="blog-mini-date">16 – 24 dic</span><h4>Las Posadas: piñatas, peregrinos y ponche</h4><p>Nueve noches de fiesta antes de la Navidad.</p></div>
+          <div class="blog-mini"><span class="blog-mini-date">24 dic – 6 ene</span><h4>Navidad, Año Nuevo y Día de Reyes</h4><p>La cena de Nochebuena, las 12 uvas y la Rosca de Reyes.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- FEATURES -->
   <section class="section features-bg" id="features">
     <div class="section-inner">
@@ -1037,81 +1196,6 @@
           <div class="tool-desc">Reserva tours y experiencias en México al instante.</div>
           <div class="tool-badge">Cancelación gratuita</div>
         </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- CITIES -->
-  <section class="section cities-bg" id="cities">
-    <div class="section-inner">
-      <div class="eyebrow">📍 Destinos</div>
-      <h2 class="s-title">Explora las ciudades<br/>más icónicas de México</h2>
-      <p class="s-sub">Desde la vibrante capital hasta paraísos costeros y joyas coloniales — descubre México como un local.</p>
-      <div class="cities-grid">
-        <div class="city-card">
-          <a href="/es/destinos/ciudad-de-mexico/">
-            <div class="city-bg city-bg-cdmx">
-              <div class="city-emoji-bg">🏙️</div>
-              <div>
-                <div class="city-label">Capital</div>
-                <div class="city-name">Ciudad de México</div>
-                <div class="city-chips">
-                  <span class="city-chip">🏛️ Historia</span>
-                  <span class="city-chip">🍜 Comida</span>
-                  <span class="city-chip">🎨 Arte</span>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="city-card">
-          <a href="/es/destinos/cancun/">
-            <div class="city-bg city-bg-cancun">
-              <div class="city-emoji-bg">🏖️</div>
-              <div>
-                <div class="city-label">Costa Caribeña</div>
-                <div class="city-name">Cancún</div>
-                <div class="city-chips">
-                  <span class="city-chip">🏖️ Playas</span>
-                  <span class="city-chip">💧 Cenotes</span>
-                  <span class="city-chip">🏯 Ruinas</span>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="city-card">
-          <a href="/es/destinos/oaxaca-de-juarez/">
-            <div class="city-bg city-bg-oax">
-              <div class="city-emoji-bg">🌺</div>
-              <div>
-                <div class="city-label">Sur de México</div>
-                <div class="city-name">Oaxaca</div>
-                <div class="city-chips">
-                  <span class="city-chip">🌿 Cultura</span>
-                  <span class="city-chip">🥃 Mezcal</span>
-                  <span class="city-chip">🍫 Gastronomía</span>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="city-card">
-          <a href="/es/destinos/guadalajara/">
-            <div class="city-bg city-bg-gdl">
-              <div class="city-emoji-bg">🎺</div>
-              <div>
-                <div class="city-label">Occidente de México</div>
-                <div class="city-name">Guadalajara</div>
-                <div class="city-chips">
-                  <span class="city-chip">🎺 Mariachi</span>
-                  <span class="city-chip">🥃 Tequila</span>
-                  <span class="city-chip">🎨 Arte</span>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
       </div>
     </div>
   </section>
