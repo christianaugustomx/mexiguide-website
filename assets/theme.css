@@ -155,3 +155,12 @@ body > .header { margin-top: 10px; }
   .header, .header-card { margin-left: 8px; margin-right: 8px; border-radius: 22px; }
   .how-bg { margin-left: 8px; margin-right: 8px; border-radius: 26px; }
 }
+
+/* ---- nav spacing: stop the crowding (logo touching links, wrapped labels) ---- */
+.nav-inner, .nav-container { max-width: 1280px !important; gap: 28px; }
+.nav-logo, .nav-brand { margin-right: 12px; flex-shrink: 0; }
+.nav-links { gap: 18px !important; }
+.nav-links a { white-space: nowrap; font-size: 13.5px; }
+.nav-links .lang-switch { padding: 5px 9px; font-size: 12px; }
+.nav-pill, .nav-cta { margin-left: 4px; padding: 8px 16px; flex-shrink: 0; }
+@media (max-width: 1180px) { .nav-links { gap: 12px !important; } .nav-links a { font-size: 13px; } }
