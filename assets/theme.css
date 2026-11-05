@@ -1,0 +1,156 @@
+/* MexiGuide 2026 site theme — matches the redesigned app.
+   Loaded AFTER each page's own <style>, so it overrides tokens and key components. */
+:root {
+  --base: #F5F0EB;
+  --card: #FBF9F6;
+  --white: #FFFFFF;
+  --border: rgba(27,67,50,0.09);
+  --border-hi: rgba(27,67,50,0.16);
+  --ink: #1B4332;
+  --accent: #C4793A;
+  --accent-hi: #E79A58;
+  --text-hi: #0F2419;
+  --text-mid: #5d6b61;
+  --text-lo: #8A8478;
+  --r-card: 22px;
+  --shadow-soft: 0 8px 28px rgba(27,67,50,0.07);
+  --shadow-hover: 0 16px 40px rgba(27,67,50,0.12);
+}
+
+html { scroll-behavior: smooth; }
+body {
+  background-color: var(--base);
+  background-image:
+    linear-gradient(rgba(27,67,50,0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(27,67,50,0.035) 1px, transparent 1px);
+  background-size: 28px 28px;
+  color: var(--text-hi);
+}
+
+/* ---- decorative stripe → retire in favour of clean cream chrome ---- */
+.deco-stripe, .nav-stripe, .stripe { display: none !important; }
+
+/* ---- nav ---- */
+nav {
+  background: rgba(245,240,235,0.82) !important;
+  -webkit-backdrop-filter: blur(18px) saturate(1.3);
+  backdrop-filter: blur(18px) saturate(1.3);
+  border-bottom: 1px solid var(--border) !important;
+  box-shadow: none !important;
+}
+.nav-pill, .nav-cta {
+  background: linear-gradient(180deg, var(--accent-hi), var(--accent)) !important;
+  color: #fff !important;
+  border: 0 !important;
+  border-radius: 999px !important;
+  box-shadow: 0 6px 16px rgba(196,121,58,0.32) !important;
+}
+.nav-pill:hover, .nav-cta:hover { filter: brightness(1.06); background: linear-gradient(180deg, var(--accent-hi), var(--accent)) !important; }
+.nav-logo-mark { border-radius: 12px; }
+.nav-links a:hover { color: var(--ink); }
+
+/* ---- primary / secondary buttons ---- */
+.btn-jade, .cta-button, .card-button {
+  background: linear-gradient(180deg, var(--accent-hi), var(--accent)) !important;
+  color: #fff !important;
+  border: 0;
+  border-radius: 16px !important;
+  box-shadow: 0 8px 20px rgba(196,121,58,0.34) !important;
+}
+.btn-jade:hover, .cta-button:hover, .card-button:hover { filter: brightness(1.07); }
+.btn-ghost {
+  background: #fff !important;
+  color: var(--ink) !important;
+  border: 1px solid var(--border-hi) !important;
+  border-radius: 16px !important;
+  backdrop-filter: none !important;
+}
+.btn-ghost:hover { background: var(--card) !important; }
+
+/* ---- eyebrow / chips ---- */
+.eyebrow, .hero-eyebrow {
+  background: #fff !important;
+  border: 1px solid var(--border-hi) !important;
+  color: var(--accent) !important;
+  border-radius: 999px;
+}
+.hero-chip, .chip, .filter-chip {
+  background: #fff;
+  border: 1px solid var(--border);
+  color: var(--ink);
+}
+
+/* ---- cards ---- */
+.feat-card, .tool-card, .product-card, .number-card, .embassy-card, .city-card, .card, .blog-card, .step {
+  border-radius: var(--r-card) !important;
+  box-shadow: var(--shadow-soft);
+}
+.feat-card, .tool-card, .product-card, .number-card, .embassy-card, .city-card, .card, .blog-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+}
+.feat-card:hover, .tool-card:hover, .product-card:hover, .number-card:hover, .city-card:hover, .card:hover { box-shadow: var(--shadow-hover); }
+
+/* ---- sections ---- */
+.features-bg, .cities-bg { background: transparent; }
+.tools-bg, .blog-home-bg, .download-bg { background: rgba(255,255,255,0.55); }
+.s-title, .section-header { color: var(--ink); }
+.s-sub { color: var(--text-mid); }
+
+/* ---- HOME hero: light, app-style ---- */
+.hero {
+  background:
+    radial-gradient(520px 360px at 85% 8%, rgba(231,154,88,0.20), transparent 70%),
+    radial-gradient(480px 360px at 5% 90%, rgba(42,157,143,0.14), transparent 70%),
+    transparent;
+}
+.hero-glow-1, .hero-glow-2 { display: none; }
+.hero h1 { color: var(--ink); }
+.hero h1 em { color: var(--accent); }
+.hero-sub { color: var(--text-mid); }
+.hero-chip { color: var(--text-mid); }
+.hero-news { background: #fff !important; border-color: var(--border-hi) !important; color: var(--ink) !important; }
+.hero-news:hover { background: var(--card) !important; }
+.stats { background: transparent; border: 0; }
+.stats-inner {
+  background: #fff; border: 1px solid var(--border); border-radius: 26px;
+  box-shadow: var(--shadow-soft); margin-top: 28px; margin-bottom: 8px;
+  max-width: 1056px;
+}
+.stat-n { color: var(--ink); }
+
+/* inner-page hero bands (tools / emergency) */
+.page-hero, body > section.hero, .hero-content { color: var(--ink); }
+.hero h1 { font-family: 'Merriweather', serif; }
+
+/* ---- dark brand blocks become rounded floating cards ---- */
+.how-bg {
+  margin: 8px 16px; border-radius: 36px;
+  background: linear-gradient(160deg, #0F2419 0%, #1B4332 100%);
+}
+.header, .header-card {
+  margin: 76px 14px 0; border-radius: 28px;
+  box-shadow: 0 12px 34px rgba(15,36,25,0.18);
+}
+.page-container .header-card { margin-top: 8px; }
+.header-card h1 { color: #fff; font-family: 'Merriweather', serif; }
+.dest-card { border-radius: var(--r-card) !important; box-shadow: var(--shadow-soft); }
+
+/* safety-map: header is under the nav as a flex column page */
+body > .header { margin-top: 10px; }
+
+/* ---- footer ---- */
+.footer, footer {
+  border-radius: 36px 36px 0 0;
+  background: linear-gradient(180deg, #1B4332, #0F2419);
+}
+
+/* ---- mobile: show the interactive phone under the hero copy ---- */
+@media (max-width: 960px) {
+  .phone-wrap { display: flex !important; margin-top: 8px; }
+  .stats-inner { margin-top: 12px; }
+}
+@media (max-width: 480px) {
+  .header, .header-card { margin-left: 8px; margin-right: 8px; border-radius: 22px; }
+  .how-bg { margin-left: 8px; margin-right: 8px; border-radius: 26px; }
+}

@@ -346,6 +346,7 @@ function buildDestIndex(lang, cities, alternates) {
   <meta name="twitter:image" content="${SITE_URL}/logo.png" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Merriweather:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet" />
   ${STYLE}
+  <link rel="stylesheet" href="/assets/theme.css" />
 </head>
 <body>
   ${buildNav(lang, alternates)}
