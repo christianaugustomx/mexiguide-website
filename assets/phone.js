@@ -25,7 +25,7 @@
       profile: 'Profile', traveler: 'Traveler', travSub: 'Free plan · 2 cities', proT: 'Unlock MexiGuide Pro', proP: 'All local dishes, offline safety maps and unlimited cities.', proCta: 'See Pro', proToast2: 'Opens the Pro plans in the app',
       streak: 'Streak', streakSub: '5 days exploring', language: 'Language', notif: 'Safety alerts', offline: 'Offline mode', days: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
       tabs: ['Explore', 'My trip', 'Map', 'Tools', 'Profile'], me: 'You',
-      dests: { cdmx: ['Cuauhtémoc (Alcaldía)', 'Cities'], teo: ['Teotihuacán', 'Estado de México'], tep: ['Tepoztlán, Morelos', 'Morelos'], tul: ['Tulum', 'Quintana Roo'], oax: ['Oaxaca de Juárez', 'Oaxaca'], sma: ['San Miguel de Allende', 'Guanajuato'], pva: ['Puerto Vallarta', 'Jalisco'] },
+            dests: { cdmx: ['Cuauhtémoc (Alcaldía)', 'Cities'], cun: ['Cancún', 'Quintana Roo'], oax: ['Oaxaca de Juárez', 'Oaxaca'], gdl: ['Guadalajara', 'Jalisco'] },
       lists: {
         cdmx: { name: 'Ciudad de México', food: ['Tlacoyos from a street comal', 'Tacos de canasta (basket tacos)', 'Pozole on the weekend', 'Esquites or grilled corn from a street cart', 'Quesadillas at Mercado de San Juan', 'Tamales and atole from a street stand', 'Churros at El Moro', 'Try mole in Coyoacán', 'Eat carnitas at El Hidalguense', 'Try tacos al pastor'], places: ['Explore the Zócalo', 'Visit Frida Kahlo Museum', 'Walk Chapultepec Park'], exps: ['Float the canals of Xochimilco', 'Watch a lucha libre match', 'Climb the Pyramid of the Sun'] },
         aca: { name: 'Acapulco', food: ['Ceviche at the bay', 'Pozole verde on Thursday', 'Aguachile on the beach', 'Fresh coconut water', 'Fish tacos at La Quebrada', 'Tostadas de camarón'], places: ['Watch the La Quebrada cliff divers', 'Visit Fort San Diego', 'Relax at Playa Condesa'], exps: ['Take a Bay sunset cruise', 'Dance at a Costera nightclub'] }
@@ -53,7 +53,7 @@
       profile: 'Perfil', traveler: 'Viajero', travSub: 'Plan gratis · 2 ciudades', proT: 'Desbloquea MexiGuide Pro', proP: 'Todos los platillos, mapas de seguridad sin conexión y ciudades ilimitadas.', proCta: 'Ver Pro', proToast2: 'Abre los planes Pro en la app',
       streak: 'Racha', streakSub: '5 días explorando', language: 'Idioma', notif: 'Alertas de seguridad', offline: 'Modo sin conexión', days: ['L', 'M', 'M', 'J', 'V', 'S', 'D'],
       tabs: ['Explorar', 'Mi viaje', 'Mapa', 'Herramientas', 'Perfil'], me: 'Tú',
-      dests: { cdmx: ['Cuauhtémoc (Alcaldía)', 'Ciudades'], teo: ['Teotihuacán', 'Estado de México'], tep: ['Tepoztlán, Morelos', 'Morelos'], tul: ['Tulum', 'Quintana Roo'], oax: ['Oaxaca de Juárez', 'Oaxaca'], sma: ['San Miguel de Allende', 'Guanajuato'], pva: ['Puerto Vallarta', 'Jalisco'] },
+            dests: { cdmx: ['Cuauhtémoc (Alcaldía)', 'Ciudades'], cun: ['Cancún', 'Quintana Roo'], oax: ['Oaxaca de Juárez', 'Oaxaca'], gdl: ['Guadalajara', 'Jalisco'] },
       lists: {
         cdmx: { name: 'Ciudad de México', food: ['Tlacoyos de comal callejero', 'Tacos de canasta', 'Pozole de fin de semana', 'Esquites o elote asado de carrito', 'Quesadillas en el Mercado de San Juan', 'Tamales y atole de puesto callejero', 'Churros en El Moro', 'Probar mole en Coyoacán', 'Comer carnitas en El Hidalguense', 'Probar tacos al pastor'], places: ['Explorar el Zócalo', 'Visitar el Museo Frida Kahlo', 'Caminar por el Bosque de Chapultepec'], exps: ['Pasear en trajinera por Xochimilco', 'Ver una función de lucha libre', 'Subir la Pirámide del Sol'] },
         aca: { name: 'Acapulco', food: ['Ceviche en la bahía', 'Pozole verde en jueves', 'Aguachile en la playa', 'Agua de coco fresca', 'Tacos de pescado en La Quebrada', 'Tostadas de camarón'], places: ['Ver a los clavadistas de La Quebrada', 'Visitar el Fuerte de San Diego', 'Relajarte en Playa Condesa'], exps: ['Paseo en bahía al atardecer', 'Bailar en un antro de la Costera'] }
@@ -81,7 +81,7 @@
       profile: 'Perfil', traveler: 'Viajante', travSub: 'Plano grátis · 2 cidades', proT: 'Desbloqueie o MexiGuide Pro', proP: 'Todos os pratos, mapas de segurança offline e cidades ilimitadas.', proCta: 'Ver Pro', proToast2: 'Abre os planos Pro no app',
       streak: 'Sequência', streakSub: '5 dias explorando', language: 'Idioma', notif: 'Alertas de segurança', offline: 'Modo offline', days: ['S', 'T', 'Q', 'Q', 'S', 'S', 'D'],
       tabs: ['Explorar', 'Minha viagem', 'Mapa', 'Ferramentas', 'Perfil'], me: 'Você',
-      dests: { cdmx: ['Cuauhtémoc (Alcaldía)', 'Cidades'], teo: ['Teotihuacán', 'Estado de México'], tep: ['Tepoztlán, Morelos', 'Morelos'], tul: ['Tulum', 'Quintana Roo'], oax: ['Oaxaca de Juárez', 'Oaxaca'], sma: ['San Miguel de Allende', 'Guanajuato'], pva: ['Puerto Vallarta', 'Jalisco'] },
+            dests: { cdmx: ['Cuauhtémoc (Alcaldía)', 'Cidades'], cun: ['Cancún', 'Quintana Roo'], oax: ['Oaxaca de Juárez', 'Oaxaca'], gdl: ['Guadalajara', 'Jalisco'] },
       lists: {
         cdmx: { name: 'Cidade do México', food: ['Tlacoyos de comal de rua', 'Tacos de canasta', 'Pozole no fim de semana', 'Esquites ou milho grelhado de carrinho', 'Quesadillas no Mercado de San Juan', 'Tamales e atole de barraca de rua', 'Churros no El Moro', 'Provar mole em Coyoacán', 'Comer carnitas no El Hidalguense', 'Provar tacos al pastor'], places: ['Explorar o Zócalo', 'Visitar o Museu Frida Kahlo', 'Caminhar no Bosque de Chapultepec'], exps: ['Passear de trajinera em Xochimilco', 'Assistir a uma luta livre', 'Subir a Pirâmide do Sol'] },
         aca: { name: 'Acapulco', food: ['Ceviche na baía', 'Pozole verde na quinta', 'Aguachile na praia', 'Água de coco fresca', 'Tacos de peixe na La Quebrada', 'Tostadas de camarão'], places: ['Ver os saltadores da La Quebrada', 'Visitar o Forte de San Diego', 'Relaxar na Playa Condesa'], exps: ['Passeio de barco ao pôr do sol', 'Dançar numa balada da Costera'] }
@@ -105,8 +105,14 @@
     { n: 'Tlalpan', l: 1, p: '55,445 100,425 95,465 125,490 175,470 180,500 150,560 90,570 50,520', t: [100, 520] },
     { n: 'Xochimilco', l: 2, p: '180,500 235,545 210,600 150,560', t: [190, 560] }
   ];
-  var DEST_ORDER = [['cdmx', 'cities', 3], ['teo', 'ruins', 2], ['tep', 'colonial', 2], ['tul', 'beaches', 2], ['oax', 'colonial', 2], ['sma', 'colonial', 1], ['pva', 'beaches', 2]];
-  var GRAD = { cdmx: 'linear-gradient(135deg,#6f7f6a,#a58a62 60%,#c4975a)', teo: 'linear-gradient(135deg,#5E9A83,#B88A4A)', tep: 'linear-gradient(135deg,#5E9A83,#C78B48)', tul: 'linear-gradient(135deg,#3FA2A8,#E3B87A)', oax: 'linear-gradient(135deg,#6E9A6A,#D08A44)', sma: 'linear-gradient(135deg,#8C7A9A,#D99A5B)', pva: 'linear-gradient(135deg,#3C8FB0,#E7A867)' };
+  var DEST_ORDER = [['cdmx', 'cities', 3], ['cun', 'beaches', 2], ['oax', 'colonial', 2], ['gdl', 'cities', 2]];
+  var IMG = {
+    cdmx: 'https://images.unsplash.com/photo-1518659526054-190340b32735?w=600&q=80',
+    cun: 'https://images.unsplash.com/photo-1510097467424-192d713fd8b2?w=600&q=80',
+    oax: 'https://images.unsplash.com/photo-1562869929-bda0650edb1f?w=600&q=80',
+    gdl: 'https://images.unsplash.com/photo-1565670105658-ea35d27f7de7?w=600&q=80'
+  };
+  function bg(k, shade) { return 'background:' + (shade ? 'linear-gradient(180deg,rgba(0,0,0,.05) 35%,rgba(0,0,0,.55)),' : '') + 'url(' + IMG[k] + ') center/cover #8a8f7c'; }
   var DOTS = ['#2A62A8', '#E8913A', '#2A9D8F', '#C4793A', '#2A9D8F', '#2A62A8', '#E8913A', '#2A9D8F', '#C4793A', '#2A62A8', '#E8913A', '#2A9D8F'];
 
   var I = {
@@ -195,16 +201,16 @@
       if (!list.length) cards = '<div class="mg-empty">' + x.none + '</div>';
       else {
         var f = list[0], fd = x.dests[f[0]];
-        cards += '<a class="mg-hero mg-fade" href="' + root.getAttribute('data-dest') + '" style="background:' + GRAD[f[0]] + '"><span class="bar"></span><span class="mg-lvl" style="color:' + (f[2] >= 3 ? '#7a7510' : '#2f7d5f') + '"><i></i>' + x.lvl[f[2]] + ' · Lv ' + f[2] + '</span><h3>' + fd[0] + '</h3><div class="row"><span>' + fd[1] + '</span><b>' + x.guide + ' →</b></div></a>';
+        cards += '<a class="mg-hero mg-fade" href="' + root.getAttribute('data-dest') + '" style="' + bg(f[0], true) + '"><span class="bar"></span><span class="mg-lvl" style="color:' + (f[2] >= 3 ? '#7a7510' : '#2f7d5f') + '"><i></i>' + x.lvl[f[2]] + ' · Lv ' + f[2] + '</span><h3>' + fd[0] + '</h3><div class="row"><span>' + fd[1] + '</span><b>' + x.guide + ' →</b></div></a>';
         var rest = list.slice(1, 3);
         if (rest.length) {
           cards += '<div class="mg-two mg-fade">' + rest.map(function (d) {
             var dd = x.dests[d[0]];
-            return '<a class="mg-mini" href="' + root.getAttribute('data-dest') + '"><div class="img" style="background:' + GRAD[d[0]] + '"></div><div class="t"><h4>' + dd[0] + '</h4><p><i style="background:' + LC[d[2] + 1 > 5 ? 5 : (d[2] === 1 ? 1 : 2)] + '"></i>' + dd[1] + '</p></div></a>';
+            return '<a class="mg-mini" href="' + root.getAttribute('data-dest') + '"><div class="img" style="' + bg(d[0]) + '"></div><div class="t"><h4>' + dd[0] + '</h4><p><i style="background:' + LC[d[2] + 1 > 5 ? 5 : (d[2] === 1 ? 1 : 2)] + '"></i>' + dd[1] + '</p></div></a>';
           }).join('') + '</div>';
         }
       }
-      var chips = [['all', x.all], ['beaches', x.beaches], ['colonial', x.colonial], ['ruins', x.ruins], ['cities', x.cities]].map(function (c) {
+      var chips = [['all', x.all], ['beaches', x.beaches], ['colonial', x.colonial], ['cities', x.cities]].map(function (c) {
         return '<button class="mg-chip' + (S.filter === c[0] ? ' on' : '') + '" data-a="filter" data-v="' + c[0] + '">' + c[1] + '</button>';
       }).join('');
       var plan = S.planOpen ? '<div class="mg-card mg-plan mg-fade"><div class="ic">' + I.pin + '</div><div><h4>' + x.planT + '</h4><p>' + x.planP + '</p><button class="go" data-a="goto" data-v="trip">' + x.pick + ' →</button></div><button class="mg-x" data-a="closeplan">✕</button></div>' : '';
