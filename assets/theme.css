@@ -46,6 +46,7 @@ nav {
   box-shadow: 0 6px 16px rgba(196,121,58,0.32) !important;
 }
 .nav-pill:hover, .nav-cta:hover { filter: brightness(1.06); background: linear-gradient(180deg, var(--accent-hi), var(--accent)) !important; }
+.nav-pill, .nav-cta { white-space: nowrap; }
 .nav-logo-mark { border-radius: 12px; }
 .nav-links a:hover { color: var(--ink); }
 
