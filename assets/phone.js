@@ -1,4 +1,4 @@
-/* MexiGuide interactive phone mockup (EN / ES / PT). Mount: <div class="mgp" data-lang="en"></div> */
+/* MexiGuide interactive phone mockup (EN / ES / FR / PT). Mount: <div class="mgp" data-lang="en"></div> */
 (function () {
   'use strict';
 
@@ -57,6 +57,34 @@
       lists: {
         cdmx: { name: 'Ciudad de México', food: ['Tlacoyos de comal callejero', 'Tacos de canasta', 'Pozole de fin de semana', 'Esquites o elote asado de carrito', 'Quesadillas en el Mercado de San Juan', 'Tamales y atole de puesto callejero', 'Churros en El Moro', 'Probar mole en Coyoacán', 'Comer carnitas en El Hidalguense', 'Probar tacos al pastor'], places: ['Explorar el Zócalo', 'Visitar el Museo Frida Kahlo', 'Caminar por el Bosque de Chapultepec'], exps: ['Pasear en trajinera por Xochimilco', 'Ver una función de lucha libre', 'Subir la Pirámide del Sol'] },
         aca: { name: 'Acapulco', food: ['Ceviche en la bahía', 'Pozole verde en jueves', 'Aguachile en la playa', 'Agua de coco fresca', 'Tacos de pescado en La Quebrada', 'Tostadas de camarón'], places: ['Ver a los clavadistas de La Quebrada', 'Visitar el Fuerte de San Diego', 'Relajarte en Playa Condesa'], exps: ['Paseo en bahía al atardecer', 'Bailar en un antro de la Costera'] }
+      }
+    },
+    fr: {
+      evening: 'BONSOIR', where: 'Où explorer aujourd\'hui', emergency: 'Urgences', map: 'Carte', closest: 'Le plus proche de vous',
+      all: 'Tout', beaches: 'Plages', colonial: 'Colonial', ruins: 'Ruines', cities: 'Villes', guide: 'Guide', seeAll: 'Voir toutes les destinations',
+      none: 'Pas encore de destinations dans cette catégorie', planT: 'Planifiez votre voyage', planP: 'Choisissez les villes que vous visiterez et MexiGuide construit votre checklist autour d\'elles.', pick: 'Choisir des villes',
+      yourExp: 'Votre exploration', expSub: 'Guides de ville, cartes de sécurité et objectifs de voyage', places: 'Lieux', food: 'Cuisine', exps: 'Expériences', done: 'fait', expGuides: 'Explorer les guides de ville',
+      myTrip: 'Mon voyage', day: 'Jour', moreCity: '1 ville de plus et un nouveau badge apparaît', stamps: 'sur 2 tampons collectés', aiT: 'Conseils IA', aiS: 'Conseils locaux là où vous êtes en ce moment.',
+      aiTip: 'Astuce : évitez les restaurants à touristes près du Zócalo. Marchez 3 rues et mangez là où les employés de bureau font la queue.',
+      share: 'Partager', doneIn: function (n, c) { return n + ' faits dans ' + c + ' ' + (c === 1 ? 'ville' : 'villes'); }, across: 'Objectifs atteints dans vos villes',
+      myCities: 'Mes villes', removeAll: 'Tout retirer', cityHint: 'Vos villes partagent un anneau. Touchez-en une pour la rendre active dans Food Explorer.', current: 'Actuelle',
+      thingsTo: 'À faire', showing: 'Liste de cette ville. Pour changer, touchez une autre ville dans Mes villes.', foodExp: 'Explorateur culinaire', foodHint: 'Goûtez ces plats locaux. Touchez-en un pour le cocher.',
+      placesExp: 'Lieux · Expériences', pro: 'PRO', proToast: 'Débloquez tous les plats avec MexiGuide Pro', noCities: 'Pas encore de villes. Touchez Choisir des villes dans Explorer.',
+      tools: 'Outils', toolsSub: 'Services de confiance, vérifiés pour le Mexique', nat: 'Urgences nationales', natSub: 'Police, pompiers et ambulance', callToast: 'Sur votre téléphone, cela compose le 911',
+      emNums: 'Numéros d\'urgence', currency: 'Convertisseur de devises', currSub: 'Convertir, pourboire et TVA', amount: 'Montant', tip: 'Pourboire', iva: 'TVA 16 % incluse', rateNote: 'Taux de démo, taux réel dans l\'app',
+      tours: 'Visites et expériences', gygSub: 'Annulation gratuite sur de nombreuses visites', gygP: 'Réservez visites, excursions et activités partout au Mexique', t1: 'Ruines et pyramides', t2: 'Visites culinaires', t3: 'Cénotes', browse: 'Voir les visites',
+      commission: 'MexiGuide touche une petite commission sans frais supplémentaires pour vous.', insurance: 'Assurance voyage', swSub: 'À partir de 45 $ / 4 semaines', swP: 'Couverture médicale pour nomades et voyageurs', swCta: 'Être couvert',
+      sendMoney: 'Envoyer et dépenser', wiseSub: 'Vrai taux de change, frais réduits', wiseP: 'Payez en pesos sans frais bancaires cachés', wiseCta: 'Ouvrir Wise',
+      lvlWord: 'Niveau', of: 'sur', lvl: ['', 'Sûr', 'Plutôt sûr', 'Prudence', 'Grande prudence', 'Risque élevé'],
+      tipL: ['', 'Zone calme, précautions normales', 'Généralement sûr, surveillez vos affaires', 'Pickpockets très actifs dans les zones touristiques', 'Évitez de marcher seul la nuit', 'Déconseillé aux touristes'],
+      search: 'Rechercher villes, outils…', scan: 'Scanner', scanToast: 'Scannez un plat, un panneau ou un menu avec votre appareil photo', locToast: 'Centré sur votre position', cityLbl: 'Mexico', mx: 'Ciudad de México', low: 'Plus sûr', high: 'Plus risqué',
+      profile: 'Profil', traveler: 'Voyageur', travSub: 'Offre gratuite · 2 villes', proT: 'Débloquez MexiGuide Pro', proP: 'Tous les plats locaux, cartes de sécurité hors ligne et villes illimitées.', proCta: 'Voir Pro', proToast2: 'Ouvre les offres Pro dans l\'app',
+      streak: 'Série', streakSub: '5 jours d\'exploration', language: 'Langue', notif: 'Alertes de sécurité', offline: 'Mode hors ligne', days: ['L', 'M', 'M', 'J', 'V', 'S', 'D'],
+      tabs: ['Explorer', 'Mon voyage', 'Carte', 'Outils', 'Profil'], me: 'Vous',
+            dests: { cdmx: ['Cuauhtémoc (Alcaldía)', 'Villes'], cun: ['Cancún', 'Quintana Roo'], oax: ['Oaxaca de Juárez', 'Oaxaca'], gdl: ['Guadalajara', 'Jalisco'] },
+      lists: {
+        cdmx: { name: 'Ciudad de México', food: ['Tlacoyos d\'un comal de rue', 'Tacos de canasta (tacos de panier)', 'Pozole le week-end', 'Esquites ou maïs grillé d\'une charrette de rue', 'Quesadillas au Mercado de San Juan', 'Tamales et atole d\'un stand de rue', 'Churros chez El Moro', 'Goûter le mole à Coyoacán', 'Manger des carnitas à El Hidalguense', 'Goûter les tacos al pastor'], places: ['Explorer le Zócalo', 'Visiter le musée Frida Kahlo', 'Se promener dans le parc de Chapultepec'], exps: ['Naviguer sur les canaux de Xochimilco', 'Assister à un match de lucha libre', 'Gravir la pyramide du Soleil'] },
+        aca: { name: 'Acapulco', food: ['Ceviche dans la baie', 'Pozole verde le jeudi', 'Aguachile sur la plage', 'Eau de coco fraîche', 'Tacos de poisson à La Quebrada', 'Tostadas de camarón'], places: ['Voir les plongeurs de La Quebrada', 'Visiter le fort San Diego', 'Se détendre à Playa Condesa'], exps: ['Croisière au coucher du soleil dans la baie', 'Danser dans une boîte de la Costera'] }
       }
     },
     pt: {
@@ -265,7 +293,7 @@
       var x = t(), rate = 17.8, mxn = (S.amt || 0) * rate, tip = mxn * S.tipPct / 100, ivaAmt = mxn - mxn / 1.16;
       var fmt = function (n) { return n.toLocaleString('en-US', { maximumFractionDigits: 2, minimumFractionDigits: 2 }); };
       var em = '<div class="mg-tool' + (S.em ? ' open' : '') + '"><button data-a="em"><span class="ic" style="background:#FBE9E7;color:#C0392B">' + I.shield + '</span><span><b>' + x.emergency + '</b><span class="s">' + x.emNums + '</span></span><span class="chev">' + I.chev + '</span></button>' +
-        (S.em ? '<div class="body"><div class="mg-num"><b>911</b><span>' + x.natSub + '</span></div><div class="mg-num"><b>078</b><span>' + ({ en: 'Tourist assistance', es: 'Asistencia al turista', pt: 'Assistência ao turista' })[lang] + '</span></div><div class="mg-num"><b>089</b><span>' + ({ en: 'Anonymous tip line', es: 'Denuncia anónima', pt: 'Denúncia anônima' })[lang] + '</span></div></div>' : '') + '</div>';
+        (S.em ? '<div class="body"><div class="mg-num"><b>911</b><span>' + x.natSub + '</span></div><div class="mg-num"><b>078</b><span>' + ({ en: 'Tourist assistance', es: 'Asistencia al turista', fr: 'Assistance aux touristes', pt: 'Assistência ao turista' })[lang] + '</span></div><div class="mg-num"><b>089</b><span>' + ({ en: 'Anonymous tip line', es: 'Denuncia anónima', pt: 'Denúncia anônima' })[lang] + '</span></div></div>' : '') + '</div>';
       var cv = '<div class="mg-tool' + (S.cv ? ' open' : '') + '"><button data-a="cv"><span class="ic" style="background:#E3EAF6;color:#2A62A8">' + I.cur + '</span><span><b>' + x.currency + '</b><span class="s">' + x.currSub + '</span></span><span class="chev">' + I.chev + '</span></button>' +
         (S.cv ? '<div class="body"><div class="mg-conv"><div class="f"><em>USD</em><input type="number" inputmode="decimal" min="0" value="' + S.amt + '" data-a="amt" aria-label="' + x.amount + '"/></div><div class="f"><em>MXN</em><span class="out">$' + fmt(mxn) + '</span></div>' +
           '<div class="mg-tips">' + [10, 15, 20].map(function (p) { return '<button data-a="tip" data-v="' + p + '" class="' + (S.tipPct === p ? 'on' : '') + '">' + x.tip + ' ' + p + '%</button>'; }).join('') + '</div>' +
@@ -304,7 +332,7 @@
     function profile() {
       var x = t();
       var days = x.days.map(function (d, i) { return '<i class="' + (i < 5 ? 'on' : '') + '">' + d + '</i>'; }).join('');
-      var segs = ['en', 'es', 'pt'].map(function (l) { return '<button data-a="lang" data-v="' + l + '" class="' + (lang === l ? 'on' : '') + '">' + l.toUpperCase() + '</button>'; }).join('');
+      var segs = ['en', 'es', 'fr', 'pt'].map(function (l) { return '<button data-a="lang" data-v="' + l + '" class="' + (lang === l ? 'on' : '') + '">' + l.toUpperCase() + '</button>'; }).join('');
       return header('', x.profile) +
         '<div class="mg-avatar"><span class="av">M</span><div><b>' + x.traveler + '</b><span>' + x.travSub + '</span></div></div>' +
         '<div class="mg-procard"><b>' + x.proT + '</b><p>' + x.proP + '</p><button data-a="protoast">' + x.proCta + '</button></div>' +
@@ -351,8 +379,8 @@
       if (a === 'filter') { S.filter = v; return render(true); }
       if (a === 'closeplan') { S.planOpen = false; return render(true); }
       if (a === 'ai') { S.aiOpen = !S.aiOpen; return render(true); }
-      if (a === 'palette') return say({ en: 'Pick a color theme in the app', es: 'Elige un tema de color en la app', pt: 'Escolha um tema de cor no app' }[lang]);
-      if (a === 'share') return say({ en: 'Shares a progress card to Instagram or WhatsApp', es: 'Comparte tu progreso en Instagram o WhatsApp', pt: 'Compartilha seu progresso no Instagram ou WhatsApp' }[lang]);
+      if (a === 'palette') return say({ en: 'Pick a color theme in the app', es: 'Elige un tema de color en la app', fr: 'Choisissez un thème de couleur dans l\'app', pt: 'Escolha um tema de cor no app' }[lang]);
+      if (a === 'share') return say({ en: 'Shares a progress card to Instagram or WhatsApp', es: 'Comparte tu progreso en Instagram o WhatsApp', fr: 'Partage votre progression sur Instagram ou WhatsApp', pt: 'Compartilha seu progresso no Instagram ou WhatsApp' }[lang]);
       if (a === 'city') { if (e.target.closest('[data-a="rm"]')) return; S.cur = v; return render(true); }
       if (a === 'rm') { e.stopPropagation(); S.cities = S.cities.filter(function (c) { return c !== v; }); if (S.cur === v) S.cur = S.cities[0] || ''; return render(true); }
       if (a === 'rmall') { S.cities = []; S.cur = ''; return render(true); }

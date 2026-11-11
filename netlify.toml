@@ -40,19 +40,6 @@
   status = 301
   force = true
 
-# /fr/ has no home page (only /fr/destinations/...). Send it to the FR hub instead of a 404.
-[[redirects]]
-  from = "/fr"
-  to = "/fr/destinations/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/fr/"
-  to = "/fr/destinations/"
-  status = 301
-  force = true
-
 # Affiliate links: server-side 302 (temporary — partner URLs may change) so crawlers
 # don't index empty meta-refresh pages. Old /go/*.html URLs keep working.
 

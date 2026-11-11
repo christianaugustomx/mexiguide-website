@@ -388,6 +388,14 @@ for (const c of cities) {
 const sitemap = [];
 let pageCount = 0;
 
+// Home pages (one per language) with hreflang alternates
+{
+  const homeAlt = { en: '/', es: '/es/', fr: '/fr/', pt: '/pt/' };
+  const xHome = Object.entries(homeAlt).map(([l, u]) => `<xhtml:link rel="alternate" hreflang="${l}" href="${SITE_URL}${u}"/>`).join('')
+    + `<xhtml:link rel="alternate" hreflang="x-default" href="${SITE_URL}/"/>`;
+  for (const u of Object.values(homeAlt)) sitemap.push(`<url><loc>${SITE_URL}${u}</loc><priority>1.0</priority>${xHome}</url>`);
+}
+
 for (const city of cities) {
   const slug = slugs.get(city.city_id);
   const avail = ['en', ...Object.keys(city.translations || {})].filter(l => OUT_LANGS.includes(l));
