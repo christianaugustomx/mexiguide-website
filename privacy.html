@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-  <title>Privacy Policy — MexiGuide</title>
+  <title>Privacy Policy | MexiGuide</title>
   <meta name="description" content="MexiGuide Privacy Policy. Learn how we collect, use, and protect your data." />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Merriweather:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet" />
   <style>
@@ -111,7 +111,7 @@
         <li><a href="/#download" class="nav-pill">Download Free</a></li>
         <li><a href="/privacy.html" class="lang-switch" style="opacity:1;font-weight:700;"><span class="lang-flag">🇺🇸</span> EN</a></li>
         <li><a href="/es/privacy.html" class="lang-switch"><span class="lang-flag">🇲🇽</span> ES</a></li>
-        <li><a href="/fr/destinations/" class="lang-switch"><span class="lang-flag">🇫🇷</span> FR</a></li>
+        <li><a href="/fr/privacy.html" class="lang-switch"><span class="lang-flag">🇫🇷</span> FR</a></li>
         <li><a href="/pt/privacy.html" class="lang-switch"><span class="lang-flag">🇧🇷</span> PT</a></li>
       </ul>
       <button class="nav-toggle" id="navToggle" aria-label="Menu">
@@ -122,111 +122,112 @@
 
   <section class="legal-hero">
     <h1>Privacy Policy</h1>
-    <p>Last updated: April 2, 2026</p>
+    <p>Last updated: November 19, 2026</p>
   </section>
 
   <div class="legal-content">
 
-    <p><em>This Privacy Notice is available in <a href="/es/privacy.html">Spanish (Español)</a>. In case of conflict, the Spanish version shall prevail for users located in Mexico.</em></p>
+    <p><em>This Privacy Policy is also available in <a href="/es/privacy.html">Spanish (Español)</a>, <a href="/fr/privacy.html">French (Français)</a> and <a href="/pt/privacy.html">Portuguese (Português)</a>. In case of conflict, the Spanish version shall prevail for users located in Mexico.</em></p>
 
-    <h2>1. Introduction</h2>
-    <p>MexiGuide ("we," "us," or "our"), operated by Rumbotech Labs, operates the MexiGuide website and mobile application. This Privacy Notice (<em>Aviso de Privacidad</em>) explains how we collect, use, disclose, and safeguard your personal data in compliance with the Federal Law for the Protection of Personal Data Held by Private Parties (<em>Ley Federal de Protección de Datos Personales en Posesión de los Particulares</em>, "LFPDPPP") and its Regulations.</p>
-    <p><strong>Data Controller:</strong> Rumbotech Labs<br>
-    <strong>Contact:</strong> privacy@mexiguide.org</p>
+    <p>MexiGuide ("we", "us", or "our") is operated by Rumbo Tech Labs, S.A.S. (Mexico). This Privacy Policy describes how we collect, use, and protect your information when you use the MexiGuide mobile application.</p>
 
-    <h2>2. Information We Collect</h2>
-    <p><strong>Information you provide:</strong></p>
+    <h2>1. Information we collect</h2>
+
+    <p><strong>Account Information</strong></p>
+
+    <p>When you create an account using Google Sign-In or Sign in with Apple, we receive your name, email address, and profile photo. We store a unique user ID to manage your account.</p>
+
+    <p><strong>Location Data</strong></p>
+
+    <p>With your permission, we use your device's location to show nearby safety zones, hospitals, and your position on the map. Safety zone alerts are worked out on your phone (and, in the Apple Watch app, on the watch): your position is not sent to our servers for them. Background location is used only for safety zone alerts, and only when you enable this feature.</p>
+
+    <p>When you use AI tips or Identify, an approximate location (rounded to about 100 meters) is sent to our server to tailor the result. The ride safety check sends your start and destination points to our server, and the destination you type to OpenStreetMap to find it on the map.</p>
+
+    <p>On iPhone, the map shows the current weather. To get it, your position rounded to about 11 km is sent to Apple WeatherKit, at most about every 30 minutes. It is never your exact location and it is not sent to our servers.</p>
+
+    <p><strong>Camera &amp; Photos</strong></p>
+
+    <p>When you use the Identify feature, your photos are sent to our server for AI analysis. Images are processed in real-time and are not stored permanently on our servers.</p>
+
+    <p><strong>Usage Data</strong></p>
+
+    <p>We collect usage analytics (via Firebase Analytics), tied to a random app ID rather than your name, to understand how the app is used and to improve your experience. This includes screen views, feature usage, and crash reports. You can turn this off at any time.</p>
+
+    <h2>2. How we use your information</h2>
+
     <ul>
-      <li>Account registration details (name, email address)</li>
-      <li>Profile preferences (language, travel interests)</li>
-      <li>Feedback and support inquiries</li>
+      <li>Display your location on safety maps and trigger zone alerts</li>
+      <li>Process images through AI services (Anthropic Claude) for the Identify feature</li>
+      <li>Provide personalized travel recommendations</li>
+      <li>Track your travel milestones and goals</li>
+      <li>Manage your subscription and purchases (via RevenueCat / Apple / Google)</li>
+      <li>Send push notifications for safety advisories (when enabled)</li>
+      <li>Improve the app through usage analytics (unless you turn them off)</li>
     </ul>
-    <p><strong>Information collected automatically:</strong></p>
+
+    <h2>3. Third-party services</h2>
+
+    <p>We share data with the following services, strictly for app functionality:</p>
+
     <ul>
-      <li>Device information (device type, operating system, browser)</li>
-      <li>Usage data (pages visited, features used, time spent)</li>
-      <li>Location data (only when you grant permission, used for safety features and nearby recommendations)</li>
-      <li>Analytics data via third-party services (e.g., Google Analytics)</li>
+      <li>Firebase (Google): Authentication, crash reporting, analytics</li>
+      <li>Supabase: Database and backend services</li>
+      <li>OpenStreetMap (Nominatim): Turns a typed destination or an approximate photo location into a place name</li>
+      <li>MapTiler: Map images (their servers see which area of the map you are viewing)</li>
+      <li>Apple WeatherKit: Current weather on the iPhone map (receives your position rounded to about 11 km)</li>
+      <li>Anthropic: AI image analysis and travel tips (receives the photo or an approximate location; images processed in real-time, not stored)</li>
+      <li>RevenueCat: Subscription and purchase management</li>
+      <li>Apple / Google: In-app purchases and payment processing</li>
     </ul>
-    <p><strong>Sensitive data:</strong> We may collect precise geolocation data, which is considered sensitive under the LFPDPPP. This data is only collected with your express consent and is used exclusively for safety maps, emergency features, and location-based recommendations.</p>
 
-    <h2>3. Purpose of Data Processing</h2>
-    <p><strong>Primary purposes</strong> (necessary for the Service):</p>
+    <p>Affiliate partners (Airalo, SafetyWing, Wise, NordVPN, GetYourGuide, Booking.com) are linked from within the app. Clicking an affiliate link takes you to their website; we do not share your personal data with them.</p>
+
+    <h2>4. Data storage &amp; security</h2>
+
+    <p>Your data is stored on secure servers managed by Supabase (AWS infrastructure) and Firebase (Google Cloud). We use industry-standard encryption for data in transit (HTTPS/TLS) and at rest.</p>
+
+    <h2>5. Data retention</h2>
+
     <ul>
-      <li>Provide and improve our travel safety features, city guides, and tools</li>
-      <li>Deliver personalized recommendations and safety alerts</li>
-      <li>Send important safety notifications and service updates</li>
-      <li>Respond to your inquiries and support requests</li>
-      <li>Process payments for premium features</li>
+      <li>Account data: Retained until you delete your account</li>
+      <li>AI-processed images: Not stored permanently: processed in real-time only</li>
+      <li>Analytics data: Retained for up to 14 months (Firebase default)</li>
+      <li>Location data: Used in real-time only and never saved in our database. Server logs may briefly keep a rounded position (about 1 km) to fix errors.</li>
     </ul>
-    <p><strong>Secondary purposes</strong> (not essential, you may opt out):</p>
+
+    <h2>6. Your rights</h2>
+
+    <p>You have the right to:</p>
+
     <ul>
-      <li>Analyze usage trends to improve the app experience</li>
-      <li>Display relevant affiliate partner offers (eSIM, insurance, VPN)</li>
-      <li>Send marketing communications about new features</li>
+      <li>Access your personal data</li>
+      <li>Delete your account and all associated data (via Profile &gt; Delete Account)</li>
+      <li>Opt out of usage analytics and crash reports (via Profile &gt; Share usage and crash data)</li>
+      <li>Clear your trip data on this phone (via Profile &gt; Clear my trip data)</li>
+      <li>Withdraw location permissions at any time via your device settings</li>
+      <li>Request a copy of your data by contacting us</li>
     </ul>
-    <p>You may opt out of secondary purposes at any time by contacting privacy@mexiguide.org without affecting the primary services.</p>
 
-    <h2>4. Legal Basis</h2>
-    <p>We process your personal data based on your express consent provided at account registration. For features accessible without an account, use of the Service constitutes implied consent for automatically collected data. You may revoke your consent at any time (see Section 10).</p>
+    <p>These rights apply under the Mexican Federal Law on Protection of Personal Data (LFPDPPP), the European General Data Protection Regulation (GDPR), and Apple/Google store policies.</p>
 
-    <h2>5. Location Data</h2>
-    <p>MexiGuide uses location data to power safety maps, emergency features, and nearby recommendations. Location access is always optional and can be revoked at any time through your device settings. We do not sell or share precise location data with third parties.</p>
+    <p><strong>How to exercise your rights:</strong> Send a request to <a href="mailto:privacy@mexiguide.org">privacy@mexiguide.org</a> including your full name, the email associated with your account, a description of the right(s) you wish to exercise, and any supporting documentation. We will respond within 20 business days, as required by Mexican law.</p>
 
-    <h2>6. Third-Party Services and Data Transfers</h2>
-    <p>Our app integrates with third-party partners including:</p>
-    <ul>
-      <li><strong>Airalo</strong> — eSIM services</li>
-      <li><strong>SafetyWing</strong> — Travel insurance</li>
-      <li><strong>Wise</strong> — Currency exchange</li>
-      <li><strong>NordVPN</strong> — VPN services</li>
-      <li><strong>GetYourGuide</strong> — Tours and activities</li>
-      <li><strong>Ko-fi</strong> — Tip jar / donations</li>
-      <li><strong>Supabase</strong> — Backend infrastructure</li>
-    </ul>
-    <p>When you use these third-party services through MexiGuide, your data may be transferred to these providers. Each third-party service has its own privacy policy. We ensure that any data transfer to third parties complies with the LFPDPPP and that appropriate data protection agreements are in place.</p>
+    <h2>7. Children's privacy</h2>
 
-    <h2>7. Cookies and Tracking</h2>
-    <p>Our website uses cookies and similar technologies to enhance your browsing experience, remember preferences, and gather analytics. You can manage cookie preferences through your browser settings.</p>
+    <p>MexiGuide is not directed at children under 13. We do not knowingly collect personal information from children under 13.</p>
 
-    <h2>8. Data Security</h2>
-    <p>We implement industry-standard administrative, technical, and physical security measures to protect your data, including encryption in transit (HTTPS/TLS) and at rest. However, no method of electronic transmission or storage is 100% secure.</p>
+    <h2>8. Changes to this policy</h2>
 
-    <h2>9. Data Retention</h2>
-    <p>We retain your personal data only as long as necessary to fulfill the purposes described in this Privacy Notice, or as required by applicable law. You may request deletion of your account and associated data at any time.</p>
+    <p>We may update this Privacy Policy from time to time. The "Last updated" date at the top reflects the most recent revision. Continued use of the app after changes constitutes acceptance.</p>
 
-    <h2>10. Your ARCO Rights</h2>
-    <p>Under Mexican law (LFPDPPP), you have the right to:</p>
-    <ul>
-      <li><strong>Access</strong> (<em>Acceso</em>): Know what personal data we hold about you</li>
-      <li><strong>Rectify</strong> (<em>Rectificación</em>): Correct inaccurate or incomplete data</li>
-      <li><strong>Cancel</strong> (<em>Cancelación</em>): Request deletion of your data</li>
-      <li><strong>Oppose</strong> (<em>Oposición</em>): Object to the processing of your data for specific purposes</li>
-    </ul>
-    <p>You also have the right to:</p>
-    <ul>
-      <li>Revoke your consent for data processing</li>
-      <li>Limit the use or disclosure of your data</li>
-      <li>Opt out of marketing communications</li>
-      <li>Request a copy of your data in a portable format</li>
-      <li>Withdraw consent for location tracking</li>
-    </ul>
-    <p><strong>How to exercise your rights:</strong> Send a request to privacy@mexiguide.org including your full name, email associated with your account, a description of the right(s) you wish to exercise, and any supporting documentation. We will respond within 20 business days, as required by the LFPDPPP.</p>
+    <h2>9. This website</h2>
+    <p>This website (mexiguide.org) has no accounts and does not use analytics, advertising trackers or cookies. The safety map page loads map images from a map provider, whose servers see which area you are viewing. Links to partners (Airalo, Booking.com, SafetyWing, Wise and others) take you to their websites; we may earn a commission, and we do not share your personal data with them.</p>
 
-    <h2>11. Children's Privacy</h2>
-    <p>MexiGuide is not directed to children under 13. We do not knowingly collect personal information from children. If you believe a child has provided us with personal data, please contact us so we can remove it.</p>
+    <h2>10. Contact us</h2>
 
-    <h2>12. International Users</h2>
-    <p>MexiGuide is operated from Mexico. If you access our services from outside Mexico, your data may be transferred to and processed in Mexico or other countries where our service providers operate. We ensure that any international data transfer complies with the LFPDPPP requirements.</p>
-
-    <h2>13. Changes to This Privacy Notice</h2>
-    <p>We may update this Privacy Notice from time to time. For material changes, we will notify you at least 30 days in advance via email or in-app notification. We will also update the "Last updated" date above. If you do not agree with the changes, you may terminate your account before the changes take effect.</p>
-
-    <h2>14. Contact Us</h2>
-    <p>If you have questions about this Privacy Notice, or wish to exercise your ARCO rights, contact us at:</p>
-    <p><strong>Data Controller:</strong> Rumbotech Labs<br>
-    <strong>Email:</strong> privacy@mexiguide.org<br>
-    <strong>Website:</strong> <a href="https://mexiguide.org">mexiguide.org</a></p>
+    <p>Rumbo Tech Labs, S.A.S.<br>
+    Email: <a href="mailto:privacy@mexiguide.org">privacy@mexiguide.org</a><br>
+    Website: <a href="https://mexiguide.org">mexiguide.org</a></p>
 
   </div>
 
@@ -270,7 +271,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2026 MexiGuide &middot; Built by Rumbotech Labs</p>
+        <p>&copy; 2026 MexiGuide &middot; Built by Rumbo Tech Labs</p>
         <p>Affiliate disclosure: MexiGuide may earn commissions from partner links at no extra cost to you.</p>
       </div>
     </div>
